@@ -123,13 +123,28 @@ FEEDBACK (1)
 
 ### Daily Care Economy
 
+**SPEND:**
 | Activity | Coins |
 |----------|-------|
 | Physical Care (Feed + Water + Clean) | -45 |
 | Emotional Care (after guessing correct) | -15 |
-| **Total Daily Care** | **-60** |
-| Emotion Guessing (3 correct) | +30 |
-| **Net Daily Cost** | **-30** |
+| **Total Daily Care Cost** | **-60** |
+
+**EARN:**
+| Activity | Coins |
+|----------|-------|
+| Quest Lesson (1st time) | +50 |
+| Emotion Guessing (3 correct × 10) | +30 |
+| **Minimum Daily Earnings** | **+80** |
+
+**NET:**
+| Scenario | Calculation | Result |
+|----------|-------------|--------|
+| 1 lesson + 3 guesses - care | +50 + 30 - 60 | **+20** |
+| 2 lessons + 3 guesses - care | +100 + 30 - 60 | **+70** |
+| 3 lessons + 3 guesses - care | +150 + 30 - 60 | **+120** |
+
+Players ALWAYS earn more than they spend if they do lessons!
 
 ---
 
