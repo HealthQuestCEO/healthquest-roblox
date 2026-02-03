@@ -10,6 +10,12 @@
     - Use MAP (100 Robux) to bring Lumo back at 50% health
     - Emotion guess: 3 attempts per day, correct = 10 coins earned
 
+    RESTRICTION WHEN LUMO IS GONE:
+    - Player CANNOT leave the castle
+    - Can only do quest lessons (to earn coins)
+    - Must buy MAP (100 Robux) to bring Lumo back
+    - This creates pressure to purchase or grind lessons
+
     CARE COSTS:
     - Feed: 15 coins
     - Water: 15 coins
@@ -189,7 +195,9 @@ function LumoCare.getStatus(data)
             isPresent = false,
             flyAwayTime = data.flyAwayTime,
             mapPrice = MAP_ROBUX_PRICE,
-            message = "Lumo is lost! Use a map (100 Robux) to bring them back."
+            canLeaveCastle = false,
+            allowedActions = LumoCare.getAllowedActionsWithoutLumo(),
+            message = "Lumo is lost! You're stuck in the castle. Do lessons to earn coins, then use a map (100 Robux) to bring Lumo back."
         }
     end
 
@@ -393,6 +401,28 @@ end
 -- Get map price
 function LumoCare.getMapPrice()
     return MAP_ROBUX_PRICE
+end
+
+-- Check if player can leave castle (requires Lumo to be present)
+function LumoCare.canLeaveCastle(data)
+    if data.isPresent then
+        return true, "Lumo is with you!"
+    else
+        return false, "You can't leave without Lumo! Use a map (100 Robux) to find them, or do lessons to earn coins."
+    end
+end
+
+-- Get allowed actions when Lumo is gone
+function LumoCare.getAllowedActionsWithoutLumo()
+    return {
+        canDoLessons = true,        -- Can earn coins
+        canAccessShop = false,      -- No shopping
+        canLeaveCastle = false,     -- Stuck inside
+        canAccessMeadow = false,    -- No meadow
+        canAccessPortals = false,   -- No world portals
+        canPlayMiniGames = false,   -- No mini-games
+        message = "Lumo is lost! You can only do lessons until you bring them back."
+    }
 end
 
 -- Get all possible emotions (for UI)
