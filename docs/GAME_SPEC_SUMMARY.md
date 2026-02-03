@@ -325,6 +325,49 @@ Player uses Teddy Bear (-15 coins)
 
 ---
 
+## Cross-Platform Promo Code System
+
+### Overview
+When players reach milestones, they receive a unique promo code redeemable on the HealthQuest web app (DiscoverHealthQuest.com).
+
+### Milestones That Trigger Codes
+
+| Milestone | Trigger | Code Prefix | Reward |
+|-----------|---------|-------------|--------|
+| Quest Champion | Complete first quest | QUEST-XXXXXX | Special web bonus |
+| Devoted Caretaker | Lumo evolves to Adult | CARE-XXXXXX | Exclusive web content |
+| Rising Star | Reach Level 10 | STAR-XXXXXX | Web app upgrade |
+| Perfect Caretaker | 7 consecutive care days | WEEK-XXXXXX | Week streak bonus |
+
+### Code Display (Roblox TOS Compliant)
+
+```
+┌─────────────────────────────────────┐
+│      Amazing Achievement!           │
+│        "Quest Champion"             │
+│                                     │
+│     Your Special Code:              │
+│     ┌─────────────────┐             │
+│     │  QUEST-A1B2C3   │             │
+│     └─────────────────┘             │
+│                                     │
+│  Show this code to your parent!     │
+│  They can use it at:                │
+│  DiscoverHealthQuest.com            │
+│  for a FREE bonus reward!           │
+│                                     │
+│  [Got it!]                          │
+└─────────────────────────────────────┘
+```
+
+### Rules
+- Code only granted ONCE per account per milestone
+- No external links or buttons (text only)
+- Code saved in Settings menu for later retrieval
+- Code format: PREFIX-XXXXXX (6 alphanumeric chars)
+
+---
+
 ## Location Summary
 
 ### Castle (Indoor) - COINS EARNED HERE
@@ -385,6 +428,7 @@ BIOMES (Mini-games only)
 |--------|------|
 | Quest Progress | `src/ServerScriptService/PlayerData/QuestProgress.lua` |
 | Lumo Care | `src/ServerScriptService/PlayerData/LumoCare.lua` |
+| Promo Codes | `src/ServerScriptService/PlayerData/PromoCode.lua` |
 | Barrier Assessment | `docs/BARRIER_ASSESSMENT.md` |
 | Care Loop | `docs/CARE_LOOP.md` |
 | Castle Rooms | `data/castle/castle-rooms.json` |
