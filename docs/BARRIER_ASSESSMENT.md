@@ -62,7 +62,7 @@ The Wellness Barrier Assessment identifies challenges children face in achieving
 | NutriQuest | Nutrition | 3, 6, 11 | 1.3x |
 | KindnessCrusaders | Anti-Bullying / Social | 7, 10 | 1.3x |
 | MindfulBites | Mindful Eating / Intuitive Eating | 6, 8, 11 | 1.2x |
-| MissionPowerUp | Motivation & Goals | 4, 9, 12 | 1.4x |
+| MissionPowerUp | Physical Activity & Motivation | 2, 4, 9 | 1.4x |
 
 **Note:** Some questions appear in multiple quests (e.g., Q9 is relevant to Mental Health, Resilience, Physical Activity, etc.)
 
@@ -163,7 +163,7 @@ Weighted = 2.50 × 1.3 = 3.25
 | 5 | MindfulBites | Mindful/Intuitive Eating | Hunger cues, enjoying food, body awareness |
 | 6 | MindfulHeroAdventure | Mindfulness & Coping | Breathing, meditation, calming strategies |
 | 7 | MindQuest | Mental Health | Emotional regulation, stress management |
-| 8 | MissionPowerUp | Motivation & Goals | Setting goals, perseverance, confidence |
+| 8 | MissionPowerUp | Physical Activity & Motivation | Movement motivation, energy, staying active |
 | 9 | NutriQuest | Nutrition | Healthy foods, balanced eating |
 | 10 | Resilience Adventure | Hope & Resilience | Optimism, bouncing back, future thinking |
 
