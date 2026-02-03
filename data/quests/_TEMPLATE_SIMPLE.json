@@ -1,0 +1,47 @@
+{
+  "questId": "NutriQuest",
+  "questName": "NutriQuest",
+  "description": "Learn about healthy foods and nutrition",
+  "units": [
+    "Food Basics",
+    "Fruits and Veggies",
+    "Protein Power",
+    "Grains and Energy",
+    "Dairy and Bones",
+    "Hydration Station",
+    "Balanced Plates",
+    "Snack Smart",
+    "Reading Labels",
+    "Healthy Habits"
+  ],
+  "lessons": [
+    {
+      "lesson": 1,
+      "unit": 1,
+      "title": "Why Breakfast Matters",
+      "intro": "Good morning! Did you know your body is like a car? After sleeping all night, your tank is empty. Breakfast fills it up so you can go, go, go!",
+      "q1": { "q": "What does breakfast give your body?", "a": "Energy", "b": "Nothing", "c": "Sleepiness", "d": "Homework", "answer": "a" },
+      "q2": { "q": "When is the best time to eat breakfast?", "a": "At night", "b": "In the morning", "c": "Never", "d": "At lunch", "answer": "b" },
+      "q3": { "q": "What happens if you skip breakfast?", "a": "You feel great", "b": "You might feel tired", "c": "You get stronger", "d": "Nothing", "answer": "b" },
+      "q4": { "q": "Your brain needs breakfast to help you:", "a": "Sleep more", "b": "Think and focus", "c": "Watch TV", "d": "Stay awake at night", "answer": "b" },
+      "q5": { "q": "Which is a healthy breakfast food?", "a": "Candy", "b": "Soda", "c": "Oatmeal", "d": "Chips", "answer": "c" },
+      "takeaways": [
+        "Breakfast fills your energy tank after sleep",
+        "Your brain needs fuel to think and learn",
+        "Healthy breakfast = better focus at school"
+      ]
+    },
+    {
+      "lesson": 2,
+      "unit": 1,
+      "title": "Lesson Title Here",
+      "intro": "Teaching intro here...",
+      "q1": { "q": "Question?", "a": "...", "b": "...", "c": "...", "d": "...", "answer": "a" },
+      "q2": { "q": "Question?", "a": "...", "b": "...", "c": "...", "d": "...", "answer": "b" },
+      "q3": { "q": "Question?", "a": "...", "b": "...", "c": "...", "d": "...", "answer": "c" },
+      "q4": { "q": "Question?", "a": "...", "b": "...", "c": "...", "d": "...", "answer": "d" },
+      "q5": { "q": "Question?", "a": "...", "b": "...", "c": "...", "d": "...", "answer": "a" },
+      "takeaways": ["Point 1", "Point 2", "Point 3"]
+    }
+  ]
+}

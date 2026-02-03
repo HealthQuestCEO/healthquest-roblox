@@ -1,0 +1,334 @@
+{
+  "metadata": {
+    "game": "Category Crush: Block Match Arena",
+    "description": "Tetris-style matching blocks by category",
+    "totalPacks": 4,
+    "levelsPerPack": 20
+  },
+  "packs": [
+    {
+      "packId": "food_groups",
+      "packName": "Food Groups",
+      "packName_es": "Grupos de Alimentos",
+      "packIcon": "🍎",
+      "categories": [
+        {
+          "categoryId": "fruits",
+          "categoryName": "Fruits",
+          "categoryName_es": "Frutas",
+          "color": "#FF6B6B",
+          "items": [
+            { "en": "Apple", "es": "Manzana", "emoji": "🍎" },
+            { "en": "Banana", "es": "Plátano", "emoji": "🍌" },
+            { "en": "Orange", "es": "Naranja", "emoji": "🍊" },
+            { "en": "Strawberry", "es": "Fresa", "emoji": "🍓" },
+            { "en": "Grapes", "es": "Uvas", "emoji": "🍇" },
+            { "en": "Watermelon", "es": "Sandía", "emoji": "🍉" }
+          ]
+        },
+        {
+          "categoryId": "vegetables",
+          "categoryName": "Vegetables",
+          "categoryName_es": "Verduras",
+          "color": "#4CAF50",
+          "items": [
+            { "en": "Carrot", "es": "Zanahoria", "emoji": "🥕" },
+            { "en": "Broccoli", "es": "Brócoli", "emoji": "🥦" },
+            { "en": "Corn", "es": "Maíz", "emoji": "🌽" },
+            { "en": "Lettuce", "es": "Lechuga", "emoji": "🥬" },
+            { "en": "Tomato", "es": "Tomate", "emoji": "🍅" },
+            { "en": "Pepper", "es": "Pimiento", "emoji": "🫑" }
+          ]
+        },
+        {
+          "categoryId": "grains",
+          "categoryName": "Grains",
+          "categoryName_es": "Granos",
+          "color": "#D4A574",
+          "items": [
+            { "en": "Bread", "es": "Pan", "emoji": "🍞" },
+            { "en": "Rice", "es": "Arroz", "emoji": "🍚" },
+            { "en": "Pasta", "es": "Pasta", "emoji": "🍝" },
+            { "en": "Cereal", "es": "Cereal", "emoji": "🥣" },
+            { "en": "Oatmeal", "es": "Avena", "emoji": "🥣" },
+            { "en": "Tortilla", "es": "Tortilla", "emoji": "🫓" }
+          ]
+        },
+        {
+          "categoryId": "protein",
+          "categoryName": "Protein",
+          "categoryName_es": "Proteína",
+          "color": "#8B4513",
+          "items": [
+            { "en": "Chicken", "es": "Pollo", "emoji": "🍗" },
+            { "en": "Fish", "es": "Pescado", "emoji": "🐟" },
+            { "en": "Eggs", "es": "Huevos", "emoji": "🥚" },
+            { "en": "Beans", "es": "Frijoles", "emoji": "🫘" },
+            { "en": "Nuts", "es": "Nueces", "emoji": "🥜" },
+            { "en": "Tofu", "es": "Tofu", "emoji": "🧈" }
+          ]
+        },
+        {
+          "categoryId": "dairy",
+          "categoryName": "Dairy",
+          "categoryName_es": "Lácteos",
+          "color": "#87CEEB",
+          "items": [
+            { "en": "Milk", "es": "Leche", "emoji": "🥛" },
+            { "en": "Cheese", "es": "Queso", "emoji": "🧀" },
+            { "en": "Yogurt", "es": "Yogur", "emoji": "🥛" },
+            { "en": "Butter", "es": "Mantequilla", "emoji": "🧈" },
+            { "en": "Ice Cream", "es": "Helado", "emoji": "🍦" },
+            { "en": "Cream", "es": "Crema", "emoji": "🥛" }
+          ]
+        }
+      ],
+      "distractors": [
+        { "en": "Candy", "es": "Dulce", "emoji": "🍬" },
+        { "en": "Soda", "es": "Refresco", "emoji": "🥤" },
+        { "en": "Chips", "es": "Papitas", "emoji": "🍟" },
+        { "en": "Cookie", "es": "Galleta", "emoji": "🍪" }
+      ]
+    },
+    {
+      "packId": "emotions",
+      "packName": "Emotions",
+      "packName_es": "Emociones",
+      "packIcon": "😊",
+      "categories": [
+        {
+          "categoryId": "happy_emotions",
+          "categoryName": "Happy Feelings",
+          "categoryName_es": "Sentimientos Felices",
+          "color": "#FFD700",
+          "items": [
+            { "en": "Happy", "es": "Feliz", "emoji": "😊" },
+            { "en": "Excited", "es": "Emocionado", "emoji": "🤩" },
+            { "en": "Proud", "es": "Orgulloso", "emoji": "😌" },
+            { "en": "Grateful", "es": "Agradecido", "emoji": "🥰" },
+            { "en": "Joyful", "es": "Alegre", "emoji": "😄" },
+            { "en": "Peaceful", "es": "Pacífico", "emoji": "😇" }
+          ]
+        },
+        {
+          "categoryId": "sad_emotions",
+          "categoryName": "Sad Feelings",
+          "categoryName_es": "Sentimientos Tristes",
+          "color": "#6495ED",
+          "items": [
+            { "en": "Sad", "es": "Triste", "emoji": "😢" },
+            { "en": "Lonely", "es": "Solo", "emoji": "😔" },
+            { "en": "Disappointed", "es": "Decepcionado", "emoji": "😞" },
+            { "en": "Hurt", "es": "Herido", "emoji": "🥺" },
+            { "en": "Homesick", "es": "Nostálgico", "emoji": "😿" },
+            { "en": "Gloomy", "es": "Melancólico", "emoji": "😥" }
+          ]
+        },
+        {
+          "categoryId": "angry_emotions",
+          "categoryName": "Angry Feelings",
+          "categoryName_es": "Sentimientos de Enojo",
+          "color": "#FF4444",
+          "items": [
+            { "en": "Angry", "es": "Enojado", "emoji": "😠" },
+            { "en": "Frustrated", "es": "Frustrado", "emoji": "😤" },
+            { "en": "Annoyed", "es": "Molesto", "emoji": "😒" },
+            { "en": "Grumpy", "es": "Malhumorado", "emoji": "😾" },
+            { "en": "Irritated", "es": "Irritado", "emoji": "😡" },
+            { "en": "Upset", "es": "Disgustado", "emoji": "😠" }
+          ]
+        },
+        {
+          "categoryId": "scared_emotions",
+          "categoryName": "Scared Feelings",
+          "categoryName_es": "Sentimientos de Miedo",
+          "color": "#9370DB",
+          "items": [
+            { "en": "Scared", "es": "Asustado", "emoji": "😨" },
+            { "en": "Nervous", "es": "Nervioso", "emoji": "😰" },
+            { "en": "Worried", "es": "Preocupado", "emoji": "😟" },
+            { "en": "Anxious", "es": "Ansioso", "emoji": "😧" },
+            { "en": "Shy", "es": "Tímido", "emoji": "🙈" },
+            { "en": "Unsure", "es": "Inseguro", "emoji": "😬" }
+          ]
+        },
+        {
+          "categoryId": "calm_emotions",
+          "categoryName": "Calm Feelings",
+          "categoryName_es": "Sentimientos Tranquilos",
+          "color": "#98FB98",
+          "items": [
+            { "en": "Calm", "es": "Tranquilo", "emoji": "😌" },
+            { "en": "Relaxed", "es": "Relajado", "emoji": "😎" },
+            { "en": "Content", "es": "Contento", "emoji": "🙂" },
+            { "en": "Tired", "es": "Cansado", "emoji": "😴" },
+            { "en": "Cozy", "es": "Acogedor", "emoji": "🥱" },
+            { "en": "Sleepy", "es": "Soñoliento", "emoji": "😪" }
+          ]
+        }
+      ],
+      "distractors": []
+    },
+    {
+      "packId": "wellness",
+      "packName": "Wellness",
+      "packName_es": "Bienestar",
+      "packIcon": "💪",
+      "categories": [
+        {
+          "categoryId": "exercise",
+          "categoryName": "Exercise",
+          "categoryName_es": "Ejercicio",
+          "color": "#FF6B6B",
+          "items": [
+            { "en": "Running", "es": "Correr", "emoji": "🏃" },
+            { "en": "Swimming", "es": "Nadar", "emoji": "🏊" },
+            { "en": "Dancing", "es": "Bailar", "emoji": "💃" },
+            { "en": "Jumping", "es": "Saltar", "emoji": "🦘" },
+            { "en": "Stretching", "es": "Estirar", "emoji": "🧘" },
+            { "en": "Biking", "es": "Ciclismo", "emoji": "🚴" }
+          ]
+        },
+        {
+          "categoryId": "sleep",
+          "categoryName": "Sleep",
+          "categoryName_es": "Sueño",
+          "color": "#6B5B95",
+          "items": [
+            { "en": "Bedtime", "es": "Hora de dormir", "emoji": "🛏️" },
+            { "en": "Nap", "es": "Siesta", "emoji": "😴" },
+            { "en": "Rest", "es": "Descanso", "emoji": "💤" },
+            { "en": "Pillow", "es": "Almohada", "emoji": "🛋️" },
+            { "en": "Dreams", "es": "Sueños", "emoji": "💭" },
+            { "en": "Pajamas", "es": "Pijama", "emoji": "👕" }
+          ]
+        },
+        {
+          "categoryId": "hygiene",
+          "categoryName": "Hygiene",
+          "categoryName_es": "Higiene",
+          "color": "#87CEEB",
+          "items": [
+            { "en": "Brushing teeth", "es": "Cepillarse los dientes", "emoji": "🪥" },
+            { "en": "Washing hands", "es": "Lavarse las manos", "emoji": "🧼" },
+            { "en": "Bathing", "es": "Bañarse", "emoji": "🛁" },
+            { "en": "Combing hair", "es": "Peinarse", "emoji": "💇" },
+            { "en": "Clean clothes", "es": "Ropa limpia", "emoji": "👕" },
+            { "en": "Flossing", "es": "Usar hilo dental", "emoji": "🦷" }
+          ]
+        },
+        {
+          "categoryId": "hydration",
+          "categoryName": "Hydration",
+          "categoryName_es": "Hidratación",
+          "color": "#00CED1",
+          "items": [
+            { "en": "Water", "es": "Agua", "emoji": "💧" },
+            { "en": "Water bottle", "es": "Botella de agua", "emoji": "🍼" },
+            { "en": "Drinking", "es": "Beber", "emoji": "🥤" },
+            { "en": "Thirsty", "es": "Sediento", "emoji": "😛" },
+            { "en": "Refreshing", "es": "Refrescante", "emoji": "❄️" },
+            { "en": "Hydrated", "es": "Hidratado", "emoji": "💦" }
+          ]
+        },
+        {
+          "categoryId": "mindfulness",
+          "categoryName": "Mindfulness",
+          "categoryName_es": "Atención Plena",
+          "color": "#98FB98",
+          "items": [
+            { "en": "Breathing", "es": "Respirar", "emoji": "🌬️" },
+            { "en": "Meditation", "es": "Meditación", "emoji": "🧘" },
+            { "en": "Gratitude", "es": "Gratitud", "emoji": "🙏" },
+            { "en": "Journaling", "es": "Escribir diario", "emoji": "📓" },
+            { "en": "Nature walk", "es": "Paseo en la naturaleza", "emoji": "🌳" },
+            { "en": "Quiet time", "es": "Tiempo tranquilo", "emoji": "🤫" }
+          ]
+        }
+      ],
+      "distractors": [
+        { "en": "Screen time", "es": "Tiempo de pantalla", "emoji": "📱" },
+        { "en": "Staying up late", "es": "Quedarse despierto", "emoji": "🌙" }
+      ]
+    },
+    {
+      "packId": "coping_skills",
+      "packName": "Coping Skills",
+      "packName_es": "Habilidades de Afrontamiento",
+      "packIcon": "🧠",
+      "categories": [
+        {
+          "categoryId": "physical_coping",
+          "categoryName": "Body Calming",
+          "categoryName_es": "Calmar el Cuerpo",
+          "color": "#FF9800",
+          "items": [
+            { "en": "Deep breaths", "es": "Respiraciones profundas", "emoji": "🌬️" },
+            { "en": "Stretching", "es": "Estiramientos", "emoji": "🙆" },
+            { "en": "Walking", "es": "Caminar", "emoji": "🚶" },
+            { "en": "Squeezing a ball", "es": "Apretar una pelota", "emoji": "🎾" },
+            { "en": "Dancing", "es": "Bailar", "emoji": "💃" },
+            { "en": "Jumping jacks", "es": "Saltos de tijera", "emoji": "🤸" }
+          ]
+        },
+        {
+          "categoryId": "creative_coping",
+          "categoryName": "Creative Expression",
+          "categoryName_es": "Expresión Creativa",
+          "color": "#E91E63",
+          "items": [
+            { "en": "Drawing", "es": "Dibujar", "emoji": "🎨" },
+            { "en": "Writing", "es": "Escribir", "emoji": "✍️" },
+            { "en": "Singing", "es": "Cantar", "emoji": "🎤" },
+            { "en": "Playing music", "es": "Tocar música", "emoji": "🎵" },
+            { "en": "Building", "es": "Construir", "emoji": "🧱" },
+            { "en": "Crafts", "es": "Manualidades", "emoji": "✂️" }
+          ]
+        },
+        {
+          "categoryId": "social_coping",
+          "categoryName": "Reaching Out",
+          "categoryName_es": "Buscar Apoyo",
+          "color": "#2196F3",
+          "items": [
+            { "en": "Talking to friend", "es": "Hablar con amigo", "emoji": "👫" },
+            { "en": "Asking for help", "es": "Pedir ayuda", "emoji": "🙋" },
+            { "en": "Hugging", "es": "Abrazar", "emoji": "🤗" },
+            { "en": "Playing together", "es": "Jugar juntos", "emoji": "🎮" },
+            { "en": "Sharing feelings", "es": "Compartir sentimientos", "emoji": "💬" },
+            { "en": "Family time", "es": "Tiempo en familia", "emoji": "👨‍👩‍👧" }
+          ]
+        },
+        {
+          "categoryId": "mental_coping",
+          "categoryName": "Thinking Helpers",
+          "categoryName_es": "Ayudas para Pensar",
+          "color": "#9C27B0",
+          "items": [
+            { "en": "Positive thoughts", "es": "Pensamientos positivos", "emoji": "💭" },
+            { "en": "Counting to 10", "es": "Contar hasta 10", "emoji": "🔢" },
+            { "en": "Imagining calm place", "es": "Imaginar lugar tranquilo", "emoji": "🏖️" },
+            { "en": "Problem solving", "es": "Resolver problemas", "emoji": "🧩" },
+            { "en": "Making a plan", "es": "Hacer un plan", "emoji": "📋" },
+            { "en": "Remembering wins", "es": "Recordar logros", "emoji": "🏆" }
+          ]
+        },
+        {
+          "categoryId": "sensory_coping",
+          "categoryName": "Using Senses",
+          "categoryName_es": "Usar los Sentidos",
+          "color": "#00BCD4",
+          "items": [
+            { "en": "Listening to music", "es": "Escuchar música", "emoji": "🎧" },
+            { "en": "Smelling flowers", "es": "Oler flores", "emoji": "🌸" },
+            { "en": "Soft blanket", "es": "Manta suave", "emoji": "🧸" },
+            { "en": "Warm drink", "es": "Bebida caliente", "emoji": "☕" },
+            { "en": "Looking at stars", "es": "Mirar las estrellas", "emoji": "⭐" },
+            { "en": "Petting an animal", "es": "Acariciar un animal", "emoji": "🐕" }
+          ]
+        }
+      ],
+      "distractors": []
+    }
+  ]
+}

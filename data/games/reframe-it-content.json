@@ -1,0 +1,309 @@
+{
+  "metadata": {
+    "game": "Reframe It: Sunshine Mind",
+    "description": "CBT thought reframing - negative to positive thoughts",
+    "totalPairs": 30
+  },
+  "thoughtPairs": [
+    {
+      "id": 1,
+      "category": "self_doubt",
+      "negative": "I can't do anything right",
+      "negative_es": "No puedo hacer nada bien",
+      "positive": "I'm learning and getting better every day",
+      "positive_es": "Estoy aprendiendo y mejorando cada día",
+      "tip": "Everyone makes mistakes - that's how we learn!",
+      "tip_es": "Todos cometemos errores - ¡así es como aprendemos!"
+    },
+    {
+      "id": 2,
+      "category": "self_doubt",
+      "negative": "I'm not smart enough",
+      "negative_es": "No soy lo suficientemente inteligente",
+      "positive": "I can learn new things if I keep trying",
+      "positive_es": "Puedo aprender cosas nuevas si sigo intentando",
+      "tip": "Your brain grows stronger when you practice!",
+      "tip_es": "¡Tu cerebro se hace más fuerte cuando practicas!"
+    },
+    {
+      "id": 3,
+      "category": "self_doubt",
+      "negative": "I'll never be good at this",
+      "negative_es": "Nunca seré bueno en esto",
+      "positive": "With practice, I can improve",
+      "positive_es": "Con práctica, puedo mejorar",
+      "tip": "Nobody starts out perfect!",
+      "tip_es": "¡Nadie empieza siendo perfecto!"
+    },
+    {
+      "id": 4,
+      "category": "social",
+      "negative": "Nobody likes me",
+      "negative_es": "Nadie me quiere",
+      "positive": "I have people who care about me",
+      "positive_es": "Tengo personas que se preocupan por mí",
+      "tip": "Think about someone who smiled at you today",
+      "tip_es": "Piensa en alguien que te sonrió hoy"
+    },
+    {
+      "id": 5,
+      "category": "social",
+      "negative": "Everyone is looking at me",
+      "negative_es": "Todos me están mirando",
+      "positive": "Most people are thinking about themselves",
+      "positive_es": "La mayoría de las personas están pensando en sí mismas",
+      "tip": "People notice us less than we think!",
+      "tip_es": "¡La gente nos nota menos de lo que pensamos!"
+    },
+    {
+      "id": 6,
+      "category": "social",
+      "negative": "I don't fit in anywhere",
+      "negative_es": "No encajo en ningún lugar",
+      "positive": "I'm unique and that's my superpower",
+      "positive_es": "Soy único y eso es mi superpoder",
+      "tip": "Being different is what makes you special!",
+      "tip_es": "¡Ser diferente es lo que te hace especial!"
+    },
+    {
+      "id": 7,
+      "category": "catastrophizing",
+      "negative": "Everything is ruined",
+      "negative_es": "Todo está arruinado",
+      "positive": "This is hard, but I can handle it",
+      "positive_es": "Esto es difícil, pero puedo manejarlo",
+      "tip": "Bad moments don't last forever",
+      "tip_es": "Los momentos malos no duran para siempre"
+    },
+    {
+      "id": 8,
+      "category": "catastrophizing",
+      "negative": "This is the worst day ever",
+      "negative_es": "Este es el peor día de mi vida",
+      "positive": "Today is tough, but tomorrow can be better",
+      "positive_es": "Hoy es difícil, pero mañana puede ser mejor",
+      "tip": "Every day is a fresh start!",
+      "tip_es": "¡Cada día es un nuevo comienzo!"
+    },
+    {
+      "id": 9,
+      "category": "catastrophizing",
+      "negative": "I made one mistake so the whole thing is bad",
+      "negative_es": "Cometí un error así que todo está mal",
+      "positive": "One mistake doesn't erase all the good parts",
+      "positive_es": "Un error no borra todas las partes buenas",
+      "tip": "Focus on what went well too!",
+      "tip_es": "¡Enfócate también en lo que salió bien!"
+    },
+    {
+      "id": 10,
+      "category": "fear",
+      "negative": "I'm too scared to try",
+      "negative_es": "Tengo demasiado miedo para intentar",
+      "positive": "I can be brave even when I'm scared",
+      "positive_es": "Puedo ser valiente incluso cuando tengo miedo",
+      "tip": "Courage means trying even when it's scary!",
+      "tip_es": "¡El coraje significa intentar incluso cuando da miedo!"
+    },
+    {
+      "id": 11,
+      "category": "fear",
+      "negative": "What if something bad happens?",
+      "negative_es": "¿Y si pasa algo malo?",
+      "positive": "What if something good happens?",
+      "positive_es": "¿Y si pasa algo bueno?",
+      "tip": "Imagine the best outcome instead!",
+      "tip_es": "¡Imagina el mejor resultado en su lugar!"
+    },
+    {
+      "id": 12,
+      "category": "fear",
+      "negative": "New things are scary",
+      "negative_es": "Las cosas nuevas dan miedo",
+      "positive": "New things can be exciting adventures",
+      "positive_es": "Las cosas nuevas pueden ser aventuras emocionantes",
+      "tip": "Every expert was once a beginner!",
+      "tip_es": "¡Cada experto fue una vez un principiante!"
+    },
+    {
+      "id": 13,
+      "category": "perfectionism",
+      "negative": "It has to be perfect",
+      "negative_es": "Tiene que ser perfecto",
+      "positive": "Done is better than perfect",
+      "positive_es": "Terminado es mejor que perfecto",
+      "tip": "Progress is more important than perfection!",
+      "tip_es": "¡El progreso es más importante que la perfección!"
+    },
+    {
+      "id": 14,
+      "category": "perfectionism",
+      "negative": "If I can't do it perfectly, why try?",
+      "negative_es": "Si no puedo hacerlo perfecto, ¿para qué intentar?",
+      "positive": "Trying my best is what matters",
+      "positive_es": "Lo que importa es hacer mi mejor esfuerzo",
+      "tip": "Your best is always good enough!",
+      "tip_es": "¡Tu mejor esfuerzo siempre es suficiente!"
+    },
+    {
+      "id": 15,
+      "category": "comparison",
+      "negative": "Everyone else is better than me",
+      "negative_es": "Todos los demás son mejores que yo",
+      "positive": "I have my own special strengths",
+      "positive_es": "Tengo mis propias fortalezas especiales",
+      "tip": "Compare yourself to yesterday's you!",
+      "tip_es": "¡Compárate con el tú de ayer!"
+    },
+    {
+      "id": 16,
+      "category": "comparison",
+      "negative": "I wish I was like them",
+      "negative_es": "Ojalá fuera como ellos",
+      "positive": "I'm proud of who I am",
+      "positive_es": "Estoy orgulloso de quien soy",
+      "tip": "You bring something special no one else can!",
+      "tip_es": "¡Tú aportas algo especial que nadie más puede!"
+    },
+    {
+      "id": 17,
+      "category": "giving_up",
+      "negative": "I give up",
+      "negative_es": "Me rindo",
+      "positive": "I'll take a break and try again",
+      "positive_es": "Tomaré un descanso e intentaré de nuevo",
+      "tip": "Rest is not the same as quitting!",
+      "tip_es": "¡Descansar no es lo mismo que rendirse!"
+    },
+    {
+      "id": 18,
+      "category": "giving_up",
+      "negative": "This is too hard",
+      "negative_es": "Esto es muy difícil",
+      "positive": "Hard things help me grow stronger",
+      "positive_es": "Las cosas difíciles me ayudan a crecer más fuerte",
+      "tip": "Challenges are like exercise for your brain!",
+      "tip_es": "¡Los desafíos son como ejercicio para tu cerebro!"
+    },
+    {
+      "id": 19,
+      "category": "body_image",
+      "negative": "I don't like how I look",
+      "negative_es": "No me gusta cómo me veo",
+      "positive": "My body does amazing things for me",
+      "positive_es": "Mi cuerpo hace cosas increíbles por mí",
+      "tip": "Your body lets you play, laugh, and hug!",
+      "tip_es": "¡Tu cuerpo te permite jugar, reír y abrazar!"
+    },
+    {
+      "id": 20,
+      "category": "body_image",
+      "negative": "I wish I looked different",
+      "negative_es": "Ojalá me viera diferente",
+      "positive": "I am unique and that's beautiful",
+      "positive_es": "Soy único y eso es hermoso",
+      "tip": "There's only one you in the whole world!",
+      "tip_es": "¡Solo hay un tú en todo el mundo!"
+    },
+    {
+      "id": 21,
+      "category": "mistakes",
+      "negative": "I'm so embarrassed",
+      "negative_es": "Estoy tan avergonzado",
+      "positive": "Everyone has awkward moments",
+      "positive_es": "Todos tienen momentos incómodos",
+      "tip": "Laugh it off - it'll be funny later!",
+      "tip_es": "¡Ríete de ello - será gracioso después!"
+    },
+    {
+      "id": 22,
+      "category": "mistakes",
+      "negative": "I should have known better",
+      "negative_es": "Debería haberlo sabido",
+      "positive": "Now I know for next time",
+      "positive_es": "Ahora lo sé para la próxima vez",
+      "tip": "Mistakes are lessons in disguise!",
+      "tip_es": "¡Los errores son lecciones disfrazadas!"
+    },
+    {
+      "id": 23,
+      "category": "anger",
+      "negative": "It's not fair!",
+      "negative_es": "¡No es justo!",
+      "positive": "I can't control everything, but I can control how I react",
+      "positive_es": "No puedo controlar todo, pero puedo controlar cómo reacciono",
+      "tip": "Take a deep breath when things feel unfair",
+      "tip_es": "Respira profundo cuando las cosas parezcan injustas"
+    },
+    {
+      "id": 24,
+      "category": "anger",
+      "negative": "I'm so mad I could scream",
+      "negative_es": "Estoy tan enojado que podría gritar",
+      "positive": "I can feel my anger and let it go safely",
+      "positive_es": "Puedo sentir mi enojo y dejarlo ir de manera segura",
+      "tip": "It's okay to feel angry - just express it safely!",
+      "tip_es": "Está bien sentirse enojado - ¡solo exprésalo de manera segura!"
+    },
+    {
+      "id": 25,
+      "category": "sadness",
+      "negative": "I feel like crying",
+      "negative_es": "Tengo ganas de llorar",
+      "positive": "It's okay to cry - tears help us heal",
+      "positive_es": "Está bien llorar - las lágrimas nos ayudan a sanar",
+      "tip": "Crying is a healthy way to release feelings!",
+      "tip_es": "¡Llorar es una forma saludable de liberar sentimientos!"
+    },
+    {
+      "id": 26,
+      "category": "sadness",
+      "negative": "I'll never feel happy again",
+      "negative_es": "Nunca volveré a sentirme feliz",
+      "positive": "Sad feelings pass, and happy ones will return",
+      "positive_es": "Los sentimientos tristes pasan, y los felices volverán",
+      "tip": "All feelings are temporary - like weather!",
+      "tip_es": "¡Todos los sentimientos son temporales - como el clima!"
+    },
+    {
+      "id": 27,
+      "category": "loneliness",
+      "negative": "I feel all alone",
+      "negative_es": "Me siento completamente solo",
+      "positive": "I can reach out to someone who cares",
+      "positive_es": "Puedo contactar a alguien que se preocupa por mí",
+      "tip": "There's always someone who wants to help!",
+      "tip_es": "¡Siempre hay alguien que quiere ayudar!"
+    },
+    {
+      "id": 28,
+      "category": "worry",
+      "negative": "I can't stop worrying",
+      "negative_es": "No puedo dejar de preocuparme",
+      "positive": "I can take one small step to feel better",
+      "positive_es": "Puedo dar un pequeño paso para sentirme mejor",
+      "tip": "Focus on what you CAN do right now!",
+      "tip_es": "¡Enfócate en lo que PUEDES hacer ahora mismo!"
+    },
+    {
+      "id": 29,
+      "category": "worry",
+      "negative": "What if I fail?",
+      "negative_es": "¿Y si fracaso?",
+      "positive": "What if I succeed?",
+      "positive_es": "¿Y si tengo éxito?",
+      "tip": "Picture yourself succeeding!",
+      "tip_es": "¡Imagínate teniendo éxito!"
+    },
+    {
+      "id": 30,
+      "category": "growth",
+      "negative": "I'll never change",
+      "negative_es": "Nunca cambiaré",
+      "positive": "I'm growing and changing every day",
+      "positive_es": "Estoy creciendo y cambiando cada día",
+      "tip": "Every small step counts!",
+      "tip_es": "¡Cada pequeño paso cuenta!"
+    }
+  ]
+}

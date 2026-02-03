@@ -1,0 +1,133 @@
+{
+  "metadata": {
+    "questId": "NutriQuest",
+    "questName": "NutriQuest",
+    "questName_es": "NutriMisión",
+    "description": "Learn about healthy foods and nutrition",
+    "description_es": "Aprende sobre alimentos saludables y nutrición",
+    "totalLessons": 100,
+    "totalUnits": 10,
+    "lessonsPerUnit": 10
+  },
+  "units": [
+    {
+      "unitId": 1,
+      "unitName": "Food Basics",
+      "unitName_es": "Conceptos Básicos de Alimentos"
+    },
+    {
+      "unitId": 2,
+      "unitName": "Unit 2 Name",
+      "unitName_es": "Nombre de Unidad 2"
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": 1,
+      "unitId": 1,
+      "title": "Why Breakfast Matters",
+      "title_es": "Por Qué Importa el Desayuno",
+      "intro": "Good morning! Did you know your body is like a car? After sleeping all night, your tank is empty. Breakfast fills it up so you can go, go, go!",
+      "intro_es": "¡Buenos días! ¿Sabías que tu cuerpo es como un carro? Después de dormir toda la noche, tu tanque está vacío. ¡El desayuno lo llena para que puedas ir, ir, ir!",
+      "questions": [
+        {
+          "id": 1,
+          "q": "What does breakfast give your body?",
+          "q_es": "¿Qué le da el desayuno a tu cuerpo?",
+          "a": "Energy",
+          "a_es": "Energía",
+          "b": "Nothing",
+          "b_es": "Nada",
+          "c": "Sleepiness",
+          "c_es": "Sueño",
+          "d": "Homework",
+          "d_es": "Tarea",
+          "answer": "a"
+        },
+        {
+          "id": 2,
+          "q": "When is the best time to eat breakfast?",
+          "q_es": "¿Cuándo es el mejor momento para desayunar?",
+          "a": "At night",
+          "a_es": "En la noche",
+          "b": "In the morning",
+          "b_es": "En la mañana",
+          "c": "Never",
+          "c_es": "Nunca",
+          "d": "At lunch",
+          "d_es": "En el almuerzo",
+          "answer": "b"
+        },
+        {
+          "id": 3,
+          "q": "What happens if you skip breakfast?",
+          "q_es": "¿Qué pasa si te saltas el desayuno?",
+          "a": "You feel great",
+          "a_es": "Te sientes genial",
+          "b": "You might feel tired",
+          "b_es": "Podrías sentirte cansado",
+          "c": "You get stronger",
+          "c_es": "Te haces más fuerte",
+          "d": "Nothing",
+          "d_es": "Nada",
+          "answer": "b"
+        },
+        {
+          "id": 4,
+          "q": "Your brain needs breakfast to help you:",
+          "q_es": "Tu cerebro necesita desayuno para ayudarte a:",
+          "a": "Sleep more",
+          "a_es": "Dormir más",
+          "b": "Think and focus",
+          "b_es": "Pensar y concentrarte",
+          "c": "Watch TV",
+          "c_es": "Ver televisión",
+          "d": "Stay awake at night",
+          "d_es": "Quedarte despierto de noche",
+          "answer": "b"
+        },
+        {
+          "id": 5,
+          "q": "Which is a healthy breakfast food?",
+          "q_es": "¿Cuál es un alimento saludable para el desayuno?",
+          "a": "Candy",
+          "a_es": "Dulces",
+          "b": "Soda",
+          "b_es": "Refresco",
+          "c": "Oatmeal",
+          "c_es": "Avena",
+          "d": "Chips",
+          "d_es": "Papitas",
+          "answer": "c"
+        }
+      ],
+      "takeaways": [
+        "Breakfast fills your energy tank after sleep",
+        "Your brain needs fuel to think and learn",
+        "Healthy breakfast = better focus at school"
+      ],
+      "takeaways_es": [
+        "El desayuno llena tu tanque de energía después de dormir",
+        "Tu cerebro necesita combustible para pensar y aprender",
+        "Desayuno saludable = mejor concentración en la escuela"
+      ]
+    },
+    {
+      "lessonId": 2,
+      "unitId": 1,
+      "title": "Lesson 2 Title",
+      "title_es": "Título de Lección 2",
+      "intro": "Intro text here...",
+      "intro_es": "Texto de introducción aquí...",
+      "questions": [
+        { "id": 1, "q": "Question 1?", "q_es": "¿Pregunta 1?", "a": "A", "a_es": "A", "b": "B", "b_es": "B", "c": "C", "c_es": "C", "d": "D", "d_es": "D", "answer": "a" },
+        { "id": 2, "q": "Question 2?", "q_es": "¿Pregunta 2?", "a": "A", "a_es": "A", "b": "B", "b_es": "B", "c": "C", "c_es": "C", "d": "D", "d_es": "D", "answer": "b" },
+        { "id": 3, "q": "Question 3?", "q_es": "¿Pregunta 3?", "a": "A", "a_es": "A", "b": "B", "b_es": "B", "c": "C", "c_es": "C", "d": "D", "d_es": "D", "answer": "c" },
+        { "id": 4, "q": "Question 4?", "q_es": "¿Pregunta 4?", "a": "A", "a_es": "A", "b": "B", "b_es": "B", "c": "C", "c_es": "C", "d": "D", "d_es": "D", "answer": "d" },
+        { "id": 5, "q": "Question 5?", "q_es": "¿Pregunta 5?", "a": "A", "a_es": "A", "b": "B", "b_es": "B", "c": "C", "c_es": "C", "d": "D", "d_es": "D", "answer": "a" }
+      ],
+      "takeaways": ["Takeaway 1", "Takeaway 2", "Takeaway 3"],
+      "takeaways_es": ["Conclusión 1", "Conclusión 2", "Conclusión 3"]
+    }
+  ]
+}
