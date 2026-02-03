@@ -49,18 +49,22 @@ The Wellness Barrier Assessment identifies challenges children face in achieving
 
 ## Barrier Categories
 
-### 8 Barrier Categories with Question Mapping
+### 10 Quests with Question Mapping
 
-| Category | Questions | Max Points | Weight | Quest Path |
-|----------|-----------|------------|--------|------------|
-| Mental Health Barriers | 1, 9, 10 | 12 | 1.5x | MindfulMoods |
-| Hope & Resilience | 4, 9, 12 | 12 | 1.5x | HopeHarbor |
-| Psychological Factors & Weight Management | 1, 8, 9 | 12 | 1.4x | BodyPositive |
-| Physical Activity | 2, 4, 9 | 12 | 1.4x | ActiveAdventures |
-| Mindfulness & Psychological Factors | 5, 9, 12 | 12 | 1.4x | ZenZone |
-| Nutrition & Mindful Eating | 3, 6, 11 | 12 | 1.3x | NutritionNinja |
-| Anti-Bullying | 7, 10 | 8 | 1.3x | FriendshipForge |
-| Intuitive Eating & Body Awareness | 6, 8, 11 | 12 | 1.2x | BodyWise |
+| Quest | Barrier Area | Questions | Weight |
+|-------|--------------|-----------|--------|
+| MindQuest | Mental Health Barriers | 1, 9, 10 | 1.5x |
+| Resilience Adventure | Hope & Resilience | 4, 9, 12 | 1.5x |
+| BodyImageOdyssey | Psychological Factors / Body Image | 1, 8, 9 | 1.4x |
+| ActiveAdventures | Physical Activity | 2, 4, 9 | 1.4x |
+| MindfulHeroAdventure | Mindfulness & Coping | 5, 9, 12 | 1.4x |
+| FocusandFeel | Emotional Awareness | 1, 5, 10 | 1.4x |
+| NutriQuest | Nutrition | 3, 6, 11 | 1.3x |
+| KindnessCrusaders | Anti-Bullying / Social | 7, 10 | 1.3x |
+| MindfulBites | Mindful Eating / Intuitive Eating | 6, 8, 11 | 1.2x |
+| MissionPowerUp | Motivation & Goals | 4, 9, 12 | 1.4x |
+
+**Note:** Some questions appear in multiple quests (e.g., Q9 is relevant to Mental Health, Resilience, Physical Activity, etc.)
 
 ---
 
@@ -81,8 +85,8 @@ Average Score = Raw Score / Number of Questions in Category
 Weighted Score = Average Score × Category Weight
 ```
 
-### Step 4: Rank Categories
-Sort all 8 categories by Weighted Score (highest = biggest barrier)
+### Step 4: Rank Quests
+Sort all 10 quests by Weighted Score (highest = biggest barrier)
 
 ### Step 5: Identify Top 3 Barriers
 The 3 categories with highest weighted scores become the user's priority barriers.
@@ -148,29 +152,31 @@ Weighted = 2.50 × 1.3 = 3.25
 
 ---
 
-## Quest Paths (8 Total)
+## Quest Paths (10 Total)
 
-| Path ID | Name | Primary Barrier | Focus |
-|---------|------|-----------------|-------|
-| 1 | MindfulMoods | Mental Health Barriers | Emotional regulation, stress management |
-| 2 | HopeHarbor | Hope & Resilience | Optimism, bouncing back from setbacks |
-| 3 | BodyPositive | Psychological Factors | Self-esteem, body image |
-| 4 | ActiveAdventures | Physical Activity | Movement, exercise, motivation |
-| 5 | ZenZone | Mindfulness | Breathing, meditation, coping |
-| 6 | NutritionNinja | Nutrition & Mindful Eating | Healthy foods, mindful eating |
-| 7 | FriendshipForge | Anti-Bullying | Social skills, standing up for self/others |
-| 8 | BodyWise | Intuitive Eating | Hunger cues, body awareness |
+| # | Quest Name | Primary Barrier | Focus |
+|---|------------|-----------------|-------|
+| 1 | ActiveAdventures | Physical Activity | Movement, exercise, staying active |
+| 2 | BodyImageOdyssey | Psychological Factors | Body image, self-esteem |
+| 3 | FocusandFeel | Emotional Awareness | Recognizing and naming emotions |
+| 4 | KindnessCrusaders | Anti-Bullying | Social skills, kindness, standing up for others |
+| 5 | MindfulBites | Mindful/Intuitive Eating | Hunger cues, enjoying food, body awareness |
+| 6 | MindfulHeroAdventure | Mindfulness & Coping | Breathing, meditation, calming strategies |
+| 7 | MindQuest | Mental Health | Emotional regulation, stress management |
+| 8 | MissionPowerUp | Motivation & Goals | Setting goals, perseverance, confidence |
+| 9 | NutriQuest | Nutrition | Healthy foods, balanced eating |
+| 10 | Resilience Adventure | Hope & Resilience | Optimism, bouncing back, future thinking |
 
 ---
 
 ## Weight Rationale
 
-| Weight | Categories | Reasoning |
-|--------|------------|-----------|
-| 1.5x | Mental Health, Hope & Resilience | Foundational to all well-being; cascading effects on other areas |
-| 1.4x | Psychological Factors, Physical Activity, Mindfulness | Direct impact on long-term health outcomes |
-| 1.3x | Nutrition, Anti-Bullying | Important but can be influenced by higher-weighted factors |
-| 1.2x | Intuitive Eating | More specific/narrow scope |
+| Weight | Quests | Reasoning |
+|--------|--------|-----------|
+| 1.5x | MindQuest, Resilience Adventure | Foundational to all well-being; cascading effects on other areas |
+| 1.4x | BodyImageOdyssey, ActiveAdventures, MindfulHeroAdventure, FocusandFeel, MissionPowerUp | Direct impact on long-term health outcomes |
+| 1.3x | NutriQuest, KindnessCrusaders | Important but can be influenced by higher-weighted factors |
+| 1.2x | MindfulBites | More specific/narrow scope (eating behaviors) |
 
 ---
 
@@ -191,13 +197,13 @@ Question = {
     }
 }
 
--- Category Structure
-Category = {
-    id = "mental_health",
-    name = "Mental Health Barriers",
+-- Quest Structure
+Quest = {
+    id = "MindQuest",
+    name = "MindQuest",
+    barrierArea = "Mental Health Barriers",
     questions = {1, 9, 10},
-    weight = 1.5,
-    questPath = "MindfulMoods"
+    weight = 1.5
 }
 
 -- User Assessment Result
@@ -205,14 +211,21 @@ AssessmentResult = {
     userId = "player123",
     timestamp = 1234567890,
     answers = {1, 2, 3, 3, 3, 2, 3, 3, 3, 2, 2, 2}, -- Q1-Q12 scores
-    categoryScores = {
-        mental_health = 4.00,
-        hope_resilience = 3.73,
-        -- etc.
+    questScores = {
+        MindQuest = 4.00,
+        ResilienceAdventure = 3.73,
+        ActiveAdventures = 3.50,
+        BodyImageOdyssey = 3.45,
+        MindfulHeroAdventure = 3.40,
+        FocusandFeel = 3.35,
+        MissionPowerUp = 3.30,
+        NutriQuest = 3.25,
+        KindnessCrusaders = 3.20,
+        MindfulBites = 3.10
     },
-    topBarriers = {"mental_health", "hope_resilience", "physical_activity"},
-    selectedGoal = "mental_health",
-    assignedPath = "MindfulMoods",
+    topBarriers = {"MindQuest", "ResilienceAdventure", "ActiveAdventures"},
+    selectedGoal = "MindQuest",
+    assignedQuest = "MindQuest",
     coinsAwarded = 100
 }
 ```
