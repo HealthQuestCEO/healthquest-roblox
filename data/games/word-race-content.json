@@ -1,0 +1,230 @@
+{
+  "metadata": {
+    "game": "Word Race",
+    "description": "Typing race word banks by topic",
+    "totalTopics": 20,
+    "wordsPerTopic": 15
+  },
+  "topics": [
+    {
+      "topicId": "fruits",
+      "topicName": "Fruits",
+      "topicName_es": "Frutas",
+      "words": [
+        { "en": "apple", "es": "manzana" },
+        { "en": "banana", "es": "plátano" },
+        { "en": "orange", "es": "naranja" },
+        { "en": "strawberry", "es": "fresa" },
+        { "en": "blueberry", "es": "arándano" },
+        { "en": "grape", "es": "uva" },
+        { "en": "watermelon", "es": "sandía" },
+        { "en": "pineapple", "es": "piña" },
+        { "en": "mango", "es": "mango" },
+        { "en": "peach", "es": "durazno" },
+        { "en": "pear", "es": "pera" },
+        { "en": "cherry", "es": "cereza" },
+        { "en": "kiwi", "es": "kiwi" },
+        { "en": "lemon", "es": "limón" },
+        { "en": "melon", "es": "melón" }
+      ]
+    },
+    {
+      "topicId": "vegetables",
+      "topicName": "Vegetables",
+      "topicName_es": "Verduras",
+      "words": [
+        { "en": "carrot", "es": "zanahoria" },
+        { "en": "broccoli", "es": "brócoli" },
+        { "en": "spinach", "es": "espinaca" },
+        { "en": "tomato", "es": "tomate" },
+        { "en": "cucumber", "es": "pepino" },
+        { "en": "pepper", "es": "pimiento" },
+        { "en": "onion", "es": "cebolla" },
+        { "en": "potato", "es": "papa" },
+        { "en": "lettuce", "es": "lechuga" },
+        { "en": "celery", "es": "apio" },
+        { "en": "corn", "es": "maíz" },
+        { "en": "beans", "es": "frijoles" },
+        { "en": "peas", "es": "guisantes" },
+        { "en": "cabbage", "es": "repollo" },
+        { "en": "squash", "es": "calabaza" }
+      ]
+    },
+    {
+      "topicId": "emotions",
+      "topicName": "Emotions",
+      "topicName_es": "Emociones",
+      "words": [
+        { "en": "happy", "es": "feliz" },
+        { "en": "sad", "es": "triste" },
+        { "en": "angry", "es": "enojado" },
+        { "en": "scared", "es": "asustado" },
+        { "en": "excited", "es": "emocionado" },
+        { "en": "calm", "es": "tranquilo" },
+        { "en": "nervous", "es": "nervioso" },
+        { "en": "proud", "es": "orgulloso" },
+        { "en": "tired", "es": "cansado" },
+        { "en": "surprised", "es": "sorprendido" },
+        { "en": "worried", "es": "preocupado" },
+        { "en": "grateful", "es": "agradecido" },
+        { "en": "lonely", "es": "solo" },
+        { "en": "hopeful", "es": "esperanzado" },
+        { "en": "peaceful", "es": "pacífico" }
+      ]
+    },
+    {
+      "topicId": "body_parts",
+      "topicName": "Body Parts",
+      "topicName_es": "Partes del Cuerpo",
+      "words": [
+        { "en": "heart", "es": "corazón" },
+        { "en": "brain", "es": "cerebro" },
+        { "en": "lungs", "es": "pulmones" },
+        { "en": "stomach", "es": "estómago" },
+        { "en": "muscles", "es": "músculos" },
+        { "en": "bones", "es": "huesos" },
+        { "en": "eyes", "es": "ojos" },
+        { "en": "ears", "es": "orejas" },
+        { "en": "hands", "es": "manos" },
+        { "en": "feet", "es": "pies" },
+        { "en": "skin", "es": "piel" },
+        { "en": "teeth", "es": "dientes" },
+        { "en": "blood", "es": "sangre" },
+        { "en": "throat", "es": "garganta" },
+        { "en": "spine", "es": "columna" }
+      ]
+    },
+    {
+      "topicId": "exercise",
+      "topicName": "Exercise",
+      "topicName_es": "Ejercicio",
+      "words": [
+        { "en": "running", "es": "correr" },
+        { "en": "jumping", "es": "saltar" },
+        { "en": "swimming", "es": "nadar" },
+        { "en": "dancing", "es": "bailar" },
+        { "en": "stretching", "es": "estirar" },
+        { "en": "walking", "es": "caminar" },
+        { "en": "climbing", "es": "escalar" },
+        { "en": "yoga", "es": "yoga" },
+        { "en": "sports", "es": "deportes" },
+        { "en": "soccer", "es": "fútbol" },
+        { "en": "basketball", "es": "baloncesto" },
+        { "en": "biking", "es": "ciclismo" },
+        { "en": "hiking", "es": "senderismo" },
+        { "en": "skating", "es": "patinar" },
+        { "en": "gymnastics", "es": "gimnasia" }
+      ]
+    },
+    {
+      "topicId": "healthy_habits",
+      "topicName": "Healthy Habits",
+      "topicName_es": "Hábitos Saludables",
+      "words": [
+        { "en": "sleep", "es": "dormir" },
+        { "en": "water", "es": "agua" },
+        { "en": "breakfast", "es": "desayuno" },
+        { "en": "hygiene", "es": "higiene" },
+        { "en": "brushing", "es": "cepillarse" },
+        { "en": "bathing", "es": "bañarse" },
+        { "en": "rest", "es": "descanso" },
+        { "en": "sunshine", "es": "sol" },
+        { "en": "vitamins", "es": "vitaminas" },
+        { "en": "protein", "es": "proteína" },
+        { "en": "fiber", "es": "fibra" },
+        { "en": "calcium", "es": "calcio" },
+        { "en": "nutrition", "es": "nutrición" },
+        { "en": "balance", "es": "equilibrio" },
+        { "en": "wellness", "es": "bienestar" }
+      ]
+    },
+    {
+      "topicId": "mindfulness",
+      "topicName": "Mindfulness",
+      "topicName_es": "Atención Plena",
+      "words": [
+        { "en": "breathing", "es": "respirar" },
+        { "en": "focus", "es": "enfoque" },
+        { "en": "calm", "es": "calma" },
+        { "en": "relax", "es": "relajar" },
+        { "en": "peaceful", "es": "pacífico" },
+        { "en": "quiet", "es": "silencio" },
+        { "en": "gentle", "es": "suave" },
+        { "en": "patient", "es": "paciente" },
+        { "en": "aware", "es": "consciente" },
+        { "en": "present", "es": "presente" },
+        { "en": "grateful", "es": "agradecido" },
+        { "en": "kind", "es": "amable" },
+        { "en": "listen", "es": "escuchar" },
+        { "en": "notice", "es": "notar" },
+        { "en": "accept", "es": "aceptar" }
+      ]
+    },
+    {
+      "topicId": "friendship",
+      "topicName": "Friendship",
+      "topicName_es": "Amistad",
+      "words": [
+        { "en": "friend", "es": "amigo" },
+        { "en": "sharing", "es": "compartir" },
+        { "en": "helping", "es": "ayudar" },
+        { "en": "kindness", "es": "bondad" },
+        { "en": "trust", "es": "confianza" },
+        { "en": "caring", "es": "cariño" },
+        { "en": "respect", "es": "respeto" },
+        { "en": "listening", "es": "escuchar" },
+        { "en": "together", "es": "juntos" },
+        { "en": "teamwork", "es": "trabajo en equipo" },
+        { "en": "support", "es": "apoyo" },
+        { "en": "honest", "es": "honesto" },
+        { "en": "loyal", "es": "leal" },
+        { "en": "include", "es": "incluir" },
+        { "en": "cooperate", "es": "cooperar" }
+      ]
+    },
+    {
+      "topicId": "coping_skills",
+      "topicName": "Coping Skills",
+      "topicName_es": "Habilidades de Afrontamiento",
+      "words": [
+        { "en": "breathe", "es": "respirar" },
+        { "en": "count", "es": "contar" },
+        { "en": "talk", "es": "hablar" },
+        { "en": "draw", "es": "dibujar" },
+        { "en": "write", "es": "escribir" },
+        { "en": "squeeze", "es": "apretar" },
+        { "en": "stretch", "es": "estirar" },
+        { "en": "walk", "es": "caminar" },
+        { "en": "music", "es": "música" },
+        { "en": "hug", "es": "abrazo" },
+        { "en": "rest", "es": "descansar" },
+        { "en": "think", "es": "pensar" },
+        { "en": "imagine", "es": "imaginar" },
+        { "en": "positive", "es": "positivo" },
+        { "en": "brave", "es": "valiente" }
+      ]
+    },
+    {
+      "topicId": "food_groups",
+      "topicName": "Food Groups",
+      "topicName_es": "Grupos de Alimentos",
+      "words": [
+        { "en": "grains", "es": "granos" },
+        { "en": "protein", "es": "proteína" },
+        { "en": "dairy", "es": "lácteos" },
+        { "en": "fruits", "es": "frutas" },
+        { "en": "vegetables", "es": "verduras" },
+        { "en": "bread", "es": "pan" },
+        { "en": "rice", "es": "arroz" },
+        { "en": "pasta", "es": "pasta" },
+        { "en": "chicken", "es": "pollo" },
+        { "en": "fish", "es": "pescado" },
+        { "en": "eggs", "es": "huevos" },
+        { "en": "milk", "es": "leche" },
+        { "en": "cheese", "es": "queso" },
+        { "en": "yogurt", "es": "yogur" },
+        { "en": "nuts", "es": "nueces" }
+      ]
+    }
+  ]
+}
