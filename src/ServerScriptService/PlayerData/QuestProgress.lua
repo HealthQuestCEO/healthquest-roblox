@@ -5,9 +5,10 @@
     RULES:
     - First Barrier Assessment = FREE (assigns first quest FREE)
     - Completing a quest = can retake it FREE
-    - NEW Barrier Assessment after completion = 400 ROBUX
-    - NEW quest from barrier results = 99 ROBUX
+    - NEW Barrier Assessment = 400 ROBUX
+    - NEW quest from barrier results = 400 ROBUX
     - Retake SAME Barrier Assessment = FREE
+    - Retake SAME Quest = FREE
     - Progress saves automatically
 ]]
 
@@ -47,7 +48,7 @@ local DEFAULT_DATA = {
 }
 
 -- ROBUX PRICES
-local NEW_QUEST_ROBUX_PRICE = 99      -- New quest from barrier results
+local NEW_QUEST_ROBUX_PRICE = 400     -- New quest from barrier results
 local NEW_BARRIER_ROBUX_PRICE = 400   -- New barrier assessment after first
 
 -- Load player data
