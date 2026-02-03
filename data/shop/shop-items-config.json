@@ -2,7 +2,7 @@
   "metadata": {
     "version": "2.0",
     "description": "Complete shop catalog for Lumo's Land - 150+ items",
-    "total_items": 162,
+    "total_items": 166,
     "lastUpdated": "2025-11-10"
   },
   "categories": ["decor", "furniture", "outfit", "accessory", "seasonal", "sticker", "promo"],
@@ -1725,7 +1725,59 @@
       "purchasable": false,
       "promoOnly": true,
       "rarity": "legendary",
-      "milestone": "PERFECT_WEEK"
+      "promoCode": "RAINBOW"
+    },
+    {
+      "id": "STCK-PROMO-005",
+      "name": "Wellness Star",
+      "emoji": "⭐",
+      "description": "You're a wellness warrior! (Promo reward)",
+      "category": "promo",
+      "room": "BDRM",
+      "coinPrice": 0,
+      "purchasable": false,
+      "promoOnly": true,
+      "rarity": "legendary",
+      "promoCode": "WELLNESS2026"
+    },
+    {
+      "id": "STCK-PROMO-006",
+      "name": "Apple of Health",
+      "emoji": "🍎",
+      "description": "Healthy choices every day! (Promo reward)",
+      "category": "promo",
+      "room": "BDRM",
+      "coinPrice": 0,
+      "purchasable": false,
+      "promoOnly": true,
+      "rarity": "legendary",
+      "promoCode": "HEALTHY"
+    },
+    {
+      "id": "STCK-PROMO-007",
+      "name": "Trophy Winner",
+      "emoji": "🏆",
+      "description": "Contest winner! (Promo reward)",
+      "category": "promo",
+      "room": "BDRM",
+      "coinPrice": 0,
+      "purchasable": false,
+      "promoOnly": true,
+      "rarity": "legendary",
+      "promoCode": null
+    },
+    {
+      "id": "STCK-PROMO-008",
+      "name": "Gift Box Surprise",
+      "emoji": "🎁",
+      "description": "A special surprise! (Promo reward)",
+      "category": "promo",
+      "room": "BDRM",
+      "coinPrice": 0,
+      "purchasable": false,
+      "promoOnly": true,
+      "rarity": "legendary",
+      "promoCode": null
     }
   ]
 }

@@ -1,101 +1,109 @@
 --[[
     PromoCode.lua
-    Cross-Platform Promo Code System
+    Promo Code Redemption System for Lumo's Land
 
     PURPOSE:
-    When players reach milestones in Lumo's Land, they receive a unique promo code
-    that can be redeemed on the HealthQuest web app (DiscoverHealthQuest.com)
+    Players enter promo codes IN THE GAME to receive special items.
+    Codes come from HealthQuest marketing (website, social media, email).
 
-    MILESTONES THAT TRIGGER CODES:
-    1. FIRST_QUEST_COMPLETE - Complete first quest (102 lessons)
-    2. LUMO_ADULT - Lumo evolves to Adult stage (1000+ care actions)
-    3. LEVEL_10 - Player reaches level 10
-    4. PERFECT_WEEK - 7 consecutive days of caring for Lumo
+    FLOW:
+    1. HealthQuest creates codes (via admin/database)
+    2. Player sees code on website/social/email
+    3. Player enters code in Lumo's Land (Settings → Enter Code)
+    4. Player receives special sticker reward
 
-    CODE GENERATION:
-    - Option A: Pre-generated batch codes (current implementation)
-    - Option B: Dynamic codes via API (future enhancement)
+    CODE TYPES:
+    - Global: Anyone can use, limited total uses (e.g., WELLNESS2026)
+    - Single-Use: One player only (e.g., WINNER-A1B2C3)
 
-    DISPLAY:
-    - Pop-up modal congratulating player
-    - Code displayed as text (no external links - Roblox TOS compliant)
-    - Code saved in player inventory/settings for later retrieval
-    - Code only granted ONCE per account per milestone
-
-    EXAMPLE MESSAGE:
-    "Congratulations! Show this code to your parent!
-     They can use it at DiscoverHealthQuest.com for a free bonus!
-     Your code: LUMO-7X9K2M"
+    REWARDS:
+    - Special stickers (legendary, not purchasable)
+    - Display in Sticker Journal & Castle walls
 ]]
 
 local DataStoreService = game:GetService("DataStoreService")
 local PromoDataStore = DataStoreService:GetDataStore("PromoCodes_v1")
-local CodePoolStore = DataStoreService:GetDataStore("PromoCodePool_v1")
+local GlobalCodeStore = DataStoreService:GetDataStore("GlobalPromoCodes_v1")
 
 local PromoCode = {}
 
--- Milestone definitions
-local MILESTONES = {
-    FIRST_QUEST_COMPLETE = {
-        id = "FIRST_QUEST_COMPLETE",
-        name = "Quest Champion",
-        description = "Complete your first quest",
-        reward = "Special web bonus",
-        codePrefix = "QUEST"
+-- ==========================================
+-- PROMO CODE DATABASE (HealthQuest manages these)
+-- In production, this would come from an external API/database
+-- For now, hardcoded for testing
+-- ==========================================
+
+local PROMO_CODES = {
+    -- Global codes (anyone can use, limited total)
+    ["WELLNESS2026"] = {
+        rewardId = "STCK-PROMO-005",
+        rewardName = "Wellness Star Sticker",
+        rewardEmoji = "⭐",
+        codeType = "global",
+        maxUses = 10000,
+        expiresAt = nil, -- Unix timestamp or nil for never
+        active = true
     },
-    LUMO_ADULT = {
-        id = "LUMO_ADULT",
-        name = "Devoted Caretaker",
-        description = "Evolve Lumo to Adult stage",
-        reward = "Exclusive web content",
-        codePrefix = "CARE"
+    ["LUMOLOVE"] = {
+        rewardId = "STCK-PROMO-002",
+        rewardName = "Devoted Caretaker Heart",
+        rewardEmoji = "💖",
+        codeType = "global",
+        maxUses = 5000,
+        expiresAt = nil,
+        active = true
     },
-    LEVEL_10 = {
-        id = "LEVEL_10",
-        name = "Rising Star",
-        description = "Reach Level 10",
-        reward = "Web app upgrade",
-        codePrefix = "STAR"
+    ["HEALTHY"] = {
+        rewardId = "STCK-PROMO-006",
+        rewardName = "Apple of Health",
+        rewardEmoji = "🍎",
+        codeType = "global",
+        maxUses = nil, -- Unlimited
+        expiresAt = nil,
+        active = true
     },
-    PERFECT_WEEK = {
-        id = "PERFECT_WEEK",
-        name = "Perfect Caretaker",
-        description = "Care for Lumo 7 days in a row",
-        reward = "Week streak bonus",
-        codePrefix = "WEEK"
+    ["QUESTCHAMP"] = {
+        rewardId = "STCK-PROMO-001",
+        rewardName = "Quest Champion Star",
+        rewardEmoji = "⭐",
+        codeType = "global",
+        maxUses = nil,
+        expiresAt = nil,
+        active = true
+    },
+    ["ROCKET"] = {
+        rewardId = "STCK-PROMO-003",
+        rewardName = "Rising Star Rocket",
+        rewardEmoji = "🚀",
+        codeType = "global",
+        maxUses = nil,
+        expiresAt = nil,
+        active = true
+    },
+    ["RAINBOW"] = {
+        rewardId = "STCK-PROMO-004",
+        rewardName = "Perfect Week Rainbow",
+        rewardEmoji = "🌈",
+        codeType = "global",
+        maxUses = nil,
+        expiresAt = nil,
+        active = true
     }
 }
 
 -- Default player promo data
 local DEFAULT_DATA = {
-    -- Earned codes (milestone -> code)
-    earnedCodes = {},          -- {FIRST_QUEST_COMPLETE = "QUEST-A1B2C3", ...}
-
-    -- Milestone tracking
-    milestonesCompleted = {},  -- {FIRST_QUEST_COMPLETE = timestamp, ...}
+    -- Codes this player has redeemed
+    redeemedCodes = {},  -- { "WELLNESS2026" = { timestamp, rewardId }, ... }
 
     -- Stats
-    totalCodesEarned = 0,
-    firstCodeEarnedTime = 0,
-
-    -- For perfect week tracking
-    consecutiveCareDays = 0,
-    lastCareDate = ""
+    totalCodesRedeemed = 0,
+    firstRedemptionTime = 0
 }
 
--- Generate a random code (Option A: simple generation)
--- Format: PREFIX-XXXXXX (6 alphanumeric characters)
-local function generateCode(prefix)
-    local chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789" -- Removed confusing chars (0,O,1,I,L)
-    local code = prefix .. "-"
-
-    for i = 1, 6 do
-        local idx = math.random(1, #chars)
-        code = code .. chars:sub(idx, idx)
-    end
-
-    return code
-end
+-- ==========================================
+-- DATA PERSISTENCE
+-- ==========================================
 
 -- Load player promo data
 function PromoCode.load(player)
@@ -107,7 +115,6 @@ function PromoCode.load(player)
     end)
 
     if success and data then
-        -- Merge with defaults
         for k, v in pairs(DEFAULT_DATA) do
             if data[k] == nil then
                 data[k] = v
@@ -135,235 +142,211 @@ function PromoCode.save(player, data)
     return success
 end
 
--- Check if player has already earned a milestone code
-function PromoCode.hasEarnedCode(data, milestoneId)
-    return data.earnedCodes[milestoneId] ~= nil
+-- ==========================================
+-- GLOBAL CODE USAGE TRACKING
+-- ==========================================
+
+-- Get current usage count for a global code
+local function getGlobalCodeUsage(code)
+    local success, count = pcall(function()
+        return GlobalCodeStore:GetAsync("usage_" .. code) or 0
+    end)
+    return success and count or 0
 end
 
--- Get a player's code for a milestone (if earned)
-function PromoCode.getCode(data, milestoneId)
-    return data.earnedCodes[milestoneId]
+-- Increment usage count for a global code
+local function incrementGlobalCodeUsage(code)
+    local success, newCount = pcall(function()
+        return GlobalCodeStore:IncrementAsync("usage_" .. code, 1)
+    end)
+    return success and newCount or 0
 end
 
--- Award a promo code for a milestone
--- Returns: success, message, codeInfo
-function PromoCode.awardCode(player, data, milestoneId)
-    -- Validate milestone
-    local milestone = MILESTONES[milestoneId]
-    if not milestone then
-        return false, "Invalid milestone", nil
+-- ==========================================
+-- CODE REDEMPTION
+-- ==========================================
+
+-- Validate a promo code
+function PromoCode.validateCode(code)
+    -- Normalize code (uppercase, trim)
+    code = string.upper(string.gsub(code, "%s+", ""))
+
+    local codeData = PROMO_CODES[code]
+    if not codeData then
+        return nil, "INVALID"
     end
 
-    -- Check if already earned
-    if data.earnedCodes[milestoneId] then
-        return false, "Code already earned for this milestone", {
-            alreadyEarned = true,
-            code = data.earnedCodes[milestoneId]
+    if not codeData.active then
+        return nil, "INACTIVE"
+    end
+
+    -- Check expiration
+    if codeData.expiresAt and os.time() > codeData.expiresAt then
+        return nil, "EXPIRED"
+    end
+
+    -- Check max uses (for global codes)
+    if codeData.maxUses then
+        local currentUses = getGlobalCodeUsage(code)
+        if currentUses >= codeData.maxUses then
+            return nil, "LIMIT_REACHED"
+        end
+    end
+
+    return codeData, "VALID"
+end
+
+-- Check if player has already redeemed a code
+function PromoCode.hasPlayerRedeemedCode(data, code)
+    code = string.upper(string.gsub(code, "%s+", ""))
+    return data.redeemedCodes[code] ~= nil
+end
+
+-- Redeem a promo code
+-- Returns: success, message, rewardInfo
+function PromoCode.redeemCode(player, data, code)
+    -- Normalize code
+    code = string.upper(string.gsub(code, "%s+", ""))
+
+    -- 1. Validate code exists and is active
+    local codeData, status = PromoCode.validateCode(code)
+
+    if not codeData then
+        local errorMessages = {
+            INVALID = "Invalid code. Please check and try again.",
+            INACTIVE = "This code is no longer active.",
+            EXPIRED = "This code has expired.",
+            LIMIT_REACHED = "This code has reached its redemption limit."
         }
+        return false, errorMessages[status] or "Invalid code.", nil
     end
 
-    -- Generate unique code
-    local code = generateCode(milestone.codePrefix)
+    -- 2. Check if player already used this code
+    if PromoCode.hasPlayerRedeemedCode(data, code) then
+        return false, "You've already redeemed this code!", nil
+    end
 
-    -- Store the code
-    data.earnedCodes[milestoneId] = code
-    data.milestonesCompleted[milestoneId] = os.time()
-    data.totalCodesEarned = data.totalCodesEarned + 1
+    -- 3. Increment global usage (for global codes)
+    if codeData.codeType == "global" and codeData.maxUses then
+        incrementGlobalCodeUsage(code)
+    end
 
-    if data.firstCodeEarnedTime == 0 then
-        data.firstCodeEarnedTime = os.time()
+    -- 4. Record redemption for player
+    data.redeemedCodes[code] = {
+        timestamp = os.time(),
+        rewardId = codeData.rewardId,
+        rewardName = codeData.rewardName
+    }
+    data.totalCodesRedeemed = data.totalCodesRedeemed + 1
+
+    if data.firstRedemptionTime == 0 then
+        data.firstRedemptionTime = os.time()
     end
 
     PromoCode.save(player, data)
 
-    return true, "Code earned!", {
-        code = code,
-        milestone = milestone,
-        message = buildRewardMessage(milestone, code)
+    -- 5. Return success with reward info
+    -- Note: Actual item granting handled by caller (InventoryService)
+    return true, "Code redeemed!", {
+        rewardId = codeData.rewardId,
+        rewardName = codeData.rewardName,
+        rewardEmoji = codeData.rewardEmoji,
+        code = code
     }
 end
 
--- Build the reward message for display
-function buildRewardMessage(milestone, code)
-    return {
-        title = "Congratulations!",
-        subtitle = milestone.name,
-        description = milestone.description,
-        instruction = "Show this code to your parent! They can use it at DiscoverHealthQuest.com for a free bonus!",
-        code = code,
-        reward = milestone.reward
-    }
-end
+-- ==========================================
+-- UI HELPERS
+-- ==========================================
 
--- Get all earned codes for display in inventory/settings
-function PromoCode.getAllEarnedCodes(data)
+-- Get all codes redeemed by player (for Settings display)
+function PromoCode.getRedeemedCodes(data)
     local codes = {}
 
-    for milestoneId, code in pairs(data.earnedCodes) do
-        local milestone = MILESTONES[milestoneId]
-        if milestone then
-            table.insert(codes, {
-                milestoneId = milestoneId,
-                milestoneName = milestone.name,
-                description = milestone.description,
-                code = code,
-                earnedTime = data.milestonesCompleted[milestoneId],
-                reward = milestone.reward
-            })
-        end
+    for code, info in pairs(data.redeemedCodes) do
+        table.insert(codes, {
+            code = code,
+            rewardId = info.rewardId,
+            rewardName = info.rewardName,
+            redeemedAt = info.timestamp
+        })
     end
 
-    -- Sort by earned time (oldest first)
+    -- Sort by redemption time (newest first)
     table.sort(codes, function(a, b)
-        return (a.earnedTime or 0) < (b.earnedTime or 0)
+        return (a.redeemedAt or 0) > (b.redeemedAt or 0)
     end)
 
     return codes
 end
 
--- ==========================================
--- MILESTONE CHECKING FUNCTIONS
--- (Call these from other systems when events happen)
--- ==========================================
-
--- Check: First Quest Complete
-function PromoCode.checkFirstQuestComplete(player, data, questData)
-    if questData.totalQuestsCompleted >= 1 then
-        if not PromoCode.hasEarnedCode(data, "FIRST_QUEST_COMPLETE") then
-            return PromoCode.awardCode(player, data, "FIRST_QUEST_COMPLETE")
-        end
-    end
-    return false, "Milestone not reached", nil
+-- Get redemption count
+function PromoCode.getRedemptionCount(data)
+    return data.totalCodesRedeemed or 0
 end
 
--- Check: Lumo Adult Stage
-function PromoCode.checkLumoAdult(player, data, lumoData)
-    local stage = lumoData.currentStage or 1
-    if stage >= 6 then -- Adult is stage 6
-        if not PromoCode.hasEarnedCode(data, "LUMO_ADULT") then
-            return PromoCode.awardCode(player, data, "LUMO_ADULT")
-        end
-    end
-    return false, "Milestone not reached", nil
-end
-
--- Check: Level 10
-function PromoCode.checkLevel10(player, data, playerLevel)
-    if playerLevel >= 10 then
-        if not PromoCode.hasEarnedCode(data, "LEVEL_10") then
-            return PromoCode.awardCode(player, data, "LEVEL_10")
-        end
-    end
-    return false, "Milestone not reached", nil
-end
-
--- Check: Perfect Week (7 consecutive care days)
-function PromoCode.checkPerfectWeek(player, data, careDate)
-    local today = careDate or os.date("%Y-%m-%d")
-
-    -- Check if this is a new day
-    if data.lastCareDate ~= today then
-        -- Check if consecutive (yesterday)
-        local yesterday = os.date("%Y-%m-%d", os.time() - 86400)
-
-        if data.lastCareDate == yesterday then
-            data.consecutiveCareDays = data.consecutiveCareDays + 1
-        else
-            data.consecutiveCareDays = 1 -- Reset streak
-        end
-
-        data.lastCareDate = today
-    end
-
-    -- Check for 7-day streak
-    if data.consecutiveCareDays >= 7 then
-        if not PromoCode.hasEarnedCode(data, "PERFECT_WEEK") then
-            local success, msg, info = PromoCode.awardCode(player, data, "PERFECT_WEEK")
-            data.consecutiveCareDays = 0 -- Reset after earning
-            return success, msg, info
-        end
-    end
-
-    return false, "Milestone not reached", {
-        currentStreak = data.consecutiveCareDays,
-        daysNeeded = 7 - data.consecutiveCareDays
-    }
-end
-
--- ==========================================
--- UI HELPER FUNCTIONS
--- ==========================================
-
--- Get promo code display data for UI modal
-function PromoCode.getCodeDisplayData(milestone, code)
+-- Get UI data for code entry screen
+function PromoCode.getCodeEntryUIData()
     return {
-        -- Modal content
-        title = "Amazing Achievement!",
-        subtitle = milestone.name,
-
-        -- Code display (large, prominent)
-        code = code,
-        codeLabel = "Your Special Code:",
-
-        -- Instructions (no links, Roblox TOS compliant)
-        instructions = {
-            "Show this code to your parent!",
-            "They can use it at:",
-            "DiscoverHealthQuest.com",
-            "for a FREE bonus reward!"
-        },
-
-        -- Additional info
-        reward = milestone.reward,
-        tip = "This code is saved in your Settings menu",
-
-        -- Button
-        buttonText = "Got it!"
+        title = "Enter Promo Code",
+        subtitle = "Have a special code? Enter it below!",
+        placeholder = "Enter code here...",
+        buttonText = "Redeem Code",
+        helpText = "Find codes on DiscoverHealthQuest.com"
     }
 end
 
--- Get summary for settings/inventory display
-function PromoCode.getSettingsDisplay(data)
-    local earnedCodes = PromoCode.getAllEarnedCodes(data)
-
+-- Get UI data for success modal
+function PromoCode.getSuccessUIData(rewardInfo)
     return {
-        title = "My Promo Codes",
-        subtitle = "Show these to your parent for web bonuses!",
-        website = "DiscoverHealthQuest.com",
-        codes = earnedCodes,
-        totalEarned = data.totalCodesEarned,
-
-        -- Milestones progress
-        availableMilestones = {
-            {
-                id = "FIRST_QUEST_COMPLETE",
-                name = "Quest Champion",
-                description = "Complete your first quest",
-                earned = data.earnedCodes["FIRST_QUEST_COMPLETE"] ~= nil
-            },
-            {
-                id = "LUMO_ADULT",
-                name = "Devoted Caretaker",
-                description = "Evolve Lumo to Adult stage",
-                earned = data.earnedCodes["LUMO_ADULT"] ~= nil
-            },
-            {
-                id = "LEVEL_10",
-                name = "Rising Star",
-                description = "Reach Level 10",
-                earned = data.earnedCodes["LEVEL_10"] ~= nil
-            },
-            {
-                id = "PERFECT_WEEK",
-                name = "Perfect Caretaker",
-                description = "Care for Lumo 7 days in a row",
-                earned = data.earnedCodes["PERFECT_WEEK"] ~= nil
-            }
-        }
+        title = "🎉 Code Redeemed!",
+        subtitle = "You received:",
+        rewardName = rewardInfo.rewardName,
+        rewardEmoji = rewardInfo.rewardEmoji,
+        message = "Check your Sticker Book!",
+        buttonText = "Awesome!"
     }
 end
 
--- Export milestones for reference
-PromoCode.MILESTONES = MILESTONES
+-- Get UI data for error modal
+function PromoCode.getErrorUIData(errorMessage)
+    return {
+        title = "Oops!",
+        message = errorMessage,
+        buttonText = "Try Again"
+    }
+end
+
+-- ==========================================
+-- ADMIN FUNCTIONS (for future use)
+-- ==========================================
+
+-- Add a new promo code (would be called by admin system)
+function PromoCode.addCode(code, rewardId, rewardName, rewardEmoji, codeType, maxUses, expiresAt)
+    PROMO_CODES[string.upper(code)] = {
+        rewardId = rewardId,
+        rewardName = rewardName,
+        rewardEmoji = rewardEmoji,
+        codeType = codeType or "global",
+        maxUses = maxUses,
+        expiresAt = expiresAt,
+        active = true
+    }
+end
+
+-- Deactivate a code
+function PromoCode.deactivateCode(code)
+    code = string.upper(code)
+    if PROMO_CODES[code] then
+        PROMO_CODES[code].active = false
+        return true
+    end
+    return false
+end
+
+-- Get all active codes (for admin)
+function PromoCode.getAllCodes()
+    return PROMO_CODES
+end
 
 return PromoCode
