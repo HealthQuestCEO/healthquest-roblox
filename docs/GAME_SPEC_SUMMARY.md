@@ -211,20 +211,35 @@ STEP 2: ADDRESS (Emotional Care)
 | Times per day | 1 (after guessing) |
 | Teaches | Coping strategy for that emotion |
 
-### Coping Strategies by Emotion
+### Emotional Care Items (15 coins each)
 
-| Emotion | Strategy Taught |
-|---------|----------------|
-| Thirsty | "Let's take a water break together!" |
-| Hungry | "Time for a healthy snack!" |
-| Messy | "Let's clean up - a tidy space helps our mind feel calm" |
-| Angry | "Let's take 5 deep breaths together" |
-| Sad | "It's okay to feel sad. Let's give Lumo a hug" |
-| Anxious | "Grounding exercise: Name 5 things you can see" |
-| Scared | "You're safe here. Think of something brave you did" |
-| Tired | "Rest is important! Let's take a quiet moment" |
-| Playful | "Lumo wants to play! Let's do something fun" |
-| Happy | "Lumo is so happy! Let's celebrate!" |
+Each emotion has a specific item to help address it:
+
+| Emotion | Item | Emoji | What It Teaches |
+|---------|------|-------|-----------------|
+| Thirsty | Water Bottle | 🍶 | Staying hydrated helps us feel better |
+| Hungry | Healthy Snack | 🍎 | Eating well gives energy to handle feelings |
+| Messy | Bubble Bath | 🛁 | A tidy space helps our mind feel calm |
+| Angry | Calm Ball | 🔵 | Squeeze and release, take deep breaths |
+| Sad | Teddy Bear | 🧸 | It's okay to feel sad, hugs help! |
+| Anxious | Grounding Stone | 🪨 | Name 5 things you can see |
+| Scared | Brave Cape | 🦸 | Remember something brave you did |
+| Tired | Cozy Blanket | 🛏️ | Rest is important, take quiet moments |
+| Playful | Bouncy Ball | ⚽ | Playing together is fun! |
+| Happy | Party Hat | 🎉 | Celebrate and dance together! |
+
+**Example Flow:**
+```
+Lumo looks sad 😢
+    ↓
+Player guesses "sad" ✓ (+10 coins)
+    ↓
+"Use Teddy Bear to help?" 🧸 (15 coins)
+    ↓
+Player uses Teddy Bear (-15 coins)
+    ↓
+"Lumo hugs the teddy bear tight. It's okay to feel sad. Hugs help!"
+```
 
 ### Fly Away Mechanic
 

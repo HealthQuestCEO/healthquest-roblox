@@ -454,18 +454,69 @@ end
 -- EMOTIONAL CARE SYSTEM (Recognize → Address)
 -- ==========================================
 
--- Coping strategies for each emotion (shown when providing emotional care)
-local EMOTION_COPING_STRATEGIES = {
-    thirsty = "Let's take a water break together! Staying hydrated helps us feel better.",
-    hungry = "Time for a healthy snack! Eating well gives us energy to handle big feelings.",
-    messy = "Let's clean up together! A tidy space helps our mind feel calm too.",
-    angry = "Let's take 5 deep breaths together. Breathe in... and out... Feel the anger float away.",
-    sad = "It's okay to feel sad. Let's give Lumo a gentle hug and remember happy times.",
-    anxious = "Let's do a grounding exercise: Name 5 things you can see right now.",
-    scared = "You're safe here. Let's think of something brave you did before.",
-    tired = "Rest is important! Let's take a quiet moment together.",
-    playful = "Lumo wants to play! Let's do something fun together.",
-    happy = "Lumo is so happy! Let's celebrate with a little dance!"
+-- Emotional care items for each emotion (15 coins each)
+-- Each emotion has a specific item that teaches a coping strategy
+local EMOTION_CARE_ITEMS = {
+    thirsty = {
+        item = "Water Bottle",
+        emoji = "🍶",
+        action = "Give Lumo a refreshing drink",
+        message = "Lumo drinks the water happily! Staying hydrated helps us feel better."
+    },
+    hungry = {
+        item = "Healthy Snack",
+        emoji = "🍎",
+        action = "Give Lumo a healthy snack",
+        message = "Lumo munches happily! Eating well gives us energy to handle big feelings."
+    },
+    messy = {
+        item = "Bubble Bath",
+        emoji = "🛁",
+        action = "Give Lumo a bubble bath",
+        message = "Lumo is sparkling clean! A tidy space helps our mind feel calm too."
+    },
+    angry = {
+        item = "Calm Ball",
+        emoji = "🔵",
+        action = "Squeeze the calm ball together",
+        message = "Squeeze and release... Lumo takes 5 deep breaths. The anger floats away."
+    },
+    sad = {
+        item = "Teddy Bear",
+        emoji = "🧸",
+        action = "Give Lumo a teddy bear hug",
+        message = "Lumo hugs the teddy bear tight. It's okay to feel sad. Hugs help!"
+    },
+    anxious = {
+        item = "Grounding Stone",
+        emoji = "🪨",
+        action = "Hold the grounding stone together",
+        message = "Feel the smooth stone... Name 5 things you can see. Lumo feels calmer."
+    },
+    scared = {
+        item = "Brave Cape",
+        emoji = "🦸",
+        action = "Put on the brave cape",
+        message = "Lumo puts on the cape and feels brave! Remember something brave you did."
+    },
+    tired = {
+        item = "Cozy Blanket",
+        emoji = "🛏️",
+        action = "Wrap Lumo in a cozy blanket",
+        message = "Lumo snuggles in the blanket. Rest is important! Take a quiet moment."
+    },
+    playful = {
+        item = "Bouncy Ball",
+        emoji = "⚽",
+        action = "Play catch with Lumo",
+        message = "Lumo bounces with joy! Playing together is so much fun!"
+    },
+    happy = {
+        item = "Party Hat",
+        emoji = "🎉",
+        action = "Celebrate with Lumo",
+        message = "Lumo puts on the party hat! Let's dance and celebrate together!"
+    }
 }
 
 -- Step 1: Guess Lumo's emotion (FREE attempt, earn coins if correct)
@@ -529,7 +580,8 @@ function LumoCare.guessEmotion(player, data, guessedEmotion)
 end
 
 -- Step 2: Provide emotional care (15 coins, must recognize emotion first)
--- Teaches children how to ADDRESS emotions, not just recognize them
+-- Uses specific items to teach children how to ADDRESS emotions
+-- Example: Lumo is sad → Use Teddy Bear (15 coins) to help
 function LumoCare.giveEmotionalCare(player, data, playerCoins)
     if not data.isPresent then
         return false, "Lumo is lost! Use a map to bring them back.", 0, nil
@@ -558,9 +610,14 @@ function LumoCare.giveEmotionalCare(player, data, playerCoins)
         return false, "Not enough coins (need " .. cost .. ")", 0, nil
     end
 
-    -- Get coping strategy for the recognized emotion
+    -- Get the care item for the recognized emotion
     local emotion = data.recognizedEmotion
-    local copingStrategy = EMOTION_COPING_STRATEGIES[emotion] or "Let's take care of Lumo together!"
+    local careItem = EMOTION_CARE_ITEMS[emotion] or {
+        item = "Comfort Item",
+        emoji = "💝",
+        action = "Comfort Lumo",
+        message = "Lumo feels better!"
+    }
 
     -- Mark emotional care as given
     data.emotionalCareGivenToday = true
@@ -573,11 +630,24 @@ function LumoCare.giveEmotionalCare(player, data, playerCoins)
     local evolved, evolutionInfo = LumoCare.checkEvolution(player, data)
 
     LumoCare.save(player, data)
-    return true, copingStrategy, cost, {
+    return true, careItem.message, cost, {
         emotion = emotion,
-        copingStrategy = copingStrategy,
+        item = careItem.item,
+        emoji = careItem.emoji,
+        action = careItem.action,
+        message = careItem.message,
         evolutionInfo = evolutionInfo
     }
+end
+
+-- Get the care item for an emotion (for UI preview)
+function LumoCare.getEmotionCareItem(emotion)
+    return EMOTION_CARE_ITEMS[emotion]
+end
+
+-- Get all emotion care items (for UI)
+function LumoCare.getAllEmotionCareItems()
+    return EMOTION_CARE_ITEMS
 end
 
 -- Check if emotional care is available
