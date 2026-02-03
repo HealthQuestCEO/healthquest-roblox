@@ -1,385 +1,361 @@
-# HealthQuest: Lumo's Land - Game Design Document
+# HealthQuest: Lumo's Land - Complete Game Design
 
 ## Overview
 
 A kids health education game combining multiple Roblox genres into one connected world.
 
 **Target Audience:** Children 6-12 years old
+**Platform:** Roblox
 
 ---
 
-## Game Structure
+## Player & Pet System
 
-```
-                            ┌─────────────────┐
-                            │    HUB WORLD    │
-                            │  (Spawn Area)   │
-                            │  Lumo follows   │
-                            └────────┬────────┘
-                                     │
-        ┌────────────┬───────────────┼───────────────┬────────────┐
-        │            │               │               │            │
-        ▼            ▼               ▼               ▼            ▼
-┌──────────────┐ ┌──────────┐ ┌──────────────┐ ┌──────────┐ ┌──────────┐
-│  LUMO'S DEN  │ │  CASTLE  │ │  QUEST HALL  │ │  ARCADE  │ │  WORLDS  │
-│ Pet Simulator│ │  Tycoon  │ │   Learning   │ │Mini-Games│ │   RPG    │
-└──────────────┘ └──────────┘ └──────────────┘ └──────────┘ └──────────┘
-        │            │               │               │            │
-        └────────────┴───────────────┼───────────────┴────────────┘
-                                     │
-                            ┌────────▼────────┐
-                            │    THE NOOK     │
-                            │     (Shop)      │
-                            └─────────────────┘
-```
-
----
-
-## 1. Hub World
-
-**Genre:** Social Hub / Navigation
-
-| Feature | Description |
+| Element | Description |
 |---------|-------------|
-| Purpose | Central spawn connecting all areas |
-| Lumo | Companion follows player everywhere |
-| Portals | Doors/portals to each game area |
-| Style | Giant meadow with paths to buildings |
+| **Player Avatar** | Human character (customizable outfits, colors, accessories) |
+| **Pet Companion** | Lumo the dragon - follows player everywhere |
+| **Dragon Variants** | Unlockable/purchasable different dragon types |
 
-### First-Time Player Flow
-```
-Join Game → Hub World → Meet Lumo → Barrier Assessment →
-Get First Quest → Tutorial → Free to Explore
-```
+### Lumo Evolution (5 Stages)
 
----
-
-## 2. Lumo's Den (Pet Simulator)
-
-**Genre:** Tamagotchi-style Pet Care
-
-### Core Mechanics
-| Mechanic | Description |
-|----------|-------------|
-| Feed | Give Lumo food/drinks (affects hunger/thirst) |
-| Play | Mini-interactions (affects happiness) |
-| Rest | Let Lumo sleep (affects energy) |
-| Clean | Hygiene care (affects cleanliness) |
-| Identify Emotions | Guessing game from Care Loop |
-
-### Evolution System (5 Stages)
-
-| Stage | Name | Unlock Condition |
-|-------|------|------------------|
+| Stage | Name | How to Unlock |
+|-------|------|---------------|
 | 1 | Egg | Starting state |
 | 2 | Baby | Hatch after first care session |
-| 3 | Young | Reach Level 10 + 50 care sessions |
-| 4 | Adult | Reach Level 25 + 200 care sessions |
-| 5 | Legendary | Reach Level 50 + complete special quest |
+| 3 | Young | Level 10 + 50 care sessions |
+| 4 | Adult | Level 25 + 200 care sessions |
+| 5 | Legendary | Level 50 + complete special quest |
 
-### Accessories/Customization
-- Hats, wings, collars, colors
-- Unlocked via shop or achievements
+### Dragon Variants (Monetization)
 
-### Integration with Care Loop
-- 72-hour decay timer
-- 10 emotions (see CARE_LOOP.md)
-- Recovery Den inside Lumo's Den
-- Helper Zone for emotional support items
+| Type | How to Get |
+|------|------------|
+| Classic Lumo (teal) | Free starter |
+| Color variants | Coins or Robux |
+| Elemental dragons | Achievement unlocks |
+| Legendary dragons | Complete full quest lines |
+| Seasonal dragons | Limited time events |
 
 ---
 
-## 3. Castle (Tycoon/Decorating)
+## World Layout
 
-**Genre:** Tycoon / Home Decorating / Dress-Up
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                           MAIN MEADOW                                   │
+│                                                                         │
+│                        ┌───────────────────┐                            │
+│                        │      CASTLE       │                            │
+│                        │                   │                            │
+│                        │  ┌─────────────┐  │                            │
+│                        │  │ 13 Rooms    │  │  ← Unlock with XP (FREE)   │
+│                        │  │ (functional)│  │    Decorate with COINS     │
+│                        │  ├─────────────┤  │                            │
+│                        │  │ Classroom   │  │  ← Quest lessons here      │
+│                        │  │ (quests)    │  │    (adapts to YOUR path)   │
+│                        │  └─────────────┘  │                            │
+│                        │                   │                            │
+│                        └───────────────────┘                            │
+│                                                                         │
+│     ┌───────────┐                                                       │
+│     │ THE NOOK  │  ← Shop: Room decor, outfits, Lumo accessories        │
+│     │  (Shop)   │                                                       │
+│     └───────────┘                                                       │
+│                                                                         │
+│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐    │
+│  │World 1 │ │World 2 │ │World 3 │ │World 4 │ │World 5 │ │World 6 │    │
+│  │Portal  │ │Portal  │ │Portal  │ │Portal  │ │Portal  │ │Portal  │    │
+│  │ Lv 1   │ │ Lv 10  │ │ Lv 15  │ │ Lv 20  │ │ Lv 30  │ │ Lv 40  │    │
+│  └───┬────┘ └───┬────┘ └───┬────┘ └───┬────┘ └───┬────┘ └───┬────┘    │
+│      │          │          │          │          │          │          │
+└──────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┘
+       ▼          ▼          ▼          ▼          ▼          ▼
+  ┌─────────┐┌─────────┐┌─────────┐┌─────────┐┌─────────┐┌─────────┐
+  │ Sunny   ││ Mindful ││Nutrition││ Active  ││Friendship││Resilience│
+  │ Meadow  ││Mountain ││ Village ││ Island  ││ Forest  ││  Realm  │
+  │ 9 NPCs  ││ 9 NPCs  ││ 9 NPCs  ││ 9 NPCs  ││ 9 NPCs  ││ 9 NPCs  │
+  └─────────┘└─────────┘└─────────┘└─────────┘└─────────┘└─────────┘
+```
 
-### 13 Unlockable Rooms
+---
+
+## First-Time Player Experience
+
+```
+1. Player joins → Spawns in Meadow
+                      │
+2. Meets Lumo (egg) → Egg hatches into Baby Lumo!
+                      │
+3. Barrier Assessment → 12 questions about wellness
+                      │
+4. Results → Top 3 barriers identified → Earn 100 coins!
+                      │
+5. SMART Goal Selection → Pick 1 of 3 goals
+                      │
+6. Quest Assigned → Routed to specific quest path
+                      │
+7. Tutorial → Learn castle, care loop, basics
+                      │
+8. Free to Explore! → Castle, Worlds, Arcade, Shop
+```
+
+---
+
+## Castle (Central Hub Building)
+
+### 13 Functional Rooms + 1 Classroom
+
+**Unlock:** Rooms unlock with XP (FREE)
+**Decorate:** Buy furniture/decor with Coins
 
 | # | Room | Unlock Level | Purpose |
 |---|------|--------------|---------|
 | 1 | Bedroom | 1 (Start) | Rest, sticker book |
-| 2 | Kitchen | 3 | Cooking mini-games |
+| 2 | Kitchen | 3 | Cooking activities |
 | 3 | Living Room | 5 | Display trophies |
-| 4 | Bathroom | 7 | Hygiene activities |
+| 4 | Bathroom | 7 | Hygiene/self-care |
 | 5 | Garden | 10 | Outdoor space |
-| 6 | Library | 13 | Quest Hall access |
-| 7 | Game Room | 16 | Arcade preview |
+| 6 | Library | 13 | Reading nook |
+| 7 | Game Room | 16 | Mini-game preview |
 | 8 | Art Studio | 20 | Creative activities |
-| 9 | Music Room | 24 | Sound/rhythm games |
-| 10 | Gym | 28 | Physical activity zone |
-| 11 | Meditation Room | 32 | Mindfulness space |
+| 9 | Music Room | 24 | Sound/rhythm |
+| 10 | Gym | 28 | Physical activity |
+| 11 | Meditation Room | 32 | Mindfulness |
 | 12 | Trophy Hall | 40 | Achievement display |
 | 13 | Legendary Suite | 50 | Ultimate room |
+| -- | **Classroom** | 1 (Start) | Quest lessons |
 
-### Features
-| Feature | Description |
-|---------|-------------|
-| Furniture Placement | Grid-based drag & drop |
-| Avatar Closet | Outfits, accessories, colors |
-| Sticker Book | Collectibles from achievements |
-| Decorating | Walls, floors, themes |
+### Classroom (Quest Learning)
+
+- Walk into classroom to do quest lessons
+- Content adapts to YOUR assigned quest path
+- 100 lessons per quest, 5 questions per lesson
+- Multiple choice, matching, spelling race
 
 ---
 
-## 4. Quest Hall (Quiz/Learning Game)
+## Lumo Care Loop (Pet Simulator)
 
-**Genre:** Educational Quiz Game
+### 3 Physical Needs (72-Hour Decay)
 
-### Structure
-- **10 Quest Lines** (from Barrier Assessment)
-- **100 Lessons per Quest** (1,000 total lessons)
-- **5 Questions per Lesson**
-- **10 Thematic Units per Quest**
+| Need | Range | If Neglected |
+|------|-------|--------------|
+| Hunger | 0-100% | Lumo gets hungry emotions |
+| Thirst | 0-100% | Lumo gets thirsty emotions |
+| Hygiene | 0-100% | Lumo gets messy emotions |
 
-### Question Types
+**WARNING:** If needs hit 0% for 72 hours → Lumo disappears!
 
-| Type | Description | Example |
-|------|-------------|---------|
-| Multiple Choice | 4 options, 1 correct | "What helps your brain feel happy?" |
-| Drag & Drop Matching | Match items to categories | Match foods to food groups |
-| Spelling Race | Type answer, score by letters | "Type a plant protein!" (beans = 5 pts) |
-| True/False | Quick binary choice | "Exercise helps you sleep better" |
+### 10 Emotions (Priority Order)
 
-### Spelling Race Game
-```
-┌─────────────────────────────────────────────────────────────┐
-│              SPELLING RACE: Plant Proteins!                 │
-│                                                             │
-│  Type as many plant proteins as you can!                    │
-│  Score = number of letters typed correctly                  │
-│                                                             │
-│  Timer: [=====>        ] 30 seconds                         │
-│                                                             │
-│  Your answers:                                              │
-│  ✓ beans (5 pts)                                            │
-│  ✓ lentils (7 pts)                                          │
-│  ✓ tofu (4 pts)                                             │
-│  ✓ quinoa (6 pts)                                           │
-│                                                             │
-│  Current Score: 22 points                                   │
-│                                                             │
-│  [Type here: ________]                                      │
-└─────────────────────────────────────────────────────────────┘
-```
+| # | Emotion | When It Shows |
+|---|---------|---------------|
+| 1 | Thirsty | thirst ≤ 10% |
+| 2 | Hungry | hunger ≤ 10% |
+| 3 | Messy | hygiene ≤ 15% |
+| 4 | Angry | hunger + thirst both low |
+| 5 | Sad | mid hunger, high thirst, low hygiene |
+| 6 | Anxious | mid hunger, mid thirst, high hygiene |
+| 7 | Scared | higher needs but mid hygiene |
+| 8 | Tired | any need 25-35% |
+| 9 | Playful | all needs 50-75% |
+| 10 | Happy | all needs > 75% |
 
-### Rewards
+### Emotion Guessing Game
+
+1. Lumo shows emotion (static image)
+2. Player guesses what emotion
+3. **Correct:** 5 coins + 10 XP (max 4/day)
+4. **Wrong:** Get a hint, try again
+5. Go to Recovery Den to help Lumo
+
+### Recovery Den
+
+- **Help Lumo's Body** → Feed, water, clean
+- **Helper Zone** → Emotional support items (yoga mat, teddy bear, tablet)
+- After care → Needs reset to 50%
+
+---
+
+## Quest Hall (10 Quests)
+
+### How It Works
+
+1. Take Barrier Assessment (12 questions)
+2. Get Top 3 barriers ranked
+3. Choose SMART goal
+4. Assigned to quest matching your goal
+5. Complete 100 lessons in Classroom
+
+### 10 Quest Paths
+
+| Quest | Barrier | Focus |
+|-------|---------|-------|
+| ActiveAdventures | Physical Activity | Play, movement, fun |
+| MissionPowerUp | Physical Activity | Body science, getting stronger |
+| BodyImageOdyssey | Body Image | Self-esteem, body positivity |
+| FocusandFeel | Emotions | Recognizing feelings |
+| KindnessCrusaders | Anti-Bullying | Social skills, inclusion |
+| MindfulBites | Mindful Eating | Hunger cues, enjoying food |
+| MindfulHeroAdventure | Mindfulness | Breathing, coping |
+| MindQuest | Mental Health | Stress, emotional regulation |
+| NutriQuest | Nutrition | Healthy foods |
+| Resilience Adventure | Resilience | Hope, bouncing back |
+
+### Quest Rewards
+
 | Action | XP | Coins |
 |--------|-----|-------|
-| Complete lesson | 10 | 5 |
-| Perfect lesson (all correct) | 25 | 15 |
-| Complete unit | 100 | 50 |
-| Complete quest | 1000 | 500 |
+| Complete lesson | 50 | 50 |
+| Complete unit (10 lessons) | 100 | 100 |
+| Complete quest (100 lessons) | 1000 | 500 |
 
 ---
 
-## 5. Arcade (Mini-Game Collection)
-
-**Genre:** Mini-Games
-
-### 13 Games Across 3 Zones
-
-#### Mind Gym (Relaxation/Mindfulness)
-| # | Game | Description |
-|---|------|-------------|
-| 1 | Breathing Bubbles | Breathe in/out to control bubble size |
-| 2 | Grounding Garden | Find 5-4-3-2-1 sensory items |
-| 3 | Cloud Watching | Tap matching cloud shapes |
-| 4 | Calm Colors | Color-by-number relaxation |
-
-#### Action Zone (Physical/Active)
-| # | Game | Description |
-|---|------|-------------|
-| 5 | Endless Runner | Dodge obstacles, collect healthy items |
-| 6 | Simon Says Workout | Follow movement commands |
-| 7 | Bubble Pop | Pop bubbles matching the prompt |
-| 8 | Dance Party | Rhythm game with Lumo |
-| 9 | Obstacle Course | Parkour-style challenge |
-
-#### Learning Lab (Educational)
-| # | Game | Description |
-|---|------|-------------|
-| 10 | Cooking Sim | Make healthy recipes |
-| 11 | Category Sorter | Sort items into correct groups |
-| 12 | Trivia Detective | Solve mysteries with trivia |
-| 13 | Spelling Sprint | Race to spell health words |
-
-### Arcade Features
-- Coin rewards per game
-- Daily challenges (bonus rewards)
-- Leaderboards (optional)
-- Difficulty levels
-
----
-
-## 6. World Portals (Story/Roleplay)
-
-**Genre:** Animal Crossing-style RPG
+## World Portals (NPC Conversations)
 
 ### 6 Themed Worlds
 
-| # | World | Theme | Unlock Level |
-|---|-------|-------|--------------|
-| 1 | Sunny Meadow | Introduction/Basics | 1 (Start) |
-| 2 | Mindful Mountain | Mental Health | 10 |
-| 3 | Nutrition Village | Healthy Eating | 15 |
-| 4 | Active Island | Physical Activity | 20 |
-| 5 | Friendship Forest | Social Skills | 30 |
-| 6 | Resilience Realm | Hope & Confidence | 40 |
+| World | Theme | Unlock | NPCs |
+|-------|-------|--------|------|
+| Sunny Meadow | Introduction | Level 1 | 9 |
+| Mindful Mountain | Mental Health | Level 10 | 9 |
+| Nutrition Village | Healthy Eating | Level 15 | 9 |
+| Active Island | Physical Activity | Level 20 | 9 |
+| Friendship Forest | Social Skills | Level 30 | 9 |
+| Resilience Realm | Hope & Confidence | Level 40 | 9 |
 
-### NPCs Per World
-- **9 NPCs per world** (54 total NPCs)
-- **10 conversations per NPC** (540 total conversation trees)
+**Total: 54 NPCs × 10 conversations each = 540 conversation trees**
 
-### Conversation Style (Animal Crossing-inspired)
+### Animal Crossing-Style Dialogue
 
-| Feature | Description |
-|---------|-------------|
-| Warm Greetings | NPCs recognize returning players |
-| Personality-Driven | Each NPC has unique voice |
-| Branching Dialogue | Player choices affect responses |
-| Not Yes/No | Multiple meaningful options |
-| Educational Content | Health info woven naturally |
-| Progression | New conversations unlock over time |
+- Warm, personality-driven greetings
+- Branching conversations (not yes/no)
+- Player choices affect NPC responses
+- Educational content woven naturally
+- New conversations unlock over time
 
-### Example NPC Conversation
-```
-┌─────────────────────────────────────────────────────────────┐
-│  [Chef Pepper - Nutrition Village]                         │
-│                                                             │
-│  "Hey there, little chef! I was just thinking about        │
-│   breakfast. Did you know your brain needs fuel to         │
-│   work its best?"                                           │
-│                                                             │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │ > "What kind of fuel?"                              │   │
-│  │ > "I had breakfast today!"                          │   │
-│  │ > "I'm not hungry in the morning"                   │   │
-│  │ > "Tell me about your favorite breakfast"           │   │
-│  └─────────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────────┘
-```
+### World Rewards
 
-### Rewards
 | Action | XP | Coins |
 |--------|-----|-------|
 | Complete conversation | 15 | 10 |
-| First time meeting NPC | 25 | 15 |
-| Complete all NPC conversations | 100 | 75 |
+| Meet new NPC | 25 | 15 |
+| Complete all NPC convos | 100 | 75 |
 
 ---
 
-## 7. The Nook (Shop System)
+## The Nook (Shop)
 
-**Genre:** Economy/Shop
+**Location:** Building in the Meadow (outside Castle)
 
-### Purchasable Categories
+### What You Can Buy
 
-| Category | Examples |
-|----------|----------|
-| Furniture | Beds, chairs, tables, decorations |
-| Outfits | Clothes, hats, shoes |
-| Pet Accessories | Hats, collars, wings for Lumo |
-| Room Themes | Wall/floor sets |
-| Special Items | Stickers, badges |
+| Category | Examples | Currency |
+|----------|----------|----------|
+| Room Decor | Furniture, rugs, lamps | Coins |
+| Avatar Outfits | Clothes, hats, shoes | Coins |
+| Lumo Accessories | Hats, collars, wings | Coins |
+| Dragon Variants | Color skins, elemental | Coins or Robux |
+| Room Themes | Wall/floor sets | Coins |
 
-### Economy
+### Decor Per Room
 
-| Currency | How to Earn | How to Spend |
+- Each of the 13 castle rooms has themed decor
+- Buy items to customize YOUR castle
+
+---
+
+## Economy
+
+### Two Currencies
+
+| Currency | How to Earn | What It Does |
 |----------|-------------|--------------|
-| XP | All activities | Leveling up |
-| Coins | All activities | Shop purchases |
-| Robux | Real money (optional) | Premium coins |
+| **XP** | All activities | Level up → Unlock rooms & worlds |
+| **Coins** | All activities | Buy items in The Nook |
 
 ### Coin Sources
+
 | Source | Coins |
 |--------|-------|
+| Quest lesson | 50 |
 | Care Loop (correct emotion) | 5 |
-| Quest lesson | 5-15 |
+| NPC conversation | 10 |
 | Mini-game | 10-50 |
-| NPC conversation | 10-15 |
 | Daily login | 25 |
 | Achievements | 50-500 |
 
----
+### Premium Option
 
-## 8. Progression System
-
-### XP & Leveling
-
-| Level Range | Unlocks |
-|-------------|---------|
-| 1-5 | Hub World, Lumo's Den, Castle (2 rooms) |
-| 6-10 | Quest Hall, Arcade basics, World 1 |
-| 11-20 | More Castle rooms, Worlds 2-3 |
-| 21-30 | Advanced Arcade, Worlds 4-5 |
-| 31-40 | All Castle rooms, World 6 |
-| 41-50 | Legendary content, special evolutions |
-
-### Daily Engagement
-- Daily login bonus
-- Daily challenges (arcade)
-- Lumo care reminders
-- New NPC conversations
+- Buy Coins with Robux (optional)
+- All content playable without paying
 
 ---
 
-## Technical Requirements
+## Arcade (Mini-Games)
 
-### Data to Persist (Per Player)
-```lua
-PlayerData = {
-    -- Profile
-    level = 1,
-    xp = 0,
-    coins = 0,
+### 13 Games in 3 Zones
 
-    -- Lumo
-    lumoStage = "egg",
-    lumoNeeds = {hunger = 100, thirst = 100, hygiene = 100},
-    lumoAccessories = {},
-    lastCareTime = 0,
+**Mind Gym (Relaxation)**
+1. Breathing Bubbles
+2. Grounding Garden
+3. Cloud Watching
+4. Calm Colors
 
-    -- Barrier Assessment
-    assessmentComplete = false,
-    assessmentAnswers = {},
-    topBarriers = {},
-    assignedQuest = "",
+**Action Zone**
+5. Endless Runner
+6. Simon Says Workout
+7. Bubble Pop
+8. Dance Party
+9. Obstacle Course
 
-    -- Quest Progress
-    questProgress = {
-        ActiveAdventures = {lessonsComplete = 0, currentUnit = 1},
-        -- ... other quests
-    },
-
-    -- Castle
-    unlockedRooms = {"bedroom"},
-    furniture = {},
-    avatar = {outfit = "default", accessories = {}},
-    stickers = {},
-
-    -- World Progress
-    unlockedWorlds = {"sunny_meadow"},
-    npcProgress = {
-        -- NPC ID = conversations completed
-    },
-
-    -- Arcade
-    highScores = {},
-    dailyChallengesComplete = {},
-}
-```
+**Learning Lab**
+10. Cooking Sim
+11. Category Sorter
+12. Trivia Detective
+13. Spelling Sprint
 
 ---
 
-## Content Requirements Summary
+## Progression Summary
 
-| Content Type | Count | Status |
-|--------------|-------|--------|
-| Quest Lessons | 1,000 (100 × 10) | Need content |
-| Trivia Questions | 5,000 (5 × 1000) | Need content |
-| NPCs | 54 (9 × 6 worlds) | Need designs |
-| NPC Conversations | 540 (10 × 54) | Need scripts |
-| Mini-Games | 13 | Need design docs |
-| Furniture Items | ~100+ | Need list |
-| Avatar Items | ~50+ | Need list |
-| Lumo Accessories | ~30+ | Need list |
+| Level | Unlocks |
+|-------|---------|
+| 1 | Meadow, Castle (3 rooms), Classroom, World 1 |
+| 3-10 | More Castle rooms |
+| 10 | World 2: Mindful Mountain |
+| 15 | World 3: Nutrition Village |
+| 20 | World 4: Active Island |
+| 30 | World 5: Friendship Forest |
+| 40 | World 6: Resilience Realm |
+| 50 | Legendary Suite, Legendary Lumo |
+
+---
+
+## Content Needed to Build
+
+| Content | Count | Status |
+|---------|-------|--------|
+| Quest Lessons | 1,000 | ❓ Need from you |
+| Trivia Questions | 5,000 | ❓ Need from you |
+| NPC Characters | 54 | ❓ Need from you |
+| NPC Dialogue | 540 convos | ❓ Need from you |
+| Furniture Items | ~100 | ❓ Need list |
+| Avatar Items | ~50 | ❓ Need list |
+| Dragon Variants | ~10 | ❓ Need list |
+
+---
+
+## Technical Systems (I Can Build Now)
+
+| System | Status |
+|--------|--------|
+| ✅ Barrier Assessment | Ready (12 questions, scoring, routing) |
+| ✅ Care Loop | Ready (emotion logic, 72hr decay) |
+| ✅ XP/Coin/Level System | Ready |
+| ✅ Data Persistence | Ready |
+| ✅ Quest Framework | Ready (needs lesson content) |
+| ✅ NPC Dialogue System | Ready (needs scripts) |
+| ✅ Shop System | Ready (needs item list) |
