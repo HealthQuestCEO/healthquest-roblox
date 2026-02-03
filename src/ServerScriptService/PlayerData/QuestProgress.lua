@@ -16,6 +16,15 @@
     3. See top 3 quest recommendations
     4. Pick one quest (included in the 400 Robux)
     5. Start quest
+
+    COIN REWARDS (diminishing returns on retakes):
+    - 1st time completing quest = 25 coins per lesson
+    - 2nd time (1st retake) = 15 coins per lesson
+    - 3rd+ time (2nd+ retake) = 10 coins per lesson
+
+    Note: Emotion guess from Care Loop = 10 coins (up to 3/day, handled separately)
+
+    This encourages buying new barriers to keep Lumo fed!
 ]]
 
 local DataStoreService = game:GetService("DataStoreService")
@@ -42,6 +51,9 @@ local DEFAULT_DATA = {
     purchasedBarriers = {},       -- Barrier IDs purchased with Robux
     lastBarrierResults = nil,     -- Most recent barrier results (top 3 quests)
 
+    -- Quest completion counts (for diminishing coin rewards)
+    questCompletionCount = {},    -- {NutriQuest = 2, MindQuest = 1} = times fully completed
+
     -- Stats
     totalLessonsCompleted = 0,
     totalQuestsCompleted = 0,
@@ -56,6 +68,11 @@ local DEFAULT_DATA = {
 -- ROBUX PRICES
 -- Only ONE price: barrier assessment includes quest selection
 local NEW_BARRIER_ROBUX_PRICE = 400   -- New barrier assessment (includes quest selection)
+
+-- COIN REWARDS PER LESSON (diminishing returns on retakes)
+local COINS_FIRST_TIME = 25    -- First time doing quest
+local COINS_SECOND_TIME = 15   -- 1st retake
+local COINS_THIRD_PLUS = 10    -- 2nd+ retake
 
 -- Load player data
 function QuestProgress.load(player)
@@ -120,8 +137,34 @@ function QuestProgress.assignFirstQuest(player, data, questId, barrierId)
     return true, "Quest assigned"
 end
 
+-- Get coin reward for current quest based on completion history
+function QuestProgress.getLessonCoinReward(data)
+    local questId = data.currentQuest
+    if not questId then
+        return COINS_FIRST_TIME
+    end
+
+    -- Initialize if not exists
+    if not data.questCompletionCount then
+        data.questCompletionCount = {}
+    end
+
+    local completionCount = data.questCompletionCount[questId] or 0
+
+    if completionCount == 0 then
+        return COINS_FIRST_TIME      -- 25 coins (first time)
+    elseif completionCount == 1 then
+        return COINS_SECOND_TIME     -- 15 coins (1st retake)
+    else
+        return COINS_THIRD_PLUS      -- 10 coins (2nd+ retake)
+    end
+end
+
 -- Complete a lesson
 function QuestProgress.completeLesson(player, data)
+    -- Calculate coin reward BEFORE incrementing lesson
+    local coinsEarned = QuestProgress.getLessonCoinReward(data)
+
     data.currentLesson = data.currentLesson + 1
     data.totalLessonsCompleted = data.totalLessonsCompleted + 1
 
@@ -136,13 +179,23 @@ function QuestProgress.completeLesson(player, data)
     QuestProgress.save(player, data)
     return true, "Lesson completed", {
         lesson = data.currentLesson,
-        unit = data.currentUnit
+        unit = data.currentUnit,
+        coinsEarned = coinsEarned
     }
 end
 
 -- Complete entire quest
 function QuestProgress.completeQuest(player, data)
     local questId = data.currentQuest
+
+    -- Initialize completion count if needed
+    if not data.questCompletionCount then
+        data.questCompletionCount = {}
+    end
+
+    -- Increment completion count for this quest
+    local previousCount = data.questCompletionCount[questId] or 0
+    data.questCompletionCount[questId] = previousCount + 1
 
     -- Add to completed quests if not already there
     local alreadyCompleted = false
