@@ -1,0 +1,735 @@
+{
+  "metadata": {
+    "version": "4.0",
+    "portal": "Desert Oasis",
+    "theme": "Resilience & Strength",
+    "unlock_level": 55,
+    "cost": 25000,
+    "total_npcs": 8,
+    "conversations_per_npc": 10,
+    "total_conversations": 80,
+    "xp_per_conversation": 100
+  },
+  "npcs": [
+    {
+      "npc_id": "lizzy_lizard",
+      "npc_name": "Lizzy Lizard",
+      "emoji": "🦎",
+      "species": "Lizard",
+      "topic": "Adaptability & Resourcefulness",
+      "unlock_level": 57,
+      "conversations": [
+        {
+          "conversation_id": "lizard_01",
+          "sort_order": 1,
+          "question": "Ssssup, friend! I'm Lizzy! The desert can be really tough — super hot days, cold nights, not much water. But I've learned to adapt! Do you know what it means to adapt?",
+          "yes_response": "Great! Adapting means changing how we do things when our situation changes. Like how I hide in the shade when it's hot and sun myself when it's cold. Life changes, and we learn to change with it!",
+          "no_response": "Let me explain! Adapting means adjusting to new situations. When things change around us, we find new ways to handle them. Like me — I can't change the desert, but I can change what I do to survive it!",
+          "key_takeaway": "Adapting means adjusting how we do things when our situation changes."
+        },
+        {
+          "conversation_id": "lizard_02",
+          "sort_order": 2,
+          "question": "In the desert, there isn't always a lot of food or water. I have to be resourceful — using what I have in creative ways! Are you good at making do with what you have?",
+          "yes_response": "That's a valuable skill! Being resourceful means you don't need everything to be perfect to succeed. You can work with what's available. That's a superpower that will help you your whole life!",
+          "no_response": "It takes practice! Being resourceful means looking at what you DO have instead of what you don't. Got a broken toy? Maybe it becomes something new! Not enough of something? Get creative! You can learn this!",
+          "key_takeaway": "Being resourceful means creatively using what we have instead of focusing on what we lack."
+        },
+        {
+          "conversation_id": "lizard_03",
+          "sort_order": 3,
+          "question": "When the sand gets too hot, I don't just stand there and burn my feet — I move! Sometimes we have to change our plans quickly. Do you handle sudden changes well?",
+          "yes_response": "That's wonderful! Being able to shift gears quickly is so helpful. Life throws surprises at us, and those who can adjust quickly have an easier time. Keep that flexible spirit!",
+          "no_response": "Sudden changes can be really hard! Our brains like to know what's coming. But here's a tip: take a breath, look around, and ask 'What can I do RIGHT NOW?' Focus on the next small step, not everything at once.",
+          "key_takeaway": "When sudden changes happen, focusing on the next small step helps us adjust."
+        },
+        {
+          "conversation_id": "lizard_04",
+          "sort_order": 4,
+          "question": "I can change my color a little bit to blend in with rocks and sand. It helps me hide from danger! Do you ever change how you act in different situations — like being quiet at the library or loud at a playground?",
+          "yes_response": "That's smart adapting! Knowing how to behave in different situations is a really useful skill. It doesn't mean you're being fake — it means you're being aware of what each place needs. That's maturity!",
+          "no_response": "It's something you'll learn! Different places have different needs. We can be ourselves AND adjust how we show up. Like being quiet in a library but cheering loud at a game. Same you, different settings!",
+          "key_takeaway": "Adjusting our behavior to different situations is a helpful skill, not being fake."
+        },
+        {
+          "conversation_id": "lizard_05",
+          "sort_order": 5,
+          "question": "Here's something wild — if a predator grabs my tail, I can drop it and run away! I lose the tail, but I save my life. Sometimes we have to let go of something to save what matters most. Have you ever had to let something go?",
+          "yes_response": "That takes wisdom! Knowing what to hold onto and what to release is really important. Sometimes we have to give up something small to protect something bigger. You already understand this powerful lesson!",
+          "no_response": "It can be hard to think about! But sometimes we have to let go of small things to save bigger things — like leaving behind a toy to catch a bus, or skipping a game to help a friend. Knowing what matters most helps us choose.",
+          "key_takeaway": "Sometimes we need to let go of something small to protect what matters most."
+        },
+        {
+          "conversation_id": "lizard_06",
+          "sort_order": 6,
+          "question": "When I can't find bugs to eat, I eat plants instead. I'm flexible about my food! When your first choice isn't available, can you be okay with a different option?",
+          "yes_response": "That's great flexibility! Life doesn't always give us our first choice, and being okay with 'Plan B' keeps us happy and moving forward. You're an adaptable thinker!",
+          "no_response": "It can be disappointing when we can't have what we want! But being stuck on only one option can make us miss other good things. Next time something's not available, try thinking: 'What ELSE could work?'",
+          "key_takeaway": "Being open to different options helps us when our first choice isn't available."
+        },
+        {
+          "conversation_id": "lizard_07",
+          "sort_order": 7,
+          "question": "Desert life taught me that problems usually have more than one solution. When you face a problem, do you look for different ways to solve it?",
+          "yes_response": "What a great problem-solver you are! Looking for multiple solutions means you won't get stuck if the first one doesn't work. Keep that creative thinking going — it's one of the best tools you have!",
+          "no_response": "It's easy to get stuck on one idea! But most problems have several possible solutions. Try brainstorming — come up with three different ways to solve something before picking one. You might surprise yourself!",
+          "key_takeaway": "Most problems have more than one solution. Looking for different options helps us succeed."
+        },
+        {
+          "conversation_id": "lizard_08",
+          "sort_order": 8,
+          "question": "I've noticed that creatures who are too rigid — who can't bend or change — have a hard time in the desert. The flexible ones survive! Do you think being flexible is important?",
+          "yes_response": "Absolutely! Flexibility helps us handle whatever life throws at us. Rigid things break under pressure, but flexible things bend and bounce back. You understand something really important about life!",
+          "no_response": "It really is! Think about a tree — if it couldn't bend in the wind, it would snap. We're the same way. Being a little flexible helps us not break when things get tough. Bend, don't break!",
+          "key_takeaway": "Flexibility helps us handle challenges without breaking. Rigid things snap under pressure."
+        },
+        {
+          "conversation_id": "lizard_09",
+          "sort_order": 9,
+          "question": "Even though the desert is tough, I've learned to love it here! I found ways to thrive, not just survive. Do you believe you can do more than just 'get through' hard times — that you can actually grow from them?",
+          "yes_response": "That's a powerful belief! Hard times don't just have to be survived — they can actually make us stronger and teach us things. You have a growth mindset, and that will carry you far!",
+          "no_response": "It might be hard to imagine right now. But here's the truth: some of the strongest creatures I know became strong BECAUSE of hard times, not in spite of them. Challenges can build us up if we let them.",
+          "key_takeaway": "We can do more than survive hard times — we can grow and become stronger through them."
+        },
+        {
+          "conversation_id": "lizard_10",
+          "sort_order": 10,
+          "question": "It's been great basking in the sun with you! Remember: when life changes, you can change with it. Be flexible, be creative, and use what you have. Will you try to be adaptable when things get tricky?",
+          "yes_response": "Sssssplendid! You've got the heart of a desert lizard — flexible, resourceful, and ready for anything. No matter what changes come your way, you'll find a way through. Scurry on, my friend! 🦎",
+          "no_response": "That's okay! Adapting is a skill that grows over time. Start by noticing when things change and asking 'How can I work with this?' Small steps lead to big flexibility. I believe in you! 🦎",
+          "key_takeaway": "Adaptability is a skill we can develop. It helps us thrive no matter what changes come."
+        }
+      ]
+    },
+    {
+      "npc_id": "caravan_camel",
+      "npc_name": "Caravan Camel",
+      "emoji": "🐪",
+      "species": "Camel",
+      "topic": "Endurance & Perseverance",
+      "unlock_level": 59,
+      "conversations": [
+        {
+          "conversation_id": "camel_01",
+          "sort_order": 1,
+          "question": "Greetings, young traveler! I'm Caravan, and I've walked across many deserts. It takes a long time, but I never give up! Do you know what it means to persevere?",
+          "yes_response": "Wonderful! Perseverance means keeping going even when things are hard. It's not about being the fastest — it's about not stopping. That's how I cross deserts, and that's how you'll reach your goals too!",
+          "no_response": "Let me share! Perseverance means continuing even when things get difficult. When the journey is long and hot, I keep putting one hoof in front of the other. That steady effort is what gets me across the desert!",
+          "key_takeaway": "Perseverance means continuing forward even when things are difficult."
+        },
+        {
+          "conversation_id": "camel_02",
+          "sort_order": 2,
+          "question": "I can go many days without water by storing it in my body. When things get hard, having reserves helps! Do you have things that help you keep going — like rest, snacks, or encouraging words?",
+          "yes_response": "Those are your reserves! Just like my water, those things give you energy to keep going when the journey gets tough. Make sure to fill up your reserves when you can — you'll need them for the hard stretches!",
+          "no_response": "Everyone needs reserves! Think about what gives you energy — sleep, food, time with people you love, fun activities. These fill your tank so you can keep going when things are hard. Find your reserves!",
+          "key_takeaway": "Having reserves — like rest, food, and support — helps us keep going during hard times."
+        },
+        {
+          "conversation_id": "camel_03",
+          "sort_order": 3,
+          "question": "The desert can be very hot during the day and very cold at night. But I keep walking through both! When things get uncomfortable, do you keep going or do you want to stop?",
+          "yes_response": "Both answers are normal! Sometimes we push through, sometimes we need to stop. The key is knowing when rest is needed and when we're just avoiding discomfort. You're learning to tell the difference!",
+          "no_response": "That's very honest! Wanting to stop when things are uncomfortable is natural. But here's what I've learned: some discomfort is just part of the journey. We can handle more than we think if we take it step by step.",
+          "key_takeaway": "Some discomfort is part of any journey. We can often handle more than we think."
+        },
+        {
+          "conversation_id": "camel_04",
+          "sort_order": 4,
+          "question": "When I'm tired, I don't sprint — I just keep a steady pace. Slow and consistent beats fast and burnt out! Do you try to pace yourself when you have a lot to do?",
+          "yes_response": "That's wisdom! Going too fast at the start often means running out of energy before the finish. Your steady pace will get you further than rushing. You understand the power of pacing!",
+          "no_response": "It's easy to rush! We want to be done NOW. But pacing — going at a steady speed you can keep up — actually gets us further. Think tortoise and hare! Slow and steady really does win the race.",
+          "key_takeaway": "A steady, sustainable pace gets us further than rushing and burning out."
+        },
+        {
+          "conversation_id": "camel_05",
+          "sort_order": 5,
+          "question": "Sometimes the desert seems endless, and I can't see the oasis yet. But I trust it's there and keep walking. When you're working toward something and can't see progress, do you keep going?",
+          "yes_response": "That's real faith in yourself! When we can't see progress, it's easy to give up. But progress is often happening under the surface, like roots growing before a plant shows. Keep walking — your oasis is ahead!",
+          "no_response": "It's so hard when we can't see results! We wonder if it's worth it. But remember: just because you can't see the oasis doesn't mean it's not there. Sometimes we have to trust the journey a little longer.",
+          "key_takeaway": "Progress often happens before we can see it. Keep going even when results aren't visible yet."
+        },
+        {
+          "conversation_id": "camel_06",
+          "sort_order": 6,
+          "question": "I carry heavy loads across the desert. Some days the weight feels heavier than others. When your challenges feel heavy, what helps you keep carrying them?",
+          "yes_response": "Those are your strength sources! Knowing what helps you carry the weight — whether it's people, rest, hope, or something else — is important. Turn to those things when the load feels too heavy.",
+          "no_response": "It's worth thinking about! For me, it's remembering why the journey matters and knowing I'll eventually rest. What could help you? Friends? Breaks? Hope? Finding your support makes heavy loads lighter.",
+          "key_takeaway": "Knowing what helps us when things feel heavy gives us strength to keep going."
+        },
+        {
+          "conversation_id": "camel_07",
+          "sort_order": 7,
+          "question": "Every step in the desert looks the same — sand, sand, more sand! But each step actually gets me closer to my destination. Do you believe that small efforts add up, even when they don't seem to matter?",
+          "yes_response": "Yes! Each tiny step matters, even when it feels pointless. One grain of sand doesn't look like much, but together they make a whole desert! Your small efforts are building something big. Trust the process!",
+          "no_response": "It's hard to feel that way sometimes! When progress is invisible, small efforts seem useless. But trust me — I've crossed whole deserts one step at a time. Your small efforts ARE adding up, even if you can't see it yet.",
+          "key_takeaway": "Small, consistent efforts add up to big results over time, even when progress isn't visible."
+        },
+        {
+          "conversation_id": "camel_08",
+          "sort_order": 8,
+          "question": "Sometimes I fall down in the sand. It happens! But I always get back up. When you fail or fall, do you get back up and try again?",
+          "yes_response": "That's the spirit of a true traveler! Falling isn't failing — staying down is. Every time you get back up, you're showing strength. You're already a champion at perseverance!",
+          "no_response": "It can be hard to get up after a fall. We feel tired or embarrassed. But here's what I know: the ones who reach the oasis aren't the ones who never fell — they're the ones who got back up. You can too.",
+          "key_takeaway": "Falling down isn't failure. Getting back up is what counts."
+        },
+        {
+          "conversation_id": "camel_09",
+          "sort_order": 9,
+          "question": "On the longest journeys, I focus on just the next step, not the whole distance. It would be too overwhelming otherwise! Do you break big challenges into smaller pieces?",
+          "yes_response": "That's smart thinking! A huge journey becomes manageable when we focus on just the next step. You won't get overwhelmed because you're not trying to do everything at once. One step at a time!",
+          "no_response": "It's a helpful trick! When something feels too big, ask yourself: 'What's just ONE thing I can do right now?' Focus only on that. Then the next thing. Big journeys are just lots of small steps in a row!",
+          "key_takeaway": "Breaking big challenges into smaller steps makes them feel more manageable."
+        },
+        {
+          "conversation_id": "camel_10",
+          "sort_order": 10,
+          "question": "Our walk together has been meaningful! Remember: keep going, pace yourself, and trust the journey. Will you persevere when your path gets long and difficult?",
+          "yes_response": "You have the heart of a camel — strong, steady, and unstoppable! No desert is too wide for someone who keeps walking. One step at a time, you'll reach every oasis. Journey on, brave traveler! 🐪",
+          "no_response": "That's okay! Perseverance is built one step at a time. Start with small things — finishing a book, practicing a skill. Each time you keep going, you're training your perseverance muscles. I believe in you! 🐪",
+          "key_takeaway": "Perseverance means continuing one step at a time. Anyone can build this strength gradually."
+        }
+      ]
+    },
+    {
+      "npc_id": "sky_hawk",
+      "npc_name": "Sky Hawk",
+      "emoji": "🦅",
+      "species": "Hawk",
+      "topic": "Perspective & Big-Picture Thinking",
+      "unlock_level": 61,
+      "conversations": [
+        {
+          "conversation_id": "hawk_01",
+          "sort_order": 1,
+          "question": "Greetings, earthbound friend! I'm Sky Hawk. From up here, I can see for miles! Things look different from high up — smaller problems seem tinier, and I can see paths that are hidden on the ground. Have you ever noticed that problems look different depending on how you look at them?",
+          "yes_response": "You have wise eyes! The same situation can look very different depending on our perspective. A problem that seems huge up close might look small from far away. Learning to shift your view is a powerful skill!",
+          "no_response": "It's an interesting thing to notice! Imagine standing right in front of a wall — it seems impossible to get past. But from above, you might see there's a door just a few steps away. Perspective changes everything!",
+          "key_takeaway": "Our perspective — how we look at something — changes how big or small problems seem."
+        },
+        {
+          "conversation_id": "hawk_02",
+          "sort_order": 2,
+          "question": "When I'm flying high, I can see the big picture — the whole desert, the mountains, the rivers. When you have a problem, do you try to see the 'big picture' or do you focus on just what's right in front of you?",
+          "yes_response": "Seeing the big picture helps so much! When we zoom out, we notice things we missed and remember what really matters. And focusing on what's in front of us is useful too — the key is knowing when to do each!",
+          "no_response": "Both are useful at different times! When we're stuck, zooming out to see the big picture can help us find new solutions. When we're overwhelmed, focusing on just the next step helps. Try using both views!",
+          "key_takeaway": "Zooming out to see the big picture and focusing on what's close both help in different situations."
+        },
+        {
+          "conversation_id": "hawk_03",
+          "sort_order": 3,
+          "question": "From high above, I can see that one small patch of dry land is surrounded by beautiful forests and rivers. The hard part isn't the whole world! When something bad happens, do you sometimes forget that good things still exist around it?",
+          "yes_response": "That happens to almost everyone! When something goes wrong, it can fill our whole view. But just like that dry patch in my view, the hard thing is usually just ONE part of your life. The good parts are still there!",
+          "no_response": "That's a great perspective to have! Remembering that one hard thing isn't EVERYTHING helps us stay balanced. You're already good at keeping the good stuff in view, even when something is hard.",
+          "key_takeaway": "Hard times are usually just one part of life. Good things still exist around them."
+        },
+        {
+          "conversation_id": "hawk_04",
+          "sort_order": 4,
+          "question": "Sometimes I ask myself: 'Will this matter in a week? In a year? In ten years?' It helps me know what's really important. Do you ever think about whether something will matter later?",
+          "yes_response": "That's such a wise question to ask! Some things feel huge right now but won't matter at all later. Knowing the difference helps us save our worry for the things that truly count. You're thinking like a hawk!",
+          "no_response": "Try it next time something upsets you! Ask yourself: 'Will I care about this next week? Next year?' If the answer is no, maybe it's not worth too much worry. This question helps us see what really matters.",
+          "key_takeaway": "Asking 'will this matter later?' helps us figure out what's truly important."
+        },
+        {
+          "conversation_id": "hawk_05",
+          "sort_order": 5,
+          "question": "From up here, I can see that everyone is on their own journey — ants carrying food, rabbits finding homes, lizards seeking shade. Everyone has their own struggles! When you're having a hard time, do you remember that others are too?",
+          "yes_response": "That's a comforting perspective! We're not alone in having struggles — everyone is carrying something. This doesn't make our problems less real, but it reminds us we're all in this together. Compassion connects us!",
+          "no_response": "It's easy to feel alone when we're struggling! But from my view, I see everyone facing their own challenges. Remembering this helps us feel less alone and more compassionate — to ourselves AND others.",
+          "key_takeaway": "Everyone has struggles. Remembering this helps us feel less alone and more compassionate."
+        },
+        {
+          "conversation_id": "hawk_06",
+          "sort_order": 6,
+          "question": "I see that paths twist and turn before reaching destinations. What looks like going backward might actually be going around an obstacle! When something doesn't go the way you planned, do you think it might still lead somewhere good?",
+          "yes_response": "What a hopeful way to see things! Sometimes the path we thought we wanted isn't the best one. Detours can lead to unexpected treasures. Trust that your journey is unfolding, even when it surprises you!",
+          "no_response": "It can be hard to believe when we're in the middle of a detour! But from above, I've seen so many paths that seemed wrong end up in beautiful places. Keep going — your destination might just look different than you imagined.",
+          "key_takeaway": "Unexpected detours in life might lead to places even better than we planned."
+        },
+        {
+          "conversation_id": "hawk_07",
+          "sort_order": 7,
+          "question": "When I focus too narrowly on one thing, I might miss a mouse running right beside it! Being too focused can make us miss what's around us. Do you sometimes get so focused on a problem that you miss other things?",
+          "yes_response": "That happens to many of us! When we're locked onto a problem, we might miss solutions, miss fun, or miss people who want to help. Sometimes the best thing to do is look around and see what else is there!",
+          "no_response": "That's great awareness! Staying open to what's around us helps us notice solutions and opportunities we might otherwise miss. Keep that wide vision — it's a gift!",
+          "key_takeaway": "Being too focused on a problem can make us miss solutions and good things around us."
+        },
+        {
+          "conversation_id": "hawk_08",
+          "sort_order": 8,
+          "question": "Up high, I can see where the rain falls and where rivers form. Things that seem unconnected on the ground are actually connected! Do you notice how different parts of your life are connected to each other?",
+          "yes_response": "You're seeing the web of life! Sleep affects mood, friends affect happiness, food affects energy — everything connects. When something in your life isn't working, look at what's connected to it. The answer might be there!",
+          "no_response": "It's fascinating when you notice it! How you sleep affects your mood. Who you spend time with affects how you feel. Everything is connected! Seeing these connections helps us take better care of ourselves.",
+          "key_takeaway": "Different parts of our lives are connected. Understanding this helps us take better care of ourselves."
+        },
+        {
+          "conversation_id": "hawk_09",
+          "sort_order": 9,
+          "question": "Different animals see things differently. A mouse sees close-up, a hawk sees far away, a fish sees through water! Do you try to see things from other creatures' points of view?",
+          "yes_response": "That's called empathy, and it's a beautiful gift! When we try to see through others' eyes, we understand them better and connect more deeply. You're already practicing something really important!",
+          "no_response": "It's a wonderful skill to practice! When you disagree with someone, try asking: 'How might they see this?' You don't have to agree, but understanding their view helps you respond with more wisdom.",
+          "key_takeaway": "Trying to see things from others' perspectives helps us understand and connect better."
+        },
+        {
+          "conversation_id": "hawk_10",
+          "sort_order": 10,
+          "question": "It's been an honor to soar with you! Remember: when things feel big, try zooming out. When you're stuck, try a different view. Will you practice seeing the big picture?",
+          "yes_response": "You have the eyes of a hawk now! When things feel heavy, remember to fly up and see the bigger view. Your problems are just one small part of a beautiful, big world. Soar high, friend! 🦅",
+          "no_response": "That's okay! Shifting perspective takes practice. Start small — next time something bothers you, try asking 'How big is this really?' Over time, you'll learn to fly above the small stuff. I believe in you! 🦅",
+          "key_takeaway": "Practicing a bigger perspective helps us handle challenges with more wisdom and calm."
+        }
+      ]
+    },
+    {
+      "npc_id": "scout_scorpion",
+      "npc_name": "Scout Scorpion",
+      "emoji": "🦂",
+      "species": "Scorpion",
+      "topic": "Healthy Caution & Risk Assessment",
+      "unlock_level": 63,
+      "conversations": [
+        {
+          "conversation_id": "scorpion_01",
+          "sort_order": 1,
+          "question": "Hey there, I'm Scout! Don't worry — I'm friendly! I know I look a little scary, but I'm very careful about when I use my stinger. Being cautious keeps me safe! Are you a careful person?",
+          "yes_response": "Being careful is smart! It doesn't mean being scared of everything — it means thinking before acting. Looking both ways before crossing the street, for example. Your caution helps keep you safe!",
+          "no_response": "That's okay! Some of us are more adventurous. But a little caution is helpful for everyone. It doesn't mean being afraid — it just means thinking ahead to stay safe. Even adventurers plan!",
+          "key_takeaway": "Being cautious means thinking before acting to stay safe, not being scared of everything."
+        },
+        {
+          "conversation_id": "scorpion_02",
+          "sort_order": 2,
+          "question": "Before I go anywhere new, I check it out first. Is it safe? Are there predators? I ask questions before jumping in. Do you think about risks before trying something new?",
+          "yes_response": "That's very wise! Thinking ahead about what could go wrong helps us prepare and stay safe. You can still try new things — you're just being smart about it. That's called risk assessment!",
+          "no_response": "Jumping right in can be exciting! But taking a moment to think about risks can save us from trouble. You can still be adventurous — just pause for a quick safety check first. It only takes a second!",
+          "key_takeaway": "Thinking about risks before trying something new helps us prepare and stay safe."
+        },
+        {
+          "conversation_id": "scorpion_03",
+          "sort_order": 3,
+          "question": "There's a difference between being cautious and being scared. Cautious means being careful and thoughtful. Scared means avoiding everything because of fear. Do you know the difference?",
+          "yes_response": "That's an important difference to understand! Being cautious lets us still do things — we just do them carefully. Being scared makes us miss out on everything. Aim for cautious, not scared!",
+          "no_response": "Here's how I think about it: cautious means 'let me check if this is safe before I do it.' Scared means 'I won't do it because something bad might happen.' Cautious says yes with care. Scared just says no.",
+          "key_takeaway": "Caution is careful and thoughtful. Fear avoids everything. We can be careful without being ruled by fear."
+        },
+        {
+          "conversation_id": "scorpion_04",
+          "sort_order": 4,
+          "question": "I only use my stinger when I really need to protect myself. Using it all the time would waste my energy! Do you save your energy for what really matters?",
+          "yes_response": "Smart thinking! We don't need to react to every little thing. Saving our energy — whether it's our emotions, time, or effort — for what truly matters helps us be stronger when it counts!",
+          "no_response": "It's something to think about! If I stung at every shadow, I'd be exhausted. Same with us — if we get upset at every little thing, we have nothing left for the big stuff. Choose your battles wisely!",
+          "key_takeaway": "Saving our energy for what truly matters helps us be stronger when it really counts."
+        },
+        {
+          "conversation_id": "scorpion_05",
+          "sort_order": 5,
+          "question": "When something feels wrong in my gut, I pay attention. That feeling is often my body telling me something important! Do you listen to your gut feelings?",
+          "yes_response": "Gut feelings are powerful! They're your body's way of sending you a message. Sometimes your gut knows something before your brain figures it out. Keep listening to those feelings — they're trying to help you!",
+          "no_response": "Your gut is smarter than you might think! If something feels weird or wrong, pay attention. You don't have to know WHY it feels off — just trust that the feeling matters. Your body is trying to protect you.",
+          "key_takeaway": "Gut feelings are our body's way of sensing something important. We should pay attention to them."
+        },
+        {
+          "conversation_id": "scorpion_06",
+          "sort_order": 6,
+          "question": "Sometimes I make mistakes — I'm too cautious and miss a good opportunity. Other times I'm not cautious enough and get in trouble! Do you ever struggle to find the right balance between being careful and taking chances?",
+          "yes_response": "Finding that balance is tricky for everyone! Too cautious and we miss good things. Not cautious enough and we get hurt. It's something we keep learning our whole lives. You're not alone in that struggle!",
+          "no_response": "If it ever becomes tricky, remember: there's no perfect formula. Sometimes we'll be too careful, sometimes not enough. That's okay! We learn from both. The goal is to keep adjusting and improving.",
+          "key_takeaway": "Balancing caution and risk-taking is something we all keep learning throughout life."
+        },
+        {
+          "conversation_id": "scorpion_07",
+          "sort_order": 7,
+          "question": "When I'm not sure if something is safe, I ask older scorpions who've been around longer. They have experience! When you're unsure about something, do you ask for advice?",
+          "yes_response": "That's so smart! People who have more experience can share what they've learned. You don't have to make every mistake yourself — you can learn from others. Keep asking for advice when you need it!",
+          "no_response": "Asking for advice can feel hard, but it's actually really helpful! Parents, teachers, and older friends have already figured out some things you're just learning. Their experience can help you make better choices.",
+          "key_takeaway": "Asking experienced people for advice helps us make better choices."
+        },
+        {
+          "conversation_id": "scorpion_08",
+          "sort_order": 8,
+          "question": "I've learned that not every danger is obvious. Some threats hide in plain sight! Do you know that sometimes things that seem safe can be risky, and things that seem scary can be safe?",
+          "yes_response": "You see beneath the surface! Appearances can be tricky. That's why it's important to learn and ask questions rather than just judging by how things look. You're already thinking critically!",
+          "no_response": "It's something to remember! A friendly stranger might not be safe. A big scary dog might be very gentle. Learning to look deeper than the surface helps us judge situations more accurately. Ask questions, look for clues!",
+          "key_takeaway": "Appearances can be deceiving. We should look beyond the surface to assess risks accurately."
+        },
+        {
+          "conversation_id": "scorpion_09",
+          "sort_order": 9,
+          "question": "After something doesn't go well, I think about what I could do differently next time. It helps me be more careful in the future! Do you learn from things that go wrong?",
+          "yes_response": "That's how we get wiser! Every mistake or problem teaches us something if we pay attention. You're already building wisdom by looking back and learning. Keep reflecting — it makes you smarter over time!",
+          "no_response": "It can be hard to look back at things that went wrong — it feels bad! But there's often a lesson hiding there. Try asking: 'What could I do differently next time?' It helps turn mistakes into teachers.",
+          "key_takeaway": "Reflecting on what went wrong helps us learn and make better choices in the future."
+        },
+        {
+          "conversation_id": "scorpion_10",
+          "sort_order": 10,
+          "question": "Our time together has been great! Remember: being cautious isn't about being afraid. It's about being smart. Will you practice thinking ahead and trusting your gut?",
+          "yes_response": "You've got the wisdom of a desert scout! Be brave AND be smart. Trust your gut, think ahead, and ask for advice when you need it. You'll navigate life's risks wisely! Scuttle safely, friend! 🦂",
+          "no_response": "That's okay! Caution grows with experience. Just try to pause before big decisions and ask 'Is this safe?' Over time, you'll get better at spotting risks. I believe in your growing wisdom! 🦂",
+          "key_takeaway": "Healthy caution means being smart, not fearful. Thinking ahead and trusting our gut keeps us safe."
+        }
+      ]
+    },
+    {
+      "npc_id": "cactus_carl",
+      "npc_name": "Cactus Carl",
+      "emoji": "🌵",
+      "species": "Cactus",
+      "topic": "Protecting Your Energy & Self-Care",
+      "unlock_level": 65,
+      "conversations": [
+        {
+          "conversation_id": "cactus_01",
+          "sort_order": 1,
+          "question": "Howdy, partner! I'm Cactus Carl! See these spines of mine? They help protect me and keep my water inside. In the desert, I have to protect my energy! Do you know what it means to protect your energy?",
+          "yes_response": "You're already wise! Protecting your energy means making sure you don't run empty. We only have so much energy each day, and how we use it matters. Taking care of yourself helps you have enough for what's important!",
+          "no_response": "Let me explain! We all have a limited amount of energy — for our bodies and our feelings. Protecting your energy means not letting things drain you dry. Like me saving water, you need to save your energy for what matters!",
+          "key_takeaway": "We have limited energy. Protecting it means not letting ourselves get drained."
+        },
+        {
+          "conversation_id": "cactus_02",
+          "sort_order": 2,
+          "question": "I can't share my water with everyone who passes by, or I'd dry up! Sometimes we have to say 'no' to protect ourselves. Is it hard for you to say no to people?",
+          "yes_response": "It's hard for many folks! We want to be nice and helpful. But saying yes to everything means we have nothing left for ourselves. Saying no sometimes isn't mean — it's necessary! Your energy matters too.",
+          "no_response": "That's a useful skill! Being able to say no when you need to helps you protect your energy for what really matters. Keep taking care of yourself — it actually helps you help others more in the long run!",
+          "key_takeaway": "Saying no sometimes is necessary to protect our energy. It's not mean, it's self-care."
+        },
+        {
+          "conversation_id": "cactus_03",
+          "sort_order": 3,
+          "question": "I don't just survive in the desert — I store water during rare rainstorms so I have enough for the dry times! Do you do things to 'fill up' your energy when you can?",
+          "yes_response": "That's so important! Things like sleeping well, eating good food, doing fun activities, spending time with people you love — these fill up your tank. Keep doing those things so you have reserves for hard times!",
+          "no_response": "It's something to think about! What fills you up? Rest? Fun? Time alone? Time with friends? Whatever it is, make sure you do those things. You're storing up energy for when you really need it!",
+          "key_takeaway": "We need to do things that fill up our energy so we have reserves for difficult times."
+        },
+        {
+          "conversation_id": "cactus_04",
+          "sort_order": 4,
+          "question": "Some things drain my water faster — hot sun, dry wind. I stay away from those when I can. What are things that drain YOUR energy? Do you know what tires you out?",
+          "yes_response": "Knowing your drains is half the battle! When you know what exhausts you, you can limit it or prepare for it. Some drains we can avoid, some we can't — but awareness helps us manage!",
+          "no_response": "It's worth figuring out! For some, it's big crowds. For others, it's arguments or too much screen time. Pay attention to what leaves you feeling empty, and try to limit those things when you can.",
+          "key_takeaway": "Knowing what drains our energy helps us avoid or manage those things better."
+        },
+        {
+          "conversation_id": "cactus_05",
+          "sort_order": 5,
+          "question": "Taking care of myself isn't selfish — if I dried up, I couldn't provide shade or fruit to the animals who depend on me! Do you think taking care of yourself helps you take care of others?",
+          "yes_response": "Exactly! When we're running on empty, we can't help anyone. Taking care of yourself first means you have more to give. It's like putting on your own oxygen mask before helping others. Self-care helps everyone!",
+          "no_response": "It really does! Think about it — when you're tired and grumpy, it's harder to be kind or helpful. But when you're rested and happy, you have so much more to give. Taking care of yourself benefits everyone around you!",
+          "key_takeaway": "Taking care of ourselves isn't selfish. It gives us more energy to help others."
+        },
+        {
+          "conversation_id": "cactus_06",
+          "sort_order": 6,
+          "question": "I bloom beautiful flowers, but only when conditions are right. I don't force myself to bloom when I'm stressed! Do you push yourself hard even when you're really tired?",
+          "yes_response": "Many of us do! We think we should keep going no matter what. But pushing too hard when we're exhausted can actually hurt us. It's okay to rest and bloom later when you're ready. Your timing matters!",
+          "no_response": "That's healthy! Knowing when to rest instead of pushing harder is wisdom. You understand that rest isn't laziness — it's preparation for your next bloom. Keep honoring what your body needs!",
+          "key_takeaway": "Pushing too hard when we're exhausted can hurt us. It's okay to rest and bloom later."
+        },
+        {
+          "conversation_id": "cactus_07",
+          "sort_order": 7,
+          "question": "My spines aren't mean — they're just boundaries that protect me! Having boundaries isn't about being unfriendly. Do you have boundaries that help protect your energy?",
+          "yes_response": "That's wonderful! Boundaries are how we teach people how to treat us. They're not walls — they're guidelines. Your boundaries help you stay healthy and energized. Keep them up!",
+          "no_response": "Boundaries can be hard to set! But they're really important. A boundary might be 'I need quiet time after school' or 'Please don't yell at me.' These protect your energy without being mean. You deserve boundaries!",
+          "key_takeaway": "Boundaries protect our energy and teach others how to treat us. They're healthy, not mean."
+        },
+        {
+          "conversation_id": "cactus_08",
+          "sort_order": 8,
+          "question": "Even I get prickly when I'm too stressed! When I don't take care of myself, I'm not my best. Do you notice that you're less patient or kind when you're worn out?",
+          "yes_response": "That's very self-aware! When we're depleted, we get snappy, sad, or frustrated more easily. Noticing this helps us realize when we need to refill. Your mood is often telling you something about your energy level!",
+          "no_response": "Pay attention next time you're really tired! You might notice you get upset more easily or feel less patient. That's your body's way of saying 'I need care!' Listening to these signs helps us stay balanced.",
+          "key_takeaway": "When we're worn out, we're less patient and kind. This is a sign we need to refill our energy."
+        },
+        {
+          "conversation_id": "cactus_09",
+          "sort_order": 9,
+          "question": "Rest is just as important as action. I spend lots of time just standing still, and that's okay! Do you give yourself permission to rest without feeling guilty?",
+          "yes_response": "That's so healthy! Rest isn't laziness — it's part of being alive. Just like you need to breathe out after breathing in, you need rest after activity. Keep giving yourself that permission!",
+          "no_response": "Many of us feel guilty for resting! We think we should always be doing something. But rest is how we recharge. Without it, we wilt. Give yourself permission to rest — you've earned it and you need it!",
+          "key_takeaway": "Rest isn't laziness. It's a necessary part of life that helps us recharge."
+        },
+        {
+          "conversation_id": "cactus_10",
+          "sort_order": 10,
+          "question": "It's been lovely standing here with you! Remember: protect your energy, fill up when you can, and rest without guilt. Will you take good care of yourself, partner?",
+          "yes_response": "Yeehaw! You've got the heart of a wise desert cactus. Take care of yourself first, and you'll have plenty to share with others. Bloom when you're ready, rest when you need to! Stand tall, friend! 🌵",
+          "no_response": "That's okay, partner! Self-care is a skill that grows over time. Start small — one extra hour of sleep, one thing that fills you up. Little by little, you'll learn to protect that precious energy of yours! 🌵",
+          "key_takeaway": "Protecting our energy and practicing self-care helps us live better and give more to others."
+        }
+      ]
+    },
+    {
+      "npc_id": "serena_snake",
+      "npc_name": "Serena Snake",
+      "emoji": "🐍",
+      "species": "Snake",
+      "topic": "Shedding Old Patterns & Growth",
+      "unlock_level": 67,
+      "conversations": [
+        {
+          "conversation_id": "snake_01",
+          "sort_order": 1,
+          "question": "Hisssss-hello, friend! I'm Serena! Did you know that I shed my skin as I grow? My old skin gets too tight, so I leave it behind and reveal a fresh new me underneath! Have you ever outgrown something — like old clothes or old ways of doing things?",
+          "yes_response": "That's part of growing! Just like my old skin doesn't fit anymore, sometimes our old habits, beliefs, or ways of being don't fit who we're becoming. It's natural to outgrow things — it means you're getting bigger!",
+          "no_response": "You will! As you grow, things that once fit — clothes, ideas, habits, even friendships — might start to feel too tight. That's not bad, it's just growth. When things don't fit anymore, it might be time to shed them!",
+          "key_takeaway": "Outgrowing things is natural. It means we're growing and changing."
+        },
+        {
+          "conversation_id": "snake_02",
+          "sort_order": 2,
+          "question": "Shedding my skin is uncomfortable — it's itchy and takes time! But underneath is beautiful new skin. Change can be uncomfortable, can't it?",
+          "yes_response": "It really can! Change often feels weird or even painful while it's happening. But just because something is uncomfortable doesn't mean it's bad. Sometimes discomfort is the price of growth. The new skin underneath is worth it!",
+          "no_response": "If change ever does feel uncomfortable for you, remember that's normal! Growth often feels strange while it's happening. The itchy, awkward part is temporary — the new you underneath is worth the wait.",
+          "key_takeaway": "Change and growth can feel uncomfortable, but the discomfort is temporary and worth it."
+        },
+        {
+          "conversation_id": "snake_03",
+          "sort_order": 3,
+          "question": "I can't keep my old skin — it has to come off completely before I can move freely again. Sometimes we have to fully let go of old things before we can embrace new ones. Is letting go of old things hard for you?",
+          "yes_response": "Letting go is hard for almost everyone! Old things feel familiar, even if they don't fit anymore. But holding onto what no longer serves us can hold us back. Sometimes letting go is the bravest thing we can do.",
+          "no_response": "That's a wonderful ability! Being able to let go when it's time frees you to move forward. Not everyone can do that easily, so treasure that skill. It will serve you well as you grow!",
+          "key_takeaway": "Sometimes we must fully let go of old things before we can embrace the new."
+        },
+        {
+          "conversation_id": "snake_04",
+          "sort_order": 4,
+          "question": "Not just my body grows — my habits and behaviors change too. Things I did as a young snake don't work for me now! Do you notice that what works for you changes as you grow older?",
+          "yes_response": "You're already aware of this! What helped us at one stage of life might not work at another. Being willing to try new approaches as we grow is part of maturing. You're shedding old patterns beautifully!",
+          "no_response": "You'll start to notice! Maybe you used to need a nightlight but don't anymore. Or maybe an old way of handling problems doesn't work now. That's not failure — that's growth! Our strategies evolve as we do.",
+          "key_takeaway": "What works for us changes as we grow. Being willing to try new approaches is part of maturing."
+        },
+        {
+          "conversation_id": "snake_05",
+          "sort_order": 5,
+          "question": "After I shed, I'm a bit sensitive and vulnerable for a while. My new skin needs time to strengthen. After big changes in your life, do you give yourself time to adjust?",
+          "yes_response": "That's so wise! After shedding old things, we need time to settle into the new. Being gentle with ourselves during transitions helps us come out stronger. You understand the rhythm of change!",
+          "no_response": "It's something to try! After a big change — new school, new friend group, new anything — we need time to adjust. Be patient with yourself during these times. You're still growing your new skin!",
+          "key_takeaway": "After big changes, we need time to adjust. Being gentle with ourselves during transitions is important."
+        },
+        {
+          "conversation_id": "snake_06",
+          "sort_order": 6,
+          "question": "Some creatures think shedding means I'm losing a part of myself. But I'm not losing me — I'm becoming MORE of me! When you change and grow, do you worry about losing who you are?",
+          "yes_response": "That's a common fear! But here's the truth: you're not losing yourself when you grow. The core of you — your heart, your spirit — stays the same. You're just becoming a bigger, stronger version of yourself!",
+          "no_response": "That's a grounded feeling! Knowing that growth adds to us rather than taking away from us is powerful. You stay you, just with more experience, wisdom, and growth. Keep embracing change!",
+          "key_takeaway": "Growth doesn't mean losing ourselves. It means becoming more of who we truly are."
+        },
+        {
+          "conversation_id": "snake_07",
+          "sort_order": 7,
+          "question": "I can't rush my shedding — I have to wait until my body is ready. You can't force yourself to be ready for change either! Do you trust that you'll change when you're ready?",
+          "yes_response": "That's a peaceful trust! Change happens in its own time. We can prepare for it, but we can't force it. Trusting your own timing helps the process happen naturally. You're patient with your own growth!",
+          "no_response": "It's okay if this is hard! We often want to hurry growth or change. But some things can't be rushed. Trust that you're growing at the right pace for YOU. Your timing is your own.",
+          "key_takeaway": "We can't force ourselves to be ready for change. Growth happens in its own time."
+        },
+        {
+          "conversation_id": "snake_08",
+          "sort_order": 8,
+          "question": "After shedding, I see the world more clearly — my old skin was covering my eyes! Sometimes old beliefs or habits are covering our eyes too. Have you ever realized that something you believed wasn't actually true?",
+          "yes_response": "That's a powerful awakening! We all carry beliefs that seemed true but aren't. When we shed those old ideas, we see more clearly. Keep questioning and learning — you're removing the scales from your eyes!",
+          "no_response": "It might happen someday! Sometimes we believe things because everyone around us does, or because we always have. But as we grow, we might see things differently. Shedding old beliefs is part of growing wiser.",
+          "key_takeaway": "Old beliefs can cover our eyes. Questioning and growing helps us see more clearly."
+        },
+        {
+          "conversation_id": "snake_09",
+          "sort_order": 9,
+          "question": "My old skins are left behind, but they're not garbage — they show where I've been! Do you appreciate who you used to be, even if you've grown past it?",
+          "yes_response": "That's such a kind perspective! Your past selves — even the ones you've outgrown — were part of your journey. They got you here! Appreciating them while moving forward is healthy and whole.",
+          "no_response": "It's worth considering! We sometimes feel embarrassed by who we used to be. But that old you was doing their best. Thank your past self for getting you this far, even as you become someone new.",
+          "key_takeaway": "Our past selves helped us get where we are. We can appreciate them even as we grow beyond them."
+        },
+        {
+          "conversation_id": "snake_10",
+          "sort_order": 10,
+          "question": "This conversation has been sssspecial! Remember: growing means shedding what no longer fits. It's uncomfortable but beautiful. Will you embrace the changes you're going through?",
+          "yes_response": "Yesssss! You've got the wisdom of a snake. Growth means shedding, and shedding makes room for something new and better. Embrace each new skin, friend. The best version of you is still unfolding! 🐍",
+          "no_response": "That's okay — change can be scary! Start by just noticing what doesn't fit anymore. You don't have to rush the shedding. Trust your process, and when you're ready, let go. I believe in you! 🐍",
+          "key_takeaway": "Embracing change and shedding what no longer fits helps us become who we're meant to be."
+        }
+      ]
+    },
+    {
+      "npc_id": "spike_porcupine",
+      "npc_name": "Spike Porcupine",
+      "emoji": "🦔",
+      "species": "Porcupine",
+      "topic": "Gentle Strength & Softness",
+      "unlock_level": 69,
+      "conversations": [
+        {
+          "conversation_id": "porcupine_01",
+          "sort_order": 1,
+          "question": "Hey there, friend! I'm Spike! People see my quills and think I'm prickly all the time. But underneath, I'm really quite soft and gentle! Do people ever get the wrong idea about you?",
+          "yes_response": "That happens to so many of us! People see one thing and think they know everything. But there's always more underneath. The real you is more than what people first see. I understand!",
+          "no_response": "That's great if people see the real you! But if it ever happens, remember: you know who you really are. Others might see your quills, but you know about your soft belly. That's what matters most!",
+          "key_takeaway": "There's always more to us than what people first see. We know our true selves best."
+        },
+        {
+          "conversation_id": "porcupine_02",
+          "sort_order": 2,
+          "question": "I have strong quills AND a soft heart. Both are true about me! Do you know that being strong and being gentle aren't opposites — you can be both?",
+          "yes_response": "You understand something important! The strongest creatures I know are also gentle. It takes real strength to be kind, to be soft, to care about others. You're not weak when you're gentle — you're powerful!",
+          "no_response": "It might seem like they're opposites, but they're not! Being gentle takes courage. Being kind takes strength. The toughest creatures can also be the most tender. True strength includes softness!",
+          "key_takeaway": "Being strong and being gentle aren't opposites. True strength includes kindness and softness."
+        },
+        {
+          "conversation_id": "porcupine_03",
+          "sort_order": 3,
+          "question": "My quills protect me when I need protection, but I don't walk around poking everyone! I choose when to be sharp. Do you know when to be strong and when to be soft?",
+          "yes_response": "That's wisdom! Different situations call for different responses. Sometimes we need to be firm and strong. Other times we need to be gentle and yielding. Knowing which to use when is a real skill!",
+          "no_response": "It takes time to learn! The trick is paying attention to what each situation needs. Is this a time to stand firm? Or a time to be gentle? Both are right — it just depends on the moment.",
+          "key_takeaway": "Knowing when to be strong and when to be soft is wisdom. Different situations need different responses."
+        },
+        {
+          "conversation_id": "porcupine_04",
+          "sort_order": 4,
+          "question": "Some creatures think being soft is dangerous — they stay prickly all the time to protect themselves. But always being sharp pushes others away! Do you sometimes put up quills when you don't really need to?",
+          "yes_response": "We all do sometimes! When we've been hurt, we start expecting more hurt. But staying prickly all the time keeps even good things out. Learning when it's safe to soften lets good things come close.",
+          "no_response": "That's lovely! Knowing when you can lower your quills and let others in is a gift. Some creatures are so busy protecting themselves that they miss out on connection. You seem to have found balance!",
+          "key_takeaway": "Always being defensive pushes others away. Learning when it's safe to soften lets connection happen."
+        },
+        {
+          "conversation_id": "porcupine_05",
+          "sort_order": 5,
+          "question": "I've found that showing my soft side to friends makes our friendship stronger. Being vulnerable — showing who I really am — builds trust! Are you comfortable showing your softer side to people you trust?",
+          "yes_response": "That's wonderful! Being able to be vulnerable with trusted people is so important for real friendship. It takes courage to show our soft underbelly, but that's where the deepest connections happen!",
+          "no_response": "It can feel scary to show our soft parts! We worry about getting hurt. But with the right people — people who have earned our trust — being vulnerable creates deeper connections. Start small with safe people!",
+          "key_takeaway": "Showing our vulnerable side to trusted people builds deeper connections and friendships."
+        },
+        {
+          "conversation_id": "porcupine_06",
+          "sort_order": 6,
+          "question": "Some creatures think they have to be tough ALL the time to be respected. But I've found that showing gentleness actually makes others respect me more! Have you noticed this?",
+          "yes_response": "You've seen the truth! Always acting tough can actually look weak — like we have something to hide. True confidence includes kindness and gentleness. People respect authenticity more than constant toughness!",
+          "no_response": "Watch and you'll start to see it! The creatures who are only tough often seem scared underneath. The ones who can be gentle AND strong seem more confident and real. Gentleness is a sign of true strength!",
+          "key_takeaway": "Showing gentleness can earn more respect than always acting tough. It shows true confidence."
+        },
+        {
+          "conversation_id": "porcupine_07",
+          "sort_order": 7,
+          "question": "When I accidentally hurt someone with my quills, I feel really bad. I don't want to be hurtful — I'm just protecting myself! Do you ever hurt others when you're really just trying to protect yourself?",
+          "yes_response": "That happens to many of us! When we're scared or hurt, we sometimes lash out, and others get poked. Recognizing this is the first step. We can learn to protect ourselves without hurting others.",
+          "no_response": "That's good awareness! But if it ever happens, try to recognize it. Sometimes our fear or hurt makes us sharp with others. It helps to pause and ask: 'Am I being prickly because I'm scared?'",
+          "key_takeaway": "Sometimes we hurt others when we're really trying to protect ourselves. We can learn gentler ways to feel safe."
+        },
+        {
+          "conversation_id": "porcupine_08",
+          "sort_order": 8,
+          "question": "I'm learning that I don't have to choose between being strong and being kind. I can set boundaries AND be gentle about it. Do you know you can stand up for yourself in a kind way?",
+          "yes_response": "That's a powerful skill! We don't have to be mean to be strong. We can say no kindly. We can set limits with gentleness. Firmness and kindness aren't enemies — they work beautifully together!",
+          "no_response": "It's something worth practicing! You can say 'no' without being harsh. You can stand your ground without attacking. Something like 'I'm not okay with that, and I say that with kindness.' Gentle strength is powerful!",
+          "key_takeaway": "We can stand up for ourselves and set boundaries while still being kind and gentle."
+        },
+        {
+          "conversation_id": "porcupine_09",
+          "sort_order": 9,
+          "question": "The creatures I admire most are those who are strong enough to be gentle. It takes real courage to be soft! Do you see gentleness as a kind of bravery?",
+          "yes_response": "Yes! Being gentle in a world that often rewards toughness is incredibly brave. Choosing kindness when it's easier to be harsh, staying soft when others are sharp — that's courage. You see it clearly!",
+          "no_response": "Think about it! Anyone can be rough or harsh — that's easy. But staying kind when you're hurt, staying gentle when others are mean — that takes real strength. Softness in a hard world is true bravery!",
+          "key_takeaway": "Gentleness is a form of bravery. Staying soft in a hard world takes real courage."
+        },
+        {
+          "conversation_id": "porcupine_10",
+          "sort_order": 10,
+          "question": "Our time together has been lovely! Remember: you can be strong AND soft, firm AND kind. Your quills protect you, but your gentleness connects you. Will you embrace both your strength and your softness?",
+          "yes_response": "Wonderful! You've got the heart of a wise porcupine — prickly when needed, gentle when possible. That balance will serve you well in life. Stay soft inside, friend, even when life is hard! 🦔",
+          "no_response": "That's okay! Finding that balance takes time. Start by noticing when you're being prickly — do you really need to be? Sometimes we can put our quills down and let others closer. I believe in your gentle strength! 🦔",
+          "key_takeaway": "Embracing both our strength and our softness helps us protect ourselves while staying connected to others."
+        }
+      ]
+    },
+    {
+      "npc_id": "luna_bat",
+      "npc_name": "Luna Bat",
+      "emoji": "🌙",
+      "species": "Bat",
+      "topic": "Rest in Busy Times & Self-Compassion",
+      "unlock_level": 71,
+      "conversations": [
+        {
+          "conversation_id": "bat_01",
+          "sort_order": 1,
+          "question": "Hello, night friend! I'm Luna. While the desert is busy in the day, I'm resting — hanging upside down and sleeping! Rest is really important to me. Do you get enough rest?",
+          "yes_response": "That's wonderful! Rest is when our bodies heal and our minds sort through everything we've learned. Protecting your rest time is one of the best things you can do for yourself. Keep it up!",
+          "no_response": "You're not alone — many creatures don't rest enough! We're always busy, always doing. But without rest, our bodies and minds can't work their best. Finding ways to rest more will help everything!",
+          "key_takeaway": "Rest is essential for our bodies and minds to work well. It's not laziness — it's necessity."
+        },
+        {
+          "conversation_id": "bat_02",
+          "sort_order": 2,
+          "question": "I'm most active at night when it's cool and quiet. I've learned to work WITH my nature instead of against it! Do you know when you work best, and do you honor that?",
+          "yes_response": "That's wonderful self-knowledge! Some creatures think best in the morning, others at night. Some need quiet, others like noise. Working with your nature instead of against it helps you do your best work!",
+          "no_response": "It's worth figuring out! Pay attention to when you feel most alert and when you feel tired. Some of us are morning creatures, some are night ones. Working with your natural rhythms makes everything easier!",
+          "key_takeaway": "Knowing when and how we work best, and honoring that, helps us be more effective."
+        },
+        {
+          "conversation_id": "bat_03",
+          "sort_order": 3,
+          "question": "Even when the desert is busy and loud during the day, I take my rest anyway. I don't wait for perfect conditions! Do you wait for everything to be perfect before you take care of yourself?",
+          "yes_response": "Many of us do! 'I'll rest when I'm done.' 'I'll eat when I finish.' But there's always more to do! Taking care of yourself doesn't need perfect conditions. You deserve rest and care right in the middle of busy!",
+          "no_response": "That's healthy! You understand that we can't always wait for the perfect time. Life is always busy, so we have to make time for ourselves even when things aren't ideal. Keep taking care of yourself!",
+          "key_takeaway": "We can't wait for perfect conditions to rest. Taking care of ourselves happens in the middle of busy life."
+        },
+        {
+          "conversation_id": "bat_04",
+          "sort_order": 4,
+          "question": "Some creatures think I'm lazy because I sleep a lot. But sleeping IS my work during the day — it prepares me for my work at night! Do people ever think you're lazy when you're really just resting?",
+          "yes_response": "It can feel unfair when others don't understand! But you know what your body needs. Rest isn't laziness — it's preparation. Athletes rest to perform, students rest to learn. You're doing important work when you rest!",
+          "no_response": "That's good! But if it ever happens, remember: rest isn't lazy. It's how we recharge so we can do everything else. Ignore anyone who makes you feel bad for taking care of your needs!",
+          "key_takeaway": "Rest isn't laziness. It's how we prepare for everything else we need to do."
+        },
+        {
+          "conversation_id": "bat_05",
+          "sort_order": 5,
+          "question": "When I'm flying around at night and I get tired, I take little breaks. I don't push myself until I crash! Do you take breaks when you need them, or do you push through until you can't go anymore?",
+          "yes_response": "Which one sounds like you? If you take breaks, great! If you push until you crash, that's worth noticing. Taking small rests along the way prevents big crashes. It's actually MORE productive to pause!",
+          "no_response": "Good self-awareness! Many of us push until we collapse. But taking little breaks along the way actually helps us do more in the long run. Like sipping water throughout the day instead of waiting until we're dying of thirst!",
+          "key_takeaway": "Taking small breaks along the way prevents big crashes and helps us do more overall."
+        },
+        {
+          "conversation_id": "bat_06",
+          "sort_order": 6,
+          "question": "I've learned to be kind to myself. When I don't catch as many bugs as I wanted, I don't beat myself up — I just try again tomorrow. Are you kind to yourself when things don't go well?",
+          "yes_response": "Self-compassion is so valuable! We all have bad days and failures. Treating yourself kindly when things go wrong helps you bounce back faster. You're your own best friend. Keep being gentle with yourself!",
+          "no_response": "Many of us are hard on ourselves! We say things inside our heads that we'd never say to a friend. Try treating yourself the way you'd treat someone you love. Self-compassion isn't weakness — it helps us grow!",
+          "key_takeaway": "Being kind to ourselves when things go wrong helps us recover faster and try again."
+        },
+        {
+          "conversation_id": "bat_07",
+          "sort_order": 7,
+          "question": "Hanging upside down is how I relax — it might look strange to others, but it works for me! Do you have your own ways of relaxing that might seem unusual to others?",
+          "yes_response": "Whatever works for you is the right way! Relaxation isn't one-size-fits-all. Some creatures like quiet, some like music. Some need stillness, some need movement. Your way of recharging is valid!",
+          "no_response": "You might discover some! Relaxation looks different for everyone. Maybe you relax by drawing, or walking, or building things. There's no wrong way to rest — find what works for YOUR body and mind!",
+          "key_takeaway": "Relaxation looks different for everyone. What works for us is the right way."
+        },
+        {
+          "conversation_id": "bat_08",
+          "sort_order": 8,
+          "question": "Sometimes my mind is busy even when my body is resting. Worries swirl around! When that happens, I breathe slowly and let the thoughts float by like clouds. Does your mind stay busy even when you're resting?",
+          "yes_response": "That's so common! Our minds don't always turn off when we want them to. The trick is not to fight the thoughts — just notice them and let them pass. They're just thoughts, like clouds floating by. They'll move on.",
+          "no_response": "What a peaceful mind! If it ever does get busy, remember that thoughts are like clouds — they come and go. You don't have to hold onto them or push them away. Just watch them drift. This is called mindfulness!",
+          "key_takeaway": "When our minds are busy, we can let thoughts pass like clouds instead of fighting them."
+        },
+        {
+          "conversation_id": "bat_09",
+          "sort_order": 9,
+          "question": "Rest isn't just sleep — it's also doing things that fill me up instead of drain me. Play can be rest! What activities feel like rest for your soul, even if they're active?",
+          "yes_response": "You know your soul's rest! Maybe it's playing, creating, reading, or being with friends. These things might use energy, but they also GIVE energy. They're a different kind of rest. Keep doing what fills you!",
+          "no_response": "Something to explore! Rest isn't only about lying still. What makes you feel refreshed afterward? That's rest for your soul, even if you were moving or active. Find those things and treasure them!",
+          "key_takeaway": "Rest isn't just sleep. Activities that fill us up and refresh us are also forms of rest."
+        },
+        {
+          "conversation_id": "bat_10",
+          "sort_order": 10,
+          "question": "The moon is rising, and it's time for me to fly! Remember: rest is important, breaks are wise, and being kind to yourself is strength. Will you take better care of your rest and be gentle with yourself?",
+          "yes_response": "Beautiful! You've got the wisdom of a bat — knowing that rest isn't optional, it's essential. Take your breaks, speak kindly to yourself, and honor your need for peace. Fly gently through life, night friend! 🌙",
+          "no_response": "That's okay! Self-care is a practice. Start with one thing — maybe one more hour of sleep, or one kind thought about yourself. Small changes add up. You're worth taking care of! 🌙",
+          "key_takeaway": "Rest is essential, not optional. Being gentle with ourselves helps us navigate life better."
+        }
+      ]
+    }
+  ]
+}

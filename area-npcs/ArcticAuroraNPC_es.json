@@ -1,0 +1,739 @@
+{
+  "metadata": {
+    "version": "4.0",
+    "portal": "Aurora Ártica",
+    "theme": "Calma y Claridad",
+    "description": "Un mundo helado donde los animales árticos enseñan sobre la paz interior, la reflexión y encontrar fortaleza en la quietud.",
+    "unlock_level": 70,
+    "cost": 35000,
+    "total_npcs": 8,
+    "conversations_per_npc": 10,
+    "total_conversations": 80,
+    "xp_per_conversation": 100,
+    "language": "es",
+    "translated_from": "en",
+    "translated_at": "2026-01-30"
+  },
+  "npcs": [
+    {
+      "npc_id": "penny_penguin",
+      "npc_name": "Penny la Pingüina",
+      "emoji": "🐧",
+      "species": "Pingüino",
+      "topic": "Apoyo Comunitario y Pertenencia",
+      "unlock_level": 72,
+      "conversations": [
+        {
+          "conversation_id": "penguin_01",
+          "sort_order": 1,
+          "question": "¡Hola, amigo! ¡Soy Penny! Los pingüinos vivimos en grupos grandes llamados colonias. ¡Nos acurrucamos juntos para mantenernos calentitos en el frío! ¿Tienes un grupo de personas que te hacen sentir cálido y seguro?",
+          "yes_response": "¡Qué maravilloso! Tener personas a nuestro alrededor que nos quieren hace todo mejor. Como los pingüinos en un grupo, somos más fuertes y más cálidos juntos. ¡Valora tu colonia!",
+          "no_response": "¡Está bien! A veces toma tiempo encontrar nuestra colonia. Pero hay personas ahí afuera que se preocuparán por ti. ¡Sigue buscando — tu grupo te está esperando!",
+          "key_takeaway": "Tener una comunidad de personas que se preocupan por nosotros nos ayuda a sentirnos seguros y apoyados."
+        },
+        {
+          "conversation_id": "penguin_02",
+          "sort_order": 2,
+          "question": "En nuestro grupo de pingüinos, nos turnamos para estar afuera donde hace frío. ¡Todos compartimos los lugares difíciles! En tu grupo, ¿las personas se turnan para ayudarse?",
+          "yes_response": "¡Así funcionan las buenas comunidades! A veces ayudas, a veces te ayudan. Todos se turnan para ser fuertes el uno por el otro. ¡Esa es la forma pingüina!",
+          "no_response": "¡Eso puede pasar! A veces una persona hace todo el dar. Los buenos grupos comparten la carga. Si siempre estás en el lado frío, ¡está bien pedir que otros tomen su turno!",
+          "key_takeaway": "En comunidades saludables, todos se turnan para ayudar y ser ayudados."
+        },
+        {
+          "conversation_id": "penguin_03",
+          "sort_order": 3,
+          "question": "¡Cada pingüino en la colonia importa — incluso los pequeñitos! ¿Sientes que importas para las personas a tu alrededor?",
+          "yes_response": "¡Eso es tan importante! Sentir que importamos nos da confianza y paz. ¡ERES importante para tu colonia, y no dejes que nadie te haga sentir lo contrario!",
+          "no_response": "¡Lamento que te sientas así! Pero aquí está la verdad: SÍ importas. A veces las personas no lo demuestran bien, pero tienes valor. ¡La colonia correcta lo verá claramente!",
+          "key_takeaway": "Cada persona importa y tiene valor en su comunidad."
+        },
+        {
+          "conversation_id": "penguin_04",
+          "sort_order": 4,
+          "question": "Cuando un pingüino se pierde del grupo, ¡llamamos para ayudarlo a encontrar el camino de regreso! ¿Tienes personas que vendrían a buscarte si te 'perdieras'?",
+          "yes_response": "¡Qué reconfortante! Saber que alguien vendría a buscarte si te perdieras — física o emocionalmente — es un sentimiento muy cálido. ¡Esas son personas para mantener cerca!",
+          "no_response": "¡Ese es un pensamiento solitario! Pero recuerda, si te sientes perdido, está bien llamar. A veces las personas quieren ayudar pero no saben que lo necesitamos. ¡Acércate — alguien responderá!",
+          "key_takeaway": "Las buenas comunidades notan cuando alguien está perdido y ayudan a traerlo de vuelta."
+        },
+        {
+          "conversation_id": "penguin_05",
+          "sort_order": 5,
+          "question": "A veces me siento diferente de los otros pingüinos, pero aún pertenezco. ¿Alguna vez te has sentido diferente pero aún parte de un grupo?",
+          "yes_response": "¡Eso es pertenecer! No tenemos que ser exactamente como todos los demás para ser parte de algo. Las comunidades verdaderas hacen espacio para las diferencias. ¡Puedes ser único Y pertenecer!",
+          "no_response": "¡Sentirse diferente puede hacer difícil pertenecer! Pero pertenecer de verdad no significa ser igual. Significa ser aceptado como eres. ¡El grupo correcto dará la bienvenida a tus diferencias!",
+          "key_takeaway": "Pertenecer de verdad significa ser aceptado como somos, diferencias y todo."
+        },
+        {
+          "conversation_id": "penguin_06",
+          "sort_order": 6,
+          "question": "¡Los pingüinos celebramos juntos cuando hay muchos peces! Compartimos los momentos felices. ¿Celebras las cosas buenas con tu gente?",
+          "yes_response": "¡La alegría compartida es alegría duplicada! Celebrar juntos hace los momentos felices aún más felices. ¡Sigue compartiendo los buenos momentos con tu colonia — construye lazos fuertes!",
+          "no_response": "¡A veces guardamos las buenas noticias para nosotros! Pero compartir la alegría con otros la hace aún más grande. Intenta contarle a alguien la próxima vez que algo bueno pase. ¡Se siente genial!",
+          "key_takeaway": "Celebrar los buenos momentos juntos fortalece nuestros lazos y duplica nuestra alegría."
+        },
+        {
+          "conversation_id": "penguin_07",
+          "sort_order": 7,
+          "question": "Cuando los tiempos son difíciles — tormentas, hambre, frío — nos acurrucamos más cerca, no más lejos. Cuando las cosas se ponen difíciles para ti, ¿te acercas a tu gente o te alejas?",
+          "yes_response": "¡Acercarse es la forma pingüina! Ya sea que te acerques o te alejes, saber lo que haces es útil. Si te alejas, intenta acercarte la próxima vez. ¡Nos necesitamos más cuando las cosas están difíciles!",
+          "no_response": "¡Es común alejarse cuando estamos luchando! Pero es cuando más necesitamos el grupo. Aunque sea aterrador, intenta dejar entrar a las personas en los momentos difíciles. No tienes que luchar solo.",
+          "key_takeaway": "Durante los tiempos difíciles, mantenernos conectados a nuestra comunidad nos ayuda a salir adelante."
+        },
+        {
+          "conversation_id": "penguin_08",
+          "sort_order": 8,
+          "question": "Ayudo a los pingüinos más jóvenes a aprender a nadar. ¡Se siente bien ayudar a mi comunidad! ¿Haces cosas para ayudar a tu grupo o comunidad?",
+          "yes_response": "Ayudar se siente genial, ¿verdad? Cuando damos a nuestra comunidad, nos sentimos más conectados y valorados. ¡Sigue compartiendo tus dones — tu colonia necesita lo que tienes!",
+          "no_response": "¡Está bien! Quizás no sabes qué puedes ofrecer todavía. Pero todos tienen algo — amabilidad, ayuda, ideas, o simplemente estar ahí. Busca pequeñas formas de contribuir. ¡Se siente bien!",
+          "key_takeaway": "Contribuir a nuestra comunidad nos ayuda a sentirnos conectados y valorados."
+        },
+        {
+          "conversation_id": "penguin_09",
+          "sort_order": 9,
+          "question": "Algunos pingüinos en mi colonia no son mi familia, pero aún se sienten como familia. ¿Tienes personas que no son tus parientes pero se sienten como familia?",
+          "yes_response": "¡Esas son relaciones preciosas! La familia no es solo sobre la sangre — es sobre el amor y el cuidado. ¡Las personas que se sienten como familia SON familia en todas las formas que importan!",
+          "no_response": "¡Esos lazos pueden crecer con el tiempo! Amigos, maestros, vecinos — a veces se vuelven como familia. Mantente abierto a esas conexiones. ¡La familia elegida es igual de real!",
+          "key_takeaway": "La familia no es solo sobre la sangre. Las personas que nos aman y cuidan también son familia."
+        },
+        {
+          "conversation_id": "penguin_10",
+          "sort_order": 10,
+          "question": "¡Caminar contigo ha sido maravilloso! Recuerda: perteneces, importas, y eres más fuerte con tu colonia. ¿Te mantendrás conectado con las personas que se preocupan por ti?",
+          "yes_response": "¡Ese es el espíritu! Tu colonia es tu calor en el mundo frío. Mantente cerca, comparte los tiempos difíciles y felices, y nunca olvides — ¡perteneces! ¡Sigue caminando, amigo! 🐧",
+          "no_response": "¡Está bien! La conexión puede ser difícil. Empieza pequeño — acércate a una persona, comparte una cosa. Tu colonia te está esperando. ¡Fuiste hecho para pertenecer! 🐧",
+          "key_takeaway": "Mantenernos conectados a nuestra comunidad nos da fuerza, calidez y pertenencia."
+        }
+      ]
+    },
+    {
+      "npc_id": "arctic_seal",
+      "npc_name": "Ártico la Foca",
+      "emoji": "🦭",
+      "species": "Foca Ártica",
+      "topic": "Jugar en los Momentos Difíciles",
+      "unlock_level": 74,
+      "conversations": [
+        {
+          "conversation_id": "arcticseal_01",
+          "sort_order": 1,
+          "question": "¡Hola hola! ¡Soy Ártico! Aunque vivo en el frío congelante, ¡todavía me encanta jugar! Me deslizo en el hielo y chapoteo en el agua. ¿Haces tiempo para jugar y divertirte?",
+          "yes_response": "¡Maravilloso! El juego no es solo para los pequeños — ¡es para todos! Jugar ayuda a nuestros cerebros a relajarse y a nuestros corazones a sentirse ligeros. ¡Sigue haciendo tiempo para la diversión!",
+          "no_response": "¡La vida puede ponerse muy seria! Pero jugar es realmente importante. Nos ayuda a manejar mejor las cosas difíciles. Intenta encontrar aunque sea pequeños momentos de diversión — ¡hace todo más fácil!",
+          "key_takeaway": "Jugar es importante a cualquier edad. Ayuda a nuestros cerebros a relajarse y a nuestros corazones a sentirse ligeros."
+        },
+        {
+          "conversation_id": "arcticseal_02",
+          "sort_order": 2,
+          "question": "Cuando el clima está muy malo, todavía encuentro formas de divertirme — ¡aunque sea moviéndome chistoso en mi cueva! ¿Puedes encontrar diversión incluso cuando las cosas a tu alrededor están difíciles?",
+          "yes_response": "¡Eso es un superpoder! Encontrar momentos de alegría durante tiempos difíciles no significa ignorar lo difícil. Significa darle a tu corazón pequeños descansos. ¡Sigue encontrando esos momentos!",
+          "no_response": "¡Puede sentirse mal divertirse cuando las cosas están difíciles! Pero un poco de juego realmente nos ayuda a pasar los tiempos difíciles. ¡Tu corazón necesita esos pequeños descansos!",
+          "key_takeaway": "Encontrar pequeños momentos de diversión durante tiempos difíciles nos ayuda a enfrentar y seguir adelante."
+        },
+        {
+          "conversation_id": "arcticseal_03",
+          "sort_order": 3,
+          "question": "¡La risa me mantiene calentito por dentro cuando afuera está congelado! ¿Te ríes seguido, o ha pasado un tiempo?",
+          "yes_response": "¡La risa realmente es como calidez interior! Relaja nuestros cuerpos y mejora nuestro ánimo. ¡Sigue riendo — es medicina gratis para el alma!",
+          "no_response": "A veces la vida hace difícil reír. Pero la risa es como descongelar tu corazón. Intenta ver algo gracioso, ser tonto con un amigo, o recordar algo que te hizo reír. ¡Deja que la risa regrese!",
+          "key_takeaway": "La risa nos calienta por dentro. Es buena para nuestros cuerpos y corazones."
+        },
+        {
+          "conversation_id": "arcticseal_04",
+          "sort_order": 4,
+          "question": "Cuando juego, olvido mis preocupaciones por un ratito. ¡Es como unas vacaciones para mi cerebro! ¿El juego te ayuda a olvidar tus preocupaciones a veces?",
+          "yes_response": "¡Eso es exactamente lo que debería hacer! Tomar un descanso de las preocupaciones no es ignorarlas — es descansar de ellas. No podemos preocuparnos todo el tiempo. ¡El juego le da vacaciones a nuestros cerebros!",
+          "no_response": "¡A veces las preocupaciones nos siguen incluso al juego! Eso es difícil. Pero entre más practiques estar presente en la diversión, mejor te volverás en darle a tu cerebro esas pequeñas vacaciones. ¡Sigue intentando!",
+          "key_takeaway": "El juego le da un descanso a nuestros cerebros de las preocupaciones. No podemos pensar en problemas todo el tiempo."
+        },
+        {
+          "conversation_id": "arcticseal_05",
+          "sort_order": 5,
+          "question": "Algunas morsas gruñonas dicen que soy muy tonta y debería ser más seria. ¡Pero yo creo que ser juguetona es parte de quién soy! ¿Alguna vez te han dicho que seas más serio?",
+          "yes_response": "¡Algunas criaturas piensan que serio es mejor! Pero ser juguetón es un regalo. No significa que no seas inteligente o profundo. Puedes ser juguetón Y sabio. ¡No dejes que nadie apague tu chispa!",
+          "no_response": "¡Qué bueno! Tu alegría es bienvenida. Y si alguien alguna vez intenta hacerte demasiado serio, recuerda: la alegría y el juego son valiosos. ¡Protege tu lado divertido!",
+          "key_takeaway": "Ser juguetón es un regalo, no un defecto. Podemos ser juguetones y sabios al mismo tiempo."
+        },
+        {
+          "conversation_id": "arcticseal_06",
+          "sort_order": 6,
+          "question": "¡Me encanta hacer reír a otras focas! Ver a otros felices me hace feliz A MÍ. ¿Te gusta hacer sonreír o reír a otros?",
+          "yes_response": "¡Esparcir alegría es contagioso! Cuando hacemos reír a otros, nosotros también nos sentimos felices. Es un círculo hermoso — la alegría que damos regresa. ¡Sigue esparciendo sonrisas!",
+          "no_response": "¡Está bien! No todos son bromistas. Puedes esparcir alegría de otras formas — amabilidad, ayudando, o simplemente estando ahí. ¡Hay muchas formas de añadir calidez a las vidas de otros!",
+          "key_takeaway": "Esparcir alegría a otros nos hace sentir felices también. La alegría es contagiosa."
+        },
+        {
+          "conversation_id": "arcticseal_07",
+          "sort_order": 7,
+          "question": "¡El juego se ve diferente para cada quien! A mí me encanta deslizarme, pero a otras focas les gusta nadar o echarse panza arriba. ¿Cómo se ve el juego para ti? ¿Qué te hace sentir juguetón?",
+          "yes_response": "¡Lo que sea que TE haga sentir ligero y feliz cuenta como juego! Juegos, deportes, arte, bailar, construir cosas, hacer tonterías — no hay forma incorrecta de jugar. ¡Sigue haciendo lo que te trae alegría!",
+          "no_response": "¡Vamos a explorar! ¿Qué has hecho que te hizo perder la noción del tiempo? ¿Qué te hace reír? ¿Qué te encantaba de niño? ¡Esas son pistas de cómo se ve el juego para ti!",
+          "key_takeaway": "El juego se ve diferente para cada quien. Lo que te traiga alegría y ligereza es tu tipo de juego."
+        },
+        {
+          "conversation_id": "arcticseal_08",
+          "sort_order": 8,
+          "question": "A veces juego sola, y a veces con amigos. ¡Ambos son divertidos de diferentes maneras! ¿Te gusta jugar solo, con otros, o ambos?",
+          "yes_response": "¡Todos son geniales! El juego solo deja volar nuestra imaginación. El juego en grupo nos conecta con otros. ¡Tener ambos en tu vida te da lo mejor de los dos mundos!",
+          "no_response": "¡Cada criatura es diferente! A algunos les encantan los grupos, a otros el tiempo a solas. Lo importante es hacer espacio para cualquier tipo de juego que llene tu corazón.",
+          "key_takeaway": "Tanto el juego solo como jugar con otros tienen valor. Encontrar lo que funciona para nosotros importa."
+        },
+        {
+          "conversation_id": "arcticseal_09",
+          "sort_order": 9,
+          "question": "¡Incluso las focas adultas jugamos! Nunca somos demasiado grandes para la diversión. ¿Crees que hay una edad en que las personas deberían dejar de jugar?",
+          "yes_response": "Pienses lo que pienses, aquí está la verdad: ¡nunca dejamos de necesitar el juego! Los adultos necesitan diversión tanto como los niños. El juego se ve diferente mientras crecemos, ¡pero nunca deja de ser importante!",
+          "no_response": "¡Tienes toda la razón! El juego es para todos, para siempre. Mientras crecemos, el juego puede verse diferente, pero la necesidad de alegría y diversión nunca desaparece. ¡Sigue jugando toda tu vida!",
+          "key_takeaway": "Nunca dejamos de necesitar el juego. La alegría y la diversión son importantes a cualquier edad."
+        },
+        {
+          "conversation_id": "arcticseal_10",
+          "sort_order": 10,
+          "question": "¡Chapotear contigo ha sido muy divertido! Recuerda: el juego no es extra — es esencial. La alegría es medicina. ¿Seguirás haciendo espacio para la diversión?",
+          "yes_response": "¡Arf arf! ¡Esa es la forma de Ártico! Deja salir a tu foca interior a jugar, incluso cuando la vida está fría y difícil. La alegría te está esperando en todas partes. ¡Sigue chapoteando, amigo juguetón! 🦭",
+          "no_response": "¡Está bien! La vida puede sentirse muy pesada para jugar a veces. Empieza súper pequeño — una sonrisa, un momento tonto. El juego regresará cuando lo dejes entrar. ¡Te estoy animando! 🦭",
+          "key_takeaway": "El juego no es extra — es medicina esencial para nuestros corazones. La alegría siempre está disponible."
+        }
+      ]
+    },
+    {
+      "npc_id": "frost_polar_bear",
+      "npc_name": "Frost el Oso Polar",
+      "emoji": "🐻‍❄️",
+      "species": "Oso Polar",
+      "topic": "Fortaleza en la Quietud",
+      "unlock_level": 76,
+      "conversations": [
+        {
+          "conversation_id": "polarbear_01",
+          "sort_order": 1,
+          "question": "Hola, pequeño. Soy Frost. Soy grande y fuerte, pero paso mucho tiempo estando muy quieto — esperando, descansando, observando. ¿Crees que estar quieto puede ser un tipo de fortaleza?",
+          "yes_response": "¡Entiendes algo poderoso! La quietud no es debilidad. Se necesita gran fortaleza para estar callado y paciente cuando el mundo quiere que nos apuremos. Estar quieto nos permite reunir nuestro poder.",
+          "no_response": "¡Muchas criaturas piensan que la fortaleza siempre es sobre acción! Pero a veces lo más fuerte es estar quieto — esperar, escuchar, pensar. Incluso los osos polares saben cuándo parar y descansar.",
+          "key_takeaway": "La quietud puede ser una forma de fortaleza. Nos ayuda a reunir nuestro poder."
+        },
+        {
+          "conversation_id": "polarbear_02",
+          "sort_order": 2,
+          "question": "Cuando cazo, espero muy quieto junto al agujero en el hielo. ¡Si me apurara, espantaría mi cena! ¿Es difícil para ti ser paciente y esperar las cosas?",
+          "yes_response": "¡Esperar es difícil para la mayoría de las criaturas! Queremos las cosas AHORA. Pero la paciencia es una habilidad que se puede practicar. Entre más esperas, mejor te vuelves en ello. Y frecuentemente, esperar trae mejores resultados.",
+          "no_response": "¡Tienes la paciencia de un oso polar! Poder esperar tranquilamente es un verdadero regalo. Muchas cosas buenas llegan a quienes pueden estar quietos y pacientes.",
+          "key_takeaway": "La paciencia es una habilidad que se puede practicar. Esperar frecuentemente trae mejores resultados que apresurarse."
+        },
+        {
+          "conversation_id": "polarbear_03",
+          "sort_order": 3,
+          "question": "El Ártico es muy silencioso. Amo el silencio. ¿Alguna vez disfrutas el tiempo en silencio, o el silencio se siente incómodo?",
+          "yes_response": "¡El tiempo en silencio es precioso! En el silencio, podemos escuchar nuestros propios pensamientos, calmar nuestras mentes, y descansar profundamente. Sigue haciendo espacio para esa quietud pacífica en tu vida.",
+          "no_response": "¡Muchas criaturas encuentran el silencio incómodo! Estamos acostumbrados al ruido y la distracción. Pero el silencio puede volverse un amigo. Intenta unos minutos de quietud cada día — ¡quizás empiece a gustarte!",
+          "key_takeaway": "El tiempo en silencio nos ayuda a calmar nuestras mentes y escuchar nuestros propios pensamientos. El silencio puede ser pacífico."
+        },
+        {
+          "conversation_id": "polarbear_04",
+          "sort_order": 4,
+          "question": "Cuando estoy quieto, puedo sentir cosas que me perdería si estuviera ocupado — el viento, el hielo crujiendo, sonidos distantes. ¿Alguna vez te detienes a notar las pequeñas cosas a tu alrededor?",
+          "yes_response": "¡La consciencia es un regalo de la quietud! Cuando dejamos de apurarnos, notamos mucho más. Sonidos, olores, sentimientos — el mundo está lleno de detalles que nos perdemos cuando estamos muy ocupados.",
+          "no_response": "¡Es fácil perderse cosas cuando siempre estamos moviéndonos! Intenta detenerte por solo un minuto y notar todo a tu alrededor — sonidos, vistas, cómo se siente tu cuerpo. La quietud abre nuestros sentidos.",
+          "key_takeaway": "Estar quietos nos ayuda a notar cosas que nos perderíamos si siempre estuviéramos ocupados."
+        },
+        {
+          "conversation_id": "polarbear_05",
+          "sort_order": 5,
+          "question": "A veces hiberno por meses. Mi cuerpo sabe cuándo necesita descanso profundo. ¿Escuchas a tu cuerpo cuando te dice que vayas más lento?",
+          "yes_response": "¡Eso es sabio! Tu cuerpo envía señales cuando necesita descanso, comida, o cuidado. Escuchar esas señales te mantiene saludable. ¡Sigue honrando lo que tu cuerpo te dice!",
+          "no_response": "¡Muchos de nosotros ignoramos lo que nuestros cuerpos dicen! Pero ignorar esas señales puede enfermarnos o agotarnos. Intenta poner atención cuando tu cuerpo dice 'más lento.' ¡Él sabe cosas!",
+          "key_takeaway": "Nuestros cuerpos nos dicen cuándo necesitamos ir más lento. Escuchar nos mantiene saludables."
+        },
+        {
+          "conversation_id": "polarbear_06",
+          "sort_order": 6,
+          "question": "Antes de hacer un gran movimiento, pienso cuidadosamente. No me apresuro a las cosas. ¿Piensas antes de actuar, o actúas antes de pensar?",
+          "yes_response": "Hay sabiduría en ambos, pero pensar primero frecuentemente lleva a mejores decisiones. Tomar un momento para considerar nuestras acciones nos ayuda a evitar errores. Pausa, piensa, luego muévete.",
+          "no_response": "¡Actuar rápido se siente bien a veces! Pero pausar antes de grandes decisiones nos ayuda a tomar mejores. Intenta la forma del oso polar: detente, piensa, luego actúa. ¡Puede ahorrarte muchos problemas!",
+          "key_takeaway": "Pausar para pensar antes de actuar nos ayuda a tomar mejores decisiones."
+        },
+        {
+          "conversation_id": "polarbear_07",
+          "sort_order": 7,
+          "question": "Aunque soy poderoso, no necesito probarlo todo el tiempo. La verdadera fortaleza no necesita presumir. ¿Sientes presión de probarte ante los demás?",
+          "yes_response": "¡Muchas criaturas sienten esa presión! Pero aquí está el secreto: la verdadera fortaleza es callada. No necesitas convencer a nadie de lo fuerte que eres. Lo sabes por dentro, y eso es suficiente.",
+          "no_response": "¡Esa es confianza pacífica! Saber tu fortaleza sin necesidad de probarla es una forma madura de vivir. Como un oso polar, tu poder habla por sí mismo.",
+          "key_takeaway": "La verdadera fortaleza no necesita presumir o probarse. Es callada y segura."
+        },
+        {
+          "conversation_id": "polarbear_08",
+          "sort_order": 8,
+          "question": "Cuando estoy quieto, puedo pensar claramente sobre lo que más importa. ¡Estar ocupado todo el tiempo hace pensar difícil! ¿Puedes pensar claramente cuando tu vida está muy ocupada?",
+          "yes_response": "¡Qué bueno! Pero muchas criaturas pierden claridad cuando la vida se vuelve agitada. Incluso pequeños momentos de quietud nos ayudan a pensar. ¡Protege algo de tiempo tranquilo para pensar con claridad!",
+          "no_response": "¡Eso es muy común! Cuando estamos muy ocupados, nuestros pensamientos se revuelven. Por eso la quietud importa. Incluso unos minutos de silencio pueden ayudar a tu mente a organizarse y pensar más claramente.",
+          "key_takeaway": "La quietud nos ayuda a pensar claramente. El ajetreo puede nublar nuestro pensamiento."
+        },
+        {
+          "conversation_id": "polarbear_09",
+          "sort_order": 9,
+          "question": "Encuentro paz en la quietud de la noche ártica. ¿Dónde o cuándo te sientes más pacífico y tranquilo?",
+          "yes_response": "¡Saber dónde encuentras paz es valioso! Asegúrate de visitar ese lugar o crear esos momentos seguido. Todos necesitamos paz para equilibrar el ajetreo de la vida.",
+          "no_response": "¡Vale la pena explorar! Piensa en cuándo te sientes más tranquilo — ¿mañana, noche, afuera, en tu cuarto? Encontrar tu lugar pacífico te da un lugar a donde ir cuando necesitas calma.",
+          "key_takeaway": "Saber dónde y cuándo nos sentimos más pacíficos nos ayuda a encontrar calma cuando la necesitamos."
+        },
+        {
+          "conversation_id": "polarbear_10",
+          "sort_order": 10,
+          "question": "Ha sido pacífico estar contigo. Recuerda: la quietud no es debilidad, el silencio no está vacío, y el descanso no es pereza. ¿Harás espacio para la quietud en tu vida?",
+          "yes_response": "¡El hielo ártico te da la bienvenida! Lleva la paz del oso polar contigo. En un mundo ocupado, tu quietud es tu superpoder. ¡Descansa bien, piensa claramente, y camina fuerte! 🐻‍❄️",
+          "no_response": "Está bien. La quietud puede sentirse extraña al principio. Pero intenta solo un momento aquí y allá — una respiración profunda, un minuto de silencio. ¡La paz te está esperando cuando estés listo! 🐻‍❄️",
+          "key_takeaway": "Hacer espacio para la quietud en nuestras vidas nos da fortaleza, claridad y paz."
+        }
+      ]
+    },
+    {
+      "npc_id": "snowy_arctic_fox",
+      "npc_name": "Nieve el Zorro Ártico",
+      "emoji": "🦊",
+      "species": "Zorro Ártico",
+      "topic": "Mezclarse vs. Destacar",
+      "unlock_level": 78,
+      "conversations": [
+        {
+          "conversation_id": "fox_01",
+          "sort_order": 1,
+          "question": "¡Hola! ¡Soy Nieve! ¿Sabías que mi pelaje cambia de color? ¡En invierno soy blanco para mezclarme, y en verano soy café! A veces mezclarse es útil. ¿Alguna vez intentas encajar con las personas a tu alrededor?",
+          "yes_response": "¡Eso tiene sentido! A veces encajar se siente más seguro o fácil. No hay nada malo en adaptarse a nuestro ambiente. ¡Mientras no te pierdas a ti mismo, es inteligente mezclarse a veces!",
+          "no_response": "¡Destacar requiere valentía! No todos se sienten cómodos siendo diferentes. Tanto mezclarse como destacar tienen su lugar. ¡El truco es saber cuándo cada uno te sirve mejor!",
+          "key_takeaway": "Tanto mezclarse como destacar tienen valor. Saber cuándo hacer cada uno es sabiduría."
+        },
+        {
+          "conversation_id": "fox_02",
+          "sort_order": 2,
+          "question": "Cuando me mezclo con la nieve, los depredadores no pueden encontrarme. ¡A veces nos mezclamos por seguridad! ¿Alguna vez has escondido partes de ti mismo para sentirte seguro?",
+          "yes_response": "¡Eso es comprensible! A veces escondemos partes de nosotros mismos porque no se siente seguro mostrarlas. Eso está bien por un tiempo. ¡Pero espero que encuentres lugares donde puedas ser completamente tú!",
+          "no_response": "¡Eso es afortunado! Sentirse seguro siendo tú mismo es especial. No todos tienen eso. Si lo tienes, aprécialo — ¡y sé alguien que haga sentir a otros seguros de ser ellos mismos también!",
+          "key_takeaway": "A veces escondemos partes de nosotros mismos por seguridad. Encontrar lugares seguros para ser completamente nosotros mismos importa."
+        },
+        {
+          "conversation_id": "fox_03",
+          "sort_order": 3,
+          "question": "¡Incluso cuando me mezclo, sigo siendo yo por dentro! Cambiar cómo nos vemos o actuamos en diferentes lugares no significa que seamos falsos. ¿Actúas diferente en diferentes situaciones?",
+          "yes_response": "¡Eso es totalmente normal! Ser más callado en la escuela y más ruidoso en casa, o más serio con algunas personas — eso es adaptarse, no ser falso. ¡Tu verdadero yo siempre está ahí por dentro!",
+          "no_response": "¡Ser igual en todos lados es un tipo de autenticidad! Pero también está bien si alguna vez te adaptas a diferentes situaciones. Mientras tu esencia se mantenga verdadera, ¡eso es lo que importa!",
+          "key_takeaway": "Adaptarse a diferentes situaciones no es ser falso. Nuestro verdadero yo permanece constante por dentro."
+        },
+        {
+          "conversation_id": "fox_04",
+          "sort_order": 4,
+          "question": "¡A veces QUIERO destacar — como cuando busco a otros zorros! Destacar nos ayuda a ser encontrados. ¿Es difícil o fácil para ti destacar cuando quieres ser notado?",
+          "yes_response": "Ya sea fácil o difícil, ¡saber CUÁNDO quieres ser visto es importante! A veces necesitamos atención — para ayuda, para conexión, para mostrar nuestro trabajo. ¡Eso está bien!",
+          "no_response": "¡Ser visto puede sentirse vulnerable! Pero a veces necesitamos destacar — para obtener ayuda, para conectar, o para compartir quiénes somos. Toma práctica, ¡pero vale la pena!",
+          "key_takeaway": "A veces necesitamos destacar para ser encontrados, ayudados, o conectados con otros."
+        },
+        {
+          "conversation_id": "fox_05",
+          "sort_order": 5,
+          "question": "Cuando intento demasiado mezclarme en todos lados, me canso de fingir. ¿Alguna vez te has sentido cansado de intentar demasiado encajar?",
+          "yes_response": "¡Ese agotamiento es real! Cambiarte constantemente para encajar toma mucha energía. Mereces lugares donde puedas simplemente relajarte y ser tú mismo sin esfuerzo.",
+          "no_response": "¡Qué maravilloso! O has encontrado buenos lugares para ser tú mismo, o naturalmente encajas. De cualquier manera, ese tipo de facilidad es preciosa. ¡No todos la tienen!",
+          "key_takeaway": "Intentar constantemente encajar puede ser agotador. Necesitamos lugares donde podamos relajarnos y ser nosotros mismos."
+        },
+        {
+          "conversation_id": "fox_06",
+          "sort_order": 6,
+          "question": "Mi pelaje café en verano me hace destacar contra la nieve. ¡A veces destacar no se puede evitar! ¿Hay algo de ti que te hace destacar, incluso cuando no lo intentas?",
+          "yes_response": "¡Esas cosas que te hacen destacar son parte de quién eres! Pueden sentirse incómodas a veces, pero también son lo que te hace memorable y especial. ¡Abraza tu 'pelaje café'!",
+          "no_response": "¡A veces no notamos lo que nos hace únicos! Pero todos tienen algo. Quizás otros ven tus rasgos especiales más claramente que tú. ¡Esas diferencias son regalos!",
+          "key_takeaway": "Las cosas que nos hacen destacar son parte de lo que nos hace especiales y memorables."
+        },
+        {
+          "conversation_id": "fox_07",
+          "sort_order": 7,
+          "question": "¡He aprendido a amar tanto mi pelaje blanco como mi pelaje café — ambos lados de mí! ¿Aceptas todos los diferentes lados de ti mismo?",
+          "yes_response": "¡Esa es hermosa auto-aceptación! Todos tenemos diferentes lados — callado y ruidoso, serio y tonto, fuerte y suave. ¡Abrazar todos ellos nos hace completos!",
+          "no_response": "¡Es común rechazar partes de nosotros mismos! Pero cada lado de ti tiene valor. Intenta aceptar las partes que escondes — son parte de lo que te hace completo.",
+          "key_takeaway": "Aceptar todos los diferentes lados de nosotros mismos nos hace completos."
+        },
+        {
+          "conversation_id": "fox_08",
+          "sort_order": 8,
+          "question": "Algunas criaturas siempre quieren mezclarse, y algunas siempre quieren destacar. ¡Yo creo que las criaturas más sabias saben cuándo hacer cada una! ¿Qué piensas?",
+          "yes_response": "¡Eso es flexibilidad! Saber cuándo mezclarte y cuándo brillar es una habilidad especial. Significa que puedes adaptarte mientras sigues siendo fiel a ti mismo. ¡Esa es la forma del zorro ártico!",
+          "no_response": "¡Es algo para pensar! Algunos momentos piden encajar calladamente. Otros piden dar un paso adelante con valentía. Leer la situación nos ayuda a elegir sabiamente.",
+          "key_takeaway": "La sabiduría es saber cuándo mezclarse y cuándo destacar en diferentes situaciones."
+        },
+        {
+          "conversation_id": "fox_09",
+          "sort_order": 9,
+          "question": "¡Lo más importante es que me gusto a mí mismo — ya sea blanco o café, mezclándome o destacando! ¿Te gustas a ti mismo, tal como eres?",
+          "yes_response": "¡Esa es la mejor base! Cuando te gustas a ti mismo, importa menos si te estás mezclando o destacando. ¡La auto-aceptación es la base de todo!",
+          "no_response": "¡Gustarnos a nosotros mismos puede ser difícil! Vemos nuestros defectos de cerca. Pero intenta verte como te vería un amigo — con amabilidad. ¡Eres digno de tu propio amor!",
+          "key_takeaway": "La auto-aceptación es la base. Cuando nos gustamos a nosotros mismos, estamos en casa en cualquier lugar."
+        },
+        {
+          "conversation_id": "fox_10",
+          "sort_order": 10,
+          "question": "¡Trotar por la nieve contigo ha sido encantador! Recuerda: puedes mezclarte cuando necesites y brillar cuando estés listo. ¡Ambos están bien! ¿Abrazarás todos los lados de ti mismo?",
+          "yes_response": "¡Hermoso! Como un zorro ártico, puedes moverte entre mundos — encajando y destacando, visible y escondido. ¡Ambos eres tú! ¡Sigue trotando con confianza, amigo versátil! 🦊",
+          "no_response": "¡Está bien! La auto-aceptación crece con el tiempo. Empieza por notar cuándo te mezclas y cuándo brillas — sin juzgar ninguno. ¡Ambas versiones de ti tienen valor! 🦊",
+          "key_takeaway": "Podemos abrazar tanto encajar como destacar. Ambos son partes válidas de quienes somos."
+        }
+      ]
+    },
+    {
+      "npc_id": "aurora_owl",
+      "npc_name": "Aurora la Lechuza",
+      "emoji": "🦉",
+      "species": "Lechuza Nival",
+      "topic": "Sabiduría y Reflexión",
+      "unlock_level": 80,
+      "conversations": [
+        {
+          "conversation_id": "owl_01",
+          "sort_order": 1,
+          "question": "¡Huu huu! Saludos, buscador. Soy Aurora. Las lechuzas somos conocidas por la sabiduría, pero la sabiduría no se trata de saber todo — se trata de pensar profundamente. ¿Alguna vez tomas tiempo para pensar profundamente sobre las cosas?",
+          "yes_response": "¡El pensamiento profundo es donde crece la sabiduría! Cuando tomamos tiempo para realmente considerar las cosas — no solo reaccionar — entendemos mejor. ¡Sigue haciendo espacio para la reflexión!",
+          "no_response": "¡La vida se mueve rápido! Pero pensar profundamente nos ayuda a entendernos a nosotros mismos y al mundo. Intenta tomar unos momentos cada día para realmente pensar, no solo hacer. ¡Ahí es donde comienza la sabiduría!",
+          "key_takeaway": "La sabiduría viene de tomar tiempo para pensar profundamente, no solo reaccionar."
+        },
+        {
+          "conversation_id": "owl_02",
+          "sort_order": 2,
+          "question": "Observo desde mi rama antes de actuar. Observar me ayuda a entender. ¿Observas las cosas cuidadosamente, o saltas a la acción rápidamente?",
+          "yes_response": "¡Ambos tienen su lugar! Observar antes de actuar frecuentemente lleva a mejores resultados. Pero a veces también se necesita acción rápida. ¡Los sabios saben cuándo observar y cuándo volar!",
+          "no_response": "¡La acción rápida tiene sus fortalezas! Pero intenta a veces pausar y observar primero. Podrías ver cosas que de otra manera te perderías. ¡Observar antes de lanzarse da mejor puntería!",
+          "key_takeaway": "Observar antes de actuar frecuentemente lleva a mejores resultados y entendimiento."
+        },
+        {
+          "conversation_id": "owl_03",
+          "sort_order": 3,
+          "question": "¡La lechuza más sabia sabe que no lo sabe todo! Ser humilde sobre lo que no sabemos es parte de la sabiduría. ¿Te es fácil admitir cuando no sabes algo?",
+          "yes_response": "¡Eso es verdadera sabiduría! Pretender saber todo bloquea el aprendizaje. Cuando admitimos lo que no sabemos, abrimos la puerta a descubrir cosas nuevas. ¡Mantente humilde y curioso!",
+          "no_response": "¡Es difícil admitirlo! Queremos parecer inteligentes. Pero decir 'no sé' es realmente sabio. Nos abre al aprendizaje. ¡Las criaturas más inteligentes saben que todavía tienen mucho que aprender!",
+          "key_takeaway": "Admitir lo que no sabemos es sabio. Nos abre a aprender y crecer."
+        },
+        {
+          "conversation_id": "owl_04",
+          "sort_order": 4,
+          "question": "Frecuentemente reflexiono sobre el pasado — qué funcionó, qué no. Esto me ayuda a tomar mejores decisiones. ¿Piensas en experiencias pasadas para aprender de ellas?",
+          "yes_response": "¡La reflexión es una maestra poderosa! Mirar hacia atrás a lo que pasó nos ayuda a entendernos y tomar decisiones más sabias hacia adelante. ¡Sigue aprendiendo de tus experiencias!",
+          "no_response": "Mirar hacia atrás puede ser difícil, ¡especialmente si las cosas no salieron bien! Pero hay sabiduría en nuestro pasado. Incluso los errores nos enseñan. Intenta preguntar '¿Qué puedo aprender de eso?'",
+          "key_takeaway": "Reflexionar sobre experiencias pasadas nos ayuda a aprender y tomar mejores decisiones hacia adelante."
+        },
+        {
+          "conversation_id": "owl_05",
+          "sort_order": 5,
+          "question": "Me hago preguntas como '¿Por qué me siento así?' o '¿Qué realmente quiero?' Las preguntas me ayudan a entenderme. ¿Te haces preguntas para entenderte mejor?",
+          "yes_response": "¡El auto-cuestionamiento es poderoso! Entre más nos entendemos — nuestros sentimientos, nuestros deseos, nuestros miedos — más sabios nos volvemos. ¡Sigue preguntando y escuchando las respuestas!",
+          "no_response": "¡Inténtalo alguna vez! Pregúntate: '¿Por qué hice eso?' o '¿Qué estoy sintiendo realmente?' Estas preguntas abren puertas dentro de nosotros. ¡Entenderte a ti mismo es una de las sabidurías más profundas!",
+          "key_takeaway": "Hacernos preguntas nos ayuda a entender mejor nuestros sentimientos, deseos y miedos."
+        },
+        {
+          "conversation_id": "owl_06",
+          "sort_order": 6,
+          "question": "La sabiduría no se trata solo de ser inteligente — se trata de ser amable y usar buen juicio. ¿Crees que la sabiduría incluye ser amable?",
+          "yes_response": "¡Absolutamente! Una criatura puede saber muchos datos pero aún carecer de sabiduría si es cruel. La verdadera sabiduría nos guía a tratarnos a nosotros mismos y a otros con amabilidad y justicia.",
+          "no_response": "¡Sí la incluye! Ser inteligente sin amabilidad no es sabiduría — es solo astucia. La sabiduría real nos ayuda a usar lo que sabemos para hacer el bien, no daño. ¡La amabilidad es parte de ser sabio!",
+          "key_takeaway": "La verdadera sabiduría incluye amabilidad y buen juicio, no solo conocimiento."
+        },
+        {
+          "conversation_id": "owl_07",
+          "sort_order": 7,
+          "question": "Cuando enfrento una decisión difícil, me tomo mi tiempo. Considero diferentes ángulos. ¿Te apresuras en las decisiones, o las piensas bien?",
+          "yes_response": "¡Hay sabiduría en tomarse tiempo! Las grandes decisiones merecen pensamiento cuidadoso. Considerar diferentes ángulos nos ayuda a tomar decisiones de las que no nos arrepentiremos. ¡Sigue pensando las cosas!",
+          "no_response": "¡Apresurarse es tentador! Pero para grandes decisiones, tomarse tiempo lleva a mejores resultados. Intenta dormir sobre decisiones importantes. Las cosas frecuentemente se ven más claras después del descanso y la reflexión.",
+          "key_takeaway": "Tomarse tiempo para considerar diferentes ángulos lleva a mejores decisiones."
+        },
+        {
+          "conversation_id": "owl_08",
+          "sort_order": 8,
+          "question": "Aprendo de muchas fuentes — lechuzas mayores, mis propios errores, y observando el mundo. ¿De dónde aprendes las cosas más sabias?",
+          "yes_response": "¡La sabiduría viene de muchos lugares! Libros, personas, experiencias, errores — todos son maestros. Mantente abierto a aprender de todas partes. ¡La sabiduría se cuela por muchas puertas!",
+          "no_response": "¡Piénsalo! Quizás un abuelo, un libro, una experiencia difícil, o incluso un error te enseñó algo importante. La sabiduría viene de muchas fuentes — ¡mantente abierto a todas ellas!",
+          "key_takeaway": "La sabiduría viene de muchas fuentes — personas, experiencias, libros, e incluso errores."
+        },
+        {
+          "conversation_id": "owl_09",
+          "sort_order": 9,
+          "question": "A veces lo más sabio es esperar y ver, en lugar de actuar de inmediato. ¿Alguna vez te has alegrado de haber esperado antes de hacer algo?",
+          "yes_response": "¡Esperar frecuentemente trae claridad! Cuando no nos apresuramos, vemos más opciones y evitamos errores. La paciencia para esperar es en sí misma un tipo de sabiduría. ¡Sigue confiando en la pausa!",
+          "no_response": "¡Puede pasar en el futuro! A veces esperar revela información que cambia todo. La lechuza sabia sabe que no actuar es a veces la acción más sabia.",
+          "key_takeaway": "A veces la decisión más sabia es esperar y dejar que las cosas se aclaren."
+        },
+        {
+          "conversation_id": "owl_10",
+          "sort_order": 10,
+          "question": "Ha sido un honor reflexionar contigo. Recuerda: la sabiduría crece a través de preguntas, observación, y juicio amable. ¿Continuarás buscando la sabiduría?",
+          "yes_response": "¡Huu-maravilloso! Un buscador de sabiduría nunca deja de aprender. Observa, pregunta, reflexiona, y siempre elige la amabilidad. ¡El mundo necesita tu corazón reflexivo! ¡Vuela sabiamente, joven lechuza! 🦉",
+          "no_response": "Está bien — la sabiduría nos encuentra en su propio tiempo. Mantente curioso, haz preguntas cuando surjan, y aprende de lo que la vida trae. ¡La sabiduría crecerá en ti! 🦉",
+          "key_takeaway": "La sabiduría crece a lo largo de nuestras vidas a través de la curiosidad, reflexión y amabilidad."
+        }
+      ]
+    },
+    {
+      "npc_id": "winter_wolf",
+      "npc_name": "Invierno el Lobo",
+      "emoji": "🐺",
+      "species": "Lobo Ártico",
+      "topic": "Mentalidad de Manada y Relaciones Saludables",
+      "unlock_level": 82,
+      "conversations": [
+        {
+          "conversation_id": "wolf_01",
+          "sort_order": 1,
+          "question": "Saludos, amigo. Soy Invierno. Los lobos vivimos en manadas — trabajamos juntos, nos protegemos, y compartimos todo. ¿Tienes personas con quienes trabajas y compartes la vida?",
+          "yes_response": "¡Esa es tu manada! Tener personas con quienes compartir la vida — las partes difíciles y las buenas — nos hace más fuertes. ¡Valora tu manada y cuídense unos a otros!",
+          "no_response": "¡Las manadas pueden ser difíciles de encontrar! Pero los lobos saben que la vida es mejor juntos. Sigue buscando tu manada — personas que se preocupan y comparten. ¡Mereces esa conexión!",
+          "key_takeaway": "Tener personas con quienes compartir la vida nos hace más fuertes y felices."
+        },
+        {
+          "conversation_id": "wolf_02",
+          "sort_order": 2,
+          "question": "En una manada saludable, cada uno tiene un rol. Algunos cazan, algunos protegen, algunos cuidan a los pequeños. ¿Sabes qué rol juegas en tu grupo o familia?",
+          "yes_response": "¡Saber tu rol te ayuda a contribuir! Cada rol importa — líder, ayudante, escucha, bromista, cuidador. ¡Tu parte hace más fuerte a toda la manada!",
+          "no_response": "Está bien — ¡a veces nuestro rol no está claro! Pon atención a lo que naturalmente haces por otros. ¿Eres el que escucha? ¿El ayudante? ¿El animador? ¡Ese es tu rol!",
+          "key_takeaway": "Cada uno tiene un rol que jugar. Saber nuestro rol nos ayuda a contribuir a nuestro grupo."
+        },
+        {
+          "conversation_id": "wolf_03",
+          "sort_order": 3,
+          "question": "¡Las buenas manadas se comunican! Aullamos para encontrarnos, advertir del peligro, y compartir alegría. ¿Te comunicas abiertamente con las personas cercanas a ti?",
+          "yes_response": "¡La comunicación es la fortaleza de la manada! Compartir nuestros pensamientos y sentimientos — incluso los difíciles — mantiene las relaciones saludables. ¡Sigue aullando a tu manada!",
+          "no_response": "¡Puede ser difícil compartir! Pero las manadas que no se comunican se confunden y se sienten solas. Intenta compartir un poco más con personas en quienes confías. ¡Aullar abiertamente fortalece los lazos!",
+          "key_takeaway": "La comunicación abierta mantiene las relaciones saludables y fuertes."
+        },
+        {
+          "conversation_id": "wolf_04",
+          "sort_order": 4,
+          "question": "¡A veces los lobos no estamos de acuerdo! Pero lo resolvemos porque la manada importa más que ganar. Cuando no estás de acuerdo con alguien que te importa, ¿pueden resolverlo?",
+          "yes_response": "¡Esa es sabiduría de manada! Los desacuerdos pasan, pero resolverlos — escuchar, ceder, disculparse — mantiene las relaciones fuertes. ¡Puedes no estar de acuerdo y aún amar!",
+          "no_response": "¡El conflicto es difícil! Pero desacuerdos sin resolver pueden romper manadas. Intenta escuchar, compartir tu lado con calma, y encontrar un punto medio. ¡La relación vale la pena!",
+          "key_takeaway": "Resolver los desacuerdos mantiene las relaciones fuertes. Podemos no estar de acuerdo y aún querer."
+        },
+        {
+          "conversation_id": "wolf_05",
+          "sort_order": 5,
+          "question": "¡Los lobos nos protegemos unos a otros! Si un lobo está amenazado, la manada se une. ¿Las personas en tu vida te defienden cuando lo necesitas?",
+          "yes_response": "¡Esa es una manada fuerte! Las personas que te protegen y defienden son tesoros. Asegúrate de hacer lo mismo por ellos. ¡Las manadas se protegen entre sí!",
+          "no_response": "¡Eso puede sentirse solitario! Una verdadera manada se une. Si tu grupo actual no te apoya, quizás necesites encontrar personas que sí lo hagan. ¡Mereces protección y apoyo!",
+          "key_takeaway": "Las relaciones saludables incluyen defenderse unos a otros cuando es necesario."
+        },
+        {
+          "conversation_id": "wolf_06",
+          "sort_order": 6,
+          "question": "Una buena manada respeta a cada lobo. Escuchamos a todos, incluso a los miembros más jóvenes. ¿Te sientes respetado por las personas en tu vida?",
+          "yes_response": "¡El respeto es esencial! Sentirse escuchado y valorado hace las relaciones saludables. Sigue rodeándote de personas que te tratan bien, ¡y trátalos bien también!",
+          "no_response": "¡Eso es doloroso! Todos merecen respeto. Si las personas no te respetan, quizás es tiempo de encontrar una manada diferente — personas que vean tu valor y te traten bien.",
+          "key_takeaway": "Las relaciones saludables incluyen respeto mutuo. Todos merecen sentirse escuchados y valorados."
+        },
+        {
+          "conversation_id": "wolf_07",
+          "sort_order": 7,
+          "question": "Incluso en una manada cercana, los lobos a veces necesitamos tiempo a solas. Nos alejamos para descansar o pensar. ¿Equilibras el tiempo con otros y el tiempo a solas?",
+          "yes_response": "¡El equilibrio es saludable! Necesitamos conexión Y soledad. Demasiado de cualquiera puede desequilibrarnos. ¡Sigue encontrando esa mezcla que funciona para ti!",
+          "no_response": "¡Encontrar equilibrio toma práctica! Si siempre estás con otros, prueba algo de tiempo a solas. Si siempre estás solo, prueba más conexión. ¡Ambas partes alimentan diferentes necesidades!",
+          "key_takeaway": "Las relaciones saludables incluyen equilibrio entre tiempo juntos y tiempo a solas."
+        },
+        {
+          "conversation_id": "wolf_08",
+          "sort_order": 8,
+          "question": "A veces un lobo tiene que dejar una manada que no es saludable. Es triste pero a veces necesario. ¿Sabes que está bien dejar relaciones que te lastiman?",
+          "yes_response": "¡Esa es sabiduría importante! La lealtad importa, pero no a costa de tu bienestar. Si una manada te lastima, está bien encontrar una nueva. ¡Tu salud viene primero!",
+          "no_response": "¡Es difícil pensarlo! Pero algunas relaciones son dañinas. Si alguien sigue lastimándote, está bien alejarte. ¡Una nueva manada más saludable es posible!",
+          "key_takeaway": "Está bien dejar relaciones que nos lastiman. Nuestro bienestar importa."
+        },
+        {
+          "conversation_id": "wolf_09",
+          "sort_order": 9,
+          "question": "Confío en mi manada con mi vida. La confianza se construye lentamente a través de pequeños momentos de honestidad y cuidado. ¿Tienes personas en quienes confías profundamente?",
+          "yes_response": "¡La confianza profunda es preciosa! Toma tiempo y muchos pequeños momentos para construirla. Protege esas relaciones de confianza — ¡son raras y valiosas!",
+          "no_response": "¡La confianza puede ser difícil de encontrar! Se construye lentamente a través de pequeños momentos honestos. Sé paciente, sé confiable tú mismo, y observa a otros que demuestren ser confiables. ¡La confianza vendrá!",
+          "key_takeaway": "La confianza profunda se construye lentamente a través de muchos pequeños momentos de honestidad y cuidado."
+        },
+        {
+          "conversation_id": "wolf_10",
+          "sort_order": 10,
+          "question": "Ha sido un honor correr contigo. Recuerda: encuentra tu manada, comunícate, protéjanse, y sabe cuándo seguir adelante. ¿Construirás relaciones saludables?",
+          "yes_response": "¡La manada te da la bienvenida! Las relaciones son uno de los más grandes regalos de la vida. Nútrelas, protégelas, y sé el tipo de compañero de manada que te gustaría tener. ¡Corre fuerte, amigo leal! 🐺",
+          "no_response": "Está bien. Las relaciones toman tiempo y confianza. Empieza pequeño — una conexión, una conversación honesta. Tu manada se está formando, incluso ahora. ¡Creo en ti! 🐺",
+          "key_takeaway": "Las relaciones saludables requieren comunicación, protección, respeto, y saber cuándo seguir adelante."
+        }
+      ]
+    },
+    {
+      "npc_id": "reindeer_ray",
+      "npc_name": "Ray el Reno",
+      "emoji": "🦌",
+      "species": "Reno",
+      "topic": "Encontrando Tu Camino y Dirección",
+      "unlock_level": 84,
+      "conversations": [
+        {
+          "conversation_id": "reindeer_01",
+          "sort_order": 1,
+          "question": "¡Hola, viajero! ¡Soy Ray! Los renos viajamos muy lejos — ¡migramos miles de kilómetros cada año! Siempre sabemos hacia dónde ir. ¿Sientes que sabes hacia dónde vas en la vida?",
+          "yes_response": "¡Qué maravilloso! Tener un sentido de dirección nos da propósito. Aunque el camino cambie, saber que vas hacia algún lugar significativo es un regalo. ¡Sigue avanzando!",
+          "no_response": "¡Eso es muy común! Muchas criaturas se sienten perdidas a veces. Pero aquí hay un secreto: no necesitas conocer todo el camino — solo el siguiente paso. ¡La dirección se aclara mientras caminas!",
+          "key_takeaway": "No necesitamos conocer todo el camino — solo el siguiente paso. La dirección se aclara mientras avanzamos."
+        },
+        {
+          "conversation_id": "reindeer_02",
+          "sort_order": 2,
+          "question": "Los renos seguimos caminos antiguos que nuestros ancestros viajaron. A veces seguimos el camino que otros tomaron antes. ¿Sigues caminos que otros han caminado, o haces el tuyo propio?",
+          "yes_response": "¡Ambos son valiosos! Seguir caminos probados nos da sabiduría de los que vinieron antes. Hacer nuevos caminos requiere valentía. ¡La mayoría hacemos una mezcla de ambos, y está perfectamente bien!",
+          "no_response": "¡Piénsalo! Frecuentemente seguimos caminos — tradiciones familiares, escuela, rutas comunes. Pero también hacemos nuevos. ¡Ambos están bien! Lo importante es que se sienta correcto para ti.",
+          "key_takeaway": "Tanto seguir los caminos de otros como crear los nuestros tienen valor. Lo que importa es que se sienta correcto."
+        },
+        {
+          "conversation_id": "reindeer_03",
+          "sort_order": 3,
+          "question": "¡A veces nos perdemos en las tormentas de nieve! Cuando no podemos ver el camino, nos detenemos y esperamos claridad. Cuando te sientes perdido, ¿te detienes a esperar o sigues empujando adelante?",
+          "yes_response": "¡Ambos pueden funcionar! Detenerse a esperar claridad puede ayudar. A veces seguir adelante también. La sabiduría es saber cuál se ajusta al momento. ¡Escucha tus instintos!",
+          "no_response": "¡Depende de la situación! A veces esperar es más sabio. A veces tienes que seguir moviéndote. La clave es ser gentil contigo mismo cuando estás perdido — ¡le pasa a todos!",
+          "key_takeaway": "Cuando estamos perdidos, a veces esperamos claridad y a veces seguimos moviéndonos. Ambos pueden ser correctos."
+        },
+        {
+          "conversation_id": "reindeer_04",
+          "sort_order": 4,
+          "question": "¡He tomado giros equivocados antes! Cuando eso pasa, no me rindo — solo ajusto mi dirección. Cuando te das cuenta de que vas por el camino equivocado, ¿puedes cambiar de rumbo?",
+          "yes_response": "¡La flexibilidad es tan importante! Darte cuenta de que estás fuera del camino y ajustar no es fracaso — es navegación inteligente. Cada giro equivocado te enseña algo. ¡Sigue ajustando!",
+          "no_response": "¡Cambiar de dirección puede sentirse difícil! Podríamos sentirnos avergonzados o atascados. Pero nunca es tarde para dar la vuelta. ¡Lo valiente es ajustar cuando sabes que lo necesitas!",
+          "key_takeaway": "Cambiar de rumbo cuando nos damos cuenta de que estamos fuera del camino no es fracaso — es navegación inteligente."
+        },
+        {
+          "conversation_id": "reindeer_05",
+          "sort_order": 5,
+          "question": "Miro las estrellas para ayudarme a encontrar el camino. Tener guías — estrellas, mentores, o valores — me ayuda a mantener el curso. ¿Tienes guías que te ayudan a encontrar tu camino?",
+          "yes_response": "¡Los guías son preciosos! Ya sean personas, creencias, o valores internos, nos ayudan a señalar la dirección correcta cuando las cosas se confunden. ¡Sigue siguiendo tus estrellas!",
+          "no_response": "¡Encontrar guías toma tiempo! Un mentor, un valor en el que crees, un sueño — todos estos pueden guiarte. Busca lo que más te importa. ¡Eso se convierte en tu Estrella del Norte!",
+          "key_takeaway": "Tener guías — personas, valores, o sueños — nos ayuda a encontrar dirección cuando estamos perdidos."
+        },
+        {
+          "conversation_id": "reindeer_06",
+          "sort_order": 6,
+          "question": "El viaje de cada reno es diferente. Podemos empezar del mismo lugar pero terminar en algún lugar único. ¿Tu viaje es diferente al de otros, y está bien para ti?",
+          "yes_response": "¡Esa es aceptación saludable! Comparar nuestro viaje con el de otros puede hacernos sentir atrasados o perdidos. Tu camino es solo tuyo. Camínalo con orgullo — ¡te está llevando a algún lugar significativo!",
+          "no_response": "¡Puede sentirse extraño cuando nuestro camino se ve diferente! Pero cada viaje es único. No hay una ruta 'correcta' para todos. ¡Confía en que tu camino, por diferente que sea, sigue siendo válido!",
+          "key_takeaway": "El viaje de cada uno es diferente. Nuestro camino único es válido, aunque se vea diferente al de otros."
+        },
+        {
+          "conversation_id": "reindeer_07",
+          "sort_order": 7,
+          "question": "El viaje es largo, y me canso. Pero descanso y luego sigo. Cuando estás cansado en tu viaje, ¿te permites descansar?",
+          "yes_response": "¡El descanso es parte del viaje! No podemos viajar sin parar. Tomar descansos no es rendirse — es asegurarte de que puedas continuar. ¡Sigue descansando cuando lo necesites!",
+          "no_response": "¡Descansar no es debilidad! Los viajes largos requieren paradas. Si te exiges demasiado, colapsarás. Honra tu necesidad de pausar. ¡Viajarás más lejos si descansas en el camino!",
+          "key_takeaway": "El descanso es parte de cualquier viaje largo. Pausar no es rendirse — es prepararse para continuar."
+        },
+        {
+          "conversation_id": "reindeer_08",
+          "sort_order": 8,
+          "question": "¡A veces el camino lleva a donde no esperaba! Las sorpresas pueden ser aterradoras o emocionantes. Cuando la vida te sorprende con un giro inesperado, ¿cómo te sientes?",
+          "yes_response": "¡Las sorpresas traen todo tipo de sentimientos! Algunos giros inesperados llevan a lugares maravillosos. Incluso los aterradores pueden enseñarnos. ¡Mantente abierto a donde lleva el camino!",
+          "no_response": "¡Los giros inesperados pueden ser desconcertantes! Pero algunos de los mejores destinos son sorpresas. Intenta mantenerte curioso en lugar de asustado. ¡Las sorpresas de la vida pueden ser regalos disfrazados!",
+          "key_takeaway": "Los giros inesperados en la vida pueden llevar a lugares maravillosos. Mantenerse curioso nos ayuda a abrazarlos."
+        },
+        {
+          "conversation_id": "reindeer_09",
+          "sort_order": 9,
+          "question": "No viajo solo — mi manada me apoya. Tener compañeros hace el viaje más fácil. ¿Tienes otros que viajan contigo?",
+          "yes_response": "¡Los compañeros hacen todo mejor! El viaje es más ligero con otros a nuestro lado. Apóyalos como ellos te apoyan, ¡y todos llegarán más lejos juntos!",
+          "no_response": "¡Los viajes en solitario pueden sentirse solitarios! Pero los compañeros se pueden encontrar en el camino. Mantén los ojos abiertos para otros viajeros. ¡La manada correcta te encontrará!",
+          "key_takeaway": "Tener compañeros hace el viaje más fácil. Llegamos más lejos cuando nos apoyamos mutuamente."
+        },
+        {
+          "conversation_id": "reindeer_10",
+          "sort_order": 10,
+          "question": "¡Ha sido maravilloso viajar contigo! Recuerda: no tienes que ver todo el camino — solo el siguiente paso. ¿Confiarás en tu viaje y seguirás caminando?",
+          "yes_response": "¡Ese es el espíritu de un verdadero viajero! Incluso cuando el camino está nublado, tu siguiente paso siempre es lo suficientemente claro. Confía en ti mismo, descansa cuando lo necesites, y sigue avanzando. ¡Sigue corriendo, viajero! 🦌",
+          "no_response": "¡Está bien! A veces necesitamos quedarnos quietos por un tiempo. Cuando estés listo, el camino todavía estará ahí. Tómate tu tiempo. ¡Creo que tu dirección se aclarará! 🦌",
+          "key_takeaway": "No necesitamos ver todo el camino. Confiar en el viaje y dar el siguiente paso es suficiente."
+        }
+      ]
+    },
+    {
+      "npc_id": "snowflake_spirit",
+      "npc_name": "Espíritu de Copo de Nieve",
+      "emoji": "❄️",
+      "species": "Espíritu de Copo de Nieve",
+      "topic": "Singularidad y Celebrando las Diferencias",
+      "unlock_level": 86,
+      "conversations": [
+        {
+          "conversation_id": "snowflake_01",
+          "sort_order": 1,
+          "question": "¡Hola, hermoso ser! Soy Copo de Nieve. ¿Sabías que no hay dos copos de nieve exactamente iguales? De billones y billones, cada uno es único — ¡igual que tú! ¿Sabes qué te hace único?",
+          "yes_response": "¡Qué maravilloso que lo sepas! Tu combinación única de rasgos, experiencias, y corazón existe en solo una persona: ¡tú! Nunca ha habido y nunca habrá otro tú. ¡Eso es precioso!",
+          "no_response": "¡Puede ser difícil ver nuestra propia singularidad! Pero confía en mí — tus pensamientos, tus sentimientos, tus experiencias, tu forma de ver las cosas — nadie más tiene exactamente tu combinación. ¡Eres único!",
+          "key_takeaway": "Cada persona es única. Nunca ha habido y nunca habrá otro tú."
+        },
+        {
+          "conversation_id": "snowflake_02",
+          "sort_order": 2,
+          "question": "Cada copo de nieve se ve diferente — diferentes patrones, diferentes formas. ¡Pero TODOS somos nieve! Somos diferentes Y conectados. ¿Te sientes conectado con otros aunque seas diferente?",
+          "yes_response": "¡Ese es un hermoso entendimiento! Podemos ser completamente únicos y aún pertenecer. Nuestras diferencias no nos separan de los demás — ¡hacen la imagen completa más rica!",
+          "no_response": "¡Sentirse diferente a veces puede sentirse aislante! Pero aquí está la verdad: todos estamos hechos de lo mismo, solo formados diferente. ¡Puedes ser diferente Y pertenecer al mismo tiempo!",
+          "key_takeaway": "Podemos ser completamente únicos y aún pertenecer. Las diferencias no tienen que separarnos."
+        },
+        {
+          "conversation_id": "snowflake_03",
+          "sort_order": 3,
+          "question": "Algunas personas quieren ser como otros en lugar de ser ellos mismos. ¡Pero si cada copo de nieve se viera igual, el Ártico sería menos hermoso! ¿Alguna vez deseas ser más como alguien más?",
+          "yes_response": "¡Ese es un sentimiento común! Pero recuerda: si fueras exactamente como ellos, el mundo perdería a TI. Lo que tú traes es necesario. ¡Inspírate en otros, pero mantente fiel a ti mismo!",
+          "no_response": "¡Esa es maravillosa auto-aceptación! Saber que ser tú mismo es suficiente es un sentimiento poderoso. ¡Sigue celebrando lo que te hace SER TÚ!",
+          "key_takeaway": "El mundo nos necesita como somos. Inspirarse en otros está bien, pero mantenernos fieles a nosotros mismos importa."
+        },
+        {
+          "conversation_id": "snowflake_04",
+          "sort_order": 4,
+          "question": "Algunos copos de nieve son grandes y elegantes, algunos son pequeños y simples. ¡TODOS son hermosos! ¿Crees que todos los tipos de diferencias son hermosos?",
+          "yes_response": "¡Ese es un corazón generoso! Ver belleza en todo tipo de diferencias hace el mundo un lugar más amable. Grande, pequeño, ruidoso, callado — ¡cada tipo tiene su propia belleza!",
+          "no_response": "¡Es fácil pensar que algunas diferencias son mejores que otras! Pero la belleza viene en muchas formas. Intenta buscar la belleza en diferencias que usualmente no aprecias. ¡Está ahí!",
+          "key_takeaway": "La belleza viene en muchas formas. Todos los tipos de diferencias tienen su propio valor."
+        },
+        {
+          "conversation_id": "snowflake_05",
+          "sort_order": 5,
+          "question": "Cuando todos los copos de nieve únicos caemos juntos, hacemos una hermosa manta de nieve. ¡Juntas, nuestras diferencias crean algo asombroso! ¿Ves cómo las diferencias hacen mejores a los grupos?",
+          "yes_response": "¡Ves la imagen completa! Cuando personas diferentes se juntan — diferentes habilidades, ideas, personalidades — el grupo se vuelve más fuerte que si todos fueran iguales. ¡La diversidad es fortaleza!",
+          "no_response": "¡Puede que no sea obvio! Pero piénsalo: un equipo donde todos piensan igual se pierde cosas. Diferentes perspectivas nos ayudan a ver más, resolver más, crear más. ¡Las diferencias hacen a los grupos más fuertes!",
+          "key_takeaway": "Cuando personas diferentes se juntan, sus diferencias crean algo más fuerte y hermoso."
+        },
+        {
+          "conversation_id": "snowflake_06",
+          "sort_order": 6,
+          "question": "Algunas criaturas intentan derretir los copos de nieve porque somos diferentes. ¡Duele! ¿Alguna vez alguien te ha hecho sentir mal por ser diferente?",
+          "yes_response": "¡Lamento que eso haya pasado! Que te hagan sentir mal por nuestras diferencias es doloroso. Pero los que te lastimaron están equivocados. Tus diferencias son regalos, no defectos. ¡No dejes que nadie derrita tu brillo!",
+          "no_response": "¡Eso es afortunado! No todos tienen esa suerte. Si alguna vez pasa, recuerda: el problema está en ellos, no en ti. ¡Tus diferencias son lo que te hacen brillar!",
+          "key_takeaway": "Cuando las personas nos hacen sentir mal por ser diferentes, están equivocadas. Nuestras diferencias son regalos."
+        },
+        {
+          "conversation_id": "snowflake_07",
+          "sort_order": 7,
+          "question": "He aprendido a amar mi propio patrón, aunque sea diferente de otros copos de nieve. ¿Amas lo que te hace diferente?",
+          "yes_response": "¡Eso es amor propio! Abrazar lo que nos hace diferentes, en lugar de esconderlo, es uno de los más grandes regalos que podemos darnos. ¡Sigue amando tu patrón único!",
+          "no_response": "¡Amar nuestras diferencias puede tomar tiempo! Frecuentemente vemos nuestra singularidad como defectos. Pero intenta ver tus diferencias como lo haría un amigo — como lo que te hace especial e interesante.",
+          "key_takeaway": "Amar lo que nos hace diferentes es una forma de amor propio. Nuestra singularidad es nuestro regalo."
+        },
+        {
+          "conversation_id": "snowflake_08",
+          "sort_order": 8,
+          "question": "Cuando encuentro un copo de nieve que se ve muy diferente de mí, ¡tengo curiosidad, no miedo! ¿Cómo reaccionas cuando conoces a alguien muy diferente de ti?",
+          "yes_response": "¡La curiosidad es la mejor respuesta! Las criaturas diferentes pueden enseñarnos tanto. Cuando nos acercamos a las diferencias con interés en lugar de miedo, aprendemos y crecemos. ¡Mantente curioso!",
+          "no_response": "¡Las diferencias pueden sentirse extrañas al principio! Pero intenta acercarte a ellas con curiosidad en lugar de miedo. Haz preguntas, aprende su historia. ¡Podrías descubrir algo maravilloso!",
+          "key_takeaway": "Acercarse a las diferencias con curiosidad en lugar de miedo nos ayuda a aprender y conectar."
+        },
+        {
+          "conversation_id": "snowflake_09",
+          "sort_order": 9,
+          "question": "¡El mundo sería tan aburrido si todos nos viéramos, pensáramos, y actuáramos igual! Las diferencias hacen la vida interesante. ¿Estás de acuerdo?",
+          "yes_response": "¡Absolutamente! Imagina si cada canción sonara igual, cada flor se viera igual, cada persona pensara igual. ¡Qué aburrido! Las diferencias son lo que hacen la vida rica e interesante.",
+          "no_response": "¡Podría sentirse más fácil si todos fueran iguales! Pero la igualdad se vuelve aburrida rápido. Nuestras diferencias crean arte, invención, y conexión. ¡La vida brilla porque no somos todos iguales!",
+          "key_takeaway": "Las diferencias hacen la vida interesante y rica. La igualdad sería aburrida."
+        },
+        {
+          "conversation_id": "snowflake_10",
+          "sort_order": 10,
+          "question": "¡Flotar contigo ha sido mágico! Recuerda: eres único, y ese es tu superpoder. ¿Celebrarás tus diferencias y las diferencias en otros?",
+          "yes_response": "¡Ese es el espíritu del copo de nieve! Tu patrón único hace el mundo más hermoso. ¡Celébrarte a ti mismo, celebra a otros, y nunca apagues tu brillo! ¡Sigue flotando, amigo brillante! ❄️",
+          "no_response": "¡Está bien! Celebrar las diferencias toma práctica. Empieza notando una cosa que te guste de lo que te hace SER TÚ. La auto-aceptación crece desde ahí. ¡Eres único! ❄️",
+          "key_takeaway": "Nuestra singularidad es nuestro superpoder. Celebrar nuestras diferencias y las de otros hace la vida más hermosa."
+        }
+      ]
+    }
+  ]
+}

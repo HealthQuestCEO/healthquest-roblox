@@ -1,0 +1,829 @@
+{
+  "metadata": {
+    "version": "4.0 - ALL 90 CONVERSATIONS",
+    "description": "Sistema COMPLETO de NPCs de Glow Ridge con las 90 conversaciones extraídas",
+    "lastUpdated": "2025-11-09",
+    "total_npcs": 9,
+    "conversations_per_npc": 10,
+    "total_conversations": 90,
+    "daily_xp_cap": 400,
+    "xp_per_conversation": 100,
+    "max_conversations_per_day": 4,
+    "language": "es",
+    "translated_from": "en",
+    "translated_at": "2026-01-30"
+  },
+
+  "npcs": [
+    {
+      "npc_id": "bounce_bunny",
+      "npc_name": "Bounce el Conejo",
+      "emoji": "🐰",
+      "species": "Conejo",
+      "topic": "Autocompasión y Errores",
+      "unlock_level": 3,
+      "conversations": [
+        {
+          "conversation_id": "bunny_01",
+          "sort_order": 1,
+          "question": "¿A veces te preocupas por cometer errores?",
+          "yes_response": "¡Es totalmente normal! Todos cometemos errores - ¡nos ayudan a aprender y crecer!",
+          "no_response": "¡Qué bien! Los errores son parte natural del aprendizaje. ¡Recuerda, nadie es perfecto!",
+          "key_takeaway": "Los errores son prueba de que estás intentando cosas nuevas. ¡Sé amable contigo mismo cuando los cometas!"
+        },
+        {
+          "conversation_id": "bunny_02",
+          "sort_order": 2,
+          "question": "¿Alguna vez te has dicho algo malo a ti mismo en tu mente?",
+          "yes_response": "Eso se llama diálogo interno negativo. ¡Practiquemos ser más amables con nosotros mismos!",
+          "no_response": "¡Qué maravilla! Tratarte con amabilidad en tus pensamientos es muy poderoso.",
+          "key_takeaway": "Háblate como le hablarías a un amigo - ¡con amabilidad y ánimo!"
+        },
+        {
+          "conversation_id": "bunny_03",
+          "sort_order": 3,
+          "question": "¿Celebras el intentarlo, aunque las cosas no salgan bien?",
+          "yes_response": "¡Genial! El esfuerzo importa más que la perfección.",
+          "no_response": "¡Puedes empezar hoy! Inténtalo después de algo pequeño.",
+          "key_takeaway": "Celebra tu esfuerzo, no solo el resultado."
+        },
+        {
+          "conversation_id": "bunny_04",
+          "sort_order": 4,
+          "question": "¿Te sientes mal cuando te equivocas?",
+          "yes_response": "Está bien. Los sentimientos son parte del aprendizaje.",
+          "no_response": "¡Qué bien! Sigue siendo amable contigo mismo.",
+          "key_takeaway": "Está bien sentirse mal. Los errores nos ayudan a crecer."
+        },
+        {
+          "conversation_id": "bunny_05",
+          "sort_order": 5,
+          "question": "¿Crees que está bien pedir ayuda?",
+          "yes_response": "¡Sí! Pedir ayuda es algo inteligente y valiente.",
+          "no_response": "Siempre puedes preguntar - todos necesitamos ayuda a veces.",
+          "key_takeaway": "Pedir ayuda muestra fortaleza, no debilidad."
+        },
+        {
+          "conversation_id": "bunny_06",
+          "sort_order": 6,
+          "question": "¿Te hablas a ti mismo como a un amigo?",
+          "yes_response": "¡Las palabras amables hacia ti mismo son como un abrazo cálido!",
+          "no_response": "Inténtalo - ¿qué le dirías a un amigo que necesita cariño?",
+          "key_takeaway": "Háblate con amabilidad y cuidado."
+        },
+        {
+          "conversation_id": "bunny_07",
+          "sort_order": 7,
+          "question": "¿Alguna vez te has sentido nervioso por probar algo nuevo?",
+          "yes_response": "¡Eso es valiente! Probar cosas nuevas te ayuda a crecer.",
+          "no_response": "¡Está bien! Empieza poco a poco y ve a tu ritmo.",
+          "key_takeaway": "Es normal sentirse nervioso. ¡Estás aprendiendo!"
+        },
+        {
+          "conversation_id": "bunny_08",
+          "sort_order": 8,
+          "question": "¿Te animas a ti mismo cuando las cosas son difíciles?",
+          "yes_response": "¡Yupi! Ese apoyo puede alegrar todo tu día.",
+          "no_response": "Está bien - ¡intenta animarte la próxima vez!",
+          "key_takeaway": "Sé tu mayor admirador."
+        },
+        {
+          "conversation_id": "bunny_09",
+          "sort_order": 9,
+          "question": "¿Crees que aprender lleva tiempo y práctica?",
+          "yes_response": "¡Exacto! La práctica ayuda a tu cerebro a hacerse más fuerte.",
+          "no_response": "Es verdad - las cosas se vuelven más fáciles con la práctica.",
+          "key_takeaway": "Aprender es un viaje, no una carrera."
+        },
+        {
+          "conversation_id": "bunny_10",
+          "sort_order": 10,
+          "question": "¿Te has perdonado a ti mismo después de un error?",
+          "yes_response": "¡Eso es enorme! Perdonarte te ayuda a seguir adelante.",
+          "no_response": "Inténtalo - mereces la misma amabilidad que das a otros.",
+          "key_takeaway": "Perdonarte a ti mismo es un acto de valentía y amor."
+        }
+      ]
+    },
+    {
+      "npc_id": "whimsy_owl",
+      "npc_name": "Whimsy el Búho",
+      "emoji": "🦉",
+      "species": "Búho",
+      "topic": "Sueño, Descanso y Bienestar Físico",
+      "unlock_level": 3,
+      "conversations": [
+        {
+          "conversation_id": "owl_01",
+          "sort_order": 1,
+          "question": "¿Sabes por qué el sueño es tan importante?",
+          "yes_response": "¡Genial! El sueño ayuda a tu cuerpo y cerebro a recargarse.",
+          "no_response": "¡Te cuento! El sueño te ayuda a crecer, pensar y sentirte bien.",
+          "key_takeaway": "Los niños necesitan de 9 a 12 horas de sueño cada noche para sentirse mejor."
+        },
+        {
+          "conversation_id": "owl_02",
+          "sort_order": 2,
+          "question": "¿Tienes una rutina para ir a dormir?",
+          "yes_response": "¡Maravilloso! Las rutinas ayudan a tu cuerpo a saber que es hora de dormir.",
+          "no_response": "¡Intenta crear una! Las mismas actividades, a la misma hora cada noche.",
+          "key_takeaway": "Una rutina para dormir le indica a tu cerebro que es hora de relajarse."
+        },
+        {
+          "conversation_id": "owl_03",
+          "sort_order": 3,
+          "question": "¿Evitas las pantallas antes de dormir?",
+          "yes_response": "¡Buena decisión! La luz azul puede mantenerte despierto.",
+          "no_response": "Intenta apagar las pantallas 30 minutos antes de dormir.",
+          "key_takeaway": "Las pantallas antes de dormir pueden hacer más difícil quedarse dormido."
+        },
+        {
+          "conversation_id": "owl_04",
+          "sort_order": 4,
+          "question": "¿Tu habitación está fresca, oscura y tranquila?",
+          "yes_response": "¡Perfecto! Ese es el mejor ambiente para dormir.",
+          "no_response": "Intenta ajustar una cosa - podría ayudarte a dormir mejor.",
+          "key_takeaway": "Tu espacio para dormir afecta qué tan bien descansas."
+        },
+        {
+          "conversation_id": "owl_05",
+          "sort_order": 5,
+          "question": "¿Te sientes descansado cuando despiertas?",
+          "yes_response": "¡Genial! Eso significa que estás durmiendo bien.",
+          "no_response": "Podrías necesitar más sueño o una mejor rutina para dormir.",
+          "key_takeaway": "Dormir bien te ayuda a despertar con energía."
+        },
+        {
+          "conversation_id": "owl_06",
+          "sort_order": 6,
+          "question": "¿Tomas descansos durante el día para descansar?",
+          "yes_response": "¡Buen hábito! Hasta tu cerebro necesita descansos.",
+          "no_response": "Intenta descansar 5 minutos entre actividades.",
+          "key_takeaway": "Descansar durante el día te ayuda a recargar energía."
+        },
+        {
+          "conversation_id": "owl_07",
+          "sort_order": 7,
+          "question": "¿Sabes qué te ayuda a calmarte por la noche?",
+          "yes_response": "¡Eso ayuda! Usa tus trucos para calmarte antes de dormir.",
+          "no_response": "Prueba leer, escuchar música suave o respirar profundo.",
+          "key_takeaway": "Encontrar actividades tranquilas te ayuda a prepararte para dormir."
+        },
+        {
+          "conversation_id": "owl_08",
+          "sort_order": 8,
+          "question": "¿Te acuestas más o menos a la misma hora cada noche?",
+          "yes_response": "¡Perfecto! A tu cuerpo le encanta la consistencia.",
+          "no_response": "Intenta establecer una hora para dormir y cumplirla.",
+          "key_takeaway": "Horarios consistentes para dormir ayudan a regular tu ciclo de sueño."
+        },
+        {
+          "conversation_id": "owl_09",
+          "sort_order": 9,
+          "question": "¿Practicas respiración tranquila antes de dormir?",
+          "yes_response": "¡Genial! La respiración tranquila ayuda a tu cuerpo a desacelerar.",
+          "no_response": "¿Quieres intentarlo? Una respiración lenta puede ser muy relajante.",
+          "key_takeaway": "La respiración tranquila ayuda a tu cuerpo a prepararse para dormir."
+        },
+        {
+          "conversation_id": "owl_10",
+          "sort_order": 10,
+          "question": "¿Te gusta soñar cuando duermes?",
+          "yes_response": "¡Los sueños son como historias que tu cerebro cuenta por la noche!",
+          "no_response": "Está bien - algunos sueños son graciosos, otros son dulces.",
+          "key_takeaway": "Los sueños son parte de una noche de sueño saludable."
+        }
+      ]
+    },
+    {
+      "npc_id": "pippin_bear",
+      "npc_name": "Pippin el Oso",
+      "emoji": "🐻",
+      "species": "Oso",
+      "topic": "Gratitud y Alegría",
+      "unlock_level": 16,
+      "conversations": [
+        {
+          "conversation_id": "bear_01",
+          "sort_order": 1,
+          "question": "¿Alguna vez piensas en algo por lo que estás agradecido?",
+          "yes_response": "¡Qué bueno! La gratitud hace que tu corazón se sienta lleno.",
+          "no_response": "¡Inténtalo! Piensa en una cosa pequeña que te gustó hoy.",
+          "key_takeaway": "La gratitud te ayuda a notar lo bueno a tu alrededor."
+        },
+        {
+          "conversation_id": "bear_02",
+          "sort_order": 2,
+          "question": "¿Te sientes feliz cuando alguien te sonríe?",
+          "yes_response": "¡Las sonrisas pueden esparcir alegría como el sol!",
+          "no_response": "Está bien - la alegría se ve diferente para cada persona.",
+          "key_takeaway": "Las cosas pequeñas pueden traer gran felicidad."
+        },
+        {
+          "conversation_id": "bear_03",
+          "sort_order": 3,
+          "question": "¿Te gusta compartir momentos felices con alguien?",
+          "yes_response": "¡Qué especial! La alegría crece cuando la compartimos.",
+          "no_response": "Puedes intentarlo - compartir puede sentirse muy bien.",
+          "key_takeaway": "La alegría se hace más grande cuando la compartimos con otros."
+        },
+        {
+          "conversation_id": "bear_04",
+          "sort_order": 4,
+          "question": "¿Alguna vez has dicho 'gracias' de corazón?",
+          "yes_response": "¡La gratitud se siente genial en tu corazón y en el de ellos!",
+          "no_response": "Puedes intentarlo hoy - 'gracias' es una palabra mágica.",
+          "key_takeaway": "Decir 'gracias' esparce amabilidad y conexión."
+        },
+        {
+          "conversation_id": "bear_05",
+          "sort_order": 5,
+          "question": "¿Sabes qué hace que tu corazón se sienta cálido por dentro?",
+          "yes_response": "¡Eso es alegría! Vive dentro de ti.",
+          "no_response": "La encontrarás - busca momentos que te hagan sonreír.",
+          "key_takeaway": "La alegría vive en pequeños momentos amables."
+        },
+        {
+          "conversation_id": "bear_06",
+          "sort_order": 6,
+          "question": "¿Alguna vez escribes o dibujas sobre cosas buenas que pasaron?",
+          "yes_response": "¡Es una gran manera de recordar momentos felices!",
+          "no_response": "¿Quieres intentarlo? Incluso una palabra o un dibujo es genial.",
+          "key_takeaway": "Escribir o dibujar te ayuda a mantener la alegría cerca."
+        },
+        {
+          "conversation_id": "bear_07",
+          "sort_order": 7,
+          "question": "¿Sonríes cuando piensas en algo divertido?",
+          "yes_response": "¡Los recuerdos divertidos pueden traer alegría una y otra vez!",
+          "no_response": "Intenta recordar un momento en que te sentiste alegre o gracioso.",
+          "key_takeaway": "Recordar momentos divertidos trae de vuelta la alegría."
+        },
+        {
+          "conversation_id": "bear_08",
+          "sort_order": 8,
+          "question": "¿Disfrutas ayudando a que alguien más se sienta feliz?",
+          "yes_response": "¡Ese es un tipo hermoso de alegría!",
+          "no_response": "Podrías intentar una palabra amable o una sonrisa.",
+          "key_takeaway": "Ayudar a otros a sentirse bien también te trae alegría a ti."
+        },
+        {
+          "conversation_id": "bear_09",
+          "sort_order": 9,
+          "question": "¿Notas cosas en la naturaleza que te hacen sonreír?",
+          "yes_response": "¡La naturaleza está llena de pequeñas alegrías - como una brisa o un pájaro!",
+          "no_response": "Intenta buscar una pequeña alegría la próxima vez que estés afuera.",
+          "key_takeaway": "La naturaleza es un lugar hermoso para encontrar gratitud."
+        },
+        {
+          "conversation_id": "bear_10",
+          "sort_order": 10,
+          "question": "¿Te sientes orgulloso de lo bueno que ves en ti mismo?",
+          "yes_response": "¡Deberías! Eres increíble tal como eres.",
+          "no_response": "Intenta notar una cosa que haces bien cada día.",
+          "key_takeaway": "Reconocer tu propia bondad construye alegría desde adentro."
+        }
+      ]
+    },
+    {
+      "npc_id": "flicker_fox",
+      "npc_name": "Flicker el Zorro",
+      "emoji": "🦊",
+      "species": "Zorro",
+      "topic": "Reconocimiento y Alfabetización Emocional",
+      "unlock_level": 7,
+      "conversations": [
+        {
+          "conversation_id": "fox_01",
+          "sort_order": 1,
+          "question": "¿Puedes nombrar cómo te sientes ahora mismo?",
+          "yes_response": "¡Eso es un superpoder! Nombrar los sentimientos te ayuda a entenderlos.",
+          "no_response": "¡Está bien! Practiquemos juntos.",
+          "key_takeaway": "Nombrar tus sentimientos es el primer paso para entenderlos."
+        },
+        {
+          "conversation_id": "fox_02",
+          "sort_order": 2,
+          "question": "¿Notas cuando tu cuerpo se siente diferente con las emociones?",
+          "yes_response": "¡Genial! Tu cuerpo te da pistas sobre tus sentimientos.",
+          "no_response": "Intenta notarlo - mariposas en la panza, hombros tensos, corazón acelerado.",
+          "key_takeaway": "Tu cuerpo te muestra cómo te sientes."
+        },
+        {
+          "conversation_id": "fox_03",
+          "sort_order": 3,
+          "question": "¿Sabes que está bien sentir más de una emoción a la vez?",
+          "yes_response": "¡Sí! Puedes sentirte feliz y nervioso al mismo tiempo.",
+          "no_response": "¡Es verdad! Los sentimientos pueden mezclarse.",
+          "key_takeaway": "Puedes sentir muchas emociones a la vez - y eso es normal."
+        },
+        {
+          "conversation_id": "fox_04",
+          "sort_order": 4,
+          "question": "¿Puedes notar cuando alguien más está triste o feliz?",
+          "yes_response": "¡Eso es empatía! Estás notando los sentimientos de otros.",
+          "no_response": "Intenta mirar las caras, las voces y el lenguaje corporal.",
+          "key_takeaway": "Leer las emociones te ayuda a conectar con otros."
+        },
+        {
+          "conversation_id": "fox_05",
+          "sort_order": 5,
+          "question": "¿Tienes palabras para muchos sentimientos diferentes?",
+          "yes_response": "¡Genial! Mientras más palabras de sentimientos conozcas, ¡mejor!",
+          "no_response": "Aprendamos algunas: emocionado, frustrado, tranquilo, preocupado.",
+          "key_takeaway": "Conocer más palabras de sentimientos te ayuda a expresarte."
+        },
+        {
+          "conversation_id": "fox_06",
+          "sort_order": 6,
+          "question": "¿Alguna vez te sientes confundido sobre tus emociones?",
+          "yes_response": "¡Es normal! A veces los sentimientos son difíciles de descifrar.",
+          "no_response": "Si te pasa, tómate tiempo para pensar en lo que sientes.",
+          "key_takeaway": "Está bien no entender tus sentimientos de inmediato."
+        },
+        {
+          "conversation_id": "fox_07",
+          "sort_order": 7,
+          "question": "¿Hablas de tus sentimientos con alguien en quien confías?",
+          "yes_response": "¡Perfecto! Hablar ayuda a hacer los sentimientos grandes más pequeños.",
+          "no_response": "Encuentra a alguien seguro - un padre, maestro o amigo.",
+          "key_takeaway": "Compartir sentimientos con alguien seguro te ayuda a procesarlos."
+        },
+        {
+          "conversation_id": "fox_08",
+          "sort_order": 8,
+          "question": "¿Las diferentes situaciones te hacen sentir de diferentes maneras?",
+          "yes_response": "¡Sí! Los exámenes pueden ponerte nervioso, el recreo puede hacerte feliz.",
+          "no_response": "Observa cómo los lugares y las personas afectan tus sentimientos.",
+          "key_takeaway": "Diferentes situaciones traen diferentes emociones - y está bien."
+        },
+        {
+          "conversation_id": "fox_09",
+          "sort_order": 9,
+          "question": "¿Sabes que los sentimientos van y vienen como olas?",
+          "yes_response": "¡Exacto! Ningún sentimiento dura para siempre.",
+          "no_response": "Incluso los sentimientos difíciles pasarán - como nubes que se mueven.",
+          "key_takeaway": "Los sentimientos son temporales - vienen y se van."
+        },
+        {
+          "conversation_id": "fox_10",
+          "sort_order": 10,
+          "question": "¿Puedes nombrar un momento en que te sentiste muy orgulloso?",
+          "yes_response": "¡Guarda ese sentimiento! Te lo ganaste.",
+          "no_response": "Piensa en cuando hiciste algo difícil - ¡eso es orgullo!",
+          "key_takeaway": "¡El orgullo es un sentimiento que vale la pena celebrar!"
+        }
+      ]
+    },
+    {
+      "npc_id": "luna_deer",
+      "npc_name": "Luna la Cierva",
+      "emoji": "🦌",
+      "species": "Cierva",
+      "topic": "Amabilidad, Conexión y Empatía",
+      "unlock_level": 13,
+      "conversations": [
+        {
+          "conversation_id": "deer_01",
+          "sort_order": 1,
+          "question": "¿Te gusta ayudar a las personas a sentirse mejor?",
+          "yes_response": "¡Qué amable! Ayudar a otros crea conexión.",
+          "no_response": "Prueba un pequeño acto de amabilidad - ¡se siente muy bien!",
+          "key_takeaway": "La amabilidad crea conexión entre las personas."
+        },
+        {
+          "conversation_id": "deer_02",
+          "sort_order": 2,
+          "question": "¿Puedes imaginarte cómo se podría sentir otra persona?",
+          "yes_response": "Eso es empatía - sentir junto con alguien más.",
+          "no_response": "Intenta preguntarte: ¿Cómo me sentiría yo en su lugar?",
+          "key_takeaway": "La empatía es entender los sentimientos de otra persona."
+        },
+        {
+          "conversation_id": "deer_03",
+          "sort_order": 3,
+          "question": "¿Notas cuando alguien necesita un amigo?",
+          "yes_response": "¡Esa atención es hermosa! Estás siendo un buen amigo.",
+          "no_response": "Busca personas que parecen solas o tristes - podrían necesitarte.",
+          "key_takeaway": "Notar las necesidades de otros es el primer paso hacia la amabilidad."
+        },
+        {
+          "conversation_id": "deer_04",
+          "sort_order": 4,
+          "question": "¿Has hecho sonreír a alguien hoy?",
+          "yes_response": "¡Qué maravilloso! Tu amabilidad importa.",
+          "no_response": "Inténtalo - una sonrisa, un cumplido o una mano que ayuda.",
+          "key_takeaway": "Pequeños actos de amabilidad crean grandes sonrisas."
+        },
+        {
+          "conversation_id": "deer_05",
+          "sort_order": 5,
+          "question": "¿Te gusta hacer nuevos amigos?",
+          "yes_response": "¡La amistad es un tipo especial de conexión!",
+          "no_response": "¡Está bien! Empieza con un hola amigable.",
+          "key_takeaway": "Las amistades empiezan con pequeños pasos valientes."
+        },
+        {
+          "conversation_id": "deer_06",
+          "sort_order": 6,
+          "question": "¿Compartes con otros?",
+          "yes_response": "¡Compartir muestra que te importan los demás!",
+          "no_response": "Intenta compartir algo pequeño - tu tiempo, una merienda o un juguete.",
+          "key_takeaway": "Compartir crea lazos entre las personas."
+        },
+        {
+          "conversation_id": "deer_07",
+          "sort_order": 7,
+          "question": "¿Escuchas cuando alguien te está hablando?",
+          "yes_response": "¡Escuchar bien muestra respeto y cariño!",
+          "no_response": "Intenta mirarlos y realmente escuchar sus palabras.",
+          "key_takeaway": "Escuchar es una de las cosas más amables que puedes hacer."
+        },
+        {
+          "conversation_id": "deer_08",
+          "sort_order": 8,
+          "question": "¿Has incluido a alguien que estaba solo?",
+          "yes_response": "¡Eso es tan valiente y amable! Hiciste una diferencia.",
+          "no_response": "La próxima vez que veas a alguien solo, invítalo a unirse.",
+          "key_takeaway": "Incluir a otros es un poderoso acto de amabilidad."
+        },
+        {
+          "conversation_id": "deer_09",
+          "sort_order": 9,
+          "question": "¿Dices palabras amables a las personas?",
+          "yes_response": "¡Las palabras tienen poder! Las tuyas están haciendo el mundo mejor.",
+          "no_response": "Prueba un cumplido o un 'gracias' - significa mucho.",
+          "key_takeaway": "Las palabras amables pueden cambiar todo el día de alguien."
+        },
+        {
+          "conversation_id": "deer_10",
+          "sort_order": 10,
+          "question": "¿Te sientes conectado con las personas que te quieren?",
+          "yes_response": "¡Esa conexión es preciosa! Valora a esas personas.",
+          "no_response": "Piensa en quién te hace sentir amado - ellos son tu gente.",
+          "key_takeaway": "La conexión con otros nos ayuda a sentirnos amados y seguros."
+        }
+      ]
+    },
+    {
+      "npc_id": "hazel_squirrel",
+      "npc_name": "Hazel la Ardilla",
+      "emoji": "🐿️",
+      "species": "Ardilla",
+      "topic": "Planificación, Organización y Hábitos",
+      "unlock_level": 11,
+      "conversations": [
+        {
+          "conversation_id": "squirrel_01",
+          "sort_order": 1,
+          "question": "¿Planificas con anticipación las cosas que necesitas hacer?",
+          "yes_response": "¡Genial! Planificar te ayuda a sentirte preparado.",
+          "no_response": "Intenta hacer una lista simple - ¡ayuda mucho!",
+          "key_takeaway": "Planificar con anticipación hace la vida más fácil."
+        },
+        {
+          "conversation_id": "squirrel_02",
+          "sort_order": 2,
+          "question": "¿Tienes un lugar especial para tus cosas?",
+          "yes_response": "¡Perfecto! La organización ahorra tiempo y estrés.",
+          "no_response": "Intenta elegir un lugar para tu mochila o zapatos.",
+          "key_takeaway": "Tener un lugar para todo te ayuda a mantenerte organizado."
+        },
+        {
+          "conversation_id": "squirrel_03",
+          "sort_order": 3,
+          "question": "¿Haces las mismas cosas útiles cada día?",
+          "yes_response": "¡Esos son hábitos! Hacen la vida más fluida.",
+          "no_response": "Prueba un pequeño hábito - como cepillarte los dientes a la misma hora.",
+          "key_takeaway": "Los buenos hábitos te ayudan sin siquiera pensar."
+        },
+        {
+          "conversation_id": "squirrel_04",
+          "sort_order": 4,
+          "question": "¿Preparas las cosas la noche anterior?",
+          "yes_response": "¡Ese es un hábito inteligente!",
+          "no_response": "Puedes intentarlo - ahorra tiempo y estrés después.",
+          "key_takeaway": "Prepararte la noche anterior hace las mañanas más fáciles."
+        },
+        {
+          "conversation_id": "squirrel_05",
+          "sort_order": 5,
+          "question": "¿Guardas tus cosas favoritas en un lugar especial?",
+          "yes_response": "Eso te ayuda a encontrarlas cuando las necesitas.",
+          "no_response": "Te podría gustar tener un lugar solo para tus tesoros.",
+          "key_takeaway": "Tener lugares para las cosas hace la vida más fluida."
+        },
+        {
+          "conversation_id": "squirrel_06",
+          "sort_order": 6,
+          "question": "¿Alguna vez haces un plan para tu día?",
+          "yes_response": "¡Planificar te ayuda a tener más tiempo para divertirte también!",
+          "no_response": "¿Quieres probar un mini plan? ¡Solo 3 cosas!",
+          "key_takeaway": "Planificar tu tiempo te ayuda a sentirte preparado."
+        },
+        {
+          "conversation_id": "squirrel_07",
+          "sort_order": 7,
+          "question": "¿Preparas tu ropa o cosas la noche anterior?",
+          "yes_response": "¡Buena jugada! Eso te ahorra tiempo.",
+          "no_response": "Inténtalo una vez - podrías amar la calma extra por la mañana.",
+          "key_takeaway": "Un poco de preparación rinde mucho."
+        },
+        {
+          "conversation_id": "squirrel_08",
+          "sort_order": 8,
+          "question": "¿Crees que tomar descansos te ayuda a concentrarte?",
+          "yes_response": "¡Sí! Los cerebros aman las pequeñas pausas.",
+          "no_response": "¡Prueba un estiramiento corto o un descanso con movimiento!",
+          "key_takeaway": "Los descansos ayudan a tu cerebro a reiniciarse y recargarse."
+        },
+        {
+          "conversation_id": "squirrel_09",
+          "sort_order": 9,
+          "question": "¿Pides ayuda cuando estás atascado?",
+          "yes_response": "¡Esa es una estrategia inteligente!",
+          "no_response": "Pedir ayuda te hace avanzar más rápido.",
+          "key_takeaway": "Obtener ayuda es parte de la planificación inteligente."
+        },
+        {
+          "conversation_id": "squirrel_10",
+          "sort_order": 10,
+          "question": "¿Te sientes orgulloso cuando tu plan funciona?",
+          "yes_response": "¡Deberías! Ese es tu trabajo duro mostrándose.",
+          "no_response": "Está bien - los planes no siempre salen perfectos.",
+          "key_takeaway": "Cada plan enseña algo - incluso los complicados."
+        }
+      ]
+    },
+    {
+      "npc_id": "nibs_hedgehog",
+      "npc_name": "Nibs el Erizo",
+      "emoji": "🦔",
+      "species": "Erizo",
+      "topic": "Conciencia Corporal e Identificación de Necesidades",
+      "unlock_level": 18,
+      "conversations": [
+        {
+          "conversation_id": "hedgehog_01",
+          "sort_order": 1,
+          "question": "¿Notas cuando tu cuerpo se siente cansado?",
+          "yes_response": "¡Eso es conciencia corporal! Escuchar a tu cuerpo es importante.",
+          "no_response": "Intenta notarlo - bostezos, ojos pesados o músculos adoloridos.",
+          "key_takeaway": "Tu cuerpo te dice cuando necesita descanso."
+        },
+        {
+          "conversation_id": "hedgehog_02",
+          "sort_order": 2,
+          "question": "¿Sabes cuándo tienes hambre vs. cuándo estás lleno?",
+          "yes_response": "¡Genial! Eso te ayuda a cuidar tu cuerpo.",
+          "no_response": "Intenta chequear con tu pancita antes y después de comer.",
+          "key_takeaway": "Escuchar el hambre y la saciedad mantiene feliz a tu cuerpo."
+        },
+        {
+          "conversation_id": "hedgehog_03",
+          "sort_order": 3,
+          "question": "¿Tomas descansos cuando tu cuerpo los necesita?",
+          "yes_response": "¡Perfecto! Tu cuerpo te lo agradece.",
+          "no_response": "Intenta pausar cuando te sientas cansado o incómodo.",
+          "key_takeaway": "Tomar descansos cuando los necesitas ayuda a tu cuerpo a recuperarse."
+        },
+        {
+          "conversation_id": "hedgehog_04",
+          "sort_order": 4,
+          "question": "¿Notas cuando tienes sed?",
+          "yes_response": "¡Bien! Beber agua es muy importante.",
+          "no_response": "Intenta notar si tu boca se siente seca o te duele la cabeza.",
+          "key_takeaway": "La sed es tu cuerpo pidiendo agua."
+        },
+        {
+          "conversation_id": "hedgehog_05",
+          "sort_order": 5,
+          "question": "¿Puedes notar cuando necesitas mover tu cuerpo?",
+          "yes_response": "¡Sí! A tu cuerpo le encanta el movimiento.",
+          "no_response": "Intenta notar cuando te sientes inquieto o con ganas de moverte.",
+          "key_takeaway": "Tu cuerpo te dice cuando necesita moverse."
+        },
+        {
+          "conversation_id": "hedgehog_06",
+          "sort_order": 6,
+          "question": "¿Sabes cuándo necesitas tiempo tranquilo o solo?",
+          "yes_response": "¡Esa es una gran autoconciencia!",
+          "no_response": "Intenta notar cuando te sientes abrumado o sobreestimulado.",
+          "key_takeaway": "A veces tu cuerpo necesita calma y quietud."
+        },
+        {
+          "conversation_id": "hedgehog_07",
+          "sort_order": 7,
+          "question": "¿Sientes cuando tu cuerpo tiene mucho calor o mucho frío?",
+          "yes_response": "¡Perfecto! La temperatura importa para la comodidad.",
+          "no_response": "Intenta notar si sudas, tiemblas o tienes piel de gallina.",
+          "key_takeaway": "Tu cuerpo te dice qué temperatura necesita."
+        },
+        {
+          "conversation_id": "hedgehog_08",
+          "sort_order": 8,
+          "question": "¿Puedes notar cuando tu cuerpo se siente tenso?",
+          "yes_response": "¡Gran conciencia! La tensión es una señal.",
+          "no_response": "Intenta notar hombros apretados, mandíbula tensa o puños cerrados.",
+          "key_takeaway": "La tensión del cuerpo a menudo significa que necesitas relajarte."
+        },
+        {
+          "conversation_id": "hedgehog_09",
+          "sort_order": 9,
+          "question": "¿Sabes cuándo necesitas ir al baño?",
+          "yes_response": "¡Bien! No ignores esa señal.",
+          "no_response": "Tu cuerpo te avisará - ¡escúchalo!",
+          "key_takeaway": "Siempre escucha cuando tu cuerpo dice que necesita ir al baño."
+        },
+        {
+          "conversation_id": "hedgehog_10",
+          "sort_order": 10,
+          "question": "¿Chequeas cómo está tu cuerpo durante el día?",
+          "yes_response": "¡Esa es una maravillosa conciencia corporal!",
+          "no_response": "Intenta preguntarte: ¿Qué necesita mi cuerpo ahora mismo?",
+          "key_takeaway": "Chequear tu cuerpo regularmente te ayuda a mantenerte saludable y feliz."
+        }
+      ]
+    },
+    {
+      "npc_id": "ripple_raccoon",
+      "npc_name": "Ripple el Mapache",
+      "emoji": "🦝",
+      "species": "Mapache",
+      "topic": "Calmarse y Autorregulación",
+      "unlock_level": 22,
+      "conversations": [
+        {
+          "conversation_id": "raccoon_01",
+          "sort_order": 1,
+          "question": "¿Tienes formas de calmarte cuando estás molesto?",
+          "yes_response": "¡Eso es un superpoder! Saber cómo calmarte ayuda mucho.",
+          "no_response": "¡Encontremos algunas! Respiraciones profundas, contar, o apretar una pelota antiestrés.",
+          "key_takeaway": "Tener estrategias para calmarte te ayuda a manejar emociones grandes."
+        },
+        {
+          "conversation_id": "raccoon_02",
+          "sort_order": 2,
+          "question": "¿Respiras profundo cuando te sientes estresado?",
+          "yes_response": "¡Perfecto! Respirar profundo calma todo tu cuerpo.",
+          "no_response": "Inténtalo: Inhala por 4, mantén por 4, exhala por 4.",
+          "key_takeaway": "Respirar profundo es una forma rápida de calmarte."
+        },
+        {
+          "conversation_id": "raccoon_03",
+          "sort_order": 3,
+          "question": "¿Sabes que está bien tomar un descanso cuando te sientes abrumado?",
+          "yes_response": "¡Sí! Tomar espacio te ayuda a reiniciarte.",
+          "no_response": "Intenta alejarte a un lugar tranquilo cuando lo necesites.",
+          "key_takeaway": "Tomar un descanso es inteligente, no débil."
+        },
+        {
+          "conversation_id": "raccoon_04",
+          "sort_order": 4,
+          "question": "¿Haces una pausa antes de reaccionar cuando estás molesto?",
+          "yes_response": "¡Respirar le da a tu cerebro una oportunidad de pensar!",
+          "no_response": "Inténtalo - puede ayudar cuando no estás seguro o estás molesto.",
+          "key_takeaway": "Una respiración puede convertir una reacción rápida en una acción inteligente."
+        },
+        {
+          "conversation_id": "raccoon_05",
+          "sort_order": 5,
+          "question": "¿Tomas decisiones diferentes cuando estás calmado?",
+          "yes_response": "¡Ese es tu cerebro pensante trabajando!",
+          "no_response": "Intenta esperar hasta que te sientas calmado - luego decide.",
+          "key_takeaway": "Las mentes calmadas toman decisiones reflexivas."
+        },
+        {
+          "conversation_id": "raccoon_06",
+          "sort_order": 6,
+          "question": "¿Crees que tus decisiones afectan a otros también?",
+          "yes_response": "¡Muy cierto - las decisiones amables ayudan a todos!",
+          "no_response": "Intenta notar cómo tus acciones tocan a otros.",
+          "key_takeaway": "Tus decisiones pueden ayudar a todo el grupo."
+        },
+        {
+          "conversation_id": "raccoon_07",
+          "sort_order": 7,
+          "question": "¿A veces eliges una merienda que ayuda a tu cuerpo?",
+          "yes_response": "¡Genial! Esa es una elección consciente.",
+          "no_response": "¡Puedes probar algo rico y saludable hoy!",
+          "key_takeaway": "Las meriendas conscientes alimentan tu diversión."
+        },
+        {
+          "conversation_id": "raccoon_08",
+          "sort_order": 8,
+          "question": "¿Sabes qué te ayuda a calmarte cuando estás molesto?",
+          "yes_response": "¡Esa es una gran herramienta para llevar contigo!",
+          "no_response": "Prueba diferentes cosas - como música o un abrazo.",
+          "key_takeaway": "Conocer tus herramientas para calmarte ayuda con las decisiones difíciles."
+        },
+        {
+          "conversation_id": "raccoon_09",
+          "sort_order": 9,
+          "question": "¿Eliges cómo responder cuando alguien es poco amable?",
+          "yes_response": "Eso es fortaleza y cuidado combinados.",
+          "no_response": "Puedes pausar y elegir ser amable de todos modos.",
+          "key_takeaway": "Siempre puedes elegir tu respuesta."
+        },
+        {
+          "conversation_id": "raccoon_10",
+          "sort_order": 10,
+          "question": "¿Te sientes orgulloso después de tomar una decisión útil?",
+          "yes_response": "Ese es tu corazón sonriéndote de vuelta.",
+          "no_response": "¡Incluso las pequeñas victorias merecen un baile de felicidad!",
+          "key_takeaway": "Las decisiones útiles te hacen sentir orgulloso a ti y a otros."
+        }
+      ]
+    },
+    {
+      "npc_id": "zoomer_rabbit",
+      "npc_name": "Zoomer el Conejo Veloz",
+      "emoji": "🐇",
+      "species": "Conejo Veloz",
+      "topic": "Motivación y Energía",
+      "unlock_level": 45,
+      "conversations": [
+        {
+          "conversation_id": "rabbit_01",
+          "sort_order": 1,
+          "question": "¿Te sientes con energía cuando mueves tu cuerpo?",
+          "yes_response": "¡Sí! ¡El movimiento te da energía!",
+          "no_response": "Inténtalo - incluso un estiramiento rápido puede despertarte.",
+          "key_takeaway": "Mover tu cuerpo aumenta tu energía."
+        },
+        {
+          "conversation_id": "rabbit_02",
+          "sort_order": 2,
+          "question": "¿Tienes metas que te emocionan?",
+          "yes_response": "¡Las metas te dan algo por lo que trabajar!",
+          "no_response": "Piensa en una cosa pequeña que te gustaría hacer esta semana.",
+          "key_takeaway": "Las metas te ayudan a mantenerte motivado."
+        },
+        {
+          "conversation_id": "rabbit_03",
+          "sort_order": 3,
+          "question": "¿Celebras cuando terminas algo difícil?",
+          "yes_response": "¡Sí! Celebrar te mantiene motivado.",
+          "no_response": "Inténtalo - ¡incluso un baile de alegría cuenta!",
+          "key_takeaway": "Celebrar el éxito alimenta la motivación futura."
+        },
+        {
+          "conversation_id": "rabbit_04",
+          "sort_order": 4,
+          "question": "¿Sabes en qué momentos del día tienes más energía?",
+          "yes_response": "¡Inteligente! Usa tus momentos de alta energía para tareas difíciles.",
+          "no_response": "Intenta notarlo - ¿mañana? ¿tarde? ¿noche?",
+          "key_takeaway": "Conocer tus patrones de energía te ayuda a planificar mejor."
+        },
+        {
+          "conversation_id": "rabbit_05",
+          "sort_order": 5,
+          "question": "¿Comes alimentos que te dan energía duradera?",
+          "yes_response": "¡Genial! Los alimentos saludables te mantienen activo.",
+          "no_response": "Prueba frutas, verduras, granos integrales y proteína.",
+          "key_takeaway": "Los alimentos nutritivos proporcionan energía constante."
+        },
+        {
+          "conversation_id": "rabbit_06",
+          "sort_order": 6,
+          "question": "¿Te emociona probar cosas nuevas?",
+          "yes_response": "¡Esa emoción es motivación!",
+          "no_response": "Intenta encontrar una cosa nueva que suene divertida.",
+          "key_takeaway": "La curiosidad y la emoción impulsan la motivación."
+        },
+        {
+          "conversation_id": "rabbit_07",
+          "sort_order": 7,
+          "question": "¿Notas cuando te sientes con poca energía?",
+          "yes_response": "¡Buena conciencia! Entonces puedes hacer algo al respecto.",
+          "no_response": "Intenta chequearte - ¿cansado, con hambre, o necesitas un descanso?",
+          "key_takeaway": "Reconocer la baja energía te ayuda a recargarte."
+        },
+        {
+          "conversation_id": "rabbit_08",
+          "sort_order": 8,
+          "question": "¿Tienes una rutina matutina que te da energía?",
+          "yes_response": "¡Perfecto! Las buenas mañanas establecen el tono para tu día.",
+          "no_response": "Intenta: ¡estirar, tomar agua, desayunar, sonreír!",
+          "key_takeaway": "Las rutinas matutinas construyen energía diaria."
+        },
+        {
+          "conversation_id": "rabbit_09",
+          "sort_order": 9,
+          "question": "¿Divides las tareas grandes en pasos más pequeños?",
+          "yes_response": "¡Inteligente! Los pasos pequeños te mantienen motivado.",
+          "no_response": "Inténtalo - ¡completar pasos pequeños se siente genial!",
+          "key_takeaway": "Las pequeñas victorias construyen impulso."
+        },
+        {
+          "conversation_id": "rabbit_10",
+          "sort_order": 10,
+          "question": "¿Te animas a ti mismo cuando las cosas se ponen difíciles?",
+          "yes_response": "¡Ese auto-ánimo es poderoso!",
+          "no_response": "Intenta decir: '¡Yo puedo!' o '¡Sigue adelante!'",
+          "key_takeaway": "El diálogo interno positivo aumenta la motivación y la energía."
+        }
+      ]
+    }
+  ]
+}

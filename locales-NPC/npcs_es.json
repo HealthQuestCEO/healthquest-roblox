@@ -1,0 +1,30 @@
+{
+  "conversation": {
+    "greeting": "¡Hola! ¡Soy {{name}}!",
+    "farewell": "¡Hasta la próxima!",
+    "thanks": "¡Gracias por charlar conmigo!",
+    "yesOption": "Sí",
+    "noOption": "No",
+    "continueChat": "Seguir charlando"
+  },
+  "topics": {
+    "selfCompassion": "Autocompasión y Errores",
+    "gratitude": "Gratitud",
+    "mindfulness": "Atención Plena",
+    "emotions": "Entendiendo las Emociones",
+    "friendship": "Amistad",
+    "growth": "Crecimiento Personal",
+    "resilience": "Resiliencia",
+    "kindness": "Bondad"
+  },
+  "characters": {
+    "bounceBunny": {
+      "name": "Bounce el Conejito",
+      "greeting": "¡Hola amigo! ¿Quieres saltar y charlar?"
+    },
+    "lumo": {
+      "name": "Lumo",
+      "greeting": "¡Bienvenido a Lumo's Land! ¿Cómo puedo ayudarte?"
+    }
+  }
+}

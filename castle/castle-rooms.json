@@ -1,0 +1,225 @@
+{
+  "castle_system": {
+    "name": "Lumo's Castle",
+    "description": "Lumo's home with multiple rooms for decoration and activities",
+    "grid_system": "10x10 drag-and-drop placement"
+  },
+  
+  "default_rooms": [
+    {
+      "id": "bedroom",
+      "name": "Bedroom",
+      "icon": "🛏️",
+      "color": "#FF9500",
+      "unlock_level": 1,
+      "always_available": true,
+      "features": [
+        "Sticker Journal access",
+        "Place decor items",
+        "10x10 grid placement"
+      ]
+    },
+    {
+      "id": "style_chamber",
+      "name": "Style Chamber",
+      "icon": "👗",
+      "color": "#9B59B6",
+      "unlock_level": 1,
+      "always_available": true,
+      "features": [
+        "Change Lumo's outfit",
+        "Manage accessories",
+        "Preview outfits"
+      ]
+    },
+    {
+      "id": "living_room",
+      "name": "Living Room",
+      "icon": "🛋️",
+      "color": "#5DCCCC",
+      "unlock_level": 1,
+      "always_available": true,
+      "features": [
+        "Place furniture",
+        "Decorate with items",
+        "10x10 grid placement"
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "icon": "🍳",
+      "color": "#27AE60",
+      "unlock_level": 1,
+      "always_available": true,
+      "features": [
+        "Place kitchen items",
+        "Recipe display area",
+        "Food-themed decorations"
+      ]
+    },
+    {
+      "id": "vault",
+      "name": "Vault",
+      "icon": "🏆",
+      "color": "#F39C12",
+      "unlock_level": 1,
+      "always_available": true,
+      "features": [
+        "Store rare items",
+        "Display achievements",
+        "Special rewards"
+      ]
+    },
+    {
+      "id": "attic",
+      "name": "Attic",
+      "icon": "📦",
+      "color": "#95A5A6",
+      "unlock_level": 1,
+      "always_available": true,
+      "storage_only": true,
+      "categories": ["furniture", "decor", "stickers", "rare"],
+      "features": [
+        "Storage for unused items",
+        "Organized by category",
+        "Move items between rooms"
+      ]
+    }
+  ],
+  
+  "future_rooms": [
+    {
+      "id": "greenhouse",
+      "name": "🌿 Greenhouse",
+      "unlock_level": 25,
+      "unlock_xp": 17000,
+      "description": "Grow mindful plants and vegetables",
+      "features": [
+        "Plant seeds",
+        "Water plants",
+        "Harvest crops",
+        "Gardening mini-games"
+      ],
+      "items_preview": "Seeds, watering cans, planters, decorative pots"
+    },
+    {
+      "id": "music_room",
+      "name": "🎵 Music Room",
+      "unlock_level": 40,
+      "unlock_xp": 40000,
+      "description": "Create and enjoy music",
+      "features": [
+        "Play instruments",
+        "Music mini-games",
+        "Sound collection",
+        "Rhythm activities"
+      ],
+      "items_preview": "Instruments, music stands, speakers, vinyl records"
+    },
+    {
+      "id": "art_studio",
+      "name": "🎨 Art Studio",
+      "unlock_level": 55,
+      "unlock_xp": 70000,
+      "description": "Express creativity through art",
+      "features": [
+        "Drawing activities",
+        "Color mixing",
+        "Art displays",
+        "Creative projects"
+      ],
+      "items_preview": "Easels, paint sets, canvases, art supplies"
+    },
+    {
+      "id": "game_room",
+      "name": "🎮 Game Room",
+      "unlock_level": 70,
+      "unlock_xp": 107500,
+      "description": "Fun games and activities",
+      "features": [
+        "Board games",
+        "Puzzle challenges",
+        "Activity center",
+        "Game collection"
+      ],
+      "items_preview": "Game consoles, board games, puzzles, arcade machines"
+    },
+    {
+      "id": "observatory",
+      "name": "🔭 Observatory",
+      "unlock_level": 85,
+      "unlock_xp": 145000,
+      "description": "Explore the stars and cosmos",
+      "features": [
+        "Telescope viewing",
+        "Star charts",
+        "Space learning",
+        "Astronomy activities"
+      ],
+      "items_preview": "Telescopes, star maps, globes, space decorations"
+    },
+    {
+      "id": "library",
+      "name": "📚 Library",
+      "unlock_level": 99,
+      "unlock_xp": 194000,
+      "description": "Read and learn in peace",
+      "features": [
+        "Book collection",
+        "Reading corner",
+        "Learning activities",
+        "Quiet study space"
+      ],
+      "items_preview": "Bookshelves, reading chairs, lamps, study desks"
+    }
+  ],
+  
+  "sticker_journal": {
+    "name": "Sticker Journal",
+    "icon": "📖",
+    "access_from": "bedroom",
+    "layout": {
+      "pages": "book-style with pagination",
+      "stickers_per_page": 10,
+      "grid": "5 columns x 2 rows",
+      "appearance": "open book design"
+    },
+    "categories": [
+      "emotions",
+      "seasonal",
+      "achievements",
+      "animals",
+      "food",
+      "activities",
+      "nature",
+      "special"
+    ],
+    "unlock_sources": [
+      "default (everyone has)",
+      "spinner prize",
+      "level reward",
+      "shop item",
+      "quest reward"
+    ]
+  },
+  
+  "room_management": {
+    "item_placement": {
+      "grid_size": "10x10",
+      "method": "drag and drop",
+      "collision": "no overlap allowed",
+      "snap_to_grid": true
+    },
+    "item_controls": {
+      "remove": "X button on placed items",
+      "move": "Dropdown to select destination room",
+      "storage": "Move to Attic for storage"
+    },
+    "backgrounds": {
+      "upload_location": "Admin Panel → Upload Asset Images",
+      "type": "background",
+      "key": "room_id"
+    }
+  }
+}

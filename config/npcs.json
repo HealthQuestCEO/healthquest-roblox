@@ -1,0 +1,826 @@
+{
+  "metadata": {
+    "version": "4.0 - ALL 90 CONVERSATIONS",
+    "description": "COMPLETE Glow Ridge NPC system with ALL 90 conversations extracted",
+    "lastUpdated": "2025-11-24",
+    "total_npcs": 9,
+    "conversations_per_npc": 10,
+    "total_conversations": 90,
+    "daily_xp_cap": 100,
+    "xp_per_conversation": 25,
+    "max_conversations_per_day": 4
+  },
+  
+  "npcs": [
+    {
+      "npc_id": "bounce_bunny",
+      "npc_name": "Bounce the Bunny",
+      "emoji": "🐰",
+      "species": "Bunny",
+      "topic": "Self-Compassion & Mistakes",
+      "unlock_level": 1,
+      "conversations": [
+        {
+          "conversation_id": "bunny_01",
+          "sort_order": 1,
+          "question": "Do you sometimes worry about making mistakes?",
+          "yes_response": "That's totally normal! Everyone makes mistakes - they help us learn and grow!",
+          "no_response": "That's great! Mistakes are a natural part of learning. Remember, nobody's perfect!",
+          "key_takeaway": "Mistakes are proof you're trying new things. Be kind to yourself when you make them!"
+        },
+        {
+          "conversation_id": "bunny_02",
+          "sort_order": 2,
+          "question": "Have you ever said something mean to yourself in your head?",
+          "yes_response": "That's called negative self-talk. Let's practice being kinder to ourselves!",
+          "no_response": "That's wonderful! Treating yourself kindly in your thoughts is powerful!",
+          "key_takeaway": "Talk to yourself like you'd talk to a friend - with kindness and encouragement!"
+        },
+        {
+          "conversation_id": "bunny_03",
+          "sort_order": 3,
+          "question": "Do you celebrate trying, even if things don't work out?",
+          "yes_response": "Awesome! Effort matters more than perfection.",
+          "no_response": "You can start today! Try it after something small.",
+          "key_takeaway": "Celebrate your effort, not just the outcome."
+        },
+        {
+          "conversation_id": "bunny_04",
+          "sort_order": 4,
+          "question": "Do you feel upset when you mess up?",
+          "yes_response": "That's okay. Feelings are part of learning.",
+          "no_response": "That's great! Keep being kind to yourself.",
+          "key_takeaway": "It's okay to feel upset. Mistakes help us grow."
+        },
+        {
+          "conversation_id": "bunny_05",
+          "sort_order": 5,
+          "question": "Do you believe it's okay to ask for help?",
+          "yes_response": "Yes! Asking for help is a smart and brave thing.",
+          "no_response": "You can always ask—everyone needs help sometimes.",
+          "key_takeaway": "Asking for help shows strength, not weakness."
+        },
+        {
+          "conversation_id": "bunny_06",
+          "sort_order": 6,
+          "question": "Do you talk to yourself like a friend?",
+          "yes_response": "Kind words to yourself are like a warm hug!",
+          "no_response": "Try it—what would you say to a friend who needs love?",
+          "key_takeaway": "Speak to yourself with kindness and care."
+        },
+        {
+          "conversation_id": "bunny_07",
+          "sort_order": 7,
+          "question": "Have you ever felt nervous about trying something new?",
+          "yes_response": "That's brave! Trying new things helps you grow.",
+          "no_response": "That's okay! Start small and go at your pace.",
+          "key_takeaway": "It's normal to feel nervous. You're learning!"
+        },
+        {
+          "conversation_id": "bunny_08",
+          "sort_order": 8,
+          "question": "Do you cheer yourself on when things are tricky?",
+          "yes_response": "Yay! That support can lift your whole day.",
+          "no_response": "That's okay—try cheering for yourself next time!",
+          "key_takeaway": "Be your own biggest fan."
+        },
+        {
+          "conversation_id": "bunny_09",
+          "sort_order": 9,
+          "question": "Do you think learning takes time and practice?",
+          "yes_response": "Exactly! Practice helps your brain grow stronger.",
+          "no_response": "It's true—things get easier with practice.",
+          "key_takeaway": "Learning is a journey, not a race."
+        },
+        {
+          "conversation_id": "bunny_10",
+          "sort_order": 10,
+          "question": "Have you forgiven yourself after a mistake?",
+          "yes_response": "That's huge! Forgiving yourself helps you move forward.",
+          "no_response": "Try it—you deserve the same kindness you give others.",
+          "key_takeaway": "Forgiving yourself is an act of courage and love."
+        }
+      ]
+    },
+    {
+      "npc_id": "whimsy_owl",
+      "npc_name": "Whimsy the Owl",
+      "emoji": "🦉",
+      "species": "Owl",
+      "topic": "Sleep, Rest & Physical Wellness",
+      "unlock_level": 3,
+      "conversations": [
+        {
+          "conversation_id": "owl_01",
+          "sort_order": 1,
+          "question": "Do you know why sleep is so important?",
+          "yes_response": "Great! Sleep helps your body and brain recharge.",
+          "no_response": "Let me tell you! Sleep helps you grow, think, and feel good.",
+          "key_takeaway": "Kids need 9-12 hours of sleep each night to feel their best."
+        },
+        {
+          "conversation_id": "owl_02",
+          "sort_order": 2,
+          "question": "Do you have a bedtime routine?",
+          "yes_response": "Wonderful! Routines help your body know it's time to sleep.",
+          "no_response": "Try creating one! Same activities, same time each night.",
+          "key_takeaway": "A bedtime routine signals your brain to wind down."
+        },
+        {
+          "conversation_id": "owl_03",
+          "sort_order": 3,
+          "question": "Do you avoid screens before bed?",
+          "yes_response": "Smart choice! Blue light can keep you awake.",
+          "no_response": "Try turning screens off 30 minutes before bed.",
+          "key_takeaway": "Screens before bed can make it harder to fall asleep."
+        },
+        {
+          "conversation_id": "owl_04",
+          "sort_order": 4,
+          "question": "Is your bedroom cool, dark, and quiet?",
+          "yes_response": "Perfect! That's the best sleep environment.",
+          "no_response": "Try adjusting one thing—it might help you sleep better.",
+          "key_takeaway": "Your sleep space affects how well you rest."
+        },
+        {
+          "conversation_id": "owl_05",
+          "sort_order": 5,
+          "question": "Do you feel rested when you wake up?",
+          "yes_response": "Awesome! That means you're getting good sleep.",
+          "no_response": "You might need more sleep or a better bedtime routine.",
+          "key_takeaway": "Good sleep helps you wake up feeling energized."
+        },
+        {
+          "conversation_id": "owl_06",
+          "sort_order": 6,
+          "question": "Do you take breaks during the day to rest?",
+          "yes_response": "Great habit! Even your brain needs breaks.",
+          "no_response": "Try resting for 5 minutes between activities.",
+          "key_takeaway": "Rest during the day helps you recharge."
+        },
+        {
+          "conversation_id": "owl_07",
+          "sort_order": 7,
+          "question": "Do you know what helps you calm down at night?",
+          "yes_response": "That's helpful! Use your calm-down tricks before bed.",
+          "no_response": "Try reading, listening to soft music, or deep breaths.",
+          "key_takeaway": "Finding calm activities helps you prepare for sleep."
+        },
+        {
+          "conversation_id": "owl_08",
+          "sort_order": 8,
+          "question": "Do you go to bed around the same time each night?",
+          "yes_response": "Perfect! Your body loves consistency.",
+          "no_response": "Try setting a bedtime and sticking to it.",
+          "key_takeaway": "Consistent bedtimes help regulate your sleep cycle."
+        },
+        {
+          "conversation_id": "owl_09",
+          "sort_order": 9,
+          "question": "Do you practice calm breathing before sleep?",
+          "yes_response": "Awesome! Calm breathing helps your body slow down.",
+          "no_response": "Want to try? A slow breath can be super soothing.",
+          "key_takeaway": "Calm breathing helps your body get ready for sleep."
+        },
+        {
+          "conversation_id": "owl_10",
+          "sort_order": 10,
+          "question": "Do you like dreaming when you sleep?",
+          "yes_response": "Dreams are like stories your brain tells at night!",
+          "no_response": "That's okay—some dreams are silly, some are sweet.",
+          "key_takeaway": "Dreams are part of a healthy night's sleep."
+        }
+      ]
+    },
+    {
+      "npc_id": "pippin_bear",
+      "npc_name": "Pippin the Bear",
+      "emoji": "🐻",
+      "species": "Bear",
+      "topic": "Gratitude & Joy",
+      "unlock_level": 6,
+      "conversations": [
+        {
+          "conversation_id": "bear_01",
+          "sort_order": 1,
+          "question": "Do you ever think about something you're thankful for?",
+          "yes_response": "That's awesome! Gratitude makes your heart feel full.",
+          "no_response": "Try it! Think of one small thing you liked today.",
+          "key_takeaway": "Gratitude helps you notice the good around you."
+        },
+        {
+          "conversation_id": "bear_02",
+          "sort_order": 2,
+          "question": "Do you feel happy when someone smiles at you?",
+          "yes_response": "Smiles can spread joy like sunshine!",
+          "no_response": "That's okay—joy looks different for everyone.",
+          "key_takeaway": "Little things can bring big happiness."
+        },
+        {
+          "conversation_id": "bear_03",
+          "sort_order": 3,
+          "question": "Do you like to share happy moments with someone?",
+          "yes_response": "That's so special! Joy grows when we share it.",
+          "no_response": "You can try it—sharing can feel really good.",
+          "key_takeaway": "Joy gets bigger when we share it with others."
+        },
+        {
+          "conversation_id": "bear_04",
+          "sort_order": 4,
+          "question": "Have you ever said 'thank you' and meant it?",
+          "yes_response": "Gratitude feels great in your heart and theirs!",
+          "no_response": "You can try today—'thank you' is a magic word.",
+          "key_takeaway": "Saying 'thank you' spreads kindness and connection."
+        },
+        {
+          "conversation_id": "bear_05",
+          "sort_order": 5,
+          "question": "Do you know what makes your heart feel warm inside?",
+          "yes_response": "That's joy! It lives inside of you.",
+          "no_response": "You'll find it—look for moments that make you smile.",
+          "key_takeaway": "Joy lives in small, kind moments."
+        },
+        {
+          "conversation_id": "bear_06",
+          "sort_order": 6,
+          "question": "Do you ever write or draw about good things that happened?",
+          "yes_response": "That's a great way to remember happy times!",
+          "no_response": "Want to try? Even one word or picture is great.",
+          "key_takeaway": "Writing or drawing helps you keep joy close."
+        },
+        {
+          "conversation_id": "bear_07",
+          "sort_order": 7,
+          "question": "Do you smile when you think of something fun?",
+          "yes_response": "Fun memories can bring joy again and again!",
+          "no_response": "Try remembering a time you felt silly or happy.",
+          "key_takeaway": "Remembering fun times brings back joy."
+        },
+        {
+          "conversation_id": "bear_08",
+          "sort_order": 8,
+          "question": "Do you enjoy helping someone else feel happy?",
+          "yes_response": "That's a beautiful kind of joy!",
+          "no_response": "You might try a kind word or a smile.",
+          "key_takeaway": "Helping others feel good brings joy to you too."
+        },
+        {
+          "conversation_id": "bear_09",
+          "sort_order": 9,
+          "question": "Do you notice things in nature that make you smile?",
+          "yes_response": "Nature is full of tiny joys—like a breeze or a bird!",
+          "no_response": "Try looking for one tiny joy next time you're outside.",
+          "key_takeaway": "Nature is a beautiful place to find gratitude."
+        },
+        {
+          "conversation_id": "bear_10",
+          "sort_order": 10,
+          "question": "Do you feel proud of the good you see in yourself?",
+          "yes_response": "You should! You're amazing just as you are.",
+          "no_response": "Try noticing one thing you do well each day.",
+          "key_takeaway": "Recognizing your own goodness builds joy from within."
+        }
+      ]
+    },
+    {
+      "npc_id": "flicker_fox",
+      "npc_name": "Flicker the Fox",
+      "emoji": "🦊",
+      "species": "Fox",
+      "topic": "Emotion Recognition & Literacy",
+      "unlock_level": 9,
+      "conversations": [
+        {
+          "conversation_id": "fox_01",
+          "sort_order": 1,
+          "question": "Can you name how you're feeling right now?",
+          "yes_response": "That's a superpower! Naming feelings helps you understand them.",
+          "no_response": "That's okay! Let's practice together.",
+          "key_takeaway": "Naming your feelings is the first step to understanding them."
+        },
+        {
+          "conversation_id": "fox_02",
+          "sort_order": 2,
+          "question": "Do you notice when your body feels different with emotions?",
+          "yes_response": "Great! Your body gives you clues about your feelings.",
+          "no_response": "Try noticing—butterflies in your tummy, tight shoulders, fast heart.",
+          "key_takeaway": "Your body shows you how you feel."
+        },
+        {
+          "conversation_id": "fox_03",
+          "sort_order": 3,
+          "question": "Do you know it's okay to feel more than one emotion at once?",
+          "yes_response": "Yes! You can feel happy and nervous at the same time.",
+          "no_response": "It's true! Feelings can mix together.",
+          "key_takeaway": "You can feel many emotions at once—and that's normal."
+        },
+        {
+          "conversation_id": "fox_04",
+          "sort_order": 4,
+          "question": "Can you tell when someone else is feeling sad or happy?",
+          "yes_response": "That's empathy! You're noticing others' feelings.",
+          "no_response": "Try looking at faces, voices, and body language.",
+          "key_takeaway": "Reading emotions helps you connect with others."
+        },
+        {
+          "conversation_id": "fox_05",
+          "sort_order": 5,
+          "question": "Do you have words for lots of different feelings?",
+          "yes_response": "Awesome! The more feeling words you know, the better!",
+          "no_response": "Let's learn some: excited, frustrated, peaceful, worried.",
+          "key_takeaway": "Knowing more feeling words helps you express yourself."
+        },
+        {
+          "conversation_id": "fox_06",
+          "sort_order": 6,
+          "question": "Do you ever feel confused about your emotions?",
+          "yes_response": "That's normal! Sometimes feelings are tricky to figure out.",
+          "no_response": "If you do, take time to think about what you're feeling.",
+          "key_takeaway": "It's okay not to understand your feelings right away."
+        },
+        {
+          "conversation_id": "fox_07",
+          "sort_order": 7,
+          "question": "Do you talk about your feelings with someone you trust?",
+          "yes_response": "Perfect! Talking helps make big feelings smaller.",
+          "no_response": "Find someone safe—a parent, teacher, or friend.",
+          "key_takeaway": "Sharing feelings with someone safe helps you process them."
+        },
+        {
+          "conversation_id": "fox_08",
+          "sort_order": 8,
+          "question": "Do different situations make you feel different ways?",
+          "yes_response": "Yes! Tests might make you nervous, recess might make you happy.",
+          "no_response": "Notice how places and people affect your feelings.",
+          "key_takeaway": "Different situations bring different emotions—and that's okay."
+        },
+        {
+          "conversation_id": "fox_09",
+          "sort_order": 9,
+          "question": "Do you know feelings come and go like waves?",
+          "yes_response": "Exactly! No feeling lasts forever.",
+          "no_response": "Even hard feelings will pass—like clouds moving by.",
+          "key_takeaway": "Feelings are temporary—they come and they go."
+        },
+        {
+          "conversation_id": "fox_10",
+          "sort_order": 10,
+          "question": "Can you name a time you felt really proud?",
+          "yes_response": "Hold onto that feeling! You earned it.",
+          "no_response": "Think about when you did something hard—that's pride!",
+          "key_takeaway": "Pride is a feeling worth celebrating!"
+        }
+      ]
+    },
+    {
+      "npc_id": "luna_deer",
+      "npc_name": "Luna the Deer",
+      "emoji": "🦌",
+      "species": "Deer",
+      "topic": "Kindness, Connection & Empathy",
+      "unlock_level": 12,
+      "conversations": [
+        {
+          "conversation_id": "deer_01",
+          "sort_order": 1,
+          "question": "Do you like helping people feel better?",
+          "yes_response": "That's so kind! Helping others brings connection.",
+          "no_response": "Try a small act of kindness—it feels really good!",
+          "key_takeaway": "Kindness creates connection between people."
+        },
+        {
+          "conversation_id": "deer_02",
+          "sort_order": 2,
+          "question": "Can you imagine how someone else might be feeling?",
+          "yes_response": "That's empathy—feeling with someone else.",
+          "no_response": "Try asking yourself: How would I feel in their shoes?",
+          "key_takeaway": "Empathy is understanding someone else's feelings."
+        },
+        {
+          "conversation_id": "deer_03",
+          "sort_order": 3,
+          "question": "Do you notice when someone needs a friend?",
+          "yes_response": "That awareness is beautiful! You're being a good friend.",
+          "no_response": "Look for people who seem alone or sad—they might need you.",
+          "key_takeaway": "Noticing others' needs is the first step to kindness."
+        },
+        {
+          "conversation_id": "deer_04",
+          "sort_order": 4,
+          "question": "Have you ever made someone smile today?",
+          "yes_response": "That's wonderful! Your kindness matters.",
+          "no_response": "Try it—a smile, a compliment, or a helping hand.",
+          "key_takeaway": "Small acts of kindness create big smiles."
+        },
+        {
+          "conversation_id": "deer_05",
+          "sort_order": 5,
+          "question": "Do you like making new friends?",
+          "yes_response": "Friendship is a special kind of connection!",
+          "no_response": "That's okay! Start with one friendly hello.",
+          "key_takeaway": "Friendships start with small, brave steps."
+        },
+        {
+          "conversation_id": "deer_06",
+          "sort_order": 6,
+          "question": "Do you share with others?",
+          "yes_response": "Sharing shows you care about others!",
+          "no_response": "Try sharing something small—your time, a snack, or a toy.",
+          "key_takeaway": "Sharing creates bonds between people."
+        },
+        {
+          "conversation_id": "deer_07",
+          "sort_order": 7,
+          "question": "Do you listen when someone is talking to you?",
+          "yes_response": "Good listening shows respect and care!",
+          "no_response": "Try looking at them and really hearing their words.",
+          "key_takeaway": "Listening is one of the kindest things you can do."
+        },
+        {
+          "conversation_id": "deer_08",
+          "sort_order": 8,
+          "question": "Have you included someone who was left out?",
+          "yes_response": "That's so brave and kind! You made a difference.",
+          "no_response": "Next time you see someone alone, invite them to join you.",
+          "key_takeaway": "Including others is a powerful act of kindness."
+        },
+        {
+          "conversation_id": "deer_09",
+          "sort_order": 9,
+          "question": "Do you say kind words to people?",
+          "yes_response": "Words have power! Yours are making the world better.",
+          "no_response": "Try a compliment or 'thank you'—it means so much.",
+          "key_takeaway": "Kind words can change someone's whole day."
+        },
+        {
+          "conversation_id": "deer_10",
+          "sort_order": 10,
+          "question": "Do you feel connected to people who care about you?",
+          "yes_response": "That connection is precious! Treasure those people.",
+          "no_response": "Think about who makes you feel loved—they're your people.",
+          "key_takeaway": "Connection with others helps us feel loved and safe."
+        }
+      ]
+    },
+    {
+      "npc_id": "hazel_squirrel",
+      "npc_name": "Hazel the Squirrel",
+      "emoji": "🐿️",
+      "species": "Squirrel",
+      "topic": "Planning, Organization & Habits",
+      "unlock_level": 15,
+      "conversations": [
+        {
+          "conversation_id": "squirrel_01",
+          "sort_order": 1,
+          "question": "Do you plan ahead for things you need to do?",
+          "yes_response": "Great! Planning helps you feel ready.",
+          "no_response": "Try making a simple list—it helps a lot!",
+          "key_takeaway": "Planning ahead makes life easier."
+        },
+        {
+          "conversation_id": "squirrel_02",
+          "sort_order": 2,
+          "question": "Do you have a special place for your things?",
+          "yes_response": "Perfect! Organization saves time and stress.",
+          "no_response": "Try picking one spot for your backpack or shoes.",
+          "key_takeaway": "Having a place for everything helps you stay organized."
+        },
+        {
+          "conversation_id": "squirrel_03",
+          "sort_order": 3,
+          "question": "Do you do the same helpful things each day?",
+          "yes_response": "Those are habits! They make life smoother.",
+          "no_response": "Try one small habit—like brushing teeth at the same time.",
+          "key_takeaway": "Good habits help you without even thinking."
+        },
+        {
+          "conversation_id": "squirrel_04",
+          "sort_order": 4,
+          "question": "Do you get things ready the night before?",
+          "yes_response": "That's a smart habit!",
+          "no_response": "You can try it—it saves time and stress later.",
+          "key_takeaway": "Getting ready the night before makes mornings easier."
+        },
+        {
+          "conversation_id": "squirrel_05",
+          "sort_order": 5,
+          "question": "Do you keep your favorite things in a special spot?",
+          "yes_response": "That helps you find them when you need them.",
+          "no_response": "You might like having a spot just for your treasures.",
+          "key_takeaway": "Having spots for things makes life smoother."
+        },
+        {
+          "conversation_id": "squirrel_06",
+          "sort_order": 6,
+          "question": "Do you ever make a plan for your day?",
+          "yes_response": "Planning helps you get more fun time too!",
+          "no_response": "Want to try a mini plan? Just 3 things!",
+          "key_takeaway": "Planning your time helps you feel ready."
+        },
+        {
+          "conversation_id": "squirrel_07",
+          "sort_order": 7,
+          "question": "Do you get your clothes or things ready the night before?",
+          "yes_response": "Smart move! That saves you time.",
+          "no_response": "Try it once—you might love the extra morning calm.",
+          "key_takeaway": "A little prep goes a long way."
+        },
+        {
+          "conversation_id": "squirrel_08",
+          "sort_order": 8,
+          "question": "Do you think taking breaks helps you focus?",
+          "yes_response": "Yes! Brains love tiny pauses.",
+          "no_response": "Try a short stretch or a wiggle break!",
+          "key_takeaway": "Breaks help your brain reset and recharge."
+        },
+        {
+          "conversation_id": "squirrel_09",
+          "sort_order": 9,
+          "question": "Do you ask for help when you're stuck?",
+          "yes_response": "That's a smart strategy!",
+          "no_response": "Asking helps you move forward faster.",
+          "key_takeaway": "Getting help is part of smart planning."
+        },
+        {
+          "conversation_id": "squirrel_10",
+          "sort_order": 10,
+          "question": "Do you feel proud when your plan works?",
+          "yes_response": "You should! That's your hard work showing up.",
+          "no_response": "That's okay—plans don't always go perfectly.",
+          "key_takeaway": "Every plan teaches something—even the tricky ones."
+        }
+      ]
+    },
+    {
+      "npc_id": "nibs_hedgehog",
+      "npc_name": "Nibs the Hedgehog",
+      "emoji": "🦔",
+      "species": "Hedgehog",
+      "topic": "Body Awareness & Identifying Needs",
+      "unlock_level": 18,
+      "conversations": [
+        {
+          "conversation_id": "hedgehog_01",
+          "sort_order": 1,
+          "question": "Do you notice when your body feels tired?",
+          "yes_response": "That's body awareness! Listening to your body is important.",
+          "no_response": "Try noticing—yawning, heavy eyes, or achy muscles.",
+          "key_takeaway": "Your body tells you when it needs rest."
+        },
+        {
+          "conversation_id": "hedgehog_02",
+          "sort_order": 2,
+          "question": "Do you know when you're hungry vs. when you're full?",
+          "yes_response": "Great! That helps you take care of your body.",
+          "no_response": "Try checking in with your tummy before and after eating.",
+          "key_takeaway": "Listening to hunger and fullness keeps your body happy."
+        },
+        {
+          "conversation_id": "hedgehog_03",
+          "sort_order": 3,
+          "question": "Do you take breaks when your body needs them?",
+          "yes_response": "Perfect! Your body thanks you for that.",
+          "no_response": "Try pausing when you feel tired or uncomfortable.",
+          "key_takeaway": "Taking breaks when needed helps your body recover."
+        },
+        {
+          "conversation_id": "hedgehog_04",
+          "sort_order": 4,
+          "question": "Do you notice when you're thirsty?",
+          "yes_response": "Good! Drinking water is so important.",
+          "no_response": "Try noticing if your mouth feels dry or your head hurts.",
+          "key_takeaway": "Thirst is your body asking for water."
+        },
+        {
+          "conversation_id": "hedgehog_05",
+          "sort_order": 5,
+          "question": "Can you tell when you need to move your body?",
+          "yes_response": "Yes! Your body loves movement.",
+          "no_response": "Try noticing when you feel wiggly or restless.",
+          "key_takeaway": "Your body tells you when it needs to move."
+        },
+        {
+          "conversation_id": "hedgehog_06",
+          "sort_order": 6,
+          "question": "Do you know when you need quiet or alone time?",
+          "yes_response": "That's great self-awareness!",
+          "no_response": "Try noticing when you feel overwhelmed or overstimulated.",
+          "key_takeaway": "Sometimes your body needs calm and quiet."
+        },
+        {
+          "conversation_id": "hedgehog_07",
+          "sort_order": 7,
+          "question": "Do you feel when your body is too hot or too cold?",
+          "yes_response": "Perfect! Temperature matters for comfort.",
+          "no_response": "Try noticing sweating, shivering, or goosebumps.",
+          "key_takeaway": "Your body tells you what temperature it needs."
+        },
+        {
+          "conversation_id": "hedgehog_08",
+          "sort_order": 8,
+          "question": "Can you tell when your body feels tense?",
+          "yes_response": "Great awareness! Tension is a signal.",
+          "no_response": "Try noticing tight shoulders, clenched jaw, or fists.",
+          "key_takeaway": "Body tension often means you need to relax."
+        },
+        {
+          "conversation_id": "hedgehog_09",
+          "sort_order": 9,
+          "question": "Do you know when you need a bathroom break?",
+          "yes_response": "Good! Don't ignore that signal.",
+          "no_response": "Your body will let you know—listen to it!",
+          "key_takeaway": "Always listen when your body says it needs the bathroom."
+        },
+        {
+          "conversation_id": "hedgehog_10",
+          "sort_order": 10,
+          "question": "Do you check in with your body throughout the day?",
+          "yes_response": "That's wonderful body awareness!",
+          "no_response": "Try asking yourself: What does my body need right now?",
+          "key_takeaway": "Regular body check-ins help you stay healthy and happy."
+        }
+      ]
+    },
+    {
+      "npc_id": "ripple_raccoon",
+      "npc_name": "Ripple the Raccoon",
+      "emoji": "🦝",
+      "species": "Raccoon",
+      "topic": "Calming Down & Self-Regulation",
+      "unlock_level": 21,
+      "conversations": [
+        {
+          "conversation_id": "raccoon_01",
+          "sort_order": 1,
+          "question": "Do you have ways to calm down when you're upset?",
+          "yes_response": "That's a superpower! Knowing how to calm yourself helps so much.",
+          "no_response": "Let's find some! Deep breaths, counting, or squeezing a stress ball.",
+          "key_takeaway": "Having calming strategies helps you manage big emotions."
+        },
+        {
+          "conversation_id": "raccoon_02",
+          "sort_order": 2,
+          "question": "Do you take deep breaths when you feel stressed?",
+          "yes_response": "Perfect! Deep breathing calms your whole body.",
+          "no_response": "Try it: Breathe in for 4, hold for 4, out for 4.",
+          "key_takeaway": "Deep breathing is a quick way to calm down."
+        },
+        {
+          "conversation_id": "raccoon_03",
+          "sort_order": 3,
+          "question": "Do you know it's okay to take a break when overwhelmed?",
+          "yes_response": "Yes! Taking space helps you reset.",
+          "no_response": "Try stepping away to a quiet spot when you need to.",
+          "key_takeaway": "Taking a break is smart, not weak."
+        },
+        {
+          "conversation_id": "raccoon_04",
+          "sort_order": 4,
+          "question": "Do you pause before reacting when you're upset?",
+          "yes_response": "Breathing gives your brain a chance to think!",
+          "no_response": "Try it—it can help when you're unsure or upset.",
+          "key_takeaway": "A breath can turn a quick reaction into a smart action."
+        },
+        {
+          "conversation_id": "raccoon_05",
+          "sort_order": 5,
+          "question": "Do you make different choices when you're calm?",
+          "yes_response": "That's your thinking brain working!",
+          "no_response": "Try waiting until you feel calm—then decide.",
+          "key_takeaway": "Calm minds make thoughtful choices."
+        },
+        {
+          "conversation_id": "raccoon_06",
+          "sort_order": 6,
+          "question": "Do you think your choices affect others too?",
+          "yes_response": "So true—kind choices help everyone!",
+          "no_response": "Try to notice how your actions touch others.",
+          "key_takeaway": "Your choices can help the whole group."
+        },
+        {
+          "conversation_id": "raccoon_07",
+          "sort_order": 7,
+          "question": "Do you sometimes pick a snack that helps your body?",
+          "yes_response": "Great! That's a mindful choice.",
+          "no_response": "You can try something yummy and helpful today!",
+          "key_takeaway": "Mindful snacks fuel your fun."
+        },
+        {
+          "conversation_id": "raccoon_08",
+          "sort_order": 8,
+          "question": "Do you know what helps you calm down when you're upset?",
+          "yes_response": "That's a great tool to keep with you!",
+          "no_response": "Try different things—like music or a hug.",
+          "key_takeaway": "Knowing your calm-down tools helps with tough choices."
+        },
+        {
+          "conversation_id": "raccoon_09",
+          "sort_order": 9,
+          "question": "Do you choose how to respond when someone is unkind?",
+          "yes_response": "That's strength and care combined.",
+          "no_response": "You can pause and choose to be kind anyway.",
+          "key_takeaway": "You always get to choose your response."
+        },
+        {
+          "conversation_id": "raccoon_10",
+          "sort_order": 10,
+          "question": "Do you feel proud after making a helpful choice?",
+          "yes_response": "That's your heart smiling back at you.",
+          "no_response": "Even small wins are worth a happy dance!",
+          "key_takeaway": "Helpful choices make you and others feel proud."
+        }
+      ]
+    },
+    {
+      "npc_id": "zoomer_rabbit",
+      "npc_name": "Zoomer the Swift Rabbit",
+      "emoji": "🐇",
+      "species": "Swift Rabbit",
+      "topic": "Motivation & Energy",
+      "unlock_level": 25,
+      "conversations": [
+        {
+          "conversation_id": "rabbit_01",
+          "sort_order": 1,
+          "question": "Do you feel energized when you move your body?",
+          "yes_response": "Yes! Movement gives you energy!",
+          "no_response": "Try it—even a quick stretch can wake you up.",
+          "key_takeaway": "Moving your body boosts your energy."
+        },
+        {
+          "conversation_id": "rabbit_02",
+          "sort_order": 2,
+          "question": "Do you have goals that excite you?",
+          "yes_response": "Goals give you something to work toward!",
+          "no_response": "Think of one small thing you'd like to do this week.",
+          "key_takeaway": "Goals help you stay motivated."
+        },
+        {
+          "conversation_id": "rabbit_03",
+          "sort_order": 3,
+          "question": "Do you celebrate when you finish something hard?",
+          "yes_response": "Yes! Celebrating keeps you motivated.",
+          "no_response": "Try it—even a happy dance counts!",
+          "key_takeaway": "Celebrating success fuels future motivation."
+        },
+        {
+          "conversation_id": "rabbit_04",
+          "sort_order": 4,
+          "question": "Do you know what times of day you have the most energy?",
+          "yes_response": "Smart! Use your high-energy times for hard tasks.",
+          "no_response": "Try noticing—morning? Afternoon? Evening?",
+          "key_takeaway": "Knowing your energy patterns helps you plan better."
+        },
+        {
+          "conversation_id": "rabbit_05",
+          "sort_order": 5,
+          "question": "Do you eat foods that give you lasting energy?",
+          "yes_response": "Great! Healthy foods keep you going.",
+          "no_response": "Try fruits, veggies, whole grains, and protein.",
+          "key_takeaway": "Nutritious foods provide steady energy."
+        },
+        {
+          "conversation_id": "rabbit_06",
+          "sort_order": 6,
+          "question": "Do you get excited about trying new things?",
+          "yes_response": "That excitement is motivation!",
+          "no_response": "Try finding one new thing that sounds fun.",
+          "key_takeaway": "Curiosity and excitement drive motivation."
+        },
+        {
+          "conversation_id": "rabbit_07",
+          "sort_order": 7,
+          "question": "Do you notice when you're feeling low-energy?",
+          "yes_response": "Good awareness! Then you can do something about it.",
+          "no_response": "Try checking in—tired, hungry, or need a break?",
+          "key_takeaway": "Recognizing low energy helps you recharge."
+        },
+        {
+          "conversation_id": "rabbit_08",
+          "sort_order": 8,
+          "question": "Do you have a morning routine that energizes you?",
+          "yes_response": "Perfect! Good mornings set the tone for your day.",
+          "no_response": "Try: stretch, drink water, eat breakfast, smile!",
+          "key_takeaway": "Morning routines build daily energy."
+        },
+        {
+          "conversation_id": "rabbit_09",
+          "sort_order": 9,
+          "question": "Do you break big tasks into smaller steps?",
+          "yes_response": "Smart! Small steps keep you motivated.",
+          "no_response": "Try it—finishing small steps feels great!",
+          "key_takeaway": "Small wins build momentum."
+        },
+        {
+          "conversation_id": "rabbit_10",
+          "sort_order": 10,
+          "question": "Do you encourage yourself when things get tough?",
+          "yes_response": "That self-encouragement is powerful!",
+          "no_response": "Try saying: 'I can do this!' or 'Keep going!'",
+          "key_takeaway": "Positive self-talk boosts motivation and energy."
+        }
+      ]
+    }
+  ]
+}

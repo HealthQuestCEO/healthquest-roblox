@@ -1,0 +1,30 @@
+{
+  "conversation": {
+    "greeting": "Hi there! I'm {{name}}!",
+    "farewell": "See you next time!",
+    "thanks": "Thanks for chatting with me!",
+    "yesOption": "Yes",
+    "noOption": "No",
+    "continueChat": "Continue chatting"
+  },
+  "topics": {
+    "selfCompassion": "Self-Compassion & Mistakes",
+    "gratitude": "Gratitude",
+    "mindfulness": "Mindfulness",
+    "emotions": "Understanding Emotions",
+    "friendship": "Friendship",
+    "growth": "Personal Growth",
+    "resilience": "Resilience",
+    "kindness": "Kindness"
+  },
+  "characters": {
+    "bounceBunny": {
+      "name": "Bounce the Bunny",
+      "greeting": "Hi friend! Want to hop around and chat?"
+    },
+    "lumo": {
+      "name": "Lumo",
+      "greeting": "Welcome to Lumo's Land! How can I help?"
+    }
+  }
+}

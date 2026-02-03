@@ -1,0 +1,684 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "description": "Garden Grove NPC system with 7 NPCs and 70 conversations - COMPLETE",
+    "lastUpdated": "2025-12-04",
+    "portal_id": "garden-grove",
+    "portal_name": "Garden Grove",
+    "total_npcs": 7,
+    "conversations_per_npc": 10,
+    "total_conversations": 70,
+    "daily_xp_cap": 300,
+    "xp_per_conversation": 75,
+    "max_conversations_per_day": 4,
+    "theme": "Growth, nurturing, and creative expression"
+  },
+
+  "npcs": [
+    {
+      "npc_id": "bella_butterfly",
+      "npc_name": "Bella the Butterfly",
+      "emoji": "🦋",
+      "species": "Butterfly",
+      "topic": "Creative Expression & Art Therapy",
+      "unlock_level": 27,
+      "background": {
+        "default": "garden_grove_butterfly.jpg",
+        "alternates": ["garden_grove_flowers.jpg"],
+        "backgroundColor": "#e1bee7"
+      },
+      "conversations": [
+        {
+          "conversation_id": "butterfly_01",
+          "sort_order": 1,
+          "question": "Do you like making art or creating things?",
+          "yes_response": "That's wonderful! Creating is a powerful way to express yourself.",
+          "no_response": "That's okay! Art comes in many forms - even doodling counts!",
+          "key_takeaway": "Creative expression helps you share feelings and ideas."
+        },
+        {
+          "conversation_id": "butterfly_02",
+          "sort_order": 2,
+          "question": "Have you ever felt better after drawing or making something?",
+          "yes_response": "Art can be very healing! It gives your feelings a place to go.",
+          "no_response": "Try it sometime - even scribbles can help your mood!",
+          "key_takeaway": "Art can help you process emotions and feel calmer."
+        },
+        {
+          "conversation_id": "butterfly_03",
+          "sort_order": 3,
+          "question": "Do you think there's a right or wrong way to make art?",
+          "yes_response": "Actually, art is about expressing yourself - there's no wrong way!",
+          "no_response": "Exactly! Art is personal and unique to you.",
+          "key_takeaway": "Your art is valid no matter what it looks like."
+        },
+        {
+          "conversation_id": "butterfly_04",
+          "sort_order": 4,
+          "question": "Have you tried using colors to show how you feel?",
+          "yes_response": "Colors are amazing for expressing emotions!",
+          "no_response": "Want to try? Pick a color that matches your mood today!",
+          "key_takeaway": "Colors can represent different feelings and moods."
+        },
+        {
+          "conversation_id": "butterfly_05",
+          "sort_order": 5,
+          "question": "Do you feel proud when you finish creating something?",
+          "yes_response": "You should! Every creation is an accomplishment.",
+          "no_response": "Try noticing that feeling next time - it's special!",
+          "key_takeaway": "Completing a creative project builds confidence."
+        },
+        {
+          "conversation_id": "butterfly_06",
+          "sort_order": 6,
+          "question": "Have you ever made art just for fun, not to show anyone?",
+          "yes_response": "That's pure creative joy! Art for yourself is powerful.",
+          "no_response": "Try it! Private art can be very freeing.",
+          "key_takeaway": "Creating for yourself is just as valuable as sharing."
+        },
+        {
+          "conversation_id": "butterfly_07",
+          "sort_order": 7,
+          "question": "Do you think art can help you understand yourself better?",
+          "yes_response": "Yes! Art reveals things we didn't know we were thinking.",
+          "no_response": "It's true - art can show you what's inside your heart.",
+          "key_takeaway": "Creative expression helps with self-discovery."
+        },
+        {
+          "conversation_id": "butterfly_08",
+          "sort_order": 8,
+          "question": "Have you ever used art to calm down when upset?",
+          "yes_response": "That's a wonderful coping strategy!",
+          "no_response": "Try it next time - drawing can soothe big feelings.",
+          "key_takeaway": "Art can be a healthy way to manage emotions."
+        },
+        {
+          "conversation_id": "butterfly_09",
+          "sort_order": 9,
+          "question": "Do you feel safe expressing yourself through creativity?",
+          "yes_response": "That's beautiful! Art should feel like a safe space.",
+          "no_response": "Remember: your creative space is yours alone - it's safe.",
+          "key_takeaway": "Creative expression is a judgment-free zone."
+        },
+        {
+          "conversation_id": "butterfly_10",
+          "sort_order": 10,
+          "question": "Can you see how you've changed by looking at old art?",
+          "yes_response": "Your art journey shows your growth!",
+          "no_response": "Try looking back sometime - you'll see how far you've come!",
+          "key_takeaway": "Your creative work is a record of your personal journey."
+        }
+      ]
+    },
+    {
+      "npc_id": "buzz_bee",
+      "npc_name": "Buzz the Bee",
+      "emoji": "🐝",
+      "species": "Bee",
+      "topic": "Teamwork & Collaboration",
+      "unlock_level": 29,
+      "background": {
+        "default": "garden_grove_hive.jpg",
+        "alternates": ["garden_grove_flowers.jpg"],
+        "backgroundColor": "#fff9c4"
+      },
+      "conversations": [
+        {
+          "conversation_id": "bee_01",
+          "sort_order": 1,
+          "question": "Do you like working with others on projects?",
+          "yes_response": "Teamwork makes the dream work! Together we're stronger.",
+          "no_response": "That's okay! Some things are better done alone.",
+          "key_takeaway": "Collaboration can help us achieve bigger goals."
+        },
+        {
+          "conversation_id": "bee_02",
+          "sort_order": 2,
+          "question": "Have you ever helped someone and felt good about it?",
+          "yes_response": "Helping others creates a beautiful connection!",
+          "no_response": "Try it - helping feels really good inside!",
+          "key_takeaway": "Contributing to a team gives you purpose and joy."
+        },
+        {
+          "conversation_id": "bee_03",
+          "sort_order": 3,
+          "question": "Do you think everyone has something valuable to contribute?",
+          "yes_response": "Absolutely! Every person brings unique strengths.",
+          "no_response": "It's true! Even small contributions matter greatly.",
+          "key_takeaway": "Everyone's role in a team is important."
+        },
+        {
+          "conversation_id": "bee_04",
+          "sort_order": 4,
+          "question": "Have you asked for help when you needed it?",
+          "yes_response": "That's smart teamwork! Asking for help is brave.",
+          "no_response": "Remember: good teams support each other!",
+          "key_takeaway": "Asking for help makes the whole team stronger."
+        },
+        {
+          "conversation_id": "bee_05",
+          "sort_order": 5,
+          "question": "Do you celebrate when your team succeeds together?",
+          "yes_response": "Yes! Shared success is the sweetest kind.",
+          "no_response": "Try it next time - celebrating together builds bonds!",
+          "key_takeaway": "Celebrating team wins strengthens relationships."
+        },
+        {
+          "conversation_id": "bee_06",
+          "sort_order": 6,
+          "question": "Have you listened to someone else's ideas in a group?",
+          "yes_response": "Good listening is essential for teamwork!",
+          "no_response": "Give it a try - you might hear something amazing!",
+          "key_takeaway": "Listening to others creates better solutions."
+        },
+        {
+          "conversation_id": "bee_07",
+          "sort_order": 7,
+          "question": "Do you know what role you play best in a group?",
+          "yes_response": "Knowing your strengths helps you contribute well!",
+          "no_response": "Think about it - are you a leader, helper, or organizer?",
+          "key_takeaway": "Understanding your role helps your team succeed."
+        },
+        {
+          "conversation_id": "bee_08",
+          "sort_order": 8,
+          "question": "Have you encouraged someone else on your team?",
+          "yes_response": "Encouragement makes teams thrive!",
+          "no_response": "Try it - your words can lift someone up!",
+          "key_takeaway": "Supporting teammates creates positive energy."
+        },
+        {
+          "conversation_id": "bee_09",
+          "sort_order": 9,
+          "question": "Do you work better when everyone feels included?",
+          "yes_response": "Yes! Inclusion makes teams stronger and happier.",
+          "no_response": "It's true - everyone should feel like they belong!",
+          "key_takeaway": "Inclusive teams are more creative and effective."
+        },
+        {
+          "conversation_id": "bee_10",
+          "sort_order": 10,
+          "question": "Can you appreciate different perspectives in your team?",
+          "yes_response": "Different views create better ideas and solutions!",
+          "no_response": "Remember: diversity of thought makes teams innovative!",
+          "key_takeaway": "Diverse perspectives lead to better outcomes."
+        }
+      ]
+    },
+    {
+      "npc_id": "flora_hummingbird",
+      "npc_name": "Flora the Hummingbird",
+      "emoji": "🌺",
+      "species": "Hummingbird",
+      "topic": "Mindfulness in Nature",
+      "unlock_level": 31,
+      "background": {
+        "default": "garden_grove_flowers.jpg",
+        "alternates": ["garden_grove_sunrise.jpg"],
+        "backgroundColor": "#f8bbd0"
+      },
+      "conversations": [
+        {
+          "conversation_id": "hummingbird_01",
+          "sort_order": 1,
+          "question": "Hi there, little friend! I'm Flora. I love to stop and notice tiny things — like how a flower smells or how the wind feels. Have you ever stopped to really notice something small in nature?",
+          "yes_response": "Oh, how wonderful! When we slow down and notice little things, it's like finding hidden treasures everywhere. A ladybug on a leaf, the sound of rain, a cool breeze — they're all little gifts! What's something small you've noticed lately?",
+          "no_response": "That's okay! It can be hard to slow down sometimes. Here's a fun idea: next time you're outside, try to find one tiny thing — maybe a pretty pebble or a little bug. It's like a treasure hunt! You might be surprised what you discover.",
+          "key_takeaway": "Slowing down to notice small things in nature can help us feel calm and find joy in everyday moments."
+        },
+        {
+          "conversation_id": "hummingbird_02",
+          "sort_order": 2,
+          "question": "Sometimes my wings beat so fast I forget to rest! Do you ever feel like you're moving really fast and your mind is buzzing with lots of thoughts?",
+          "yes_response": "I know that feeling! When my mind buzzes too much, I find a flower and take three slow breaths. In through my beak, out through my beak. It helps me feel calmer. Want to try it with me right now? Breathe in... and out...",
+          "no_response": "That's great that you feel calm! Some days are like that. But if you ever do feel buzzy and busy inside, remember you can always stop and take some slow breaths. It's like giving your brain a little rest.",
+          "key_takeaway": "When our minds feel busy, slow breathing can help us feel calm again."
+        },
+        {
+          "conversation_id": "hummingbird_03",
+          "sort_order": 3,
+          "question": "I love listening to the sounds in the garden — bees humming, leaves rustling, birds singing. Do you ever close your eyes and just listen to the sounds around you?",
+          "yes_response": "You're a great listener! Sounds are like nature's music. Some are loud, some are soft, some are close, some are far away. Listening like this helps our minds take a break from thinking so hard. It's like a little vacation for your brain!",
+          "no_response": "Want to try it now? Close your eyes for a moment. What do you hear? Maybe a fan humming, or someone talking, or cars outside. There's no wrong answer — just notice! This is called mindful listening, and it can help you feel peaceful.",
+          "key_takeaway": "Listening to sounds around us is a simple way to practice mindfulness and feel more peaceful."
+        },
+        {
+          "conversation_id": "hummingbird_04",
+          "sort_order": 4,
+          "question": "When I drink nectar from a flower, I try to really taste it — so sweet! Do you sometimes eat your food really fast without tasting it much?",
+          "yes_response": "I do that too sometimes! We get busy or excited. But here's a fun thing to try: next time you eat something yummy, take one slow bite. Notice if it's sweet or salty, crunchy or soft. It's like being a food detective! You might enjoy it even more.",
+          "no_response": "Wow, you're already good at slowing down! Tasting our food slowly can make eating more fun. It also helps our tummy tell us when we're full. Keep enjoying your food like that!",
+          "key_takeaway": "Eating slowly and noticing how food tastes can make meals more enjoyable and help us listen to our bodies."
+        },
+        {
+          "conversation_id": "hummingbird_05",
+          "sort_order": 5,
+          "question": "I have a favorite flower I visit every day. It makes me happy just to see it! Do you have a special place in nature that makes you feel good?",
+          "yes_response": "That's so special! Having a favorite nature spot is like having a friend who's always there. When you visit, try noticing something new each time — a new color, a new smell, a new sound. Your special place has so many secrets to share!",
+          "no_response": "That's okay! You can find one anytime. It could be a tree near your home, a patch of grass, or even a window where you can see the sky. Start looking, and one place might start to feel extra special to you.",
+          "key_takeaway": "Having a special place in nature gives us somewhere to go when we need to feel calm and happy."
+        },
+        {
+          "conversation_id": "hummingbird_06",
+          "sort_order": 6,
+          "question": "Sometimes I feel worried about things. When that happens, I look at the clouds and watch them float by. Do you ever feel worried or anxious?",
+          "yes_response": "Most everyone feels worried sometimes — even hummingbirds! Here's something that helps me: I pretend my worries are like clouds. I notice them, but I don't hold onto them. I let them float away across the sky. Your worries don't have to stay forever.",
+          "no_response": "That's great that you're feeling calm right now! But if you ever do feel worried, remember the clouds. Worries are like clouds — they come and go. You can notice them without holding on tight. They'll float away.",
+          "key_takeaway": "Worries come and go like clouds in the sky. We can notice them without holding onto them."
+        },
+        {
+          "conversation_id": "hummingbird_07",
+          "sort_order": 7,
+          "question": "Have you ever felt your feet on grass or sand and really noticed how it feels?",
+          "yes_response": "Isn't it amazing? Cool grass, warm sand, bumpy rocks — your feet can feel so many things! This is called grounding. When you notice how your feet feel, it helps bring your mind back to right now, right here. It's like magic!",
+          "no_response": "Oh, you should try it! Next time you can, take off your shoes and feel the ground. Is it soft? Cool? Bumpy? Noticing these feelings helps your mind take a break and feel calm. It's called grounding!",
+          "key_takeaway": "Feeling our feet on the ground helps us feel calm and connected to the present moment."
+        },
+        {
+          "conversation_id": "hummingbird_08",
+          "sort_order": 8,
+          "question": "I like to start my mornings by stretching my wings in the sunshine. Do you have something nice you do when you wake up?",
+          "yes_response": "That's wonderful! Morning routines help our bodies and minds wake up happy. Whether it's stretching, looking out the window, or just taking a big breath — starting slow and gentle is a gift you give yourself every day!",
+          "no_response": "Mornings can be rushed, I know! But here's an idea: tomorrow, before you hop out of bed, try taking three big breaths or giving yourself a little stretch. It only takes a moment, but it can make your whole day feel better!",
+          "key_takeaway": "Starting the morning with something calm and gentle can help the whole day feel better."
+        },
+        {
+          "conversation_id": "hummingbird_09",
+          "sort_order": 9,
+          "question": "Sometimes when I'm zipping around, I forget to look at the beautiful garden all around me. Do you ever get so busy that you forget to notice nice things?",
+          "yes_response": "It happens to all of us! Life gets busy. But here's a little game: try to find three beautiful things every day. They can be tiny — a pretty color, a kind smile, a yummy smell. It trains your brain to notice the good stuff!",
+          "no_response": "You must be really good at paying attention! That's a special skill. Keep noticing the beautiful things around you — they're like little presents the world gives us every day.",
+          "key_takeaway": "Even when we're busy, we can train ourselves to notice beautiful things around us."
+        },
+        {
+          "conversation_id": "hummingbird_10",
+          "sort_order": 10,
+          "question": "I'm so glad we talked! Being mindful — noticing the little things, breathing slowly, feeling our feelings — these are superpowers that help us feel good. Will you try to use your mindfulness superpowers this week?",
+          "yes_response": "Yay! I'm so proud of you! Remember, you don't have to do it perfectly. Just try a little bit each day. Notice one thing, take one slow breath, feel your feet on the ground. Small moments add up to big calm feelings! Flutter on, friend! 🌺",
+          "no_response": "That's okay! Mindfulness is always there when you're ready. Even if you just remember one thing we talked about — like taking a slow breath or noticing a pretty cloud — that's enough. You're doing great! Come back and visit me anytime! 🌺",
+          "key_takeaway": "Mindfulness is a superpower we can practice a little at a time. Small moments of calm add up!"
+        }
+      ]
+    },
+    {
+      "npc_id": "dotty_ladybug",
+      "npc_name": "Dotty the Ladybug",
+      "emoji": "🐞",
+      "species": "Ladybug",
+      "topic": "Positive Self-Image & Confidence",
+      "unlock_level": 33,
+      "background": {
+        "default": "garden_grove_default.jpg",
+        "alternates": ["garden_grove_flowers.jpg"],
+        "backgroundColor": "#ffcdd2"
+      },
+      "conversations": [
+        {
+          "conversation_id": "ladybug_01",
+          "sort_order": 1,
+          "question": "Hello, friend! I'm Dotty! See my spots? Some ladybugs have lots of spots, some have just a few. We're all different, and that's wonderful! Do you know what makes YOU special and different?",
+          "yes_response": "How amazing that you know what makes you special! Whether it's your smile, your ideas, your kindness, or something else — those things are like your own special spots. No one else has exactly what you have. That's pretty cool!",
+          "no_response": "That's okay! Sometimes it takes time to see our own special spots. Here's a secret: everyone has them! Maybe it's how you make people laugh, or how hard you try, or how you care about others. Let's discover your special spots together!",
+          "key_takeaway": "Everyone has special qualities that make them unique, like a ladybug's spots."
+        },
+        {
+          "conversation_id": "ladybug_02",
+          "sort_order": 2,
+          "question": "Some bugs used to tease me because my spots looked different. It made me feel sad. Has anyone ever said something that hurt your feelings about how you look?",
+          "yes_response": "I'm sorry that happened. Words can really sting! But here's what I learned: what others say about me doesn't change who I really am inside. My spots are perfect for ME. And you? You are perfect for YOU. Their words don't get to decide that.",
+          "no_response": "I'm glad you haven't felt that! If it ever happens, remember this: what someone says about you doesn't change how amazing you are. Their words are about them, not about you. You get to decide how you feel about yourself!",
+          "key_takeaway": "What others say about us doesn't define who we really are. We decide how we feel about ourselves."
+        },
+        {
+          "conversation_id": "ladybug_03",
+          "sort_order": 3,
+          "question": "When I look in a puddle and see my reflection, I try to think kind thoughts about myself. Do you ever think kind thoughts about yourself when you look in a mirror?",
+          "yes_response": "That's wonderful! Thinking kind thoughts about ourselves is like giving our hearts a hug. Keep doing that! Your eyes, your smile, your whole self deserves kindness — from others AND from you.",
+          "no_response": "It can be hard sometimes! Here's something to try: next time you see yourself, find ONE thing you like. Maybe it's your eyes, your hair, or your smile. Start with just one kind thought. That's how it begins!",
+          "key_takeaway": "Being kind to ourselves in our own thoughts is important and something we can practice."
+        },
+        {
+          "conversation_id": "ladybug_04",
+          "sort_order": 4,
+          "question": "I used to wish I looked like the butterflies — so colorful and fancy! But then I learned that being a ladybug is special too. Do you ever wish you looked like someone else?",
+          "yes_response": "I understand that feeling! But here's what I discovered: if I were a butterfly, I wouldn't be ME. And there's only one me in the whole world! Same with you. There's only one YOU, and that's your superpower. The world needs you, just as you are.",
+          "no_response": "That's such a great way to feel! Being happy with who you are is a special kind of strength. You know that being YOU is the best thing you can be. Keep that feeling close to your heart!",
+          "key_takeaway": "There's only one YOU in the whole world, and that's your superpower."
+        },
+        {
+          "conversation_id": "ladybug_05",
+          "sort_order": 5,
+          "question": "My wings are small, but they carry me wherever I need to go! Our bodies do so many amazing things for us. Can you think of something amazing your body does for you?",
+          "yes_response": "Yes! Our bodies are incredible! They help us run, hug people we love, taste yummy food, hear music, and so much more. When we think about what our bodies CAN do, we feel thankful instead of worried. Your body is working for you every day!",
+          "no_response": "Let me help you think! Does your body help you walk? Breathe? See colors? Hear your favorite songs? Give hugs? Every single thing your body does is amazing. It works so hard for you every day without you even asking!",
+          "key_takeaway": "Our bodies do amazing things for us every day. We can feel grateful for what they can do."
+        },
+        {
+          "conversation_id": "ladybug_06",
+          "sort_order": 6,
+          "question": "Sometimes I make mistakes, like flying into a flower by accident! Do you ever feel bad about yourself when you make mistakes?",
+          "yes_response": "It's okay to feel a little down, but remember this: mistakes don't mean we're bad. They mean we're learning! Every bug in this garden has made mistakes. It's how we grow. Be gentle with yourself. You're still learning, and that's perfectly okay!",
+          "no_response": "That's a really healthy way to think! You understand that mistakes are just part of learning, not something to feel bad about. Keep being kind to yourself when things don't go perfectly. That's real wisdom!",
+          "key_takeaway": "Mistakes don't mean we're bad — they mean we're learning and growing."
+        },
+        {
+          "conversation_id": "ladybug_07",
+          "sort_order": 7,
+          "question": "I like to tell myself nice things, like 'I'm a good friend' or 'I try my best.' These are called positive affirmations! Do you ever say nice things to yourself?",
+          "yes_response": "That's wonderful! The words we say to ourselves matter a lot. Keep telling yourself good things! 'I am kind. I am brave. I am enough.' These words are like sunshine for your heart. They help you grow strong inside!",
+          "no_response": "Want to try it with me? Repeat after me in your mind: 'I am special. I am enough. I am learning and growing.' How did that feel? These words might feel funny at first, but the more you say them, the more your heart believes them!",
+          "key_takeaway": "Positive affirmations — kind words we say to ourselves — help us feel confident and strong."
+        },
+        {
+          "conversation_id": "ladybug_08",
+          "sort_order": 8,
+          "question": "The garden has all kinds of bugs — big ones, small ones, fast ones, slow ones. We're all different, and the garden needs all of us! Do you ever compare yourself to others?",
+          "yes_response": "We all do it sometimes! But comparing is like asking a ladybug to be a butterfly — it doesn't make sense! We each have our own gifts. Instead of comparing, try asking: 'What's special about ME?' That's a much better question!",
+          "no_response": "That's wonderful! You understand that everyone is on their own path. There's no need to compare because we're all different on purpose. The garden needs ladybugs AND butterflies AND bees — and the world needs YOU!",
+          "key_takeaway": "Comparing ourselves to others doesn't help us. We each have our own special gifts."
+        },
+        {
+          "conversation_id": "ladybug_09",
+          "sort_order": 9,
+          "question": "When I feel unsure of myself, I think about the friends and family who love me. Do you have people who love you just the way you are?",
+          "yes_response": "That's so special! The people who love you see how wonderful you are. When you forget how great you are, remember how THEY see you. They love you for YOU — not for being perfect, just for being you. That love is real!",
+          "no_response": "Sometimes it's hard to see, but there are people who care about you. Maybe it's a family member, a teacher, or a friend. And guess what? I think you're pretty great too! You are worthy of love, just as you are.",
+          "key_takeaway": "The people who love us see our true worth. We are lovable just as we are."
+        },
+        {
+          "conversation_id": "ladybug_10",
+          "sort_order": 10,
+          "question": "I've loved talking with you! Remember: you are special, you are enough, and you don't have to be perfect. Will you try to be your own good friend and think kind thoughts about yourself?",
+          "yes_response": "Yay! Being your own friend is one of the most important things you can do. When you're kind to yourself, you can be kinder to everyone else too. Fly high, little friend! You're amazing just the way you are! 🐞",
+          "no_response": "That's okay — it takes practice! Just remember, you don't have to believe every unkind thought about yourself. Start small. One kind thought at a time. I believe in you! Come back and visit whenever you need a reminder. 🐞",
+          "key_takeaway": "Being our own good friend — thinking kind thoughts about ourselves — helps us feel confident and happy."
+        }
+      ]
+    },
+    {
+      "npc_id": "sunny_sunflower",
+      "npc_name": "Sunny the Sunflower",
+      "emoji": "🌻",
+      "species": "Sunflower",
+      "topic": "Optimism & Hope",
+      "unlock_level": 35,
+      "background": {
+        "default": "garden_grove_golden_hour.jpg",
+        "alternates": ["garden_grove_sunrise.jpg"],
+        "backgroundColor": "#fff59d"
+      },
+      "conversations": [
+        {
+          "conversation_id": "sunflower_01",
+          "sort_order": 1,
+          "question": "Hello there, sunshine! I'm Sunny! Did you know that I always turn my face toward the sun? It keeps me happy and helps me grow. Do you try to look for the bright side when things feel hard?",
+          "yes_response": "That's the spirit! Looking for good things, even tiny ones, helps our hearts feel lighter. It doesn't mean we pretend hard things don't exist — it means we also notice the good. You're like a little sunflower too!",
+          "no_response": "That's okay! When things are hard, it can be tough to see any good. But here's a secret: even on cloudy days, the sun is still there above the clouds. And even in tough times, there's usually something small that's okay. We'll practice finding it together!",
+          "key_takeaway": "Looking for good things, even small ones, helps our hearts feel lighter during hard times."
+        },
+        {
+          "conversation_id": "sunflower_02",
+          "sort_order": 2,
+          "question": "Sometimes storms come to the garden. The rain pounds and the wind blows! I get scared, but I know the storm will pass. Do you ever feel like hard times will last forever?",
+          "yes_response": "I understand that feeling! When we're in the middle of something hard, it can feel like it will never end. But here's what I've learned: every storm passes. Every single one! The sun always comes back. Hold on, friend — better days are coming.",
+          "no_response": "You have a hopeful heart! You know that tough times don't last forever. That's a really powerful thing to understand. When others feel stuck, you can remind them that storms pass and sunny days return.",
+          "key_takeaway": "Hard times don't last forever. Like storms, they pass, and better days come."
+        },
+        {
+          "conversation_id": "sunflower_03",
+          "sort_order": 3,
+          "question": "Every night it gets dark, and I can't see the sun. But I never worry — I know morning will come! When something disappointing happens, do you believe things can get better?",
+          "yes_response": "That's hope! Hope is believing that good things are possible, even when we can't see them yet. It's like knowing the sun will rise even when it's dark outside. Your hopeful heart will carry you through so many things!",
+          "no_response": "When we're disappointed, it's hard to imagine things getting better. But they can! I've seen so many dark nights, and the sun has risen every single time. Things can change. It's okay to start with just a tiny bit of hope.",
+          "key_takeaway": "Hope means believing good things are possible, even when we can't see them yet."
+        },
+        {
+          "conversation_id": "sunflower_04",
+          "sort_order": 4,
+          "question": "Before I was a big sunflower, I was just a tiny seed in the dark soil. I couldn't see anything, but I kept growing anyway! Have you ever worked on something when you couldn't see how it would turn out?",
+          "yes_response": "That's brave! Sometimes we have to take steps even when we don't know exactly what will happen. That seed didn't know it would become a sunflower, but it kept growing anyway. Your efforts now are planting seeds for your future!",
+          "no_response": "That can be scary! Not knowing how things will turn out makes it hard to even start. But remember me — I was a little seed in the dark, and now look at me! Sometimes we have to grow a little bit before we can see the light.",
+          "key_takeaway": "Sometimes we grow toward good things even before we can see them."
+        },
+        {
+          "conversation_id": "sunflower_05",
+          "sort_order": 5,
+          "question": "I try to find at least one good thing every day, even if it's small — like a bee visiting me or rain watering my roots. Can you think of one good thing that happened today?",
+          "yes_response": "Wonderful! Finding one good thing each day is like collecting little treasures. Some days the good things are big, and some days they're tiny. But they're always there! Keep looking for them — it makes every day brighter.",
+          "no_response": "Let's think together! Did you eat something you liked? Did someone smile at you? Did you see something pretty? Even just being alive and breathing is something! Good things don't have to be huge. Tiny ones count too!",
+          "key_takeaway": "Finding one good thing each day, no matter how small, makes life feel brighter."
+        },
+        {
+          "conversation_id": "sunflower_06",
+          "sort_order": 6,
+          "question": "When my petals droop, I know I just need some water and sun. I don't give up on myself! When you feel tired or sad, do you believe you can feel better again?",
+          "yes_response": "That's a strong belief to have! When we feel down, it doesn't mean we're broken. It just means we need something — maybe rest, food, a hug, or time outside. Take care of yourself, and your petals will lift again!",
+          "no_response": "Sometimes when we're really tired or sad, it's hard to believe we'll feel okay again. But you will! Feelings change, just like weather changes. The sad or tired feeling won't stay forever. You just need a little care — and that's okay.",
+          "key_takeaway": "When we feel down, we're not broken — we just need care. Feelings change like the weather."
+        },
+        {
+          "conversation_id": "sunflower_07",
+          "sort_order": 7,
+          "question": "I spread lots of seeds so new sunflowers can grow! Hoping and dreaming can spread too. Do you have a dream or wish for your future?",
+          "yes_response": "That's so exciting! Dreams are like seeds — plant them in your heart and take care of them. Work toward them bit by bit. Not every seed grows, but the ones you take care of have the best chance. Keep dreaming!",
+          "no_response": "That's okay! Sometimes we're still figuring out what we want. But here's a question: what would make you smile in the future? What would make you feel proud? Even a tiny answer is the beginning of a dream. You have time to discover it!",
+          "key_takeaway": "Dreams are like seeds. When we care for them, they can grow into something beautiful."
+        },
+        {
+          "conversation_id": "sunflower_08",
+          "sort_order": 8,
+          "question": "Some of my leaves have holes from hungry bugs, but I'm still a beautiful sunflower! Do you know that not everything has to be perfect for things to be good?",
+          "yes_response": "You really get it! Perfect isn't real anyway. We can have challenges, mistakes, and messy parts — and still have a wonderful life! It's the growing and trying that matters, not being perfect. Your holes make you YOU!",
+          "no_response": "Sometimes we think things have to be just right before they can be good. But look at me — holes in my leaves and still standing tall! Life can be good even when it's not perfect. Actually, that's the only way life ever is!",
+          "key_takeaway": "Life doesn't have to be perfect to be good. We can thrive even with imperfections."
+        },
+        {
+          "conversation_id": "sunflower_09",
+          "sort_order": 9,
+          "question": "When I face the sun, I feel warm and strong. Who or what helps you feel warm and strong inside — like your sunshine?",
+          "yes_response": "Hold onto those people and things! They're your sunshine — they help you grow and feel strong. When days get cloudy, remember your sunshine. Let them warm your heart and give you strength. Everyone needs sunshine!",
+          "no_response": "That's okay — let's think together. Is there a person who cares about you? A place where you feel safe? A pet, a song, a memory? Everyone has some sunshine, even if it's hard to see sometimes. Keep looking!",
+          "key_takeaway": "The people and things that make us feel loved and strong are our sunshine. We all need sunshine."
+        },
+        {
+          "conversation_id": "sunflower_10",
+          "sort_order": 10,
+          "question": "You've learned so much about hope! Remember: storms pass, seeds grow, and the sun comes back. Will you try to look for bright spots, even on cloudy days?",
+          "yes_response": "That makes my petals sing! You have a hopeful heart, and that will help you through so many things in life. When times get tough, remember our talks. The sun always rises! Shine on, little friend! 🌻",
+          "no_response": "That's okay — hope is something that grows over time. Maybe today you plant just a tiny seed of hope. That's enough! Remember, you don't have to feel sunny all the time. Just don't give up. I believe in you! 🌻",
+          "key_takeaway": "Hope grows over time. Even a tiny bit of hope can carry us through hard moments."
+        }
+      ]
+    },
+    {
+      "npc_id": "patch_caterpillar",
+      "npc_name": "Patch the Caterpillar",
+      "emoji": "🐛",
+      "species": "Caterpillar",
+      "topic": "Change & Transformation",
+      "unlock_level": 37,
+      "background": {
+        "default": "garden_grove_default.jpg",
+        "alternates": ["garden_grove_flowers.jpg"],
+        "backgroundColor": "#c5e1a5"
+      },
+      "conversations": [
+        {
+          "conversation_id": "caterpillar_01",
+          "sort_order": 1,
+          "question": "Hey there! I'm Patch! I'm a caterpillar right now, but one day I'll become a butterfly! Big changes can be exciting and scary. Have you ever gone through a big change in your life?",
+          "yes_response": "Change can feel like a lot! A new school, new home, new family stuff — it can be exciting and scary at the same time. That's totally normal. Every change helps us grow, even when it's hard. You're braver than you know!",
+          "no_response": "That's okay! Changes, big and small, happen to everyone eventually. When they do, remember: change doesn't mean something is wrong. It just means life is moving forward. And you can handle more than you think!",
+          "key_takeaway": "Change is a normal part of life. It can be exciting and scary at the same time."
+        },
+        {
+          "conversation_id": "caterpillar_02",
+          "sort_order": 2,
+          "question": "Soon I'll go into a cocoon. It'll be dark and tight, and I won't know exactly what's happening to me! Do you ever feel confused or unsure when things are changing?",
+          "yes_response": "That's so normal! When we're in the middle of a change, it can feel confusing and even lonely. But here's the thing: just because you don't understand what's happening doesn't mean something good isn't growing. Trust the process!",
+          "no_response": "You're pretty calm about change — that's a great strength! Some people feel very confused during changes, and that's okay too. If it ever happens to you, just remember: even when things are confusing, you're still growing.",
+          "key_takeaway": "Feeling confused during change is normal. Good things can grow even when we don't understand what's happening."
+        },
+        {
+          "conversation_id": "caterpillar_03",
+          "sort_order": 3,
+          "question": "I'm going to look completely different as a butterfly! Sometimes I wonder if I'll still be ME. When things change, do you ever worry about losing who you are?",
+          "yes_response": "I feel that too sometimes! But here's what I've learned: we can change and grow on the outside, but our hearts remember who we are. The things that make you YOU — your kindness, your laugh, your love — those stay with you through every change.",
+          "no_response": "That's a wonderful feeling of security! You know who you are, and that won't change. You might grow, learn new things, and look different over time — but your true self, deep inside, stays with you always.",
+          "key_takeaway": "We can change and grow while still being ourselves. Our true self stays with us."
+        },
+        {
+          "conversation_id": "caterpillar_04",
+          "sort_order": 4,
+          "question": "Some caterpillars try to fight change and avoid the cocoon. But I know I have to go through it to become who I'm meant to be. Is it sometimes hard for you to accept that things change?",
+          "yes_response": "It's hard for almost everyone! We get comfortable, and then things shift. But fighting change usually makes it harder. The best thing we can do is take a deep breath and move through it one step at a time. You can do it!",
+          "no_response": "You have a very wise way of seeing life! Accepting change doesn't mean you have to like it all the time. It just means you let it happen without fighting too hard. That helps changes go more smoothly.",
+          "key_takeaway": "Accepting change — even when we don't like it — helps us move through it more smoothly."
+        },
+        {
+          "conversation_id": "caterpillar_05",
+          "sort_order": 5,
+          "question": "Growing up is one of the biggest changes! I'll go from crawling to flying! Are there things about growing up that you feel excited or worried about?",
+          "yes_response": "Growing up is a mix of excitement and worry for most of us! Some things will be amazing — more freedom, new adventures. Some might feel scary — more responsibility, things getting harder. Both feelings are okay. You'll figure it out as you go!",
+          "no_response": "That's okay! Whether you feel excited, worried, or just not thinking about it much — all of that is normal. Growing up happens one day at a time. You don't have to have it all figured out right now.",
+          "key_takeaway": "Growing up brings both exciting and scary feelings. That's normal, and we figure it out as we go."
+        },
+        {
+          "conversation_id": "caterpillar_06",
+          "sort_order": 6,
+          "question": "I have to let go of being a caterpillar to become a butterfly. Sometimes change means saying goodbye to old things. Have you ever had to let go of something to make room for something new?",
+          "yes_response": "Letting go can be really hard! An old toy, a place you lived, a friend who moved away. It's okay to feel sad about what we leave behind. But letting go can also make space for new, wonderful things. Both things are true!",
+          "no_response": "That's okay! When it happens, just know that letting go doesn't mean forgetting. We keep the love and memories in our hearts. And when we let go, we make room for new adventures. It's part of growing.",
+          "key_takeaway": "Letting go of old things is hard but makes room for new things. We keep our memories in our hearts."
+        },
+        {
+          "conversation_id": "caterpillar_07",
+          "sort_order": 7,
+          "question": "While I'm changing in my cocoon, I can't rush it. I have to be patient! Is it hard for you to be patient when you're waiting for something to happen or change?",
+          "yes_response": "Waiting is SO hard! When we want something to change or happen, time feels so slow. But some things can't be rushed — like a caterpillar becoming a butterfly. Practice taking it one day at a time. You're getting there!",
+          "no_response": "Wow, patience is a real strength! Not everyone has that. Being patient means trusting that things will work out, even when it takes time. Keep that calm heart — it will help you through many things!",
+          "key_takeaway": "Being patient during change is hard but important. Some things can't be rushed."
+        },
+        {
+          "conversation_id": "caterpillar_08",
+          "sort_order": 8,
+          "question": "Not all changes feel good at first. Some are hard or sad. But even tough changes can help us grow stronger. Have you ever gone through a hard change that made you stronger?",
+          "yes_response": "That shows real courage! Hard changes can teach us things we couldn't learn any other way. They show us how strong we really are. It's okay that it was hard — what matters is that you kept going. That's strength!",
+          "no_response": "That's okay! Maybe you haven't had a really hard change yet, or maybe you didn't notice how it made you stronger. But know this: when tough things happen, they don't just hurt us. They also teach us and help us grow.",
+          "key_takeaway": "Hard changes can teach us and make us stronger, even when they don't feel good at first."
+        },
+        {
+          "conversation_id": "caterpillar_09",
+          "sort_order": 9,
+          "question": "Sometimes I'm scared about becoming a butterfly. What if I can't fly? What if I miss being a caterpillar? Do you ever feel scared about what's next in your life?",
+          "yes_response": "Me too! Fear about the future is so common. We don't know exactly what's coming, and that's scary. But here's a secret: you've handled every new thing in your life so far. You'll handle the next things too. Trust yourself!",
+          "no_response": "That's great that you're not feeling scared right now! But if fear ever shows up, don't worry — it's normal. Being scared doesn't mean you can't do something. It just means it's new and important. You'll figure it out!",
+          "key_takeaway": "Fear about the future is normal. We've handled new things before and can do it again."
+        },
+        {
+          "conversation_id": "caterpillar_10",
+          "sort_order": 10,
+          "question": "Talking with you has been wonderful! Remember: change is part of life, and you're strong enough to grow through it. Will you try to see changes as chances to grow into who you're meant to be?",
+          "yes_response": "That makes my little caterpillar heart so happy! Change isn't always easy, but it's how we become our best selves. Like a butterfly coming out of a cocoon, your wings are growing too. Spread them wide! 🐛🦋",
+          "no_response": "That's okay! Some changes are really hard to welcome. Just remember: you don't have to love change to get through it. You just have to keep going, one day at a time. I believe in you! Crawl on, brave friend! 🐛",
+          "key_takeaway": "Changes are chances to grow into who we're meant to be. We're all becoming something new."
+        }
+      ]
+    },
+    {
+      "npc_id": "ivy_frog",
+      "npc_name": "Ivy the Frog",
+      "emoji": "🐸",
+      "species": "Tree Frog",
+      "topic": "Environmental Awareness & Connection",
+      "unlock_level": 39,
+      "background": {
+        "default": "garden_grove_default.jpg",
+        "alternates": ["garden_grove_rainy.jpg"],
+        "backgroundColor": "#a5d6a7"
+      },
+      "conversations": [
+        {
+          "conversation_id": "frog_01",
+          "sort_order": 1,
+          "question": "Ribbit! Hi friend! I'm Ivy! I love living in this garden. The plants give me shade, the pond gives me water, and I eat the bugs. We all need each other! Do you ever think about how you're connected to nature?",
+          "yes_response": "That's wonderful! We're all part of one big family — people, animals, plants, water, and air. When we remember that, we take better care of each other. You're part of something so much bigger than just you!",
+          "no_response": "That's okay! Let me show you. The air you breathe comes from plants. The water you drink comes from rain. The food you eat grew from the earth. You're connected to nature every single day, even if you don't notice it!",
+          "key_takeaway": "We are all connected to nature — plants, animals, water, and air. We're part of one big family."
+        },
+        {
+          "conversation_id": "frog_02",
+          "sort_order": 2,
+          "question": "I live in a pond, and I need the water to be clean to stay healthy. Do you know that clean water is important for your body too?",
+          "yes_response": "You're right! Our bodies are made of a lot of water. We need clean water to drink, wash, and grow food. When we take care of water, we take care of ourselves too! Every sip connects us to rivers, clouds, and rain.",
+          "no_response": "It really is! Your body needs water to work right — for your heart, brain, muscles, everything! That's why keeping water clean matters. When we protect water, we protect ourselves and all the creatures who need it.",
+          "key_takeaway": "Clean water is important for our bodies and all living things. Taking care of water is taking care of ourselves."
+        },
+        {
+          "conversation_id": "frog_03",
+          "sort_order": 3,
+          "question": "Being outside in nature always makes me feel calm and happy. Do you ever feel better after spending time outside?",
+          "yes_response": "Nature has that magic! Scientists have found that being outside — breathing fresh air, hearing birds, feeling the sun — actually helps our brains feel calmer and happier. It's like medicine that grows on trees! Keep getting outside when you can.",
+          "no_response": "Maybe you haven't noticed yet! Next time you're outside, pay attention to how you feel. Does the fresh air feel nice? Do you like the sounds? Even a few minutes outside can help our brains rest. Give it a try!",
+          "key_takeaway": "Spending time in nature helps our brains feel calmer and happier. It's good for our wellbeing."
+        },
+        {
+          "conversation_id": "frog_04",
+          "sort_order": 4,
+          "question": "When trash ends up in my pond, it makes me and my friends sick. Have you ever seen trash outside where it shouldn't be?",
+          "yes_response": "Sadly, it happens a lot! But here's the good news: we can help! Picking up just one piece of trash makes a difference. Using less plastic helps too. Small actions from lots of people add up to big changes!",
+          "no_response": "That's lucky! But trash does sometimes end up in nature and it can hurt animals and plants. We can all help by putting trash in the right place and using less throwaway stuff. Every small choice matters!",
+          "key_takeaway": "Trash can hurt nature. Small actions — like picking up litter — make a big difference."
+        },
+        {
+          "conversation_id": "frog_05",
+          "sort_order": 5,
+          "question": "The plants in the garden help clean the air and give us shade. They're like helpers! Do you know how plants help people?",
+          "yes_response": "You're smart! Plants clean the air we breathe, give us food to eat, and give animals homes. They keep us cool when it's hot and stop soil from washing away. Plants are some of nature's best helpers!",
+          "no_response": "Let me tell you! Plants breathe in the air we breathe out and breathe out the air we need. They also give us fruits, vegetables, and shade. Without plants, we couldn't live. They're like superheroes in green!",
+          "key_takeaway": "Plants help us by cleaning air, giving food, and providing shade. They're nature's superheroes."
+        },
+        {
+          "conversation_id": "frog_06",
+          "sort_order": 6,
+          "question": "I love to eat mosquitoes and flies — yum! Even small creatures like me have an important job in nature. Do you think every creature matters, even bugs?",
+          "yes_response": "Absolutely! Even creatures we don't like have a job. Bees help plants grow. Worms make soil healthy. Flies are food for frogs like me! Everyone is connected, and we all need each other.",
+          "no_response": "I get it — some bugs seem annoying! But they're all part of the big picture. Bugs feed birds and frogs. They pollinate flowers. Even the creepy-crawlies matter! Nature is like a puzzle, and every piece fits.",
+          "key_takeaway": "Every creature has a role in nature. We're all connected like pieces of a puzzle."
+        },
+        {
+          "conversation_id": "frog_07",
+          "sort_order": 7,
+          "question": "Turning off lights, using less water, and walking instead of driving in a car all help take care of the earth. Do you or your family do things like this to help the planet?",
+          "yes_response": "That's awesome! Every time you save energy or water, you're helping nature. It might feel small, but when everyone does a little bit, it adds up to a lot! Keep up the great work, eco-warrior!",
+          "no_response": "That's okay! Here are some easy ideas: turn off lights when you leave a room, take shorter showers, or use a reusable water bottle. These little things help the earth. You can start anytime!",
+          "key_takeaway": "Small actions like saving water and energy help take care of our planet. Every bit counts."
+        },
+        {
+          "conversation_id": "frog_08",
+          "sort_order": 8,
+          "question": "When I feel stressed, I listen to the sounds of the pond — water splashing, frogs singing, bugs buzzing. Do you ever use nature sounds to feel calm?",
+          "yes_response": "Nature's music is the best! Listening to rain, birds, waves, or wind can help our busy minds slow down. It's free and always there. You're already using one of nature's secret calming tools!",
+          "no_response": "Want to try it? Next time you feel worried or upset, close your eyes and imagine the sound of rain or ocean waves. Or listen to real nature sounds outside or on a device. It's like a lullaby for your brain!",
+          "key_takeaway": "Listening to nature sounds can help calm our minds when we feel stressed or worried."
+        },
+        {
+          "conversation_id": "frog_09",
+          "sort_order": 9,
+          "question": "Some people think nature is 'out there' — in forests and oceans. But nature is everywhere — even in cities! Can you think of nature that's close to where you live?",
+          "yes_response": "You're right! Trees on your street, birds on wires, clouds in the sky, rain on windows — nature is all around, even in busy places. When you look for it, you'll find it everywhere. You're surrounded by nature!",
+          "no_response": "Let's look closer! Is there a tree nearby? Birds flying? Clouds in the sky? Even weeds growing through cracks are nature! You don't need a forest to be connected to the earth. Nature is always close.",
+          "key_takeaway": "Nature is everywhere, even in cities. We're always connected to the earth around us."
+        },
+        {
+          "conversation_id": "frog_10",
+          "sort_order": 10,
+          "question": "You've learned so much about our beautiful planet! We're all connected — people, animals, plants, water, air. Will you try to take care of nature and feel connected to it?",
+          "yes_response": "Ribbit! That makes my heart so full! When we care for nature, we care for ourselves too. You're part of something amazing. Go outside, feel the sun, listen to the birds, and know that you belong here. Hop to it, friend! 🐸",
+          "no_response": "That's okay! Connection with nature grows slowly. Maybe start small — just notice one thing in nature each day. A bird, a leaf, the sky. Over time, you might feel more connected than you thought. I'll be here in the garden! 🐸",
+          "key_takeaway": "Caring for nature means caring for ourselves. We're all connected and we all belong."
+        }
+      ]
+    }
+  ]
+}

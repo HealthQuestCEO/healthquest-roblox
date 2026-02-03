@@ -1,0 +1,143 @@
+{
+  "_comment": "Daily Spinner Prize Configuration for Lumo's Land",
+  "_instructions": {
+    "prize_types": ["coins", "xp", "item", "random_sticker"],
+    "probability_weight": "Higher number = more likely to win (weight 3 = 3x more likely than weight 1)",
+    "display_color": "Hex color for spinner segment",
+    "item_prizes": "Select from shop_items - automatically added to user's Attic when won",
+    "random_sticker": "Picks a random sticker from sticker_pool - great for common prizes",
+    "daily_limit": "Users can spin once per day"
+  },
+  
+  "spinner_config": {
+    "spins_per_day": 1,
+    "animation_duration_ms": 3000
+  },
+
+  "sticker_pool": {
+    "_comment": "Pool of common stickers for random_sticker prizes. Add image field for custom graphics.",
+    "stickers": [
+      { "id": "STK-001", "name": "Gold Star", "emoji": "⭐", "image": null },
+      { "id": "STK-002", "name": "Red Heart", "emoji": "❤️", "image": null },
+      { "id": "STK-003", "name": "Rainbow", "emoji": "🌈", "image": null },
+      { "id": "STK-004", "name": "Smiley Face", "emoji": "😊", "image": null },
+      { "id": "STK-005", "name": "Cool Shades", "emoji": "😎", "image": null },
+      { "id": "STK-006", "name": "Party Time", "emoji": "🥳", "image": null },
+      { "id": "STK-007", "name": "Fire", "emoji": "🔥", "image": null },
+      { "id": "STK-008", "name": "Lightning", "emoji": "⚡", "image": null },
+      { "id": "STK-009", "name": "Sparkles", "emoji": "✨", "image": null },
+      { "id": "STK-010", "name": "Thumbs Up", "emoji": "👍", "image": null },
+      { "id": "STK-011", "name": "Trophy", "emoji": "🏆", "image": null },
+      { "id": "STK-012", "name": "Diamond", "emoji": "💎", "image": null },
+      { "id": "STK-013", "name": "Rocket", "emoji": "🚀", "image": null },
+      { "id": "STK-014", "name": "Crown", "emoji": "👑", "image": null },
+      { "id": "STK-015", "name": "Clover", "emoji": "🍀", "image": null },
+      { "id": "STK-016", "name": "Turkey", "emoji": "🦃", "image": null, "seasonal": "thanksgiving" }
+    ]
+  },
+
+  "seasonal_prizes": {
+    "_comment": "Special prizes only available during specific dates",
+    "thanksgiving": {
+      "active_dates": ["2025-11-27", "2025-11-28", "2025-11-29", "2025-11-30"],
+      "prize": {
+        "prize_id": "thanksgiving_turkey",
+        "prize_name": "Thanksgiving Turkey Sticker!",
+        "prize_type": "guaranteed_sticker",
+        "sticker_id": "STK-016",
+        "display_color": "#D35400",
+        "message": "Happy Thanksgiving! Here's a special Turkey sticker!"
+      }
+    }
+  },
+
+  "prizes": [
+    {
+      "prize_id": "xp_25",
+      "prize_name": "25 XP",
+      "prize_type": "xp",
+      "prize_amount": 25,
+      "probability_weight": 35,
+      "display_color": "#98D8C8",
+      "is_active": true,
+      "_note": "Small XP - most common (35%)"
+    },
+    {
+      "prize_id": "coins_5",
+      "prize_name": "5 Coins",
+      "prize_type": "coins",
+      "prize_amount": 5,
+      "probability_weight": 35,
+      "display_color": "#FFD700",
+      "is_active": true,
+      "_note": "Small coins - most common (35%)"
+    },
+    {
+      "prize_id": "xp_50",
+      "prize_name": "50 XP Boost",
+      "prize_type": "xp",
+      "prize_amount": 50,
+      "probability_weight": 8,
+      "display_color": "#66BFAD",
+      "is_active": true,
+      "_note": "Medium XP (8%)"
+    },
+    {
+      "prize_id": "coins_10",
+      "prize_name": "10 Coins",
+      "prize_type": "coins",
+      "prize_amount": 10,
+      "probability_weight": 8,
+      "display_color": "#FFA500",
+      "is_active": true,
+      "_note": "Medium coins (8%)"
+    },
+    {
+      "prize_id": "xp_100",
+      "prize_name": "100 XP Super Boost!",
+      "prize_type": "xp",
+      "prize_amount": 100,
+      "probability_weight": 2,
+      "display_color": "#1165B3",
+      "is_active": true,
+      "_note": "Large XP - rare (2%)"
+    },
+    {
+      "prize_id": "coins_25",
+      "prize_name": "25 Coins",
+      "prize_type": "coins",
+      "prize_amount": 25,
+      "probability_weight": 2,
+      "display_color": "#FF6B6B",
+      "is_active": true,
+      "_note": "Large coins - rare (2%)"
+    },
+    {
+      "prize_id": "random_sticker",
+      "prize_name": "Lucky Sticker!",
+      "prize_type": "random_sticker",
+      "probability_weight": 10,
+      "display_color": "#9B59B6",
+      "is_active": true,
+      "_note": "Sticker prize (10%)"
+    }
+  ],
+  
+  "typical_spinner_setup": {
+    "common_prizes": [
+      {"coins": 10, "weight": 10},
+      {"xp": 50, "weight": 8}
+    ],
+    "uncommon_prizes": [
+      {"coins": 25, "weight": 5},
+      {"item": "sticker", "weight": 6}
+    ],
+    "rare_prizes": [
+      {"coins": 50, "weight": 2},
+      {"xp": 100, "weight": 3}
+    ],
+    "legendary_prizes": [
+      {"item": "special_decor", "weight": 1}
+    ]
+  }
+}

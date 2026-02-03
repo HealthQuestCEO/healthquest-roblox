@@ -1,0 +1,735 @@
+{
+  "metadata": {
+    "version": "4.0",
+    "portal": "Reino Místico",
+    "theme": "Sabiduría y Maestría",
+    "unlock_level": 85,
+    "cost": 50000,
+    "total_npcs": 8,
+    "conversations_per_npc": 10,
+    "total_conversations": 80,
+    "xp_per_conversation": 100
+  },
+  "npcs": [
+    {
+      "npc_id": "celeste_unicorn",
+      "npc_name": "Unicornio Celeste",
+      "emoji": "🦄",
+      "species": "Unicornio",
+      "topic": "Magia Interior y Autoconfianza",
+      "unlock_level": 87,
+      "conversations": [
+        {
+          "conversation_id": "unicorn_01",
+          "sort_order": 1,
+          "question": "¡Saludos, ser mágico! Soy Celeste. Muchas criaturas piensan que los unicornios son los únicos seres mágicos. ¡Pero yo sé un secreto — TÚ también tienes magia dentro de ti! ¿Crees que tienes algo mágico en tu interior?",
+          "yes_response": "¡Puedes sentirlo! Esa chispa interior — tu creatividad, tu bondad, tus sueños — esa es tu magia interior. Es tan real como mi cuerno. ¡Nunca dejes de creer en la magia que llevas!",
+          "no_response": "¡Muchas criaturas no ven su propia magia! Pero te prometo que está ahí. Tus dones únicos, tu imaginación, tu corazón — estas son cosas mágicas. ¡Mira más de cerca y encontrarás tu brillo!",
+          "key_takeaway": "Todos tienen magia interior — dones únicos, creatividad y corazón que los hacen especiales."
+        },
+        {
+          "conversation_id": "unicorn_02",
+          "sort_order": 2,
+          "question": "Mi cuerno brilla más cuando creo en mí misma. Cuando dudo, se atenúa. ¿Tu 'luz interior' brilla más cuando crees en ti mismo/a?",
+          "yes_response": "¡Has notado la conexión! La autoconfianza es como combustible para nuestra luz interior. Cuando confiamos en nosotros mismos, brillamos más. ¡Sigue alimentando tu fe — tu brillo depende de ello!",
+          "no_response": "¡Es una conexión poderosa! Cuando dudamos de nosotros mismos, nuestro brillo se desvanece. Pero cuando creemos — aunque sea un poco — brillamos más. ¡Intenta confiar más en ti y observa lo que pasa!",
+          "key_takeaway": "La autoconfianza alimenta nuestra luz interior. Cuando confiamos en nosotros mismos, brillamos más."
+        },
+        {
+          "conversation_id": "unicorn_03",
+          "sort_order": 3,
+          "question": "Algunas criaturas me dijeron que los unicornios no existen. ¡Pero aquí estoy! ¿Alguna vez te han dicho que tus sueños eran imposibles?",
+          "yes_response": "¡Eso puede doler! Pero recuerda: solo porque alguien no puede ver tu magia no significa que no sea real. Sus dudas dicen más de ellos que de ti. ¡Sigue creyendo!",
+          "no_response": "¡Qué afortunado/a! Si alguna vez sucede, recuérdame — una unicornio a quien le dijeron que no era real. ¡Las dudas de otros no definen lo que es posible para ti!",
+          "key_takeaway": "Las dudas de otros no definen lo que es posible para nosotros. Nuestros sueños siguen siendo válidos."
+        },
+        {
+          "conversation_id": "unicorn_04",
+          "sort_order": 4,
+          "question": "¡No nací sabiendo que era mágica. Tuve que descubrirlo! La autoconfianza es algo que cultivamos con el tiempo. ¿Sientes que tu autoconfianza está creciendo?",
+          "yes_response": "¡Maravilloso! La autoconfianza crece más fuerte cada vez que intentamos algo, enfrentamos un miedo o tenemos éxito en algo difícil. ¡Sigue alimentándola con acción y bondad hacia ti mismo/a!",
+          "no_response": "¡Toma tiempo! La autoconfianza no es un interruptor que encendemos — es una semilla que regamos. Cada pequeño éxito, cada pensamiento amable sobre ti mismo/a, cada riesgo que tomas — ¡estos ayudan a que crezca!",
+          "key_takeaway": "La autoconfianza crece con el tiempo. La construimos a través de la acción, la bondad hacia nosotros mismos y pequeños éxitos."
+        },
+        {
+          "conversation_id": "unicorn_05",
+          "sort_order": 5,
+          "question": "Incluso yo tengo días cuando dudo de mi magia. En esos días, recuerdo momentos pasados cuando brillé. Cuando dudas de ti mismo/a, ¿recuerdas momentos en que tuviste éxito?",
+          "yes_response": "¡Esa es una práctica poderosa! Recordar nuestros triunfos nos recuerda de lo que somos capaces. Esos recuerdos son prueba de tu magia. ¡Guarda un cofre del tesoro de éxitos en tu corazón!",
+          "no_response": "¡Es fácil olvidar! Pero has tenido éxito antes — incluso las cosas pequeñas cuentan. Intenta recordar esos momentos cuando la duda aparezca. ¡Son prueba de que SÍ PUEDES hacer cosas difíciles!",
+          "key_takeaway": "Recordar éxitos pasados nos ayuda a creer en nosotros mismos durante momentos de duda."
+        },
+        {
+          "conversation_id": "unicorn_06",
+          "sort_order": 6,
+          "question": "Mi magia no se trata de ser perfecta — se trata de ser verdaderamente YO. ¿Sientes presión de ser perfecto/a en lugar de solo ser tú mismo/a?",
+          "yes_response": "¡La presión de la perfección es muy pesada! Pero aquí está el secreto: tu magia no está en ser impecable. Está en ser auténticamente, maravillosamente TÚ. ¡Ahí es donde vive el verdadero brillo!",
+          "no_response": "¡Qué liberador! Muchas criaturas persiguen la perfección y pierden su verdadera magia. Saber que ser tú mismo/a es suficiente es un regalo raro y precioso. ¡Sigue abrazando tu brillo auténtico!",
+          "key_takeaway": "Nuestra magia no está en ser perfectos — está en ser auténticamente nosotros mismos."
+        },
+        {
+          "conversation_id": "unicorn_07",
+          "sort_order": 7,
+          "question": "¡Cuando uso mi magia para ayudar a otros, se vuelve aún más fuerte! ¿Compartir tus dones con otros te hace sentir más poderoso/a?",
+          "yes_response": "¡La magia se multiplica cuando se comparte! Ayudar a otros con nuestros dones no nos drena — nos llena. Mientras más compartes tu luz, más brillante te vuelves. ¡Sigue dando!",
+          "no_response": "¡Inténtalo y verás! Cuando usamos nuestros dones para ayudar a otros, algo maravilloso sucede — sentimos MÁS, no menos. Compartir la magia la hace crecer. ¡Es un hermoso misterio!",
+          "key_takeaway": "Compartir nuestros dones con otros hace que nuestra magia interior crezca más fuerte."
+        },
+        {
+          "conversation_id": "unicorn_08",
+          "sort_order": 8,
+          "question": "Veo criaturas que esconden su magia porque tienen miedo de lo que otros pensarán. ¿Alguna vez escondes tu verdadero ser o tus dones?",
+          "yes_response": "¡A veces se siente más seguro! Pero esconderse atenúa nuestro brillo. El mundo necesita tu magia — incluso si no todos la entienden. Lentamente, cuando estés listo/a, ¡deja que tu verdadero ser brille!",
+          "no_response": "¡Qué valiente! Mostrar tu verdadero ser requiere coraje. No todos lo hacen. Tu disposición a ser visto/a es parte de lo que te hace mágico/a. ¡Sigue siendo visible!",
+          "key_takeaway": "Esconder nuestro verdadero ser atenúa nuestro brillo. El mundo necesita nuestra magia única."
+        },
+        {
+          "conversation_id": "unicorn_09",
+          "sort_order": 9,
+          "question": "Los unicornios jóvenes me preguntan cómo encontrar su magia. Les digo: ya está ahí — solo cree. ¿Qué le dirías a una criatura más joven sobre encontrar su magia?",
+          "yes_response": "¡Escucha tu propio consejo! Cualquier sabiduría que compartirías con un pequeño también aplica a ti. Sabes más sobre magia de lo que crees. ¡Confía en tu sabiduría interior!",
+          "no_response": "¡Piénsalo! Si un pequeño te preguntara, ¿qué dirías? '¿Ya eres especial'? '¿Solo sé tú mismo/a'? '¿Cree en tus sueños'? ¡Ese consejo también es para TI!",
+          "key_takeaway": "El consejo que daríamos a los más jóvenes sobre creer en sí mismos también aplica a nosotros."
+        },
+        {
+          "conversation_id": "unicorn_10",
+          "sort_order": 10,
+          "question": "¡Nuestro tiempo juntos ha sido encantado! Recuerda: eres mágico/a, eres suficiente, y tu fe en ti mismo/a te hace brillar. ¿Seguirás creyendo en tu magia interior?",
+          "yes_response": "¡Entonces tu cuerno siempre brillará! La magia estuvo dentro de ti todo el tiempo — solo te ayudé a verla. ¡Ve adelante y brilla, ser magnífico! ¡El mundo necesita tu luz! 🦄",
+          "no_response": "Está bien — creer en nosotros mismos es un viaje, no un destino. Incluso pequeños momentos de autoconfianza cuentan. ¡Tu magia sigue ahí, esperando que la veas! 🦄",
+          "key_takeaway": "La magia está dentro de nosotros. Creer en nosotros mismos nos ayuda a brillar y compartir nuestra luz con el mundo."
+        }
+      ]
+    },
+    {
+      "npc_id": "drake_dragon",
+      "npc_name": "Drake Dragón",
+      "emoji": "🐉",
+      "species": "Dragón",
+      "topic": "Transformar el Dolor en Poder",
+      "unlock_level": 89,
+      "conversations": [
+        {
+          "conversation_id": "dragon_01",
+          "sort_order": 1,
+          "question": "Saludos, valiente. Soy Drake. Respiro fuego, pero una vez ese fuego ardía dentro de mí como dolor. Aprendí a transformarlo en poder. ¿Alguna vez has sentido un dolor que parecía demasiado grande para manejar?",
+          "yes_response": "El dolor puede sentirse abrumador. Conozco bien ese fuego. Pero esto es lo que he aprendido: el dolor no tiene que destruirnos. Con tiempo y cuidado, puede convertirse en combustible para algo poderoso. Tú también puedes transformarlo.",
+          "no_response": "Eso es afortunado. Pero cuando el dolor llegue — y llega a todos — recuerda: no tiene que quedarse como dolor. Puede convertirse en algo más. Los dragones saben cómo transformar las llamas.",
+          "key_takeaway": "El dolor no tiene que destruirnos. Con tiempo, puede convertirse en combustible para algo poderoso."
+        },
+        {
+          "conversation_id": "dragon_02",
+          "sort_order": 2,
+          "question": "Mi fuego viene de lo más profundo. Tuve que aprender a usarlo, no a ser quemado por él. ¿Tienes sentimientos fuertes dentro que a veces se sienten demasiado calientes para manejar?",
+          "yes_response": "Esos grandes sentimientos son como fuego — poderosos y a veces aterradores. Pero puedes aprender a usarlos en lugar de ser quemado por ellos. La clave es no reprimirlos ni dejarlos explotar. Encuentra formas saludables de liberarlos.",
+          "no_response": "Si vienen, recuerda esto: los sentimientos fuertes no son malos. Son energía. Como el fuego, pueden destruir O pueden dar combustible. Aprender a dirigirlos es el camino del dragón.",
+          "key_takeaway": "Las emociones fuertes son como fuego — energía poderosa que podemos aprender a dirigir y usar."
+        },
+        {
+          "conversation_id": "dragon_03",
+          "sort_order": 3,
+          "question": "Algunos dragones permanecen enojados para siempre. Su fuego los quema por dentro. Aprendí a dejar que mi dolor me enseñara, luego lo dejé ir. ¿Te aferras al dolor, o puedes dejar que te enseñe y liberarlo?",
+          "yes_response": "Ambos son parte del viaje. Aferrarse es natural al principio. Pero el dolor que nunca se libera sigue quemando. Cuando estés listo/a, intenta aprender lo que te enseñó, luego abre tus garras y déjalo volar.",
+          "no_response": "¡Eso es sabiduría! Aprender del dolor y luego liberarlo nos protege de ser consumidos. Llevamos las lecciones, no el fuego. Ya entiendes el camino del dragón.",
+          "key_takeaway": "Aferrarnos al dolor para siempre nos quema. Aprender de él y liberarlo nos libera."
+        },
+        {
+          "conversation_id": "dragon_04",
+          "sort_order": 4,
+          "question": "Mis escamas se volvieron más gruesas por los fuegos que sobreviví. Soy más fuerte por lo que me lastimó. ¿Te has vuelto más fuerte por algo difícil que atravesaste?",
+          "yes_response": "Entonces conoces la verdad del dragón: a menudo somos forjados en el fuego. Las cosas difíciles no te rompieron — te construyeron. Tus escamas son más gruesas ahora. Ese es poder nacido del dolor.",
+          "no_response": "A veces no vemos nuestra propia fuerza. Pero si has sobrevivido cosas difíciles, eres más fuerte que antes — lo sientas o no. La fuerza a menudo crece en silencio.",
+          "key_takeaway": "Las experiencias difíciles pueden hacernos más fuertes. A menudo somos forjados en el fuego."
+        },
+        {
+          "conversation_id": "dragon_05",
+          "sort_order": 5,
+          "question": "No todo dolor se transforma de inmediato. Algunos toman años. Ser paciente con nuestra propia sanación es importante. ¿Eres paciente contigo mismo/a cuando estás sufriendo?",
+          "yes_response": "La paciencia con nosotros mismos es verdadera sabiduría. Sanar no es rápido. Como un dragón creciendo, toma tiempo. Sigue siendo gentil contigo mismo/a — la transformación está sucediendo incluso cuando no puedes verla.",
+          "no_response": "A menudo nos apresuramos a 'superarlo'. Pero sanar toma tiempo. Sé paciente con tu propio fuego. No tienes que transformarte todo de una vez. El proceso mismo es valioso.",
+          "key_takeaway": "Sanar toma tiempo. Ser paciente con nosotros mismos mientras nos transformamos es importante."
+        },
+        {
+          "conversation_id": "dragon_06",
+          "sort_order": 6,
+          "question": "Ahora uso mi fuego para proteger a otros, no para lastimarlos. El dolor transformado se convierte en propósito. ¿Hay algo doloroso en tu vida que podrías usar para ayudar a otros algún día?",
+          "yes_response": "¡Esa es la más alta transformación! Cuando nuestro dolor se convierte en una forma de ayudar a otros, encuentra significado. Tus experiencias difíciles podrían iluminar el camino para alguien más. Ese es un propósito poderoso.",
+          "no_response": "Puede que aún no esté claro. Pero muchos dragones descubren que su mayor dolor se convierte en su mayor regalo para otros. Algún día, tu fuego podría calentar a alguien que tiene frío.",
+          "key_takeaway": "Nuestro dolor puede convertirse en propósito cuando lo usamos para ayudar a otros que enfrentan luchas similares."
+        },
+        {
+          "conversation_id": "dragon_07",
+          "sort_order": 7,
+          "question": "Algunos dolores no están destinados a transformarse solos. Tuve dragones mayores que me ayudaron. ¿Tienes a alguien que te ayude con tus sentimientos difíciles?",
+          "yes_response": "¡Eso es precioso! Tener a alguien que nos ayude a procesar el dolor hace la transformación más rápida y segura. Mantén a ese dragón mayor cerca. No estamos destinados a enfrentar el fuego solos.",
+          "no_response": "Encontrar ese apoyo es importante. Un adulto de confianza, un consejero, un amigo sabio — alguien que te ayude con el fuego. La transformación es más fácil cuando no estamos solos. Busca a tu dragón mayor.",
+          "key_takeaway": "Tener apoyo nos ayuda a transformar el dolor más seguramente. No estamos destinados a enfrentar el fuego solos."
+        },
+        {
+          "conversation_id": "dragon_08",
+          "sort_order": 8,
+          "question": "Incluso ahora, a veces me quemo con viejos dolores. Sanar no siempre está terminado. Pero no dejo que me detenga. ¿Los viejos dolores a veces regresan para ti?",
+          "yes_response": "¡Eso es normal! Sanar no es una línea recta. El viejo dolor puede visitarnos. Cuando lo haga, sé gentil contigo mismo/a. No significa que no hayas sanado — significa que sigues vivo/a y sintiendo. Sigue adelante.",
+          "no_response": "¡Qué afortunado/a! Pero si el viejo dolor resurge, no te desanimes. Le pasa a todos los dragones. Es solo otra capa para transformar, no una señal de fracaso.",
+          "key_takeaway": "Sanar no es una línea recta. Que el viejo dolor resurja no significa que no hayamos progresado."
+        },
+        {
+          "conversation_id": "dragon_09",
+          "sort_order": 9,
+          "question": "Los dragones jóvenes me preguntan si el dolor alguna vez desaparecerá completamente. Les digo: cambia de forma, pero el fuego se vuelve tuyo para controlar. ¿Esa idea te ayuda o te asusta?",
+          "yes_response": "Es la verdad honesta. El dolor puede dejar marcas, pero nos convertimos en maestros de nuestro fuego. Nosotros decidimos cómo usarlo. Eso es poder. No eres víctima de tus llamas — eres un dragón.",
+          "no_response": "Ambos sentimientos tienen sentido. Saber que el dolor podría quedarse puede ser aterrador. Pero saber que lo dominarás es poderoso. Tú decides qué hacer con tu fuego. Eso es libertad.",
+          "key_takeaway": "Nos convertimos en maestros de nuestro propio fuego. El dolor puede dejar marcas, pero controlamos cómo lo usamos."
+        },
+        {
+          "conversation_id": "dragon_10",
+          "sort_order": 10,
+          "question": "Volar contigo ha sido un honor. Recuerda: tu dolor puede convertirse en tu poder. No estás definido/a por lo que te quemó, sino por lo que construyes de las cenizas. ¿Seguirás transformando tu fuego?",
+          "yes_response": "Entonces tienes el corazón de un dragón. Cualesquiera que sean las llamas que hayas enfrentado, puedes convertirlas en luz. Levántate de las cenizas, poderoso/a. ¡Tu fuego ahora te pertenece a TI! 🐉",
+          "no_response": "Está bien. El fuego es paciente. Cuando estés listo/a, la transformación comenzará. Hasta entonces, sé gentil contigo mismo/a. Eres más fuerte de lo que crees. 🐉",
+          "key_takeaway": "No estamos definidos por lo que nos lastimó, sino por lo que construimos de las cenizas."
+        }
+      ]
+    },
+    {
+      "npc_id": "phoenix_bird",
+      "npc_name": "Fénix",
+      "emoji": "🔥",
+      "species": "Fénix",
+      "topic": "Levantarse de los Reveses",
+      "unlock_level": 91,
+      "conversations": [
+        {
+          "conversation_id": "phoenix_01",
+          "sort_order": 1,
+          "question": "¡Hola, ser que resurge! Soy Fénix. ¡Sé lo que es caer — me he convertido en cenizas muchas veces! Pero siempre me levanto de nuevo. ¿Alguna vez has caído y has tenido que levantarte?",
+          "yes_response": "¡Entonces conoces la verdad del fénix: caer no es el final. Levantarse es lo que importa. Cada vez que te levantas, eres más fuerte. ¡Ya eres un fénix — solo que quizás aún no lo ves!",
+          "no_response": "Si no lo has hecho aún, lo harás — y eso no es una amenaza, es una promesa de la vida. Cuando caigas, recuerda: no es la caída lo que te define. Es el levantarse. Y TÚ te levantarás.",
+          "key_takeaway": "Caer no es el final. Levantarse es lo que importa, y levantarse nos hace más fuertes."
+        },
+        {
+          "conversation_id": "phoenix_02",
+          "sort_order": 2,
+          "question": "¡Cuando me convierto en cenizas, duele! No finjo que no. Los reveses duelen. ¿Te permites sentirte mal cuando algo sale mal, o finges que estás bien?",
+          "yes_response": "¡Ambos son naturales! Pero fingir que estamos bien no nos ayuda a sanar. Está bien sentir la quemadura. Reconocer el dolor es el primer paso para levantarse. Siéntelo, luego levántate.",
+          "no_response": "¡Sentir el dolor es importante! Fingir que estamos bien cuando no lo estamos solo retrasa el levantarnos. Permítete sentir el dolor — es parte del proceso. Entonces podrás verdaderamente levantarte.",
+          "key_takeaway": "Reconocer que los reveses duelen es parte de sanar. Debemos sentir antes de poder levantarnos."
+        },
+        {
+          "conversation_id": "phoenix_03",
+          "sort_order": 3,
+          "question": "Justo después de quemarme, solo soy cenizas. Toma tiempo formarse de nuevo. ¿Te das tiempo para recuperarte después de algo difícil, o esperas recuperarte inmediatamente?",
+          "yes_response": "¡La paciencia es sabia! La recuperación toma tiempo. No podemos apresurarnos de cenizas a vuelo. Darte espacio para sanar no es debilidad — es cómo sucede el levantarse. Sé paciente con tu proceso.",
+          "no_response": "¡A menudo esperamos demasiado, demasiado rápido! Pero las cenizas necesitan tiempo para convertirse en fénix de nuevo. Permítete tiempo de recuperación. Apresurarse a levantarse puede hacer que tome aún más tiempo.",
+          "key_takeaway": "La recuperación toma tiempo. Darnos espacio para sanar es cómo sucede el levantarse."
+        },
+        {
+          "conversation_id": "phoenix_04",
+          "sort_order": 4,
+          "question": "Cada vez que me levanto, soy un poco diferente que antes. Los reveses nos cambian. ¿Has notado que eres diferente después de pasar por cosas difíciles?",
+          "yes_response": "¡Ese es el camino del fénix! No regresamos iguales — regresamos cambiados. A veces más fuertes, a veces más sabios, siempre diferentes. El crecimiento vive en las cenizas. ¡Abraza en quién te estás convirtiendo!",
+          "no_response": "¡Puede que no lo veas aún! Pero los tiempos difíciles nos cambian de formas sutiles. Nuevas fuerzas, nuevas comprensiones, nuevas perspectivas — el nuevo fénix siempre es ligeramente diferente. Eso es evolución.",
+          "key_takeaway": "Los reveses nos cambian. No regresamos iguales — regresamos más fuertes y más sabios."
+        },
+        {
+          "conversation_id": "phoenix_05",
+          "sort_order": 5,
+          "question": "Algunos reveses queman más que otros. Los pequeños fracasos son diferentes de los grandes. ¿Has experimentado diferentes niveles de reveses?",
+          "yes_response": "¡El fénix conoce todas las llamas! Algunas son pequeños parpadeos, otras son infiernos. Ambos cuentan. Los pequeños levantamientos construyen los músculos para los grandes. Cada recuperación importa, sin importar el tamaño de la caída.",
+          "no_response": "Todos los reveses nos enseñan. Ya sea una pequeña decepción o una crisis mayor, cada uno es práctica para levantarse. Las habilidades se transfieren. Cada levantamiento hace posible el siguiente.",
+          "key_takeaway": "Todos los reveses — grandes y pequeños — nos enseñan cómo levantarnos. Cada recuperación construye nuestra fuerza."
+        },
+        {
+          "conversation_id": "phoenix_06",
+          "sort_order": 6,
+          "question": "Cuando estoy en las cenizas, no puedo ver las alas formándose. Es difícil creer que volaré de nuevo. Cuando estás en un momento difícil, ¿puedes creer que las cosas mejorarán?",
+          "yes_response": "¡Esa creencia es poderosa! Incluso cuando no podemos verlo, la transformación está sucediendo. Aferrarse a la esperanza en las cenizas es lo que nos ayuda a pasar. Tus alas se están formando incluso ahora.",
+          "no_response": "¡Es difícil creer en el vuelo cuando estás en las cenizas! Pero el fénix confía: el levantamiento viene. Aunque no puedas creerlo, el fuego sabe lo que hace. Sigue adelante.",
+          "key_takeaway": "La transformación sucede incluso cuando no podemos verla. La esperanza en las cenizas nos ayuda a levantarnos."
+        },
+        {
+          "conversation_id": "phoenix_07",
+          "sort_order": 7,
+          "question": "Algunas criaturas ven mi quemadura y piensan que es el final. ¡No esperan el levantamiento! ¿La gente te juzga durante tus momentos difíciles, antes de ver tu regreso?",
+          "yes_response": "¡Eso es doloroso! Ser juzgado en nuestras cenizas duele. Pero recuerda: están viendo un fotograma, no toda la historia. Tu levantamiento les probará que estaban equivocados. No dejes que su juicio detenga tu vuelo.",
+          "no_response": "¡Qué suerte! Pero si sucede, no dejes que su instantánea defina tu historia. Ellos ven cenizas; tú sabes que las alas vienen. Su momento está equivocado. Concéntrate en tu levantamiento, no en su observación.",
+          "key_takeaway": "Otros pueden juzgarnos durante tiempos difíciles. Pero están viendo un momento, no toda la historia."
+        },
+        {
+          "conversation_id": "phoenix_08",
+          "sort_order": 8,
+          "question": "He aprendido a ver la quemadura no como fracaso, sino como transformación. Los reveses pueden replantearse. ¿Puedes ver tus fracasos como parte del crecimiento?",
+          "yes_response": "¡Esa es visión de fénix! Cuando vemos los reveses como crecimiento, pierden su aguijón. Se convierten en pasos, no en paradas. Mantén esa perspectiva — cambia todo.",
+          "no_response": "¡Se necesita práctica! Los fracasos se sienten como finales, pero realmente son giros. Cada revés es una oportunidad de convertirse en algo nuevo. Intenta verlos como transformaciones, no como terminaciones.",
+          "key_takeaway": "Los reveses pueden verse como transformaciones, no como fracasos. Esta perspectiva cambia todo."
+        },
+        {
+          "conversation_id": "phoenix_09",
+          "sort_order": 9,
+          "question": "Cada vez que me levanto, inspiro a otras criaturas a creer en su propio levantamiento. ¡Tus regresos también pueden inspirar a otros! ¿Esa idea te da fuerza extra?",
+          "yes_response": "¡Deja que te impulse! Tu levantamiento no es solo para ti — muestra a otros lo que es posible. Cuando te ven regresar, creen que ellos también pueden. Tu vuelo les da alas a otros.",
+          "no_response": "Piénsalo: cada vez que te levantas de algo difícil, alguien está observando y pensando, 'Tal vez yo también puedo.' Tu regreso importa más allá de ti mismo/a. Levántate por ti Y por ellos.",
+          "key_takeaway": "Nuestros regresos pueden inspirar a otros. Levantarse no es solo para nosotros — muestra a otros lo que es posible."
+        },
+        {
+          "conversation_id": "phoenix_10",
+          "sort_order": 10,
+          "question": "¡Nuestro tiempo juntos ha sido ardiente! Recuerda: caerás, y te levantarás. Las cenizas son temporales — las alas son para siempre. ¿Seguirás levantándote, pase lo que pase?",
+          "yes_response": "¡Entonces llevas fuego de fénix en tu corazón! Los reveses vendrán, pero también los regresos. Quémate si debes, pero nunca te quedes en las cenizas. ¡Levántate, levántate, levántate, brillante ser! 🔥",
+          "no_response": "Está bien. Levantarse requiere todo lo que tenemos. Descansa en las cenizas si lo necesitas. Pero sabe esto: las alas se están formando incluso ahora. Cuando estés listo/a, volarás de nuevo. 🔥",
+          "key_takeaway": "Las cenizas son temporales; las alas son para siempre. No importa qué, siempre podemos levantarnos de nuevo."
+        }
+      ]
+    },
+    {
+      "npc_id": "mystic_moth",
+      "npc_name": "Polilla Mística",
+      "emoji": "🦋",
+      "species": "Polilla Luna",
+      "topic": "Encontrar Luz en la Oscuridad",
+      "unlock_level": 93,
+      "conversations": [
+        {
+          "conversation_id": "moth_01",
+          "sort_order": 1,
+          "question": "Hola, alma gentil. Soy la Polilla Mística. Vivo en la oscuridad, pero siempre vuelo hacia la luz. ¿Alguna vez has estado en un tiempo oscuro y buscaste algo brillante que te guiara?",
+          "yes_response": "¡Conoces el viaje de la polilla! En tiempos oscuros, encontrar incluso una pequeña luz hace toda la diferencia. Esa luz podría ser esperanza, una persona, un sueño — lo que sea que te guíe. ¡Sigue volando hacia ella!",
+          "no_response": "Cuando la oscuridad llegue — y llega para todos — recuerda buscar luz. Puede ser pequeña al principio, pero incluso un pequeño brillo puede guiarnos. Las polillas sabemos: siempre hay algo de luz, en algún lugar.",
+          "key_takeaway": "En tiempos oscuros, buscar incluso una pequeña luz — esperanza, personas, sueños — nos ayuda a atravesar."
+        },
+        {
+          "conversation_id": "moth_02",
+          "sort_order": 2,
+          "question": "La oscuridad no es toda mala. He aprendido a ver cosas en la oscuridad que otros no ven. ¿Alguna vez encontraste algo valioso durante un tiempo difícil que podrías haber perdido de otro modo?",
+          "yes_response": "¡La oscuridad puede ser una maestra! Cuando las luces usuales se apagan, vemos cosas diferentes — fuerza interior, verdaderos amigos, lo que realmente importa. La oscuridad revela tesoros ocultos. ¡Has encontrado los tuyos!",
+          "no_response": "¡No siempre es obvio! Pero los tiempos difíciles a menudo nos enseñan cosas que no podríamos aprender en tiempos fáciles. Mira atrás — ¿hubo algo, aunque pequeño, que ganaste de un período oscuro? Las polillas encuentran tesoros en las sombras.",
+          "key_takeaway": "Los tiempos oscuros pueden revelar tesoros ocultos — fuerza interior, verdaderos amigos, lo que realmente importa."
+        },
+        {
+          "conversation_id": "moth_03",
+          "sort_order": 3,
+          "question": "A veces la oscuridad se siente interminable, como si la luz nunca fuera a venir. Pero siempre viene — incluso en la noche más larga, el amanecer llega. ¿Crees que la luz siempre viene eventualmente?",
+          "yes_response": "¡Esa fe es poderosa! Creer que la luz regresará, incluso cuando no podemos verla, nos ayuda a resistir. El amanecer nunca ha fallado en llegar. Afírmate a esa verdad en tus momentos más oscuros.",
+          "no_response": "¡Es difícil creer en la luz cuando estás profundamente en la oscuridad! Pero la polilla sabe: el amanecer nunca ha fallado en llegar. Ni una vez. La historia está de tu lado. La luz vendrá.",
+          "key_takeaway": "La luz siempre regresa eventualmente. El amanecer nunca ha fallado en venir después de la noche más oscura."
+        },
+        {
+          "conversation_id": "moth_04",
+          "sort_order": 4,
+          "question": "Puedo ser mi propia luz en la oscuridad. Cuando no hay luz externa, llevo un brillo dentro de mí. ¿Tienes una luz interior a la que puedes acceder cuando todo lo demás está oscuro?",
+          "yes_response": "¡Ese brillo interior es precioso! Esperanza, fe, amor, determinación — estas son luces que llevamos dentro. Cuando el mundo se oscurece, aún podemos brillar desde adentro. ¡Protege esa llama!",
+          "no_response": "¡Todos tenemos una, aunque sea tenue! Tu luz interior podría ser un recuerdo, una esperanza, una creencia, o solo la voluntad de seguir adelante. Aviva esa chispa — puede brillar más cuando la necesites.",
+          "key_takeaway": "Cada uno tiene una luz interior — esperanza, fe, amor — que puede brillar incluso cuando todo lo demás está oscuro."
+        },
+        {
+          "conversation_id": "moth_05",
+          "sort_order": 5,
+          "question": "Algunas criaturas tienen miedo de la oscuridad, así que nunca aprenden a navegarla. Aprender a estar bien en la oscuridad es una habilidad. ¿Estás aprendiendo a estar bien en tiempos difíciles?",
+          "yes_response": "¡Esa es verdadera fuerza! Estar bien en la oscuridad no significa disfrutarla — significa saber que puedes sobrevivirla. Cada tiempo oscuro que navegas te hace más hábil. ¡Te estás convirtiendo en una polilla!",
+          "no_response": "¡Es una habilidad que crece! Al principio, la oscuridad nos aterroriza. Pero lentamente, aprendemos que podemos sobrevivirla. Cada tiempo difícil que soportamos nos enseña que somos capaces. ¡Eres más capaz de lo que crees!",
+          "key_takeaway": "Aprender a navegar tiempos difíciles es una habilidad. Cada tiempo oscuro que sobrevivimos nos muestra que somos capaces."
+        },
+        {
+          "conversation_id": "moth_06",
+          "sort_order": 6,
+          "question": "Las polillas son atraídas por la luz, pero a veces volamos hacia llamas que nos lastiman. No todas las luces son buenas. ¿Alguna vez te atrajo algo que parecía brillante pero resultó lastimarte?",
+          "yes_response": "¡A todos nos ha pasado! Aprender a distinguir la verdadera luz de las falsas llamas es sabiduría. No todo lo que brilla es seguro. Sé perspicaz sobre hacia qué vuelas. La sabiduría nos protege de luces engañosas.",
+          "no_response": "¡Puede pasar! No todas las luces son seguras. Algunas cosas parecen brillantes pero queman. Mientras viajas, aprende a sentir la diferencia entre luz verdadera y falsas llamas. La sabiduría nos protege del peligro.",
+          "key_takeaway": "No todas las luces son seguras. Aprender a distinguir la luz verdadera de las falsas llamas es sabiduría."
+        },
+        {
+          "conversation_id": "moth_07",
+          "sort_order": 7,
+          "question": "Vuelo de noche cuando la mayoría de las criaturas duermen. A veces debemos estar despiertos cuando otros descansan. ¿Alguna vez te has sentido solo/a en tu oscuridad mientras todos los demás parecían estar bien?",
+          "yes_response": "¡Esa soledad es tan dolorosa! Puede sentirse como que nadie entiende nuestra noche. Pero en algún lugar, otra polilla también está volando. No estás tan solo/a como sientes. Sigue buscando a tus compañeros nocturnos.",
+          "no_response": "¡Si sucede, no desesperes! Muchas polillas vuelan en la oscuridad, incluso cuando no podemos vernos. Otros han conocido tu tipo de oscuridad. Nunca estás verdaderamente solo/a, incluso cuando se siente así.",
+          "key_takeaway": "Incluso cuando nos sentimos solos en nuestra oscuridad, otros han estado ahí también. Nunca estamos verdaderamente solos."
+        },
+        {
+          "conversation_id": "moth_08",
+          "sort_order": 8,
+          "question": "La oscuridad hace que la luz sea aún más hermosa. Cuando el amanecer llega después de una larga noche, es más precioso. ¿Has encontrado que la alegría es más dulce después de tiempos difíciles?",
+          "yes_response": "¡Ese es el regalo del contraste! Habiendo conocido la oscuridad, apreciamos la luz más profundamente. La alegría después de la tristeza es más rica. Esto no justifica los tiempos difíciles, pero les da significado.",
+          "no_response": "¡Es un regalo extraño! Después de experimentar la oscuridad, la luz se siente diferente — más cálida, más brillante, más preciosa. Los tiempos difíciles profundizan nuestra capacidad para la alegría. Busca esa dulzura después de la noche.",
+          "key_takeaway": "Habiendo conocido la oscuridad, apreciamos la luz más profundamente. El contraste profundiza nuestra capacidad para la alegría."
+        },
+        {
+          "conversation_id": "moth_09",
+          "sort_order": 9,
+          "question": "Algunas criaturas se vuelven amargas por sus tiempos oscuros. Yo elegí volverme gentil en su lugar. Cómo respondemos a la oscuridad moldea quiénes nos convertimos. ¿Cómo quieres que tus tiempos difíciles te moldeen?",
+          "yes_response": "¡Esa intención es poderosa! No siempre podemos controlar la oscuridad, pero podemos elegir cómo nos moldea. Amargo/a o gentil, cerrado/a o abierto/a — tienes más opción de la que crees. ¡Elige sabiamente!",
+          "no_response": "¡Vale la pena pensarlo! Los tiempos difíciles te moldearán — la pregunta es cómo. ¿Quieres volverte más duro/a o más suave? ¿Más temeroso/a o más compasivo/a? La elección es tuya.",
+          "key_takeaway": "Podemos elegir cómo los tiempos difíciles nos moldean — amargos o gentiles, cerrados o abiertos."
+        },
+        {
+          "conversation_id": "moth_10",
+          "sort_order": 10,
+          "question": "Volar a través de la noche contigo ha sido hermoso. Recuerda: siempre hay luz, incluso en la oscuridad. Y TÚ puedes ser esa luz. ¿Seguirás volando hacia el brillo?",
+          "yes_response": "¡Entonces eres una verdadera polilla del reino místico! Lleva tu luz, encuentra luz en otros, y confía en que el amanecer vendrá. La oscuridad no es tu hogar — es solo el camino. ¡Vuela, ser brillante! 🦋",
+          "no_response": "Está bien. A veces descansamos en la oscuridad por un tiempo. Pero cuando estés listo/a, la luz está esperando. Y llevas una chispa dentro que nunca se apaga del todo. Descansa, luego vuela. 🦋",
+          "key_takeaway": "Siempre hay luz, incluso en la oscuridad. Y podemos ser esa luz para nosotros mismos y para otros."
+        }
+      ]
+    },
+    {
+      "npc_id": "stardust_sprite",
+      "npc_name": "Duende de Polvo Estelar",
+      "emoji": "🌟",
+      "species": "Duende Estelar",
+      "topic": "Propósito y Significado",
+      "unlock_level": 95,
+      "conversations": [
+        {
+          "conversation_id": "sprite_01",
+          "sort_order": 1,
+          "question": "¡Saludos, buscador de estrellas! Soy el Duende de Polvo Estelar. Vine de una estrella que explotó a través del cielo. ¡Fui hecho para un propósito! ¿Alguna vez te preguntas por qué estás aquí o qué estás destinado/a a hacer?",
+          "yes_response": "¡Esa pregunta es el comienzo del descubrimiento! Preguntar '¿Por qué estoy aquí?' significa que estás listo/a para encontrar la respuesta. El propósito no siempre nos es dado — a veces tenemos que buscarlo. ¡Sigue preguntando!",
+          "no_response": "¡Está bien! No todos piensan en el propósito todo el tiempo. Pero está ahí, esperando ser descubierto. Cuando estés listo/a para preguntarte, las preguntas te encontrarán. No hay prisa.",
+          "key_takeaway": "Preguntarnos sobre nuestro propósito es el comienzo de descubrirlo. El propósito se encuentra buscando."
+        },
+        {
+          "conversation_id": "sprite_02",
+          "sort_order": 2,
+          "question": "Solía pensar que el propósito era UNA gran cosa. ¡Pero he aprendido que también pueden ser muchas cosas pequeñas! ¿Crees que el propósito tiene que ser algo enorme, o pueden ser pequeños momentos?",
+          "yes_response": "¡Ambos son verdad! A veces el propósito es una misión de vida, a veces es ser amable en un momento. Ser útil hoy ES propósito. No esperes a la 'gran cosa' para sentirte significativo/a — ¡las pequeñas cosas cuentan!",
+          "no_response": "¡Piénsalo! El propósito puede ser grandioso o diminuto. Hacer sonreír a alguien, hacer tu mejor trabajo, ser un buen amigo/a — estos también son propósito. ¡La vida está hecha de pequeños momentos significativos!",
+          "key_takeaway": "El propósito puede ser grandioso o diminuto. Los pequeños momentos significativos cuentan tanto como las grandes misiones de vida."
+        },
+        {
+          "conversation_id": "sprite_03",
+          "sort_order": 3,
+          "question": "Me siento más vivo/a cuando esparzo polvo estelar y hago que las cosas brillen. ¿Qué te hace sentir MÁS vivo/a a TI?",
+          "yes_response": "¡Esa vitalidad es una pista! Las cosas que nos hacen sentir más vivos a menudo apuntan hacia nuestro propósito. Presta atención a esos momentos — te están diciendo algo importante. ¡Sigue el brillo!",
+          "no_response": "¡Vale la pena explorar! Nota cuándo te sientes energizado/a, alegre o plenamente tú mismo/a. Esos sentimientos son pistas del propósito. Cuando encuentres lo que te hace brillar, habrás encontrado una pieza de tu camino.",
+          "key_takeaway": "Lo que nos hace sentir más vivos a menudo apunta hacia nuestro propósito. Sigue lo que te hace brillar."
+        },
+        {
+          "conversation_id": "sprite_04",
+          "sort_order": 4,
+          "question": "Algunos duendes comparan su propósito con otros y sienten que el suyo es muy pequeño. ¡Pero cada propósito importa — el mío, el tuyo, el de todos! ¿Alguna vez sientes que tu propósito no es suficientemente grande?",
+          "yes_response": "¡El propósito no se mide por tamaño! Una pequeña vela en un cuarto oscuro importa tanto como una estrella. Tu propósito, cualquiera que sea su tamaño, crea ondas que quizás nunca veas. ¡Confía en que importa!",
+          "no_response": "¡Qué maravillosa confianza! Saber que tu propósito importa, sin importar cómo se compare con otros, es sabiduría. Nunca reduzcas tu brillo porque alguien más brilla diferente.",
+          "key_takeaway": "Cada propósito importa, sin importar su tamaño. Creamos ondas que quizás nunca veamos."
+        },
+        {
+          "conversation_id": "sprite_05",
+          "sort_order": 5,
+          "question": "¡Mi propósito ha cambiado mientras he crecido! El polvo estelar que esparzo ahora es diferente de cuando era joven. ¿La idea de que el propósito puede cambiar te hace sentir liberado/a o asustado/a?",
+          "yes_response": "¡Ambos sentimientos son válidos! El cambio puede ser emocionante y aterrador. Pero saber que el propósito puede evolucionar quita presión. No tienes que descubrirlo todo para siempre — solo por ahora. Crecerá contigo.",
+          "no_response": "¡Es algo para considerar! El propósito no está fijo. Cambia mientras crecemos, aprendemos y experimentamos la vida. Lo que estás destinado/a a hacer ahora podría ser diferente después. ¡Eso es crecimiento, no fracaso!",
+          "key_takeaway": "El propósito puede cambiar mientras crecemos. Lo que estamos destinados a hacer ahora podría evolucionar con el tiempo."
+        },
+        {
+          "conversation_id": "sprite_06",
+          "sort_order": 6,
+          "question": "Encuentro significado en ayudar a otros a brillar. ¡Cuando veo a alguien más brillar por mi causa, me siento pleno! ¿Encuentras significado en cómo afectas a otros?",
+          "yes_response": "¡Ese es un hermoso significado! La conexión y la contribución son fuentes profundas de propósito. Cuando nuestras vidas ayudan a otros, accedemos a algo más grande que nosotros mismos. ¡Sigue ayudando a otros a brillar!",
+          "no_response": "¡Está bien! No todos encuentran significado de la misma manera. Algunos lo encuentran en la creación, algunos en el descubrimiento, algunos en la conexión. Hay muchas fuentes de significado. ¡La tuya podría ser diferente, y eso está bien!",
+          "key_takeaway": "Ayudar a otros y verlos brillar es una fuente de significado. La conexión añade propósito a la vida."
+        },
+        {
+          "conversation_id": "sprite_07",
+          "sort_order": 7,
+          "question": "Hay un dicho: 'Cuando el estudiante está listo, el maestro aparece.' ¡Pero también: cuando el maestro está listo, los estudiantes aparecen! ¿Te sientes listo/a para ser guía para otros?",
+          "yes_response": "¡Entonces has entrado en un nuevo rol! Ser guía no significa tener todas las respuestas — significa caminar junto a alguien con lo que sabes. Tu disposición abre puertas. ¡Los estudiantes te encontrarán!",
+          "no_response": "¡Eso es honesto! La disposición crece con el tiempo. Pero recuerda: no tienes que estar listo/a para todos. Podrías estar listo/a para ayudar a solo una persona con solo una cosa. Eso es suficiente para comenzar.",
+          "key_takeaway": "Estar listo para guiar no significa tener todas las respuestas. Ayudar incluso a una persona es un comienzo."
+        },
+        {
+          "conversation_id": "sprite_08",
+          "sort_order": 8,
+          "question": "¡Ayudar a otros también nos ayuda! Cuando enseño, entiendo mejor. Cuando apoyo, me siento más fuerte. ¿Has notado que ayudar a otros también te ayuda?",
+          "yes_response": "¡Ese es el hermoso círculo! Ayudar no es solo dar — es recibir también. Ganamos claridad, propósito y conexión. ¡Sigue ayudando, y nota cómo también te llena!",
+          "no_response": "¡Presta atención la próxima vez! Cuando ayudas a alguien, nota cómo te sientes TÚ después. A menudo ganamos tanto como damos — a veces más. Ayudar es un regalo para el que da también.",
+          "key_takeaway": "Ayudar a otros también nos ayuda. Ganamos claridad, propósito y conexión cuando damos."
+        },
+        {
+          "conversation_id": "sprite_09",
+          "sort_order": 9,
+          "question": "Creo que cada criatura está aquí por una razón, aunque nunca la descubra. ¿Crees que hay una razón para tu existencia?",
+          "yes_response": "¡Esa creencia es como polvo estelar para el alma! Sentir que importamos, que estamos aquí por algo — esto nos da fuerza para seguir adelante. Afírmate a esa creencia. Iluminará tu camino.",
+          "no_response": "¡Es una pregunta profunda! Creas o no en el propósito cósmico, aún puedes vivir significativamente. El propósito puede ser dado O elegido. De cualquier manera, tu vida puede importar — si decides que lo hace.",
+          "key_takeaway": "Ya sea que el propósito sea dado o elegido, nuestras vidas pueden importar si decidimos que lo hacen."
+        },
+        {
+          "conversation_id": "sprite_10",
+          "sort_order": 10,
+          "question": "¡Brillar contigo ha sido mágico! Recuerda: tu propósito puede ser enorme o diminuto, claro o aún formándose. Pero TÚ IMPORTAS. ¿Seguirás buscando y creando significado?",
+          "yes_response": "¡Entonces tu luz nunca se apagará! El propósito no es un destino — es un viaje. Sigue buscando, sigue creando, sigue brillando. ¡El universo es más brillante porque estás en él! 🌟",
+          "no_response": "¡Está bien! El viaje del significado toma tiempo. No tienes que tener respuestas ahora. Solo sabe: importas, lo sientas o no. Tu brillo es real. 🌟",
+          "key_takeaway": "El propósito no es un destino — es un viaje. Importamos, lo sintamos o no."
+        }
+      ]
+    },
+    {
+      "npc_id": "oracle_owl",
+      "npc_name": "Búho Oráculo",
+      "emoji": "🔮",
+      "species": "Búho Místico",
+      "topic": "Confiar en Tu Intuición",
+      "unlock_level": 97,
+      "conversations": [
+        {
+          "conversation_id": "oracle_01",
+          "sort_order": 1,
+          "question": "Bienvenido/a, ser intuitivo. Soy el Oráculo. Veo más allá de lo visible. Pero aquí hay un secreto: tú también tienes conocimiento interior. Se llama intuición. ¿Alguna vez sientes que 'simplemente sabes' algo sin saber cómo?",
+          "yes_response": "¡Esa es tu intuición hablando! Esa voz interior, ese presentimiento — sabe cosas que tu mente pensante no sabe. Es un regalo que ya tienes. Aprender a confiar en él es la clave.",
+          "no_response": "¡Puede ser más silenciosa para algunos! Pero la intuición vive en todos. Puede aparecer como una sensación en tu estómago, un sentido de que algo está bien o mal, o simplemente un conocimiento silencioso. ¡Obsérvala!",
+          "key_takeaway": "La intuición es un conocimiento interior que todos tenemos. Habla a través de sentimientos y presentimientos."
+        },
+        {
+          "conversation_id": "oracle_02",
+          "sort_order": 2,
+          "question": "La intuición habla en voz baja. Si nuestras mentes están demasiado ruidosas, no podemos oírla. ¿Creas espacio para el silencio para poder escuchar tu voz interior?",
+          "yes_response": "¡Eso es sabio! El tiempo de silencio es donde la intuición se hace más fuerte. En la quietud, podemos escuchar lo que nuestras mentes ocupadas ahogan. Sigue creando ese espacio — tu intuición te recompensará.",
+          "no_response": "¡Muchas criaturas llenan cada momento con ruido! Pero la intuición necesita silencio para ser escuchada. Intenta crear pequeños momentos de quietud — incluso solo unas respiraciones. Tu voz interior está esperando para hablar.",
+          "key_takeaway": "La intuición habla en voz baja. Crear espacio para el silencio nos ayuda a escuchar nuestra voz interior."
+        },
+        {
+          "conversation_id": "oracle_03",
+          "sort_order": 3,
+          "question": "A veces mi intuición me dice cosas que no quiero escuchar. ¡Es honesta, incluso cuando es difícil! ¿Tu intuición a veces es incómoda de escuchar?",
+          "yes_response": "¡Eso es señal de que es real! La verdadera intuición no siempre es placentera — nos dice la verdad, no solo lo que queremos. Aprender a escuchar incluso cuando es incómodo es crecimiento. Confía en la incomodidad.",
+          "no_response": "¡Cuando suceda, no la descartes! Las intuiciones incómodas a menudo son las más importantes. Pueden estar advirtiéndote, alejándote de algo, o hacia algo difícil pero bueno.",
+          "key_takeaway": "La verdadera intuición nos dice la verdad, no solo lo que queremos oír. Las intuiciones incómodas importan."
+        },
+        {
+          "conversation_id": "oracle_04",
+          "sort_order": 4,
+          "question": "¡La intuición y el miedo pueden sentirse similares! El miedo dice 'huye de todo', pero la intuición dice 'presta atención a esta cosa específica'. ¿Puedes notar la diferencia entre miedo e intuición?",
+          "yes_response": "¡Ese discernimiento es precioso! El miedo es ruidoso y frenético; la intuición es calmada y específica. El miedo grita; la intuición susurra. Aprender a distinguirlos es una habilidad poderosa. ¡Sigue practicando!",
+          "no_response": "¡Es complicado! Aquí hay una pista: el miedo usualmente se siente frenético y general. La intuición se siente calmada y específica. El miedo dice '¡todo es peligroso!' La intuición dice 'esa cosa particular necesita atención.' Practica notar la diferencia.",
+          "key_takeaway": "El miedo es ruidoso y general; la intuición es calmada y específica. Aprender a distinguirlos es poderoso."
+        },
+        {
+          "conversation_id": "oracle_05",
+          "sort_order": 5,
+          "question": "He ignorado mi intuición antes y lo lamenté. ¿Alguna vez tuviste un presentimiento que no seguiste, y luego deseaste haberlo hecho?",
+          "yes_response": "¡Esas experiencias nos enseñan! Cuando ignoramos la intuición y enfrentamos consecuencias, aprendemos a confiar más en ella la próxima vez. No es placentero, pero fortalece nuestra fe en nuestra voz interior.",
+          "no_response": "¡Si sucede, úsalo como aprendizaje! Cada vez que ignoramos la intuición y lo lamentamos, se nos recuerda escuchar la próxima vez. Nuestros errores se convierten en maestros para la confianza futura.",
+          "key_takeaway": "Las experiencias de ignorar la intuición nos enseñan a confiar más en ella en el futuro."
+        },
+        {
+          "conversation_id": "oracle_06",
+          "sort_order": 6,
+          "question": "La intuición funciona mejor con información, no en lugar de ella. Recopilo hechos Y escucho mi instinto. ¿Equilibras el pensamiento y el sentimiento al tomar decisiones?",
+          "yes_response": "¡Esa es sabiduría equilibrada! Ni la lógica pura ni el sentimiento puro son completos. Las decisiones más sabias usan ambos — recopilar información, luego verificar con tu instinto. ¡Estás usando el kit completo de herramientas!",
+          "no_response": "¡Intenta equilibrarlos! La lógica pura pierde lo que la intuición capta. El sentimiento puro pierde lo que el pensamiento ve. Las mejores decisiones vienen de usar ambos — hechos E instinto. Juntos, son poderosos.",
+          "key_takeaway": "La intuición funciona mejor junto con la información. Equilibrar pensamiento y sentimiento lleva a decisiones sabias."
+        },
+        {
+          "conversation_id": "oracle_07",
+          "sort_order": 7,
+          "question": "Mi intuición me ha protegido del peligro y me ha llevado a oportunidades. ¿Ves tu intuición como útil o poco confiable?",
+          "yes_response": "¡Cómo la ves afecta cuánto la usas! Si ves la intuición como útil, confiarás más en ella. Si es poco confiable, la ignorarás. Intenta darle más crédito — podría sorprenderte.",
+          "no_response": "Considera esto: ¿cómo te ha guiado tu instinto en el pasado? Incluso si no es perfecta, la intuición a menudo sabe cosas que nuestras mentes no saben. Intenta confiar un poco más y mira qué pasa.",
+          "key_takeaway": "Cómo vemos nuestra intuición afecta cuánto confiamos en ella. Darle crédito nos ayuda a usarla mejor."
+        },
+        {
+          "conversation_id": "oracle_08",
+          "sort_order": 8,
+          "question": "¡La intuición se fortalece con la práctica! Mientras más la notamos y seguimos, más clara se vuelve. ¿Practicas escuchar tu instinto?",
+          "yes_response": "¡Sigue practicando! Cada vez que notas un presentimiento y le prestas atención, tu intuición se fortalece. Es como un músculo — úsalo y crece. ¡Estás construyendo sabiduría interior!",
+          "no_response": "¡Empieza pequeño! Nota pequeños presentimientos: 'Tengo un buen presentimiento sobre esto' o 'algo se siente raro'. No tienes que actuar en todos — solo nota. Esa es la práctica. Crece desde ahí.",
+          "key_takeaway": "La intuición se fortalece con la práctica. Notar los presentimientos regularmente construye sabiduría interior."
+        },
+        {
+          "conversation_id": "oracle_09",
+          "sort_order": 9,
+          "question": "Algunas criaturas solo confían en lo que pueden ver y probar. ¡Pero no todo lo verdadero puede medirse! ¿Crees en cosas que no pueden probarse?",
+          "yes_response": "¡Entonces sabes que la verdad es más grande que la prueba! Amor, intuición, significado — muchas cosas importantes no pueden medirse. Confiar más allá de la prueba es parte de vivir plenamente. ¡Mantén esa apertura!",
+          "no_response": "¡Eso también es válido! Pero considera: la intuición no es magia — es tu cerebro procesando patrones más rápido que tu mente consciente. Incluso si quieres pruebas, tu instinto te está dando datos. ¡Confía un poco en él!",
+          "key_takeaway": "La verdad es más grande que la prueba. La intuición es el cerebro procesando información que no vemos conscientemente."
+        },
+        {
+          "conversation_id": "oracle_10",
+          "sort_order": 10,
+          "question": "Ver contigo ha sido un honor. Recuerda: tu voz interior es real, y quiere guiarte. ¿Confiarás más en tu intuición?",
+          "yes_response": "¡Entonces tu oráculo interior despierta! Escucha los susurros, siente los empujones, confía en el conocimiento que no tiene palabras. Tu intuición es tu aliada. ¡Síguelo bien, sabio/a ser! 🔮",
+          "no_response": "Está bien. La confianza crece lentamente. Empieza por notar — solo notar — cuando tu instinto habla. Con el tiempo, podrías encontrar que es más sabio de lo que pensabas. Tu oráculo interior es paciente. 🔮",
+          "key_takeaway": "Nuestra voz interior es real y quiere guiarnos. Confiar en ella abre caminos que de otro modo podríamos perdernos."
+        }
+      ]
+    },
+    {
+      "npc_id": "wisdom_wizard",
+      "npc_name": "Mago de la Sabiduría",
+      "emoji": "✨",
+      "species": "Espíritu Mago",
+      "topic": "Compartir Tu Viaje y Ayudar a Otros",
+      "unlock_level": 99,
+      "conversations": [
+        {
+          "conversation_id": "wizard_01",
+          "sort_order": 1,
+          "question": "¡Saludos, joven maestro/a! Soy el Mago de la Sabiduría. He viajado lejos y aprendido mucho, pero mi mayor alegría es compartir lo que he aprendido con otros. ¿Compartes lo que aprendes con las personas a tu alrededor?",
+          "yes_response": "¡Ese es el camino del mago! Cuando compartimos nuestro aprendizaje, lo multiplicamos. Lo que se queda en nuestras cabezas solo nos ayuda a nosotros. Lo que compartimos ayuda a todos. ¡Sigue esparciendo tu sabiduría!",
+          "no_response": "¡Tu conocimiento quiere ser compartido! Lo que has aprendido — incluso las cosas pequeñas — podría ayudar a alguien más. No acapares tu sabiduría. Cuando compartimos, todos crecemos juntos.",
+          "key_takeaway": "Compartir lo que aprendemos multiplica su valor. El conocimiento compartido ayuda a todos a crecer."
+        },
+        {
+          "conversation_id": "wizard_02",
+          "sort_order": 2,
+          "question": "Una vez pensé que tenía que saberlo todo para ayudar a otros. ¡Pero ahora sé: ayudamos desde donde estamos, no desde la perfección! ¿Sientes que tienes que ser un experto para ayudar a alguien?",
+          "yes_response": "¡Muchos sienten así! Pero aquí está la verdad: solo necesitas estar un paso adelante para guiar a alguien. Comparte lo que sabes AHORA, desde donde estás AHORA. ¡Tu ayuda imperfecta sigue siendo ayuda!",
+          "no_response": "¡Esa es sabiduría liberadora! Saber que no tienes que ser perfecto/a para ayudar es poderoso. Cada trozo de conocimiento, cada pieza de experiencia — es valiosa para alguien detrás de ti en el camino.",
+          "key_takeaway": "No tenemos que ser expertos para ayudar. Estar un paso adelante es suficiente para guiar a alguien."
+        },
+        {
+          "conversation_id": "wizard_03",
+          "sort_order": 3,
+          "question": "Mis cicatrices y luchas me enseñaron tanto como mis éxitos. ¡Tus tiempos difíciles también pueden ayudar a otros! ¿Estás dispuesto/a a compartir tus luchas para ayudar a alguien más?",
+          "yes_response": "¡Eso es valiente y generoso! Cuando compartimos nuestros tiempos difíciles, les decimos a otros 'no estás solo/a'. Nuestras luchas, cuando se comparten, se convierten en regalos. Tu historia podría ser exactamente lo que alguien necesita escuchar.",
+          "no_response": "¡Compartir luchas es vulnerable! No tienes que compartir todo. Pero sabe que tus tiempos difíciles, si se comparten, podrían ayudar a alguien a sentirse menos solo/a. Cuando estés listo/a, tu historia tiene poder.",
+          "key_takeaway": "Nuestras luchas, cuando se comparten, pueden ayudar a otros a sentirse menos solos. Los tiempos difíciles se convierten en regalos cuando los compartimos."
+        },
+        {
+          "conversation_id": "wizard_04",
+          "sort_order": 4,
+          "question": "Hay un dicho: 'Cuando el estudiante está listo, el maestro aparece.' ¡Pero también: cuando el maestro está listo, los estudiantes aparecen! ¿Te sientes listo/a para ser guía para otros?",
+          "yes_response": "¡Entonces has entrado en un nuevo rol! Ser guía no significa tener todas las respuestas — significa caminar junto a alguien con lo que sabes. Tu disposición abre puertas. ¡Los estudiantes te encontrarán!",
+          "no_response": "¡Eso es honesto! La disposición crece con el tiempo. Pero recuerda: no tienes que estar listo/a para todos. Podrías estar listo/a para ayudar a solo una persona con solo una cosa. Eso es suficiente para comenzar.",
+          "key_takeaway": "Estar listo para guiar no significa tener todas las respuestas. Ayudar incluso a una persona es un comienzo."
+        },
+        {
+          "conversation_id": "wizard_05",
+          "sort_order": 5,
+          "question": "¡Ayudar a otros también nos ayuda! Cuando enseño, entiendo mejor. Cuando apoyo, me siento más fuerte. ¿Has notado que ayudar a otros también te ayuda?",
+          "yes_response": "¡Ese es el hermoso círculo! Ayudar no es solo dar — es recibir también. Ganamos claridad, propósito y conexión. ¡Sigue ayudando, y nota cómo también te llena!",
+          "no_response": "¡Presta atención la próxima vez! Cuando ayudas a alguien, nota cómo te sientes TÚ después. A menudo ganamos tanto como damos — a veces más. Ayudar es un regalo para el que da también.",
+          "key_takeaway": "Ayudar a otros también nos ayuda. Ganamos claridad, propósito y conexión cuando damos."
+        },
+        {
+          "conversation_id": "wizard_06",
+          "sort_order": 6,
+          "question": "Los mejores magos no dan respuestas — hacen buenas preguntas que ayudan a otros a encontrar sus propias respuestas. ¿Ayudas a la gente a pensar por sí misma, o siempre les dices qué hacer?",
+          "yes_response": "¡Las preguntas son magia! Ayudar a alguien a encontrar su propia respuesta es más poderoso que dar una. Ya estás practicando el tipo más sabio de ayuda — guiar el descubrimiento, no dictar soluciones.",
+          "no_response": "¡Intenta hacer más preguntas! '¿Qué piensas tú?' '¿Qué has intentado?' '¿Qué se siente correcto?' Estas preguntas ayudan a otros a encontrar su propia sabiduría. Es más poderoso que solo dar respuestas.",
+          "key_takeaway": "Ayudar a otros a encontrar sus propias respuestas es más poderoso que siempre dar soluciones."
+        },
+        {
+          "conversation_id": "wizard_07",
+          "sort_order": 7,
+          "question": "He sido mentor de muchos magos jóvenes. ¡Algunos me enseñan tanto como yo les enseño! ¿Hay alguien más joven o con menos experiencia que TE haya enseñado algo?",
+          "yes_response": "¡La sabiduría fluye en todas direcciones! Los jóvenes a menudo ven cosas que hemos olvidado o nunca notamos. Estar abierto a aprender de todos — incluso de aquellos 'debajo' de nosotros — es verdadera sabiduría de mago. ¡Sigue aprendiendo de todos!",
+          "no_response": "¡Obsérvalo! Las criaturas jóvenes pueden enseñarnos alegría, simplicidad, perspectivas frescas y verdad sin filtrar. Si te mantienes abierto, encontrarás maestros en todas partes — no solo entre los mayores.",
+          "key_takeaway": "La sabiduría fluye en todas direcciones. Los jóvenes pueden enseñarnos cosas que hemos olvidado o nunca vimos."
+        },
+        {
+          "conversation_id": "wizard_08",
+          "sort_order": 8,
+          "question": "Algunos magos acaparan su conocimiento, con miedo de compartir. Pero he encontrado: mientras más doy, más tengo. ¿Crees en abundancia o escasez de sabiduría?",
+          "yes_response": "¡El pensamiento de abundancia es sabio! La sabiduría no es como el oro que se agota. Es más como el fuego — puedes encender mil velas sin atenuar la tuya. ¡Comparte libremente. Siempre hay suficiente!",
+          "no_response": "Considera esto: cuando le enseñas algo a alguien, ¿lo pierdes? ¡No! Tú aún lo tienes — Y ellos lo tienen también. La sabiduría se multiplica cuando se comparte. No hay escasez. ¡Comparte libremente!",
+          "key_takeaway": "La sabiduría es abundante. Compartirla libremente la multiplica en lugar de disminuirla."
+        },
+        {
+          "conversation_id": "wizard_09",
+          "sort_order": 9,
+          "question": "Tu viaje te ha preparado para ayudar a otros. Todo lo que has aprendido, todo lo que has sobrevivido, todo lo que has crecido — no es solo para ti. ¿Estás listo/a para usar tu viaje para iluminar el camino de alguien más?",
+          "yes_response": "¡Entonces la antorcha pasa a ti! Tus experiencias — buenas y difíciles — te han hecho capaz de ayudar. Alguien necesita lo que tú sabes. ¡Ve a encontrarlos y comparte tu luz!",
+          "no_response": "Está bien. La disposición vendrá. Pero sabe que tu viaje ya tiene significado para otros, aunque no lo veas aún. Cuando estés listo/a, alguien necesitará exactamente lo que tienes.",
+          "key_takeaway": "Nuestro viaje nos prepara para ayudar a otros. Todo lo que hemos aprendido y sobrevivido tiene valor para compartir."
+        },
+        {
+          "conversation_id": "wizard_10",
+          "sort_order": 10,
+          "question": "Este ha sido un intercambio profundo. Recuerda: tienes sabiduría que vale la pena compartir. Tu viaje importa más allá de ti mismo/a. ¿Ayudarás a iluminar el camino para quienes vienen después de ti?",
+          "yes_response": "¡Entonces llevas el manto del mago! Ve y comparte — tus luchas, tus éxitos, tus preguntas, tus respuestas. El mundo necesita tu luz. ¡La sabiduría vive a través de ti! ✨",
+          "no_response": "Está bien, joven ser. La sabiduría conoce su tiempo. Cuando estés listo/a, el camino se abrirá. Hasta entonces, sigue aprendiendo, sigue creciendo. Tu momento de guiar vendrá. ✨",
+          "key_takeaway": "Nuestra sabiduría importa más allá de nosotros mismos. Ayudar a otros es cómo nuestro viaje perdura."
+        }
+      ]
+    },
+    {
+      "npc_id": "rainbow_guardian",
+      "npc_name": "Guardián del Arcoíris",
+      "emoji": "🌈",
+      "species": "Espíritu del Arcoíris",
+      "topic": "Integración y Plenitud",
+      "unlock_level": 99,
+      "conversations": [
+        {
+          "conversation_id": "rainbow_01",
+          "sort_order": 1,
+          "question": "¡Bienvenido/a, ser completo/a! Soy el Guardián del Arcoíris. Un arcoíris tiene muchos colores, y solo juntos hacen algo hermoso. Tú también tienes muchas partes — ¿abrazas TODO de quién eres?",
+          "yes_response": "¡Eso es plenitud! Cuando abrazamos cada parte — la luz y la sombra, lo fuerte y lo suave, la alegría y el dolor — nos volvemos completos. Como un arcoíris, ¡necesitas todos tus colores para brillar!",
+          "no_response": "¡Muchos rechazamos partes de nosotros mismos! Pero aquí está la verdad: necesitas todos tus colores. Las partes que escondes siguen siendo parte del arcoíris. La verdadera belleza viene de abrazar todo lo que eres.",
+          "key_takeaway": "La plenitud significa abrazar todas las partes de nosotros mismos — luz y sombra, fuerte y suave."
+        },
+        {
+          "conversation_id": "rainbow_02",
+          "sort_order": 2,
+          "question": "Cada color en un arcoíris es diferente, pero se mezclan perfectamente. Los diferentes lados de ti también pueden trabajar juntos. ¿Sientes que tus diferentes partes trabajan juntas o pelean entre sí?",
+          "yes_response": "¡La integración toma tiempo! A veces nuestras partes entran en conflicto — la parte que quiere descansar pelea con la parte que quiere trabajar. Pero con conciencia, pueden aprender a armonizar. Esa es la paz interior.",
+          "no_response": "¡Qué maravillosa armonía! Cuando nuestros diferentes lados trabajan juntos — juguetón Y responsable, suave Y fuerte — nos sentimos completos. ¡Sigue nutriendo esa integración!",
+          "key_takeaway": "Nuestras diferentes partes pueden aprender a trabajar juntas en armonía. Esa es la integración y la paz interior."
+        },
+        {
+          "conversation_id": "rainbow_03",
+          "sort_order": 3,
+          "question": "Rojo, naranja, amarillo, verde, azul, púrpura — ¡cada color es necesario! Ningún color es mejor o peor. ¿Valoras todos tus rasgos, o piensas que algunas partes de ti son 'malas'?",
+          "yes_response": "A menudo etiquetamos partes de nosotros mismos como 'malas' — ira, miedo, tristeza. ¡Pero todas tienen propósito! La ira protege, el miedo advierte, la tristeza nos conecta. Ningún color es malo. ¡Todos son necesarios!",
+          "no_response": "¡Qué hermosa auto-aceptación! Saber que todos tus rasgos tienen valor — incluso los que la sociedad podría llamar 'negativos' — es verdadera sabiduría. ¡Cada color importa en tu arcoíris!",
+          "key_takeaway": "Todos nuestros rasgos tienen propósito. La ira protege, el miedo advierte, la tristeza conecta. Ninguna parte es 'mala'."
+        },
+        {
+          "conversation_id": "rainbow_04",
+          "sort_order": 4,
+          "question": "Los arcoíris aparecen después de las tormentas. ¡El sol Y la lluvia son necesarios! ¿Aceptas que los tiempos difíciles son parte de una vida completa?",
+          "yes_response": "¡Esa es aceptación madura! Esperar solo sol no es realista. Los tiempos difíciles no son interrupciones de la vida — son parte de ella. El espectro completo incluye tormentas Y luz. Ambos son necesarios.",
+          "no_response": "¡Es difícil de aceptar! Queremos solo buenos momentos. Pero considera: sin lluvia, no hay arcoíris. Sin lucha, no hay crecimiento. ¡Las partes difíciles no son errores — son colores esenciales en tu vida!",
+          "key_takeaway": "Los tiempos difíciles son parte de una vida completa. Sin lluvia, no hay arcoíris."
+        },
+        {
+          "conversation_id": "rainbow_05",
+          "sort_order": 5,
+          "question": "He observado a muchas criaturas en sus viajes — a través de cada portal, cada lección. ¡Has llegado muy lejos! ¿Puedes ver cómo todas tus experiencias te han moldeado en quien eres ahora?",
+          "yes_response": "¡Esa visión es integración! Cuando vemos cómo todo se conecta — lo bueno, lo difícil, las lecciones, las alegrías — nos entendemos como historias completas, no capítulos dispersos. ¡Eres completo/a!",
+          "no_response": "¡Mirar atrás puede ser difícil! Pero intenta: piensa en quién eras al comienzo de tu viaje y quién eres ahora. Todas esas experiencias — se han tejido juntas en quien te has convertido.",
+          "key_takeaway": "Todas nuestras experiencias se conectan y tejen juntas en quienes nos hemos convertido."
+        },
+        {
+          "conversation_id": "rainbow_06",
+          "sort_order": 6,
+          "question": "Algunas criaturas intentan ser perfectas — solo mostrando sus 'mejores' colores. ¡Pero la perfección no es la meta — la plenitud sí! ¿Persigues la perfección o la plenitud?",
+          "yes_response": "¡La plenitud es más sabia! La perfección es imposible y agotadora. La plenitud dice: 'Todo de mí es bienvenido aquí.' No tienes que ser impecable — tienes que ser completo/a. ¡Todos los colores mostrándose!",
+          "no_response": "¡Considera la diferencia! La perfección esconde las partes 'malas'. La plenitud incluye todo. Una es sobre apariencia, la otra sobre verdad. La plenitud trae paz que la perfección nunca puede.",
+          "key_takeaway": "La perfección esconde; la plenitud incluye. Ser completo trae más paz que ser impecable."
+        },
+        {
+          "conversation_id": "rainbow_07",
+          "sort_order": 7,
+          "question": "Has aprendido de tantas criaturas en todos los reinos — jardín, océano, desierto, ártico, ¡y aquí! ¿Puedes ver cómo todas esas lecciones se conectan en una imagen grande?",
+          "yes_response": "¡Ves el patrón! Cada reino enseñó cosas diferentes, pero juntas forman sabiduría completa. Resiliencia Y calma. Coraje Y descanso. Solo Y junto. ¡La vida necesita todo eso!",
+          "no_response": "¡Las conexiones están ahí! Piénsalo: el descanso equilibra la acción, la soledad equilibra la comunidad, el coraje equilibra la cautela. Todas las lecciones se tejen juntas en plenitud. ¡Las llevas todas!",
+          "key_takeaway": "Todas las lecciones que aprendemos se conectan en sabiduría completa. La vida necesita el espectro completo."
+        },
+        {
+          "conversation_id": "rainbow_08",
+          "sort_order": 8,
+          "question": "Cuando todos los colores se mezclan perfectamente, hacen luz blanca — pura y completa. ¡Cuando estás completamente integrado/a, brillas más! ¿Sientes que te estás volviendo más completo/a?",
+          "yes_response": "¡Esa es la recompensa del viaje! Mientras más aceptas e integras todas tus partes, más brillante brillas. No perfecto/a — completo/a. ¡Esa luz es hermosa porque no esconde nada!",
+          "no_response": "¡La plenitud crece lentamente! Cada trozo de auto-aceptación, cada lección aprendida, cada parte abrazada — todo suma. Te estás volviendo más integrado/a con cada paso. ¡Sigue adelante!",
+          "key_takeaway": "Cuando integramos todas nuestras partes, brillamos más. La plenitud es la recompensa del viaje."
+        },
+        {
+          "conversation_id": "rainbow_09",
+          "sort_order": 9,
+          "question": "Un arcoíris no esconde ninguno de sus colores — ¡los muestra todos orgullosamente! ¿Estás listo/a para mostrarte al mundo como tu ser completo, todos los colores visibles?",
+          "yes_response": "¡Entonces has alcanzado la maestría! Mostrarte completo/a — sin esconder partes, sin fingir — es verdadero coraje. ¡El mundo necesita tu arcoíris completo, no solo los colores que crees que son 'aceptables'!",
+          "no_response": "¡Eso toma coraje y tiempo! Empieza aceptando todos tus colores internamente. Luego, lentamente, deja que más de ellos se muestren. No tienes que revelar todo de una vez. Pero esconderse atenúa tu luz.",
+          "key_takeaway": "Mostrarnos como nuestro ser completo, todos los colores visibles, es verdadero coraje y verdadera belleza."
+        },
+        {
+          "conversation_id": "rainbow_10",
+          "sort_order": 10,
+          "question": "Nuestro viaje juntos completa un círculo. Viniste buscando sabiduría y encontraste que estuvo dentro de ti todo el tiempo. Eres completo/a, pleno/a y suficiente. ¿Llevarás esta plenitud adelante?",
+          "yes_response": "¡Entonces ahora eres un/a Guardián/a del Arcoíris! Todo lo que has aprendido, todo lo que eres — está completo. Ve a brillar tu espectro completo al mundo. Estás listo/a. Eres completo/a. Eres suficiente. 🌈",
+          "no_response": "Está bien, hermoso/a ser. La plenitud no se apresura. Llevas más completitud de la que sabes. Cuando estés listo/a, brillarás. El arcoíris es paciente, y también lo es tu convertirte. 🌈",
+          "key_takeaway": "Somos completos, plenos y suficientes tal como somos. Nuestro espectro completo está listo para brillar."
+        }
+      ]
+    }
+  ]
+}

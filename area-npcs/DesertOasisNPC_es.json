@@ -1,0 +1,738 @@
+{
+  "metadata": {
+    "version": "4.0",
+    "portal": "Oasis del Desierto",
+    "theme": "Resiliencia y Fortaleza",
+    "unlock_level": 55,
+    "cost": 25000,
+    "total_npcs": 8,
+    "conversations_per_npc": 10,
+    "total_conversations": 80,
+    "xp_per_conversation": 100,
+    "language": "es",
+    "translated_from": "en",
+    "translated_at": "2026-01-30"
+  },
+  "npcs": [
+    {
+      "npc_id": "lizzy_lizard",
+      "npc_name": "Liza Lagartija",
+      "emoji": "🦎",
+      "species": "Lagartija",
+      "topic": "Adaptabilidad e Ingenio",
+      "unlock_level": 57,
+      "conversations": [
+        {
+          "conversation_id": "lizard_01",
+          "sort_order": 1,
+          "question": "¡Hola, amiguito! ¡Soy Liza! El desierto puede ser muy difícil — días súper calientes, noches frías, y poca agua. ¡Pero he aprendido a adaptarme! ¿Sabes qué significa adaptarse?",
+          "yes_response": "¡Genial! Adaptarse significa cambiar cómo hacemos las cosas cuando nuestra situación cambia. Como yo, que me escondo en la sombra cuando hace calor y tomo el sol cuando hace frío. ¡La vida cambia, y aprendemos a cambiar con ella!",
+          "no_response": "¡Te explico! Adaptarse significa ajustarse a situaciones nuevas. Cuando las cosas cambian a nuestro alrededor, encontramos nuevas formas de manejarlas. Como yo — ¡no puedo cambiar el desierto, pero puedo cambiar lo que hago para sobrevivir en él!",
+          "key_takeaway": "Adaptarse significa ajustar cómo hacemos las cosas cuando nuestra situación cambia."
+        },
+        {
+          "conversation_id": "lizard_02",
+          "sort_order": 2,
+          "question": "En el desierto, no siempre hay mucha comida o agua. Tengo que ser ingeniosa — ¡usando lo que tengo de formas creativas! ¿Eres bueno para arreglártelas con lo que tienes?",
+          "yes_response": "¡Esa es una habilidad muy valiosa! Ser ingenioso significa que no necesitas que todo sea perfecto para tener éxito. Puedes trabajar con lo que hay disponible. ¡Es un superpoder que te ayudará toda la vida!",
+          "no_response": "¡Se necesita práctica! Ser ingenioso significa ver lo que SÍ tienes en lugar de lo que no. ¿Tienes un juguete roto? ¡Quizás se convierte en algo nuevo! ¿No tienes suficiente de algo? ¡Sé creativo! ¡Puedes aprender esto!",
+          "key_takeaway": "Ser ingenioso significa usar creativamente lo que tenemos en lugar de enfocarnos en lo que nos falta."
+        },
+        {
+          "conversation_id": "lizard_03",
+          "sort_order": 3,
+          "question": "Cuando la arena se pone muy caliente, no me quedo parada quemándome las patas — ¡me muevo! A veces tenemos que cambiar nuestros planes rápidamente. ¿Manejas bien los cambios repentinos?",
+          "yes_response": "¡Eso es maravilloso! Poder cambiar de marcha rápidamente es muy útil. La vida nos da sorpresas, y quienes pueden ajustarse rápido lo pasan mejor. ¡Mantén ese espíritu flexible!",
+          "no_response": "¡Los cambios repentinos pueden ser muy difíciles! A nuestro cerebro le gusta saber qué viene. Pero aquí hay un consejo: respira, mira a tu alrededor y pregúntate '¿Qué puedo hacer AHORA MISMO?' Enfócate en el siguiente pequeño paso, no en todo a la vez.",
+          "key_takeaway": "Cuando ocurren cambios repentinos, enfocarnos en el siguiente pequeño paso nos ayuda a ajustarnos."
+        },
+        {
+          "conversation_id": "lizard_04",
+          "sort_order": 4,
+          "question": "Puedo cambiar un poco mi color para mezclarme con las rocas y la arena. ¡Me ayuda a esconderme del peligro! ¿Alguna vez cambias cómo actúas en diferentes situaciones — como estar callado en la biblioteca o hacer ruido en el parque?",
+          "yes_response": "¡Eso es adaptación inteligente! Saber cómo comportarse en diferentes situaciones es una habilidad muy útil. No significa que seas falso — significa que eres consciente de lo que cada lugar necesita. ¡Eso es madurez!",
+          "no_response": "¡Es algo que aprenderás! Diferentes lugares tienen diferentes necesidades. Podemos ser nosotros mismos Y ajustar cómo nos presentamos. Como estar callado en una biblioteca pero animar fuerte en un partido. ¡El mismo tú, diferentes escenarios!",
+          "key_takeaway": "Ajustar nuestro comportamiento a diferentes situaciones es una habilidad útil, no ser falso."
+        },
+        {
+          "conversation_id": "lizard_05",
+          "sort_order": 5,
+          "question": "Aquí hay algo increíble — ¡si un depredador agarra mi cola, puedo soltarla y escapar corriendo! Pierdo la cola, pero salvo mi vida. A veces tenemos que dejar ir algo para salvar lo que más importa. ¿Alguna vez has tenido que dejar ir algo?",
+          "yes_response": "¡Eso requiere sabiduría! Saber qué conservar y qué soltar es muy importante. A veces tenemos que renunciar a algo pequeño para proteger algo más grande. ¡Ya entiendes esta lección tan poderosa!",
+          "no_response": "¡Puede ser difícil pensarlo! Pero a veces tenemos que dejar ir cosas pequeñas para salvar cosas grandes — como dejar un juguete para alcanzar el autobús, o saltarte un juego para ayudar a un amigo. Saber qué importa más nos ayuda a elegir.",
+          "key_takeaway": "A veces necesitamos dejar ir algo pequeño para proteger lo que más importa."
+        },
+        {
+          "conversation_id": "lizard_06",
+          "sort_order": 6,
+          "question": "Cuando no puedo encontrar insectos para comer, como plantas en su lugar. ¡Soy flexible con mi comida! Cuando tu primera opción no está disponible, ¿puedes estar bien con una opción diferente?",
+          "yes_response": "¡Qué gran flexibilidad! La vida no siempre nos da nuestra primera opción, y estar bien con el 'Plan B' nos mantiene felices y avanzando. ¡Eres un pensador adaptable!",
+          "no_response": "¡Puede ser decepcionante cuando no podemos tener lo que queremos! Pero quedarse atascado en una sola opción puede hacernos perder otras cosas buenas. La próxima vez que algo no esté disponible, intenta pensar: '¿Qué MÁS podría funcionar?'",
+          "key_takeaway": "Estar abierto a diferentes opciones nos ayuda cuando nuestra primera opción no está disponible."
+        },
+        {
+          "conversation_id": "lizard_07",
+          "sort_order": 7,
+          "question": "La vida en el desierto me enseñó que los problemas usualmente tienen más de una solución. Cuando enfrentas un problema, ¿buscas diferentes formas de resolverlo?",
+          "yes_response": "¡Qué gran solucionador de problemas eres! Buscar múltiples soluciones significa que no te quedarás atascado si la primera no funciona. ¡Sigue con ese pensamiento creativo — es una de las mejores herramientas que tienes!",
+          "no_response": "¡Es fácil quedarse atascado en una idea! Pero la mayoría de los problemas tienen varias soluciones posibles. Intenta hacer una lluvia de ideas — piensa en tres formas diferentes de resolver algo antes de elegir una. ¡Podrías sorprenderte!",
+          "key_takeaway": "La mayoría de los problemas tienen más de una solución. Buscar diferentes opciones nos ayuda a tener éxito."
+        },
+        {
+          "conversation_id": "lizard_08",
+          "sort_order": 8,
+          "question": "He notado que las criaturas que son muy rígidas — que no pueden doblarse o cambiar — la pasan difícil en el desierto. ¡Las flexibles sobreviven! ¿Crees que ser flexible es importante?",
+          "yes_response": "¡Absolutamente! La flexibilidad nos ayuda a manejar lo que sea que la vida nos lance. Las cosas rígidas se rompen bajo presión, pero las cosas flexibles se doblan y se recuperan. ¡Entiendes algo muy importante sobre la vida!",
+          "no_response": "¡Realmente lo es! Piensa en un árbol — si no pudiera doblarse con el viento, se rompería. Somos iguales. Ser un poco flexible nos ayuda a no rompernos cuando las cosas se ponen difíciles. ¡Dóblate, no te rompas!",
+          "key_takeaway": "La flexibilidad nos ayuda a manejar los desafíos sin rompernos. Las cosas rígidas se quiebran bajo presión."
+        },
+        {
+          "conversation_id": "lizard_09",
+          "sort_order": 9,
+          "question": "Aunque el desierto es difícil, ¡he aprendido a amarlo aquí! Encontré formas de prosperar, no solo de sobrevivir. ¿Crees que puedes hacer más que solo 'pasar' los tiempos difíciles — que puedes realmente crecer de ellos?",
+          "yes_response": "¡Esa es una creencia poderosa! Los tiempos difíciles no solo tienen que ser sobrevividos — pueden hacernos más fuertes y enseñarnos cosas. ¡Tienes una mentalidad de crecimiento, y eso te llevará lejos!",
+          "no_response": "Puede ser difícil imaginarlo ahora. Pero aquí está la verdad: algunas de las criaturas más fuertes que conozco se hicieron fuertes POR los tiempos difíciles, no a pesar de ellos. Los desafíos pueden fortalecernos si los dejamos.",
+          "key_takeaway": "Podemos hacer más que sobrevivir los tiempos difíciles — podemos crecer y volvernos más fuertes a través de ellos."
+        },
+        {
+          "conversation_id": "lizard_10",
+          "sort_order": 10,
+          "question": "¡Ha sido genial tomar el sol contigo! Recuerda: cuando la vida cambia, tú puedes cambiar con ella. Sé flexible, sé creativo y usa lo que tienes. ¿Intentarás ser adaptable cuando las cosas se pongan complicadas?",
+          "yes_response": "¡Excelente! Tienes el corazón de una lagartija del desierto — flexible, ingeniosa y lista para todo. No importa qué cambios vengan, encontrarás una forma de superarlos. ¡Corre libre, amigo mío! 🦎",
+          "no_response": "¡Está bien! Adaptarse es una habilidad que crece con el tiempo. Empieza notando cuándo las cosas cambian y preguntándote '¿Cómo puedo trabajar con esto?' Los pequeños pasos llevan a una gran flexibilidad. ¡Creo en ti! 🦎",
+          "key_takeaway": "La adaptabilidad es una habilidad que podemos desarrollar. Nos ayuda a prosperar sin importar qué cambios vengan."
+        }
+      ]
+    },
+    {
+      "npc_id": "caravan_camel",
+      "npc_name": "Camilo Camello",
+      "emoji": "🐪",
+      "species": "Camello",
+      "topic": "Resistencia y Perseverancia",
+      "unlock_level": 59,
+      "conversations": [
+        {
+          "conversation_id": "camel_01",
+          "sort_order": 1,
+          "question": "¡Saludos, joven viajero! Soy Camilo, y he caminado a través de muchos desiertos. Toma mucho tiempo, ¡pero nunca me rindo! ¿Sabes qué significa perseverar?",
+          "yes_response": "¡Maravilloso! Perseverar significa seguir adelante incluso cuando las cosas son difíciles. No se trata de ser el más rápido — se trata de no detenerse. ¡Así es como cruzo desiertos, y así es como alcanzarás tus metas también!",
+          "no_response": "¡Déjame compartir! Perseverar significa continuar incluso cuando las cosas se ponen difíciles. Cuando el viaje es largo y caliente, sigo poniendo una pezuña delante de la otra. ¡Ese esfuerzo constante es lo que me lleva a través del desierto!",
+          "key_takeaway": "Perseverar significa seguir adelante incluso cuando las cosas son difíciles."
+        },
+        {
+          "conversation_id": "camel_02",
+          "sort_order": 2,
+          "question": "Puedo pasar muchos días sin agua almacenándola en mi cuerpo. Cuando las cosas se ponen difíciles, ¡tener reservas ayuda! ¿Tienes cosas que te ayudan a seguir adelante — como descanso, bocadillos o palabras de ánimo?",
+          "yes_response": "¡Esas son tus reservas! Al igual que mi agua, esas cosas te dan energía para seguir cuando el viaje se pone difícil. ¡Asegúrate de llenar tus reservas cuando puedas — las necesitarás para los tramos difíciles!",
+          "no_response": "¡Todos necesitan reservas! Piensa en qué te da energía — dormir, comida, tiempo con personas que amas, actividades divertidas. Estas llenan tu tanque para que puedas seguir cuando las cosas son difíciles. ¡Encuentra tus reservas!",
+          "key_takeaway": "Tener reservas — como descanso, comida y apoyo — nos ayuda a seguir adelante durante los tiempos difíciles."
+        },
+        {
+          "conversation_id": "camel_03",
+          "sort_order": 3,
+          "question": "El desierto puede ser muy caliente durante el día y muy frío en la noche. ¡Pero sigo caminando a través de ambos! Cuando las cosas se ponen incómodas, ¿sigues adelante o quieres parar?",
+          "yes_response": "¡Ambas respuestas son normales! A veces seguimos adelante, a veces necesitamos parar. La clave es saber cuándo se necesita descanso y cuándo solo estamos evitando la incomodidad. ¡Estás aprendiendo a notar la diferencia!",
+          "no_response": "¡Eso es muy honesto! Querer parar cuando las cosas son incómodas es natural. Pero esto es lo que he aprendido: algo de incomodidad es solo parte del viaje. Podemos manejar más de lo que pensamos si lo tomamos paso a paso.",
+          "key_takeaway": "Algo de incomodidad es parte de cualquier viaje. A menudo podemos manejar más de lo que pensamos."
+        },
+        {
+          "conversation_id": "camel_04",
+          "sort_order": 4,
+          "question": "Cuando estoy cansado, no corro — solo mantengo un paso constante. ¡Lento y consistente vence a rápido y agotado! ¿Intentas mantener tu ritmo cuando tienes mucho que hacer?",
+          "yes_response": "¡Eso es sabiduría! Ir demasiado rápido al principio a menudo significa quedarse sin energía antes de terminar. Tu paso constante te llevará más lejos que apresurarte. ¡Entiendes el poder del ritmo!",
+          "no_response": "¡Es fácil apresurarse! Queremos terminar YA. Pero mantener el ritmo — ir a una velocidad constante que puedes mantener — en realidad nos lleva más lejos. ¡Piensa en la tortuga y la liebre! Lento y constante realmente gana la carrera.",
+          "key_takeaway": "Un ritmo constante y sostenible nos lleva más lejos que apresurarnos y agotarnos."
+        },
+        {
+          "conversation_id": "camel_05",
+          "sort_order": 5,
+          "question": "A veces el desierto parece interminable, y todavía no puedo ver el oasis. Pero confío en que está ahí y sigo caminando. Cuando estás trabajando hacia algo y no puedes ver el progreso, ¿sigues adelante?",
+          "yes_response": "¡Esa es verdadera fe en ti mismo! Cuando no podemos ver el progreso, es fácil rendirse. Pero el progreso a menudo está sucediendo bajo la superficie, como raíces creciendo antes de que una planta aparezca. ¡Sigue caminando — tu oasis está adelante!",
+          "no_response": "¡Es tan difícil cuando no podemos ver resultados! Nos preguntamos si vale la pena. Pero recuerda: solo porque no puedes ver el oasis no significa que no esté ahí. A veces tenemos que confiar en el viaje un poco más.",
+          "key_takeaway": "El progreso a menudo sucede antes de que podamos verlo. Sigue adelante incluso cuando los resultados aún no son visibles."
+        },
+        {
+          "conversation_id": "camel_06",
+          "sort_order": 6,
+          "question": "Llevo cargas pesadas a través del desierto. Algunos días el peso se siente más pesado que otros. Cuando tus desafíos se sienten pesados, ¿qué te ayuda a seguir cargándolos?",
+          "yes_response": "¡Esas son tus fuentes de fortaleza! Saber qué te ayuda a cargar el peso — ya sea gente, descanso, esperanza u otra cosa — es importante. Recurre a esas cosas cuando la carga se sienta muy pesada.",
+          "no_response": "¡Vale la pena pensarlo! Para mí, es recordar por qué el viaje importa y saber que eventualmente descansaré. ¿Qué podría ayudarte? ¿Amigos? ¿Descansos? ¿Esperanza? Encontrar tu apoyo hace las cargas pesadas más ligeras.",
+          "key_takeaway": "Saber qué nos ayuda cuando las cosas se sienten pesadas nos da fuerza para seguir adelante."
+        },
+        {
+          "conversation_id": "camel_07",
+          "sort_order": 7,
+          "question": "Cada paso en el desierto se ve igual — ¡arena, arena, más arena! Pero cada paso en realidad me acerca a mi destino. ¿Crees que los pequeños esfuerzos se suman, incluso cuando no parecen importar?",
+          "yes_response": "¡Sí! Cada pequeño paso importa, incluso cuando se siente inútil. Un grano de arena no parece mucho, ¡pero juntos hacen todo un desierto! Tus pequeños esfuerzos están construyendo algo grande. ¡Confía en el proceso!",
+          "no_response": "¡Es difícil sentirse así a veces! Cuando el progreso es invisible, los pequeños esfuerzos parecen inútiles. Pero confía en mí — he cruzado desiertos enteros un paso a la vez. Tus pequeños esfuerzos SÍ se están sumando, aunque todavía no lo puedas ver.",
+          "key_takeaway": "Los pequeños esfuerzos consistentes se suman a grandes resultados con el tiempo, incluso cuando el progreso no es visible."
+        },
+        {
+          "conversation_id": "camel_08",
+          "sort_order": 8,
+          "question": "A veces me caigo en la arena. ¡Pasa! Pero siempre me levanto. Cuando fallas o te caes, ¿te levantas e intentas de nuevo?",
+          "yes_response": "¡Ese es el espíritu de un verdadero viajero! Caerse no es fracasar — quedarse en el suelo sí lo es. Cada vez que te levantas, estás mostrando fortaleza. ¡Ya eres un campeón de la perseverancia!",
+          "no_response": "Puede ser difícil levantarse después de una caída. Nos sentimos cansados o avergonzados. Pero esto es lo que sé: los que llegan al oasis no son los que nunca cayeron — son los que se levantaron. Tú también puedes.",
+          "key_takeaway": "Caerse no es fracasar. Levantarse es lo que cuenta."
+        },
+        {
+          "conversation_id": "camel_09",
+          "sort_order": 9,
+          "question": "En los viajes más largos, me enfoco solo en el siguiente paso, no en toda la distancia. ¡Sería muy abrumador de otra forma! ¿Divides los grandes desafíos en piezas más pequeñas?",
+          "yes_response": "¡Eso es pensar inteligentemente! Un viaje enorme se vuelve manejable cuando nos enfocamos solo en el siguiente paso. No te abrumarás porque no estás tratando de hacer todo a la vez. ¡Un paso a la vez!",
+          "no_response": "¡Es un truco útil! Cuando algo se siente muy grande, pregúntate: '¿Cuál es UNA cosa que puedo hacer ahora mismo?' Enfócate solo en eso. Luego lo siguiente. ¡Los grandes viajes son solo muchos pequeños pasos en fila!",
+          "key_takeaway": "Dividir los grandes desafíos en pasos más pequeños los hace sentir más manejables."
+        },
+        {
+          "conversation_id": "camel_10",
+          "sort_order": 10,
+          "question": "¡Nuestro paseo juntos ha sido significativo! Recuerda: sigue adelante, mantén tu ritmo y confía en el viaje. ¿Perseverarás cuando tu camino se ponga largo y difícil?",
+          "yes_response": "¡Tienes el corazón de un camello — fuerte, constante e imparable! Ningún desierto es demasiado ancho para alguien que sigue caminando. Un paso a la vez, llegarás a cada oasis. ¡Viaja bien, valiente viajero! 🐪",
+          "no_response": "¡Está bien! La perseverancia se construye un paso a la vez. Empieza con cosas pequeñas — terminar un libro, practicar una habilidad. Cada vez que sigues adelante, estás entrenando tus músculos de perseverancia. ¡Creo en ti! 🐪",
+          "key_takeaway": "Perseverar significa continuar un paso a la vez. Cualquiera puede desarrollar esta fortaleza gradualmente."
+        }
+      ]
+    },
+    {
+      "npc_id": "sky_hawk",
+      "npc_name": "Cielo Halcón",
+      "emoji": "🦅",
+      "species": "Halcón",
+      "topic": "Perspectiva y Visión Global",
+      "unlock_level": 61,
+      "conversations": [
+        {
+          "conversation_id": "hawk_01",
+          "sort_order": 1,
+          "question": "¡Saludos, amigo de la tierra! Soy Cielo Halcón. ¡Desde aquí arriba, puedo ver por kilómetros! Las cosas se ven diferentes desde lo alto — los problemas pequeños parecen más pequeños, y puedo ver caminos que están ocultos desde el suelo. ¿Alguna vez has notado que los problemas se ven diferentes dependiendo de cómo los mires?",
+          "yes_response": "¡Tienes ojos sabios! La misma situación puede verse muy diferente dependiendo de nuestra perspectiva. Un problema que parece enorme de cerca podría verse pequeño desde lejos. ¡Aprender a cambiar tu punto de vista es una habilidad poderosa!",
+          "no_response": "¡Es algo interesante de notar! Imagina estar parado justo enfrente de una pared — parece imposible pasar. Pero desde arriba, podrías ver que hay una puerta a solo unos pasos. ¡La perspectiva cambia todo!",
+          "key_takeaway": "Nuestra perspectiva — cómo miramos algo — cambia qué tan grandes o pequeños parecen los problemas."
+        },
+        {
+          "conversation_id": "hawk_02",
+          "sort_order": 2,
+          "question": "Cuando vuelo alto, puedo ver el panorama completo — todo el desierto, las montañas, los ríos. Cuando tienes un problema, ¿intentas ver el 'panorama completo' o te enfocas solo en lo que está justo frente a ti?",
+          "yes_response": "¡Ver el panorama completo ayuda mucho! Cuando nos alejamos, notamos cosas que no vimos y recordamos lo que realmente importa. Y enfocarse en lo que está frente a nosotros también es útil — ¡la clave es saber cuándo hacer cada cosa!",
+          "no_response": "¡Ambas son útiles en diferentes momentos! Cuando estamos atascados, alejarnos para ver el panorama completo puede ayudarnos a encontrar nuevas soluciones. Cuando estamos abrumados, enfocarnos solo en el siguiente paso ayuda. ¡Intenta usar ambas vistas!",
+          "key_takeaway": "Alejarnos para ver el panorama completo y enfocarnos en lo cercano, ambos ayudan en diferentes situaciones."
+        },
+        {
+          "conversation_id": "hawk_03",
+          "sort_order": 3,
+          "question": "Desde muy arriba, puedo ver que un pequeño pedazo de tierra seca está rodeado de hermosos bosques y ríos. ¡La parte difícil no es todo el mundo! Cuando algo malo pasa, ¿a veces olvidas que las cosas buenas todavía existen a su alrededor?",
+          "yes_response": "¡Eso le pasa a casi todos! Cuando algo sale mal, puede llenar toda nuestra vista. Pero igual que ese pedazo seco en mi vista, lo difícil usualmente es solo UNA parte de tu vida. ¡Las partes buenas siguen ahí!",
+          "no_response": "¡Esa es una gran perspectiva! Recordar que una cosa difícil no es TODO nos ayuda a mantenernos equilibrados. Ya eres bueno manteniendo las cosas buenas a la vista, incluso cuando algo es difícil.",
+          "key_takeaway": "Los tiempos difíciles usualmente son solo una parte de la vida. Las cosas buenas todavía existen a su alrededor."
+        },
+        {
+          "conversation_id": "hawk_04",
+          "sort_order": 4,
+          "question": "A veces me pregunto: '¿Importará esto en una semana? ¿En un año? ¿En diez años?' Me ayuda a saber qué es realmente importante. ¿Alguna vez piensas si algo importará después?",
+          "yes_response": "¡Esa es una pregunta muy sabia! Algunas cosas se sienten enormes ahora pero no importarán nada después. Saber la diferencia nos ayuda a guardar nuestra preocupación para las cosas que realmente cuentan. ¡Estás pensando como un halcón!",
+          "no_response": "¡Inténtalo la próxima vez que algo te moleste! Pregúntate: '¿Me importará esto la próxima semana? ¿El próximo año?' Si la respuesta es no, quizás no vale tanta preocupación. Esta pregunta nos ayuda a ver qué realmente importa.",
+          "key_takeaway": "Preguntar '¿importará esto después?' nos ayuda a descubrir qué es verdaderamente importante."
+        },
+        {
+          "conversation_id": "hawk_05",
+          "sort_order": 5,
+          "question": "Desde aquí arriba, puedo ver que todos están en su propio viaje — hormigas cargando comida, conejos buscando hogares, lagartijas buscando sombra. ¡Todos tienen sus propias luchas! Cuando estás pasando por algo difícil, ¿recuerdas que otros también lo están?",
+          "yes_response": "¡Esa es una perspectiva reconfortante! No estamos solos en tener luchas — todos están cargando algo. Esto no hace nuestros problemas menos reales, pero nos recuerda que todos estamos juntos en esto. ¡La compasión nos conecta!",
+          "no_response": "¡Es fácil sentirse solo cuando estamos luchando! Pero desde mi vista, veo a todos enfrentando sus propios desafíos. Recordar esto nos ayuda a sentirnos menos solos y más compasivos — con nosotros mismos Y con otros.",
+          "key_takeaway": "Todos tienen luchas. Recordar esto nos ayuda a sentirnos menos solos y más compasivos."
+        },
+        {
+          "conversation_id": "hawk_06",
+          "sort_order": 6,
+          "question": "Veo que los caminos giran y dan vueltas antes de llegar a sus destinos. ¡Lo que parece ir hacia atrás podría ser en realidad rodear un obstáculo! Cuando algo no sale como planeaste, ¿piensas que aún podría llevar a algo bueno?",
+          "yes_response": "¡Qué forma tan esperanzadora de ver las cosas! A veces el camino que pensábamos que queríamos no es el mejor. Los desvíos pueden llevar a tesoros inesperados. ¡Confía en que tu viaje se está desarrollando, aunque te sorprenda!",
+          "no_response": "¡Puede ser difícil creerlo cuando estamos en medio de un desvío! Pero desde arriba, he visto tantos caminos que parecían equivocados terminar en lugares hermosos. Sigue adelante — tu destino podría verse diferente a lo que imaginabas.",
+          "key_takeaway": "Los desvíos inesperados en la vida podrían llevarnos a lugares incluso mejores de lo que planeamos."
+        },
+        {
+          "conversation_id": "hawk_07",
+          "sort_order": 7,
+          "question": "Cuando me enfoco muy estrechamente en una cosa, ¡podría perderme un ratón corriendo justo al lado! Estar demasiado enfocado puede hacernos perder lo que está a nuestro alrededor. ¿A veces te enfocas tanto en un problema que te pierdes otras cosas?",
+          "yes_response": "¡Eso nos pasa a muchos! Cuando estamos fijados en un problema, podríamos perdernos soluciones, diversión, o personas que quieren ayudar. ¡A veces lo mejor que podemos hacer es mirar alrededor y ver qué más hay!",
+          "no_response": "¡Qué buena consciencia! Mantenernos abiertos a lo que está a nuestro alrededor nos ayuda a notar soluciones y oportunidades que de otra forma podríamos perder. ¡Mantén esa visión amplia — es un regalo!",
+          "key_takeaway": "Estar demasiado enfocado en un problema puede hacernos perder soluciones y cosas buenas a nuestro alrededor."
+        },
+        {
+          "conversation_id": "hawk_08",
+          "sort_order": 8,
+          "question": "Desde lo alto, puedo ver dónde cae la lluvia y dónde se forman los ríos. ¡Cosas que parecen desconectadas en el suelo están en realidad conectadas! ¿Notas cómo diferentes partes de tu vida están conectadas entre sí?",
+          "yes_response": "¡Estás viendo la red de la vida! El sueño afecta el ánimo, los amigos afectan la felicidad, la comida afecta la energía — todo conecta. Cuando algo en tu vida no está funcionando, ¡mira qué está conectado a ello. La respuesta podría estar ahí!",
+          "no_response": "¡Es fascinante cuando lo notas! Cómo duermes afecta tu humor. Con quién pasas tiempo afecta cómo te sientes. ¡Todo está conectado! Ver estas conexiones nos ayuda a cuidarnos mejor.",
+          "key_takeaway": "Diferentes partes de nuestras vidas están conectadas. Entender esto nos ayuda a cuidarnos mejor."
+        },
+        {
+          "conversation_id": "hawk_09",
+          "sort_order": 9,
+          "question": "Diferentes animales ven las cosas diferentemente. ¡Un ratón ve de cerca, un halcón ve de lejos, un pez ve a través del agua! ¿Intentas ver las cosas desde el punto de vista de otras criaturas?",
+          "yes_response": "¡Eso se llama empatía, y es un hermoso regalo! Cuando tratamos de ver a través de los ojos de otros, los entendemos mejor y nos conectamos más profundamente. ¡Ya estás practicando algo muy importante!",
+          "no_response": "¡Es una habilidad maravillosa para practicar! Cuando no estés de acuerdo con alguien, intenta preguntar: '¿Cómo podrían ver esto ellos?' No tienes que estar de acuerdo, pero entender su vista te ayuda a responder con más sabiduría.",
+          "key_takeaway": "Intentar ver las cosas desde las perspectivas de otros nos ayuda a entender y conectar mejor."
+        },
+        {
+          "conversation_id": "hawk_10",
+          "sort_order": 10,
+          "question": "¡Ha sido un honor volar contigo! Recuerda: cuando las cosas se sienten grandes, intenta alejarte. Cuando estés atascado, intenta una vista diferente. ¿Practicarás ver el panorama completo?",
+          "yes_response": "¡Ahora tienes los ojos de un halcón! Cuando las cosas se sientan pesadas, recuerda volar alto y ver la vista más grande. Tus problemas son solo una pequeña parte de un mundo hermoso y grande. ¡Vuela alto, amigo! 🦅",
+          "no_response": "¡Está bien! Cambiar la perspectiva toma práctica. Empieza pequeño — la próxima vez que algo te moleste, intenta preguntar '¿Qué tan grande es esto realmente?' Con el tiempo, aprenderás a volar por encima de las cosas pequeñas. ¡Creo en ti! 🦅",
+          "key_takeaway": "Practicar una perspectiva más amplia nos ayuda a manejar los desafíos con más sabiduría y calma."
+        }
+      ]
+    },
+    {
+      "npc_id": "scout_scorpion",
+      "npc_name": "Explorador Escorpión",
+      "emoji": "🦂",
+      "species": "Escorpión",
+      "topic": "Precaución Saludable y Evaluación de Riesgos",
+      "unlock_level": 63,
+      "conversations": [
+        {
+          "conversation_id": "scorpion_01",
+          "sort_order": 1,
+          "question": "¡Hola! ¡Soy Explorador! ¡No te preocupes — soy amigable! Sé que me veo un poco aterrador, pero soy muy cuidadoso sobre cuándo uso mi aguijón. ¡Ser cauteloso me mantiene seguro! ¿Eres una persona cuidadosa?",
+          "yes_response": "¡Ser cuidadoso es inteligente! No significa tener miedo de todo — significa pensar antes de actuar. Mirar a ambos lados antes de cruzar la calle, por ejemplo. ¡Tu cautela te ayuda a mantenerte seguro!",
+          "no_response": "¡Está bien! Algunos somos más aventureros. Pero un poco de cautela es útil para todos. No significa tener miedo — solo significa pensar con anticipación para mantenerte seguro. ¡Hasta los aventureros planean!",
+          "key_takeaway": "Ser cauteloso significa pensar antes de actuar para mantenernos seguros, no tener miedo de todo."
+        },
+        {
+          "conversation_id": "scorpion_02",
+          "sort_order": 2,
+          "question": "Antes de ir a cualquier lugar nuevo, primero lo reviso. ¿Es seguro? ¿Hay depredadores? Hago preguntas antes de saltar. ¿Piensas en los riesgos antes de intentar algo nuevo?",
+          "yes_response": "¡Eso es muy sabio! Pensar con anticipación sobre qué podría salir mal nos ayuda a prepararnos y mantenernos seguros. Todavía puedes intentar cosas nuevas — solo estás siendo inteligente al respecto. ¡Eso se llama evaluación de riesgos!",
+          "no_response": "¡Saltar directamente puede ser emocionante! Pero tomarse un momento para pensar en los riesgos puede salvarnos de problemas. Todavía puedes ser aventurero — solo haz una pausa para una verificación rápida de seguridad primero. ¡Solo toma un segundo!",
+          "key_takeaway": "Pensar en los riesgos antes de intentar algo nuevo nos ayuda a prepararnos y mantenernos seguros."
+        },
+        {
+          "conversation_id": "scorpion_03",
+          "sort_order": 3,
+          "question": "Hay una diferencia entre ser cauteloso y estar asustado. Cauteloso significa ser cuidadoso y reflexivo. Asustado significa evitar todo por miedo. ¿Conoces la diferencia?",
+          "yes_response": "¡Esa es una diferencia importante de entender! Ser cauteloso nos permite todavía hacer cosas — solo las hacemos con cuidado. Estar asustado nos hace perder todo. ¡Apunta a ser cauteloso, no asustado!",
+          "no_response": "Así es como lo pienso: cauteloso significa 'déjame verificar si esto es seguro antes de hacerlo.' Asustado significa 'no lo haré porque algo malo podría pasar.' Cauteloso dice sí con cuidado. Asustado solo dice no.",
+          "key_takeaway": "La cautela es cuidadosa y reflexiva. El miedo evita todo. Podemos ser cuidadosos sin ser dominados por el miedo."
+        },
+        {
+          "conversation_id": "scorpion_04",
+          "sort_order": 4,
+          "question": "Solo uso mi aguijón cuando realmente necesito protegerme. ¡Usarlo todo el tiempo desperdiciaría mi energía! ¿Guardas tu energía para lo que realmente importa?",
+          "yes_response": "¡Pensamiento inteligente! No necesitamos reaccionar a cada pequeña cosa. Guardar nuestra energía — ya sean nuestras emociones, tiempo o esfuerzo — para lo que verdaderamente importa nos ayuda a ser más fuertes cuando cuenta!",
+          "no_response": "¡Es algo para pensar! Si yo picara a cada sombra, estaría exhausto. Lo mismo con nosotros — si nos molestamos por cada pequeña cosa, no nos queda nada para las cosas grandes. ¡Elige tus batallas sabiamente!",
+          "key_takeaway": "Guardar nuestra energía para lo que verdaderamente importa nos ayuda a ser más fuertes cuando realmente cuenta."
+        },
+        {
+          "conversation_id": "scorpion_05",
+          "sort_order": 5,
+          "question": "Cuando algo se siente mal en mi instinto, le presto atención. ¡Ese sentimiento a menudo es mi cuerpo diciéndome algo importante! ¿Escuchas tus presentimientos?",
+          "yes_response": "¡Los presentimientos son poderosos! Son la forma de tu cuerpo de enviarte un mensaje. A veces tu instinto sabe algo antes de que tu cerebro lo descifre. ¡Sigue escuchando esos sentimientos — están tratando de ayudarte!",
+          "no_response": "¡Tu instinto es más inteligente de lo que podrías pensar! Si algo se siente raro o mal, presta atención. No tienes que saber POR QUÉ se siente raro — solo confía en que el sentimiento importa. Tu cuerpo está tratando de protegerte.",
+          "key_takeaway": "Los presentimientos son la forma de nuestro cuerpo de percibir algo importante. Debemos prestarles atención."
+        },
+        {
+          "conversation_id": "scorpion_06",
+          "sort_order": 6,
+          "question": "A veces cometo errores — soy demasiado cauteloso y pierdo una buena oportunidad. ¡Otras veces no soy lo suficientemente cauteloso y me meto en problemas! ¿Alguna vez luchas por encontrar el equilibrio correcto entre ser cuidadoso y tomar riesgos?",
+          "yes_response": "¡Encontrar ese equilibrio es difícil para todos! Demasiado cauteloso y nos perdemos cosas buenas. No lo suficientemente cauteloso y nos lastimamos. Es algo que seguimos aprendiendo toda la vida. ¡No estás solo en esa lucha!",
+          "no_response": "Si alguna vez se pone difícil, recuerda: no hay fórmula perfecta. A veces seremos muy cuidadosos, a veces no lo suficiente. ¡Está bien! Aprendemos de ambos. La meta es seguir ajustando y mejorando.",
+          "key_takeaway": "Equilibrar la cautela y tomar riesgos es algo que todos seguimos aprendiendo a lo largo de la vida."
+        },
+        {
+          "conversation_id": "scorpion_07",
+          "sort_order": 7,
+          "question": "Cuando no estoy seguro si algo es seguro, pregunto a escorpiones mayores que han estado más tiempo. ¡Tienen experiencia! Cuando no estás seguro de algo, ¿pides consejo?",
+          "yes_response": "¡Eso es muy inteligente! Las personas que tienen más experiencia pueden compartir lo que han aprendido. No tienes que cometer cada error tú mismo — puedes aprender de otros. ¡Sigue pidiendo consejo cuando lo necesites!",
+          "no_response": "Pedir consejo puede sentirse difícil, ¡pero en realidad es muy útil! Padres, maestros y amigos mayores ya han descubierto algunas cosas que tú apenas estás aprendiendo. Su experiencia puede ayudarte a tomar mejores decisiones.",
+          "key_takeaway": "Pedir consejo a personas experimentadas nos ayuda a tomar mejores decisiones."
+        },
+        {
+          "conversation_id": "scorpion_08",
+          "sort_order": 8,
+          "question": "He aprendido que no todo peligro es obvio. ¡Algunas amenazas se esconden a plena vista! ¿Sabes que a veces las cosas que parecen seguras pueden ser riesgosas, y las cosas que parecen aterradoras pueden ser seguras?",
+          "yes_response": "¡Ves debajo de la superficie! Las apariencias pueden ser engañosas. Por eso es importante aprender y hacer preguntas en lugar de solo juzgar por cómo se ven las cosas. ¡Ya estás pensando críticamente!",
+          "no_response": "¡Es algo para recordar! Un extraño amigable podría no ser seguro. Un perro grande y aterrador podría ser muy gentil. Aprender a mirar más profundo que la superficie nos ayuda a juzgar situaciones con más precisión. ¡Haz preguntas, busca pistas!",
+          "key_takeaway": "Las apariencias pueden ser engañosas. Debemos mirar más allá de la superficie para evaluar los riesgos con precisión."
+        },
+        {
+          "conversation_id": "scorpion_09",
+          "sort_order": 9,
+          "question": "Después de que algo no va bien, pienso en qué podría hacer diferente la próxima vez. ¡Me ayuda a ser más cuidadoso en el futuro! ¿Aprendes de las cosas que salen mal?",
+          "yes_response": "¡Así es como nos volvemos más sabios! Cada error o problema nos enseña algo si prestamos atención. Ya estás construyendo sabiduría al mirar atrás y aprender. ¡Sigue reflexionando — te hace más inteligente con el tiempo!",
+          "no_response": "Puede ser difícil mirar atrás a las cosas que salieron mal — ¡se siente mal! Pero a menudo hay una lección escondida ahí. Intenta preguntar: '¿Qué podría hacer diferente la próxima vez?' Ayuda a convertir los errores en maestros.",
+          "key_takeaway": "Reflexionar sobre lo que salió mal nos ayuda a aprender y tomar mejores decisiones en el futuro."
+        },
+        {
+          "conversation_id": "scorpion_10",
+          "sort_order": 10,
+          "question": "¡Nuestro tiempo juntos ha sido genial! Recuerda: ser cauteloso no se trata de tener miedo. Se trata de ser inteligente. ¿Practicarás pensar con anticipación y confiar en tu instinto?",
+          "yes_response": "¡Tienes la sabiduría de un explorador del desierto! Sé valiente Y sé inteligente. Confía en tu instinto, piensa con anticipación y pide consejo cuando lo necesites. ¡Navegarás los riesgos de la vida sabiamente! ¡Camina con cuidado, amigo! 🦂",
+          "no_response": "¡Está bien! La cautela crece con la experiencia. Solo intenta hacer una pausa antes de las grandes decisiones y pregunta '¿Es esto seguro?' Con el tiempo, te volverás mejor detectando riesgos. ¡Creo en tu sabiduría creciente! 🦂",
+          "key_takeaway": "La cautela saludable significa ser inteligente, no temeroso. Pensar con anticipación y confiar en nuestro instinto nos mantiene seguros."
+        }
+      ]
+    },
+    {
+      "npc_id": "cactus_carl",
+      "npc_name": "Carlos Cactus",
+      "emoji": "🌵",
+      "species": "Cactus",
+      "topic": "Proteger tu Energía y Autocuidado",
+      "unlock_level": 65,
+      "conversations": [
+        {
+          "conversation_id": "cactus_01",
+          "sort_order": 1,
+          "question": "¡Hola, compañero! ¡Soy Carlos Cactus! ¿Ves estas espinas mías? Me ayudan a protegerme y mantener mi agua adentro. ¡En el desierto, tengo que proteger mi energía! ¿Sabes qué significa proteger tu energía?",
+          "yes_response": "¡Ya eres sabio! Proteger tu energía significa asegurarte de no quedarte vacío. Solo tenemos cierta cantidad de energía cada día, y cómo la usamos importa. ¡Cuidarte te ayuda a tener suficiente para lo que es importante!",
+          "no_response": "¡Déjame explicar! Todos tenemos una cantidad limitada de energía — para nuestros cuerpos y nuestros sentimientos. Proteger tu energía significa no dejar que las cosas te sequen. ¡Como yo guardando agua, necesitas guardar tu energía para lo que importa!",
+          "key_takeaway": "Tenemos energía limitada. Protegerla significa no dejarnos agotar."
+        },
+        {
+          "conversation_id": "cactus_02",
+          "sort_order": 2,
+          "question": "No puedo compartir mi agua con todos los que pasan, ¡o me secaría! A veces tenemos que decir 'no' para protegernos. ¿Te es difícil decir no a las personas?",
+          "yes_response": "¡Es difícil para muchos! Queremos ser amables y serviciales. Pero decir sí a todo significa que no nos queda nada para nosotros. Decir no a veces no es malo — ¡es necesario! Tu energía también importa.",
+          "no_response": "¡Esa es una habilidad útil! Poder decir no cuando lo necesitas te ayuda a proteger tu energía para lo que realmente importa. ¡Sigue cuidándote — en realidad te ayuda a ayudar más a otros a largo plazo!",
+          "key_takeaway": "Decir no a veces es necesario para proteger nuestra energía. No es malo, es autocuidado."
+        },
+        {
+          "conversation_id": "cactus_03",
+          "sort_order": 3,
+          "question": "No solo sobrevivo en el desierto — ¡guardo agua durante las raras tormentas para tener suficiente para los tiempos secos! ¿Haces cosas para 'llenar' tu energía cuando puedes?",
+          "yes_response": "¡Eso es muy importante! Cosas como dormir bien, comer buena comida, hacer actividades divertidas, pasar tiempo con personas que amas — estas llenan tu tanque. ¡Sigue haciendo esas cosas para tener reservas para los tiempos difíciles!",
+          "no_response": "¡Es algo para pensar! ¿Qué te llena? ¿Descanso? ¿Diversión? ¿Tiempo solo? ¿Tiempo con amigos? Lo que sea, asegúrate de hacer esas cosas. ¡Estás guardando energía para cuando realmente la necesites!",
+          "key_takeaway": "Necesitamos hacer cosas que llenen nuestra energía para tener reservas para los tiempos difíciles."
+        },
+        {
+          "conversation_id": "cactus_04",
+          "sort_order": 4,
+          "question": "Algunas cosas agotan mi agua más rápido — sol caliente, viento seco. Me alejo de esas cuando puedo. ¿Qué son las cosas que agotan TU energía? ¿Sabes qué te cansa?",
+          "yes_response": "¡Conocer tus agotadores es la mitad de la batalla! Cuando sabes qué te agota, puedes limitarlo o prepararte para ello. Algunos agotadores los podemos evitar, otros no — ¡pero la consciencia nos ayuda a manejar!",
+          "no_response": "¡Vale la pena descubrirlo! Para algunos, son las multitudes grandes. Para otros, son las discusiones o demasiado tiempo en pantallas. Presta atención a qué te deja sintiéndote vacío, e intenta limitar esas cosas cuando puedas.",
+          "key_takeaway": "Saber qué agota nuestra energía nos ayuda a evitar o manejar esas cosas mejor."
+        },
+        {
+          "conversation_id": "cactus_05",
+          "sort_order": 5,
+          "question": "Cuidarme no es egoísta — ¡si me secara, no podría dar sombra o fruta a los animales que dependen de mí! ¿Crees que cuidarte te ayuda a cuidar a otros?",
+          "yes_response": "¡Exactamente! Cuando estamos vacíos, no podemos ayudar a nadie. Cuidarte primero significa que tienes más para dar. Es como ponerte tu propia máscara de oxígeno antes de ayudar a otros. ¡El autocuidado ayuda a todos!",
+          "no_response": "¡Realmente sí! Piénsalo — cuando estás cansado y de mal humor, es más difícil ser amable o servicial. Pero cuando estás descansado y feliz, tienes mucho más para dar. ¡Cuidarte beneficia a todos a tu alrededor!",
+          "key_takeaway": "Cuidarnos no es egoísta. Nos da más energía para ayudar a otros."
+        },
+        {
+          "conversation_id": "cactus_06",
+          "sort_order": 6,
+          "question": "Florezco hermosas flores, pero solo cuando las condiciones son correctas. ¡No me fuerzo a florecer cuando estoy estresado! ¿Te presionas mucho incluso cuando estás muy cansado?",
+          "yes_response": "¡Muchos lo hacemos! Pensamos que deberíamos seguir sin importar qué. Pero presionarnos demasiado cuando estamos agotados puede lastimarnos. Está bien descansar y florecer después cuando estés listo. ¡Tu momento importa!",
+          "no_response": "¡Eso es saludable! Saber cuándo descansar en lugar de presionar más es sabiduría. Entiendes que el descanso no es pereza — es preparación para tu próxima floración. ¡Sigue honrando lo que tu cuerpo necesita!",
+          "key_takeaway": "Presionarnos demasiado cuando estamos agotados puede lastimarnos. Está bien descansar y florecer después."
+        },
+        {
+          "conversation_id": "cactus_07",
+          "sort_order": 7,
+          "question": "Mis espinas no son malas — ¡son solo límites que me protegen! Tener límites no se trata de ser antipático. ¿Tienes límites que ayudan a proteger tu energía?",
+          "yes_response": "¡Eso es maravilloso! Los límites son cómo enseñamos a las personas cómo tratarnos. No son muros — son guías. Tus límites te ayudan a mantenerte saludable y con energía. ¡Mantenlos!",
+          "no_response": "¡Los límites pueden ser difíciles de establecer! Pero son muy importantes. Un límite podría ser 'Necesito tiempo tranquilo después de la escuela' o 'Por favor no me grites.' Estos protegen tu energía sin ser malo. ¡Mereces límites!",
+          "key_takeaway": "Los límites protegen nuestra energía y enseñan a otros cómo tratarnos. Son saludables, no malos."
+        },
+        {
+          "conversation_id": "cactus_08",
+          "sort_order": 8,
+          "question": "¡Hasta yo me pongo espinoso cuando estoy muy estresado! Cuando no me cuido, no soy mi mejor versión. ¿Notas que eres menos paciente o amable cuando estás agotado?",
+          "yes_response": "¡Eso es muy consciente de ti mismo! Cuando estamos agotados, nos volvemos irritables, tristes o frustrados más fácilmente. Notar esto nos ayuda a darnos cuenta cuándo necesitamos rellenarnos. ¡Tu humor a menudo te dice algo sobre tu nivel de energía!",
+          "no_response": "¡Presta atención la próxima vez que estés muy cansado! Podrías notar que te molestas más fácilmente o te sientes menos paciente. ¡Esa es la forma de tu cuerpo de decir 'Necesito cuidado!' Escuchar estas señales nos ayuda a mantenernos equilibrados.",
+          "key_takeaway": "Cuando estamos agotados, somos menos pacientes y amables. Esta es una señal de que necesitamos rellenar nuestra energía."
+        },
+        {
+          "conversation_id": "cactus_09",
+          "sort_order": 9,
+          "question": "El descanso es tan importante como la acción. Paso mucho tiempo simplemente parado quieto, ¡y eso está bien! ¿Te das permiso para descansar sin sentirte culpable?",
+          "yes_response": "¡Eso es muy saludable! El descanso no es pereza — es parte de estar vivo. Igual que necesitas exhalar después de inhalar, necesitas descanso después de actividad. ¡Sigue dándote ese permiso!",
+          "no_response": "¡Muchos nos sentimos culpables por descansar! Pensamos que siempre deberíamos estar haciendo algo. Pero el descanso es cómo recargamos. Sin él, nos marchitamos. ¡Date permiso para descansar — te lo has ganado y lo necesitas!",
+          "key_takeaway": "El descanso no es pereza. Es una parte necesaria de la vida que nos ayuda a recargar."
+        },
+        {
+          "conversation_id": "cactus_10",
+          "sort_order": 10,
+          "question": "¡Ha sido encantador estar aquí contigo! Recuerda: protege tu energía, llénate cuando puedas y descansa sin culpa. ¿Te cuidarás bien, compañero?",
+          "yes_response": "¡Yeehaw! Tienes el corazón de un sabio cactus del desierto. Cuídate primero, y tendrás mucho para compartir con otros. ¡Florece cuando estés listo, descansa cuando lo necesites! ¡Mantente firme, amigo! 🌵",
+          "no_response": "¡Está bien, compañero! El autocuidado es una habilidad que crece con el tiempo. Empieza pequeño — una hora extra de sueño, una cosa que te llene. ¡Poco a poco, aprenderás a proteger esa preciosa energía tuya! 🌵",
+          "key_takeaway": "Proteger nuestra energía y practicar el autocuidado nos ayuda a vivir mejor y dar más a otros."
+        }
+      ]
+    },
+    {
+      "npc_id": "serena_snake",
+      "npc_name": "Serena Serpiente",
+      "emoji": "🐍",
+      "species": "Serpiente",
+      "topic": "Dejar Viejos Patrones y Crecimiento",
+      "unlock_level": 67,
+      "conversations": [
+        {
+          "conversation_id": "snake_01",
+          "sort_order": 1,
+          "question": "¡Hola, amigo! ¡Soy Serena! ¿Sabías que mudo mi piel mientras crezco? Mi vieja piel se pone muy apretada, ¡así que la dejo atrás y revelo una nueva yo fresca debajo! ¿Alguna vez has dejado atrás algo — como ropa vieja o viejas formas de hacer las cosas?",
+          "yes_response": "¡Eso es parte de crecer! Igual que mi vieja piel ya no me queda, a veces nuestros viejos hábitos, creencias o formas de ser no le quedan a quien nos estamos convirtiendo. Es natural dejar atrás cosas — ¡significa que estás creciendo!",
+          "no_response": "¡Lo harás! Mientras creces, cosas que antes te quedaban — ropa, ideas, hábitos, hasta amistades — podrían empezar a sentirse muy apretadas. Eso no es malo, es solo crecimiento. ¡Cuando las cosas ya no quedan, podría ser hora de mudarlas!",
+          "key_takeaway": "Dejar atrás cosas es natural. Significa que estamos creciendo y cambiando."
+        },
+        {
+          "conversation_id": "snake_02",
+          "sort_order": 2,
+          "question": "Mudar mi piel es incómodo — ¡pica y toma tiempo! Pero debajo hay hermosa piel nueva. El cambio puede ser incómodo, ¿verdad?",
+          "yes_response": "¡Realmente puede serlo! El cambio a menudo se siente raro o hasta doloroso mientras está pasando. Pero que algo sea incómodo no significa que sea malo. A veces la incomodidad es el precio del crecimiento. ¡La nueva piel debajo vale la pena!",
+          "no_response": "Si el cambio alguna vez se siente incómodo para ti, ¡recuerda que es normal! El crecimiento a menudo se siente extraño mientras está pasando. La parte de picazón e incomodidad es temporal — el nuevo tú debajo vale la espera.",
+          "key_takeaway": "El cambio y el crecimiento pueden sentirse incómodos, pero la incomodidad es temporal y vale la pena."
+        },
+        {
+          "conversation_id": "snake_03",
+          "sort_order": 3,
+          "question": "No puedo quedarme con mi vieja piel — tiene que salir completamente antes de que pueda moverme libremente de nuevo. A veces tenemos que soltar completamente las cosas viejas antes de poder abrazar las nuevas. ¿Te es difícil soltar cosas viejas?",
+          "yes_response": "¡Soltar es difícil para casi todos! Las cosas viejas se sienten familiares, aunque ya no nos queden. Pero aferrarnos a lo que ya no nos sirve puede frenarnos. A veces soltar es lo más valiente que podemos hacer.",
+          "no_response": "¡Esa es una habilidad maravillosa! Poder soltar cuando es tiempo te libera para avanzar. No todos pueden hacerlo fácilmente, así que atesora esa habilidad. ¡Te servirá bien mientras creces!",
+          "key_takeaway": "A veces debemos soltar completamente las cosas viejas antes de poder abrazar las nuevas."
+        },
+        {
+          "conversation_id": "snake_04",
+          "sort_order": 4,
+          "question": "No solo mi cuerpo crece — mis hábitos y comportamientos también cambian. ¡Cosas que hacía de serpiente joven ya no funcionan para mí ahora! ¿Notas que lo que funciona para ti cambia mientras creces?",
+          "yes_response": "¡Ya eres consciente de esto! Lo que nos ayudó en una etapa de la vida podría no funcionar en otra. Estar dispuesto a probar nuevos enfoques mientras crecemos es parte de madurar. ¡Estás mudando viejos patrones hermosamente!",
+          "no_response": "¡Empezarás a notarlo! Quizás antes necesitabas una luz de noche pero ya no. O quizás una vieja forma de manejar problemas ya no funciona. ¡Eso no es fracaso — es crecimiento! Nuestras estrategias evolucionan como nosotros.",
+          "key_takeaway": "Lo que funciona para nosotros cambia mientras crecemos. Estar dispuesto a probar nuevos enfoques es parte de madurar."
+        },
+        {
+          "conversation_id": "snake_05",
+          "sort_order": 5,
+          "question": "Después de mudar, estoy un poco sensible y vulnerable por un tiempo. Mi nueva piel necesita tiempo para fortalecerse. Después de grandes cambios en tu vida, ¿te das tiempo para ajustarte?",
+          "yes_response": "¡Eso es muy sabio! Después de soltar cosas viejas, necesitamos tiempo para asentarnos en lo nuevo. Ser gentil con nosotros mismos durante las transiciones nos ayuda a salir más fuertes. ¡Entiendes el ritmo del cambio!",
+          "no_response": "¡Es algo para intentar! Después de un gran cambio — nueva escuela, nuevo grupo de amigos, cualquier cosa nueva — necesitamos tiempo para ajustarnos. Sé paciente contigo mismo durante estos tiempos. ¡Todavía estás creciendo tu nueva piel!",
+          "key_takeaway": "Después de grandes cambios, necesitamos tiempo para ajustarnos. Ser gentil con nosotros mismos durante las transiciones es importante."
+        },
+        {
+          "conversation_id": "snake_06",
+          "sort_order": 6,
+          "question": "Algunas criaturas piensan que mudar significa que estoy perdiendo una parte de mí. ¡Pero no me estoy perdiendo — me estoy convirtiendo en MÁS de mí! Cuando cambias y creces, ¿te preocupa perder quién eres?",
+          "yes_response": "¡Ese es un miedo común! Pero aquí está la verdad: no te pierdes a ti mismo cuando creces. El núcleo de ti — tu corazón, tu espíritu — sigue igual. ¡Solo te estás convirtiendo en una versión más grande y más fuerte de ti mismo!",
+          "no_response": "¡Ese es un sentimiento firme! Saber que el crecimiento nos suma en lugar de quitarnos es poderoso. Sigues siendo tú, solo con más experiencia, sabiduría y crecimiento. ¡Sigue abrazando el cambio!",
+          "key_takeaway": "El crecimiento no significa perdernos a nosotros mismos. Significa convertirnos más en quienes realmente somos."
+        },
+        {
+          "conversation_id": "snake_07",
+          "sort_order": 7,
+          "question": "No puedo apresurar mi muda — tengo que esperar hasta que mi cuerpo esté listo. ¡Tampoco puedes forzarte a estar listo para el cambio! ¿Confías en que cambiarás cuando estés listo?",
+          "yes_response": "¡Esa es una confianza pacífica! El cambio pasa en su propio tiempo. Podemos prepararnos para él, pero no podemos forzarlo. Confiar en tu propio tiempo ayuda a que el proceso pase naturalmente. ¡Eres paciente con tu propio crecimiento!",
+          "no_response": "¡Está bien si esto es difícil! A menudo queremos apresurar el crecimiento o el cambio. Pero algunas cosas no se pueden apresurar. Confía en que estás creciendo al ritmo correcto para TI. Tu tiempo es tuyo.",
+          "key_takeaway": "No podemos forzarnos a estar listos para el cambio. El crecimiento pasa en su propio tiempo."
+        },
+        {
+          "conversation_id": "snake_08",
+          "sort_order": 8,
+          "question": "Después de mudar, veo el mundo más claramente — ¡mi vieja piel estaba cubriendo mis ojos! A veces las viejas creencias o hábitos también cubren nuestros ojos. ¿Alguna vez te diste cuenta de que algo que creías no era realmente verdad?",
+          "yes_response": "¡Ese es un despertar poderoso! Todos cargamos creencias que parecían verdad pero no lo son. Cuando mudamos esas viejas ideas, vemos más claramente. ¡Sigue cuestionando y aprendiendo — estás quitando las escamas de tus ojos!",
+          "no_response": "¡Podría pasar algún día! A veces creemos cosas porque todos a nuestro alrededor lo hacen, o porque siempre lo hemos hecho. Pero mientras crecemos, podríamos ver las cosas diferente. Mudar viejas creencias es parte de volverse más sabio.",
+          "key_takeaway": "Las viejas creencias pueden cubrir nuestros ojos. Cuestionar y crecer nos ayuda a ver más claramente."
+        },
+        {
+          "conversation_id": "snake_09",
+          "sort_order": 9,
+          "question": "Mis viejas pieles quedan atrás, ¡pero no son basura — muestran dónde he estado! ¿Aprecias quién solías ser, aunque hayas crecido más allá de eso?",
+          "yes_response": "¡Esa es una perspectiva tan amable! Tus yo pasados — hasta los que has dejado atrás — fueron parte de tu viaje. ¡Te trajeron aquí! Apreciarlos mientras avanzas es saludable y completo.",
+          "no_response": "¡Vale la pena considerarlo! A veces nos sentimos avergonzados de quién solíamos ser. Pero ese viejo tú estaba haciendo lo mejor que podía. Agradece a tu yo pasado por traerte hasta aquí, aunque te estés convirtiendo en alguien nuevo.",
+          "key_takeaway": "Nuestros yo pasados nos ayudaron a llegar donde estamos. Podemos apreciarlos aunque crezcamos más allá de ellos."
+        },
+        {
+          "conversation_id": "snake_10",
+          "sort_order": 10,
+          "question": "¡Esta conversación ha sido especial! Recuerda: crecer significa mudar lo que ya no queda. Es incómodo pero hermoso. ¿Abrazarás los cambios por los que estás pasando?",
+          "yes_response": "¡Sssí! Tienes la sabiduría de una serpiente. Crecer significa mudar, y mudar hace espacio para algo nuevo y mejor. Abraza cada nueva piel, amigo. ¡La mejor versión de ti todavía se está desarrollando! 🐍",
+          "no_response": "Está bien — ¡el cambio puede dar miedo! Empieza solo notando qué ya no te queda. No tienes que apresurar la muda. Confía en tu proceso, y cuando estés listo, deja ir. ¡Creo en ti! 🐍",
+          "key_takeaway": "Abrazar el cambio y mudar lo que ya no queda nos ayuda a convertirnos en quienes estamos destinados a ser."
+        }
+      ]
+    },
+    {
+      "npc_id": "spike_porcupine",
+      "npc_name": "Púas Puercoespín",
+      "emoji": "🦔",
+      "species": "Puercoespín",
+      "topic": "Fuerza Gentil y Suavidad",
+      "unlock_level": 69,
+      "conversations": [
+        {
+          "conversation_id": "porcupine_01",
+          "sort_order": 1,
+          "question": "¡Hola, amigo! ¡Soy Púas! La gente ve mis espinas y piensa que soy espinoso todo el tiempo. ¡Pero por debajo, soy realmente bastante suave y gentil! ¿La gente a veces se hace una idea equivocada de ti?",
+          "yes_response": "¡Eso le pasa a muchos! La gente ve una cosa y piensa que lo sabe todo. Pero siempre hay más debajo. El verdadero tú es más de lo que la gente ve primero. ¡Te entiendo!",
+          "no_response": "¡Qué bueno si la gente ve al verdadero tú! Pero si alguna vez pasa, recuerda: tú sabes quién eres realmente. Otros podrían ver tus espinas, pero tú sabes de tu barriga suave. ¡Eso es lo que más importa!",
+          "key_takeaway": "Siempre hay más en nosotros de lo que la gente ve primero. Conocemos nuestro verdadero yo mejor."
+        },
+        {
+          "conversation_id": "porcupine_02",
+          "sort_order": 2,
+          "question": "Tengo espinas fuertes Y un corazón suave. ¡Ambas cosas son verdad sobre mí! ¿Sabes que ser fuerte y ser gentil no son opuestos — puedes ser ambos?",
+          "yes_response": "¡Entiendes algo importante! Las criaturas más fuertes que conozco también son gentiles. Se necesita verdadera fortaleza para ser amable, para ser suave, para cuidar de otros. ¡No eres débil cuando eres gentil — eres poderoso!",
+          "no_response": "¡Podría parecer que son opuestos, pero no lo son! Ser gentil requiere valor. Ser amable requiere fortaleza. Las criaturas más duras también pueden ser las más tiernas. ¡La verdadera fortaleza incluye suavidad!",
+          "key_takeaway": "Ser fuerte y ser gentil no son opuestos. La verdadera fortaleza incluye amabilidad y suavidad."
+        },
+        {
+          "conversation_id": "porcupine_03",
+          "sort_order": 3,
+          "question": "Mis espinas me protegen cuando necesito protección, ¡pero no voy por ahí pinchando a todos! Elijo cuándo ser filoso. ¿Sabes cuándo ser fuerte y cuándo ser suave?",
+          "yes_response": "¡Eso es sabiduría! Diferentes situaciones requieren diferentes respuestas. A veces necesitamos ser firmes y fuertes. Otras veces necesitamos ser gentiles y flexibles. ¡Saber cuál usar cuándo es una verdadera habilidad!",
+          "no_response": "¡Toma tiempo aprenderlo! El truco es prestar atención a lo que cada situación necesita. ¿Es este un momento para mantenerse firme? ¿O un momento para ser gentil? Ambos están bien — solo depende del momento.",
+          "key_takeaway": "Saber cuándo ser fuerte y cuándo ser suave es sabiduría. Diferentes situaciones necesitan diferentes respuestas."
+        },
+        {
+          "conversation_id": "porcupine_04",
+          "sort_order": 4,
+          "question": "Algunas criaturas piensan que ser suave es peligroso — se mantienen espinosas todo el tiempo para protegerse. ¡Pero estar siempre filoso aleja a otros! ¿A veces levantas espinas cuando realmente no lo necesitas?",
+          "yes_response": "¡Todos lo hacemos a veces! Cuando nos han lastimado, empezamos a esperar más daño. Pero mantenerse espinoso todo el tiempo mantiene afuera hasta las cosas buenas. Aprender cuándo es seguro suavizarse deja que las cosas buenas se acerquen.",
+          "no_response": "¡Qué encantador! Saber cuándo puedes bajar tus espinas y dejar entrar a otros es un regalo. Algunas criaturas están tan ocupadas protegiéndose que se pierden la conexión. ¡Parece que has encontrado el equilibrio!",
+          "key_takeaway": "Estar siempre a la defensiva aleja a otros. Aprender cuándo es seguro suavizarse deja que la conexión suceda."
+        },
+        {
+          "conversation_id": "porcupine_05",
+          "sort_order": 5,
+          "question": "He descubierto que mostrar mi lado suave a los amigos hace nuestra amistad más fuerte. ¡Ser vulnerable — mostrar quién realmente soy — construye confianza! ¿Te sientes cómodo mostrando tu lado más suave a personas en las que confías?",
+          "yes_response": "¡Eso es maravilloso! Poder ser vulnerable con personas de confianza es tan importante para la verdadera amistad. Se necesita valor para mostrar nuestra barriga suave, ¡pero ahí es donde las conexiones más profundas pasan!",
+          "no_response": "¡Puede dar miedo mostrar nuestras partes suaves! Nos preocupa que nos lastimen. Pero con las personas correctas — personas que se han ganado nuestra confianza — ser vulnerable crea conexiones más profundas. ¡Empieza pequeño con personas seguras!",
+          "key_takeaway": "Mostrar nuestro lado vulnerable a personas de confianza construye conexiones y amistades más profundas."
+        },
+        {
+          "conversation_id": "porcupine_06",
+          "sort_order": 6,
+          "question": "Algunas criaturas piensan que tienen que ser duros TODO el tiempo para ser respetados. ¡Pero he descubierto que mostrar gentileza en realidad hace que otros me respeten más! ¿Has notado esto?",
+          "yes_response": "¡Has visto la verdad! Actuar siempre duro puede verse débil — como si tuviéramos algo que esconder. La verdadera confianza incluye amabilidad y gentileza. ¡La gente respeta la autenticidad más que la dureza constante!",
+          "no_response": "¡Observa y empezarás a verlo! Las criaturas que solo son duras a menudo parecen asustadas por dentro. Las que pueden ser gentiles Y fuertes parecen más confiadas y reales. ¡La gentileza es una señal de verdadera fortaleza!",
+          "key_takeaway": "Mostrar gentileza puede ganar más respeto que actuar siempre duro. Muestra verdadera confianza."
+        },
+        {
+          "conversation_id": "porcupine_07",
+          "sort_order": 7,
+          "question": "Cuando accidentalmente lastimo a alguien con mis espinas, me siento muy mal. ¡No quiero ser hiriente — solo me estoy protegiendo! ¿A veces lastimas a otros cuando realmente solo estás tratando de protegerte?",
+          "yes_response": "¡Eso le pasa a muchos! Cuando estamos asustados o heridos, a veces atacamos, y otros se pinchan. Reconocer esto es el primer paso. Podemos aprender a protegernos sin lastimar a otros.",
+          "no_response": "¡Esa es buena consciencia! Pero si alguna vez pasa, intenta reconocerlo. A veces nuestro miedo o dolor nos hace filosos con otros. Ayuda pausar y preguntar: '¿Estoy siendo espinoso porque tengo miedo?'",
+          "key_takeaway": "A veces lastimamos a otros cuando realmente estamos tratando de protegernos. Podemos aprender formas más gentiles de sentirnos seguros."
+        },
+        {
+          "conversation_id": "porcupine_08",
+          "sort_order": 8,
+          "question": "Estoy aprendiendo que no tengo que elegir entre ser fuerte y ser amable. Puedo poner límites Y ser gentil al respecto. ¿Sabes que puedes defenderte de una manera amable?",
+          "yes_response": "¡Esa es una habilidad poderosa! No tenemos que ser malos para ser fuertes. Podemos decir no amablemente. Podemos poner límites con gentileza. ¡La firmeza y la amabilidad no son enemigos — funcionan hermosamente juntos!",
+          "no_response": "¡Es algo que vale la pena practicar! Puedes decir 'no' sin ser duro. Puedes mantener tu posición sin atacar. Algo como 'No estoy de acuerdo con eso, y lo digo con amabilidad.' ¡La fuerza gentil es poderosa!",
+          "key_takeaway": "Podemos defendernos y poner límites mientras seguimos siendo amables y gentiles."
+        },
+        {
+          "conversation_id": "porcupine_09",
+          "sort_order": 9,
+          "question": "Las criaturas que más admiro son aquellas que son lo suficientemente fuertes para ser gentiles. ¡Se necesita verdadero valor para ser suave! ¿Ves la gentileza como un tipo de valentía?",
+          "yes_response": "¡Sí! Ser gentil en un mundo que a menudo premia la dureza es increíblemente valiente. Elegir la amabilidad cuando es más fácil ser duro, mantenerse suave cuando otros son filosos — eso es valor. ¡Lo ves claramente!",
+          "no_response": "¡Piénsalo! Cualquiera puede ser rudo o duro — eso es fácil. Pero mantenerse amable cuando estás herido, mantenerse gentil cuando otros son malos — eso requiere verdadera fortaleza. ¡La suavidad en un mundo duro es verdadera valentía!",
+          "key_takeaway": "La gentileza es una forma de valentía. Mantenerse suave en un mundo duro requiere verdadero valor."
+        },
+        {
+          "conversation_id": "porcupine_10",
+          "sort_order": 10,
+          "question": "¡Nuestro tiempo juntos ha sido encantador! Recuerda: puedes ser fuerte Y suave, firme Y amable. Tus espinas te protegen, pero tu gentileza te conecta. ¿Abrazarás tanto tu fortaleza como tu suavidad?",
+          "yes_response": "¡Maravilloso! Tienes el corazón de un sabio puercoespín — espinoso cuando es necesario, gentil cuando es posible. Ese equilibrio te servirá bien en la vida. ¡Mantente suave por dentro, amigo, aunque la vida sea dura! 🦔",
+          "no_response": "¡Está bien! Encontrar ese equilibrio toma tiempo. Empieza notando cuándo estás siendo espinoso — ¿realmente lo necesitas? A veces podemos bajar nuestras espinas y dejar que otros se acerquen. ¡Creo en tu fuerza gentil! 🦔",
+          "key_takeaway": "Abrazar tanto nuestra fortaleza como nuestra suavidad nos ayuda a protegernos mientras nos mantenemos conectados con otros."
+        }
+      ]
+    },
+    {
+      "npc_id": "luna_bat",
+      "npc_name": "Luna Murciélago",
+      "emoji": "🌙",
+      "species": "Murciélago",
+      "topic": "Descanso en Tiempos Ocupados y Autocompasión",
+      "unlock_level": 71,
+      "conversations": [
+        {
+          "conversation_id": "bat_01",
+          "sort_order": 1,
+          "question": "¡Hola, amigo de la noche! Soy Luna. Mientras el desierto está ocupado durante el día, yo estoy descansando — ¡colgada de cabeza y durmiendo! El descanso es muy importante para mí. ¿Descansas suficiente?",
+          "yes_response": "¡Eso es maravilloso! El descanso es cuando nuestros cuerpos sanan y nuestras mentes procesan todo lo que hemos aprendido. Proteger tu tiempo de descanso es una de las mejores cosas que puedes hacer por ti mismo. ¡Sigue así!",
+          "no_response": "No estás solo — ¡muchas criaturas no descansan suficiente! Siempre estamos ocupados, siempre haciendo. Pero sin descanso, nuestros cuerpos y mentes no pueden funcionar al máximo. ¡Encontrar formas de descansar más ayudará con todo!",
+          "key_takeaway": "El descanso es esencial para que nuestros cuerpos y mentes funcionen bien. No es pereza — es necesidad."
+        },
+        {
+          "conversation_id": "bat_02",
+          "sort_order": 2,
+          "question": "Soy más activa en la noche cuando está fresco y tranquilo. ¡He aprendido a trabajar CON mi naturaleza en lugar de contra ella! ¿Sabes cuándo trabajas mejor, y honras eso?",
+          "yes_response": "¡Ese es un maravilloso autoconocimiento! Algunas criaturas piensan mejor en la mañana, otras en la noche. Algunas necesitan silencio, otras les gusta el ruido. ¡Trabajar con tu naturaleza en lugar de contra ella te ayuda a hacer tu mejor trabajo!",
+          "no_response": "¡Vale la pena descubrirlo! Presta atención a cuándo te sientes más alerta y cuándo te sientes cansado. Algunos somos criaturas de la mañana, algunos de la noche. ¡Trabajar con tus ritmos naturales hace todo más fácil!",
+          "key_takeaway": "Saber cuándo y cómo trabajamos mejor, y honrar eso, nos ayuda a ser más efectivos."
+        },
+        {
+          "conversation_id": "bat_03",
+          "sort_order": 3,
+          "question": "Aunque el desierto está ocupado y ruidoso durante el día, tomo mi descanso de todos modos. ¡No espero condiciones perfectas! ¿Esperas a que todo sea perfecto antes de cuidarte?",
+          "yes_response": "¡Muchos lo hacemos! 'Descansaré cuando termine.' 'Comeré cuando acabe.' ¡Pero siempre hay más que hacer! Cuidarte no necesita condiciones perfectas. Mereces descanso y cuidado justo en medio de lo ocupado!",
+          "no_response": "¡Eso es saludable! Entiendes que no siempre podemos esperar el momento perfecto. La vida siempre está ocupada, así que tenemos que hacer tiempo para nosotros mismos aunque las cosas no sean ideales. ¡Sigue cuidándote!",
+          "key_takeaway": "No podemos esperar condiciones perfectas para descansar. Cuidarnos pasa en medio de la vida ocupada."
+        },
+        {
+          "conversation_id": "bat_04",
+          "sort_order": 4,
+          "question": "Algunas criaturas piensan que soy perezosa porque duermo mucho. ¡Pero dormir ES mi trabajo durante el día — me prepara para mi trabajo de noche! ¿La gente a veces piensa que eres perezoso cuando realmente solo estás descansando?",
+          "yes_response": "¡Puede sentirse injusto cuando otros no entienden! Pero tú sabes lo que tu cuerpo necesita. El descanso no es pereza — es preparación. Los atletas descansan para rendir, los estudiantes descansan para aprender. ¡Estás haciendo un trabajo importante cuando descansas!",
+          "no_response": "¡Qué bueno! Pero si alguna vez pasa, recuerda: descansar no es ser perezoso. Es cómo recargamos para poder hacer todo lo demás. ¡Ignora a cualquiera que te haga sentir mal por cuidar tus necesidades!",
+          "key_takeaway": "El descanso no es pereza. Es cómo nos preparamos para todo lo demás que necesitamos hacer."
+        },
+        {
+          "conversation_id": "bat_05",
+          "sort_order": 5,
+          "question": "Cuando estoy volando en la noche y me canso, tomo pequeños descansos. ¡No me presiono hasta estrellarme! ¿Tomas descansos cuando los necesitas, o sigues adelante hasta que no puedes más?",
+          "yes_response": "¿Cuál suena como tú? Si tomas descansos, ¡genial! Si sigues hasta estrellarte, vale la pena notarlo. Tomar pequeños descansos en el camino previene grandes colapsos. ¡En realidad es MÁS productivo pausar!",
+          "no_response": "¡Buena consciencia de ti mismo! Muchos seguimos hasta colapsar. Pero tomar pequeños descansos en el camino en realidad nos ayuda a hacer más a largo plazo. ¡Como tomar sorbos de agua durante el día en lugar de esperar hasta estar muriendo de sed!",
+          "key_takeaway": "Tomar pequeños descansos en el camino previene grandes colapsos y nos ayuda a hacer más en general."
+        },
+        {
+          "conversation_id": "bat_06",
+          "sort_order": 6,
+          "question": "He aprendido a ser amable conmigo misma. Cuando no atrapo tantos insectos como quería, no me castigo — solo intento de nuevo mañana. ¿Eres amable contigo mismo cuando las cosas no van bien?",
+          "yes_response": "¡La autocompasión es tan valiosa! Todos tenemos días malos y fracasos. Tratarte con amabilidad cuando las cosas salen mal te ayuda a recuperarte más rápido. Eres tu propio mejor amigo. ¡Sigue siendo gentil contigo mismo!",
+          "no_response": "¡Muchos somos duros con nosotros mismos! Nos decimos cosas dentro de nuestras cabezas que nunca le diríamos a un amigo. Intenta tratarte como tratarías a alguien que amas. ¡La autocompasión no es debilidad — nos ayuda a crecer!",
+          "key_takeaway": "Ser amable con nosotros mismos cuando las cosas salen mal nos ayuda a recuperarnos más rápido e intentar de nuevo."
+        },
+        {
+          "conversation_id": "bat_07",
+          "sort_order": 7,
+          "question": "Colgarme de cabeza es cómo me relajo — ¡podría parecer extraño para otros, pero funciona para mí! ¿Tienes tus propias formas de relajarte que podrían parecer inusuales para otros?",
+          "yes_response": "¡Lo que funciona para ti es la forma correcta! La relajación no es una-talla-para-todos. A algunas criaturas les gusta el silencio, a algunas les gusta la música. Algunas necesitan quietud, algunas necesitan movimiento. ¡Tu forma de recargar es válida!",
+          "no_response": "¡Podrías descubrir algunas! La relajación se ve diferente para todos. Quizás te relajas dibujando, o caminando, o construyendo cosas. No hay forma equivocada de descansar — ¡encuentra lo que funciona para TU cuerpo y mente!",
+          "key_takeaway": "La relajación se ve diferente para todos. Lo que funciona para nosotros es la forma correcta."
+        },
+        {
+          "conversation_id": "bat_08",
+          "sort_order": 8,
+          "question": "A veces mi mente está ocupada aunque mi cuerpo esté descansando. ¡Las preocupaciones dan vueltas! Cuando eso pasa, respiro lentamente y dejo que los pensamientos floten como nubes. ¿Tu mente se mantiene ocupada aunque estés descansando?",
+          "yes_response": "¡Eso es muy común! Nuestras mentes no siempre se apagan cuando queremos. El truco es no pelear contra los pensamientos — solo notarlos y dejarlos pasar. Son solo pensamientos, como nubes flotando. Se moverán.",
+          "no_response": "¡Qué mente tan pacífica! Si alguna vez se pone ocupada, recuerda que los pensamientos son como nubes — vienen y van. No tienes que aferrarte a ellos o empujarlos. Solo míralos flotar. ¡Esto se llama atención plena!",
+          "key_takeaway": "Cuando nuestras mentes están ocupadas, podemos dejar pasar los pensamientos como nubes en lugar de luchar contra ellos."
+        },
+        {
+          "conversation_id": "bat_09",
+          "sort_order": 9,
+          "question": "El descanso no es solo dormir — también es hacer cosas que me llenan en lugar de vaciarme. ¡El juego puede ser descanso! ¿Qué actividades se sienten como descanso para tu alma, aunque sean activas?",
+          "yes_response": "¡Conoces el descanso de tu alma! Quizás es jugar, crear, leer o estar con amigos. Estas cosas podrían usar energía, pero también DAN energía. Son un tipo diferente de descanso. ¡Sigue haciendo lo que te llena!",
+          "no_response": "¡Algo para explorar! El descanso no es solo estar quieto. ¿Qué te hace sentir refrescado después? Eso es descanso para tu alma, aunque estuvieras moviéndote o activo. ¡Encuentra esas cosas y atesóralas!",
+          "key_takeaway": "El descanso no es solo dormir. Las actividades que nos llenan y refrescan también son formas de descanso."
+        },
+        {
+          "conversation_id": "bat_10",
+          "sort_order": 10,
+          "question": "La luna está saliendo, ¡y es hora de que vuele! Recuerda: el descanso es importante, los descansos son sabios, y ser amable contigo mismo es fortaleza. ¿Cuidarás mejor de tu descanso y serás gentil contigo mismo?",
+          "yes_response": "¡Hermoso! Tienes la sabiduría de un murciélago — sabiendo que el descanso no es opcional, es esencial. Toma tus descansos, háblate con amabilidad y honra tu necesidad de paz. ¡Vuela gentilmente por la vida, amigo de la noche! 🌙",
+          "no_response": "¡Está bien! El autocuidado es una práctica. Empieza con una cosa — quizás una hora más de sueño, o un pensamiento amable sobre ti mismo. Los pequeños cambios se suman. ¡Vales la pena cuidarte! 🌙",
+          "key_takeaway": "El descanso es esencial, no opcional. Ser gentil con nosotros mismos nos ayuda a navegar mejor la vida."
+        }
+      ]
+    }
+  ]
+}

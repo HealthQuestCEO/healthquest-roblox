@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "version": "3.0",
+    "description": "Habitaciones del castillo para Lumo's Land - Sistema de desbloqueo por nivel",
+    "lastUpdated": "2025-12-07",
+    "notes": "Las habitaciones se desbloquean GRATIS en xpLevel. Los artículos para cada habitación se compran en el Rincón."
+  },
+  "rooms": [
+    {
+      "id": "bedroom",
+      "name": "Dormitorio",
+      "code": "BDRM",
+      "description": "Tu acogedor dormitorio personal",
+      "unlockType": "default",
+      "xpLevel": 1,
+      "coinPrice": 0,
+      "unlockedItems": [],
+      "isDefault": true
+    },
+    {
+      "id": "kitchen",
+      "name": "Cocina",
+      "code": "KTCH",
+      "description": "Una cocina completamente equipada para cocinar saludable",
+      "unlockType": "default",
+      "xpLevel": 1,
+      "coinPrice": 0,
+      "unlockedItems": [],
+      "isDefault": true
+    },
+    {
+      "id": "living-room",
+      "name": "Sala de Estar",
+      "code": "LVRM",
+      "description": "Un espacio cómodo para relajarse",
+      "unlockType": "default",
+      "xpLevel": 1,
+      "coinPrice": 0,
+      "unlockedItems": [],
+      "isDefault": true
+    },
+    {
+      "id": "style-closet",
+      "name": "Armario de Estilo",
+      "code": "STYL",
+      "description": "Tu armario personal de moda",
+      "unlockType": "default",
+      "xpLevel": 1,
+      "coinPrice": 0,
+      "unlockedItems": [],
+      "isDefault": true
+    },
+    {
+      "id": "game-room",
+      "name": "Sala de Juegos",
+      "code": "GAME",
+      "description": "Una habitación divertida llena de juegos y entretenimiento",
+      "unlockType": "xp",
+      "xpLevel": 12,
+      "coinPrice": 0,
+      "unlockedItems": ["GAME-001", "GAME-002", "GAME-003", "GAME-004", "GAME-005", "GAME-006", "GAME-007", "GAME-008"],
+      "isDefault": false
+    },
+    {
+      "id": "library",
+      "name": "Biblioteca",
+      "code": "LIBR",
+      "description": "Un espacio tranquilo para leer y aprender",
+      "unlockType": "xp",
+      "xpLevel": 18,
+      "coinPrice": 0,
+      "unlockedItems": ["LIBR-001", "LIBR-002", "LIBR-003", "LIBR-004", "LIBR-005", "LIBR-006"],
+      "isDefault": false
+    },
+    {
+      "id": "music-studio",
+      "name": "Estudio de Música",
+      "code": "MUSC",
+      "description": "Crea música hermosa en tu propio estudio",
+      "unlockType": "xp",
+      "xpLevel": 22,
+      "coinPrice": 0,
+      "unlockedItems": ["MUSC-001", "MUSC-002", "MUSC-003", "MUSC-004", "MUSC-005"],
+      "isDefault": false
+    },
+    {
+      "id": "art-gallery",
+      "name": "Galería de Arte",
+      "code": "ARTG",
+      "description": "Exhibe tus creaciones artísticas",
+      "unlockType": "xp",
+      "xpLevel": 28,
+      "coinPrice": 0,
+      "unlockedItems": ["ARTG-001", "ARTG-002", "ARTG-003", "ARTG-004"],
+      "isDefault": false
+    },
+    {
+      "id": "gym",
+      "name": "Gimnasio",
+      "code": "GYMS",
+      "description": "Mantente en forma con tu espacio personal de ejercicio",
+      "unlockType": "xp",
+      "xpLevel": 32,
+      "coinPrice": 0,
+      "unlockedItems": ["GYMS-001", "GYMS-002", "GYMS-003", "GYMS-004", "GYMS-005", "GYMS-006"],
+      "isDefault": false
+    },
+    {
+      "id": "greenhouse",
+      "name": "Invernadero",
+      "code": "GRNH",
+      "description": "Cultiva plantas y hierbas saludables",
+      "unlockType": "xp",
+      "xpLevel": 36,
+      "coinPrice": 0,
+      "unlockedItems": ["GRNH-001", "GRNH-002", "GRNH-003", "GRNH-004"],
+      "isDefault": false
+    }
+  ]
+}

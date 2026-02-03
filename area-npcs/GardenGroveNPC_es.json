@@ -1,0 +1,687 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "description": "Sistema de NPCs de Garden Grove con 7 NPCs y 70 conversaciones - COMPLETO",
+    "lastUpdated": "2025-12-04",
+    "portal_id": "garden-grove",
+    "portal_name": "Jardín del Bosque",
+    "total_npcs": 7,
+    "conversations_per_npc": 10,
+    "total_conversations": 70,
+    "daily_xp_cap": 300,
+    "xp_per_conversation": 75,
+    "max_conversations_per_day": 4,
+    "theme": "Crecimiento, cuidado y expresión creativa",
+    "language": "es",
+    "translated_from": "en",
+    "translated_at": "2026-01-30"
+  },
+
+  "npcs": [
+    {
+      "npc_id": "bella_butterfly",
+      "npc_name": "Bella la Mariposa",
+      "emoji": "🦋",
+      "species": "Mariposa",
+      "topic": "Expresión Creativa y Arteterapia",
+      "unlock_level": 27,
+      "background": {
+        "default": "garden_grove_butterfly.jpg",
+        "alternates": ["garden_grove_flowers.jpg"],
+        "backgroundColor": "#e1bee7"
+      },
+      "conversations": [
+        {
+          "conversation_id": "butterfly_01",
+          "sort_order": 1,
+          "question": "¿Te gusta hacer arte o crear cosas?",
+          "yes_response": "¡Qué maravilloso! Crear es una forma poderosa de expresarte.",
+          "no_response": "¡Está bien! El arte tiene muchas formas, ¡hasta los garabatos cuentan!",
+          "key_takeaway": "La expresión creativa te ayuda a compartir sentimientos e ideas."
+        },
+        {
+          "conversation_id": "butterfly_02",
+          "sort_order": 2,
+          "question": "¿Alguna vez te has sentido mejor después de dibujar o hacer algo?",
+          "yes_response": "¡El arte puede ser muy sanador! Le da un lugar a tus sentimientos.",
+          "no_response": "¡Inténtalo alguna vez! Hasta los garabatos pueden mejorar tu ánimo.",
+          "key_takeaway": "El arte puede ayudarte a procesar emociones y sentirte más tranquilo."
+        },
+        {
+          "conversation_id": "butterfly_03",
+          "sort_order": 3,
+          "question": "¿Crees que hay una forma correcta o incorrecta de hacer arte?",
+          "yes_response": "En realidad, ¡el arte se trata de expresarte, no hay forma incorrecta!",
+          "no_response": "¡Exacto! El arte es personal y único para ti.",
+          "key_takeaway": "Tu arte es válido sin importar cómo se vea."
+        },
+        {
+          "conversation_id": "butterfly_04",
+          "sort_order": 4,
+          "question": "¿Has intentado usar colores para mostrar cómo te sientes?",
+          "yes_response": "¡Los colores son increíbles para expresar emociones!",
+          "no_response": "¿Quieres intentarlo? ¡Elige un color que coincida con tu estado de ánimo hoy!",
+          "key_takeaway": "Los colores pueden representar diferentes sentimientos y estados de ánimo."
+        },
+        {
+          "conversation_id": "butterfly_05",
+          "sort_order": 5,
+          "question": "¿Te sientes orgulloso cuando terminas de crear algo?",
+          "yes_response": "¡Deberías estarlo! Cada creación es un logro.",
+          "no_response": "Intenta notar ese sentimiento la próxima vez, ¡es especial!",
+          "key_takeaway": "Completar un proyecto creativo construye confianza."
+        },
+        {
+          "conversation_id": "butterfly_06",
+          "sort_order": 6,
+          "question": "¿Alguna vez has hecho arte solo por diversión, sin mostrárselo a nadie?",
+          "yes_response": "¡Esa es pura alegría creativa! El arte para ti mismo es poderoso.",
+          "no_response": "¡Inténtalo! El arte privado puede ser muy liberador.",
+          "key_takeaway": "Crear para ti mismo es tan valioso como compartir."
+        },
+        {
+          "conversation_id": "butterfly_07",
+          "sort_order": 7,
+          "question": "¿Crees que el arte puede ayudarte a entenderte mejor?",
+          "yes_response": "¡Sí! El arte revela cosas que no sabíamos que estábamos pensando.",
+          "no_response": "Es verdad, el arte puede mostrarte lo que hay dentro de tu corazón.",
+          "key_takeaway": "La expresión creativa ayuda con el autodescubrimiento."
+        },
+        {
+          "conversation_id": "butterfly_08",
+          "sort_order": 8,
+          "question": "¿Alguna vez has usado el arte para calmarte cuando estás molesto?",
+          "yes_response": "¡Esa es una estrategia maravillosa para afrontar las cosas!",
+          "no_response": "Inténtalo la próxima vez, dibujar puede calmar los sentimientos grandes.",
+          "key_takeaway": "El arte puede ser una forma saludable de manejar las emociones."
+        },
+        {
+          "conversation_id": "butterfly_09",
+          "sort_order": 9,
+          "question": "¿Te sientes seguro expresándote a través de la creatividad?",
+          "yes_response": "¡Qué hermoso! El arte debería sentirse como un espacio seguro.",
+          "no_response": "Recuerda: tu espacio creativo es solo tuyo, es seguro.",
+          "key_takeaway": "La expresión creativa es una zona libre de juicios."
+        },
+        {
+          "conversation_id": "butterfly_10",
+          "sort_order": 10,
+          "question": "¿Puedes ver cómo has cambiado al mirar tu arte antiguo?",
+          "yes_response": "¡Tu viaje artístico muestra tu crecimiento!",
+          "no_response": "Intenta mirar atrás alguna vez, ¡verás lo lejos que has llegado!",
+          "key_takeaway": "Tu trabajo creativo es un registro de tu viaje personal."
+        }
+      ]
+    },
+    {
+      "npc_id": "buzz_bee",
+      "npc_name": "Buzz la Abeja",
+      "emoji": "🐝",
+      "species": "Abeja",
+      "topic": "Trabajo en Equipo y Colaboración",
+      "unlock_level": 29,
+      "background": {
+        "default": "garden_grove_hive.jpg",
+        "alternates": ["garden_grove_flowers.jpg"],
+        "backgroundColor": "#fff9c4"
+      },
+      "conversations": [
+        {
+          "conversation_id": "bee_01",
+          "sort_order": 1,
+          "question": "¿Te gusta trabajar con otros en proyectos?",
+          "yes_response": "¡El trabajo en equipo hace que los sueños se hagan realidad! Juntos somos más fuertes.",
+          "no_response": "¡Está bien! Algunas cosas son mejores hacerlas solo.",
+          "key_takeaway": "La colaboración puede ayudarnos a lograr metas más grandes."
+        },
+        {
+          "conversation_id": "bee_02",
+          "sort_order": 2,
+          "question": "¿Alguna vez has ayudado a alguien y te has sentido bien por ello?",
+          "yes_response": "¡Ayudar a otros crea una conexión hermosa!",
+          "no_response": "¡Inténtalo! Ayudar se siente muy bien por dentro.",
+          "key_takeaway": "Contribuir a un equipo te da propósito y alegría."
+        },
+        {
+          "conversation_id": "bee_03",
+          "sort_order": 3,
+          "question": "¿Crees que todos tienen algo valioso que aportar?",
+          "yes_response": "¡Absolutamente! Cada persona trae fortalezas únicas.",
+          "no_response": "¡Es verdad! Incluso las pequeñas contribuciones importan mucho.",
+          "key_takeaway": "El rol de cada uno en un equipo es importante."
+        },
+        {
+          "conversation_id": "bee_04",
+          "sort_order": 4,
+          "question": "¿Has pedido ayuda cuando la necesitaste?",
+          "yes_response": "¡Eso es trabajo en equipo inteligente! Pedir ayuda es valiente.",
+          "no_response": "Recuerda: ¡los buenos equipos se apoyan entre sí!",
+          "key_takeaway": "Pedir ayuda hace más fuerte a todo el equipo."
+        },
+        {
+          "conversation_id": "bee_05",
+          "sort_order": 5,
+          "question": "¿Celebras cuando tu equipo tiene éxito juntos?",
+          "yes_response": "¡Sí! El éxito compartido es el más dulce.",
+          "no_response": "¡Inténtalo la próxima vez! Celebrar juntos crea lazos.",
+          "key_takeaway": "Celebrar los triunfos del equipo fortalece las relaciones."
+        },
+        {
+          "conversation_id": "bee_06",
+          "sort_order": 6,
+          "question": "¿Has escuchado las ideas de otra persona en un grupo?",
+          "yes_response": "¡Escuchar bien es esencial para el trabajo en equipo!",
+          "no_response": "¡Inténtalo! Podrías escuchar algo increíble.",
+          "key_takeaway": "Escuchar a otros crea mejores soluciones."
+        },
+        {
+          "conversation_id": "bee_07",
+          "sort_order": 7,
+          "question": "¿Sabes qué rol desempeñas mejor en un grupo?",
+          "yes_response": "¡Conocer tus fortalezas te ayuda a contribuir bien!",
+          "no_response": "Piénsalo, ¿eres un líder, un ayudante o un organizador?",
+          "key_takeaway": "Entender tu rol ayuda a tu equipo a tener éxito."
+        },
+        {
+          "conversation_id": "bee_08",
+          "sort_order": 8,
+          "question": "¿Has animado a alguien más en tu equipo?",
+          "yes_response": "¡El ánimo hace que los equipos prosperen!",
+          "no_response": "¡Inténtalo! Tus palabras pueden levantar a alguien.",
+          "key_takeaway": "Apoyar a los compañeros de equipo crea energía positiva."
+        },
+        {
+          "conversation_id": "bee_09",
+          "sort_order": 9,
+          "question": "¿Trabajas mejor cuando todos se sienten incluidos?",
+          "yes_response": "¡Sí! La inclusión hace equipos más fuertes y felices.",
+          "no_response": "¡Es verdad! Todos deberían sentir que pertenecen.",
+          "key_takeaway": "Los equipos inclusivos son más creativos y efectivos."
+        },
+        {
+          "conversation_id": "bee_10",
+          "sort_order": 10,
+          "question": "¿Puedes apreciar diferentes perspectivas en tu equipo?",
+          "yes_response": "¡Las diferentes opiniones crean mejores ideas y soluciones!",
+          "no_response": "Recuerda: ¡la diversidad de pensamiento hace equipos innovadores!",
+          "key_takeaway": "Las perspectivas diversas llevan a mejores resultados."
+        }
+      ]
+    },
+    {
+      "npc_id": "flora_hummingbird",
+      "npc_name": "Flora el Colibrí",
+      "emoji": "🌺",
+      "species": "Colibrí",
+      "topic": "Atención Plena en la Naturaleza",
+      "unlock_level": 31,
+      "background": {
+        "default": "garden_grove_flowers.jpg",
+        "alternates": ["garden_grove_sunrise.jpg"],
+        "backgroundColor": "#f8bbd0"
+      },
+      "conversations": [
+        {
+          "conversation_id": "hummingbird_01",
+          "sort_order": 1,
+          "question": "¡Hola, pequeño amigo! Soy Flora. Me encanta detenerme y notar cosas pequeñas, como el olor de una flor o cómo se siente el viento. ¿Alguna vez te has detenido a notar algo pequeño en la naturaleza?",
+          "yes_response": "¡Oh, qué maravilloso! Cuando nos detenemos y notamos las cosas pequeñas, es como encontrar tesoros escondidos en todas partes. ¡Una mariquita en una hoja, el sonido de la lluvia, una brisa fresca, todos son pequeños regalos! ¿Qué cosa pequeña has notado últimamente?",
+          "no_response": "¡Está bien! A veces puede ser difícil detenerse. Aquí hay una idea divertida: la próxima vez que estés afuera, intenta encontrar una cosa pequeña, tal vez una piedrita bonita o un pequeño insecto. ¡Es como una búsqueda del tesoro! Podrías sorprenderte de lo que descubres.",
+          "key_takeaway": "Detenerse a notar las cosas pequeñas en la naturaleza puede ayudarnos a sentirnos tranquilos y encontrar alegría en los momentos cotidianos."
+        },
+        {
+          "conversation_id": "hummingbird_02",
+          "sort_order": 2,
+          "question": "¡A veces mis alas se mueven tan rápido que olvido descansar! ¿Alguna vez sientes que te mueves muy rápido y tu mente está zumbando con muchos pensamientos?",
+          "yes_response": "¡Conozco ese sentimiento! Cuando mi mente zumba demasiado, encuentro una flor y tomo tres respiraciones lentas. Inhalo por mi pico, exhalo por mi pico. Me ayuda a sentirme más tranquila. ¿Quieres intentarlo conmigo ahora mismo? Inhala... y exhala...",
+          "no_response": "¡Qué bien que te sientas tranquilo! Algunos días son así. Pero si alguna vez te sientes zumbando y ocupado por dentro, recuerda que siempre puedes detenerte y tomar algunas respiraciones lentas. Es como darle un pequeño descanso a tu cerebro.",
+          "key_takeaway": "Cuando nuestras mentes se sienten ocupadas, la respiración lenta puede ayudarnos a sentirnos tranquilos de nuevo."
+        },
+        {
+          "conversation_id": "hummingbird_03",
+          "sort_order": 3,
+          "question": "Me encanta escuchar los sonidos del jardín: abejas zumbando, hojas susurrando, pájaros cantando. ¿Alguna vez cierras los ojos y solo escuchas los sonidos a tu alrededor?",
+          "yes_response": "¡Eres un gran oyente! Los sonidos son como la música de la naturaleza. Algunos son fuertes, algunos son suaves, algunos están cerca, algunos están lejos. Escuchar así ayuda a nuestras mentes a tomar un descanso de pensar tanto. ¡Es como unas pequeñas vacaciones para tu cerebro!",
+          "no_response": "¿Quieres intentarlo ahora? Cierra los ojos por un momento. ¿Qué escuchas? Tal vez un ventilador zumbando, o alguien hablando, o autos afuera. No hay respuesta incorrecta, ¡solo nota! Esto se llama escucha consciente, y puede ayudarte a sentirte en paz.",
+          "key_takeaway": "Escuchar los sonidos a nuestro alrededor es una forma simple de practicar la atención plena y sentirnos más en paz."
+        },
+        {
+          "conversation_id": "hummingbird_04",
+          "sort_order": 4,
+          "question": "Cuando bebo néctar de una flor, intento realmente saborearlo, ¡tan dulce! ¿A veces comes tu comida muy rápido sin saborearla mucho?",
+          "yes_response": "¡Yo también lo hago a veces! Nos ocupamos o emocionamos. Pero aquí hay algo divertido para intentar: la próxima vez que comas algo rico, toma un bocado lento. Nota si es dulce o salado, crujiente o suave. ¡Es como ser un detective de comida! Podrías disfrutarlo aún más.",
+          "no_response": "¡Vaya, ya eres bueno para ir despacio! Saborear nuestra comida lentamente puede hacer que comer sea más divertido. También ayuda a nuestra barriga a decirnos cuándo estamos llenos. ¡Sigue disfrutando tu comida así!",
+          "key_takeaway": "Comer despacio y notar cómo sabe la comida puede hacer las comidas más agradables y ayudarnos a escuchar a nuestros cuerpos."
+        },
+        {
+          "conversation_id": "hummingbird_05",
+          "sort_order": 5,
+          "question": "Tengo una flor favorita que visito todos los días. ¡Me hace feliz solo verla! ¿Tienes un lugar especial en la naturaleza que te haga sentir bien?",
+          "yes_response": "¡Eso es muy especial! Tener un lugar favorito en la naturaleza es como tener un amigo que siempre está ahí. Cuando lo visites, intenta notar algo nuevo cada vez: un nuevo color, un nuevo olor, un nuevo sonido. ¡Tu lugar especial tiene muchos secretos que compartir!",
+          "no_response": "¡Está bien! Puedes encontrar uno en cualquier momento. Podría ser un árbol cerca de tu casa, un pedazo de césped, o incluso una ventana donde puedas ver el cielo. Empieza a buscar, y un lugar podría empezar a sentirse extra especial para ti.",
+          "key_takeaway": "Tener un lugar especial en la naturaleza nos da un lugar a donde ir cuando necesitamos sentirnos tranquilos y felices."
+        },
+        {
+          "conversation_id": "hummingbird_06",
+          "sort_order": 6,
+          "question": "A veces me siento preocupada por las cosas. Cuando eso pasa, miro las nubes y las veo flotar. ¿Alguna vez te sientes preocupado o ansioso?",
+          "yes_response": "¡Casi todos se sienten preocupados a veces, incluso los colibríes! Aquí hay algo que me ayuda: pretendo que mis preocupaciones son como nubes. Las noto, pero no me aferro a ellas. Las dejo flotar por el cielo. Tus preocupaciones no tienen que quedarse para siempre.",
+          "no_response": "¡Qué bien que te sientas tranquilo ahora mismo! Pero si alguna vez te sientes preocupado, recuerda las nubes. Las preocupaciones son como nubes: vienen y van. Puedes notarlas sin aferrarte fuerte. Se irán flotando.",
+          "key_takeaway": "Las preocupaciones vienen y van como nubes en el cielo. Podemos notarlas sin aferrarnos a ellas."
+        },
+        {
+          "conversation_id": "hummingbird_07",
+          "sort_order": 7,
+          "question": "¿Alguna vez has sentido tus pies en el césped o la arena y realmente notado cómo se siente?",
+          "yes_response": "¿No es increíble? Césped fresco, arena tibia, piedras irregulares: ¡tus pies pueden sentir tantas cosas! Esto se llama conexión a tierra. Cuando notas cómo se sienten tus pies, ayuda a traer tu mente de vuelta al aquí y ahora. ¡Es como magia!",
+          "no_response": "¡Oh, deberías intentarlo! La próxima vez que puedas, quítate los zapatos y siente el suelo. ¿Es suave? ¿Frío? ¿Irregular? Notar estos sentimientos ayuda a tu mente a tomar un descanso y sentirse tranquila. ¡Se llama conexión a tierra!",
+          "key_takeaway": "Sentir nuestros pies en el suelo nos ayuda a sentirnos tranquilos y conectados con el momento presente."
+        },
+        {
+          "conversation_id": "hummingbird_08",
+          "sort_order": 8,
+          "question": "Me gusta empezar mis mañanas estirando mis alas bajo el sol. ¿Tienes algo agradable que haces cuando despiertas?",
+          "yes_response": "¡Qué maravilloso! Las rutinas matutinas ayudan a nuestros cuerpos y mentes a despertar felices. Ya sea estirándote, mirando por la ventana, o simplemente tomando una respiración profunda, empezar despacio y suave es un regalo que te das a ti mismo cada día.",
+          "no_response": "Las mañanas pueden ser apresuradas, ¡lo sé! Pero aquí hay una idea: mañana, antes de saltar de la cama, intenta tomar tres respiraciones profundas o darte un pequeño estiramiento. Solo toma un momento, ¡pero puede hacer que todo tu día se sienta mejor!",
+          "key_takeaway": "Empezar la mañana con algo tranquilo y suave puede ayudar a que todo el día se sienta mejor."
+        },
+        {
+          "conversation_id": "hummingbird_09",
+          "sort_order": 9,
+          "question": "A veces cuando vuelo rápido, olvido mirar el hermoso jardín a mi alrededor. ¿Alguna vez te ocupas tanto que olvidas notar las cosas bonitas?",
+          "yes_response": "¡Nos pasa a todos! La vida se pone ocupada. Pero aquí hay un pequeño juego: intenta encontrar tres cosas hermosas cada día. Pueden ser pequeñas: un color bonito, una sonrisa amable, un olor rico. ¡Entrena a tu cerebro para notar las cosas buenas!",
+          "no_response": "¡Debes ser muy bueno prestando atención! Esa es una habilidad especial. Sigue notando las cosas hermosas a tu alrededor: son como pequeños regalos que el mundo nos da cada día.",
+          "key_takeaway": "Incluso cuando estamos ocupados, podemos entrenarnos para notar las cosas hermosas a nuestro alrededor."
+        },
+        {
+          "conversation_id": "hummingbird_10",
+          "sort_order": 10,
+          "question": "¡Estoy tan feliz de haber hablado contigo! Ser consciente (notar las cosas pequeñas, respirar lentamente, sentir nuestros sentimientos) son superpoderes que nos ayudan a sentirnos bien. ¿Intentarás usar tus superpoderes de atención plena esta semana?",
+          "yes_response": "¡Yay! ¡Estoy tan orgullosa de ti! Recuerda, no tienes que hacerlo perfectamente. Solo intenta un poquito cada día. Nota una cosa, toma una respiración lenta, siente tus pies en el suelo. ¡Los pequeños momentos suman grandes sentimientos de calma! ¡Vuela alto, amigo! 🌺",
+          "no_response": "¡Está bien! La atención plena siempre está ahí cuando estés listo. Incluso si solo recuerdas una cosa de lo que hablamos, como tomar una respiración lenta o notar una nube bonita, eso es suficiente. ¡Lo estás haciendo muy bien! ¡Vuelve a visitarme cuando quieras! 🌺",
+          "key_takeaway": "La atención plena es un superpoder que podemos practicar poco a poco. ¡Los pequeños momentos de calma suman!"
+        }
+      ]
+    },
+    {
+      "npc_id": "dotty_ladybug",
+      "npc_name": "Dotty la Mariquita",
+      "emoji": "🐞",
+      "species": "Mariquita",
+      "topic": "Autoimagen Positiva y Confianza",
+      "unlock_level": 33,
+      "background": {
+        "default": "garden_grove_default.jpg",
+        "alternates": ["garden_grove_flowers.jpg"],
+        "backgroundColor": "#ffcdd2"
+      },
+      "conversations": [
+        {
+          "conversation_id": "ladybug_01",
+          "sort_order": 1,
+          "question": "¡Hola, amigo! ¡Soy Dotty! ¿Ves mis manchas? Algunas mariquitas tienen muchas manchas, algunas tienen solo unas pocas. ¡Todas somos diferentes, y eso es maravilloso! ¿Sabes qué te hace especial y diferente a TI?",
+          "yes_response": "¡Qué increíble que sepas lo que te hace especial! Ya sea tu sonrisa, tus ideas, tu amabilidad, o algo más, esas cosas son como tus propias manchas especiales. Nadie más tiene exactamente lo que tú tienes. ¡Eso es genial!",
+          "no_response": "¡Está bien! A veces toma tiempo ver nuestras propias manchas especiales. Aquí hay un secreto: ¡todos las tienen! Tal vez sea cómo haces reír a la gente, o lo mucho que te esfuerzas, o cómo te preocupas por los demás. ¡Descubramos tus manchas especiales juntos!",
+          "key_takeaway": "Todos tienen cualidades especiales que los hacen únicos, como las manchas de una mariquita."
+        },
+        {
+          "conversation_id": "ladybug_02",
+          "sort_order": 2,
+          "question": "Algunos insectos solían burlarse de mí porque mis manchas se veían diferentes. Me hizo sentir triste. ¿Alguien ha dicho algo alguna vez que hirió tus sentimientos sobre cómo te ves?",
+          "yes_response": "Lamento que eso haya pasado. ¡Las palabras realmente pueden doler! Pero esto es lo que aprendí: lo que otros dicen de mí no cambia quién soy realmente por dentro. Mis manchas son perfectas para MÍ. ¿Y tú? Eres perfecto para TI. Sus palabras no deciden eso.",
+          "no_response": "¡Me alegra que no hayas sentido eso! Si alguna vez pasa, recuerda esto: lo que alguien dice de ti no cambia lo increíble que eres. Sus palabras son sobre ellos, no sobre ti. ¡Tú decides cómo te sientes contigo mismo!",
+          "key_takeaway": "Lo que otros dicen de nosotros no define quiénes somos realmente. Nosotros decidimos cómo nos sentimos con nosotros mismos."
+        },
+        {
+          "conversation_id": "ladybug_03",
+          "sort_order": 3,
+          "question": "Cuando me miro en un charco y veo mi reflejo, intento pensar pensamientos amables sobre mí misma. ¿Alguna vez piensas pensamientos amables sobre ti cuando te miras en un espejo?",
+          "yes_response": "¡Qué maravilloso! Pensar pensamientos amables sobre nosotros mismos es como darle un abrazo a nuestros corazones. ¡Sigue haciéndolo! Tus ojos, tu sonrisa, todo tu ser merece amabilidad, de otros Y de ti.",
+          "no_response": "¡A veces puede ser difícil! Aquí hay algo que puedes intentar: la próxima vez que te veas, encuentra UNA cosa que te guste. Tal vez sean tus ojos, tu cabello, o tu sonrisa. Empieza con solo un pensamiento amable. ¡Así es como comienza!",
+          "key_takeaway": "Ser amables con nosotros mismos en nuestros propios pensamientos es importante y algo que podemos practicar."
+        },
+        {
+          "conversation_id": "ladybug_04",
+          "sort_order": 4,
+          "question": "Solía desear verme como las mariposas, ¡tan coloridas y elegantes! Pero luego aprendí que ser una mariquita también es especial. ¿Alguna vez deseas verte como alguien más?",
+          "yes_response": "¡Entiendo ese sentimiento! Pero esto es lo que descubrí: si fuera una mariposa, no sería YO. ¡Y solo hay una yo en todo el mundo! Lo mismo contigo. Solo hay un TÚ, y ese es tu superpoder. El mundo te necesita, tal como eres.",
+          "no_response": "¡Esa es una forma genial de sentirse! Estar feliz con quién eres es un tipo especial de fortaleza. Sabes que ser TÚ es lo mejor que puedes ser. ¡Guarda ese sentimiento cerca de tu corazón!",
+          "key_takeaway": "Solo hay un TÚ en todo el mundo, y ese es tu superpoder."
+        },
+        {
+          "conversation_id": "ladybug_05",
+          "sort_order": 5,
+          "question": "Mis alas son pequeñas, ¡pero me llevan a donde necesito ir! Nuestros cuerpos hacen tantas cosas increíbles por nosotros. ¿Puedes pensar en algo increíble que tu cuerpo hace por ti?",
+          "yes_response": "¡Sí! ¡Nuestros cuerpos son increíbles! Nos ayudan a correr, abrazar a las personas que amamos, saborear comida rica, escuchar música, y mucho más. Cuando pensamos en lo que nuestros cuerpos PUEDEN hacer, nos sentimos agradecidos en lugar de preocupados. ¡Tu cuerpo trabaja para ti cada día!",
+          "no_response": "¡Déjame ayudarte a pensar! ¿Tu cuerpo te ayuda a caminar? ¿Respirar? ¿Ver colores? ¿Escuchar tus canciones favoritas? ¿Dar abrazos? Cada cosa que tu cuerpo hace es increíble. ¡Trabaja muy duro para ti cada día sin que siquiera lo pidas!",
+          "key_takeaway": "Nuestros cuerpos hacen cosas increíbles por nosotros cada día. Podemos sentirnos agradecidos por lo que pueden hacer."
+        },
+        {
+          "conversation_id": "ladybug_06",
+          "sort_order": 6,
+          "question": "A veces cometo errores, ¡como volar hacia una flor por accidente! ¿Alguna vez te sientes mal contigo mismo cuando cometes errores?",
+          "yes_response": "Está bien sentirse un poco mal, pero recuerda esto: los errores no significan que seamos malos. ¡Significan que estamos aprendiendo! Cada insecto en este jardín ha cometido errores. Es como crecemos. Sé gentil contigo mismo. Todavía estás aprendiendo, ¡y eso está perfectamente bien!",
+          "no_response": "¡Esa es una forma muy saludable de pensar! Entiendes que los errores son solo parte de aprender, no algo por lo cual sentirse mal. Sigue siendo amable contigo mismo cuando las cosas no salen perfectas. ¡Eso es verdadera sabiduría!",
+          "key_takeaway": "Los errores no significan que seamos malos, significan que estamos aprendiendo y creciendo."
+        },
+        {
+          "conversation_id": "ladybug_07",
+          "sort_order": 7,
+          "question": "Me gusta decirme cosas bonitas, como 'Soy una buena amiga' o 'Hago mi mejor esfuerzo'. ¡Estas se llaman afirmaciones positivas! ¿Alguna vez te dices cosas bonitas a ti mismo?",
+          "yes_response": "¡Qué maravilloso! Las palabras que nos decimos a nosotros mismos importan mucho. ¡Sigue diciéndote cosas buenas! 'Soy amable. Soy valiente. Soy suficiente.' Estas palabras son como sol para tu corazón. ¡Te ayudan a crecer fuerte por dentro!",
+          "no_response": "¿Quieres intentarlo conmigo? Repite después de mí en tu mente: 'Soy especial. Soy suficiente. Estoy aprendiendo y creciendo.' ¿Cómo se sintió eso? Estas palabras pueden sentirse raras al principio, pero entre más las dices, ¡más tu corazón las cree!",
+          "key_takeaway": "Las afirmaciones positivas, palabras amables que nos decimos a nosotros mismos, nos ayudan a sentirnos seguros y fuertes."
+        },
+        {
+          "conversation_id": "ladybug_08",
+          "sort_order": 8,
+          "question": "El jardín tiene todo tipo de insectos: grandes, pequeños, rápidos, lentos. Todos somos diferentes, ¡y el jardín nos necesita a todos! ¿Alguna vez te comparas con otros?",
+          "yes_response": "¡Todos lo hacemos a veces! Pero comparar es como pedirle a una mariquita que sea una mariposa, ¡no tiene sentido! Cada uno tiene sus propios dones. En lugar de comparar, intenta preguntar: '¿Qué es especial sobre MÍ?' ¡Esa es una pregunta mucho mejor!",
+          "no_response": "¡Qué maravilloso! Entiendes que cada uno está en su propio camino. No hay necesidad de comparar porque todos somos diferentes a propósito. El jardín necesita mariquitas Y mariposas Y abejas, ¡y el mundo te necesita a TI!",
+          "key_takeaway": "Compararnos con otros no nos ayuda. Cada uno tiene sus propios dones especiales."
+        },
+        {
+          "conversation_id": "ladybug_09",
+          "sort_order": 9,
+          "question": "Cuando no estoy segura de mí misma, pienso en los amigos y la familia que me aman. ¿Tienes personas que te aman tal como eres?",
+          "yes_response": "¡Eso es muy especial! Las personas que te aman ven lo maravilloso que eres. Cuando olvides lo genial que eres, recuerda cómo ELLOS te ven. Te aman por TI, no por ser perfecto, solo por ser tú. ¡Ese amor es real!",
+          "no_response": "A veces es difícil de ver, pero hay personas que se preocupan por ti. Tal vez sea un familiar, un maestro, o un amigo. ¿Y sabes qué? ¡Yo también creo que eres genial! Eres digno de amor, tal como eres.",
+          "key_takeaway": "Las personas que nos aman ven nuestro verdadero valor. Somos dignos de amor tal como somos."
+        },
+        {
+          "conversation_id": "ladybug_10",
+          "sort_order": 10,
+          "question": "¡Me encantó hablar contigo! Recuerda: eres especial, eres suficiente, y no tienes que ser perfecto. ¿Intentarás ser tu propio buen amigo y pensar pensamientos amables sobre ti mismo?",
+          "yes_response": "¡Yay! Ser tu propio amigo es una de las cosas más importantes que puedes hacer. Cuando eres amable contigo mismo, puedes ser más amable con todos los demás también. ¡Vuela alto, pequeño amigo! ¡Eres increíble tal como eres! 🐞",
+          "no_response": "Está bien, ¡toma práctica! Solo recuerda, no tienes que creer cada pensamiento desagradable sobre ti mismo. Empieza pequeño. Un pensamiento amable a la vez. ¡Creo en ti! Vuelve a visitarme cuando necesites un recordatorio. 🐞",
+          "key_takeaway": "Ser nuestro propio buen amigo, pensar pensamientos amables sobre nosotros mismos, nos ayuda a sentirnos seguros y felices."
+        }
+      ]
+    },
+    {
+      "npc_id": "sunny_sunflower",
+      "npc_name": "Sunny el Girasol",
+      "emoji": "🌻",
+      "species": "Girasol",
+      "topic": "Optimismo y Esperanza",
+      "unlock_level": 35,
+      "background": {
+        "default": "garden_grove_golden_hour.jpg",
+        "alternates": ["garden_grove_sunrise.jpg"],
+        "backgroundColor": "#fff59d"
+      },
+      "conversations": [
+        {
+          "conversation_id": "sunflower_01",
+          "sort_order": 1,
+          "question": "¡Hola, rayito de sol! ¡Soy Sunny! ¿Sabías que siempre giro mi cara hacia el sol? Me mantiene feliz y me ayuda a crecer. ¿Intentas buscar el lado positivo cuando las cosas se ponen difíciles?",
+          "yes_response": "¡Ese es el espíritu! Buscar cosas buenas, incluso pequeñas, ayuda a que nuestros corazones se sientan más ligeros. No significa que pretendamos que las cosas difíciles no existen, significa que también notamos lo bueno. ¡Tú también eres como un pequeño girasol!",
+          "no_response": "¡Está bien! Cuando las cosas son difíciles, puede ser difícil ver algo bueno. Pero aquí hay un secreto: incluso en días nublados, el sol todavía está ahí arriba de las nubes. E incluso en tiempos difíciles, usualmente hay algo pequeño que está bien. ¡Practicaremos encontrarlo juntos!",
+          "key_takeaway": "Buscar cosas buenas, incluso pequeñas, ayuda a que nuestros corazones se sientan más ligeros durante tiempos difíciles."
+        },
+        {
+          "conversation_id": "sunflower_02",
+          "sort_order": 2,
+          "question": "A veces llegan tormentas al jardín. ¡La lluvia golpea y el viento sopla! Me asusto, pero sé que la tormenta pasará. ¿Alguna vez sientes que los tiempos difíciles durarán para siempre?",
+          "yes_response": "¡Entiendo ese sentimiento! Cuando estamos en medio de algo difícil, puede sentirse como que nunca terminará. Pero esto es lo que he aprendido: cada tormenta pasa. ¡Cada una! El sol siempre vuelve. Aguanta, amigo, vienen días mejores.",
+          "no_response": "¡Tienes un corazón esperanzado! Sabes que los tiempos difíciles no duran para siempre. Eso es algo muy poderoso de entender. Cuando otros se sientan atascados, puedes recordarles que las tormentas pasan y los días soleados regresan.",
+          "key_takeaway": "Los tiempos difíciles no duran para siempre. Como las tormentas, pasan, y vienen días mejores."
+        },
+        {
+          "conversation_id": "sunflower_03",
+          "sort_order": 3,
+          "question": "Cada noche oscurece, y no puedo ver el sol. ¡Pero nunca me preocupo, sé que la mañana llegará! Cuando algo decepcionante pasa, ¿crees que las cosas pueden mejorar?",
+          "yes_response": "¡Eso es esperanza! La esperanza es creer que las cosas buenas son posibles, incluso cuando no podemos verlas todavía. Es como saber que el sol saldrá incluso cuando está oscuro afuera. ¡Tu corazón esperanzado te llevará a través de tantas cosas!",
+          "no_response": "Cuando estamos decepcionados, es difícil imaginar que las cosas mejorarán. ¡Pero pueden! He visto tantas noches oscuras, y el sol ha salido cada vez. Las cosas pueden cambiar. Está bien empezar con solo un poquito de esperanza.",
+          "key_takeaway": "La esperanza significa creer que las cosas buenas son posibles, incluso cuando no podemos verlas todavía."
+        },
+        {
+          "conversation_id": "sunflower_04",
+          "sort_order": 4,
+          "question": "Antes de ser un gran girasol, era solo una pequeña semilla en la tierra oscura. No podía ver nada, ¡pero seguí creciendo de todos modos! ¿Alguna vez has trabajado en algo cuando no podías ver cómo resultaría?",
+          "yes_response": "¡Eso es valiente! A veces tenemos que dar pasos incluso cuando no sabemos exactamente qué pasará. Esa semilla no sabía que se convertiría en un girasol, pero siguió creciendo de todos modos. ¡Tus esfuerzos ahora están plantando semillas para tu futuro!",
+          "no_response": "¡Eso puede dar miedo! No saber cómo resultarán las cosas hace difícil incluso empezar. Pero recuérdame a mí: era una pequeña semilla en la oscuridad, ¡y ahora mírame! A veces tenemos que crecer un poco antes de poder ver la luz.",
+          "key_takeaway": "A veces crecemos hacia cosas buenas incluso antes de poder verlas."
+        },
+        {
+          "conversation_id": "sunflower_05",
+          "sort_order": 5,
+          "question": "Intento encontrar al menos una cosa buena cada día, incluso si es pequeña, como una abeja visitándome o la lluvia regando mis raíces. ¿Puedes pensar en una cosa buena que pasó hoy?",
+          "yes_response": "¡Maravilloso! Encontrar una cosa buena cada día es como coleccionar pequeños tesoros. Algunos días las cosas buenas son grandes, y algunos días son pequeñas. ¡Pero siempre están ahí! Sigue buscándolas, hace cada día más brillante.",
+          "no_response": "¡Pensemos juntos! ¿Comiste algo que te gustó? ¿Alguien te sonrió? ¿Viste algo bonito? ¡Incluso solo estar vivo y respirando es algo! Las cosas buenas no tienen que ser enormes. ¡Las pequeñas también cuentan!",
+          "key_takeaway": "Encontrar una cosa buena cada día, sin importar qué tan pequeña, hace que la vida se sienta más brillante."
+        },
+        {
+          "conversation_id": "sunflower_06",
+          "sort_order": 6,
+          "question": "Cuando mis pétalos se caen, sé que solo necesito algo de agua y sol. ¡No me rindo conmigo mismo! Cuando te sientes cansado o triste, ¿crees que puedes sentirte mejor de nuevo?",
+          "yes_response": "¡Esa es una creencia fuerte de tener! Cuando nos sentimos mal, no significa que estemos rotos. Solo significa que necesitamos algo, tal vez descanso, comida, un abrazo, o tiempo afuera. ¡Cuídate, y tus pétalos se levantarán de nuevo!",
+          "no_response": "A veces cuando estamos muy cansados o tristes, es difícil creer que nos sentiremos bien de nuevo. ¡Pero lo harás! Los sentimientos cambian, igual que el clima cambia. El sentimiento triste o cansado no se quedará para siempre. Solo necesitas un poco de cuidado, y eso está bien.",
+          "key_takeaway": "Cuando nos sentimos mal, no estamos rotos, solo necesitamos cuidado. Los sentimientos cambian como el clima."
+        },
+        {
+          "conversation_id": "sunflower_07",
+          "sort_order": 7,
+          "question": "¡Esparzo muchas semillas para que puedan crecer nuevos girasoles! Esperar y soñar también puede esparcirse. ¿Tienes un sueño o deseo para tu futuro?",
+          "yes_response": "¡Qué emocionante! Los sueños son como semillas: plántalos en tu corazón y cuídalos. Trabaja hacia ellos poco a poco. No todas las semillas crecen, pero las que cuidas tienen la mejor oportunidad. ¡Sigue soñando!",
+          "no_response": "¡Está bien! A veces todavía estamos descubriendo lo que queremos. Pero aquí hay una pregunta: ¿qué te haría sonreír en el futuro? ¿Qué te haría sentir orgulloso? Incluso una respuesta pequeña es el comienzo de un sueño. ¡Tienes tiempo para descubrirlo!",
+          "key_takeaway": "Los sueños son como semillas. Cuando los cuidamos, pueden crecer en algo hermoso."
+        },
+        {
+          "conversation_id": "sunflower_08",
+          "sort_order": 8,
+          "question": "Algunas de mis hojas tienen agujeros de insectos hambrientos, ¡pero todavía soy un hermoso girasol! ¿Sabes que no todo tiene que ser perfecto para que las cosas sean buenas?",
+          "yes_response": "¡Realmente lo entiendes! Perfecto no es real de todos modos. Podemos tener desafíos, errores, y partes desordenadas, ¡y aún así tener una vida maravillosa! Lo que importa es crecer e intentar, no ser perfecto. ¡Tus agujeros te hacen TÚ!",
+          "no_response": "A veces pensamos que las cosas tienen que estar perfectas antes de que puedan ser buenas. ¡Pero mírame, agujeros en mis hojas y todavía de pie! La vida puede ser buena incluso cuando no es perfecta. De hecho, ¡esa es la única forma en que la vida es!",
+          "key_takeaway": "La vida no tiene que ser perfecta para ser buena. Podemos prosperar incluso con imperfecciones."
+        },
+        {
+          "conversation_id": "sunflower_09",
+          "sort_order": 9,
+          "question": "Cuando miro hacia el sol, me siento cálido y fuerte. ¿Quién o qué te ayuda a sentirte cálido y fuerte por dentro, como tu sol?",
+          "yes_response": "¡Aférrate a esas personas y cosas! Son tu sol, te ayudan a crecer y sentirte fuerte. Cuando los días se nublan, recuerda tu sol. Deja que calienten tu corazón y te den fuerza. ¡Todos necesitan sol!",
+          "no_response": "Está bien, pensemos juntos. ¿Hay una persona que se preocupa por ti? ¿Un lugar donde te sientes seguro? ¿Una mascota, una canción, un recuerdo? Todos tienen algo de sol, incluso si es difícil de ver a veces. ¡Sigue buscando!",
+          "key_takeaway": "Las personas y cosas que nos hacen sentir amados y fuertes son nuestro sol. Todos necesitamos sol."
+        },
+        {
+          "conversation_id": "sunflower_10",
+          "sort_order": 10,
+          "question": "¡Has aprendido tanto sobre la esperanza! Recuerda: las tormentas pasan, las semillas crecen, y el sol vuelve. ¿Intentarás buscar puntos brillantes, incluso en días nublados?",
+          "yes_response": "¡Eso hace cantar a mis pétalos! Tienes un corazón esperanzado, y eso te ayudará a través de tantas cosas en la vida. Cuando los tiempos se pongan difíciles, recuerda nuestras charlas. ¡El sol siempre sale! ¡Brilla, pequeño amigo! 🌻",
+          "no_response": "Está bien, la esperanza es algo que crece con el tiempo. Tal vez hoy plantas solo una pequeña semilla de esperanza. ¡Eso es suficiente! Recuerda, no tienes que sentirte soleado todo el tiempo. Solo no te rindas. ¡Creo en ti! 🌻",
+          "key_takeaway": "La esperanza crece con el tiempo. Incluso un poquito de esperanza puede llevarnos a través de momentos difíciles."
+        }
+      ]
+    },
+    {
+      "npc_id": "patch_caterpillar",
+      "npc_name": "Patch la Oruga",
+      "emoji": "🐛",
+      "species": "Oruga",
+      "topic": "Cambio y Transformación",
+      "unlock_level": 37,
+      "background": {
+        "default": "garden_grove_default.jpg",
+        "alternates": ["garden_grove_flowers.jpg"],
+        "backgroundColor": "#c5e1a5"
+      },
+      "conversations": [
+        {
+          "conversation_id": "caterpillar_01",
+          "sort_order": 1,
+          "question": "¡Hola! ¡Soy Patch! Soy una oruga ahora, ¡pero un día me convertiré en mariposa! Los grandes cambios pueden ser emocionantes y aterradores. ¿Alguna vez has pasado por un gran cambio en tu vida?",
+          "yes_response": "¡El cambio puede sentirse como mucho! Una nueva escuela, un nuevo hogar, cosas nuevas en la familia: puede ser emocionante y aterrador al mismo tiempo. Eso es totalmente normal. Cada cambio nos ayuda a crecer, incluso cuando es difícil. ¡Eres más valiente de lo que sabes!",
+          "no_response": "¡Está bien! Los cambios, grandes y pequeños, le pasan a todos eventualmente. Cuando lo hagan, recuerda: el cambio no significa que algo está mal. Solo significa que la vida está avanzando. ¡Y puedes manejar más de lo que crees!",
+          "key_takeaway": "El cambio es una parte normal de la vida. Puede ser emocionante y aterrador al mismo tiempo."
+        },
+        {
+          "conversation_id": "caterpillar_02",
+          "sort_order": 2,
+          "question": "Pronto entraré en un capullo. ¡Estará oscuro y apretado, y no sabré exactamente qué me está pasando! ¿Alguna vez te sientes confundido o inseguro cuando las cosas están cambiando?",
+          "yes_response": "¡Eso es tan normal! Cuando estamos en medio de un cambio, puede sentirse confuso e incluso solitario. Pero aquí está la cosa: solo porque no entiendes lo que está pasando no significa que algo bueno no esté creciendo. ¡Confía en el proceso!",
+          "no_response": "Eres bastante tranquilo con el cambio, ¡esa es una gran fortaleza! Algunas personas se sienten muy confundidas durante los cambios, y eso también está bien. Si alguna vez te pasa, solo recuerda: incluso cuando las cosas son confusas, todavía estás creciendo.",
+          "key_takeaway": "Sentirse confundido durante el cambio es normal. Las cosas buenas pueden crecer incluso cuando no entendemos lo que está pasando."
+        },
+        {
+          "conversation_id": "caterpillar_03",
+          "sort_order": 3,
+          "question": "¡Voy a verme completamente diferente como mariposa! A veces me pregunto si todavía seré YO. Cuando las cosas cambian, ¿alguna vez te preocupas por perder quién eres?",
+          "yes_response": "¡Yo también lo siento a veces! Pero esto es lo que he aprendido: podemos cambiar y crecer por fuera, pero nuestros corazones recuerdan quiénes somos. Las cosas que te hacen TÚ, tu amabilidad, tu risa, tu amor, esas se quedan contigo a través de cada cambio.",
+          "no_response": "¡Ese es un sentimiento maravilloso de seguridad! Sabes quién eres, y eso no cambiará. Puedes crecer, aprender cosas nuevas, y verte diferente con el tiempo, pero tu verdadero yo, muy dentro, se queda contigo siempre.",
+          "key_takeaway": "Podemos cambiar y crecer mientras seguimos siendo nosotros mismos. Nuestro verdadero yo se queda con nosotros."
+        },
+        {
+          "conversation_id": "caterpillar_04",
+          "sort_order": 4,
+          "question": "Algunas orugas intentan luchar contra el cambio y evitar el capullo. Pero sé que tengo que pasar por él para convertirme en quien estoy destinada a ser. ¿A veces es difícil para ti aceptar que las cosas cambian?",
+          "yes_response": "¡Es difícil para casi todos! Nos ponemos cómodos, y luego las cosas cambian. Pero luchar contra el cambio usualmente lo hace más difícil. Lo mejor que podemos hacer es tomar una respiración profunda y atravesarlo un paso a la vez. ¡Tú puedes!",
+          "no_response": "¡Tienes una forma muy sabia de ver la vida! Aceptar el cambio no significa que te tiene que gustar todo el tiempo. Solo significa que lo dejas pasar sin luchar demasiado. Eso ayuda a que los cambios vayan más suavemente.",
+          "key_takeaway": "Aceptar el cambio, incluso cuando no nos gusta, nos ayuda a atravesarlo más suavemente."
+        },
+        {
+          "conversation_id": "caterpillar_05",
+          "sort_order": 5,
+          "question": "¡Crecer es uno de los cambios más grandes! ¡Pasaré de gatear a volar! ¿Hay cosas sobre crecer que te hacen sentir emocionado o preocupado?",
+          "yes_response": "¡Crecer es una mezcla de emoción y preocupación para la mayoría de nosotros! Algunas cosas serán increíbles: más libertad, nuevas aventuras. Algunas pueden sentirse aterradoras: más responsabilidad, cosas más difíciles. Ambos sentimientos están bien. ¡Lo irás descubriendo sobre la marcha!",
+          "no_response": "¡Está bien! Ya sea que te sientas emocionado, preocupado, o simplemente sin pensar mucho en ello, todo eso es normal. Crecer pasa un día a la vez. No tienes que tenerlo todo resuelto ahora mismo.",
+          "key_takeaway": "Crecer trae sentimientos emocionantes y aterradoras. Eso es normal, y lo vamos descubriendo sobre la marcha."
+        },
+        {
+          "conversation_id": "caterpillar_06",
+          "sort_order": 6,
+          "question": "Tengo que soltar ser una oruga para convertirme en mariposa. A veces el cambio significa decir adiós a cosas viejas. ¿Alguna vez has tenido que soltar algo para hacer espacio para algo nuevo?",
+          "yes_response": "¡Soltar puede ser muy difícil! Un juguete viejo, un lugar donde vivías, un amigo que se mudó. Está bien sentirse triste por lo que dejamos atrás. Pero soltar también puede hacer espacio para cosas nuevas y maravillosas. ¡Ambas cosas son verdad!",
+          "no_response": "¡Está bien! Cuando pase, solo sabe que soltar no significa olvidar. Guardamos el amor y los recuerdos en nuestros corazones. Y cuando soltamos, hacemos espacio para nuevas aventuras. Es parte de crecer.",
+          "key_takeaway": "Soltar cosas viejas es difícil pero hace espacio para cosas nuevas. Guardamos nuestros recuerdos en nuestros corazones."
+        },
+        {
+          "conversation_id": "caterpillar_07",
+          "sort_order": 7,
+          "question": "Mientras estoy cambiando en mi capullo, no puedo apurarlo. ¡Tengo que ser paciente! ¿Es difícil para ti ser paciente cuando estás esperando que algo pase o cambie?",
+          "yes_response": "¡Esperar es TAN difícil! Cuando queremos que algo cambie o pase, el tiempo se siente tan lento. Pero algunas cosas no pueden apurarse, como una oruga convirtiéndose en mariposa. Practica tomarlo un día a la vez. ¡Ya casi llegas!",
+          "no_response": "¡Vaya, la paciencia es una verdadera fortaleza! No todos la tienen. Ser paciente significa confiar en que las cosas saldrán bien, incluso cuando toma tiempo. ¡Guarda ese corazón tranquilo, te ayudará a través de muchas cosas!",
+          "key_takeaway": "Ser paciente durante el cambio es difícil pero importante. Algunas cosas no pueden apurarse."
+        },
+        {
+          "conversation_id": "caterpillar_08",
+          "sort_order": 8,
+          "question": "No todos los cambios se sienten bien al principio. Algunos son difíciles o tristes. Pero incluso los cambios difíciles pueden ayudarnos a crecer más fuertes. ¿Alguna vez has pasado por un cambio difícil que te hizo más fuerte?",
+          "yes_response": "¡Eso muestra verdadero coraje! Los cambios difíciles pueden enseñarnos cosas que no podríamos aprender de otra manera. Nos muestran lo fuertes que realmente somos. Está bien que fue difícil, lo que importa es que seguiste adelante. ¡Eso es fuerza!",
+          "no_response": "¡Está bien! Tal vez no has tenido un cambio realmente difícil todavía, o tal vez no notaste cómo te hizo más fuerte. Pero sabe esto: cuando pasan cosas difíciles, no solo nos lastiman. También nos enseñan y nos ayudan a crecer.",
+          "key_takeaway": "Los cambios difíciles pueden enseñarnos y hacernos más fuertes, incluso cuando no se sienten bien al principio."
+        },
+        {
+          "conversation_id": "caterpillar_09",
+          "sort_order": 9,
+          "question": "A veces tengo miedo de convertirme en mariposa. ¿Y si no puedo volar? ¿Y si extraño ser oruga? ¿Alguna vez sientes miedo de lo que viene después en tu vida?",
+          "yes_response": "¡Yo también! El miedo sobre el futuro es muy común. No sabemos exactamente qué viene, y eso da miedo. Pero aquí hay un secreto: has manejado cada cosa nueva en tu vida hasta ahora. También manejarás las próximas cosas. ¡Confía en ti mismo!",
+          "no_response": "¡Qué bien que no te sientas asustado ahora mismo! Pero si el miedo alguna vez aparece, no te preocupes, es normal. Tener miedo no significa que no puedas hacer algo. Solo significa que es nuevo e importante. ¡Lo descubrirás!",
+          "key_takeaway": "El miedo sobre el futuro es normal. Hemos manejado cosas nuevas antes y podemos hacerlo de nuevo."
+        },
+        {
+          "conversation_id": "caterpillar_10",
+          "sort_order": 10,
+          "question": "¡Hablar contigo ha sido maravilloso! Recuerda: el cambio es parte de la vida, y eres lo suficientemente fuerte para crecer a través de él. ¿Intentarás ver los cambios como oportunidades para crecer y convertirte en quien estás destinado a ser?",
+          "yes_response": "¡Eso hace tan feliz a mi pequeño corazón de oruga! El cambio no siempre es fácil, pero es cómo nos convertimos en nuestro mejor yo. Como una mariposa saliendo de un capullo, tus alas también están creciendo. ¡Ábrelas bien! 🐛🦋",
+          "no_response": "¡Está bien! Algunos cambios son realmente difíciles de aceptar. Solo recuerda: no tienes que amar el cambio para superarlo. Solo tienes que seguir adelante, un día a la vez. ¡Creo en ti! ¡Sigue adelante, valiente amigo! 🐛",
+          "key_takeaway": "Los cambios son oportunidades para crecer y convertirnos en quienes estamos destinados a ser. Todos nos estamos convirtiendo en algo nuevo."
+        }
+      ]
+    },
+    {
+      "npc_id": "ivy_frog",
+      "npc_name": "Ivy la Rana",
+      "emoji": "🐸",
+      "species": "Rana Arbórea",
+      "topic": "Conciencia Ambiental y Conexión",
+      "unlock_level": 39,
+      "background": {
+        "default": "garden_grove_default.jpg",
+        "alternates": ["garden_grove_rainy.jpg"],
+        "backgroundColor": "#a5d6a7"
+      },
+      "conversations": [
+        {
+          "conversation_id": "frog_01",
+          "sort_order": 1,
+          "question": "¡Croac! ¡Hola amigo! ¡Soy Ivy! Me encanta vivir en este jardín. Las plantas me dan sombra, el estanque me da agua, y yo me como los insectos. ¡Todos nos necesitamos! ¿Alguna vez piensas en cómo estás conectado con la naturaleza?",
+          "yes_response": "¡Qué maravilloso! Todos somos parte de una gran familia: personas, animales, plantas, agua y aire. Cuando recordamos eso, nos cuidamos mejor unos a otros. ¡Eres parte de algo mucho más grande que solo tú!",
+          "no_response": "¡Está bien! Déjame mostrarte. El aire que respiras viene de las plantas. El agua que bebes viene de la lluvia. La comida que comes creció de la tierra. ¡Estás conectado con la naturaleza todos los días, incluso si no lo notas!",
+          "key_takeaway": "Todos estamos conectados con la naturaleza: plantas, animales, agua y aire. Somos parte de una gran familia."
+        },
+        {
+          "conversation_id": "frog_02",
+          "sort_order": 2,
+          "question": "Vivo en un estanque, y necesito que el agua esté limpia para mantenerme saludable. ¿Sabías que el agua limpia también es importante para tu cuerpo?",
+          "yes_response": "¡Tienes razón! Nuestros cuerpos están hechos de mucha agua. Necesitamos agua limpia para beber, lavarnos y cultivar comida. ¡Cuando cuidamos el agua, nos cuidamos a nosotros mismos también! Cada sorbo nos conecta con ríos, nubes y lluvia.",
+          "no_response": "¡Realmente lo es! Tu cuerpo necesita agua para funcionar bien: para tu corazón, cerebro, músculos, ¡todo! Por eso mantener el agua limpia importa. Cuando protegemos el agua, nos protegemos a nosotros mismos y a todas las criaturas que la necesitan.",
+          "key_takeaway": "El agua limpia es importante para nuestros cuerpos y todos los seres vivos. Cuidar el agua es cuidarnos a nosotros mismos."
+        },
+        {
+          "conversation_id": "frog_03",
+          "sort_order": 3,
+          "question": "Estar afuera en la naturaleza siempre me hace sentir tranquila y feliz. ¿Alguna vez te sientes mejor después de pasar tiempo afuera?",
+          "yes_response": "¡La naturaleza tiene esa magia! Los científicos han descubierto que estar afuera, respirar aire fresco, escuchar pájaros, sentir el sol, realmente ayuda a nuestros cerebros a sentirse más tranquilos y felices. ¡Es como medicina que crece en los árboles! Sigue saliendo cuando puedas.",
+          "no_response": "¡Tal vez no lo has notado todavía! La próxima vez que estés afuera, presta atención a cómo te sientes. ¿Se siente bien el aire fresco? ¿Te gustan los sonidos? Incluso unos pocos minutos afuera pueden ayudar a nuestros cerebros a descansar. ¡Inténtalo!",
+          "key_takeaway": "Pasar tiempo en la naturaleza ayuda a nuestros cerebros a sentirse más tranquilos y felices. Es bueno para nuestro bienestar."
+        },
+        {
+          "conversation_id": "frog_04",
+          "sort_order": 4,
+          "question": "Cuando la basura termina en mi estanque, me enferma a mí y a mis amigos. ¿Alguna vez has visto basura afuera donde no debería estar?",
+          "yes_response": "¡Tristemente, pasa mucho! Pero aquí están las buenas noticias: ¡podemos ayudar! Recoger solo un pedazo de basura hace una diferencia. Usar menos plástico también ayuda. ¡Las pequeñas acciones de muchas personas suman grandes cambios!",
+          "no_response": "¡Qué suerte! Pero la basura a veces termina en la naturaleza y puede lastimar a los animales y plantas. Todos podemos ayudar poniendo la basura en el lugar correcto y usando menos cosas desechables. ¡Cada pequeña elección importa!",
+          "key_takeaway": "La basura puede lastimar la naturaleza. Las pequeñas acciones, como recoger basura, hacen una gran diferencia."
+        },
+        {
+          "conversation_id": "frog_05",
+          "sort_order": 5,
+          "question": "Las plantas en el jardín ayudan a limpiar el aire y nos dan sombra. ¡Son como ayudantes! ¿Sabes cómo las plantas ayudan a las personas?",
+          "yes_response": "¡Eres inteligente! Las plantas limpian el aire que respiramos, nos dan comida para comer, y les dan hogares a los animales. Nos mantienen frescos cuando hace calor y evitan que el suelo se lave. ¡Las plantas son algunos de los mejores ayudantes de la naturaleza!",
+          "no_response": "¡Déjame contarte! Las plantas inhalan el aire que nosotros exhalamos y exhalan el aire que necesitamos. También nos dan frutas, verduras y sombra. Sin plantas, no podríamos vivir. ¡Son como superhéroes de verde!",
+          "key_takeaway": "Las plantas nos ayudan limpiando el aire, dando comida y proporcionando sombra. Son los superhéroes de la naturaleza."
+        },
+        {
+          "conversation_id": "frog_06",
+          "sort_order": 6,
+          "question": "¡Me encanta comer mosquitos y moscas, ñam! Incluso criaturas pequeñas como yo tienen un trabajo importante en la naturaleza. ¿Crees que cada criatura importa, incluso los insectos?",
+          "yes_response": "¡Absolutamente! Incluso las criaturas que no nos gustan tienen un trabajo. Las abejas ayudan a las plantas a crecer. Los gusanos hacen que el suelo sea saludable. ¡Las moscas son comida para ranas como yo! Todos estamos conectados, y todos nos necesitamos.",
+          "no_response": "Lo entiendo, ¡algunos insectos parecen molestos! Pero todos son parte del panorama general. Los insectos alimentan pájaros y ranas. Polinizan flores. ¡Incluso los bichos espeluznantes importan! La naturaleza es como un rompecabezas, y cada pieza encaja.",
+          "key_takeaway": "Cada criatura tiene un papel en la naturaleza. Todos estamos conectados como piezas de un rompecabezas."
+        },
+        {
+          "conversation_id": "frog_07",
+          "sort_order": 7,
+          "question": "Apagar las luces, usar menos agua, y caminar en lugar de ir en auto, todo ayuda a cuidar la tierra. ¿Tú o tu familia hacen cosas así para ayudar al planeta?",
+          "yes_response": "¡Eso es increíble! Cada vez que ahorras energía o agua, estás ayudando a la naturaleza. Puede sentirse pequeño, pero cuando todos hacen un poco, ¡suma mucho! ¡Sigue con el gran trabajo, eco-guerrero!",
+          "no_response": "¡Está bien! Aquí hay algunas ideas fáciles: apaga las luces cuando salgas de un cuarto, toma duchas más cortas, o usa una botella de agua reutilizable. Estas pequeñas cosas ayudan a la tierra. ¡Puedes empezar cuando quieras!",
+          "key_takeaway": "Pequeñas acciones como ahorrar agua y energía ayudan a cuidar nuestro planeta. Cada poquito cuenta."
+        },
+        {
+          "conversation_id": "frog_08",
+          "sort_order": 8,
+          "question": "Cuando me siento estresada, escucho los sonidos del estanque: agua salpicando, ranas cantando, insectos zumbando. ¿Alguna vez usas los sonidos de la naturaleza para sentirte tranquilo?",
+          "yes_response": "¡La música de la naturaleza es la mejor! Escuchar lluvia, pájaros, olas, o viento puede ayudar a nuestras mentes ocupadas a ir más despacio. Es gratis y siempre está ahí. ¡Ya estás usando una de las herramientas secretas de calma de la naturaleza!",
+          "no_response": "¿Quieres intentarlo? La próxima vez que te sientas preocupado o molesto, cierra los ojos e imagina el sonido de la lluvia o las olas del océano. O escucha sonidos reales de la naturaleza afuera o en un dispositivo. ¡Es como una canción de cuna para tu cerebro!",
+          "key_takeaway": "Escuchar los sonidos de la naturaleza puede ayudar a calmar nuestras mentes cuando nos sentimos estresados o preocupados."
+        },
+        {
+          "conversation_id": "frog_09",
+          "sort_order": 9,
+          "question": "Algunas personas piensan que la naturaleza está 'allá afuera', en bosques y océanos. ¡Pero la naturaleza está en todas partes, incluso en las ciudades! ¿Puedes pensar en naturaleza que esté cerca de donde vives?",
+          "yes_response": "¡Tienes razón! Árboles en tu calle, pájaros en los cables, nubes en el cielo, lluvia en las ventanas: la naturaleza está por todas partes, incluso en lugares ocupados. Cuando la buscas, la encontrarás en todas partes. ¡Estás rodeado de naturaleza!",
+          "no_response": "¡Miremos más de cerca! ¿Hay un árbol cerca? ¿Pájaros volando? ¿Nubes en el cielo? ¡Incluso las hierbas creciendo entre las grietas son naturaleza! No necesitas un bosque para estar conectado con la tierra. La naturaleza siempre está cerca.",
+          "key_takeaway": "La naturaleza está en todas partes, incluso en las ciudades. Siempre estamos conectados con la tierra a nuestro alrededor."
+        },
+        {
+          "conversation_id": "frog_10",
+          "sort_order": 10,
+          "question": "¡Has aprendido tanto sobre nuestro hermoso planeta! Todos estamos conectados: personas, animales, plantas, agua, aire. ¿Intentarás cuidar la naturaleza y sentirte conectado con ella?",
+          "yes_response": "¡Croac! ¡Eso llena mi corazón de alegría! Cuando cuidamos la naturaleza, nos cuidamos a nosotros mismos también. Eres parte de algo increíble. Sal afuera, siente el sol, escucha los pájaros, y sabe que perteneces aquí. ¡Salta a ello, amigo! 🐸",
+          "no_response": "¡Está bien! La conexión con la naturaleza crece lentamente. Tal vez empieza pequeño: solo nota una cosa en la naturaleza cada día. Un pájaro, una hoja, el cielo. Con el tiempo, podrías sentirte más conectado de lo que pensabas. ¡Estaré aquí en el jardín! 🐸",
+          "key_takeaway": "Cuidar la naturaleza significa cuidarnos a nosotros mismos. Todos estamos conectados y todos pertenecemos."
+        }
+      ]
+    }
+  ]
+}

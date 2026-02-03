@@ -1,0 +1,2090 @@
+{
+  "metadata": {
+    "version": "1.3.0",
+    "total_badges": 106,
+    "last_updated": "2025-12-13",
+    "description": "Complete badge system for Lumo's Land - 106 achievement badges across 14 categories",
+    "image_hosting": "Simform CDN - https://simform-cdn.example.com/lumos-land/badges/",
+    "notes": "Badge images must be uploaded to Simform CDN and URLs updated in admin panel"
+  },
+  "rarity_definitions": {
+    "common": {
+      "color": "#95A5A6",
+      "glow": "none",
+      "percentage": "26%"
+    },
+    "rare": {
+      "color": "#3498DB",
+      "glow": "blue",
+      "percentage": "32%"
+    },
+    "epic": {
+      "color": "#9B59B6",
+      "glow": "purple",
+      "percentage": "27%"
+    },
+    "legendary": {
+      "color": "#F39C12",
+      "glow": "gold-animated",
+      "percentage": "15%"
+    }
+  },
+  "badges": [
+    {
+      "badge_id": "badge_001",
+      "name": "Castle Explorer",
+      "description": "Enter your castle for the first time",
+      "emoji": "🏰",
+      "image_url": "assets/badges/01-welcome/castle-explorer.png",
+      "rarity": "common",
+      "category": "welcome",
+      "requirements": {
+        "type": "event",
+        "trigger": "castle_first_visit"
+      },
+      "rewards": {
+        "xp": 30,
+        "coins": 25
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 1
+    },
+    {
+      "badge_id": "badge_002",
+      "name": "Room Designer",
+      "description": "Place your first item in a room",
+      "emoji": "🛏️",
+      "image_url": "assets/badges/01-welcome/room-designer.png",
+      "rarity": "common",
+      "category": "welcome",
+      "requirements": {
+        "type": "event",
+        "trigger": "first_item_placed"
+      },
+      "rewards": {
+        "xp": 40,
+        "coins": 35
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 2
+    },
+    {
+      "badge_id": "badge_003",
+      "name": "First Friend",
+      "description": "Complete your first NPC conversation",
+      "emoji": "💬",
+      "image_url": "assets/badges/01-welcome/first-friend.png",
+      "rarity": "common",
+      "category": "welcome",
+      "requirements": {
+        "type": "event",
+        "trigger": "first_conversation_complete"
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 40
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 3
+    },
+    {
+      "badge_id": "badge_004",
+      "name": "Lucky Spinner",
+      "description": "Use the daily spinner for the first time",
+      "emoji": "🎰",
+      "image_url": "assets/badges/01-welcome/lucky-spinner.png",
+      "rarity": "common",
+      "category": "welcome",
+      "requirements": {
+        "type": "event",
+        "trigger": "first_daily_spin"
+      },
+      "rewards": {
+        "xp": 30,
+        "coins": 25
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 4
+    },
+    {
+      "badge_id": "badge_005",
+      "name": "Window Shopper",
+      "description": "Visit the Nook for the first time",
+      "emoji": "🏪",
+      "image_url": "assets/badges/01-welcome/window-shopper.png",
+      "rarity": "common",
+      "category": "welcome",
+      "requirements": {
+        "type": "event",
+        "trigger": "first_nook_visit"
+      },
+      "rewards": {
+        "xp": 30,
+        "coins": 25
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 5
+    },
+    {
+      "badge_id": "badge_006",
+      "name": "Bright Beginner",
+      "description": "Reach Level 3",
+      "emoji": "🌟",
+      "image_url": "assets/badges/01-welcome/bright-beginner.png",
+      "rarity": "common",
+      "category": "welcome",
+      "requirements": {
+        "type": "level",
+        "value": 3
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 6
+    },
+    {
+      "badge_id": "badge_007",
+      "name": "Rising Star",
+      "description": "Reach Level 5",
+      "emoji": "⭐",
+      "image_url": "assets/badges/02-level-milestones/rising-star.png",
+      "rarity": "common",
+      "category": "level_milestones",
+      "requirements": {
+        "type": "level",
+        "value": 5
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 75
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 7
+    },
+    {
+      "badge_id": "badge_008",
+      "name": "Sunflower Spirit",
+      "description": "Reach Level 10",
+      "emoji": "🌻",
+      "image_url": "assets/badges/02-level-milestones/sunflower-spirit.png",
+      "rarity": "common",
+      "category": "level_milestones",
+      "requirements": {
+        "type": "level",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 65,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 8
+    },
+    {
+      "badge_id": "badge_009",
+      "name": "On Fire",
+      "description": "Reach Level 15",
+      "emoji": "🔥",
+      "image_url": "assets/badges/02-level-milestones/on-fire.png",
+      "rarity": "rare",
+      "category": "level_milestones",
+      "requirements": {
+        "type": "level",
+        "value": 15
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 125
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 9
+    },
+    {
+      "badge_id": "badge_010",
+      "name": "Diamond Achiever",
+      "description": "Reach Level 20",
+      "emoji": "💎",
+      "image_url": "assets/badges/02-level-milestones/diamond-achiever.png",
+      "rarity": "rare",
+      "category": "level_milestones",
+      "requirements": {
+        "type": "level",
+        "value": 20
+      },
+      "rewards": {
+        "xp": 100,
+        "coins": 150
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 10
+    },
+    {
+      "badge_id": "badge_011",
+      "name": "Transformation Master",
+      "description": "Reach Level 30",
+      "emoji": "🦋",
+      "image_url": "assets/badges/02-level-milestones/transformation-master.png",
+      "rarity": "epic",
+      "category": "level_milestones",
+      "requirements": {
+        "type": "level",
+        "value": 30
+      },
+      "rewards": {
+        "xp": 130,
+        "coins": 200
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 11
+    },
+    {
+      "badge_id": "badge_012",
+      "name": "Sky Rocket",
+      "description": "Reach Level 50",
+      "emoji": "🚀",
+      "image_url": "assets/badges/02-level-milestones/sky-rocket.png",
+      "rarity": "epic",
+      "category": "level_milestones",
+      "requirements": {
+        "type": "level",
+        "value": 50
+      },
+      "rewards": {
+        "xp": 160,
+        "coins": 300
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 12
+    },
+    {
+      "badge_id": "badge_013",
+      "name": "Royal Legend",
+      "description": "Reach Level 75",
+      "emoji": "👑",
+      "image_url": "assets/badges/02-level-milestones/royal-legend.png",
+      "rarity": "legendary",
+      "category": "level_milestones",
+      "requirements": {
+        "type": "level",
+        "value": 75
+      },
+      "rewards": {
+        "xp": 200,
+        "coins": 500
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 13
+    },
+    {
+      "badge_id": "badge_014",
+      "name": "Century Champion",
+      "description": "Reach Level 99",
+      "emoji": "🏆",
+      "image_url": "assets/badges/02-level-milestones/century-champion.png",
+      "rarity": "legendary",
+      "category": "level_milestones",
+      "requirements": {
+        "type": "level",
+        "value": 99
+      },
+      "rewards": {
+        "xp": 225,
+        "coins": 600
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 14
+    },
+    {
+      "badge_id": "badge_015",
+      "name": "Early Bird",
+      "description": "Log in 3 days in a row",
+      "emoji": "🌅",
+      "image_url": "assets/badges/03-login-streaks/early-bird.png",
+      "rarity": "common",
+      "category": "login_streaks",
+      "requirements": {
+        "type": "streak",
+        "streak_type": "login",
+        "value": 3
+      },
+      "rewards": {
+        "xp": 40,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 15
+    },
+    {
+      "badge_id": "badge_016",
+      "name": "Week Warrior",
+      "description": "Log in 7 days in a row",
+      "emoji": "🔥",
+      "image_url": "assets/badges/03-login-streaks/week-warrior.png",
+      "rarity": "rare",
+      "category": "login_streaks",
+      "requirements": {
+        "type": "streak",
+        "streak_type": "login",
+        "value": 7
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 16
+    },
+    {
+      "badge_id": "badge_017",
+      "name": "Committed Creator",
+      "description": "Log in 30 days in a row",
+      "emoji": "📅",
+      "image_url": "assets/badges/03-login-streaks/committed-creator.png",
+      "rarity": "epic",
+      "category": "login_streaks",
+      "requirements": {
+        "type": "streak",
+        "streak_type": "login",
+        "value": 30
+      },
+      "rewards": {
+        "xp": 120,
+        "coins": 200
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 17
+    },
+    {
+      "badge_id": "badge_018",
+      "name": "Dedication Master",
+      "description": "Log in 100 days in a row",
+      "emoji": "🏅",
+      "image_url": "assets/badges/03-login-streaks/dedication-master.png",
+      "rarity": "legendary",
+      "category": "login_streaks",
+      "requirements": {
+        "type": "streak",
+        "streak_type": "login",
+        "value": 100
+      },
+      "rewards": {
+        "xp": 200,
+        "coins": 500
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 18
+    },
+    {
+      "badge_id": "badge_019",
+      "name": "Spin Streak",
+      "description": "Use daily spinner 10 days in a row",
+      "emoji": "🎰",
+      "image_url": "assets/badges/03-login-streaks/spin-streak.png",
+      "rarity": "rare",
+      "category": "login_streaks",
+      "requirements": {
+        "type": "streak",
+        "streak_type": "daily_spinner",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 70,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 19
+    },
+    {
+      "badge_id": "badge_020",
+      "name": "Lightning Learner",
+      "description": "Reach daily XP cap 3 times",
+      "emoji": "⚡",
+      "image_url": "assets/badges/03-login-streaks/lightning-learner.png",
+      "rarity": "common",
+      "category": "login_streaks",
+      "requirements": {
+        "type": "count",
+        "count_type": "daily_xp_cap_reached",
+        "value": 3
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 20
+    },
+    {
+      "badge_id": "badge_021",
+      "name": "Glow Ridge Ranger",
+      "description": "Complete all NPC conversations in Glow Ridge Path",
+      "emoji": "🌳",
+      "image_url": "assets/badges/04-portal-exploration/glow-ridge-ranger.png",
+      "rarity": "rare",
+      "category": "portal_exploration",
+      "requirements": {
+        "type": "portal_complete",
+        "portal": "glow-ridge-path",
+        "conversations": 90
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 21
+    },
+    {
+      "badge_id": "badge_022",
+      "name": "Garden Guardian",
+      "description": "Complete all NPC conversations in Garden Grove",
+      "emoji": "🌻",
+      "image_url": "assets/badges/04-portal-exploration/garden-guardian.png",
+      "rarity": "rare",
+      "category": "portal_exploration",
+      "requirements": {
+        "type": "portal_complete",
+        "portal": "garden-grove",
+        "conversations": 70
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 125
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 22
+    },
+    {
+      "badge_id": "badge_023",
+      "name": "Coral Champion",
+      "description": "Complete all NPC conversations in Coral Cove",
+      "emoji": "🌊",
+      "image_url": "assets/badges/04-portal-exploration/coral-champion.png",
+      "rarity": "rare",
+      "category": "portal_exploration",
+      "requirements": {
+        "type": "portal_complete",
+        "portal": "coral-cove",
+        "conversations": 80
+      },
+      "rewards": {
+        "xp": 85,
+        "coins": 150
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 23
+    },
+    {
+      "badge_id": "badge_024",
+      "name": "Desert Dweller",
+      "description": "Complete all NPC conversations in Desert Oasis",
+      "emoji": "🏜️",
+      "image_url": "assets/badges/04-portal-exploration/desert-dweller.png",
+      "rarity": "epic",
+      "category": "portal_exploration",
+      "requirements": {
+        "type": "portal_complete",
+        "portal": "desert-oasis",
+        "conversations": 80
+      },
+      "rewards": {
+        "xp": 100,
+        "coins": 175
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 24
+    },
+    {
+      "badge_id": "badge_025",
+      "name": "Aurora Adventurer",
+      "description": "Complete all NPC conversations in Arctic Aurora",
+      "emoji": "❄️",
+      "image_url": "assets/badges/04-portal-exploration/aurora-adventurer.png",
+      "rarity": "epic",
+      "category": "portal_exploration",
+      "requirements": {
+        "type": "portal_complete",
+        "portal": "arctic-aurora",
+        "conversations": 80
+      },
+      "rewards": {
+        "xp": 120,
+        "coins": 200
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 25
+    },
+    {
+      "badge_id": "badge_026",
+      "name": "Mystic Master",
+      "description": "Complete all NPC conversations in Mystic Realm",
+      "emoji": "✨",
+      "image_url": "assets/badges/04-portal-exploration/mystic-master.png",
+      "rarity": "legendary",
+      "category": "portal_exploration",
+      "requirements": {
+        "type": "portal_complete",
+        "portal": "mystic-realm",
+        "conversations": 80
+      },
+      "rewards": {
+        "xp": 150,
+        "coins": 250
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 26
+    },
+    {
+      "badge_id": "badge_027",
+      "name": "Home Designer",
+      "description": "Own 10 items",
+      "emoji": "🏡",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/home-designer.png",
+      "rarity": "common",
+      "category": "collection",
+      "requirements": {
+        "type": "items_owned",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 45,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 27
+    },
+    {
+      "badge_id": "badge_028",
+      "name": "Furniture Fanatic",
+      "description": "Own 25 furniture items",
+      "emoji": "🛋️",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/furniture-fanatic.png",
+      "rarity": "rare",
+      "category": "collection",
+      "requirements": {
+        "type": "items_owned_category",
+        "category": "furniture",
+        "value": 25
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 125
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 28
+    },
+    {
+      "badge_id": "badge_029",
+      "name": "Decor Devotee",
+      "description": "Own 25 decor items",
+      "emoji": "🎨",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/decor-devotee.png",
+      "rarity": "rare",
+      "category": "collection",
+      "requirements": {
+        "type": "items_owned_category",
+        "category": "decor",
+        "value": 25
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 125
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 29
+    },
+    {
+      "badge_id": "badge_030",
+      "name": "Sticker Starter",
+      "description": "Collect 5 stickers",
+      "emoji": "📚",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/sticker-starter.png",
+      "rarity": "common",
+      "category": "collection",
+      "requirements": {
+        "type": "stickers_collected",
+        "value": 5
+      },
+      "rewards": {
+        "xp": 40,
+        "coins": 40
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 30
+    },
+    {
+      "badge_id": "badge_031",
+      "name": "Sticker Enthusiast",
+      "description": "Collect 15 stickers",
+      "emoji": "📖",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/sticker-enthusiast.png",
+      "rarity": "rare",
+      "category": "collection",
+      "requirements": {
+        "type": "stickers_collected",
+        "value": 15
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 31
+    },
+    {
+      "badge_id": "badge_032",
+      "name": "Sticker Master",
+      "description": "Collect 30 stickers",
+      "emoji": "📕",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/sticker-master.png",
+      "rarity": "epic",
+      "category": "collection",
+      "requirements": {
+        "type": "stickers_collected",
+        "value": 30
+      },
+      "rewards": {
+        "xp": 120,
+        "coins": 175
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 32
+    },
+    {
+      "badge_id": "badge_033",
+      "name": "Ultimate Collector",
+      "description": "Own 100+ items total",
+      "emoji": "🏆",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/ultimate-collector.png",
+      "rarity": "legendary",
+      "category": "collection",
+      "requirements": {
+        "type": "items_owned",
+        "value": 100
+      },
+      "rewards": {
+        "xp": 200,
+        "coins": 450
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 33
+    },
+    {
+      "badge_id": "badge_034",
+      "name": "Vault Keeper",
+      "description": "Collect 10 rare items",
+      "emoji": "💎",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/vault-keeper.png",
+      "rarity": "epic",
+      "category": "collection",
+      "requirements": {
+        "type": "items_owned_category",
+        "category": "rare",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 125,
+        "coins": 200
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 34
+    },
+    {
+      "badge_id": "badge_035",
+      "name": "Bedroom Boss",
+      "description": "Place 10 items in bedroom",
+      "emoji": "🛏️",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/bedroom-boss.png",
+      "rarity": "common",
+      "category": "castle_rooms",
+      "requirements": {
+        "type": "room_items_placed",
+        "room": "bedroom",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 60
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 35
+    },
+    {
+      "badge_id": "badge_036",
+      "name": "Kitchen King",
+      "description": "Place 10 items in kitchen",
+      "emoji": "🍳",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/kitchen-king.png",
+      "rarity": "common",
+      "category": "castle_rooms",
+      "requirements": {
+        "type": "room_items_placed",
+        "room": "kitchen",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 60
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 36
+    },
+    {
+      "badge_id": "badge_037",
+      "name": "Living Room Legend",
+      "description": "Place 10 items in living room",
+      "emoji": "🛋️",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/living-room-legend.png",
+      "rarity": "common",
+      "category": "castle_rooms",
+      "requirements": {
+        "type": "room_items_placed",
+        "room": "living_room",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 60
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 37
+    },
+    {
+      "badge_id": "badge_038",
+      "name": "Style Star",
+      "description": "Place 10 items in style closet",
+      "emoji": "👗",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/style-star.png",
+      "rarity": "common",
+      "category": "castle_rooms",
+      "requirements": {
+        "type": "room_items_placed",
+        "room": "style_closet",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 60
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 38
+    },
+    {
+      "badge_id": "badge_039",
+      "name": "Castle Master",
+      "description": "Unlock all castle rooms",
+      "emoji": "🏰",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/castle-master.png",
+      "rarity": "epic",
+      "category": "castle_rooms",
+      "requirements": {
+        "type": "rooms_unlocked",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 150,
+        "coins": 300
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 39
+    },
+    {
+      "badge_id": "badge_040",
+      "name": "Game Room Guru",
+      "description": "Unlock & decorate Game Room (10+ items)",
+      "emoji": "🎮",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/game-room-guru.png",
+      "rarity": "rare",
+      "category": "castle_rooms",
+      "requirements": {
+        "type": "room_items_placed",
+        "room": "game_room",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 85,
+        "coins": 125
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 40
+    },
+    {
+      "badge_id": "badge_041",
+      "name": "Mindful Muncher",
+      "description": "Complete Mindful Munchies 10 times",
+      "emoji": "🥗",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/mindful-muncher.png",
+      "rarity": "common",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "mindful_munchies",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 41
+    },
+    {
+      "badge_id": "badge_042",
+      "name": "Zen Master",
+      "description": "Complete Boredom Busters 20 times",
+      "emoji": "🧘",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/zen-master.png",
+      "rarity": "rare",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "boredom_busters",
+        "value": 20
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 42
+    },
+    {
+      "badge_id": "badge_043",
+      "name": "Fuel Champion",
+      "description": "Complete Lumo Fuel Up 10 times",
+      "emoji": "⚡",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/fuel-champion.png",
+      "rarity": "common",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "lumo_fuel_up",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 43
+    },
+    {
+      "badge_id": "badge_044",
+      "name": "Fitness Fan",
+      "description": "Complete Workout Creator 10 times",
+      "emoji": "🏋️",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/fitness-fan.png",
+      "rarity": "common",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "workout_creator",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 44
+    },
+    {
+      "badge_id": "badge_045",
+      "name": "Hub Hero",
+      "description": "Complete all Hub games at least once",
+      "emoji": "🎯",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/hub-hero.png",
+      "rarity": "epic",
+      "category": "hub_games",
+      "requirements": {
+        "type": "all_hub_games_completed",
+        "count": 1
+      },
+      "rewards": {
+        "xp": 120,
+        "coins": 175
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 45
+    },
+    {
+      "badge_id": "badge_046",
+      "name": "Health Detective",
+      "description": "Score 100+ in Health Detective",
+      "emoji": "🕵️",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/health-detective.png",
+      "rarity": "rare",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_score",
+        "game": "health_detective",
+        "value": 100
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 46
+    },
+    {
+      "badge_id": "badge_074",
+      "name": "Nutrient Navigator",
+      "description": "Complete Lumo's Nutrient Flow 10 times",
+      "emoji": "🥬",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/nutrient-navigator.png",
+      "rarity": "common",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "nutrient_flow",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 47
+    },
+    {
+      "badge_id": "badge_047",
+      "name": "Coin Collector",
+      "description": "Earn 1,000 coins total",
+      "emoji": "💰",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/coin-collector.png",
+      "rarity": "common",
+      "category": "wealth",
+      "requirements": {
+        "type": "total_coins",
+        "value": 1000
+      },
+      "rewards": {
+        "xp": 45,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 47
+    },
+    {
+      "badge_id": "badge_048",
+      "name": "Money Manager",
+      "description": "Earn 5,000 coins total",
+      "emoji": "💵",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/money-manager.png",
+      "rarity": "rare",
+      "category": "wealth",
+      "requirements": {
+        "type": "total_coins",
+        "value": 5000
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 125
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 48
+    },
+    {
+      "badge_id": "badge_049",
+      "name": "Treasure Hunter",
+      "description": "Earn 10,000 coins total",
+      "emoji": "💎",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/treasure-hunter.png",
+      "rarity": "epic",
+      "category": "wealth",
+      "requirements": {
+        "type": "total_coins",
+        "value": 10000
+      },
+      "rewards": {
+        "xp": 125,
+        "coins": 200
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 49
+    },
+    {
+      "badge_id": "badge_050",
+      "name": "XP Enthusiast",
+      "description": "Earn 5,000 XP total",
+      "emoji": "🌟",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/xp-enthusiast.png",
+      "rarity": "common",
+      "category": "wealth",
+      "requirements": {
+        "type": "total_xp",
+        "value": 5000
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 60
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 50
+    },
+    {
+      "badge_id": "badge_051",
+      "name": "XP Expert",
+      "description": "Earn 20,000 XP total",
+      "emoji": "⚡",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/xp-expert.png",
+      "rarity": "rare",
+      "category": "wealth",
+      "requirements": {
+        "type": "total_xp",
+        "value": 20000
+      },
+      "rewards": {
+        "xp": 85,
+        "coins": 125
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 51
+    },
+    {
+      "badge_id": "badge_052",
+      "name": "XP Legend",
+      "description": "Earn 50,000 XP total",
+      "emoji": "🔥",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/xp-legend.png",
+      "rarity": "epic",
+      "category": "wealth",
+      "requirements": {
+        "type": "total_xp",
+        "value": 50000
+      },
+      "rewards": {
+        "xp": 150,
+        "coins": 250
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 52
+    },
+    {
+      "badge_id": "badge_059",
+      "name": "Spooky Spirit",
+      "description": "Complete Halloween event",
+      "emoji": "🎃",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/spooky-spirit.png",
+      "rarity": "rare",
+      "category": "seasonal",
+      "requirements": {
+        "type": "event_complete",
+        "event": "halloween"
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 59
+    },
+    {
+      "badge_id": "badge_060",
+      "name": "Holiday Hero",
+      "description": "Complete Winter event",
+      "emoji": "🎄",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/holiday-hero.png",
+      "rarity": "rare",
+      "category": "seasonal",
+      "requirements": {
+        "type": "event_complete",
+        "event": "winter"
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 60
+    },
+    {
+      "badge_id": "badge_061",
+      "name": "Love Bug",
+      "description": "Complete Valentine's event",
+      "emoji": "💝",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/love-bug.png",
+      "rarity": "rare",
+      "category": "seasonal",
+      "requirements": {
+        "type": "event_complete",
+        "event": "valentine"
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 61
+    },
+    {
+      "badge_id": "badge_062",
+      "name": "Spring Sprout",
+      "description": "Complete Spring event",
+      "emoji": "🌸",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/spring-sprout.png",
+      "rarity": "rare",
+      "category": "seasonal",
+      "requirements": {
+        "type": "event_complete",
+        "event": "spring"
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 62
+    },
+    {
+      "badge_id": "badge_063",
+      "name": "Summer Star",
+      "description": "Complete Summer event",
+      "emoji": "☀️",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/summer-star.png",
+      "rarity": "rare",
+      "category": "seasonal",
+      "requirements": {
+        "type": "event_complete",
+        "event": "summer"
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 63
+    },
+    {
+      "badge_id": "badge_064",
+      "name": "Event Master",
+      "description": "Complete all seasonal events",
+      "emoji": "🎉",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/event-master.png",
+      "rarity": "legendary",
+      "category": "seasonal",
+      "requirements": {
+        "type": "all_events_complete",
+        "count": 5
+      },
+      "rewards": {
+        "xp": 225,
+        "coins": 550
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 64
+    },
+    {
+      "badge_id": "badge_065",
+      "name": "Easter Egg Hunter",
+      "description": "Find a hidden easter egg",
+      "emoji": "🥚",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/easter-egg-hunter.png",
+      "rarity": "epic",
+      "category": "hidden",
+      "requirements": {
+        "type": "easter_egg_found",
+        "easter_egg_id": "secret_001"
+      },
+      "rewards": {
+        "xp": 120,
+        "coins": 150
+      },
+      "is_hidden": true,
+      "is_repeatable": false,
+      "sort_order": 65
+    },
+    {
+      "badge_id": "badge_066",
+      "name": "Mystery Solver",
+      "description": "Discover a secret location",
+      "emoji": "🔮",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/mystery-solver.png",
+      "rarity": "epic",
+      "category": "hidden",
+      "requirements": {
+        "type": "secret_location_found",
+        "location_id": "secret_location_001"
+      },
+      "rewards": {
+        "xp": 125,
+        "coins": 175
+      },
+      "is_hidden": true,
+      "is_repeatable": false,
+      "sort_order": 66
+    },
+    {
+      "badge_id": "badge_067",
+      "name": "Unicorn Whisperer",
+      "description": "Find the secret unicorn NPC",
+      "emoji": "🦄",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/unicorn-whisperer.png",
+      "rarity": "legendary",
+      "category": "hidden",
+      "requirements": {
+        "type": "secret_npc_found",
+        "npc_id": "unicorn_secret"
+      },
+      "rewards": {
+        "xp": 200,
+        "coins": 400
+      },
+      "is_hidden": true,
+      "is_repeatable": false,
+      "sort_order": 67
+    },
+    {
+      "badge_id": "badge_068",
+      "name": "Night Owl",
+      "description": "Log in at midnight",
+      "emoji": "🌙",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/night-owl.png",
+      "rarity": "rare",
+      "category": "hidden",
+      "requirements": {
+        "type": "login_time",
+        "hour": 0
+      },
+      "rewards": {
+        "xp": 70,
+        "coins": 75
+      },
+      "is_hidden": true,
+      "is_repeatable": false,
+      "sort_order": 68
+    },
+    {
+      "badge_id": "badge_069",
+      "name": "Rainbow Chaser",
+      "description": "Complete a perfect week (all activities)",
+      "emoji": "🌈",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/rainbow-chaser.png",
+      "rarity": "epic",
+      "category": "hidden",
+      "requirements": {
+        "type": "perfect_week",
+        "activities": ["login", "spin", "conversation", "hub_game"]
+      },
+      "rewards": {
+        "xp": 150,
+        "coins": 250
+      },
+      "is_hidden": true,
+      "is_repeatable": false,
+      "sort_order": 69
+    },
+    {
+      "badge_id": "badge_070",
+      "name": "Perfect Score",
+      "description": "Get 100% on any quiz/game",
+      "emoji": "💯",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/perfect-score.png",
+      "rarity": "epic",
+      "category": "mastery",
+      "requirements": {
+        "type": "perfect_score",
+        "score": 100
+      },
+      "rewards": {
+        "xp": 125,
+        "coins": 175
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 70
+    },
+    {
+      "badge_id": "badge_071",
+      "name": "Speed Demon",
+      "description": "Complete a conversation in under 2 minutes",
+      "emoji": "⚡",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/speed-demon.png",
+      "rarity": "rare",
+      "category": "mastery",
+      "requirements": {
+        "type": "conversation_speed",
+        "time_seconds": 120
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 71
+    },
+    {
+      "badge_id": "badge_072",
+      "name": "Accuracy Master",
+      "description": "Answer 50 questions correctly in a row",
+      "emoji": "🎯",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/accuracy-master.png",
+      "rarity": "epic",
+      "category": "mastery",
+      "requirements": {
+        "type": "correct_streak",
+        "value": 50
+      },
+      "rewards": {
+        "xp": 150,
+        "coins": 225
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 72
+    },
+    {
+      "badge_id": "badge_073",
+      "name": "Knowledge King",
+      "description": "Complete all educational content",
+      "emoji": "🧠",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/knowledge-king.png",
+      "rarity": "legendary",
+      "category": "mastery",
+      "requirements": {
+        "type": "all_content_complete",
+        "percentage": 100
+      },
+      "rewards": {
+        "xp": 225,
+        "coins": 600
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 73
+    },
+    {
+      "badge_id": "badge_075",
+      "name": "Smash Master",
+      "description": "Complete Smash & Sort 10 times",
+      "emoji": "🧱",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/smash-master.png",
+      "rarity": "common",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "smash_sort",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 74
+    },
+    {
+      "badge_id": "badge_076",
+      "name": "Positive Thinker",
+      "description": "Complete Reframe It! 10 times",
+      "emoji": "☀️",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/positive-thinker.png",
+      "rarity": "rare",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "reframe_it",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 75
+    },
+    {
+      "badge_id": "badge_077",
+      "name": "Word Wizard",
+      "description": "Complete Word Scramble 10 times",
+      "emoji": "🔤",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/word-wizard.png",
+      "rarity": "common",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "word_scramble",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 76
+    },
+    {
+      "badge_id": "badge_078",
+      "name": "Chef's Hat",
+      "description": "Save 10 recipes in Mindful Kitchen",
+      "emoji": "👨‍🍳",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/chefs-hat.png",
+      "rarity": "rare",
+      "category": "hub_games",
+      "requirements": {
+        "type": "recipes_saved",
+        "game": "mindful_kitchen",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 77
+    },
+    {
+      "badge_id": "badge_079",
+      "name": "Eagle Eye",
+      "description": "Complete 10 Word Search puzzles",
+      "emoji": "🦅",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/eagle-eye.png",
+      "rarity": "common",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "word_search",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 78
+    },
+    {
+      "badge_id": "badge_080",
+      "name": "Spice Connoisseur",
+      "description": "Complete all 6 worlds in The Spice Is Right",
+      "emoji": "🌶️",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/spice-connoisseur.png",
+      "rarity": "epic",
+      "category": "hub_games",
+      "requirements": {
+        "type": "worlds_complete",
+        "game": "spice_is_right",
+        "value": 6
+      },
+      "rewards": {
+        "xp": 120,
+        "coins": 175
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 79
+    },
+    {
+      "badge_id": "badge_081",
+      "name": "Memory Master",
+      "description": "Reach level 10 in Lumo's Loop",
+      "emoji": "🔄",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/memory-master.png",
+      "rarity": "rare",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_level_reached",
+        "game": "lumos_loop",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 80
+    },
+    {
+      "badge_id": "badge_082",
+      "name": "Organization Pro",
+      "description": "Complete Ready, Set, Go! 10 times",
+      "emoji": "📋",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/organization-pro.png",
+      "rarity": "common",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "ready_set_go",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 81
+    },
+    {
+      "badge_id": "badge_083",
+      "name": "Zen Champion",
+      "description": "Complete all 5 Mind Gym exercises",
+      "emoji": "🧘",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/zen-champion.png",
+      "rarity": "epic",
+      "category": "hub_games",
+      "requirements": {
+        "type": "exercises_complete",
+        "game": "mind_gym",
+        "exercises": ["square_breathing", "senses_safari", "what_lights_you_up", "gratitude_grab", "bright_side_spotter"]
+      },
+      "rewards": {
+        "xp": 120,
+        "coins": 175
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 82
+    },
+    {
+      "badge_id": "badge_084",
+      "name": "Crush King",
+      "description": "Complete all 3 Category Crush packs",
+      "emoji": "🧩",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/crush-king.png",
+      "rarity": "epic",
+      "category": "hub_games",
+      "requirements": {
+        "type": "packs_complete",
+        "game": "category_crush",
+        "value": 3
+      },
+      "rewards": {
+        "xp": 120,
+        "coins": 175
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 83
+    },
+    {
+      "badge_id": "badge_085",
+      "name": "Wall Breaker",
+      "description": "Complete 10 levels in Barrier Breaker",
+      "emoji": "💫",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/wall-breaker.png",
+      "rarity": "rare",
+      "category": "hub_games",
+      "requirements": {
+        "type": "levels_complete",
+        "game": "barrier_breaker",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 80,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 84
+    },
+    {
+      "badge_id": "badge_086",
+      "name": "Word Linker",
+      "description": "Complete 10 Word Connect puzzles",
+      "emoji": "🔗",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/word-linker.png",
+      "rarity": "common",
+      "category": "hub_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "word_connect",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 85
+    },
+    {
+      "badge_id": "badge_087",
+      "name": "Hydration Hero",
+      "description": "Track water intake for 7 days straight",
+      "emoji": "💧",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/hydration-hero.png",
+      "rarity": "rare",
+      "category": "quick_games",
+      "requirements": {
+        "type": "streak",
+        "streak_type": "water_tracking",
+        "value": 7
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 86
+    },
+    {
+      "badge_id": "badge_088",
+      "name": "Sharp Spotter",
+      "description": "Complete 20 Odd One Out rounds",
+      "emoji": "🚫",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/sharp-spotter.png",
+      "rarity": "common",
+      "category": "quick_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "odd_one_out",
+        "value": 20
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 87
+    },
+    {
+      "badge_id": "badge_089",
+      "name": "Energy Runner",
+      "description": "Score 1000+ points in Energy Dash",
+      "emoji": "⚡",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/energy-runner.png",
+      "rarity": "rare",
+      "category": "quick_games",
+      "requirements": {
+        "type": "game_score",
+        "game": "energy_dash",
+        "value": 1000
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 88
+    },
+    {
+      "badge_id": "badge_090",
+      "name": "Bubble Popper",
+      "description": "Complete Bubble Burst 10 times",
+      "emoji": "🫧",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/bubble-popper.png",
+      "rarity": "common",
+      "category": "quick_games",
+      "requirements": {
+        "type": "game_completions",
+        "game": "fuel_flow",
+        "value": 10
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 89
+    },
+    {
+      "badge_id": "badge_091",
+      "name": "Story Seeker",
+      "description": "Complete 5 Health Adventure stories",
+      "emoji": "📖",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/story-seeker.png",
+      "rarity": "common",
+      "category": "quick_games",
+      "requirements": {
+        "type": "stories_complete",
+        "game": "health_adventure",
+        "value": 5
+      },
+      "rewards": {
+        "xp": 50,
+        "coins": 50
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 90
+    },
+    {
+      "badge_id": "badge_092",
+      "name": "New Year Spark",
+      "description": "Log in on New Year's Day",
+      "emoji": "🎆",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/new-year-spark.png",
+      "rarity": "rare",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "new_years_day",
+        "date": "01-01"
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 91
+    },
+    {
+      "badge_id": "badge_093",
+      "name": "Valentine Visitor",
+      "description": "Log in on Valentine's Day",
+      "emoji": "💕",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/valentine-visitor.png",
+      "rarity": "rare",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "valentines_day",
+        "date": "02-14"
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 92
+    },
+    {
+      "badge_id": "badge_094",
+      "name": "Lucky Clover",
+      "description": "Log in on St. Patrick's Day",
+      "emoji": "☘️",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/lucky-clover.png",
+      "rarity": "rare",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "st_patricks_day",
+        "date": "03-17"
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 93
+    },
+    {
+      "badge_id": "badge_095",
+      "name": "Earth Champion",
+      "description": "Log in on Earth Day",
+      "emoji": "🌍",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/earth-champion.png",
+      "rarity": "rare",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "earth_day",
+        "date": "04-22"
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 94
+    },
+    {
+      "badge_id": "badge_096",
+      "name": "Health Hero Day",
+      "description": "Log in on World Health Day",
+      "emoji": "🏥",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/health-hero-day.png",
+      "rarity": "epic",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "world_health_day",
+        "date": "04-07"
+      },
+      "rewards": {
+        "xp": 100,
+        "coins": 150
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 95
+    },
+    {
+      "badge_id": "badge_097",
+      "name": "Heart of Gold",
+      "description": "Log in on Mother's Day",
+      "emoji": "💐",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/heart-of-gold.png",
+      "rarity": "rare",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "mothers_day",
+        "date": "variable_may_2nd_sunday"
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 96
+    },
+    {
+      "badge_id": "badge_098",
+      "name": "Family Star",
+      "description": "Log in on Father's Day",
+      "emoji": "👔",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/family-star.png",
+      "rarity": "rare",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "fathers_day",
+        "date": "variable_june_3rd_sunday"
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 97
+    },
+    {
+      "badge_id": "badge_099",
+      "name": "Firework Fan",
+      "description": "Log in on Independence Day (July 4th)",
+      "emoji": "🎇",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/firework-fan.png",
+      "rarity": "rare",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "independence_day",
+        "date": "07-04"
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 98
+    },
+    {
+      "badge_id": "badge_100",
+      "name": "Spooky Login",
+      "description": "Log in on Halloween",
+      "emoji": "🎃",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/spooky-login.png",
+      "rarity": "rare",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "halloween",
+        "date": "10-31"
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 99
+    },
+    {
+      "badge_id": "badge_101",
+      "name": "Grateful Gamer",
+      "description": "Log in on Thanksgiving",
+      "emoji": "🦃",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/grateful-gamer.png",
+      "rarity": "rare",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "thanksgiving",
+        "date": "variable_nov_4th_thursday"
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 100
+    },
+    {
+      "badge_id": "badge_102",
+      "name": "Festival of Lights",
+      "description": "Log in during Hanukkah",
+      "emoji": "🕎",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/festival-of-lights.png",
+      "rarity": "rare",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "hanukkah",
+        "date": "variable_hebrew_calendar"
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 101
+    },
+    {
+      "badge_id": "badge_103",
+      "name": "Holiday Cheer",
+      "description": "Log in on Christmas Day",
+      "emoji": "🎄",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/holiday-cheer.png",
+      "rarity": "rare",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "holiday_login",
+        "holiday": "christmas",
+        "date": "12-25"
+      },
+      "rewards": {
+        "xp": 75,
+        "coins": 100
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 102
+    },
+    {
+      "badge_id": "badge_104",
+      "name": "Holiday Collector",
+      "description": "Earn all 12 holiday login badges",
+      "emoji": "🗓️",
+      "image_url": "https://simform-cdn.example.com/lumos-land/badges/holiday-collector.png",
+      "rarity": "legendary",
+      "category": "holiday_logins",
+      "requirements": {
+        "type": "badges_earned",
+        "badges": ["badge_092", "badge_093", "badge_094", "badge_095", "badge_096", "badge_097", "badge_098", "badge_099", "badge_100", "badge_101", "badge_102", "badge_103"]
+      },
+      "rewards": {
+        "xp": 250,
+        "coins": 500
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 103
+    },
+    {
+      "badge_id": "badge_105",
+      "name": "Portal Pioneer",
+      "description": "Complete all NPC conversations in ALL 6 portals",
+      "emoji": "🌍",
+      "image_url": "assets/badges/04-portal-exploration/portal-pioneer.png",
+      "rarity": "legendary",
+      "category": "portal_exploration",
+      "requirements": {
+        "type": "portals_complete_all",
+        "portals": ["glow-ridge-path", "garden-grove", "coral-cove", "desert-oasis", "arctic-aurora", "mystic-realm"],
+        "total_conversations": 480
+      },
+      "rewards": {
+        "xp": 300,
+        "coins": 600
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 104
+    },
+    {
+      "badge_id": "badge_106",
+      "name": "Realm Royalty",
+      "description": "Unlock all 6 World Portals",
+      "emoji": "🗺️",
+      "image_url": "assets/badges/04-portal-exploration/realm-royalty.png",
+      "rarity": "epic",
+      "category": "portal_exploration",
+      "requirements": {
+        "type": "portals_unlocked",
+        "count": 6
+      },
+      "rewards": {
+        "xp": 200,
+        "coins": 400
+      },
+      "is_hidden": false,
+      "is_repeatable": false,
+      "sort_order": 105
+    }
+  ]
+}

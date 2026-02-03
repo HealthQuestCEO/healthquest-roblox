@@ -1,0 +1,738 @@
+{
+  "metadata": {
+    "version": "4.0",
+    "portal": "Cala de Coral",
+    "theme": "Fluir y Adaptación",
+    "unlock_level": 40,
+    "cost": 15000,
+    "total_npcs": 8,
+    "conversations_per_npc": 10,
+    "total_conversations": 80,
+    "xp_per_conversation": 100,
+    "language": "es",
+    "translated_from": "en",
+    "translated_at": "2026-01-30"
+  },
+  "npcs": [
+    {
+      "npc_id": "coral_clownfish",
+      "npc_name": "Coral el Pez Payaso",
+      "emoji": "🐠",
+      "species": "Pez Payaso",
+      "topic": "Encontrar Espacios Seguros y Apoyo",
+      "unlock_level": 42,
+      "conversations": [
+        {
+          "conversation_id": "clownfish_01",
+          "sort_order": 1,
+          "question": "¡Hola, pequeño amigo! ¡Soy Coral! ¿Ves esta anémona donde vivo? Sus tentáculos con aguijones me mantienen a salvo, pero no me lastiman porque somos amigos especiales. ¿Tienes un lugar donde te sientes seguro y cómodo?",
+          "yes_response": "¡Eso es maravilloso! Todos necesitamos un lugar seguro — un lugar donde puedas relajarte y ser tú mismo. Puede ser tu habitación, un rincón acogedor, o incluso los brazos de alguien. Tu lugar seguro es como mi anémona — ¡te ayuda a sentirte protegido!",
+          "no_response": "¡Está bien! A veces toma tiempo encontrar nuestros lugares seguros. Un lugar seguro puede ser cualquier sitio donde te sientas tranquilo — una silla cómoda, debajo de una manta, o incluso afuera bajo un árbol. ¡Pensemos juntos dónde podrías sentirte más en paz!",
+          "key_takeaway": "Todos necesitamos un espacio seguro donde podamos sentirnos protegidos y ser nosotros mismos."
+        },
+        {
+          "conversation_id": "clownfish_02",
+          "sort_order": 2,
+          "question": "Cuando el océano se siente aterrador, nado de regreso a mi anémona. ¡Está bien necesitar un lugar seguro! Cuando te sientes asustado o abrumado, ¿tienes algún lugar a donde te gusta ir?",
+          "yes_response": "¡Eso es muy inteligente! Saber a dónde ir cuando las cosas se sienten difíciles es una habilidad muy importante. Tu lugar seguro está ahí para ti siempre que lo necesites. ¡No es esconderse — es cuidar de ti mismo!",
+          "no_response": "¡Busquemos uno juntos! Piensa en dónde te sientes más tranquilo. Tal vez es tu cama, una habitación en particular, o cerca de alguien en quien confías. Cuando encuentres ese lugar, siempre tendrás a dónde ir cuando las cosas se sientan demasiado grandes.",
+          "key_takeaway": "Ir a un lugar seguro cuando nos sentimos abrumados no es esconderse — es cuidar de nosotros mismos."
+        },
+        {
+          "conversation_id": "clownfish_03",
+          "sort_order": 3,
+          "question": "¡Mi amiga anémona me ayuda, y yo también ayudo a mi anémona! Nos cuidamos mutuamente. ¿Tienes personas en tu vida que ayudan a cuidarte?",
+          "yes_response": "¡Eso es maravilloso! Las personas que nos cuidan son muy importantes — familia, amigos, maestros u otros. ¡Igual que yo y mi anémona, nos ayudamos mutuamente! Se siente bien saber que alguien te está cuidando.",
+          "no_response": "A veces es difícil ver quién se preocupa por nosotros. Pero probablemente hay personas que quieren ayudar — tal vez un maestro, un vecino, un familiar o un amigo. ¡A veces solo tenemos que hacerles saber que los necesitamos!",
+          "key_takeaway": "Todos necesitamos personas que nos ayuden a cuidarnos. Las relaciones funcionan mejor cuando nos ayudamos mutuamente."
+        },
+        {
+          "conversation_id": "clownfish_04",
+          "sort_order": 4,
+          "question": "Antes intentaba hacer todo solo. ¡Pero luego aprendí que está bien pedir ayuda! ¿Es fácil o difícil para ti pedir ayuda cuando la necesitas?",
+          "yes_response": "¡Es genial si es fácil, o totalmente bien si es difícil! Pedir ayuda puede sentirse aterrador, pero en realidad es valiente. Ningún pez puede nadar todos los océanos solo. ¡Cuando pedimos ayuda, dejamos que otros compartan sus dones con nosotros!",
+          "no_response": "¡Pedir ayuda es difícil para muchos de nosotros! Podríamos preocuparnos por ser una molestia o parecer débiles. Pero aquí hay un secreto: pedir ayuda es en realidad valiente. ¡Y la mayoría de las personas se sienten felices cuando pueden ayudar a alguien que les importa!",
+          "key_takeaway": "Pedir ayuda no es debilidad — es valiente. Nadie puede hacer todo solo."
+        },
+        {
+          "conversation_id": "clownfish_05",
+          "sort_order": 5,
+          "question": "A veces me siento nervioso por nadar lejos de casa. Pero saber que mi anémona está ahí esperándome me hace sentir más valiente. ¿Saber que tu lugar seguro está ahí te ayuda a sentirte valiente también?",
+          "yes_response": "¡Sí! Así es exactamente como funciona. Cuando sabemos que tenemos un lugar seguro al cual regresar, podemos ser más valientes en el mundo. Tu lugar seguro no te está deteniendo — ¡te está dando valor para explorar!",
+          "no_response": "¡Está bien! Aquí hay algo genial: solo saber que TIENES un lugar seguro puede ayudarte a sentirte más valiente, incluso cuando no estás ahí. Es como llevar un poquito de seguridad contigo a donde quiera que vayas. ¡Inténtalo y verás!",
+          "key_takeaway": "Tener un lugar seguro al cual regresar nos ayuda a sentirnos lo suficientemente valientes para explorar el mundo."
+        },
+        {
+          "conversation_id": "clownfish_06",
+          "sort_order": 6,
+          "question": "No todos los peces pueden vivir en mi anémona — ¡solo los peces payaso! Todos necesitamos cosas diferentes para sentirnos seguros. Lo que te ayuda a TI a sentirte seguro puede ser diferente de lo que ayuda a otra persona, ¡y está bien! ¿Sabes qué te ayuda a sentirte seguro?",
+          "yes_response": "¡Es maravilloso que lo sepas! Tal vez es tiempo tranquilo, o estar con personas, o abrazar un peluche, o escuchar música. Lo que funcione para TI es la respuesta correcta. ¡Tú eres el experto en lo que necesitas!",
+          "no_response": "Está bien — ¡puede tomar tiempo descubrirlo! Intenta notar cuándo te sientes tranquilo y en paz. ¿Qué está pasando? ¿Dónde estás? ¿Quién está ahí? Esas pistas pueden ayudarte a descubrir qué te hace sentir seguro.",
+          "key_takeaway": "Todos necesitamos cosas diferentes para sentirnos seguros. Saber qué funciona para ti es importante."
+        },
+        {
+          "conversation_id": "clownfish_07",
+          "sort_order": 7,
+          "question": "Incluso en mi anémona segura, a veces me siento preocupado. Tener un lugar seguro no significa que nunca te sientas asustado. ¿A veces te sientes preocupado incluso cuando estás en un lugar seguro?",
+          "yes_response": "¡Eso es completamente normal! Los lugares seguros nos ayudan a sentirnos mejor, pero no hacen que las preocupaciones desaparezcan por completo. Cuando las preocupaciones vienen incluso en tu lugar seguro, intenta respirar lentamente. La preocupación pasará, y sigues estando a salvo.",
+          "no_response": "¡Es genial que tu lugar seguro ayude tanto! Pero si alguna vez las preocupaciones se cuelan, no te sorprendas. Le pasa a todos. La buena noticia es que sigues estando a salvo, y el sentimiento de preocupación pasará.",
+          "key_takeaway": "Es normal sentirse preocupado a veces, incluso en lugares seguros. El sentimiento pasará."
+        },
+        {
+          "conversation_id": "clownfish_08",
+          "sort_order": 8,
+          "question": "Cuando veo a otro pez que parece perdido o asustado, quiero ayudarlo a encontrar seguridad también. ¿Alguna vez ayudas a otros a sentirse seguros cuando están pasando por un momento difícil?",
+          "yes_response": "¡Tienes un corazón tan bondadoso! Ayudar a otros a sentirse seguros es un regalo hermoso. Una palabra amable, sentarte con alguien, o simplemente estar ahí — estas cosas importan mucho. ¡Estás haciendo del océano un lugar mejor!",
+          "no_response": "¡Está bien! Aquí hay algo fácil de intentar: si ves a alguien que parece triste o asustado, podrías sonreírle o preguntarle si está bien. A veces las cosas pequeñas ayudan a las personas a sentirse menos solas. ¡Podrías ser el amigo seguro de alguien!",
+          "key_takeaway": "Podemos ayudar a otros a sentirse seguros a través de la amabilidad, la presencia y pequeñas acciones de cariño."
+        },
+        {
+          "conversation_id": "clownfish_09",
+          "sort_order": 9,
+          "question": "A medida que crezco más grande, puede que algún día necesite encontrar una anémona nueva y más grande. Los lugares seguros pueden cambiar a medida que crecemos. ¿Han cambiado tus lugares seguros o personas seguras con el tiempo?",
+          "yes_response": "¡Eso es parte de crecer! Los lugares y las personas que nos ayudaban a sentirnos seguros cuando éramos pequeños pueden cambiar a medida que crecemos. Está bien — no significa que esos viejos lugares seguros no fueran importantes. ¡Simplemente crecemos y encontramos nuevos!",
+          "no_response": "¡Está bien! Ya sea que tus lugares seguros hayan cambiado o permanecido igual, lo que importa es que los tengas. A medida que crezcas, puede que encuentres nuevos lugares seguros también. ¡Tu corazón sabe cómo encontrar seguridad!",
+          "key_takeaway": "Nuestros lugares seguros y personas seguras pueden cambiar a medida que crecemos, y eso es una parte normal de la vida."
+        },
+        {
+          "conversation_id": "clownfish_10",
+          "sort_order": 10,
+          "question": "¡Me ha encantado nadar contigo! Recuerda: está bien necesitar lugares seguros y personas seguras. Está bien pedir ayuda. ¿Cuidarás de ti mismo encontrando y manteniendo tus lugares seguros?",
+          "yes_response": "¡Hurra! Mereces sentirte seguro. Recuerda, necesitar seguridad no es debilidad — ¡es sabiduría! Tus lugares seguros y personas seguras están ahí para ti. ¡Nada adelante, pequeño amigo, y sabe que nunca estás solo en este gran océano! 🐠",
+          "no_response": "¡Está bien! Encontrar seguridad toma tiempo. Solo recuerda: mereces sentirte seguro, y está bien necesitar ayuda. Cuando estés listo, tus lugares seguros y personas seguras estarán ahí. ¡Creo en ti, amigo! 🐠",
+          "key_takeaway": "Necesitar seguridad no es debilidad — es sabiduría. Todos merecemos sentirnos seguros y apoyados."
+        }
+      ]
+    },
+    {
+      "npc_id": "shelly_sea_turtle",
+      "npc_name": "Shelly la Tortuga Marina",
+      "emoji": "🐢",
+      "species": "Tortuga Marina",
+      "topic": "Paciencia y Progreso Constante",
+      "unlock_level": 44,
+      "conversations": [
+        {
+          "conversation_id": "turtle_01",
+          "sort_order": 1,
+          "question": "¡Bueno, hola pequeño! Soy Shelly. He estado nadando en estos océanos por mucho tiempo. Soy lenta, ¡pero siempre llego a donde voy! ¿Alguna vez sientes que deberías ir más rápido?",
+          "yes_response": "¡Oh, te entiendo! El mundo nos dice que corramos, corramos, ¡corramos! Pero esto es lo que he aprendido: ir despacio no significa que estés atrasado. Significa que estás siendo cuidadoso y constante. ¡El arrecife no se construyó en un día! Lo estás haciendo muy bien.",
+          "no_response": "¡Qué manera tan tranquila de vivir! Entiendes algo que muchas criaturas no comprenden — que ir a tu propio ritmo está perfectamente bien. Sigue nadando tu propia nada, pequeño. ¡No hay ninguna carrera que ganar!",
+          "key_takeaway": "Ir a tu propio ritmo no significa que estés atrasado. El progreso lento y constante sigue siendo progreso."
+        },
+        {
+          "conversation_id": "turtle_02",
+          "sort_order": 2,
+          "question": "Cada año, nado miles de kilómetros a través del océano para poner mis huevos. ¡Toma mucho tiempo! ¿Alguna vez has trabajado en algo que tomó mucho tiempo?",
+          "yes_response": "¡Entonces conoces el secreto! Las cosas grandes toman tiempo. Ya sea aprender algo nuevo, hacer un amigo o alcanzar una meta — la paciencia es parte del viaje. ¡Cada golpe de mis aletas me acerca más, y cada paso que das también lo hace!",
+          "no_response": "¡Está bien! Algún día podrías tener una meta que tome mucho tiempo. Cuando eso pase, recuerda a la vieja Shelly — una brazada de aleta a la vez. No tienes que hacerlo todo de una vez. ¡Solo sigue adelante!",
+          "key_takeaway": "Los grandes logros toman tiempo. Llegamos ahí paso a paso."
+        },
+        {
+          "conversation_id": "turtle_03",
+          "sort_order": 3,
+          "question": "Cuando era joven, quería nadar tan rápido como los delfines. ¡Pero luego aprendí que mi manera lenta y constante era perfecta para mí! ¿Alguna vez comparas qué tan rápido aprendes o haces las cosas con otras personas?",
+          "yes_response": "¡Todos lo hacemos a veces! Pero comparar nuestra velocidad con la de otros puede hacernos sentir mal sin razón. Algunos delfines son rápidos, algunas tortugas son lentas, y el océano tiene espacio para todos nosotros. ¡Ve al ritmo que sea correcto para TI!",
+          "no_response": "¡Qué sabio eres! Saber que tu ritmo es tuyo es un verdadero regalo. Algunas cosas las aprenderás rápido, y otras tomarán más tiempo. Ambas están perfectamente bien. ¡Estás nadando tu propio viaje!",
+          "key_takeaway": "Comparar nuestro ritmo con el de otros no nos ayuda. Cada quien aprende y crece a su propia velocidad."
+        },
+        {
+          "conversation_id": "turtle_04",
+          "sort_order": 4,
+          "question": "A veces las corrientes empujan contra mí, y toma aún más tiempo llegar a donde voy. Cuando las cosas se ponen más difíciles, ¿alguna vez sientes ganas de rendirte?",
+          "yes_response": "¡Ese sentimiento es tan normal! Cuando las cosas son difíciles y lentas, es fácil querer renunciar. Pero déjame decirte — a veces lo más fuerte que puedes hacer es seguir adelante, incluso cuando es difícil. ¡Descansa si lo necesitas, luego sigue nadando!",
+          "no_response": "¡Tienes un espíritu fuerte! No rendirse, incluso cuando las cosas son difíciles, es verdadero coraje. Y recuerda, está bien descansar a veces. Descansar no es lo mismo que rendirse. ¡Luego puedes seguir nadando!",
+          "key_takeaway": "Cuando las cosas se ponen difíciles, sigue adelante — pero está bien descansar en el camino."
+        },
+        {
+          "conversation_id": "turtle_05",
+          "sort_order": 5,
+          "question": "No siempre puedo ver la playa hacia la que nado, pero confío en que llegaré. ¿Te resulta difícil seguir adelante cuando no puedes ver cómo resultarán las cosas?",
+          "yes_response": "¡Es difícil para todos! No saber cómo terminarán las cosas nos hace querer parar. Pero la confianza es como una brújula dentro de ti — incluso cuando no puedes ver la orilla, puedes confiar en que te estás acercando. ¡Sigue nadando!",
+          "no_response": "¡Qué maravillosa confianza tienes! Creer que llegarás, incluso cuando no puedes verlo todavía, es un tipo especial de fortaleza. ¡Esa confianza te llevará a través de muchos viajes en la vida!",
+          "key_takeaway": "Confiar en el viaje, incluso cuando no podemos ver el final, nos ayuda a seguir adelante."
+        },
+        {
+          "conversation_id": "turtle_06",
+          "sort_order": 6,
+          "question": "Después de poner mis huevos, tengo que dejarlos en la playa. No puedo apurar a las tortuguitas a nacer — ¡tengo que esperar! ¿Es difícil para ti esperar?",
+          "yes_response": "¡Esperar es difícil para casi todos! Queremos las cosas AHORA. Pero algunas cosas no pueden apurarse — necesitan tiempo para crecer, como una tortuguita en su huevo. Aprender a esperar, incluso cuando es difícil, hace las cosas buenas aún más dulces.",
+          "no_response": "¡Qué paciente eres! Esperar con calma es una habilidad con la que muchas criaturas luchan. Si alguna vez encuentras difícil esperar, solo recuerda — las cosas buenas a menudo necesitan tiempo. La espera es parte del viaje.",
+          "key_takeaway": "Algunas cosas no pueden apurarse. Aprender a esperar pacientemente es una habilidad importante."
+        },
+        {
+          "conversation_id": "turtle_07",
+          "sort_order": 7,
+          "question": "Cada día nado un poco más lejos. No parece mucho, pero con el tiempo, esas pequeñas distancias suman un gran viaje. ¿Crees que los pequeños pasos pueden llevar a cosas grandes?",
+          "yes_response": "¡Entiendes algo importante! Un poquito cada día suma. Leer una página, practicar un minuto, ser amable una vez — todo suma. ¡Estás construyendo algo grande, un pequeño paso a la vez!",
+          "no_response": "¡Es difícil creerlo cuando estás en medio de ello! Pero confía en mí — he nadado a través de océanos enteros, y lo hice una brazada de aleta a la vez. Tus pequeños esfuerzos ESTÁN sumando, incluso si no puedes verlo todavía.",
+          "key_takeaway": "Los pequeños esfuerzos suman con el tiempo. Un poquito cada día puede llevar a grandes logros."
+        },
+        {
+          "conversation_id": "turtle_08",
+          "sort_order": 8,
+          "question": "A veces doy giros equivocados y tengo que regresar. ¡Se siente como tiempo perdido! Pero siempre aprendo de ello. Cuando las cosas no salen bien, ¿te molestas contigo mismo?",
+          "yes_response": "¡Es fácil frustrarse! Pero esto es lo que he aprendido: los giros equivocados no son desperdicio. Nos enseñan y a veces incluso nos muestran cosas nuevas. ¡Sé gentil contigo mismo cuando cometas errores. Son parte del viaje!",
+          "no_response": "¡Qué manera tan saludable de pensar! Saber que los errores son solo parte del aprendizaje nos ayuda a mantenernos tranquilos y seguir moviéndonos. ¡Ya estás nadando como una vieja tortuga sabia!",
+          "key_takeaway": "Los giros equivocados y los errores no son desperdicio — son parte del aprendizaje. Sé gentil contigo mismo."
+        },
+        {
+          "conversation_id": "turtle_09",
+          "sort_order": 9,
+          "question": "Mi caparazón crece lentamente, capa por capa, durante muchos años. ¡Me protege! Tu crecimiento también sucede lentamente — pero siempre está sucediendo. ¿A veces deseas poder crecer más rápido?",
+          "yes_response": "¡Muchos jóvenes lo desean! Crecer parece emocionante. Pero aquí hay un secreto: cada parte de la vida tiene algo especial. No te apresures a través del hoy para llegar al mañana. ¡Disfruta el nadar, no solo el llegar!",
+          "no_response": "¡Qué encantador! Disfrutar donde estás ahora mismo, en lugar de apresurarte a lo siguiente, es un verdadero regalo. Eres sabio al apreciar el viaje, no solo el destino. ¡Sigue saboreando cada momento!",
+          "key_takeaway": "El crecimiento sucede lentamente, y está bien. Disfruta donde estás, no solo a donde vas."
+        },
+        {
+          "conversation_id": "turtle_10",
+          "sort_order": 10,
+          "question": "¡Nadar contigo ha sido un placer! Recuerda: lento y constante gana la nadada. Tu ritmo es perfecto para ti. ¿Serás paciente contigo mismo y confiarás en tu viaje?",
+          "yes_response": "¡Maravilloso! La paciencia es uno de los mejores regalos que puedes darte a ti mismo. Confía en que estás llegando a donde necesitas ir, una brazada a la vez. ¡Nada adelante, pequeño — el océano es tuyo para explorar! 🐢",
+          "no_response": "Está bien — ¡la paciencia también toma tiempo para aprenderse! Solo recuerda: no tienes que apurarte. No tienes que ser el más rápido. Solo tienes que seguir adelante. ¡Creo en ti, joven nadador! 🐢",
+          "key_takeaway": "La paciencia con nosotros mismos y la confianza en nuestro viaje nos ayuda a llegar a donde debemos ir."
+        }
+      ]
+    },
+    {
+      "npc_id": "crabby_crab",
+      "npc_name": "Crabby el Cangrejo",
+      "emoji": "🦀",
+      "species": "Cangrejo",
+      "topic": "Establecer Límites y Espacio Personal",
+      "unlock_level": 46,
+      "conversations": [
+        {
+          "conversation_id": "crab_01",
+          "sort_order": 1,
+          "question": "¡Hola! ¡Soy Crabby! No te preocupes, en realidad no soy gruñón — ¡ese es solo mi nombre! ¿Ves mi caparazón duro? Me protege de las cosas que podrían lastimarme. ¿Sabes qué es un límite?",
+          "yes_response": "¡Genial! Un límite es como mi caparazón — es algo que nos protege. Los límites son reglas que establecemos sobre cómo queremos ser tratados y con qué nos sentimos cómodos. ¡Nos ayudan a mantenernos seguros y felices!",
+          "no_response": "¡Déjame explicarte! Un límite es como un caparazón a tu alrededor que te ayuda a sentirte seguro. Es una regla que estableces sobre lo que está bien y lo que no está bien contigo — como quién puede abrazarte, o cómo te hablan las personas. ¡Los límites nos protegen!",
+          "key_takeaway": "Los límites son reglas que establecemos para protegernos y mantenernos cómodos."
+        },
+        {
+          "conversation_id": "crab_02",
+          "sort_order": 2,
+          "question": "Todos tienen límites diferentes. ¡A algunos cangrejos les gusta que los toquen, a otros no! A mí me gusta tener espacio a mi alrededor. ¿Te gusta tener tu propio espacio personal?",
+          "yes_response": "¡Eso está totalmente bien! El espacio personal es importante. Algunas criaturas necesitan más espacio, otras necesitan menos. Saber lo que necesitas y asegurarte de obtenerlo es una forma de cuidarte a ti mismo. ¡Tu espacio importa!",
+          "no_response": "¡Eso también está bien! A algunas criaturas les gusta estar cerca, y eso está perfectamente bien. Lo que importa es saber lo que TÚ te gusta y asegurarte de que otros lo sepan también. ¡Todos son diferentes, y está bien!",
+          "key_takeaway": "Todos necesitan diferentes cantidades de espacio personal. Saber lo que necesitas es importante."
+        },
+        {
+          "conversation_id": "crab_03",
+          "sort_order": 3,
+          "question": "Si otro cangrejo se acerca demasiado a mi caparazón y no me gusta, levanto mis pinzas y digo '¡Por favor, retrocede!' ¡Está bien decirles a otros lo que necesitas! ¿Es difícil para ti decirle a la gente lo que necesitas?",
+          "yes_response": "¡Es difícil para muchos de nosotros! Podríamos preocuparnos por ser groseros o hacer que otros se molesten. Pero decirle a la gente lo que necesitas no es malo — es cuidar de ti mismo. ¡Puedes ser amable Y firme al mismo tiempo!",
+          "no_response": "¡Eso es maravilloso! Poder decir lo que necesitas es una habilidad muy importante. Sigue hablando por ti mismo. Recuerda, es posible ser amable y claro sobre lo que necesitas al mismo tiempo!",
+          "key_takeaway": "Decirles a otros lo que necesitamos no es grosero — es cómo cuidamos de nosotros mismos."
+        },
+        {
+          "conversation_id": "crab_04",
+          "sort_order": 4,
+          "question": "A veces otras criaturas no escuchan cuando digo 'basta' o 'no'. ¡Eso se siente mal! ¿Alguna vez alguien no escuchó cuando le pediste que dejara de hacer algo?",
+          "yes_response": "¡Lamento que eso haya pasado! Cuando las personas no escuchan nuestro 'basta' o 'no', puede sentirse muy frustrante o incluso aterrador. Recuerda: tienes derecho a ser escuchado. Si alguien no escucha, está bien decírselo a un adulto de confianza.",
+          "no_response": "¡Qué bueno! Pero si alguna vez pasa, recuerda esto: 'no' es una oración completa. No tienes que explicar por qué. Y si alguien no escucha, encuentra a un adulto de confianza para que te ayude. ¡Tu 'no' importa!",
+          "key_takeaway": "Cuando alguien no respeta nuestro 'no', está bien pedir ayuda a un adulto de confianza."
+        },
+        {
+          "conversation_id": "crab_05",
+          "sort_order": 5,
+          "question": "Decir 'no' puede sentirse aterrador a veces. Antes me preocupaba que a los cangrejos no les gustaría si decía que no. ¿Alguna vez te preocupa que a la gente no le gustes si dices que no?",
+          "yes_response": "¡Esa es una preocupación muy común! Pero aquí está la verdad: las personas que realmente se preocupan por ti respetarán tu 'no'. Si alguien se enoja solo porque tienes límites, eso dice algo sobre ellos, ¡no sobre ti!",
+          "no_response": "¡Esa es una gran confianza! Saber que puedes decir no y aún así ser querido es importante. Los verdaderos amigos respetan los límites de los demás. ¡Sigue honrando lo que necesitas — las personas correctas lo entenderán!",
+          "key_takeaway": "Los verdaderos amigos respetan nuestros límites. Las personas que nos quieren aceptarán nuestro 'no'."
+        },
+        {
+          "conversation_id": "crab_06",
+          "sort_order": 6,
+          "question": "Los límites no son solo sobre el espacio — ¡también son sobre palabras y sentimientos! Por ejemplo, si alguien me dice cosas malas, puedo decir 'Eso lastima mis sentimientos. Por favor, para'. ¿Defiendes tus derechos cuando las palabras te lastiman?",
+          "yes_response": "¡Eso requiere coraje! Decirle a alguien que sus palabras lastiman no es ser sensible — es ser honesto. Tienes derecho a ser tratado con amabilidad. ¡Sigue hablando por ti mismo. Tus sentimientos importan!",
+          "no_response": "¡Puede ser muy difícil! A veces nos congelamos o no sabemos qué decir. Aquí hay algo que puedes practicar: 'Eso lastima mis sentimientos'. No necesitas decir más. ¡Vale la pena proteger tus sentimientos!",
+          "key_takeaway": "También podemos establecer límites sobre las palabras. Está bien decirle a la gente cuando sus palabras nos lastiman."
+        },
+        {
+          "conversation_id": "crab_07",
+          "sort_order": 7,
+          "question": "Mis límites pueden ser diferentes de tus límites, ¡y está bien! A mí puede que no me gusten los abrazos, pero a ti te pueden encantar. ¿Respetas los límites de otras criaturas, incluso si son diferentes de los tuyos?",
+          "yes_response": "¡Eso es tan importante! Cuando respetamos los límites de otros, les mostramos que nos importan sus sentimientos. Solo porque a nosotros nos gusta algo no significa que a todos les guste. ¡Estás siendo un muy buen amigo!",
+          "no_response": "¡Requiere práctica! A veces olvidamos que a otros puede no gustarles lo que nos gusta a nosotros. Antes de abrazar, tocar o hacerle algo a alguien, intenta preguntar primero: '¿Está bien?' ¡Demuestra que te importa su comodidad!",
+          "key_takeaway": "Respetar los límites de otros muestra que nos importan sus sentimientos, incluso cuando son diferentes de los nuestros."
+        },
+        {
+          "conversation_id": "crab_08",
+          "sort_order": 8,
+          "question": "A veces cambio de opinión sobre lo que me hace sentir cómodo. ¡Lo que se sintió bien ayer puede no sentirse bien hoy! ¿Está bien cambiar tus límites?",
+          "yes_response": "¡Absolutamente! Nuestros límites pueden cambiar dependiendo de cómo nos sentimos, con quién estamos o qué está pasando. Siempre tienes permitido cambiar de opinión. '¡Antes estaba bien con eso, pero ahora no lo estoy' es completamente válido!",
+          "no_response": "¡Realmente está bien! No tienes que mantener los mismos límites para siempre. Si algo ya no se siente bien, puedes decirlo. Tú estás a cargo de tu propia comodidad. ¡Está bien cambiar de opinión!",
+          "key_takeaway": "Los límites pueden cambiar. Siempre tenemos permitido cambiar de opinión sobre lo que nos hace sentir cómodos."
+        },
+        {
+          "conversation_id": "crab_09",
+          "sort_order": 9,
+          "question": "¡Tener buenos límites en realidad me ayuda a ser un mejor amigo! Cuando cuido de mí mismo, tengo más energía para cuidar de otros. ¿Cuidas de tus propias necesidades para poder ayudar a otros también?",
+          "yes_response": "¡Eso es muy sabio! Cuidar de ti mismo no es egoísta — es necesario. ¡Cuando tu caparazón es fuerte, puedes ayudar a otros a construir el suyo! Estás aprendiendo que cuidar de ti mismo te ayuda a cuidar de todos.",
+          "no_response": "¡Es algo para pensar! A veces tratamos de ayudar a todos los demás pero nos olvidamos de nosotros mismos. ¡Pero no puedes verter de un caparazón vacío! Cuidar de tus necesidades te ayuda a tener más para dar a otros.",
+          "key_takeaway": "Cuidar de nosotros mismos no es egoísta. Nos ayuda a tener más energía para ayudar a otros."
+        },
+        {
+          "conversation_id": "crab_10",
+          "sort_order": 10,
+          "question": "¡He disfrutado mucho hablar contigo! Recuerda: tus límites importan. Puedes decir no, pedir espacio y esperar ser tratado con amabilidad. ¿Cuidarás de ti mismo manteniendo tus límites fuertes?",
+          "yes_response": "¡Maravilloso! Un caparazón fuerte hace un cangrejo feliz. Mereces sentirte seguro y cómodo. Sigue estableciendo límites y pidiendo lo que necesitas. ¡Tú puedes, amigo! ¡Sigue andando! 🦀",
+          "no_response": "Está bien — ¡los límites requieren práctica! Empieza pequeño. Intenta decir 'no' a una cosita, o pide un poco de espacio. Con el tiempo, se vuelve más fácil. ¡Creo en ti! 🦀",
+          "key_takeaway": "Nuestros límites importan. Merecemos sentirnos seguros, cómodos y tratados con respeto."
+        }
+      ]
+    },
+    {
+      "npc_id": "ollie_octopus",
+      "npc_name": "Ollie el Pulpo",
+      "emoji": "🐙",
+      "species": "Pulpo",
+      "topic": "Flexibilidad y Resolución de Problemas",
+      "unlock_level": 48,
+      "conversations": [
+        {
+          "conversation_id": "octopus_01",
+          "sort_order": 1,
+          "question": "¡Hola, amigo inteligente! ¡Soy Ollie! Mira esto — ¡puedo pasar por los espacios más pequeños porque soy muy flexible! Ser flexible en nuestra mente también es útil. Cuando los planes cambian, ¿te resulta fácil o difícil adaptarte?",
+          "yes_response": "Sea fácil o difícil para ti, ¡está bien! El cambio puede sorprendernos. Ser flexible significa que podemos doblarnos sin rompernos — ¡como mis ocho brazos! Cuando las cosas no salen como se planeó, podemos encontrar nuevas formas de avanzar.",
+          "no_response": "¡A la mayoría de las criaturas les resulta difícil a veces! Hacemos planes, y luego — ¡swoosh! — algo cambia. Eso puede sentirse frustrante. Pero igual que mi cuerpo flexible, nuestras mentes también pueden aprender a flexionarse. ¡Requiere práctica!",
+          "key_takeaway": "La flexibilidad mental nos ayuda a adaptarnos cuando las cosas no salen como se planeó."
+        },
+        {
+          "conversation_id": "octopus_02",
+          "sort_order": 2,
+          "question": "Tengo ocho brazos, así que cuando uno se atora, ¡uso otro! Cuando una forma de hacer algo no funciona, ¿intentas diferentes formas?",
+          "yes_response": "¡Esa es una excelente resolución de problemas! Solo porque una forma no funciona no significa que no hay manera. Usualmente hay muchas formas de resolver un problema — ¡como tener ocho brazos diferentes para intentar! ¡Sigue pensando creativamente!",
+          "no_response": "¡Puede ser desalentador cuando algo no funciona! Pero aquí hay un secreto: casi siempre hay más de una manera de hacer algo. Si tu primer brazo no puede alcanzar, ¡prueba otro! No te rindas después de un intento.",
+          "key_takeaway": "Cuando un enfoque no funciona, intenta otro. Usualmente hay más de una manera de resolver un problema."
+        },
+        {
+          "conversation_id": "octopus_03",
+          "sort_order": 3,
+          "question": "A veces encuentro comida escondida en lugares difíciles. ¡Tengo que pensar cuidadosamente en cómo obtenerla! ¿Te gusta resolver puzzles o descubrir cosas?",
+          "yes_response": "¡Maravilloso! Los puzzles y los problemas son como ejercicio para tu cerebro. Cada vez que descubres algo, tu cerebro se fortalece. ¡Sigue desafiándote a ti mismo — estás construyendo poder de pensamiento!",
+          "no_response": "¡Está bien! No a todos les encantan los puzzles. Pero aquí hay algo genial: ¡en realidad estás resolviendo problemas todos los días sin darte cuenta! Vestirte, tomar decisiones, jugar juegos — tu cerebro siempre está trabajando. ¡Eres más inteligente de lo que crees!",
+          "key_takeaway": "Resolver problemas es como ejercicio para nuestros cerebros. Resolvemos problemas todos los días, incluso cuando no nos damos cuenta."
+        },
+        {
+          "conversation_id": "octopus_04",
+          "sort_order": 4,
+          "question": "Cuando enfrento un problema, primero intento mantener la calma. ¡Un cerebro preocupado no piensa tan bien! Cuando tienes un problema, ¿intentas calmarte antes de resolverlo?",
+          "yes_response": "¡Pensamiento inteligente! Cuando estamos molestos, nuestros cerebros entran en 'modo pánico' y no pueden pensar claramente. Tomar algunas respiraciones primero ayuda a que nuestro 'cerebro pensante' funcione mejor. ¡Primero calma, luego resuelve — esa es la manera del pulpo!",
+          "no_response": "¡Es difícil recordar cuando estamos molestos! Nuestros cerebros quieren reaccionar AHORA MISMO. Pero si puedes, intenta respirar lentamente tres veces antes de abordar un problema. ¡Realmente ayuda! Un cerebro tranquilo es mejor para resolver problemas.",
+          "key_takeaway": "Calmarnos antes de intentar resolver un problema ayuda a nuestros cerebros a pensar más claramente."
+        },
+        {
+          "conversation_id": "octopus_05",
+          "sort_order": 5,
+          "question": "Cuando no puedo resolver algo solo, ¡observo a otras criaturas del océano y aprendo de ellas! ¿Alguna vez le pides ayuda o ideas a otros cuando estás atascado?",
+          "yes_response": "¡Eso es muy inteligente! Ningún pulpo lo sabe todo. Obtener ideas de otros puede mostrarnos soluciones que nunca habríamos pensado. Pedir ayuda no es rendirse — ¡es ser sabio sobre la resolución de problemas!",
+          "no_response": "¡Puede sentirse difícil preguntar! Pero aquí está la cosa: todos se atascan a veces. Otras criaturas pueden tener ideas que nunca pensaste. Pedir ayuda no es hacer trampa — ¡es usar todos tus recursos!",
+          "key_takeaway": "Pedirle ayuda o ideas a otros cuando estamos atascados es una resolución inteligente de problemas, no rendirse."
+        },
+        {
+          "conversation_id": "octopus_06",
+          "sort_order": 6,
+          "question": "¡A veces intento algo y no funciona para nada! Cometo muchos errores. Pero cada error me enseña algo. ¿Cómo te sientes cuando intentas algo y no funciona?",
+          "yes_response": "Los errores pueden sentirse mal, o pueden sentirse como solo parte del aprendizaje — ¡o ambos! Como sea que te sientas está bien. Lo que importa es lo que haces después. ¡Cada 'ups' te acerca más al 'ajá'! Así es como funciona la resolución de problemas.",
+          "no_response": "¡Esa es una manera saludable de pensar! Saber que no funcionar es parte del proceso nos ayuda a seguir adelante. ¡Ya estás pensando como un gran solucionador de problemas!",
+          "key_takeaway": "Los errores son parte del aprendizaje. Cada 'ups' nos acerca más a descubrir las cosas."
+        },
+        {
+          "conversation_id": "octopus_07",
+          "sort_order": 7,
+          "question": "¡Puedo cambiar mi color para mezclarme o destacar, dependiendo de lo que necesite! A veces resolver un problema significa cambiar nuestro enfoque. ¿Puedes pensar en un momento en que tuviste que intentar algo de una manera diferente?",
+          "yes_response": "¡Perfecto! Esa es la flexibilidad en acción. Cuando estamos dispuestos a cambiar cómo estamos haciendo algo, abrimos nuevas posibilidades. Ser terco sobre nuestra manera puede mantenernos atascados. ¡Ya has aprendido esta lección!",
+          "no_response": "¡Está bien! Cuando suceda, estarás listo. Solo recuerda: si algo no está funcionando, no tienes que seguir haciéndolo de la misma manera. ¡Prueba un nuevo color, como yo hago! El cambio puede ser la clave para resolver las cosas.",
+          "key_takeaway": "Estar dispuesto a cambiar nuestro enfoque abre nuevas posibilidades para resolver problemas."
+        },
+        {
+          "conversation_id": "octopus_08",
+          "sort_order": 8,
+          "question": "Algunos problemas son pequeños, como una tapa atascada en un frasco. ¡Algunos son grandes, como encontrar un nuevo hogar! ¿Sabes que los problemas grandes pueden dividirse en piezas más pequeñas?",
+          "yes_response": "¡Has descubierto algo poderoso! Los problemas grandes pueden sentirse abrumadores, pero cuando los dividimos en pasos pequeños, se vuelven manejables. ¡Un brazo a la vez, un paso a la vez — así es como resolvemos las cosas grandes!",
+          "no_response": "¡Es un gran truco! Cuando algo se siente demasiado grande, pregúntate: '¿Cuál es UNA pequeña parte en la que puedo trabajar?' ¡Solo una! Luego haz la siguiente pequeña parte. ¡Antes de que te des cuenta, el problema grande está resuelto!",
+          "key_takeaway": "Los problemas grandes se vuelven más fáciles cuando los dividimos en pasos más pequeños y manejables."
+        },
+        {
+          "conversation_id": "octopus_09",
+          "sort_order": 9,
+          "question": "¡Resolver problemas se siente muy bien! Amo el momento cuando descubro algo. ¿Te sientes orgulloso cuando resuelves un problema, incluso uno pequeño?",
+          "yes_response": "¡Ese sentimiento de orgullo es tu cerebro celebrando! Está diciendo '¡Buen trabajo, lo descubriste!' Déjate disfrutar ese sentimiento, incluso por pequeñas victorias. ¡Nos motiva a seguir resolviendo y aprendiendo!",
+          "no_response": "La próxima vez que resuelvas algo — incluso algo pequeño — intenta notar cómo se siente. ¡Tu cerebro podría darte un sentimiento feliz! Celebrar nuestras victorias al resolver problemas, incluso las pequeñas, nos ayuda a mantenernos motivados.",
+          "key_takeaway": "Sentirnos orgullosos cuando resolvemos problemas nos motiva a seguir aprendiendo e intentando."
+        },
+        {
+          "conversation_id": "octopus_10",
+          "sort_order": 10,
+          "question": "¡Qué gran charla! Recuerda: mantente flexible, prueba diferentes maneras y divide los problemas grandes en piezas pequeñas. ¿Seguirás usando tu increíble cerebro para resolver problemas?",
+          "yes_response": "¡Fantástico! Tu cerebro es como un pulpo con ocho brazos — ¡tantas maneras de alcanzar una solución! Mantente curioso, mantente flexible y nunca te rindas después de un intento. ¡Eres un maravilloso solucionador de problemas! 🐙",
+          "no_response": "¡Está bien! Resolver problemas es una habilidad que crece con el tiempo. Empieza pequeño. Cuando te quedes atascado en algo pequeño, prueba un enfoque diferente. Mejorarás más y más. ¡Creo en ti! 🐙",
+          "key_takeaway": "Mantenerse curioso y flexible nos ayuda a convertirnos en grandes solucionadores de problemas con el tiempo."
+        }
+      ]
+    },
+    {
+      "npc_id": "pearl_oyster",
+      "npc_name": "Perla la Ostra",
+      "emoji": "🐚",
+      "species": "Ostra",
+      "topic": "Autoestima y Belleza Interior",
+      "unlock_level": 50,
+      "conversations": [
+        {
+          "conversation_id": "oyster_01",
+          "sort_order": 1,
+          "question": "¡Hola, pequeño precioso! Soy Perla. Sé que me veo simple por fuera — ¡solo una concha áspera! Pero dentro de mí, tengo algo hermoso: una perla. ¿Sabes que tú también tienes algo hermoso dentro de ti?",
+          "yes_response": "¡Me alegra tanto que lo sepas! Tu belleza interior puede ser tu amabilidad, tu creatividad, tu humor, tu corazón bondadoso, o tantas otras cosas. ¡Estos tesoros interiores son más valiosos que cualquier cosa que puedas ver!",
+          "no_response": "¡Es verdad! Todos tienen cosas hermosas dentro de ellos. Tal vez es cómo te preocupas por los demás, o tu imaginación, o tu determinación. Solo porque no puedas verlo no significa que no esté ahí. ¡Tu perla interior es real!",
+          "key_takeaway": "Todos tenemos belleza interior — cualidades como amabilidad, creatividad y cariño que nos hacen valiosos."
+        },
+        {
+          "conversation_id": "oyster_02",
+          "sort_order": 2,
+          "question": "¿Sabes cómo se hacen las perlas? Un pequeño grano de arena entra en mi concha y me irrita. ¡Con el tiempo, convierto esa irritación en algo hermoso! ¿Alguna vez has convertido una experiencia difícil en algo bueno?",
+          "yes_response": "¡Qué tesoro has creado! Igual que una perla, tus experiencias difíciles pueden convertirse en algo hermoso. Los desafíos que has enfrentado han ayudado a formar la persona increíble en la que te estás convirtiendo. ¡Esa es tu perla interior creciendo!",
+          "no_response": "Está bien — ¡toma tiempo! A veces no vemos cómo las cosas difíciles nos ayudaron hasta después. Pero confía en mí, los momentos difíciles que enfrentas están formando algo precioso dentro de ti. Tu perla está creciendo, incluso ahora.",
+          "key_takeaway": "Las experiencias difíciles pueden moldearnos y convertirse en algo hermoso con el tiempo, como una perla."
+        },
+        {
+          "conversation_id": "oyster_03",
+          "sort_order": 3,
+          "question": "Algunas criaturas marinas se ven llamativas y coloridas, pero he aprendido que el verdadero valor no se trata de cómo nos vemos por fuera. ¿Alguna vez te preocupas por cómo te ves?",
+          "yes_response": "¡Muchas criaturas lo hacen! Vemos imágenes hermosas y pensamos que deberíamos vernos así. Pero la verdadera belleza no es solo exterior — es cómo tratas a otros, cómo das lo mejor de ti, cómo te preocupas. ¡Esa es la belleza que perdura!",
+          "no_response": "¡Qué manera tan tranquila de sentirse! Saber que nuestro exterior no define nuestro valor es sabiduría. Sigue recordando que tu valor viene de quién eres por dentro, no de cómo te ves. ¡Ahí es donde vive tu perla!",
+          "key_takeaway": "El verdadero valor viene de quiénes somos por dentro, no de cómo nos vemos por fuera."
+        },
+        {
+          "conversation_id": "oyster_04",
+          "sort_order": 4,
+          "question": "Antes comparaba mi concha simple con las conchas bonitas a mi alrededor y me sentía mal. ¡Pero luego me di cuenta: tengo una PERLA adentro! ¿A veces te comparas con otros y sientes que no eres suficiente?",
+          "yes_response": "¡Casi todos se sienten así a veces! Pero comparar nuestro exterior con el exterior de otra persona es como comparar conchas — ¡te estás perdiendo la perla de adentro! Tú tienes tesoros que ellos no tienen, y ellos tienen algunos que tú no. ¡Todos somos valiosos!",
+          "no_response": "¡Qué maravillosa autoaceptación! Conocer tu propio valor sin compararte con otros es un verdadero regalo. Sigue aferrándote a ese sentimiento. ¡Eres suficiente, exactamente como eres!",
+          "key_takeaway": "Compararnos con otros puede ocultar nuestros propios tesoros interiores. Todos somos valiosos de diferentes maneras."
+        },
+        {
+          "conversation_id": "oyster_05",
+          "sort_order": 5,
+          "question": "Mi perla tardó años en formarse. Creció lentamente, capa por capa. Tu valor es igual — ¡se ha estado construyendo desde que naciste! ¿Sabes que eras valioso desde el momento en que llegaste a este mundo?",
+          "yes_response": "¡Sí! No tuviste que ganarte tu valor siendo inteligente, bonito, o bueno en las cosas. Eras valioso solo por nacer. Nada puede quitar eso. ¡Tu valor está construido dentro de ti!",
+          "no_response": "¡Es verdad! No tienes que ganarte el valor haciendo cosas o viéndote de cierta manera. Eras precioso desde el momento en que naciste, igual que una perla comenzando a formarse. ¡Tu valor no es algo que tengas que probar!",
+          "key_takeaway": "Somos valiosos simplemente porque existimos. Nuestro valor no tiene que ser ganado."
+        },
+        {
+          "conversation_id": "oyster_06",
+          "sort_order": 6,
+          "question": "A veces me escondo en mi concha y no le muestro mi perla a nadie. Me siento tímida o asustada. ¿Alguna vez ocultas tus cualidades especiales porque tienes miedo de lo que otros puedan pensar?",
+          "yes_response": "¡Eso tiene sentido! Puede sentirse arriesgado mostrar nuestro verdadero yo. ¿Qué pasa si a alguien no le gusta? Pero esconder tu luz oscurece el mundo. Las personas que importan amarán tu verdadero yo. ¡Tu perla merece ser vista!",
+          "no_response": "¡Qué valiente! Compartir nuestro verdadero yo requiere coraje. ¡Sigue brillando! Y si alguna vez te sientes tímido, también está bien. Puedes compartir tu perla cuando estés listo. No hay prisa.",
+          "key_takeaway": "Compartir nuestro verdadero yo puede sentirse arriesgado, pero nuestra belleza interior merece ser vista."
+        },
+        {
+          "conversation_id": "oyster_07",
+          "sort_order": 7,
+          "question": "Otras criaturas pueden decir cosas malas sobre mi concha, ¡pero no pueden tocar mi perla! Cuando alguien dice algo malo sobre ti, ¿cambia quién eres realmente por dentro?",
+          "yes_response": "Entiendo — las palabras malas pueden realmente lastimar y hacernos sentir diferentes. Pero aquí está la verdad: sus palabras los describen a ELLOS, no a ti. Tu perla sigue ahí, sigue siendo hermosa, sin importar lo que alguien diga. ¡Sigues siendo TÚ!",
+          "no_response": "¡Entiendes algo importante! Lo que otros dicen no cambia quién eres realmente. Sus palabras son sobre ellos, no sobre ti. Tu perla sigue siendo preciosa sin importar qué. ¡Esa es una sabiduría maravillosa!",
+          "key_takeaway": "Lo que otros dicen sobre nosotros no cambia nuestro verdadero valor. Nuestro valor interior permanece."
+        },
+        {
+          "conversation_id": "oyster_08",
+          "sort_order": 8,
+          "question": "He aprendido a hablarme amablemente a mí misma, como le hablaría a un amigo. ¿Te hablas bien a ti mismo en tu cabeza, o a veces eres malo contigo mismo?",
+          "yes_response": "¡Es maravilloso si eres amable contigo mismo! Y si a veces eres malo, eso es muy común. Podemos ser nuestros críticos más duros. Intenta hablarte a ti mismo como le hablarías a un amigo que amas. ¡Mereces esa amabilidad!",
+          "no_response": "¡Es bueno saber eso de ti mismo! Si a veces eres duro contigo mismo, intenta esto: ¿le dirías esa cosa mala a un amigo? ¡Probablemente no! Mereces la misma amabilidad que le darías a otros. ¡Habla gentilmente a tu perla!",
+          "key_takeaway": "Hablarnos amablemente a nosotros mismos, como lo haríamos con un amigo, nos ayuda a recordar nuestro valor."
+        },
+        {
+          "conversation_id": "oyster_09",
+          "sort_order": 9,
+          "question": "Cada perla es diferente — diferentes tamaños, formas y colores. ¡Eso es lo que hace especial a cada una! ¿Sabes que ser diferente te hace especial, no extraño?",
+          "yes_response": "¡Sí! Las cosas que te hacen diferente son parte de tu perla única. ¡Si todos fueran iguales, el océano sería tan aburrido! Tus diferencias son regalos. ¡Celébralas!",
+          "no_response": "¡Es verdad! Las cosas que te hacen diferente de otros no son defectos — ¡son características! Son lo que hace que TU perla sea diferente a cualquier otra. El mundo necesita tu brillo único. ¡Diferente es hermoso!",
+          "key_takeaway": "Ser diferente nos hace especiales y únicos. Nuestras diferencias son parte de nuestra belleza."
+        },
+        {
+          "conversation_id": "oyster_10",
+          "sort_order": 10,
+          "question": "¡Qué alegría compartir contigo! Recuerda: tienes una hermosa perla dentro de ti. Eres digno, valioso y suficiente tal como eres. ¿Intentarás recordar tu belleza interior?",
+          "yes_response": "¡Eso hace feliz a mi concha! En los días que lo olvides, vuelve y recuerda nuestra charla. Tienes una perla dentro de ti que nadie puede quitarte. ¡Brilla fuerte, amigo precioso! 🐚",
+          "no_response": "Está bien — ¡toma tiempo realmente creerlo! Solo sabe que incluso cuando dudes de ti mismo, tu perla sigue ahí, sigue creciendo. Eres más valioso de lo que sabes. ¡Creo en ti! 🐚",
+          "key_takeaway": "Somos dignos y suficientes tal como somos. Nuestra belleza interior siempre está ahí."
+        }
+      ]
+    },
+    {
+      "npc_id": "finley_shark",
+      "npc_name": "Finley el Tiburón",
+      "emoji": "🦈",
+      "species": "Tiburón",
+      "topic": "Superar el Miedo y el Coraje",
+      "unlock_level": 52,
+      "conversations": [
+        {
+          "conversation_id": "shark_01",
+          "sort_order": 1,
+          "question": "¡Hola, amigo! ¡Soy Finley! Sé que me veo un poco aterrador, pero en realidad soy muy amigable. ¿Te sorprende que un tiburón quiera ser amigo?",
+          "yes_response": "¡Eso me pasa mucho! Muchas criaturas tienen miedo de los tiburones por cómo nos vemos. ¡Pero no soy nada aterrador — solo quiero hacer amigos y nadar juntos! A veces las cosas que parecen aterradoras resultan no ser tan aterradoras después de todo.",
+          "no_response": "¡Qué maravilloso que no juzgues rápidamente! Algunas criaturas se alejan nadando antes de conocerme. Me alegra que me hayas dado una oportunidad. ¡Ya sabes que las apariencias pueden engañar!",
+          "key_takeaway": "Las cosas que parecen aterradoras al principio pueden no serlo una vez que las conocemos."
+        },
+        {
+          "conversation_id": "shark_02",
+          "sort_order": 2,
+          "question": "¡Aunque soy grande, a veces también tengo miedo! Todos sienten miedo — es normal. ¿Alguna vez te sientes asustado por cosas?",
+          "yes_response": "¡Eso es completamente normal! El miedo es algo que toda criatura siente. Es la manera de nuestro cerebro de tratar de protegernos. Incluso las criaturas más grandes y valientes sienten miedo a veces. ¡No estás solo!",
+          "no_response": "¡Es genial que te sientas valiente! Pero si alguna vez llega el miedo, no te sorprendas. Visita a todos eventualmente. ¡Y sentir miedo no te hace débil — te hace normal!",
+          "key_takeaway": "Todos sienten miedo a veces. Es normal y no nos hace débiles."
+        },
+        {
+          "conversation_id": "shark_03",
+          "sort_order": 3,
+          "question": "Aquí hay algo genial: ser valiente no significa no tener miedo. ¡Significa hacer algo incluso cuando ESTÁS asustado! ¿Alguna vez has hecho algo aunque tenías miedo?",
+          "yes_response": "¡Eso es verdadero coraje! Sentiste el miedo y lo hiciste de todos modos. Eso es mucho más difícil que hacer algo que no te da miedo para nada. ¡Eres más valiente de lo que sabes! Lleva ese coraje nadando contigo.",
+          "no_response": "¡Está bien! Cuando llegue la oportunidad, recuerda esto: el coraje no es la ausencia del miedo — es la acción a pesar del miedo. Incluso los pequeños actos valientes cuentan. ¡Tienes más coraje dentro de ti de lo que piensas!",
+          "key_takeaway": "El coraje no es la ausencia del miedo — es hacer algo incluso cuando estamos asustados."
+        },
+        {
+          "conversation_id": "shark_04",
+          "sort_order": 4,
+          "question": "A veces imagino cosas aterradoras que podrían pasar, y me preocupo mucho. ¡Pero la mayoría de esas cosas aterradoras nunca suceden realmente! ¿Alguna vez te preocupas por cosas que no han pasado todavía?",
+          "yes_response": "¡La mayoría de nosotros lo hace! Nuestros cerebros son geniales imaginando cosas malas. Pero esto es lo que he aprendido: la mayoría de las cosas aterradoras que imagino nunca suceden. Preocuparse por 'y si' nos roba la alegría de hoy. ¡Intenta enfocarte en el ahora!",
+          "no_response": "¡Tienes una mente tranquila! Preocuparse por el futuro es muy común, así que si alguna vez te pasa, recuerda: la mayoría de las preocupaciones no se hacen realidad. ¡Desperdiciamos energía teniendo miedo de cosas que nunca suceden!",
+          "key_takeaway": "La mayoría de las cosas por las que nos preocupamos nunca suceden. Enfocarse en el ahora nos ayuda a sentir menos miedo."
+        },
+        {
+          "conversation_id": "shark_05",
+          "sort_order": 5,
+          "question": "Cuando me siento asustado, respiro lenta y profundamente por mis branquias. ¡Me ayuda a calmarme! ¿Tienes formas de calmarte cuando sientes miedo?",
+          "yes_response": "¡Eso es genial! Tener herramientas para calmarte cuando estás asustado es muy importante. Sigue usando lo que funciona para ti. Y recuerda, está bien sentir miedo — lo que importa es que sepas cómo ayudarte a sentirte mejor.",
+          "no_response": "¡Déjame compartir un truco! Cuando llegue el miedo, intenta respirar lentamente — inhala contando hasta 4, exhala contando hasta 4. Esto le dice a tu cerebro 'Estoy a salvo'. También puedes intentar apretar tus manos fuerte y luego soltar. ¡Encuentra lo que funcione para ti!",
+          "key_takeaway": "La respiración lenta y otras técnicas de calma pueden ayudarnos a manejar el miedo."
+        },
+        {
+          "conversation_id": "shark_06",
+          "sort_order": 6,
+          "question": "Antes tenía miedo de las partes oscuras del océano. ¡Pero nadé hacia ellas lentamente, poco a poco, y ahora no me dan tanto miedo! ¿Alguna vez te has vuelto menos temeroso de algo al enfrentarlo poco a poco?",
+          "yes_response": "¡Eso es increíble! Enfrentar nuestros miedos en pequeños pasos es una de las mejores maneras de superarlos. Cada pequeño paso le enseña a tu cerebro 'Puedo manejar esto'. ¡Ya estás conquistando miedos! ¡Sigue adelante!",
+          "no_response": "¡Está bien! Cuando estés listo, intenta esto: enfrenta algo pequeño que te asuste — solo un poquito. Luego hazlo de nuevo. Con el tiempo, el miedo se encoge. ¡No tienes que hacerlo todo de una vez!",
+          "key_takeaway": "Enfrentar los miedos en pequeños pasos nos ayuda a tener menos miedo con el tiempo."
+        },
+        {
+          "conversation_id": "shark_07",
+          "sort_order": 7,
+          "question": "A veces el miedo es útil — ¡nos mantiene a salvo de peligros reales! Pero a veces el miedo nos detiene de cosas buenas, como hacer amigos o probar cosas nuevas. ¿Puedes notar la diferencia entre el miedo útil y el miedo inútil?",
+          "yes_response": "¡Eso es muy sabio! El miedo útil dice 'esto es realmente peligroso' — como mantenerse alejado del fuego. El miedo inútil dice '¿qué pasa si algo malo sucede?' cuando no hay nada peligroso realmente ahí. ¡Conocer la diferencia es poderoso!",
+          "no_response": "¡Puede ser difícil! Pregúntate: '¿Hay peligro REAL aquí?' El miedo a un fuego ardiendo es útil — eso es peligro real. ¿Miedo a levantar la mano en clase? Eso no es peligro real. Ese miedo está tratando de protegerte de la vergüenza, no del daño.",
+          "key_takeaway": "Algunos miedos nos protegen del peligro real. Otros miedos solo nos detienen de cosas buenas."
+        },
+        {
+          "conversation_id": "shark_08",
+          "sort_order": 8,
+          "question": "Cuando me siento demasiado asustado para hacer algo solo, ¡le pido a un amigo que nade conmigo! Tener apoyo me ayuda a ser más valiente. ¿Tienes personas que te ayudan a sentirte más valiente?",
+          "yes_response": "¡Maravilloso! Tener a alguien a tu lado cuando estás asustado es muy útil. No te hace débil necesitar apoyo — ¡te hace inteligente! Mantén a esos amigos valientes cerca. ¡Somos más valientes juntos!",
+          "no_response": "¡Está bien! A veces sentimos que tenemos que ser valientes solos. Pero pedir ayuda no es debilidad — es sabiduría. Busca a alguien que pueda nadar a tu lado cuando las cosas se sienten aterradoras. ¡Todos necesitan un compañero de natación a veces!",
+          "key_takeaway": "Tener apoyo nos ayuda a ser más valientes. Pedir ayuda es inteligente, no débil."
+        },
+        {
+          "conversation_id": "shark_09",
+          "sort_order": 9,
+          "question": "Después de hacer algo valiente, ¡incluso algo pequeño, lo celebro! Se siente bien y me hace querer ser valiente de nuevo. ¿Celebras cuando eres valiente?",
+          "yes_response": "¡Eso es maravilloso! Celebrar nuestros momentos valientes — grandes o pequeños — le recuerda a nuestros cerebros que el coraje se siente bien. ¡Nos hace querer ser valientes de nuevo! ¡Sigue animándote a ti mismo, valiente nadador!",
+          "no_response": "¡Deberías intentarlo! Incluso los pequeños actos valientes merecen una celebración — una sonrisa, un pensamiento feliz, decirte a ti mismo '¡Lo logré!' Cuando celebramos el coraje, nuestros cerebros quieren sentir eso de nuevo. ¡Eres más valiente de lo que piensas!",
+          "key_takeaway": "Celebrar nuestros momentos valientes, incluso los pequeños, nos anima a ser valientes de nuevo."
+        },
+        {
+          "conversation_id": "shark_10",
+          "sort_order": 10,
+          "question": "¡Nadar contigo ha sido genial! Recuerda: todos sienten miedo, pero el coraje significa nadar hacia adelante de todos modos. ¿Intentarás ser valiente, incluso cuando estés un poco asustado?",
+          "yes_response": "¡Tienes el corazón de un tiburón — valiente y fuerte! El miedo vendrá e irá, pero tu coraje permanece. Tómalo una aleta a la vez. ¡Puedes hacer cosas difíciles! ¡Nada adelante, amigo valiente! 🦈",
+          "no_response": "¡Está bien! Ser valiente requiere práctica, y algunos días son más difíciles que otros. Empieza pequeño. Incluso los pequeños actos de coraje cuentan. ¡Creo en ti — eres más valiente de lo que sabes! 🦈",
+          "key_takeaway": "Podemos ser valientes incluso cuando estamos asustados. El coraje crece un pequeño paso a la vez."
+        }
+      ]
+    },
+    {
+      "npc_id": "splash_dolphin",
+      "npc_name": "Splash el Delfín",
+      "emoji": "🐬",
+      "species": "Delfín",
+      "topic": "Comunicación y Habilidades Sociales",
+      "unlock_level": 54,
+      "conversations": [
+        {
+          "conversation_id": "dolphin_01",
+          "sort_order": 1,
+          "question": "¡Hola, hola! ¡Soy Splash! *clic clic silbido* ¡Eso es hablar delfín! A los delfines nos encanta comunicarnos entre nosotros. ¿Te gusta hablar con otras personas?",
+          "yes_response": "¡Eso es maravilloso! Hablar con otros nos ayuda a hacer amigos, compartir ideas y sentirnos conectados. La comunicación es cómo construimos nuestro grupo — nuestro grupo de amigos cercanos. ¡Sigue charlando, cliqueando y conectando!",
+          "no_response": "¡Está bien! No a todos les encanta hablar mucho. ¡Algunos delfines también son callados! Lo bueno es que la comunicación no es solo hablar mucho. Se trata de compartir lo que te importa de la manera que te resulte cómoda.",
+          "key_takeaway": "La comunicación nos ayuda a conectar con otros y construir amistades."
+        },
+        {
+          "conversation_id": "dolphin_02",
+          "sort_order": 2,
+          "question": "Cuando los delfines hablamos, ¡también escuchamos! La buena comunicación es mitad hablar y mitad escuchar. ¿Eres un buen oyente?",
+          "yes_response": "¡Escuchar es un regalo tan grande para darle a alguien! Cuando realmente escuchamos — no solo esperando nuestro turno para hablar — las personas se sienten escuchadas y cuidadas. ¡Ya eres genial en una de las habilidades de comunicación más importantes!",
+          "no_response": "¡Escuchar puede ser difícil! Nuestras mentes divagan, o estamos emocionados por compartir nuestros pensamientos. Aquí hay un consejo: intenta enfocarte en lo que la otra persona está diciendo antes de pensar en lo que TÚ quieres decir. ¡Requiere práctica!",
+          "key_takeaway": "La buena comunicación se trata de escuchar tanto como de hablar. Escuchar hace que otros se sientan cuidados."
+        },
+        {
+          "conversation_id": "dolphin_03",
+          "sort_order": 3,
+          "question": "Los delfines también usamos lenguaje corporal — ¡nuestros saltos, golpes de cola y giros significan algo! ¿Sabes que los humanos también usan lenguaje corporal, como expresiones faciales y cómo te paras?",
+          "yes_response": "¡Estás sintonizado! Mucho de cómo nos comunicamos no son palabras para nada — son nuestras caras, nuestra postura, nuestros ojos. ¡Prestar atención al lenguaje corporal nos ayuda a entender mejor a las personas, incluso cuando no están hablando!",
+          "no_response": "¡Es muy interesante! Cruzar los brazos, mirar hacia abajo, sonreír, hacer contacto visual — todo esto envía mensajes sin palabras. La próxima vez que estés con alguien, nota su cuerpo. ¿Qué podría estar diciéndote?",
+          "key_takeaway": "El lenguaje corporal es una parte importante de la comunicación. Decimos mucho sin palabras."
+        },
+        {
+          "conversation_id": "dolphin_04",
+          "sort_order": 4,
+          "question": "A veces digo algo y mi amigo delfín me malinterpreta. ¡Eso pasa! Cuando alguien te malinterpreta, ¿cómo te sientes?",
+          "yes_response": "¡Ser malinterpretado puede sentirse frustrante o solitario! Pero le pasa a todos. La buena noticia es que podemos intentar de nuevo con diferentes palabras. 'Déjame decirlo de otra manera' es una frase útil. ¡La comunicación es un trabajo en progreso!",
+          "no_response": "¡Qué bueno! Y si alguna vez pasa, no te preocupes demasiado. Los malentendidos son normales. Siempre podemos intentar explicar de nuevo de una manera diferente. ¡La meta es entenderse, y a veces toma algunos intentos!",
+          "key_takeaway": "Los malentendidos le pasan a todos. Siempre podemos intentar explicar de una manera diferente."
+        },
+        {
+          "conversation_id": "dolphin_05",
+          "sort_order": 5,
+          "question": "¡Hacer nuevos amigos puede sentirse aterrador! Cuando conozco a un nuevo delfín, nado hacia él lentamente e intento ser amigable. ¿Te resulta fácil o difícil hacer nuevos amigos?",
+          "yes_response": "Sea fácil o difícil, ¡las amistades valen la pena! Algunos delfines hacen amigos rápidamente, otros toman tiempo para entrar en confianza. ¡Ambos están bien! Lo importante es ser amable e intentarlo.",
+          "no_response": "¡Hacer amigos puede sentirse complicado! Aquí hay algunos consejos: sonríe, haz preguntas, encuentra cosas que les gusten a ambos. No tienes que ser mejores amigos de inmediato — empieza pequeño. ¡Incluso un saludo amigable es un comienzo!",
+          "key_takeaway": "Hacer amigos requiere esfuerzo, pero vale la pena. Empieza pequeño con amabilidad y preguntas."
+        },
+        {
+          "conversation_id": "dolphin_06",
+          "sort_order": 6,
+          "question": "¡Los delfines somos muy buenos tomando turnos! Cuando un delfín hace clic, los otros esperan y escuchan. ¿Eres bueno esperando tu turno para hablar?",
+          "yes_response": "¡Eso es maravilloso! Tomar turnos muestra respeto. Dice 'lo que tienes que decir importa'. ¡Sigue tomando turnos — hace las conversaciones más divertidas para todos!",
+          "no_response": "¡Es algo en lo que muchos de nosotros trabajamos! Cuando estamos emocionados, queremos compartir AHORA MISMO. Pero esperar ayuda a la otra persona a sentirse escuchada. ¡Intenta contar hasta tres en tu cabeza después de que alguien deje de hablar antes de comenzar tú!",
+          "key_takeaway": "Tomar turnos en la conversación muestra respeto y ayuda a que todos se sientan escuchados."
+        },
+        {
+          "conversation_id": "dolphin_07",
+          "sort_order": 7,
+          "question": "A veces tengo que decirle a mis amigos delfines algo que no quieren escuchar, como 'eso lastimó mis sentimientos'. ¡Es difícil pero importante! ¿Puedes decirle a la gente cómo te sientes, incluso cuando es difícil?",
+          "yes_response": "¡Eso es valiente! Hablar sobre tus sentimientos, especialmente los difíciles, es una parte importante de la buena comunicación. Puedes ser honesto y amable al mismo tiempo. ¡Sigue compartiendo tu verdad!",
+          "no_response": "¡Puede ser muy difícil! Nos preocupa hacer que otros se molesten. Pero guardar nuestros sentimientos adentro puede lastimarnos. Intenta usar oraciones con 'Yo siento': 'Yo siento tristeza cuando...' Esto comparte tu sentimiento sin culpar a la otra persona.",
+          "key_takeaway": "Compartir nuestros sentimientos honestamente, incluso los difíciles, es importante. Las oraciones con 'Yo siento' ayudan."
+        },
+        {
+          "conversation_id": "dolphin_08",
+          "sort_order": 8,
+          "question": "Cuando los delfines no estamos de acuerdo, ¡intentamos resolverlo comunicándonos, no peleando! Cuando no estás de acuerdo con alguien, ¿intentas hablarlo?",
+          "yes_response": "¡Esa es la manera del delfín! Los desacuerdos pasan, pero hablarlos nos ayuda a entendernos. Puedes estar en desacuerdo Y seguir siendo amigos. ¡La comunicación nos ayuda a encontrar soluciones juntos!",
+          "no_response": "Está bien — ¡el conflicto es difícil! Pero alejarse nadando o enojarse usualmente no arregla las cosas. Intenta decir 'Lo veo diferente' y explicar por qué. Puede que no siempre estén de acuerdo, pero pueden entenderse mejor.",
+          "key_takeaway": "Hablar sobre los desacuerdos nos ayuda a entendernos y encontrar soluciones."
+        },
+        {
+          "conversation_id": "dolphin_09",
+          "sort_order": 9,
+          "question": "¡Me encanta hacerles preguntas a mis amigos sobre su día, sus cosas favoritas y cómo se sienten! ¿Haces preguntas cuando hablas con la gente?",
+          "yes_response": "¡Las preguntas son como regalos en una conversación! Muestran que te importa la otra persona. Sigue haciendo preguntas — ayuda a que las amistades crezcan más profundas y hace que las personas se sientan especiales.",
+          "no_response": "¡Las preguntas son mágicas! Mantienen las conversaciones fluyendo y muestran que te importa. Intenta preguntar cosas como '¿Cuál fue la mejor parte de tu día?' o '¿Qué te gusta hacer?' ¡A la gente le encanta responder preguntas sobre sí mismos!",
+          "key_takeaway": "Hacer preguntas muestra que nos importan los demás y ayuda a que las conversaciones y amistades crezcan."
+        },
+        {
+          "conversation_id": "dolphin_10",
+          "sort_order": 10,
+          "question": "¡Ha sido muy divertido charlar contigo! Recuerda: escucha bien, comparte tus sentimientos, haz preguntas y toma turnos. ¿Seguirás trabajando en tus habilidades de comunicación?",
+          "yes_response": "¡Súper fantástico! La buena comunicación abre puertas a amistades, entendimiento y conexión. Ya eres un gran comunicador. ¡Sigue cliqueando, silbando y conectándote con tu grupo! 🐬",
+          "no_response": "¡Está bien! La comunicación es algo que todos seguimos aprendiendo. Incluso pequeñas mejoras hacen una gran diferencia. La próxima vez que estés con alguien, intenta solo un consejo — como hacer una pregunta. ¡Nada adelante, amigo! 🐬",
+          "key_takeaway": "Las buenas habilidades de comunicación nos ayudan a construir amistades y conectar con otros."
+        }
+      ]
+    },
+    {
+      "npc_id": "sandy_seal",
+      "npc_name": "Sandy la Foca",
+      "emoji": "🦭",
+      "species": "Foca",
+      "topic": "Juego y Alegría en el Movimiento",
+      "unlock_level": 56,
+      "conversations": [
+        {
+          "conversation_id": "seal_01",
+          "sort_order": 1,
+          "question": "¡Arf arf! ¡Hola, soy Sandy! *hace una voltereta* ¡Me ENCANTA moverme y jugar! ¿Te gusta jugar y mover tu cuerpo?",
+          "yes_response": "¡Eso es maravilloso! Mover nuestros cuerpos es una de las mejores cosas que podemos hacer. Nos hace sentir felices, fuertes y llenos de energía. ¡Sigue jugando, saltando, bailando, o lo que sea que te haga sentir vivo!",
+          "no_response": "¡Está bien! No a todos les gusta el mismo tipo de movimiento. Pero aquí hay un secreto: moverse no tiene que ser trabajo duro. Puede ser bailar tontamente, dar paseos o jugar juegos. ¡Hay un tipo de movimiento para todos!",
+          "key_takeaway": "Mover nuestros cuerpos puede ser divertido y nos hace sentir felices y energizados."
+        },
+        {
+          "conversation_id": "seal_02",
+          "sort_order": 2,
+          "question": "¡Me encanta nadar porque se siente bien, no porque tenga que hacerlo! Cuando me muevo, no estoy pensando en nada excepto en lo divertido que es. ¿Mueves tu cuerpo porque se siente bien?",
+          "yes_response": "¡Esa es la mejor razón! Cuando nos movemos porque se siente divertido — no porque 'deberíamos' — nuestros cuerpos y mentes están felices. ¡Sigue encontrando alegría en el movimiento. Ese es el secreto para moverse toda la vida!",
+          "no_response": "A veces el movimiento se siente como una tarea, ¡lo sé! Pero ¿qué tal si encontraras algo que fuera realmente divertido? Bailar con música, jugar a atrapar, saltar en charcos — cuando el movimiento es juego, ¡no se siente como trabajo para nada!",
+          "key_takeaway": "Mover nuestros cuerpos porque se siente bien es la mejor manera de disfrutar el ejercicio."
+        },
+        {
+          "conversation_id": "seal_03",
+          "sort_order": 3,
+          "question": "¡El tiempo de juego no es solo para cachorros y niños — es para todos! Incluso las focas adultas juegan. ¿Crees que jugar es importante?",
+          "yes_response": "¡Absolutamente! El juego no es solo diversión — ayuda a nuestros cerebros a aprender, nuestros cuerpos a fortalecerse y nuestros corazones a sentirse felices. El juego es tan importante como el trabajo y el descanso. ¡Nunca dejes de jugar!",
+          "no_response": "¡Realmente lo es! Algunas criaturas piensan que el juego es solo para los pequeños, pero eso no es verdad. El juego nos ayuda a relajarnos, ser creativos y sentir alegría. ¡Jugar es bueno para nosotros a cualquier edad!",
+          "key_takeaway": "El juego es importante para todos, no solo para los niños. Nos ayuda a aprender, crecer y sentirnos felices."
+        },
+        {
+          "conversation_id": "seal_04",
+          "sort_order": 4,
+          "question": "Cuando me siento triste o estresada, voy a nadar. ¡Mover mi cuerpo ayuda a que mis sentimientos se sientan mejor! ¿Alguna vez has notado que moverte mejora tu ánimo?",
+          "yes_response": "¡Has descubierto algo que los científicos también saben! Mover nuestros cuerpos libera químicos felices en nuestros cerebros. Es como medicina natural para nuestro ánimo. ¡Cuando te sientas decaído, incluso un poco de movimiento puede ayudar!",
+          "no_response": "La próxima vez que te sientas gruñón o triste, intenta moverte un poco — aunque sea solo estirarte o bailar por un minuto. ¡Tu cerebro podría darte algunos sentimientos felices! El movimiento es como un ayudante del ánimo que siempre está disponible.",
+          "key_takeaway": "Mover nuestros cuerpos puede ayudar a mejorar nuestro ánimo cuando nos sentimos tristes o estresados."
+        },
+        {
+          "conversation_id": "seal_05",
+          "sort_order": 5,
+          "question": "No soy la nadadora más rápida, ¡y está bien! No juego para ser la mejor — juego porque es divertido. ¿Alguna vez te preocupa no ser lo suficientemente bueno en algo para disfrutarlo?",
+          "yes_response": "¡Muchas criaturas se sienten así! Pensamos que tenemos que ser buenos para divertirnos. Pero aquí está la verdad: ¡no tienes que ser bueno en algo para disfrutarlo! Juega por alegría, no por puntos. ¡Esa es la manera de la foca!",
+          "no_response": "¡Qué libertad! Saber que puedes disfrutar cosas sin ser 'bueno' en ellas es maravilloso. Sigue jugando por diversión, no por ganar. ¡La alegría está en el jugar, no en los resultados!",
+          "key_takeaway": "No tenemos que ser buenos en algo para disfrutarlo. El juego se trata de alegría, no de rendimiento."
+        },
+        {
+          "conversation_id": "seal_06",
+          "sort_order": 6,
+          "question": "¡A veces juego sola, y a veces juego con mis amigos focas! Ambos son divertidos de maneras diferentes. ¿Te gusta jugar solo, con otros, o ambos?",
+          "yes_response": "¡Todos esos son geniales! El juego en solitario nos ayuda a usar nuestra imaginación. Jugar con otros nos enseña trabajo en equipo y compartir. ¡No hay manera incorrecta de jugar — solo lo que te traiga alegría!",
+          "no_response": "¡Está bien! Diferentes ánimos requieren diferentes tipos de juego. A veces necesitamos juego tranquilo en solitario, a veces necesitamos juego salvaje en grupo. ¡Tú decides lo que se siente bien para ti cada día!",
+          "key_takeaway": "Tanto jugar solo como jugar con otros son valiosos. Diferentes momentos requieren diferentes tipos de juego."
+        },
+        {
+          "conversation_id": "seal_07",
+          "sort_order": 7,
+          "question": "¡Moverme ayuda a mi cuerpo a mantenerse saludable — mi corazón, mis músculos, mis huesos! ¿Sabes que jugar y moverse es bueno para tu cuerpo?",
+          "yes_response": "¡Tienes razón! Cuando jugamos y nos movemos, no solo nos estamos divirtiendo — estamos haciendo nuestros cuerpos más fuertes. Nuestros corazones bombean, nuestros músculos trabajan, nuestros pulmones respiran profundo. ¡El juego es bueno para nosotros por dentro y por fuera!",
+          "no_response": "¡Es verdad! Moverse ayuda a nuestros corazones a fortalecerse, nuestros músculos a crecer, y nuestros cuerpos a funcionar mejor. Pero aquí está la parte genial: ¡no tenemos que hacer ejercicios aburridos. Podemos solo JUGAR, y nuestros cuerpos se vuelven más saludables de todos modos!",
+          "key_takeaway": "El juego y el movimiento ayudan a nuestros cuerpos a mantenerse saludables de maneras divertidas."
+        },
+        {
+          "conversation_id": "seal_08",
+          "sort_order": 8,
+          "question": "*se rueda sobre su espalda y se menea* ¡Mira! ¡El movimiento puede ser tonto! ¿Alguna vez bailas o te mueves de maneras tontas solo por diversión?",
+          "yes_response": "¡Arf arf! ¡El movimiento tonto es el MEJOR! Cuando nos sacudimos, meneamos y bailamos como si nadie estuviera mirando, todo nuestro cuerpo se siente feliz. ¡Sigue siendo tonto — es bueno para tu alma!",
+          "no_response": "¡Deberías intentarlo! Pon música y solo menéate. Haz formas graciosas con tu cuerpo. Salta por tu habitación. Cuando somos tontos, dejamos ir la preocupación y solo nos sentimos libres. ¡Está totalmente bien verse gracioso!",
+          "key_takeaway": "El movimiento tonto y divertido es bueno para nosotros. Ser juguetón nos ayuda a sentirnos libres y felices."
+        },
+        {
+          "conversation_id": "seal_09",
+          "sort_order": 9,
+          "question": "Después de mucho jugar, mi cuerpo necesita descansar. ¡El descanso también es parte de cuidarme a mí misma! ¿Dejas que tu cuerpo descanse después de jugar mucho?",
+          "yes_response": "¡Eso es tan importante! Nuestros cuerpos necesitan descanso para recuperarse y volverse más fuertes. Juega duro, descansa bien — ese es el ritmo de una vida saludable. ¡Te estás cuidando muy bien!",
+          "no_response": "¡El descanso es tan importante como el juego! Si vamos, vamos, vamos todo el tiempo, nuestros cuerpos se cansan y no pueden seguir el ritmo. Asegúrate de equilibrar el juego con el descanso. ¡Ambos son parte de una vida feliz y saludable!",
+          "key_takeaway": "El descanso es tan importante como el juego. Nuestros cuerpos necesitan ambos para mantenerse saludables y felices."
+        },
+        {
+          "conversation_id": "seal_10",
+          "sort_order": 10,
+          "question": "¡Me ha encantado jugar contigo! Recuerda: el movimiento debería sentirse divertido, no como castigo. ¿Seguirás encontrando alegría en mover tu cuerpo?",
+          "yes_response": "¡Arf arf! ¡Tienes el espíritu de una foca juguetona! Sigue bailando, saltando, nadando, o lo que sea que haga feliz a tu corazón. ¡Tu cuerpo ama moverse — déjalo jugar! 🦭",
+          "no_response": "¡Está bien! Empieza pequeño — tal vez solo estírate o da un paseo corto. Encuentra una manera de moverte que no se sienta como trabajo. Tu cuerpo quiere jugar — ¡solo tienes que encontrar el juego correcto! 🦭",
+          "key_takeaway": "El movimiento debería sentirse alegre. Encontrar maneras divertidas de moverse nos ayuda a mantenernos saludables y felices."
+        }
+      ]
+    }
+  ]
+}

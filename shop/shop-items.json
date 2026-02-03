@@ -1,0 +1,2874 @@
+{
+  "metadata": {
+    "version": "4.1",
+    "description": "Complete shop catalog for Lumo's Land - Items unlock when rooms open in Castle",
+    "total_items": 131,
+    "lastUpdated": "2025-11-25",
+    "notes": "Complete progression system with level-gated items and room unlocks",
+    "image_support": {
+      "description": "Items can have an optional 'image' field for custom graphics",
+      "fallback": "If no image, emoji is displayed",
+      "local_path": "/assets/items/",
+      "supported_formats": ["png", "svg", "webp"],
+      "example": "/assets/items/rainbow-sticker.png"
+    }
+  },
+  "categories": [
+    "decor",
+    "furniture",
+    "outfit",
+    "accessory",
+    "seasonal",
+    "sticker"
+  ],
+  "items": [
+    {
+      "id": "BDRM-001",
+      "name": "Rainbow Rug",
+      "emoji": "🌈",
+      "image": "assets/shop-items/nook/bedroom/rainbow-rug.png",
+      "description": "Brighten your room with colors!",
+      "category": "decor",
+      "coinPrice": 120,
+      "gridSize": {
+        "width": 3,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-002",
+      "name": "Star Lamp",
+      "emoji": "⭐",
+      "image": "assets/shop-items/nook/bedroom/star-lamp.png",
+      "description": "Light up the night with stars",
+      "category": "furniture",
+      "coinPrice": 80,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-003",
+      "name": "Twin Bed",
+      "emoji": "🛏️",
+      "image": "assets/shop-items/nook/bedroom/twin-bed.png",
+      "description": "A comfy place to rest",
+      "category": "furniture",
+      "coinPrice": 200,
+      "gridSize": {
+        "width": 4,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "BDRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-004",
+      "name": "Bookshelf",
+      "emoji": "📚",
+      "image": "assets/shop-items/nook/bedroom/bookshelf.png",
+      "description": "Store your favorite books",
+      "category": "furniture",
+      "coinPrice": 150,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-005",
+      "name": "Cactus Plant",
+      "emoji": "🌵",
+      "image": "assets/shop-items/nook/bedroom/cactus-plant.png",
+      "description": "Low maintenance and cute!",
+      "category": "decor",
+      "coinPrice": 40,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-006",
+      "name": "Wall Art",
+      "emoji": "🎨",
+      "image": "assets/shop-items/nook/bedroom/wall-art.png",
+      "description": "Colorful art for your wall",
+      "category": "decor",
+      "coinPrice": 90,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-007",
+      "name": "Study Desk",
+      "emoji": "🪑",
+      "image": "assets/shop-items/nook/bedroom/study-desk.png",
+      "description": "Perfect for homework!",
+      "category": "furniture",
+      "coinPrice": 130,
+      "gridSize": {
+        "width": 3,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-008",
+      "name": "Globe",
+      "emoji": "🌍",
+      "image": "assets/shop-items/nook/bedroom/globe.png",
+      "description": "Explore the world!",
+      "category": "decor",
+      "coinPrice": 110,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-009",
+      "name": "Telescope",
+      "emoji": "🔭",
+      "image": "assets/shop-items/nook/bedroom/telescope.png",
+      "description": "Look at the stars!",
+      "category": "decor",
+      "coinPrice": 200,
+      "gridSize": {
+        "width": 1,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-010",
+      "name": "Guitar",
+      "emoji": "🎸",
+      "image": "assets/shop-items/nook/bedroom/guitar.png",
+      "description": "Make music!",
+      "category": "decor",
+      "coinPrice": 250,
+      "gridSize": {
+        "width": 1,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-011",
+      "name": "Nightstand",
+      "emoji": "🕯️",
+      "image": "assets/shop-items/nook/bedroom/nightstand.png",
+      "description": "Bedside storage",
+      "category": "furniture",
+      "coinPrice": 85,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-012",
+      "name": "Dresser",
+      "emoji": "👗",
+      "image": "assets/shop-items/nook/bedroom/dresser.png",
+      "description": "Store your clothes",
+      "category": "furniture",
+      "coinPrice": 180,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-013",
+      "name": "Window",
+      "emoji": "🪟",
+      "description": "Let the sunlight in",
+      "category": "decor",
+      "coinPrice": 100,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-014",
+      "name": "Clock",
+      "emoji": "⏰",
+      "image": "assets/shop-items/nook/bedroom/clock.png",
+      "description": "Never be late!",
+      "category": "decor",
+      "coinPrice": 60,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-015",
+      "name": "Cozy Chair",
+      "emoji": "🪑",
+      "image": "assets/shop-items/nook/bedroom/cozy-chair.png",
+      "description": "Perfect reading spot",
+      "category": "furniture",
+      "coinPrice": 120,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-016",
+      "name": "Potted Plant",
+      "emoji": "🪴",
+      "image": "assets/shop-items/nook/bedroom/potted-plant.png",
+      "description": "Adds life to your room",
+      "category": "decor",
+      "coinPrice": 50,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-017",
+      "name": "Bean Bag",
+      "emoji": "💺",
+      "image": "assets/shop-items/nook/bedroom/bean-bag.png",
+      "description": "Super comfy seat",
+      "category": "furniture",
+      "coinPrice": 95,
+      "gridSize": {
+        "width": 2,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-018",
+      "name": "King Bed",
+      "emoji": "🛌",
+      "image": "assets/shop-items/nook/bedroom/king-bed.png",
+      "description": "Luxury sleeping space",
+      "category": "furniture",
+      "coinPrice": 400,
+      "gridSize": {
+        "width": 4,
+        "height": 4
+      },
+      "compatibleRooms": [
+        "BDRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-019",
+      "name": "Mirror",
+      "emoji": "🪞",
+      "image": "assets/shop-items/nook/bedroom/mirror.png",
+      "description": "Check your look",
+      "category": "decor",
+      "coinPrice": 110,
+      "gridSize": {
+        "width": 1,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "BDRM-020",
+      "name": "Toy Chest",
+      "emoji": "🧸",
+      "image": "assets/shop-items/nook/bedroom/toy-chest.png",
+      "description": "Store your toys",
+      "category": "furniture",
+      "coinPrice": 130,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-001",
+      "name": "Dining Table",
+      "emoji": "🪑",
+      "image": "assets/shop-items/nook/kitchen/dining-table.png",
+      "description": "Gather for meals",
+      "category": "furniture",
+      "coinPrice": 250,
+      "gridSize": {
+        "width": 3,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "KTCH",
+        "BDRM",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-002",
+      "name": "Refrigerator",
+      "emoji": "🧊",
+      "image": "assets/shop-items/nook/kitchen/refrigerator.png",
+      "description": "Keep food fresh",
+      "category": "furniture",
+      "coinPrice": 350,
+      "gridSize": {
+        "width": 2,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-003",
+      "name": "Stove",
+      "emoji": "🔥",
+      "image": "assets/shop-items/nook/kitchen/stove.png",
+      "description": "Cook delicious meals",
+      "category": "furniture",
+      "coinPrice": 300,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-004",
+      "name": "Sink",
+      "emoji": "🚰",
+      "image": "assets/shop-items/nook/kitchen/sink.png",
+      "description": "Wash dishes here",
+      "category": "furniture",
+      "coinPrice": 180,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-005",
+      "name": "Kitchen Counter",
+      "emoji": "🔲",
+      "image": "assets/shop-items/nook/kitchen/kitchen-counter.png",
+      "description": "Prep your food",
+      "category": "furniture",
+      "coinPrice": 200,
+      "gridSize": {
+        "width": 3,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-006",
+      "name": "Dining Chair",
+      "emoji": "🪑",
+      "image": "assets/shop-items/nook/kitchen/dining-chair.png",
+      "description": "Seat at the table",
+      "category": "furniture",
+      "coinPrice": 70,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-007",
+      "name": "Microwave",
+      "emoji": "📦",
+      "image": "assets/shop-items/nook/kitchen/microwave.png",
+      "description": "Quick meals",
+      "category": "furniture",
+      "coinPrice": 150,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-008",
+      "name": "Toaster",
+      "emoji": "🍞",
+      "image": "assets/shop-items/nook/kitchen/toaster.png",
+      "description": "Perfect toast every time",
+      "category": "decor",
+      "coinPrice": 60,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-009",
+      "name": "Coffee Maker",
+      "emoji": "☕",
+      "image": "assets/shop-items/nook/kitchen/coffee-maker.png",
+      "description": "Morning energy boost",
+      "category": "decor",
+      "coinPrice": 80,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-010",
+      "name": "Fruit Bowl",
+      "emoji": "🍎",
+      "image": "assets/shop-items/nook/kitchen/fruit-bowl.png",
+      "description": "Healthy snacks",
+      "category": "decor",
+      "coinPrice": 45,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH",
+        "BDRM",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-011",
+      "name": "Kitchen Window",
+      "emoji": "🪟",
+      "image": "assets/shop-items/nook/kitchen/kitchen-window.png",
+      "description": "Natural light",
+      "category": "decor",
+      "coinPrice": 100,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-012",
+      "name": "Cutting Board",
+      "emoji": "🔪",
+      "image": "assets/shop-items/nook/kitchen/cutting-board.png",
+      "description": "Chop vegetables",
+      "category": "decor",
+      "coinPrice": 35,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-013",
+      "name": "Spice Rack",
+      "emoji": "🧂",
+      "image": "assets/shop-items/nook/kitchen/spice-rack.png",
+      "description": "Organized seasonings",
+      "category": "decor",
+      "coinPrice": 70,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-014",
+      "name": "Trash Can",
+      "emoji": "🗑️",
+      "image": "assets/shop-items/nook/kitchen/trash-can.png",
+      "description": "Keep it clean",
+      "category": "furniture",
+      "coinPrice": 50,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-015",
+      "name": "Kitchen Island",
+      "emoji": "🟫",
+      "image": "assets/shop-items/nook/kitchen/kitchen-island.png",
+      "description": "Extra workspace",
+      "category": "furniture",
+      "coinPrice": 400,
+      "gridSize": {
+        "width": 4,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-016",
+      "name": "Dishwasher",
+      "emoji": "💧",
+      "image": "assets/shop-items/nook/kitchen/dishwasher.png",
+      "description": "Clean dishes easily",
+      "category": "furniture",
+      "coinPrice": 320,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-017",
+      "name": "Bar Stool",
+      "emoji": "🪑",
+      "image": "assets/shop-items/nook/kitchen/bar-stool.png",
+      "description": "Counter seating",
+      "category": "furniture",
+      "coinPrice": 90,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-018",
+      "name": "Cookbook Stand",
+      "emoji": "📖",
+      "image": "assets/shop-items/nook/kitchen/cookbook-stand.png",
+      "description": "Follow recipes",
+      "category": "decor",
+      "coinPrice": 40,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-019",
+      "name": "Pot Rack",
+      "emoji": "🍳",
+      "image": "assets/shop-items/nook/kitchen/pot-rack.png",
+      "description": "Hang your pots",
+      "category": "decor",
+      "coinPrice": 110,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "KTCH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "KTCH-020",
+      "name": "Kitchen Rug",
+      "emoji": "🔷",
+      "image": "assets/shop-items/nook/kitchen/kitchen-rug.png",
+      "description": "Comfort underfoot",
+      "category": "decor",
+      "coinPrice": 85,
+      "gridSize": {
+        "width": 2,
+        "height": 3
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-001",
+      "name": "Comfy Sofa",
+      "emoji": "🛋️",
+      "image": "assets/shop-items/nook/living-room/comfy-sofa.png",
+      "description": "Relax in style",
+      "category": "furniture",
+      "coinPrice": 350,
+      "gridSize": {
+        "width": 4,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 6,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-002",
+      "name": "TV Stand",
+      "emoji": "📺",
+      "image": "assets/shop-items/nook/living-room/tv-stand.png",
+      "description": "Entertainment center",
+      "category": "furniture",
+      "coinPrice": 220,
+      "gridSize": {
+        "width": 3,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 7,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-003",
+      "name": "Coffee Table",
+      "emoji": "☕",
+      "image": "assets/shop-items/nook/living-room/coffee-table.png",
+      "description": "Place your drinks",
+      "category": "furniture",
+      "coinPrice": 150,
+      "gridSize": {
+        "width": 2,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 8,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-004",
+      "name": "Armchair",
+      "emoji": "🪑",
+      "image": "assets/shop-items/nook/living-room/armchair.png",
+      "description": "Extra seating",
+      "category": "furniture",
+      "coinPrice": 180,
+      "gridSize": {
+        "width": 2,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 9,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-005",
+      "name": "Floor Lamp",
+      "emoji": "💡",
+      "image": "assets/shop-items/nook/living-room/floor-lamp.png",
+      "description": "Light up the room",
+      "category": "decor",
+      "coinPrice": 120,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 10,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-006",
+      "name": "Large Rug",
+      "emoji": "🟫",
+      "image": "assets/shop-items/nook/living-room/large-rug.png",
+      "description": "Cozy floor covering",
+      "category": "decor",
+      "coinPrice": 200,
+      "gridSize": {
+        "width": 4,
+        "height": 3
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 6,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-007",
+      "name": "Side Table",
+      "emoji": "🔲",
+      "image": "assets/shop-items/nook/living-room/side-table.png",
+      "description": "Small table",
+      "category": "furniture",
+      "coinPrice": 80,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 7,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-008",
+      "name": "Bookcase",
+      "emoji": "📚",
+      "image": "assets/shop-items/nook/living-room/bookcase.png",
+      "description": "Display books",
+      "category": "furniture",
+      "coinPrice": 180,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 8,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-009",
+      "name": "Wall Clock",
+      "emoji": "🕐",
+      "image": "assets/shop-items/nook/living-room/wall-clock.png",
+      "description": "Keep time",
+      "category": "decor",
+      "coinPrice": 70,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 9,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-010",
+      "name": "House Plant",
+      "emoji": "🪴",
+      "image": "assets/shop-items/nook/living-room/house-plant.png",
+      "description": "Fresh greenery",
+      "category": "decor",
+      "coinPrice": 55,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 10,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-011",
+      "name": "Cushion",
+      "emoji": "💛",
+      "image": "assets/shop-items/nook/living-room/cushion.png",
+      "description": "Extra comfort",
+      "category": "decor",
+      "coinPrice": 30,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 6,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-012",
+      "name": "Living Room Window",
+      "emoji": "🪟",
+      "image": "assets/shop-items/nook/living-room/living-room-window.png",
+      "description": "Natural light",
+      "category": "decor",
+      "coinPrice": 100,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 7,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-013",
+      "name": "Ottoman",
+      "emoji": "🟤",
+      "image": "assets/shop-items/nook/living-room/ottoman.png",
+      "description": "Footrest",
+      "category": "furniture",
+      "coinPrice": 110,
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 8,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-014",
+      "name": "Picture Frame",
+      "emoji": "🖼️",
+      "image": "assets/shop-items/nook/living-room/picture-frame.png",
+      "description": "Display memories",
+      "category": "decor",
+      "coinPrice": 60,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 9,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-015",
+      "name": "Vase",
+      "emoji": "🏺",
+      "image": "assets/shop-items/nook/living-room/vase.png",
+      "description": "Decorative piece",
+      "category": "decor",
+      "coinPrice": 50,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 10,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-016",
+      "name": "L-Shaped Sectional",
+      "emoji": "🛋️",
+      "image": "assets/shop-items/nook/living-room/l-shaped-sectional.png",
+      "description": "Corner sofa",
+      "category": "furniture",
+      "coinPrice": 500,
+      "gridSize": {
+        "width": 3,
+        "height": 3
+      },
+      "shape": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "compatibleRooms": [
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 11,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-017",
+      "name": "Fireplace",
+      "emoji": "🔥",
+      "image": "assets/shop-items/nook/living-room/fireplace.png",
+      "description": "Warm and cozy",
+      "category": "furniture",
+      "coinPrice": 600,
+      "gridSize": {
+        "width": 3,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 12,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-018",
+      "name": "Candle",
+      "emoji": "🕯️",
+      "image": "assets/shop-items/nook/living-room/candle.png",
+      "description": "Ambient lighting",
+      "category": "decor",
+      "coinPrice": 25,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 13,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-019",
+      "name": "Magazine Rack",
+      "emoji": "📰",
+      "image": "assets/shop-items/nook/living-room/magazine-rack.png",
+      "description": "Reading material",
+      "category": "decor",
+      "coinPrice": 65,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 14,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "LVRM-020",
+      "name": "Throw Blanket",
+      "emoji": "🧣",
+      "image": "assets/shop-items/nook/living-room/throw-blanket.png",
+      "description": "Stay warm",
+      "category": "decor",
+      "coinPrice": 45,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 15,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-001",
+      "name": "Red T-Shirt",
+      "emoji": "👕",
+      "image": "assets/shop-items/nook/style-closet/red-t-shirt.png",
+      "description": "Classic casual wear",
+      "category": "outfit",
+      "coinPrice": 40,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 11,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-002",
+      "name": "Blue Jeans",
+      "emoji": "👖",
+      "image": "assets/shop-items/nook/style-closet/blue-jeans.png",
+      "description": "Comfortable denim",
+      "category": "outfit",
+      "coinPrice": 60,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 12,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-003",
+      "name": "Sneakers",
+      "emoji": "👟",
+      "image": "assets/shop-items/nook/style-closet/sneakers.png",
+      "description": "Perfect for running",
+      "category": "outfit",
+      "coinPrice": 80,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 13,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-004",
+      "name": "Baseball Cap",
+      "emoji": "🧢",
+      "image": "assets/shop-items/nook/style-closet/baseball-cap.png",
+      "description": "Cool hat",
+      "category": "accessory",
+      "coinPrice": 35,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 14,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-005",
+      "name": "Sunglasses",
+      "emoji": "🕶️",
+      "image": "assets/shop-items/nook/style-closet/sunglasses.png",
+      "description": "Stylish shades",
+      "category": "accessory",
+      "coinPrice": 50,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 15,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-006",
+      "name": "Backpack",
+      "emoji": "🎒",
+      "image": "assets/shop-items/nook/style-closet/backpack.png",
+      "description": "Carry your stuff",
+      "category": "accessory",
+      "coinPrice": 70,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 11,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-007",
+      "name": "Watch",
+      "emoji": "⌚",
+      "image": "assets/shop-items/nook/style-closet/watch.png",
+      "description": "Check the time",
+      "category": "accessory",
+      "coinPrice": 120,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 12,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-008",
+      "name": "Winter Coat",
+      "emoji": "🧥",
+      "image": "assets/shop-items/nook/style-closet/winter-coat.png",
+      "description": "Stay warm",
+      "category": "outfit",
+      "coinPrice": 150,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 13,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-009",
+      "name": "Dress",
+      "emoji": "👗",
+      "image": "assets/shop-items/nook/style-closet/dress.png",
+      "description": "Fancy outfit",
+      "category": "outfit",
+      "coinPrice": 90,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 14,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-010",
+      "name": "Boots",
+      "emoji": "👢",
+      "image": "assets/shop-items/nook/style-closet/boots.png",
+      "description": "Sturdy footwear",
+      "category": "outfit",
+      "coinPrice": 110,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 15,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-011",
+      "name": "Scarf",
+      "emoji": "🧣",
+      "image": "assets/shop-items/nook/style-closet/scarf.png",
+      "description": "Warm accessory",
+      "category": "accessory",
+      "coinPrice": 45,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 16,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-012",
+      "name": "Gloves",
+      "emoji": "🧤",
+      "image": "assets/shop-items/nook/style-closet/gloves.png",
+      "description": "Keep hands warm",
+      "category": "accessory",
+      "coinPrice": 40,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 17,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-013",
+      "name": "Bow Tie",
+      "emoji": "🎀",
+      "image": "assets/shop-items/nook/style-closet/bow-tie.png",
+      "description": "Formal accessory",
+      "category": "accessory",
+      "coinPrice": 30,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 18,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-014",
+      "name": "Necklace",
+      "emoji": "📿",
+      "description": "Pretty jewelry",
+      "category": "accessory",
+      "coinPrice": 85,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 19,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-015",
+      "name": "Ring",
+      "emoji": "💍",
+      "description": "Sparkly accessory",
+      "category": "accessory",
+      "coinPrice": 100,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 20,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-016",
+      "name": "Umbrella",
+      "emoji": "☂️",
+      "description": "Stay dry",
+      "category": "accessory",
+      "coinPrice": 55,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 16,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-017",
+      "name": "Tie",
+      "emoji": "👔",
+      "description": "Professional look",
+      "category": "accessory",
+      "coinPrice": 35,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 17,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-018",
+      "name": "Sandals",
+      "emoji": "👡",
+      "description": "Summer footwear",
+      "category": "outfit",
+      "coinPrice": 50,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 18,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-019",
+      "name": "Shorts",
+      "emoji": "🩳",
+      "description": "Cool and casual",
+      "category": "outfit",
+      "coinPrice": 45,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 19,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STYL-020",
+      "name": "Hoodie",
+      "emoji": "🧥",
+      "description": "Comfy wear",
+      "category": "outfit",
+      "coinPrice": 75,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "STYL"
+      ],
+      "unlockRequirements": {
+        "level": 20,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "RARE-001",
+      "name": "Golden Trophy",
+      "emoji": "🏆",
+      "description": "Legendary achievement!",
+      "category": "seasonal",
+      "coinPrice": 1000,
+      "isRare": true,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 21,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "RARE-002",
+      "name": "Diamond Crown",
+      "emoji": "👑",
+      "description": "Fit for royalty!",
+      "category": "seasonal",
+      "coinPrice": 1500,
+      "isRare": true,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 22,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "RARE-003",
+      "name": "Crystal Ball",
+      "emoji": "🔮",
+      "description": "Mystical artifact",
+      "category": "seasonal",
+      "coinPrice": 800,
+      "isRare": true,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 23,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "RARE-004",
+      "name": "Ancient Scroll",
+      "emoji": "📜",
+      "description": "Ancient wisdom",
+      "category": "seasonal",
+      "coinPrice": 900,
+      "isRare": true,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 24,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "RARE-005",
+      "name": "Magic Wand",
+      "emoji": "🪄",
+      "description": "Powerful magic",
+      "category": "seasonal",
+      "coinPrice": 1200,
+      "isRare": true,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 25,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "RARE-006",
+      "name": "Gem Stone",
+      "emoji": "💎",
+      "description": "Precious rare gem",
+      "category": "seasonal",
+      "coinPrice": 2000,
+      "isRare": true,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 21,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "RARE-007",
+      "name": "Phoenix Feather",
+      "emoji": "🪶",
+      "description": "Legendary phoenix",
+      "category": "seasonal",
+      "coinPrice": 1800,
+      "isRare": true,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 22,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "RARE-008",
+      "name": "Dragon Egg",
+      "emoji": "🥚",
+      "description": "Mythical dragon egg",
+      "category": "seasonal",
+      "coinPrice": 2500,
+      "isRare": true,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 23,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STCK-001",
+      "name": "Star Sticker",
+      "emoji": "⭐",
+      "description": "Shiny star",
+      "category": "sticker",
+      "coinPrice": 10,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 26,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STCK-002",
+      "name": "Heart Sticker",
+      "emoji": "❤️",
+      "description": "Spread love",
+      "category": "sticker",
+      "coinPrice": 10,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 27,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STCK-003",
+      "name": "Rainbow Sticker",
+      "emoji": "🌈",
+      "description": "Colorful rainbow",
+      "category": "sticker",
+      "coinPrice": 15,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 28,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STCK-004",
+      "name": "Smiley Face",
+      "emoji": "😊",
+      "description": "Happy face",
+      "category": "sticker",
+      "coinPrice": 10,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 29,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STCK-005",
+      "name": "Cool Face",
+      "emoji": "😎",
+      "description": "Stay cool",
+      "category": "sticker",
+      "coinPrice": 12,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 30,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STCK-006",
+      "name": "Party Face",
+      "emoji": "🥳",
+      "description": "Celebration time",
+      "category": "sticker",
+      "coinPrice": 15,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 31,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STCK-007",
+      "name": "Fire Sticker",
+      "emoji": "🔥",
+      "description": "On fire!",
+      "category": "sticker",
+      "coinPrice": 12,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 32,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STCK-008",
+      "name": "Lightning Bolt",
+      "emoji": "⚡",
+      "description": "Electric energy",
+      "category": "sticker",
+      "coinPrice": 12,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 33,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STCK-009",
+      "name": "Sparkles",
+      "emoji": "✨",
+      "description": "Magical sparkles",
+      "category": "sticker",
+      "coinPrice": 10,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 34,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "STCK-010",
+      "name": "Thumbs Up",
+      "emoji": "👍",
+      "description": "Good job!",
+      "category": "sticker",
+      "coinPrice": 10,
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "BDRM",
+        "KTCH",
+        "LVRM"
+      ],
+      "unlockRequirements": {
+        "level": 35,
+        "room": null,
+        "biome": null
+      }
+    },
+    {
+      "id": "GAME-001",
+      "name": "Gaming Chair",
+      "emoji": "🪑",
+      "description": "Epic chair for gaming sessions",
+      "coinPrice": 600,
+      "category": "furniture",
+      "gridSize": {
+        "width": 2,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "GAME"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GAME",
+        "biome": null
+      }
+    },
+    {
+      "id": "GAME-002",
+      "name": "Gaming Console",
+      "emoji": "🎮",
+      "description": "Play your favorite games",
+      "coinPrice": 800,
+      "category": "furniture",
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "GAME"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GAME",
+        "biome": null
+      }
+    },
+    {
+      "id": "GAME-003",
+      "name": "VR Headset",
+      "emoji": "🥽",
+      "description": "Virtual reality gaming",
+      "coinPrice": 1200,
+      "category": "decor",
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "GAME"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GAME",
+        "biome": null
+      }
+    },
+    {
+      "id": "GAME-004",
+      "name": "LED Lights",
+      "emoji": "💡",
+      "description": "RGB gaming lights",
+      "coinPrice": 400,
+      "category": "decor",
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "GAME"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GAME",
+        "biome": null
+      }
+    },
+    {
+      "id": "GAME-005",
+      "name": "Game Collection",
+      "emoji": "🎯",
+      "description": "Shelf full of games",
+      "coinPrice": 500,
+      "category": "decor",
+      "gridSize": {
+        "width": 2,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "GAME"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GAME",
+        "biome": null
+      }
+    },
+    {
+      "id": "GAME-006",
+      "name": "Arcade Machine",
+      "emoji": "🕹️",
+      "description": "Classic arcade fun",
+      "coinPrice": 1500,
+      "category": "furniture",
+      "gridSize": {
+        "width": 2,
+        "height": 3
+      },
+      "compatibleRooms": [
+        "GAME"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GAME",
+        "biome": null
+      }
+    },
+    {
+      "id": "GAME-007",
+      "name": "Bean Bag",
+      "emoji": "🛋️",
+      "description": "Comfy gaming seat",
+      "coinPrice": 350,
+      "category": "furniture",
+      "gridSize": {
+        "width": 2,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "GAME"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GAME",
+        "biome": null
+      }
+    },
+    {
+      "id": "GAME-008",
+      "name": "Tournament Trophy",
+      "emoji": "🏆",
+      "description": "You're a champion!",
+      "coinPrice": 800,
+      "category": "decor",
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "GAME"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GAME",
+        "biome": null
+      }
+    },
+    {
+      "id": "LIBR-001",
+      "name": "Bookshelf",
+      "emoji": "📚",
+      "description": "Full of knowledge",
+      "coinPrice": 700,
+      "category": "furniture",
+      "gridSize": {
+        "width": 3,
+        "height": 3
+      },
+      "compatibleRooms": [
+        "LIBR"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "LIBR",
+        "biome": null
+      }
+    },
+    {
+      "id": "LIBR-002",
+      "name": "Reading Chair",
+      "emoji": "🪑",
+      "description": "Perfect for reading",
+      "coinPrice": 500,
+      "category": "furniture",
+      "gridSize": {
+        "width": 2,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "LIBR"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "LIBR",
+        "biome": null
+      }
+    },
+    {
+      "id": "LIBR-003",
+      "name": "Study Desk",
+      "emoji": "🪟",
+      "description": "Get work done here",
+      "coinPrice": 600,
+      "category": "furniture",
+      "gridSize": {
+        "width": 3,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "LIBR"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "LIBR",
+        "biome": null
+      }
+    },
+    {
+      "id": "LIBR-004",
+      "name": "Reading Lamp",
+      "emoji": "💡",
+      "description": "Light for late nights",
+      "coinPrice": 300,
+      "category": "decor",
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "LIBR"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "LIBR",
+        "biome": null
+      }
+    },
+    {
+      "id": "LIBR-005",
+      "name": "Globe",
+      "emoji": "🌍",
+      "description": "Explore the world",
+      "coinPrice": 400,
+      "category": "decor",
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "LIBR"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "LIBR",
+        "biome": null
+      }
+    },
+    {
+      "id": "LIBR-006",
+      "name": "Encyclopedia Set",
+      "emoji": "📖",
+      "description": "All the answers",
+      "coinPrice": 900,
+      "category": "decor",
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "LIBR"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "LIBR",
+        "biome": null
+      }
+    },
+    {
+      "id": "MUSC-001",
+      "name": "Electric Guitar",
+      "emoji": "🎸",
+      "description": "Rock out!",
+      "coinPrice": 1200,
+      "category": "furniture",
+      "gridSize": {
+        "width": 1,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "MUSC"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "MUSC",
+        "biome": null
+      }
+    },
+    {
+      "id": "MUSC-002",
+      "name": "Drum Set",
+      "emoji": "🥁",
+      "description": "Keep the beat",
+      "coinPrice": 1500,
+      "category": "furniture",
+      "gridSize": {
+        "width": 3,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "MUSC"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "MUSC",
+        "biome": null
+      }
+    },
+    {
+      "id": "MUSC-003",
+      "name": "Keyboard",
+      "emoji": "🎹",
+      "description": "Make melodies",
+      "coinPrice": 1000,
+      "category": "furniture",
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "MUSC"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "MUSC",
+        "biome": null
+      }
+    },
+    {
+      "id": "MUSC-004",
+      "name": "Microphone",
+      "emoji": "🎤",
+      "description": "Sing your heart out",
+      "coinPrice": 600,
+      "category": "decor",
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "MUSC"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "MUSC",
+        "biome": null
+      }
+    },
+    {
+      "id": "MUSC-005",
+      "name": "Music Notes",
+      "emoji": "🎵",
+      "description": "Decorative notes",
+      "coinPrice": 400,
+      "category": "decor",
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "MUSC"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "MUSC",
+        "biome": null
+      }
+    },
+    {
+      "id": "ARTG-001",
+      "name": "Canvas Easel",
+      "emoji": "🖼️",
+      "description": "Create masterpieces",
+      "coinPrice": 800,
+      "category": "furniture",
+      "gridSize": {
+        "width": 2,
+        "height": 3
+      },
+      "compatibleRooms": [
+        "ARTG"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "ARTG",
+        "biome": null
+      }
+    },
+    {
+      "id": "ARTG-002",
+      "name": "Paint Palette",
+      "emoji": "🎨",
+      "description": "All the colors",
+      "coinPrice": 500,
+      "category": "decor",
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "ARTG"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "ARTG",
+        "biome": null
+      }
+    },
+    {
+      "id": "ARTG-003",
+      "name": "Sculpture",
+      "emoji": "🗿",
+      "description": "Ancient art",
+      "coinPrice": 1500,
+      "category": "decor",
+      "gridSize": {
+        "width": 2,
+        "height": 3
+      },
+      "compatibleRooms": [
+        "ARTG"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "ARTG",
+        "biome": null
+      }
+    },
+    {
+      "id": "ARTG-004",
+      "name": "Gallery Lighting",
+      "emoji": "💡",
+      "description": "Spotlight your art",
+      "coinPrice": 700,
+      "category": "decor",
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "ARTG"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "ARTG",
+        "biome": null
+      }
+    },
+    {
+      "id": "GYMS-001",
+      "name": "Treadmill",
+      "emoji": "🏃",
+      "description": "Cardio workout",
+      "coinPrice": 1800,
+      "category": "furniture",
+      "gridSize": {
+        "width": 3,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "GYMS"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GYMS",
+        "biome": null
+      }
+    },
+    {
+      "id": "GYMS-002",
+      "name": "Dumbbells",
+      "emoji": "🏋️",
+      "description": "Build strength",
+      "coinPrice": 600,
+      "category": "decor",
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "GYMS"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GYMS",
+        "biome": null
+      }
+    },
+    {
+      "id": "GYMS-003",
+      "name": "Yoga Mat",
+      "emoji": "🧘",
+      "description": "Stretch and relax",
+      "coinPrice": 300,
+      "category": "decor",
+      "gridSize": {
+        "width": 2,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "GYMS"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GYMS",
+        "biome": null
+      }
+    },
+    {
+      "id": "GYMS-004",
+      "name": "Punching Bag",
+      "emoji": "🥊",
+      "description": "Release stress",
+      "coinPrice": 900,
+      "category": "furniture",
+      "gridSize": {
+        "width": 2,
+        "height": 3
+      },
+      "compatibleRooms": [
+        "GYMS"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GYMS",
+        "biome": null
+      }
+    },
+    {
+      "id": "GYMS-005",
+      "name": "Exercise Bike",
+      "emoji": "🚴",
+      "description": "Spin class at home",
+      "coinPrice": 1200,
+      "category": "furniture",
+      "gridSize": {
+        "width": 2,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "GYMS"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GYMS",
+        "biome": null
+      }
+    },
+    {
+      "id": "GYMS-006",
+      "name": "Water Bottle",
+      "emoji": "💧",
+      "description": "Stay hydrated",
+      "coinPrice": 200,
+      "category": "decor",
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "GYMS"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GYMS",
+        "biome": null
+      }
+    },
+    {
+      "id": "GRNH-001",
+      "name": "Herb Garden",
+      "emoji": "🌿",
+      "description": "Fresh herbs",
+      "coinPrice": 800,
+      "category": "furniture",
+      "gridSize": {
+        "width": 3,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "GRNH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GRNH",
+        "biome": null
+      }
+    },
+    {
+      "id": "GRNH-002",
+      "name": "Tomato Plants",
+      "emoji": "🍅",
+      "description": "Grow tomatoes",
+      "coinPrice": 600,
+      "category": "decor",
+      "gridSize": {
+        "width": 2,
+        "height": 2
+      },
+      "compatibleRooms": [
+        "GRNH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GRNH",
+        "biome": null
+      }
+    },
+    {
+      "id": "GRNH-003",
+      "name": "Watering Can",
+      "emoji": "🚿",
+      "description": "Keep plants watered",
+      "coinPrice": 300,
+      "category": "decor",
+      "gridSize": {
+        "width": 1,
+        "height": 1
+      },
+      "compatibleRooms": [
+        "GRNH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GRNH",
+        "biome": null
+      }
+    },
+    {
+      "id": "GRNH-004",
+      "name": "Sunflowers",
+      "emoji": "🌻",
+      "description": "Bright and cheerful",
+      "coinPrice": 500,
+      "category": "decor",
+      "gridSize": {
+        "width": 2,
+        "height": 3
+      },
+      "compatibleRooms": [
+        "GRNH"
+      ],
+      "unlockRequirements": {
+        "level": 0,
+        "room": "GRNH",
+        "biome": null
+      }
+    },
+    {
+      "id": 1764046597374,
+      "name": "Rare Axolotl eating Ramen Sticker ",
+      "description": "A super cute and rare sticker --- Perfect for RAMEN lovers",
+      "price": 2500,
+      "rarity": "rare",
+      "type": "sticker",
+      "image": "assets/shop-items/nook/Untitled design (68) (1) (1).png",
+      "unlockCondition": {
+        "type": "level",
+        "value": 15
+      },
+      "spinnerData": {
+        "id": "spinner_sticker_1764046597374",
+        "weight": 5,
+        "requiresUnlock": true,
+        "unlockLevel": 15
+      }
+    }
+  ]
+}

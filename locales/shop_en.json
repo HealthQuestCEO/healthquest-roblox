@@ -1,0 +1,43 @@
+{
+  "nook": {
+    "title": "The Nook",
+    "subtitle": "Shop for items to decorate your castle!",
+    "featured": "Featured Items",
+    "categories": "Categories",
+    "all": "All Items",
+    "owned": "Owned",
+    "new": "New"
+  },
+  "item": {
+    "buy": "Buy",
+    "price": "{{amount}} coins",
+    "owned": "Owned",
+    "alreadyOwned": "Already Owned",
+    "notEnoughCoins": "Not Enough Coins",
+    "unlocksAt": "Unlocks at Level {{level}}",
+    "requiresLevel": "This item unlocks at level {{level}}"
+  },
+  "purchase": {
+    "success": "Purchase successful!",
+    "added": "{{item}} has been added to your inventory!",
+    "failed": "Purchase failed. Please try again.",
+    "confirm": "Purchase {{item}} for {{price}} coins?"
+  },
+  "categories": {
+    "furniture": "Furniture",
+    "decorations": "Decorations",
+    "wallpaper": "Wallpaper",
+    "flooring": "Flooring",
+    "plants": "Plants",
+    "lighting": "Lighting",
+    "art": "Art",
+    "seasonal": "Seasonal"
+  },
+  "filters": {
+    "sortBy": "Sort By",
+    "priceAsc": "Price: Low to High",
+    "priceDesc": "Price: High to Low",
+    "newest": "Newest",
+    "levelRequired": "Level Required"
+  }
+}

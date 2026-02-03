@@ -1,0 +1,43 @@
+{
+  "nook": {
+    "title": "El Rincón",
+    "subtitle": "¡Compra artículos para decorar tu castillo!",
+    "featured": "Artículos Destacados",
+    "categories": "Categorías",
+    "all": "Todos los Artículos",
+    "owned": "Adquirido",
+    "new": "Nuevo"
+  },
+  "item": {
+    "buy": "Comprar",
+    "price": "{{amount}} monedas",
+    "owned": "Adquirido",
+    "alreadyOwned": "Ya lo Tienes",
+    "notEnoughCoins": "Monedas Insuficientes",
+    "unlocksAt": "Se desbloquea en el Nivel {{level}}",
+    "requiresLevel": "Este artículo se desbloquea en el nivel {{level}}"
+  },
+  "purchase": {
+    "success": "¡Compra exitosa!",
+    "added": "¡{{item}} ha sido añadido a tu inventario!",
+    "failed": "La compra falló. Por favor, inténtalo de nuevo.",
+    "confirm": "¿Comprar {{item}} por {{price}} monedas?"
+  },
+  "categories": {
+    "furniture": "Muebles",
+    "decorations": "Decoraciones",
+    "wallpaper": "Papel Tapiz",
+    "flooring": "Pisos",
+    "plants": "Plantas",
+    "lighting": "Iluminación",
+    "art": "Arte",
+    "seasonal": "De Temporada"
+  },
+  "filters": {
+    "sortBy": "Ordenar Por",
+    "priceAsc": "Precio: Menor a Mayor",
+    "priceDesc": "Precio: Mayor a Menor",
+    "newest": "Más Recientes",
+    "levelRequired": "Nivel Requerido"
+  }
+}

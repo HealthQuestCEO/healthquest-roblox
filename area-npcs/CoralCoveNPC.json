@@ -1,0 +1,735 @@
+{
+  "metadata": {
+    "version": "4.0",
+    "portal": "Coral Cove",
+    "theme": "Flow & Adaptation",
+    "unlock_level": 40,
+    "cost": 15000,
+    "total_npcs": 8,
+    "conversations_per_npc": 10,
+    "total_conversations": 80,
+    "xp_per_conversation": 100
+  },
+  "npcs": [
+    {
+      "npc_id": "coral_clownfish",
+      "npc_name": "Coral Clownfish",
+      "emoji": "🐠",
+      "species": "Clownfish",
+      "topic": "Finding Safe Spaces & Support",
+      "unlock_level": 42,
+      "conversations": [
+        {
+          "conversation_id": "clownfish_01",
+          "sort_order": 1,
+          "question": "Hello, little friend! I'm Coral! See this anemone I live in? Its stingy tentacles keep me safe, but they don't hurt me because we're special friends. Do you have a place where you feel safe and cozy?",
+          "yes_response": "That's so wonderful! Everyone needs a safe spot — a place where you can relax and just be yourself. It might be your room, a cozy corner, or even someone's arms. Your safe place is like my anemone — it helps you feel protected!",
+          "no_response": "That's okay! Sometimes it takes time to find our safe spots. A safe place could be anywhere you feel calm — a comfy chair, under a blanket, or even outside under a tree. Let's think about where you might feel most peaceful!",
+          "key_takeaway": "Everyone needs a safe space where they can feel protected and be themselves."
+        },
+        {
+          "conversation_id": "clownfish_02",
+          "sort_order": 2,
+          "question": "When the ocean feels scary, I swim back to my anemone. It's okay to need a safe place! When you feel scared or overwhelmed, do you have somewhere you like to go?",
+          "yes_response": "That's so smart! Knowing where to go when things feel hard is a really important skill. Your safe spot is there for you whenever you need it. It's not hiding — it's taking care of yourself!",
+          "no_response": "Let's find one together! Think about where you feel most calm. Maybe it's your bed, a certain room, or near someone you trust. When you find that spot, you'll always have somewhere to go when things feel too big.",
+          "key_takeaway": "Going to a safe place when we're overwhelmed isn't hiding — it's taking care of ourselves."
+        },
+        {
+          "conversation_id": "clownfish_03",
+          "sort_order": 3,
+          "question": "My anemone friend helps me, and I help my anemone too! We take care of each other. Do you have people in your life who help take care of you?",
+          "yes_response": "That's wonderful! People who care for us are so important — family, friends, teachers, or others. Just like me and my anemone, we help each other! It feels good to know someone is looking out for you.",
+          "no_response": "Sometimes it's hard to see who cares. But there are probably people who want to help — maybe a teacher, a neighbor, a family member, or a friend. Sometimes we just have to let them know we need them!",
+          "key_takeaway": "We all need people who help take care of us. Relationships work best when we help each other."
+        },
+        {
+          "conversation_id": "clownfish_04",
+          "sort_order": 4,
+          "question": "I used to try to do everything alone. But then I learned it's okay to ask for help! Is it easy or hard for you to ask for help when you need it?",
+          "yes_response": "That's great if it's easy, or totally okay if it's hard! Asking for help can feel scary, but it's actually brave. No fish can swim every ocean alone. When we ask for help, we let others share their gifts with us!",
+          "no_response": "Asking for help is hard for lots of us! We might worry about being a bother or looking weak. But here's a secret: asking for help is actually brave. And most people feel happy when they get to help someone they care about!",
+          "key_takeaway": "Asking for help isn't weakness — it's brave. No one can do everything alone."
+        },
+        {
+          "conversation_id": "clownfish_05",
+          "sort_order": 5,
+          "question": "Sometimes I feel nervous about swimming far from home. But knowing my anemone is there waiting makes me feel braver. Does knowing your safe place is there help you feel brave too?",
+          "yes_response": "Yes! That's exactly how it works. When we know we have somewhere safe to come back to, we can be braver in the world. Your safe place isn't holding you back — it's giving you courage to explore!",
+          "no_response": "That's okay! Here's something cool: just knowing you HAVE a safe place can help you feel braver, even when you're not there. It's like carrying a little bit of safety with you wherever you go. Try it and see!",
+          "key_takeaway": "Having a safe place to return to helps us feel brave enough to explore the world."
+        },
+        {
+          "conversation_id": "clownfish_06",
+          "sort_order": 6,
+          "question": "Not every fish can live in my anemone — only clownfish! We all need different things to feel safe. What helps YOU feel safe might be different from what helps someone else, and that's okay! Do you know what helps you feel safe?",
+          "yes_response": "That's wonderful that you know! Maybe it's quiet time, or being with people, or hugging a stuffed animal, or listening to music. Whatever works for YOU is the right answer. You're the expert on what you need!",
+          "no_response": "That's okay — it can take time to figure out! Try noticing when you feel calm and peaceful. What's happening? Where are you? Who's there? Those clues can help you discover what makes you feel safe.",
+          "key_takeaway": "Everyone needs different things to feel safe. Knowing what works for you is important."
+        },
+        {
+          "conversation_id": "clownfish_07",
+          "sort_order": 7,
+          "question": "Even in my safe anemone, I sometimes feel worried. Having a safe place doesn't mean you never feel scared. Do you sometimes feel worried even when you're somewhere safe?",
+          "yes_response": "That's completely normal! Safe places help us feel better, but they don't make worries disappear completely. When worries come even in your safe spot, try taking some slow breaths. The worry will pass, and you're still safe.",
+          "no_response": "That's great that your safe place helps so much! But if worries ever do sneak in, don't be surprised. It happens to everyone. The good news is, you're still safe, and the worried feeling will pass.",
+          "key_takeaway": "It's normal to feel worried sometimes, even in safe places. The feeling will pass."
+        },
+        {
+          "conversation_id": "clownfish_08",
+          "sort_order": 8,
+          "question": "When I see another fish who looks lost or scared, I want to help them find safety too. Do you ever help others feel safe when they're having a hard time?",
+          "yes_response": "You have such a caring heart! Helping others feel safe is a beautiful gift. A kind word, sitting with someone, or just being there — these things matter so much. You're making the ocean a better place!",
+          "no_response": "That's okay! Here's something easy to try: if you see someone who looks sad or scared, you could smile at them or ask if they're okay. Sometimes small things help people feel less alone. You might be someone's safe friend!",
+          "key_takeaway": "We can help others feel safe through kindness, presence, and small caring actions."
+        },
+        {
+          "conversation_id": "clownfish_09",
+          "sort_order": 9,
+          "question": "As I grow bigger, I might need to find a new, bigger anemone someday. Safe places can change as we grow. Have your safe places or safe people changed over time?",
+          "yes_response": "That's part of growing! The places and people that helped us feel safe when we were little might change as we get older. That's okay — it doesn't mean those old safe places weren't important. We just grow and find new ones!",
+          "no_response": "That's okay! Whether your safe places have changed or stayed the same, what matters is that you have them. As you grow, you might find new safe spots too. Your heart knows how to find safety!",
+          "key_takeaway": "Our safe places and safe people can change as we grow, and that's a normal part of life."
+        },
+        {
+          "conversation_id": "clownfish_10",
+          "sort_order": 10,
+          "question": "I've loved swimming with you! Remember: it's okay to need safe places and safe people. It's okay to ask for help. Will you take care of yourself by finding and keeping your safe spots?",
+          "yes_response": "Hooray! You deserve to feel safe. Remember, needing safety isn't weakness — it's wisdom! Your safe places and safe people are there for you. Swim on, little friend, and know you're never alone in this big ocean! 🐠",
+          "no_response": "That's okay! Finding safety takes time. Just remember: you deserve to feel safe, and it's okay to need help. Whenever you're ready, your safe places and safe people will be there. I believe in you, friend! 🐠",
+          "key_takeaway": "Needing safety isn't weakness — it's wisdom. We all deserve to feel safe and supported."
+        }
+      ]
+    },
+    {
+      "npc_id": "shelly_sea_turtle",
+      "npc_name": "Shelly Sea Turtle",
+      "emoji": "🐢",
+      "species": "Sea Turtle",
+      "topic": "Patience & Steady Progress",
+      "unlock_level": 44,
+      "conversations": [
+        {
+          "conversation_id": "turtle_01",
+          "sort_order": 1,
+          "question": "Well, hello there, young one! I'm Shelly. I've been swimming these oceans for a very long time. I'm slow, but I always get where I'm going! Do you ever feel like you should be moving faster?",
+          "yes_response": "Oh, I understand! The world tells us to rush, rush, rush! But here's what I've learned: going slowly doesn't mean you're behind. It means you're being careful and steady. The reef wasn't built in a day! You're doing just fine.",
+          "no_response": "What a peaceful way to live! You understand something many creatures don't — that going at your own pace is perfectly okay. Keep swimming your own swim, little one. There's no race to win!",
+          "key_takeaway": "Going at your own pace doesn't mean you're behind. Slow and steady progress is still progress."
+        },
+        {
+          "conversation_id": "turtle_02",
+          "sort_order": 2,
+          "question": "Every year, I swim thousands of miles across the ocean to lay my eggs. It takes a long time! Have you ever worked on something that took a really long time?",
+          "yes_response": "Then you know the secret! Big things take time. Whether it's learning something new, making a friend, or reaching a goal — patience is part of the journey. Every stroke of my flippers brings me closer, and every step you take does too!",
+          "no_response": "That's okay! Someday you might have a goal that takes a long time. When that happens, remember old Shelly — one flipper stroke at a time. You don't have to do it all at once. Just keep going!",
+          "key_takeaway": "Big accomplishments take time. We get there one step at a time."
+        },
+        {
+          "conversation_id": "turtle_03",
+          "sort_order": 3,
+          "question": "When I was young, I wanted to swim as fast as the dolphins. But then I learned that my slow, steady way was perfect for me! Do you ever compare how fast you learn or do things to other people?",
+          "yes_response": "We all do sometimes! But comparing our speed to others can make us feel bad for no reason. Some dolphins are fast, some turtles are slow, and the ocean has room for all of us. Go at the pace that's right for YOU!",
+          "no_response": "How wise you are! Knowing that your pace is your own is a real gift. Some things you'll learn quickly, and some will take more time. Both are perfectly fine. You're swimming your own journey!",
+          "key_takeaway": "Comparing our pace to others doesn't help us. Everyone learns and grows at their own speed."
+        },
+        {
+          "conversation_id": "turtle_04",
+          "sort_order": 4,
+          "question": "Sometimes the currents push against me, and it takes even longer to get where I'm going. When things get harder, do you ever feel like giving up?",
+          "yes_response": "That feeling is so normal! When things are hard and slow, it's easy to want to quit. But let me tell you — sometimes the strongest thing you can do is just keep going, even when it's hard. Rest if you need to, then swim on!",
+          "no_response": "You have a strong spirit! Not giving up, even when things are hard, is real courage. And remember, it's okay to rest sometimes. Resting isn't the same as giving up. Then you can keep swimming!",
+          "key_takeaway": "When things get hard, keep going — but it's okay to rest along the way."
+        },
+        {
+          "conversation_id": "turtle_05",
+          "sort_order": 5,
+          "question": "I can't always see the beach I'm swimming toward, but I trust that I'll get there. Do you find it hard to keep going when you can't see how things will turn out?",
+          "yes_response": "It's hard for everyone! Not knowing how things will end makes us want to stop. But trust is like a compass inside you — even when you can't see the shore, you can trust you're getting closer. Keep swimming!",
+          "no_response": "What wonderful trust you have! Believing you'll get there, even when you can't see it yet, is a special kind of strength. That trust will carry you through many journeys in life!",
+          "key_takeaway": "Trusting the journey, even when we can't see the end, helps us keep going."
+        },
+        {
+          "conversation_id": "turtle_06",
+          "sort_order": 6,
+          "question": "After I lay my eggs, I have to leave them on the beach. I can't rush the baby turtles to hatch — I have to wait! Is waiting hard for you?",
+          "yes_response": "Waiting is hard for almost everyone! We want things NOW. But some things can't be rushed — they need time to grow, like a baby turtle in its egg. Learning to wait, even when it's hard, makes good things even sweeter.",
+          "no_response": "How patient you are! Waiting calmly is a skill many creatures struggle with. If you ever do find waiting hard, just remember — good things often need time. The waiting is part of the journey.",
+          "key_takeaway": "Some things can't be rushed. Learning to wait patiently is an important skill."
+        },
+        {
+          "conversation_id": "turtle_07",
+          "sort_order": 7,
+          "question": "Every day I swim a little further. It doesn't look like much, but over time, those small distances add up to a big journey! Do you believe that small steps can lead to big things?",
+          "yes_response": "You understand something important! A little bit every day adds up. Reading one page, practicing one minute, being kind one time — it all adds up. You're building something big, one small step at a time!",
+          "no_response": "It's hard to believe when you're in the middle of it! But trust me — I've swum across entire oceans, and I did it one flipper stroke at a time. Your small efforts ARE adding up, even if you can't see it yet.",
+          "key_takeaway": "Small efforts add up over time. A little bit every day can lead to big accomplishments."
+        },
+        {
+          "conversation_id": "turtle_08",
+          "sort_order": 8,
+          "question": "Sometimes I make wrong turns and have to go back. It feels like wasted time! But I always learn from it. When things don't go right, do you get upset with yourself?",
+          "yes_response": "It's easy to get frustrated! But here's what I've learned: wrong turns aren't wasted. They teach us and sometimes even show us new things. Be gentle with yourself when you make mistakes. They're part of the journey!",
+          "no_response": "What a healthy way to think! Knowing that mistakes are just part of learning helps us stay calm and keep moving. You're already swimming like a wise old turtle!",
+          "key_takeaway": "Wrong turns and mistakes aren't wasted — they're part of learning. Be gentle with yourself."
+        },
+        {
+          "conversation_id": "turtle_09",
+          "sort_order": 9,
+          "question": "My shell grows slowly, layer by layer, over many years. It protects me! Your growth happens slowly too — but it's always happening. Do you sometimes wish you could grow up faster?",
+          "yes_response": "Many young ones do! Growing up seems exciting. But here's a secret: every part of life has something special. Don't rush through today to get to tomorrow. Enjoy the swimming, not just the arriving!",
+          "no_response": "How lovely! Enjoying where you are right now, instead of rushing to the next thing, is a real gift. You're wise to appreciate the journey, not just the destination. Keep savoring each moment!",
+          "key_takeaway": "Growth happens slowly, and that's okay. Enjoy where you are, not just where you're going."
+        },
+        {
+          "conversation_id": "turtle_10",
+          "sort_order": 10,
+          "question": "Swimming with you has been a joy! Remember: slow and steady wins the swim. Your pace is perfect for you. Will you be patient with yourself and trust your journey?",
+          "yes_response": "Wonderful! Patience is one of the greatest gifts you can give yourself. Trust that you're getting where you need to go, one stroke at a time. Swim on, little one — the ocean is yours to explore! 🐢",
+          "no_response": "That's okay — patience takes time to learn too! Just remember: you don't have to rush. You don't have to be the fastest. You just have to keep going. I believe in you, young swimmer! 🐢",
+          "key_takeaway": "Patience with ourselves and trust in our journey helps us get where we're meant to go."
+        }
+      ]
+    },
+    {
+      "npc_id": "crabby_crab",
+      "npc_name": "Crabby Crab",
+      "emoji": "🦀",
+      "species": "Crab",
+      "topic": "Setting Boundaries & Personal Space",
+      "unlock_level": 46,
+      "conversations": [
+        {
+          "conversation_id": "crab_01",
+          "sort_order": 1,
+          "question": "Hey there! I'm Crabby! Don't worry, I'm not actually crabby — that's just my name! See my hard shell? It protects me from things that might hurt me. Do you know what a boundary is?",
+          "yes_response": "Great! A boundary is like my shell — it's something that protects us. Boundaries are rules we set about how we want to be treated and what we're comfortable with. They help keep us safe and happy!",
+          "no_response": "Let me explain! A boundary is like a shell around you that helps you feel safe. It's a rule you set about what's okay and what's not okay with you — like who can hug you, or how people talk to you. Boundaries protect us!",
+          "key_takeaway": "Boundaries are rules we set to protect ourselves and stay comfortable."
+        },
+        {
+          "conversation_id": "crab_02",
+          "sort_order": 2,
+          "question": "Everyone has different boundaries. Some crabs like to be touched, some don't! I like space around me. Do you like having your own personal space?",
+          "yes_response": "That's totally okay! Personal space is important. Some creatures need more space, some need less. Knowing what you need and making sure you get it is a way of taking care of yourself. Your space matters!",
+          "no_response": "That's okay too! Some creatures like being close, and that's perfectly fine. What matters is knowing what YOU like and making sure others know too. Everyone is different, and that's okay!",
+          "key_takeaway": "Everyone needs different amounts of personal space. Knowing what you need is important."
+        },
+        {
+          "conversation_id": "crab_03",
+          "sort_order": 3,
+          "question": "If another crab gets too close to my shell and I don't like it, I hold up my claws and say 'Please back up!' It's okay to tell others what you need! Is it hard for you to tell people what you need?",
+          "yes_response": "It's hard for lots of us! We might worry about being rude or making others upset. But telling people what you need isn't mean — it's taking care of yourself. You can be kind AND firm at the same time!",
+          "no_response": "That's wonderful! Being able to say what you need is a really important skill. Keep speaking up for yourself. Remember, it's possible to be both kind and clear about what you need!",
+          "key_takeaway": "Telling others what we need isn't rude — it's how we take care of ourselves."
+        },
+        {
+          "conversation_id": "crab_04",
+          "sort_order": 4,
+          "question": "Sometimes other creatures don't listen when I say 'stop' or 'no.' That feels bad! Has anyone ever not listened when you asked them to stop something?",
+          "yes_response": "I'm sorry that happened! When people don't listen to our 'stop' or 'no,' it can feel really frustrating or even scary. Remember: you have the right to be heard. If someone won't listen, it's okay to tell a trusted grown-up.",
+          "no_response": "That's good! But if it ever happens, remember this: 'no' is a complete sentence. You don't have to explain why. And if someone won't listen, find a trusted grown-up to help. Your 'no' matters!",
+          "key_takeaway": "When someone doesn't respect our 'no,' it's okay to get help from a trusted adult."
+        },
+        {
+          "conversation_id": "crab_05",
+          "sort_order": 5,
+          "question": "Saying 'no' can feel scary sometimes. I used to worry that crabs wouldn't like me if I said no. Do you ever worry that people won't like you if you say no?",
+          "yes_response": "That's such a common worry! But here's the truth: people who really care about you will respect your 'no.' If someone gets mad just because you have boundaries, that says something about them, not about you!",
+          "no_response": "That's great confidence! Knowing that you can say no and still be liked is important. Real friends respect each other's boundaries. Keep honoring what you need — the right people will understand!",
+          "key_takeaway": "Real friends respect our boundaries. People who care will accept our 'no.'"
+        },
+        {
+          "conversation_id": "crab_06",
+          "sort_order": 6,
+          "question": "Boundaries aren't just about space — they're also about words and feelings! Like, if someone says mean things to me, I can say 'That hurts my feelings. Please stop.' Do you stand up for yourself when words hurt?",
+          "yes_response": "That takes courage! Telling someone their words hurt isn't being sensitive — it's being honest. You have the right to be treated kindly. Keep speaking up for yourself. Your feelings matter!",
+          "no_response": "It can be really hard! Sometimes we freeze or don't know what to say. Here's something you can practice: 'That hurts my feelings.' You don't need to say more. Your feelings are worth protecting!",
+          "key_takeaway": "We can set boundaries about words too. It's okay to tell people when their words hurt."
+        },
+        {
+          "conversation_id": "crab_07",
+          "sort_order": 7,
+          "question": "My boundaries might be different from your boundaries, and that's okay! I might not like hugs, but you might love them. Do you respect other creatures' boundaries, even if they're different from yours?",
+          "yes_response": "That's so important! When we respect others' boundaries, we show them we care about their feelings. Just because we like something doesn't mean everyone does. You're being a really good friend!",
+          "no_response": "It takes practice! Sometimes we forget that others might not like what we like. Before hugging, touching, or doing something to someone, try asking first: 'Is this okay?' It shows you care about their comfort!",
+          "key_takeaway": "Respecting others' boundaries shows we care about their feelings, even when they're different from ours."
+        },
+        {
+          "conversation_id": "crab_08",
+          "sort_order": 8,
+          "question": "Sometimes I change my mind about what I'm comfortable with. What felt okay yesterday might not feel okay today! Is it okay to change your boundaries?",
+          "yes_response": "Absolutely! Our boundaries can change depending on how we feel, who we're with, or what's happening. You're always allowed to change your mind. 'I was okay with that before, but I'm not now' is completely valid!",
+          "no_response": "It really is okay! You don't have to keep the same boundaries forever. If something doesn't feel right anymore, you can say so. You're in charge of your own comfort. It's okay to change your mind!",
+          "key_takeaway": "Boundaries can change. We're always allowed to change our minds about what we're comfortable with."
+        },
+        {
+          "conversation_id": "crab_09",
+          "sort_order": 9,
+          "question": "Having good boundaries actually helps me be a better friend! When I take care of myself, I have more energy to care for others. Do you take care of your own needs so you can help others too?",
+          "yes_response": "That's so wise! Taking care of yourself isn't selfish — it's necessary. When your shell is strong, you can help others build theirs! You're learning that caring for yourself helps you care for everyone.",
+          "no_response": "It's something to think about! Sometimes we try to help everyone else but forget about ourselves. But you can't pour from an empty shell! Taking care of your needs helps you have more to give to others.",
+          "key_takeaway": "Taking care of ourselves isn't selfish. It helps us have more energy to help others."
+        },
+        {
+          "conversation_id": "crab_10",
+          "sort_order": 10,
+          "question": "I've really enjoyed talking with you! Remember: your boundaries matter. You can say no, ask for space, and expect to be treated kindly. Will you take care of yourself by keeping your boundaries strong?",
+          "yes_response": "Wonderful! A strong shell makes a happy crab. You deserve to feel safe and comfortable. Keep setting boundaries and asking for what you need. You've got this, friend! Scuttle on! 🦀",
+          "no_response": "That's okay — boundaries take practice! Start small. Try saying 'no' to one little thing, or asking for a bit of space. Over time, it gets easier. I believe in you! 🦀",
+          "key_takeaway": "Our boundaries matter. We deserve to feel safe, comfortable, and treated with respect."
+        }
+      ]
+    },
+    {
+      "npc_id": "ollie_octopus",
+      "npc_name": "Ollie Octopus",
+      "emoji": "🐙",
+      "species": "Octopus",
+      "topic": "Flexibility & Problem-Solving",
+      "unlock_level": 48,
+      "conversations": [
+        {
+          "conversation_id": "octopus_01",
+          "sort_order": 1,
+          "question": "Hello, clever friend! I'm Ollie! Watch this — I can squeeze through the tiniest spaces because I'm so flexible! Being flexible in our minds is helpful too. When plans change, do you find it easy or hard to adjust?",
+          "yes_response": "Whether it's easy or hard for you, that's okay! Change can surprise us. Being flexible means we can bend without breaking — like my eight arms! When things don't go as planned, we can find new ways forward.",
+          "no_response": "Most creatures find it hard sometimes! We make plans, and then — whoosh! — something changes. That can feel frustrating. But just like my bendy body, our minds can learn to flex too. It takes practice!",
+          "key_takeaway": "Mental flexibility helps us adapt when things don't go as planned."
+        },
+        {
+          "conversation_id": "octopus_02",
+          "sort_order": 2,
+          "question": "I have eight arms, so when one arm gets stuck, I use another one! When one way of doing something doesn't work, do you try different ways?",
+          "yes_response": "That's excellent problem-solving! Just because one way doesn't work doesn't mean there's no way. There are usually lots of ways to solve a problem — like having eight different arms to try! Keep thinking creatively!",
+          "no_response": "It can be discouraging when something doesn't work! But here's a secret: there's almost always more than one way to do something. If your first arm can't reach, try another! Don't give up after one try.",
+          "key_takeaway": "When one approach doesn't work, try another. There's usually more than one way to solve a problem."
+        },
+        {
+          "conversation_id": "octopus_03",
+          "sort_order": 3,
+          "question": "Sometimes I find food hidden in tricky places. I have to think carefully about how to get it! Do you like solving puzzles or figuring things out?",
+          "yes_response": "Wonderful! Puzzles and problems are like exercise for your brain. Every time you figure something out, your brain gets stronger. Keep challenging yourself — you're building thinking power!",
+          "no_response": "That's okay! Not everyone loves puzzles. But here's a cool thing: you're actually solving problems every day without realizing it! Getting dressed, making choices, playing games — your brain is always working. You're smarter than you think!",
+          "key_takeaway": "Solving problems is like exercise for our brains. We solve problems every day, even when we don't realize it."
+        },
+        {
+          "conversation_id": "octopus_04",
+          "sort_order": 4,
+          "question": "When I face a problem, I try to stay calm first. A worried brain doesn't think as well! When you have a problem, do you try to calm down before solving it?",
+          "yes_response": "Smart thinking! When we're upset, our brains go into 'panic mode' and can't think clearly. Taking some breaths first helps our 'thinking brain' work better. Calm first, solve second — that's the octopus way!",
+          "no_response": "It's hard to remember when we're upset! Our brains want to react RIGHT NOW. But if you can, try taking three slow breaths before tackling a problem. It really helps! A calm brain is a better problem-solver.",
+          "key_takeaway": "Calming down before trying to solve a problem helps our brains think more clearly."
+        },
+        {
+          "conversation_id": "octopus_05",
+          "sort_order": 5,
+          "question": "When I can't solve something alone, I watch other ocean creatures and learn from them! Do you ever ask others for help or ideas when you're stuck?",
+          "yes_response": "That's so smart! No octopus knows everything. Getting ideas from others can show us solutions we never would have thought of. Asking for help isn't giving up — it's being wise about problem-solving!",
+          "no_response": "It can feel hard to ask! But here's the thing: everyone gets stuck sometimes. Other creatures might have ideas you never thought of. Asking for help isn't cheating — it's using all your resources!",
+          "key_takeaway": "Asking others for help or ideas when we're stuck is smart problem-solving, not giving up."
+        },
+        {
+          "conversation_id": "octopus_06",
+          "sort_order": 6,
+          "question": "Sometimes I try something and it doesn't work at all! I make lots of mistakes. But each mistake teaches me something. How do you feel when you try something and it doesn't work?",
+          "yes_response": "Mistakes can feel bad, or they can feel like just part of learning — or both! However you feel is okay. What matters is what you do next. Each 'oops' gets you closer to 'aha!' That's how problem-solving works!",
+          "no_response": "That's a healthy way to think! Knowing that not-working is part of the process helps us keep going. You're already thinking like a great problem-solver!",
+          "key_takeaway": "Mistakes are part of learning. Each 'oops' gets us closer to figuring things out."
+        },
+        {
+          "conversation_id": "octopus_07",
+          "sort_order": 7,
+          "question": "I can change my color to blend in or stand out, depending on what I need! Sometimes solving a problem means changing our approach. Can you think of a time you had to try something a different way?",
+          "yes_response": "Perfect! That's flexibility in action. When we're willing to change how we're doing something, we open up new possibilities. Being stubborn about our way can keep us stuck. You've already learned this lesson!",
+          "no_response": "That's okay! When it happens, you'll be ready. Just remember: if something isn't working, you don't have to keep doing it the same way. Try a new color, like I do! Change can be the key to solving things.",
+          "key_takeaway": "Being willing to change our approach opens up new possibilities for solving problems."
+        },
+        {
+          "conversation_id": "octopus_08",
+          "sort_order": 8,
+          "question": "Some problems are small, like a stuck lid on a jar. Some are big, like finding a new home! Do you know that big problems can be broken into smaller pieces?",
+          "yes_response": "You've discovered something powerful! Big problems can feel overwhelming, but when we break them into small steps, they become manageable. One arm at a time, one step at a time — that's how we solve big things!",
+          "no_response": "It's a great trick! When something feels too big, ask yourself: 'What's ONE small part I can work on?' Just one! Then do the next small part. Before you know it, the big problem is solved!",
+          "key_takeaway": "Big problems become easier when we break them into smaller, manageable steps."
+        },
+        {
+          "conversation_id": "octopus_09",
+          "sort_order": 9,
+          "question": "Solving problems feels really good! I love the moment when I figure something out. Do you feel proud when you solve a problem, even a small one?",
+          "yes_response": "That proud feeling is your brain celebrating! It's saying 'Good job, you figured it out!' Let yourself enjoy that feeling, even for small wins. It motivates us to keep solving and learning!",
+          "no_response": "Next time you solve something — even something tiny — try to notice how it feels. Your brain might give you a happy feeling! Celebrating our problem-solving wins, even small ones, helps us stay motivated.",
+          "key_takeaway": "Feeling proud when we solve problems motivates us to keep learning and trying."
+        },
+        {
+          "conversation_id": "octopus_10",
+          "sort_order": 10,
+          "question": "What a great chat! Remember: stay flexible, try different ways, and break big problems into small pieces. Will you keep using your amazing problem-solving brain?",
+          "yes_response": "Fantastic! Your brain is like an octopus with eight arms — so many ways to reach a solution! Stay curious, stay flexible, and never give up after one try. You're a wonderful problem-solver! 🐙",
+          "no_response": "That's okay! Problem-solving is a skill that grows over time. Start small. When you get stuck on something little, try one different approach. You'll get better and better. I believe in you! 🐙",
+          "key_takeaway": "Staying curious and flexible helps us become great problem-solvers over time."
+        }
+      ]
+    },
+    {
+      "npc_id": "pearl_oyster",
+      "npc_name": "Pearl Oyster",
+      "emoji": "🐚",
+      "species": "Oyster",
+      "topic": "Self-Worth & Inner Beauty",
+      "unlock_level": 50,
+      "conversations": [
+        {
+          "conversation_id": "oyster_01",
+          "sort_order": 1,
+          "question": "Hello, precious one! I'm Pearl. I know I look plain on the outside — just a rough shell! But inside me, I have something beautiful: a pearl. Do you know that you have something beautiful inside you too?",
+          "yes_response": "I'm so glad you know that! Your inner beauty might be your kindness, your creativity, your humor, your caring heart, or so many other things. These inside treasures are more valuable than anything you can see!",
+          "no_response": "It's true! Everyone has beautiful things inside them. Maybe it's how you care about others, or your imagination, or your determination. Just because you can't see it doesn't mean it's not there. Your inner pearl is real!",
+          "key_takeaway": "Everyone has inner beauty — qualities like kindness, creativity, and caring that make us valuable."
+        },
+        {
+          "conversation_id": "oyster_02",
+          "sort_order": 2,
+          "question": "Do you know how pearls are made? A tiny grain of sand gets inside my shell and irritates me. Over time, I turn that irritation into something beautiful! Have you ever turned a hard experience into something good?",
+          "yes_response": "What a treasure you've made! Just like a pearl, your hard experiences can become something beautiful. The challenges you've faced have helped shape the amazing person you're becoming. That's your inner pearl growing!",
+          "no_response": "That's okay — it takes time! Sometimes we don't see how hard things helped us until later. But trust me, the difficult moments you face are forming something precious inside you. Your pearl is growing, even now.",
+          "key_takeaway": "Difficult experiences can shape us and become something beautiful over time, like a pearl."
+        },
+        {
+          "conversation_id": "oyster_03",
+          "sort_order": 3,
+          "question": "Some sea creatures look flashy and colorful, but I've learned that true worth isn't about how we look on the outside. Do you ever worry about how you look?",
+          "yes_response": "So many creatures do! We see beautiful pictures and think we should look like that. But real beauty isn't just outside — it's how you treat others, how you try your best, how you care. That's the beauty that lasts!",
+          "no_response": "What a peaceful way to feel! Knowing that our outside doesn't define our worth is wisdom. Keep remembering that your value comes from who you are inside, not what you look like. That's where your pearl lives!",
+          "key_takeaway": "True worth comes from who we are inside, not how we look on the outside."
+        },
+        {
+          "conversation_id": "oyster_04",
+          "sort_order": 4,
+          "question": "I used to compare my plain shell to the pretty shells around me and feel bad. But then I realized: I have a PEARL inside! Do you sometimes compare yourself to others and feel like you're not enough?",
+          "yes_response": "Almost everyone feels that way sometimes! But comparing our outside to someone else's outside is like comparing shells — you're missing the pearl inside! You have treasures they don't have, and they have some you don't. We're all valuable!",
+          "no_response": "What wonderful self-acceptance! Knowing your own worth without comparing to others is a real gift. Keep holding onto that feeling. You are enough, exactly as you are!",
+          "key_takeaway": "Comparing ourselves to others can hide our own inner treasures. We are all valuable in different ways."
+        },
+        {
+          "conversation_id": "oyster_05",
+          "sort_order": 5,
+          "question": "My pearl took years to form. It grew slowly, layer by layer. Your worth is the same — it's been building since you were born! Do you know that you were valuable the moment you came into this world?",
+          "yes_response": "Yes! You didn't have to earn your worth by being smart, pretty, or good at things. You were valuable just by being born. Nothing can take that away. Your worth is built into you!",
+          "no_response": "It's true! You don't have to earn value by doing things or looking a certain way. You were precious the moment you were born, just like a pearl starting to form. Your worth isn't something you have to prove!",
+          "key_takeaway": "We are valuable simply because we exist. Our worth doesn't have to be earned."
+        },
+        {
+          "conversation_id": "oyster_06",
+          "sort_order": 6,
+          "question": "Sometimes I hide in my shell and don't show my pearl to anyone. I feel shy or scared. Do you ever hide your special qualities because you're afraid of what others might think?",
+          "yes_response": "That makes sense! It can feel risky to show our true selves. What if someone doesn't like it? But hiding your light dims the world. The people who matter will love your real self. Your pearl deserves to be seen!",
+          "no_response": "How brave! Sharing our true selves takes courage. Keep shining! And if you ever do feel shy, that's okay too. You can share your pearl when you're ready. There's no rush.",
+          "key_takeaway": "Sharing our true selves can feel risky, but our inner beauty deserves to be seen."
+        },
+        {
+          "conversation_id": "oyster_07",
+          "sort_order": 7,
+          "question": "Other creatures might say mean things about my shell, but they can't touch my pearl! When someone says something mean about you, does it change who you really are inside?",
+          "yes_response": "I understand — mean words can really hurt and make us feel different. But here's the truth: their words describe THEM, not you. Your pearl is still there, still beautiful, no matter what anyone says. You are still YOU!",
+          "no_response": "You understand something important! What others say doesn't change who you truly are. Their words are about them, not you. Your pearl stays precious no matter what. That's wonderful wisdom!",
+          "key_takeaway": "What others say about us doesn't change our true worth. Our inner value remains."
+        },
+        {
+          "conversation_id": "oyster_08",
+          "sort_order": 8,
+          "question": "I've learned to speak kindly to myself, like I would talk to a friend. Do you talk nicely to yourself in your head, or are you sometimes mean to yourself?",
+          "yes_response": "That's wonderful if you're kind to yourself! And if you're sometimes mean, that's very common. We can be our own harshest critics. Try talking to yourself like you'd talk to a friend you love. You deserve that kindness!",
+          "no_response": "That's good to know about yourself! If you're sometimes hard on yourself, try this: would you say that mean thing to a friend? Probably not! You deserve the same kindness you'd give others. Talk gently to your pearl!",
+          "key_takeaway": "Talking kindly to ourselves, like we would to a friend, helps us remember our worth."
+        },
+        {
+          "conversation_id": "oyster_09",
+          "sort_order": 9,
+          "question": "Every pearl is different — different sizes, shapes, and colors. That's what makes each one special! Do you know that being different makes you special, not strange?",
+          "yes_response": "Yes! The things that make you different are part of your unique pearl. If everyone were the same, the ocean would be so boring! Your differences are gifts. Celebrate them!",
+          "no_response": "It's true! The things that make you different from others aren't flaws — they're features! They're what make YOUR pearl unlike any other. The world needs your unique sparkle. Different is beautiful!",
+          "key_takeaway": "Being different makes us special and unique. Our differences are part of our beauty."
+        },
+        {
+          "conversation_id": "oyster_10",
+          "sort_order": 10,
+          "question": "What a joy to share with you! Remember: you have a beautiful pearl inside you. You are worthy, valuable, and enough just as you are. Will you try to remember your inner beauty?",
+          "yes_response": "That makes my shell happy! On days when you forget, come back and remember our talk. You have a pearl inside you that no one can take away. Shine bright, precious friend! 🐚",
+          "no_response": "That's okay — it takes time to really believe it! Just know that even when you doubt yourself, your pearl is still there, still growing. You are more valuable than you know. I believe in you! 🐚",
+          "key_takeaway": "We are worthy and enough just as we are. Our inner beauty is always there."
+        }
+      ]
+    },
+    {
+      "npc_id": "finley_shark",
+      "npc_name": "Finley Shark",
+      "emoji": "🦈",
+      "species": "Shark",
+      "topic": "Overcoming Fear & Courage",
+      "unlock_level": 52,
+      "conversations": [
+        {
+          "conversation_id": "shark_01",
+          "sort_order": 1,
+          "question": "Hey there, friend! I'm Finley! I know I look a little scary, but I'm actually really friendly. Are you surprised that a shark wants to be friends?",
+          "yes_response": "I get that a lot! Many creatures are scared of sharks because of how we look. But I'm not scary at all — I just want to make friends and swim together! Sometimes the things that seem scary turn out to be not so scary after all.",
+          "no_response": "How wonderful that you're not quick to judge! Some creatures swim away before getting to know me. I'm glad you gave me a chance. You already know that looks can be deceiving!",
+          "key_takeaway": "Things that seem scary at first might not be scary once we get to know them."
+        },
+        {
+          "conversation_id": "shark_02",
+          "sort_order": 2,
+          "question": "Even though I'm big, I feel scared sometimes too! Everyone feels fear — it's normal. Do you ever feel scared about things?",
+          "yes_response": "That's completely normal! Fear is something every creature feels. It's our brain's way of trying to protect us. Even the biggest, bravest creatures feel scared sometimes. You're not alone!",
+          "no_response": "That's great that you feel brave! But if fear ever does come, don't be surprised. It visits everyone eventually. And feeling scared doesn't make you weak — it makes you normal!",
+          "key_takeaway": "Everyone feels fear sometimes. It's normal and doesn't make us weak."
+        },
+        {
+          "conversation_id": "shark_03",
+          "sort_order": 3,
+          "question": "Here's something cool: being brave doesn't mean having no fear. It means doing something even when you ARE scared! Have you ever done something even though you were afraid?",
+          "yes_response": "That's real courage! You felt the fear and did it anyway. That's way harder than doing something you're not scared of at all. You're braver than you know! Keep that courage swimming with you.",
+          "no_response": "That's okay! When the chance comes, remember this: courage isn't the absence of fear — it's action despite fear. Even small brave acts count. You have more courage inside you than you think!",
+          "key_takeaway": "Courage isn't the absence of fear — it's doing something even when we're scared."
+        },
+        {
+          "conversation_id": "shark_04",
+          "sort_order": 4,
+          "question": "Sometimes I imagine scary things that might happen, and I get really worried. But most of those scary things never actually happen! Do you ever worry about things that haven't happened yet?",
+          "yes_response": "Most of us do! Our brains are great at imagining bad things. But here's what I've learned: most of the scary things I imagine never happen. Worrying about 'what ifs' steals our joy today. Try to focus on right now!",
+          "no_response": "You have a calm mind! Worrying about the future is really common, so if it ever does happen to you, remember: most worries don't come true. We waste energy being scared of things that never happen!",
+          "key_takeaway": "Most things we worry about never happen. Focusing on now helps us feel less afraid."
+        },
+        {
+          "conversation_id": "shark_05",
+          "sort_order": 5,
+          "question": "When I feel scared, I take big, slow breaths through my gills. It helps calm me down! Do you have ways you calm yourself when you feel afraid?",
+          "yes_response": "That's great! Having tools to calm down when we're scared is so important. Keep using what works for you. And remember, it's okay to feel scared — what matters is that you know how to help yourself feel better.",
+          "no_response": "Let me share a trick! When fear comes, try breathing slowly — in for 4 counts, out for 4 counts. This tells your brain 'I'm safe.' You can also try squeezing your hands tight and then letting go. Find what works for you!",
+          "key_takeaway": "Slow breathing and other calming techniques can help us manage fear."
+        },
+        {
+          "conversation_id": "shark_06",
+          "sort_order": 6,
+          "question": "I used to be scared of the dark parts of the ocean. But I swam into them slowly, a little bit at a time, and now they don't scare me as much! Have you ever gotten less afraid of something by facing it little by little?",
+          "yes_response": "That's amazing! Facing our fears in small steps is one of the best ways to overcome them. Each small step teaches your brain 'I can handle this.' You're already conquering fears! Keep going!",
+          "no_response": "That's okay! When you're ready, try this: face something small that scares you — just a tiny bit. Then do it again. Over time, the fear shrinks. You don't have to do it all at once!",
+          "key_takeaway": "Facing fears in small steps helps us become less afraid over time."
+        },
+        {
+          "conversation_id": "shark_07",
+          "sort_order": 7,
+          "question": "Sometimes fear is helpful — it keeps us safe from real danger! But sometimes fear stops us from good things, like making friends or trying new stuff. Can you tell the difference between helpful fear and unhelpful fear?",
+          "yes_response": "That's really wise! Helpful fear says 'this is actually dangerous' — like staying away from fire. Unhelpful fear says 'what if something bad happens' when nothing dangerous is really there. Knowing the difference is powerful!",
+          "no_response": "It can be tricky! Ask yourself: 'Is there REAL danger here?' Fear of a burning fire is helpful — that's real danger. Fear of raising your hand in class? That's not real danger. That fear is trying to protect you from embarrassment, not harm.",
+          "key_takeaway": "Some fear protects us from real danger. Other fear just holds us back from good things."
+        },
+        {
+          "conversation_id": "shark_08",
+          "sort_order": 8,
+          "question": "When I feel too scared to do something alone, I ask a friend to swim with me! Having support helps me be braver. Do you have people who help you feel braver?",
+          "yes_response": "Wonderful! Having someone by your side when you're scared is so helpful. It doesn't make you weak to need support — it makes you smart! Keep those brave friends close. We're braver together!",
+          "no_response": "That's okay! Sometimes we feel like we have to be brave alone. But asking for help isn't weakness — it's wisdom. Look around for someone who might swim beside you when things feel scary. Everyone needs a swim buddy sometimes!",
+          "key_takeaway": "Having support helps us be braver. Asking for help is smart, not weak."
+        },
+        {
+          "conversation_id": "shark_09",
+          "sort_order": 9,
+          "question": "After I do something brave, even something small, I celebrate! It feels good and makes me want to be brave again. Do you celebrate when you're courageous?",
+          "yes_response": "That's wonderful! Celebrating our brave moments — big or small — reminds our brains that courage feels good. It makes us want to be brave again! Keep cheering for yourself, brave swimmer!",
+          "no_response": "You should try it! Even small brave acts deserve a celebration — a smile, a happy thought, telling yourself 'I did it!' When we celebrate courage, our brains want to feel that again. You're braver than you think!",
+          "key_takeaway": "Celebrating our brave moments, even small ones, encourages us to be courageous again."
+        },
+        {
+          "conversation_id": "shark_10",
+          "sort_order": 10,
+          "question": "Swimming with you has been great! Remember: everyone feels fear, but courage means swimming forward anyway. Will you try to be brave, even when you're a little scared?",
+          "yes_response": "You've got the heart of a shark — brave and strong! Fear will come and go, but your courage stays. Take it one fin stroke at a time. You can do hard things! Swim on, brave friend! 🦈",
+          "no_response": "That's okay! Being brave takes practice, and some days are harder than others. Start small. Even tiny acts of courage count. I believe in you — you're braver than you know! 🦈",
+          "key_takeaway": "We can be brave even when we're scared. Courage grows one small step at a time."
+        }
+      ]
+    },
+    {
+      "npc_id": "splash_dolphin",
+      "npc_name": "Splash Dolphin",
+      "emoji": "🐬",
+      "species": "Dolphin",
+      "topic": "Communication & Social Skills",
+      "unlock_level": 54,
+      "conversations": [
+        {
+          "conversation_id": "dolphin_01",
+          "sort_order": 1,
+          "question": "Hey hey! I'm Splash! *click click whistle* That's dolphin talk! We dolphins love communicating with each other. Do you like talking to other people?",
+          "yes_response": "That's wonderful! Talking with others helps us make friends, share ideas, and feel connected. Communication is how we build our pod — our group of close friends. Keep chatting, clicking, and connecting!",
+          "no_response": "That's okay! Not everyone loves talking a lot. Some dolphins are quiet too! The good thing is, communication isn't just about talking a lot. It's about sharing what matters to you in whatever way feels right.",
+          "key_takeaway": "Communication helps us connect with others and build friendships."
+        },
+        {
+          "conversation_id": "dolphin_02",
+          "sort_order": 2,
+          "question": "When dolphins talk, we also listen! Good communication is half talking and half listening. Are you a good listener?",
+          "yes_response": "Listening is such a gift to give someone! When we really listen — not just waiting for our turn to talk — people feel heard and cared about. You're already great at one of the most important communication skills!",
+          "no_response": "Listening can be hard! Our minds wander, or we're excited to share our thoughts. Here's a tip: try to focus on what the other person is saying before thinking about what YOU want to say. It takes practice!",
+          "key_takeaway": "Good communication is about listening as much as talking. Listening makes others feel cared about."
+        },
+        {
+          "conversation_id": "dolphin_03",
+          "sort_order": 3,
+          "question": "Dolphins use body language too — our jumps, tail slaps, and spins all mean something! Do you know that humans use body language too, like facial expressions and how you stand?",
+          "yes_response": "You're tuned in! So much of how we communicate isn't words at all — it's our faces, our posture, our eyes. Paying attention to body language helps us understand people better, even when they're not talking!",
+          "no_response": "It's really cool! Crossing your arms, looking down, smiling, making eye contact — these all send messages without words. Next time you're with someone, notice their body. What might it be telling you?",
+          "key_takeaway": "Body language is an important part of communication. We say a lot without words."
+        },
+        {
+          "conversation_id": "dolphin_04",
+          "sort_order": 4,
+          "question": "Sometimes I say something and my dolphin friend misunderstands me. That happens! When someone misunderstands you, how do you feel?",
+          "yes_response": "Being misunderstood can feel frustrating or lonely! But it happens to everyone. The good news is, we can try again with different words. 'Let me say that differently' is a helpful phrase. Communication is a work in progress!",
+          "no_response": "That's good! And if it ever happens, don't worry too much. Misunderstandings are normal. We can always try to explain again in a different way. The goal is understanding, and sometimes it takes a few tries!",
+          "key_takeaway": "Misunderstandings happen to everyone. We can always try to explain in a different way."
+        },
+        {
+          "conversation_id": "dolphin_05",
+          "sort_order": 5,
+          "question": "Making new friends can feel scary! When I meet a new dolphin, I swim up slowly and try to be friendly. Do you find it easy or hard to make new friends?",
+          "yes_response": "Whether it's easy or hard, friendships are worth it! Some dolphins make friends quickly, others take time to warm up. Both are okay! The important thing is being kind and giving it a try.",
+          "no_response": "Making friends can feel tricky! Here are some tips: smile, ask questions, find things you both like. You don't have to be best friends right away — start small. Even a friendly wave is a start!",
+          "key_takeaway": "Making friends takes effort, but it's worth it. Start small with kindness and questions."
+        },
+        {
+          "conversation_id": "dolphin_06",
+          "sort_order": 6,
+          "question": "Dolphins are really good at taking turns! When one dolphin clicks, the others wait and listen. Are you good at waiting your turn to talk?",
+          "yes_response": "That's wonderful! Taking turns shows respect. It says 'what you have to say matters.' Keep being a turn-taker — it makes conversations more fun for everyone!",
+          "no_response": "It's something lots of us work on! When we're excited, we want to share RIGHT NOW. But waiting helps the other person feel heard. Try counting to three in your head after someone stops talking before you start!",
+          "key_takeaway": "Taking turns in conversation shows respect and helps everyone feel heard."
+        },
+        {
+          "conversation_id": "dolphin_07",
+          "sort_order": 7,
+          "question": "Sometimes I have to tell my dolphin friends something they don't want to hear, like 'that hurt my feelings.' It's hard but important! Can you tell people how you feel, even when it's hard?",
+          "yes_response": "That's brave! Speaking up about your feelings, especially hard ones, is an important part of good communication. You can be honest and kind at the same time. Keep sharing your truth!",
+          "no_response": "It can be really hard! We worry about making others upset. But keeping our feelings inside can hurt us. Try using 'I feel' sentences: 'I feel sad when...' This shares your feeling without blaming the other person.",
+          "key_takeaway": "Sharing our feelings honestly, even hard ones, is important. 'I feel' sentences help."
+        },
+        {
+          "conversation_id": "dolphin_08",
+          "sort_order": 8,
+          "question": "When dolphins disagree, we try to work it out by communicating, not fighting! When you disagree with someone, do you try to talk it out?",
+          "yes_response": "That's the dolphin way! Disagreements happen, but talking them out helps us understand each other. You can disagree AND still be friends. Communication helps us find solutions together!",
+          "no_response": "It's okay — conflict is hard! But swimming away or getting mad usually doesn't fix things. Try saying 'I see it differently' and explaining why. You might not always agree, but you can understand each other better.",
+          "key_takeaway": "Talking through disagreements helps us understand each other and find solutions."
+        },
+        {
+          "conversation_id": "dolphin_09",
+          "sort_order": 9,
+          "question": "I love asking my friends questions about their day, their favorite things, and how they feel! Do you ask questions when you're talking to people?",
+          "yes_response": "Questions are like gifts in a conversation! They show you care about the other person. Keep asking questions — it helps friendships grow deeper and makes people feel special.",
+          "no_response": "Questions are magical! They keep conversations going and show you care. Try asking things like 'What was the best part of your day?' or 'What do you like to do?' People love to answer questions about themselves!",
+          "key_takeaway": "Asking questions shows we care about others and helps conversations and friendships grow."
+        },
+        {
+          "conversation_id": "dolphin_10",
+          "sort_order": 10,
+          "question": "It's been so fun chatting with you! Remember: listen well, share your feelings, ask questions, and take turns. Will you keep working on your communication skills?",
+          "yes_response": "Splashy fantastic! Good communication opens doors to friendships, understanding, and connection. You're already a great communicator. Keep clicking, whistling, and connecting with your pod! 🐬",
+          "no_response": "That's okay! Communication is something we all keep learning. Even small improvements make a big difference. Next time you're with someone, try just one tip — like asking a question. Swim on, friend! 🐬",
+          "key_takeaway": "Good communication skills help us build friendships and connect with others."
+        }
+      ]
+    },
+    {
+      "npc_id": "sandy_seal",
+      "npc_name": "Sandy Seal",
+      "emoji": "🦭",
+      "species": "Seal",
+      "topic": "Play & Joy in Movement",
+      "unlock_level": 56,
+      "conversations": [
+        {
+          "conversation_id": "seal_01",
+          "sort_order": 1,
+          "question": "Arf arf! Hi there, I'm Sandy! *does a flip* I just LOVE to move and play! Do you like playing and moving your body?",
+          "yes_response": "That's wonderful! Moving our bodies is one of the best things we can do. It makes us feel happy, strong, and full of energy. Keep playing, jumping, dancing, or whatever makes you feel alive!",
+          "no_response": "That's okay! Not everyone loves the same kind of movement. But here's a secret: moving doesn't have to be hard work. It can be dancing silly, going for walks, or playing games. There's a type of movement for everyone!",
+          "key_takeaway": "Moving our bodies can be fun and makes us feel happy and energized."
+        },
+        {
+          "conversation_id": "seal_02",
+          "sort_order": 2,
+          "question": "I love swimming because it feels good, not because I have to! When I move, I'm not thinking about anything except how fun it is. Do you move your body because it feels good?",
+          "yes_response": "That's the best reason! When we move because it feels fun — not because we 'should' — our bodies and minds are both happy. Keep finding joy in movement. That's the secret to moving for life!",
+          "no_response": "Sometimes movement feels like a chore, I know! But what if you found something that was actually fun? Dancing to music, playing catch, jumping in puddles — when movement is play, it doesn't feel like work at all!",
+          "key_takeaway": "Moving our bodies because it feels good is the best way to enjoy exercise."
+        },
+        {
+          "conversation_id": "seal_03",
+          "sort_order": 3,
+          "question": "Play time isn't just for puppies and kids — it's for everyone! Even grown-up seals play. Do you think playing is important?",
+          "yes_response": "Absolutely! Play isn't just fun — it helps our brains learn, our bodies get stronger, and our hearts feel happy. Play is just as important as work and rest. Never stop playing!",
+          "no_response": "It really is! Some creatures think play is only for little ones, but that's not true. Play helps us relax, be creative, and feel joy. Playing is good for us at every age!",
+          "key_takeaway": "Play is important for everyone, not just kids. It helps us learn, grow, and feel happy."
+        },
+        {
+          "conversation_id": "seal_04",
+          "sort_order": 4,
+          "question": "When I feel sad or stressed, I go for a swim. Moving my body helps my feelings feel better! Have you ever noticed that moving helps your mood?",
+          "yes_response": "You've discovered something scientists know too! Moving our bodies releases happy chemicals in our brains. It's like natural medicine for our moods. When you're feeling down, even a little movement can help!",
+          "no_response": "Next time you feel grumpy or sad, try moving a little — even just stretching or dancing for one minute. Your brain might give you some happy feelings! Movement is like a mood helper that's always available.",
+          "key_takeaway": "Moving our bodies can help improve our mood when we feel sad or stressed."
+        },
+        {
+          "conversation_id": "seal_05",
+          "sort_order": 5,
+          "question": "I'm not the fastest swimmer, and that's okay! I don't play to be the best — I play because it's fun. Do you ever worry about not being good enough at something to enjoy it?",
+          "yes_response": "Lots of creatures feel that way! We think we have to be good to have fun. But here's the truth: you don't have to be good at something to enjoy it! Play for joy, not for scores. That's the seal way!",
+          "no_response": "What freedom! Knowing you can enjoy things without being 'good' at them is wonderful. Keep playing for fun, not for winning. The joy is in the playing, not the results!",
+          "key_takeaway": "We don't have to be good at something to enjoy it. Play is about joy, not performance."
+        },
+        {
+          "conversation_id": "seal_06",
+          "sort_order": 6,
+          "question": "Sometimes I play alone, and sometimes I play with my seal friends! Both are fun in different ways. Do you like playing alone, with others, or both?",
+          "yes_response": "All of those are great! Solo play helps us use our imagination. Playing with others teaches us teamwork and sharing. There's no wrong way to play — just whatever brings you joy!",
+          "no_response": "That's okay! Different moods call for different types of play. Sometimes we need quiet solo play, sometimes we need wild group play. You get to choose what feels right for you each day!",
+          "key_takeaway": "Both playing alone and playing with others are valuable. Different times call for different play."
+        },
+        {
+          "conversation_id": "seal_07",
+          "sort_order": 7,
+          "question": "Moving helps my body stay healthy — my heart, my muscles, my bones! Do you know that playing and moving is good for your body?",
+          "yes_response": "You're right! When we play and move, we're not just having fun — we're making our bodies stronger. Our hearts pump, our muscles work, our lungs breathe deep. Play is good for us inside and out!",
+          "no_response": "It's true! Moving helps our hearts get stronger, our muscles grow, and our bodies work better. But here's the cool part: we don't have to do boring exercises. We can just PLAY, and our bodies get healthier anyway!",
+          "key_takeaway": "Play and movement help our bodies stay healthy in fun ways."
+        },
+        {
+          "conversation_id": "seal_08",
+          "sort_order": 8,
+          "question": "*rolls on back and wiggles* See? Movement can be silly! Do you ever dance or move in silly ways just for fun?",
+          "yes_response": "Arf arf! Silly movement is the BEST! When we shake, wiggle, and dance like no one's watching, our whole body feels happy. Keep being silly — it's good for your soul!",
+          "no_response": "You should try it! Put on music and just wiggle. Make funny shapes with your body. Jump around your room. When we're silly, we let go of worry and just feel free. It's totally okay to look goofy!",
+          "key_takeaway": "Silly, fun movement is good for us. Being playful helps us feel free and happy."
+        },
+        {
+          "conversation_id": "seal_09",
+          "sort_order": 9,
+          "question": "After lots of play, my body needs rest. Rest is part of taking care of myself too! Do you let your body rest after playing hard?",
+          "yes_response": "That's so important! Our bodies need rest to recover and grow stronger. Play hard, rest well — that's the rhythm of a healthy life. You're taking great care of yourself!",
+          "no_response": "Rest is just as important as play! If we go-go-go all the time, our bodies get tired and can't keep up. Make sure you balance play with rest. Both are part of a happy, healthy life!",
+          "key_takeaway": "Rest is just as important as play. Our bodies need both to stay healthy and happy."
+        },
+        {
+          "conversation_id": "seal_10",
+          "sort_order": 10,
+          "question": "I've loved playing with you! Remember: movement should feel fun, not like punishment. Will you keep finding joy in moving your body?",
+          "yes_response": "Arf arf! You've got the spirit of a playful seal! Keep dancing, jumping, swimming, or whatever makes your heart happy. Your body loves to move — let it play! 🦭",
+          "no_response": "That's okay! Start tiny — maybe just stretch or take a short walk. Find one way of moving that doesn't feel like work. Your body wants to play — you just have to find the right game! 🦭",
+          "key_takeaway": "Movement should feel joyful. Finding fun ways to move helps us stay healthy and happy."
+        }
+      ]
+    }
+  ]
+}

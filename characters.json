@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "NPCs and characters for Lumo's Land",
+    "lastUpdated": "2025-11-18"
+  },
+  "characters": [
+    {
+      "id": "lumo",
+      "name": "Lumo",
+      "emoji": "✨",
+      "role": "Your Guide",
+      "bio": "Lumo is your friendly guide through the land of health and wellness. Always cheerful and ready to help!",
+      "biome": "starting-zone",
+      "xp": 50,
+      "topics": [
+        "Welcome to Lumo's Land!",
+        "Understanding Health Basics",
+        "Setting Goals"
+      ]
+    },
+    {
+      "id": "chef-lumo",
+      "name": "Chef Lumo",
+      "emoji": "👨‍🍳",
+      "role": "Nutrition Expert",
+      "bio": "Chef Lumo knows everything about healthy eating and delicious recipes!",
+      "biome": "starting-zone",
+      "xp": 50,
+      "topics": [
+        "What Are Macronutrients?",
+        "Reading Nutrition Labels",
+        "Healthy Snack Ideas",
+        "Portion Sizes",
+        "Hydration Importance"
+      ]
+    },
+    {
+      "id": "coach-ray",
+      "name": "Coach Ray",
+      "emoji": "🏃",
+      "role": "Fitness Coach",
+      "bio": "Coach Ray is all about movement and staying active. Let's get moving!",
+      "biome": "starting-zone",
+      "xp": 50,
+      "topics": [
+        "Benefits of Exercise",
+        "Types of Physical Activity",
+        "Building Strength",
+        "Stretching and Flexibility",
+        "Making Exercise Fun"
+      ]
+    },
+    {
+      "id": "dr-wellness",
+      "name": "Dr. Wellness",
+      "emoji": "🩺",
+      "role": "Health Expert",
+      "bio": "Dr. Wellness teaches about overall health, sleep, and body image.",
+      "biome": "starting-zone",
+      "xp": 50,
+      "topics": [
+        "Understanding Your Body",
+        "Sleep and Rest",
+        "Body Positivity",
+        "Healthy Habits",
+        "Managing Stress"
+      ]
+    },
+    {
+      "id": "bounce-bunny",
+      "name": "Bounce the Bunny",
+      "emoji": "🐰",
+      "role": "Mindfulness Guide",
+      "bio": "Bounce teaches mindfulness, emotional wellness, and staying positive!",
+      "biome": "sunny-meadow",
+      "xp": 50,
+      "topics": [
+        "What is Mindfulness?",
+        "Deep Breathing",
+        "Recognizing Emotions",
+        "Positive Self-Talk",
+        "Gratitude Practice"
+      ]
+    }
+  ]
+}

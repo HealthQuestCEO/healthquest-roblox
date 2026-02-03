@@ -1,0 +1,1679 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "description": "Complete shop catalog for Lumo's Land - 150+ items",
+    "total_items": 158,
+    "lastUpdated": "2025-11-10"
+  },
+  "categories": ["decor", "furniture", "outfit", "accessory", "seasonal", "sticker"],
+  "items": [
+    {
+      "id": "BDRM-001",
+      "name": "Rainbow Rug",
+      "emoji": "🌈",
+      "description": "Brighten your room with colors!",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 120,
+      "level_required": 1
+    },
+    {
+      "id": "BDRM-002",
+      "name": "Star Lamp",
+      "emoji": "⭐",
+      "description": "Light up the night with stars",
+      "category": "furniture",
+      "room": "BDRM",
+      "coinPrice": 80,
+      "level_required": 1
+    },
+    {
+      "id": "BDRM-003",
+      "name": "Cozy Bed",
+      "emoji": "🛏️",
+      "description": "A comfy place to rest",
+      "category": "furniture",
+      "room": "BDRM",
+      "coinPrice": 200,
+      "level_required": 1
+    },
+    {
+      "id": "BDRM-004",
+      "name": "Bookshelf",
+      "emoji": "📚",
+      "description": "Store your favorite books",
+      "category": "furniture",
+      "room": "BDRM",
+      "coinPrice": 150,
+      "level_required": 3
+    },
+    {
+      "id": "BDRM-005",
+      "name": "Plant - Cactus",
+      "emoji": "🌵",
+      "description": "Low maintenance and cute!",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 40,
+      "level_required": 1
+    },
+    {
+      "id": "BDRM-006",
+      "name": "Wall Art - Rainbow",
+      "emoji": "🎨",
+      "description": "Colorful art for your wall",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 90,
+      "level_required": 2
+    },
+    {
+      "id": "BDRM-007",
+      "name": "Desk",
+      "emoji": "🪑",
+      "description": "Perfect for homework!",
+      "category": "furniture",
+      "room": "BDRM",
+      "coinPrice": 130,
+      "level_required": 5
+    },
+    {
+      "id": "BDRM-008",
+      "name": "Globe",
+      "emoji": "🌍",
+      "description": "Explore the world!",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 110,
+      "level_required": 8
+    },
+    {
+      "id": "BDRM-009",
+      "name": "Telescope",
+      "emoji": "🔭",
+      "description": "Look at the stars!",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 200,
+      "level_required": 15
+    },
+    {
+      "id": "BDRM-010",
+      "name": "Guitar",
+      "emoji": "🎸",
+      "description": "Make music!",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 250,
+      "level_required": 20
+    },
+    {
+      "id": "BDRM-011",
+      "name": "Night Stand",
+      "emoji": "🗄️",
+      "description": "Keep things close at hand",
+      "category": "furniture",
+      "room": "BDRM",
+      "coinPrice": 95,
+      "level_required": 4
+    },
+    {
+      "id": "BDRM-012",
+      "name": "Moon Light",
+      "emoji": "🌙",
+      "description": "Soft moonlight glow",
+      "category": "furniture",
+      "room": "BDRM",
+      "coinPrice": 110,
+      "level_required": 6
+    },
+    {
+      "id": "BDRM-013",
+      "name": "Cloud Pillow",
+      "emoji": "☁️",
+      "description": "Float away to dreamland",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 75,
+      "level_required": 2
+    },
+    {
+      "id": "BDRM-014",
+      "name": "Dream Catcher",
+      "emoji": "🪡",
+      "description": "Catch only good dreams",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 85,
+      "level_required": 7
+    },
+    {
+      "id": "BDRM-015",
+      "name": "Fluffy Rug",
+      "emoji": "🧸",
+      "description": "Super soft under your feet",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 140,
+      "level_required": 9
+    },
+    {
+      "id": "BDRM-016",
+      "name": "Study Chair",
+      "emoji": "💺",
+      "description": "Ergonomic and comfy",
+      "category": "furniture",
+      "room": "BDRM",
+      "coinPrice": 115,
+      "level_required": 5
+    },
+    {
+      "id": "BDRM-017",
+      "name": "Alarm Clock",
+      "emoji": "⏰",
+      "description": "Never be late!",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 60,
+      "level_required": 3
+    },
+    {
+      "id": "BDRM-018",
+      "name": "Bulletin Board",
+      "emoji": "📌",
+      "description": "Pin your achievements",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 100,
+      "level_required": 10
+    },
+    {
+      "id": "BDRM-019",
+      "name": "Bean Bag Chair",
+      "emoji": "🎈",
+      "description": "Super comfy seating",
+      "category": "furniture",
+      "room": "BDRM",
+      "coinPrice": 160,
+      "level_required": 12
+    },
+    {
+      "id": "BDRM-020",
+      "name": "Lava Lamp",
+      "emoji": "🕯️",
+      "description": "Groovy and mesmerizing",
+      "category": "furniture",
+      "room": "BDRM",
+      "coinPrice": 135,
+      "level_required": 14
+    },
+    {
+      "id": "BDRM-021",
+      "name": "Window Curtains",
+      "emoji": "🪟",
+      "description": "Block out the sunlight",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 95,
+      "level_required": 8
+    },
+    {
+      "id": "BDRM-022",
+      "name": "Trophy Shelf",
+      "emoji": "🏅",
+      "description": "Display your achievements",
+      "category": "furniture",
+      "room": "BDRM",
+      "coinPrice": 180,
+      "level_required": 16
+    },
+    {
+      "id": "BDRM-023",
+      "name": "Dreamscape Poster",
+      "emoji": "🖼️",
+      "description": "Inspiring wall art",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 70,
+      "level_required": 11
+    },
+    {
+      "id": "BDRM-024",
+      "name": "Cosmic Bedspread",
+      "emoji": "✨",
+      "description": "Stars and galaxies blanket",
+      "category": "decor",
+      "room": "BDRM",
+      "coinPrice": 190,
+      "level_required": 18
+    },
+    {
+      "id": "BDRM-025",
+      "name": "Reading Nook",
+      "emoji": "📖",
+      "description": "Perfect spot for books",
+      "category": "furniture",
+      "room": "BDRM",
+      "coinPrice": 220,
+      "level_required": 22
+    },
+    {
+      "id": "KTCH-001",
+      "name": "Mini Fridge",
+      "emoji": "🧊",
+      "description": "Keep snacks cool",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 250,
+      "level_required": 10
+    },
+    {
+      "id": "KTCH-002",
+      "name": "Microwave",
+      "emoji": "📻",
+      "description": "Quick meals in a flash",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 200,
+      "level_required": 8
+    },
+    {
+      "id": "KTCH-003",
+      "name": "Coffee Maker",
+      "emoji": "☕",
+      "description": "Start the day right",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 150,
+      "level_required": 15
+    },
+    {
+      "id": "KTCH-004",
+      "name": "Cookie Jar",
+      "emoji": "🍪",
+      "description": "Store your treats",
+      "category": "decor",
+      "room": "KTCH",
+      "coinPrice": 65,
+      "level_required": 3
+    },
+    {
+      "id": "KTCH-005",
+      "name": "Fruit Bowl",
+      "emoji": "🍎",
+      "description": "Keep fruit fresh",
+      "category": "decor",
+      "room": "KTCH",
+      "coinPrice": 55,
+      "level_required": 2
+    },
+    {
+      "id": "KTCH-006",
+      "name": "Herb Garden",
+      "emoji": "🌿",
+      "description": "Fresh herbs at hand",
+      "category": "decor",
+      "room": "KTCH",
+      "coinPrice": 95,
+      "level_required": 12
+    },
+    {
+      "id": "KTCH-007",
+      "name": "Blender",
+      "emoji": "🥤",
+      "description": "Make smoothies!",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 175,
+      "level_required": 14
+    },
+    {
+      "id": "KTCH-008",
+      "name": "Toaster",
+      "emoji": "🍞",
+      "description": "Perfect toast every time",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 120,
+      "level_required": 9
+    },
+    {
+      "id": "KTCH-009",
+      "name": "Kitchen Timer",
+      "emoji": "⏲️",
+      "description": "Never burn food again",
+      "category": "decor",
+      "room": "KTCH",
+      "coinPrice": 45,
+      "level_required": 5
+    },
+    {
+      "id": "KTCH-010",
+      "name": "Recipe Board",
+      "emoji": "📋",
+      "description": "Post favorite recipes",
+      "category": "decor",
+      "room": "KTCH",
+      "coinPrice": 80,
+      "level_required": 7
+    },
+    {
+      "id": "KTCH-011",
+      "name": "Cutting Board",
+      "emoji": "🔪",
+      "description": "Chop safely",
+      "category": "decor",
+      "room": "KTCH",
+      "coinPrice": 50,
+      "level_required": 4
+    },
+    {
+      "id": "KTCH-012",
+      "name": "Spice Rack",
+      "emoji": "🧂",
+      "description": "Organize your spices",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 110,
+      "level_required": 11
+    },
+    {
+      "id": "KTCH-013",
+      "name": "Dish Rack",
+      "emoji": "🍽️",
+      "description": "Air dry dishes",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 75,
+      "level_required": 6
+    },
+    {
+      "id": "KTCH-014",
+      "name": "Tea Set",
+      "emoji": "🫖",
+      "description": "Fancy tea time",
+      "category": "decor",
+      "room": "KTCH",
+      "coinPrice": 140,
+      "level_required": 13
+    },
+    {
+      "id": "KTCH-015",
+      "name": "Water Dispenser",
+      "emoji": "💧",
+      "description": "Stay hydrated",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 130,
+      "level_required": 10
+    },
+    {
+      "id": "KTCH-016",
+      "name": "Cookbook Shelf",
+      "emoji": "👨‍🍳",
+      "description": "Store recipe books",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 105,
+      "level_required": 12
+    },
+    {
+      "id": "KTCH-017",
+      "name": "Pasta Maker",
+      "emoji": "🍝",
+      "description": "Homemade pasta!",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 185,
+      "level_required": 20
+    },
+    {
+      "id": "KTCH-018",
+      "name": "Ice Cream Maker",
+      "emoji": "🍦",
+      "description": "Make frozen treats",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 195,
+      "level_required": 22
+    },
+    {
+      "id": "KTCH-019",
+      "name": "Chef's Hat Holder",
+      "emoji": "👨‍🍳",
+      "description": "Display your chef pride",
+      "category": "decor",
+      "room": "KTCH",
+      "coinPrice": 60,
+      "level_required": 8
+    },
+    {
+      "id": "KTCH-020",
+      "name": "Baking Station",
+      "emoji": "🧁",
+      "description": "Perfect for baking",
+      "category": "furniture",
+      "room": "KTCH",
+      "coinPrice": 210,
+      "level_required": 18
+    },
+    {
+      "id": "LVRM-001",
+      "name": "Comfy Couch",
+      "emoji": "🛋️",
+      "description": "Relax in style",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 300,
+      "level_required": 10
+    },
+    {
+      "id": "LVRM-002",
+      "name": "Coffee Table",
+      "emoji": "🪵",
+      "description": "Center of the room",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 180,
+      "level_required": 8
+    },
+    {
+      "id": "LVRM-003",
+      "name": "TV Stand",
+      "emoji": "📺",
+      "description": "Entertainment center",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 220,
+      "level_required": 12
+    },
+    {
+      "id": "LVRM-004",
+      "name": "Floor Lamp",
+      "emoji": "💡",
+      "description": "Bright reading light",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 125,
+      "level_required": 6
+    },
+    {
+      "id": "LVRM-005",
+      "name": "Potted Plant",
+      "emoji": "🪴",
+      "description": "Brings life to the room",
+      "category": "decor",
+      "room": "LVRM",
+      "coinPrice": 70,
+      "level_required": 4
+    },
+    {
+      "id": "LVRM-006",
+      "name": "Wall Clock",
+      "emoji": "🕐",
+      "description": "Always know the time",
+      "category": "decor",
+      "room": "LVRM",
+      "coinPrice": 85,
+      "level_required": 5
+    },
+    {
+      "id": "LVRM-007",
+      "name": "Throw Pillows",
+      "emoji": "🎀",
+      "description": "Extra comfy accents",
+      "category": "decor",
+      "room": "LVRM",
+      "coinPrice": 60,
+      "level_required": 3
+    },
+    {
+      "id": "LVRM-008",
+      "name": "Area Rug",
+      "emoji": "🧶",
+      "description": "Ties the room together",
+      "category": "decor",
+      "room": "LVRM",
+      "coinPrice": 150,
+      "level_required": 9
+    },
+    {
+      "id": "LVRM-009",
+      "name": "Fireplace",
+      "emoji": "🔥",
+      "description": "Cozy warmth",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 400,
+      "level_required": 25
+    },
+    {
+      "id": "LVRM-010",
+      "name": "Rocking Chair",
+      "emoji": "🪑",
+      "description": "Rock away stress",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 170,
+      "level_required": 11
+    },
+    {
+      "id": "LVRM-011",
+      "name": "Bookcase",
+      "emoji": "📚",
+      "description": "Display your collection",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 200,
+      "level_required": 13
+    },
+    {
+      "id": "LVRM-012",
+      "name": "Photo Wall",
+      "emoji": "🖼️",
+      "description": "Cherished memories",
+      "category": "decor",
+      "room": "LVRM",
+      "coinPrice": 95,
+      "level_required": 7
+    },
+    {
+      "id": "LVRM-013",
+      "name": "Chandelier",
+      "emoji": "💎",
+      "description": "Elegant lighting",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 350,
+      "level_required": 20
+    },
+    {
+      "id": "LVRM-014",
+      "name": "Magazine Rack",
+      "emoji": "📰",
+      "description": "Organize reading material",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 75,
+      "level_required": 8
+    },
+    {
+      "id": "LVRM-015",
+      "name": "Window Blinds",
+      "emoji": "🪟",
+      "description": "Control the light",
+      "category": "decor",
+      "room": "LVRM",
+      "coinPrice": 110,
+      "level_required": 10
+    },
+    {
+      "id": "LVRM-016",
+      "name": "Side Table",
+      "emoji": "🗄️",
+      "description": "Extra surface space",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 90,
+      "level_required": 6
+    },
+    {
+      "id": "LVRM-017",
+      "name": "Record Player",
+      "emoji": "📻",
+      "description": "Vintage music vibes",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 275,
+      "level_required": 18
+    },
+    {
+      "id": "LVRM-018",
+      "name": "Gaming Console",
+      "emoji": "🎮",
+      "description": "Entertainment station",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 450,
+      "level_required": 30
+    },
+    {
+      "id": "LVRM-019",
+      "name": "Bean Bags",
+      "emoji": "💺",
+      "description": "Casual seating",
+      "category": "furniture",
+      "room": "LVRM",
+      "coinPrice": 130,
+      "level_required": 12
+    },
+    {
+      "id": "LVRM-020",
+      "name": "Aquarium",
+      "emoji": "🐠",
+      "description": "Underwater paradise",
+      "category": "decor",
+      "room": "LVRM",
+      "coinPrice": 320,
+      "level_required": 22
+    },
+    {
+      "id": "STYL-001",
+      "name": "Casual T-Shirt",
+      "emoji": "👕",
+      "description": "Comfy everyday wear",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 60,
+      "level_required": 1
+    },
+    {
+      "id": "STYL-002",
+      "name": "Cool Jeans",
+      "emoji": "👖",
+      "description": "Classic denim style",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 80,
+      "level_required": 1
+    },
+    {
+      "id": "STYL-003",
+      "name": "Sneakers",
+      "emoji": "👟",
+      "description": "Sporty footwear",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 90,
+      "level_required": 2
+    },
+    {
+      "id": "STYL-004",
+      "name": "Baseball Cap",
+      "emoji": "🧢",
+      "description": "Cool and casual",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 50,
+      "level_required": 1
+    },
+    {
+      "id": "STYL-005",
+      "name": "Sunglasses",
+      "emoji": "🕶️",
+      "description": "Look cool and protect eyes",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 65,
+      "level_required": 3
+    },
+    {
+      "id": "STYL-006",
+      "name": "Backpack",
+      "emoji": "🎒",
+      "description": "Carry all your stuff",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 95,
+      "level_required": 4
+    },
+    {
+      "id": "STYL-007",
+      "name": "Hoodie",
+      "emoji": "🧥",
+      "description": "Warm and cozy",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 110,
+      "level_required": 5
+    },
+    {
+      "id": "STYL-008",
+      "name": "Sports Jersey",
+      "emoji": "🏀",
+      "description": "Athletic wear",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 120,
+      "level_required": 8
+    },
+    {
+      "id": "STYL-009",
+      "name": "Fancy Dress",
+      "emoji": "👗",
+      "description": "Elegant outfit",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 200,
+      "level_required": 15
+    },
+    {
+      "id": "STYL-010",
+      "name": "Bow Tie",
+      "emoji": "🎀",
+      "description": "Classy accessory",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 55,
+      "level_required": 12
+    },
+    {
+      "id": "STYL-011",
+      "name": "Wizard Robe",
+      "emoji": "🧙",
+      "description": "Magical costume",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 250,
+      "level_required": 20
+    },
+    {
+      "id": "STYL-012",
+      "name": "Superhero Cape",
+      "emoji": "🦸",
+      "description": "Feel heroic!",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 180,
+      "level_required": 18
+    },
+    {
+      "id": "STYL-013",
+      "name": "Cowboy Hat",
+      "emoji": "🤠",
+      "description": "Howdy partner!",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 85,
+      "level_required": 10
+    },
+    {
+      "id": "STYL-014",
+      "name": "Winter Coat",
+      "emoji": "🧥",
+      "description": "Stay warm",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 160,
+      "level_required": 14
+    },
+    {
+      "id": "STYL-015",
+      "name": "Beach Outfit",
+      "emoji": "🏖️",
+      "description": "Summer vibes",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 130,
+      "level_required": 11
+    },
+    {
+      "id": "STYL-016",
+      "name": "Crown",
+      "emoji": "👑",
+      "description": "Royal accessory",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 300,
+      "level_required": 25
+    },
+    {
+      "id": "STYL-017",
+      "name": "Watch",
+      "emoji": "⌚",
+      "description": "Stylish timepiece",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 140,
+      "level_required": 13
+    },
+    {
+      "id": "STYL-018",
+      "name": "Headphones",
+      "emoji": "🎧",
+      "description": "Listen to music",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 125,
+      "level_required": 9
+    },
+    {
+      "id": "STYL-019",
+      "name": "Top Hat",
+      "emoji": "🎩",
+      "description": "Very fancy!",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 170,
+      "level_required": 16
+    },
+    {
+      "id": "STYL-020",
+      "name": "Scarf",
+      "emoji": "🧣",
+      "description": "Cozy neck warmer",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 70,
+      "level_required": 6
+    },
+    {
+      "id": "STYL-021",
+      "name": "Gloves",
+      "emoji": "🧤",
+      "description": "Keep hands warm",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 60,
+      "level_required": 7
+    },
+    {
+      "id": "STYL-022",
+      "name": "Necklace",
+      "emoji": "📿",
+      "description": "Sparkly jewelry",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 150,
+      "level_required": 17
+    },
+    {
+      "id": "STYL-023",
+      "name": "Party Outfit",
+      "emoji": "🎉",
+      "description": "Ready to celebrate",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 190,
+      "level_required": 19
+    },
+    {
+      "id": "STYL-024",
+      "name": "Astronaut Suit",
+      "emoji": "👨‍🚀",
+      "description": "Space explorer gear",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 400,
+      "level_required": 35
+    },
+    {
+      "id": "STYL-025",
+      "name": "Chef Uniform",
+      "emoji": "👨‍🍳",
+      "description": "Master chef attire",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 175,
+      "level_required": 21
+    },
+    {
+      "id": "STYL-026",
+      "name": "Pirate Costume",
+      "emoji": "🏴‍☠️",
+      "description": "Ahoy matey!",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 220,
+      "level_required": 23
+    },
+    {
+      "id": "STYL-027",
+      "name": "Ninja Outfit",
+      "emoji": "🥷",
+      "description": "Stealth mode",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 240,
+      "level_required": 26
+    },
+    {
+      "id": "STYL-028",
+      "name": "Princess Gown",
+      "emoji": "👸",
+      "description": "Royal elegance",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 350,
+      "level_required": 28
+    },
+    {
+      "id": "STYL-029",
+      "name": "Lab Coat",
+      "emoji": "🥼",
+      "description": "Scientist style",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 145,
+      "level_required": 15
+    },
+    {
+      "id": "STYL-030",
+      "name": "Rain Boots",
+      "emoji": "🥾",
+      "description": "Splash in puddles",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 85,
+      "level_required": 8
+    },
+    {
+      "id": "STYL-031",
+      "name": "Ballet Shoes",
+      "emoji": "🩰",
+      "description": "Dance gracefully",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 110,
+      "level_required": 12
+    },
+    {
+      "id": "STYL-032",
+      "name": "Skateboard Gear",
+      "emoji": "🛹",
+      "description": "Skater style",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 195,
+      "level_required": 22
+    },
+    {
+      "id": "STYL-033",
+      "name": "Music Star Outfit",
+      "emoji": "🎤",
+      "description": "Rock star look",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 280,
+      "level_required": 27
+    },
+    {
+      "id": "STYL-034",
+      "name": "Artist Smock",
+      "emoji": "🎨",
+      "description": "Creative wear",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 100,
+      "level_required": 11
+    },
+    {
+      "id": "STYL-035",
+      "name": "Explorer Outfit",
+      "emoji": "🧭",
+      "description": "Adventure ready",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 210,
+      "level_required": 24
+    },
+    {
+      "id": "STYL-036",
+      "name": "Graduation Gown",
+      "emoji": "🎓",
+      "description": "Academic achievement",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 260,
+      "level_required": 40
+    },
+    {
+      "id": "STYL-037",
+      "name": "Sports Headband",
+      "emoji": "🏃",
+      "description": "Athletic style",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 45,
+      "level_required": 5
+    },
+    {
+      "id": "STYL-038",
+      "name": "Messenger Bag",
+      "emoji": "💼",
+      "description": "Professional carry",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 115,
+      "level_required": 14
+    },
+    {
+      "id": "STYL-039",
+      "name": "Beanie Hat",
+      "emoji": "🧢",
+      "description": "Cozy head warmer",
+      "category": "accessory",
+      "room": "STYL",
+      "coinPrice": 55,
+      "level_required": 6
+    },
+    {
+      "id": "STYL-040",
+      "name": "Fancy Shoes",
+      "emoji": "👞",
+      "description": "Dress to impress",
+      "category": "outfit",
+      "room": "STYL",
+      "coinPrice": 135,
+      "level_required": 16
+    },
+    {
+      "id": "GRDN-001",
+      "name": "Sunflower",
+      "emoji": "🌻",
+      "description": "Bright and cheerful",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 75,
+      "level_required": 5
+    },
+    {
+      "id": "GRDN-002",
+      "name": "Rose Bush",
+      "emoji": "🌹",
+      "description": "Beautiful blooms",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 120,
+      "level_required": 10
+    },
+    {
+      "id": "GRDN-003",
+      "name": "Garden Gnome",
+      "emoji": "🧙‍♂️",
+      "description": "Whimsical guardian",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 95,
+      "level_required": 8
+    },
+    {
+      "id": "GRDN-004",
+      "name": "Bird Bath",
+      "emoji": "🐦",
+      "description": "Birds will visit",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 150,
+      "level_required": 12
+    },
+    {
+      "id": "GRDN-005",
+      "name": "Garden Bench",
+      "emoji": "🪑",
+      "description": "Rest and enjoy nature",
+      "category": "furniture",
+      "room": "GRDN",
+      "coinPrice": 180,
+      "level_required": 15
+    },
+    {
+      "id": "GRDN-006",
+      "name": "Fountain",
+      "emoji": "⛲",
+      "description": "Soothing water feature",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 300,
+      "level_required": 25
+    },
+    {
+      "id": "GRDN-007",
+      "name": "Butterfly House",
+      "emoji": "🦋",
+      "description": "Attract butterflies",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 110,
+      "level_required": 13
+    },
+    {
+      "id": "GRDN-008",
+      "name": "Vegetable Patch",
+      "emoji": "🥕",
+      "description": "Grow fresh veggies",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 140,
+      "level_required": 14
+    },
+    {
+      "id": "GRDN-009",
+      "name": "Garden Lights",
+      "emoji": "💡",
+      "description": "Magical evening glow",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 160,
+      "level_required": 18
+    },
+    {
+      "id": "GRDN-010",
+      "name": "Hammock",
+      "emoji": "🏖️",
+      "description": "Ultimate relaxation",
+      "category": "furniture",
+      "room": "GRDN",
+      "coinPrice": 200,
+      "level_required": 20
+    },
+    {
+      "id": "GRDN-011",
+      "name": "Cherry Blossom Tree",
+      "emoji": "🌸",
+      "description": "Spring beauty",
+      "category": "seasonal",
+      "room": "GRDN",
+      "coinPrice": 250,
+      "level_required": 22
+    },
+    {
+      "id": "GRDN-012",
+      "name": "Tulip Garden",
+      "emoji": "🌷",
+      "description": "Colorful flowers",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 130,
+      "level_required": 16
+    },
+    {
+      "id": "GRDN-013",
+      "name": "Windmill",
+      "emoji": "🌾",
+      "description": "Rustic charm",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 220,
+      "level_required": 24
+    },
+    {
+      "id": "GRDN-014",
+      "name": "Beehive",
+      "emoji": "🐝",
+      "description": "Help the bees!",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 175,
+      "level_required": 19
+    },
+    {
+      "id": "GRDN-015",
+      "name": "Garden Arch",
+      "emoji": "🌿",
+      "description": "Elegant entrance",
+      "category": "decor",
+      "room": "GRDN",
+      "coinPrice": 280,
+      "level_required": 28
+    },
+    {
+      "id": "PLRM-001",
+      "name": "Toy Box",
+      "emoji": "🧸",
+      "description": "Store all your toys",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 140,
+      "level_required": 5
+    },
+    {
+      "id": "PLRM-002",
+      "name": "Ball Pit",
+      "emoji": "⚽",
+      "description": "Dive into fun!",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 250,
+      "level_required": 12
+    },
+    {
+      "id": "PLRM-003",
+      "name": "Slide",
+      "emoji": "🎢",
+      "description": "Wheee!",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 300,
+      "level_required": 15
+    },
+    {
+      "id": "PLRM-004",
+      "name": "Art Easel",
+      "emoji": "🎨",
+      "description": "Create masterpieces",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 120,
+      "level_required": 8
+    },
+    {
+      "id": "PLRM-005",
+      "name": "Puzzle Table",
+      "emoji": "🧩",
+      "description": "Piece it together",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 110,
+      "level_required": 7
+    },
+    {
+      "id": "PLRM-006",
+      "name": "Building Blocks",
+      "emoji": "🧱",
+      "description": "Build anything!",
+      "category": "decor",
+      "room": "PLRM",
+      "coinPrice": 95,
+      "level_required": 4
+    },
+    {
+      "id": "PLRM-007",
+      "name": "Stuffed Animals",
+      "emoji": "🐻",
+      "description": "Cuddly friends",
+      "category": "decor",
+      "room": "PLRM",
+      "coinPrice": 80,
+      "level_required": 3
+    },
+    {
+      "id": "PLRM-008",
+      "name": "Race Track",
+      "emoji": "🏎️",
+      "description": "Vroom vroom!",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 180,
+      "level_required": 13
+    },
+    {
+      "id": "PLRM-009",
+      "name": "Puppet Theater",
+      "emoji": "🎭",
+      "description": "Put on a show",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 200,
+      "level_required": 16
+    },
+    {
+      "id": "PLRM-010",
+      "name": "Play Kitchen",
+      "emoji": "🍳",
+      "description": "Cook pretend meals",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 220,
+      "level_required": 18
+    },
+    {
+      "id": "PLRM-011",
+      "name": "Musical Instruments",
+      "emoji": "🎵",
+      "description": "Make music together",
+      "category": "decor",
+      "room": "PLRM",
+      "coinPrice": 160,
+      "level_required": 14
+    },
+    {
+      "id": "PLRM-012",
+      "name": "Dress-Up Closet",
+      "emoji": "👗",
+      "description": "Costumes galore",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 190,
+      "level_required": 17
+    },
+    {
+      "id": "PLRM-013",
+      "name": "Train Set",
+      "emoji": "🚂",
+      "description": "Choo choo!",
+      "category": "decor",
+      "room": "PLRM",
+      "coinPrice": 170,
+      "level_required": 11
+    },
+    {
+      "id": "PLRM-014",
+      "name": "Trampoline",
+      "emoji": "🤸",
+      "description": "Bounce high!",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 280,
+      "level_required": 20
+    },
+    {
+      "id": "PLRM-015",
+      "name": "Reading Corner",
+      "emoji": "📚",
+      "description": "Cozy story time",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 150,
+      "level_required": 10
+    },
+    {
+      "id": "PLRM-016",
+      "name": "Science Lab Kit",
+      "emoji": "🔬",
+      "description": "Experiment safely",
+      "category": "decor",
+      "room": "PLRM",
+      "coinPrice": 210,
+      "level_required": 22
+    },
+    {
+      "id": "PLRM-017",
+      "name": "Jungle Gym",
+      "emoji": "🌴",
+      "description": "Climb and play",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 350,
+      "level_required": 25
+    },
+    {
+      "id": "PLRM-018",
+      "name": "Board Game Shelf",
+      "emoji": "🎲",
+      "description": "Game night ready",
+      "category": "furniture",
+      "room": "PLRM",
+      "coinPrice": 135,
+      "level_required": 12
+    },
+    {
+      "id": "PLRM-019",
+      "name": "Magic Tricks Set",
+      "emoji": "🎩",
+      "description": "Amaze your friends",
+      "category": "decor",
+      "room": "PLRM",
+      "coinPrice": 125,
+      "level_required": 15
+    },
+    {
+      "id": "PLRM-020",
+      "name": "Robot Builder",
+      "emoji": "🤖",
+      "description": "Build robots!",
+      "category": "decor",
+      "room": "PLRM",
+      "coinPrice": 240,
+      "level_required": 24
+    },
+    {
+      "id": "STCK-001",
+      "name": "Happy Face Sticker",
+      "emoji": "😊",
+      "description": "Spread joy!",
+      "category": "sticker",
+      "room": "BDRM",
+      "coinPrice": 40,
+      "level_required": 1
+    },
+    {
+      "id": "STCK-002",
+      "name": "Star Sticker",
+      "emoji": "⭐",
+      "description": "You're a star!",
+      "category": "sticker",
+      "room": "BDRM",
+      "coinPrice": 40,
+      "level_required": 1
+    },
+    {
+      "id": "STCK-003",
+      "name": "Heart Sticker",
+      "emoji": "❤️",
+      "description": "Show love",
+      "category": "sticker",
+      "room": "BDRM",
+      "coinPrice": 40,
+      "level_required": 1
+    },
+    {
+      "id": "STCK-004",
+      "name": "Cool Sticker",
+      "emoji": "😎",
+      "description": "Too cool!",
+      "category": "sticker",
+      "room": "BDRM",
+      "coinPrice": 45,
+      "level_required": 3
+    },
+    {
+      "id": "STCK-005",
+      "name": "Rocket Sticker",
+      "emoji": "🚀",
+      "description": "Blast off!",
+      "category": "sticker",
+      "room": "BDRM",
+      "coinPrice": 50,
+      "level_required": 5
+    },
+    {
+      "id": "STCK-006",
+      "name": "Rainbow Sticker",
+      "emoji": "🌈",
+      "description": "Colorful joy",
+      "category": "sticker",
+      "room": "BDRM",
+      "coinPrice": 45,
+      "level_required": 4
+    },
+    {
+      "id": "STCK-007",
+      "name": "Pizza Sticker",
+      "emoji": "🍕",
+      "description": "Yummy!",
+      "category": "sticker",
+      "room": "KTCH",
+      "coinPrice": 40,
+      "level_required": 2
+    },
+    {
+      "id": "STCK-008",
+      "name": "Ice Cream Sticker",
+      "emoji": "🍦",
+      "description": "Sweet treat",
+      "category": "sticker",
+      "room": "KTCH",
+      "coinPrice": 40,
+      "level_required": 2
+    },
+    {
+      "id": "STCK-009",
+      "name": "Paw Print Sticker",
+      "emoji": "🐾",
+      "description": "Animal friend",
+      "category": "sticker",
+      "room": "BDRM",
+      "coinPrice": 45,
+      "level_required": 6
+    },
+    {
+      "id": "STCK-010",
+      "name": "Trophy Sticker",
+      "emoji": "🏆",
+      "description": "Achievement!",
+      "category": "sticker",
+      "room": "BDRM",
+      "coinPrice": 50,
+      "level_required": 10
+    },
+    {
+      "id": "SEAS-001",
+      "name": "Christmas Tree",
+      "emoji": "🎄",
+      "description": "Holiday cheer",
+      "category": "seasonal",
+      "room": "LVRM",
+      "coinPrice": 200,
+      "level_required": 15
+    },
+    {
+      "id": "SEAS-002",
+      "name": "Jack-o-Lantern",
+      "emoji": "🎃",
+      "description": "Spooky Halloween",
+      "category": "seasonal",
+      "room": "LVRM",
+      "coinPrice": 150,
+      "level_required": 12
+    },
+    {
+      "id": "SEAS-003",
+      "name": "Birthday Cake",
+      "emoji": "🎂",
+      "description": "Celebrate!",
+      "category": "seasonal",
+      "room": "KTCH",
+      "coinPrice": 120,
+      "level_required": 10
+    },
+    {
+      "id": "SEAS-004",
+      "name": "Fireworks",
+      "emoji": "🎆",
+      "description": "Light up the sky",
+      "category": "seasonal",
+      "room": "GRDN",
+      "coinPrice": 180,
+      "level_required": 18
+    },
+    {
+      "id": "SEAS-005",
+      "name": "Easter Eggs",
+      "emoji": "🥚",
+      "description": "Spring fun",
+      "category": "seasonal",
+      "room": "GRDN",
+      "coinPrice": 100,
+      "level_required": 8
+    },
+    {
+      "id": "SEAS-006",
+      "name": "Snowman",
+      "emoji": "⛄",
+      "description": "Winter wonder",
+      "category": "seasonal",
+      "room": "GRDN",
+      "coinPrice": 160,
+      "level_required": 14
+    },
+    {
+      "id": "SEAS-007",
+      "name": "Valentine Hearts",
+      "emoji": "💝",
+      "description": "Love is in the air",
+      "category": "seasonal",
+      "room": "BDRM",
+      "coinPrice": 90,
+      "level_required": 9
+    },
+    {
+      "id": "SEAS-008",
+      "name": "New Year Banner",
+      "emoji": "🎊",
+      "description": "Happy New Year!",
+      "category": "seasonal",
+      "room": "LVRM",
+      "coinPrice": 110,
+      "level_required": 11
+    },
+    {
+      "id": "RARE-001",
+      "name": "Golden Trophy",
+      "emoji": "🏆",
+      "description": "A legendary achievement trophy!",
+      "category": "seasonal",
+      "compatibleRooms": ["BDRM", "LVRM"],
+      "coinPrice": 1000,
+      "level_required": 25,
+      "isRare": true
+    },
+    {
+      "id": "RARE-002",
+      "name": "Diamond Crown",
+      "emoji": "👑",
+      "description": "Fit for royalty!",
+      "category": "seasonal",
+      "compatibleRooms": ["BDRM", "LVRM"],
+      "coinPrice": 1500,
+      "level_required": 30,
+      "isRare": true
+    },
+    {
+      "id": "RARE-003",
+      "name": "Crystal Ball",
+      "emoji": "🔮",
+      "description": "A mystical rare artifact",
+      "category": "seasonal",
+      "compatibleRooms": ["BDRM", "LVRM"],
+      "coinPrice": 800,
+      "level_required": 20,
+      "isRare": true
+    },
+    {
+      "id": "RARE-004",
+      "name": "Ancient Scroll",
+      "emoji": "📜",
+      "description": "Contains ancient wisdom",
+      "category": "seasonal",
+      "compatibleRooms": ["BDRM", "LVRM"],
+      "coinPrice": 900,
+      "level_required": 35,
+      "isRare": true
+    },
+    {
+      "id": "RARE-005",
+      "name": "Magic Wand",
+      "emoji": "🪄",
+      "description": "A powerful magical item",
+      "category": "seasonal",
+      "compatibleRooms": ["BDRM", "LVRM"],
+      "coinPrice": 1200,
+      "level_required": 40,
+      "isRare": true
+    },
+    {
+      "id": "RARE-006",
+      "name": "Gem Stone",
+      "emoji": "💎",
+      "description": "A precious rare gem",
+      "category": "seasonal",
+      "compatibleRooms": ["BDRM", "LVRM"],
+      "coinPrice": 2000,
+      "level_required": 50,
+      "isRare": true
+    },
+    {
+      "id": "RARE-007",
+      "name": "Phoenix Feather",
+      "emoji": "🪶",
+      "description": "From a legendary phoenix",
+      "category": "seasonal",
+      "compatibleRooms": ["BDRM", "LVRM"],
+      "coinPrice": 1800,
+      "level_required": 45,
+      "isRare": true
+    },
+    {
+      "id": "RARE-008",
+      "name": "Dragon Egg",
+      "emoji": "🥚",
+      "description": "A mythical dragon egg",
+      "category": "seasonal",
+      "compatibleRooms": ["BDRM", "LVRM"],
+      "coinPrice": 2500,
+      "level_required": 60,
+      "isRare": true
+    }
+  ]
+}
