@@ -2,10 +2,10 @@
   "metadata": {
     "version": "2.0",
     "description": "Complete shop catalog for Lumo's Land - 150+ items",
-    "total_items": 158,
+    "total_items": 162,
     "lastUpdated": "2025-11-10"
   },
-  "categories": ["decor", "furniture", "outfit", "accessory", "seasonal", "sticker"],
+  "categories": ["decor", "furniture", "outfit", "accessory", "seasonal", "sticker", "promo"],
   "items": [
     {
       "id": "BDRM-001",
@@ -1674,6 +1674,58 @@
       "coinPrice": 2500,
       "level_required": 60,
       "isRare": true
+    },
+    {
+      "id": "STCK-PROMO-001",
+      "name": "Quest Champion Star",
+      "emoji": "⭐",
+      "description": "Awarded for completing your first quest! (Promo reward)",
+      "category": "promo",
+      "room": "BDRM",
+      "coinPrice": 0,
+      "purchasable": false,
+      "promoOnly": true,
+      "rarity": "legendary",
+      "milestone": "FIRST_QUEST_COMPLETE"
+    },
+    {
+      "id": "STCK-PROMO-002",
+      "name": "Devoted Caretaker Heart",
+      "emoji": "💖",
+      "description": "Awarded for evolving Lumo to Adult! (Promo reward)",
+      "category": "promo",
+      "room": "BDRM",
+      "coinPrice": 0,
+      "purchasable": false,
+      "promoOnly": true,
+      "rarity": "legendary",
+      "milestone": "LUMO_ADULT"
+    },
+    {
+      "id": "STCK-PROMO-003",
+      "name": "Rising Star Rocket",
+      "emoji": "🚀",
+      "description": "Awarded for reaching Level 10! (Promo reward)",
+      "category": "promo",
+      "room": "BDRM",
+      "coinPrice": 0,
+      "purchasable": false,
+      "promoOnly": true,
+      "rarity": "legendary",
+      "milestone": "LEVEL_10"
+    },
+    {
+      "id": "STCK-PROMO-004",
+      "name": "Perfect Week Rainbow",
+      "emoji": "🌈",
+      "description": "Awarded for caring for Lumo 7 days straight! (Promo reward)",
+      "category": "promo",
+      "room": "BDRM",
+      "coinPrice": 0,
+      "purchasable": false,
+      "promoOnly": true,
+      "rarity": "legendary",
+      "milestone": "PERFECT_WEEK"
     }
   ]
 }
