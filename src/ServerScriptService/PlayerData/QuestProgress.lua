@@ -3,13 +3,19 @@
     Tracks player's quest progress and handles quest purchases
 
     RULES:
-    - First Barrier Assessment = FREE (assigns first quest FREE)
+    - First Barrier Assessment = FREE (includes first quest selection)
     - Completing a quest = can retake it FREE
-    - NEW Barrier Assessment = 400 ROBUX
-    - NEW quest from barrier results = 400 ROBUX
+    - NEW Barrier Assessment = 400 ROBUX (includes quest selection from results)
     - Retake SAME Barrier Assessment = FREE
     - Retake SAME Quest = FREE
     - Progress saves automatically
+
+    FLOW:
+    1. Pay 400 Robux (or free if first/retake)
+    2. Take 12-question Barrier Assessment
+    3. See top 3 quest recommendations
+    4. Pick one quest (included in the 400 Robux)
+    5. Start quest
 ]]
 
 local DataStoreService = game:GetService("DataStoreService")
@@ -48,8 +54,8 @@ local DEFAULT_DATA = {
 }
 
 -- ROBUX PRICES
-local NEW_QUEST_ROBUX_PRICE = 400     -- New quest from barrier results
-local NEW_BARRIER_ROBUX_PRICE = 400   -- New barrier assessment after first
+-- Only ONE price: barrier assessment includes quest selection
+local NEW_BARRIER_ROBUX_PRICE = 400   -- New barrier assessment (includes quest selection)
 
 -- Load player data
 function QuestProgress.load(player)
@@ -330,7 +336,7 @@ function QuestProgress.recordBarrierAssessment(player, data, assessmentData)
 end
 
 -- Get barrier results with quest availability info
--- Marks which quests are completed (retake FREE) vs new (99 Robux)
+-- All quests from barrier results are FREE to select (payment was for the barrier)
 function QuestProgress.getBarrierResultsForUI(data)
     if not data.lastBarrierResults then
         return nil, "No barrier results available"
@@ -341,31 +347,26 @@ function QuestProgress.getBarrierResultsForUI(data)
         options = {}
     }
 
-    -- Build options from top 3
+    -- Build options from top 3 - all are FREE since barrier was paid for
     for i, questId in ipairs(data.lastBarrierResults.topThree) do
         local hasAccess, accessType = QuestProgress.canAccessQuest(data, questId)
         local option = {
             questId = questId,
             rank = i,
             score = data.lastBarrierResults.questScores[questId],
-            status = "locked",
-            cost = NEW_QUEST_ROBUX_PRICE,
-            message = "Start for " .. NEW_QUEST_ROBUX_PRICE .. " Robux"
+            status = "available",
+            cost = 0,
+            message = "Select this quest"
         }
 
+        -- Add extra info if they've done this quest before
         if hasAccess then
             if accessType == "completed" then
                 option.status = "completed"
-                option.cost = 0
-                option.message = "✓ Completed - Retake FREE!"
+                option.message = "✓ Previously completed - Start again?"
             elseif accessType == "current" then
                 option.status = "current"
-                option.cost = 0
-                option.message = "Currently in progress"
-            elseif accessType == "purchased" then
-                option.status = "purchased"
-                option.cost = 0
-                option.message = "Owned - Start FREE"
+                option.message = "Currently in progress - Restart?"
             end
         end
 
@@ -386,7 +387,7 @@ function QuestProgress.purchaseNewBarrier(player, data)
 end
 
 -- Select quest from barrier results
--- Handles both FREE selections and post-purchase selections
+-- Quest selection is FREE - the barrier assessment payment covers it
 function QuestProgress.selectQuestFromBarrier(player, data, questId, barrierId)
     -- Verify this quest was in the barrier results
     if not data.lastBarrierResults or data.lastBarrierResults.barrierId ~= barrierId then
@@ -405,30 +406,37 @@ function QuestProgress.selectQuestFromBarrier(player, data, questId, barrierId)
         return false, "Quest not in barrier results"
     end
 
-    -- Check if player can access this quest
-    local hasAccess, accessType = QuestProgress.canAccessQuest(data, questId)
+    -- All selections from barrier results are FREE (barrier payment covers quest)
+    data.currentQuest = questId
+    data.currentLesson = 1
+    data.currentUnit = 1
+    data.questStartedTime = os.time()
 
-    if hasAccess then
-        -- Free selection (completed, current, or purchased)
-        data.currentQuest = questId
-        data.currentLesson = 1
-        data.currentUnit = 1
-        data.questStartedTime = os.time()
-
-        -- Record selection in barrier assessment
-        if data.barrierAssessments[barrierId] then
-            data.barrierAssessments[barrierId].selectedQuest = questId
-        end
-
-        QuestProgress.save(player, data)
-        return true, "Quest started (FREE)"
-    else
-        -- Requires purchase - don't assign yet
-        return false, "Quest requires purchase", {
-            questId = questId,
-            cost = NEW_QUEST_ROBUX_PRICE
-        }
+    -- Record selection in barrier assessment
+    if data.barrierAssessments[barrierId] then
+        data.barrierAssessments[barrierId].selectedQuest = questId
     end
+
+    -- Add to purchased quests so they can retake it later
+    local alreadyOwned = false
+    for _, q in ipairs(data.purchasedQuests) do
+        if q == questId then
+            alreadyOwned = true
+            break
+        end
+    end
+    for _, q in ipairs(data.completedQuests) do
+        if q == questId then
+            alreadyOwned = true
+            break
+        end
+    end
+    if not alreadyOwned then
+        table.insert(data.purchasedQuests, questId)
+    end
+
+    QuestProgress.save(player, data)
+    return true, "Quest started"
 end
 
 -- Mark barrier as completed (called when quest from that barrier is finished)
@@ -478,9 +486,9 @@ function QuestProgress.getStatus(data)
     }
 end
 
--- Get Robux price for new quest
-function QuestProgress.getNewQuestPrice()
-    return NEW_QUEST_ROBUX_PRICE
+-- Get Robux price (barrier assessment includes quest selection)
+function QuestProgress.getPrice()
+    return NEW_BARRIER_ROBUX_PRICE
 end
 
 -- List of all quests
