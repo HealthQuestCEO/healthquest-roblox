@@ -8,7 +8,7 @@
     - Emotions are DERIVED from physical need percentages (see CARE_LOOP.md)
     - Care actions cost coins (15 each)
     - If NO CARE for 72 hours → Lumo flies away (solo quest, gets lost)
-    - Use MAP (150 Robux) to bring Lumo back at 50% health
+    - Use MAP (120 Robux) to bring Lumo back at 50% health
     - Emotion guess: 3 attempts per day, correct = 10 coins earned
 
     EMOTION PRIORITY (based on physical needs):
@@ -26,7 +26,7 @@
     RESTRICTION WHEN LUMO IS GONE:
     - Player CANNOT leave the castle
     - Can only do quest lessons (to earn coins)
-    - Must buy MAP (150 Robux) to bring Lumo back
+    - Must buy MAP (120 Robux) to bring Lumo back
     - This creates pressure to purchase or grind lessons
 
     CARE COSTS:
@@ -49,7 +49,7 @@ local LumoCare = {}
 -- Constants
 local NEED_DECAY_HOURS = 72           -- Hours for need to go from 100% to 0% (matches fly away time)
 local FLY_AWAY_HOURS = 72             -- Hours of no care before Lumo leaves
-local MAP_ROBUX_PRICE = 150           -- Robux to bring Lumo back (3 days neglect = higher price)
+local MAP_ROBUX_PRICE = 120           -- Robux to bring Lumo back (approx 3 days care cost: 45 x 3 = 135)
 local RETURN_HEALTH_PERCENT = 50      -- Health when Lumo returns
 
 local CARE_COST_FEED = 15
@@ -262,7 +262,7 @@ function LumoCare.getStatus(data)
             mapPrice = MAP_ROBUX_PRICE,
             canLeaveCastle = false,
             allowedActions = LumoCare.getAllowedActionsWithoutLumo(),
-            message = "Lumo is lost! You're stuck in the castle. Do lessons to earn coins, then use a map (100 Robux) to bring Lumo back."
+            message = "Lumo is lost! You're stuck in the castle. Do lessons to earn coins, then use a map (120 Robux) to bring Lumo back."
         }
     end
 
@@ -425,7 +425,7 @@ function LumoCare.guessEmotion(player, data, guessedEmotion)
     end
 end
 
--- Bring Lumo back with map (150 Robux)
+-- Bring Lumo back with map (120 Robux)
 -- Called AFTER successful Robux purchase
 function LumoCare.bringBackWithMap(player, data)
     if data.isPresent then
@@ -466,7 +466,7 @@ function LumoCare.canLeaveCastle(data)
     if data.isPresent then
         return true, "Lumo is with you!"
     else
-        return false, "You can't leave without Lumo! Use a map (100 Robux) to find them, or do lessons to earn coins."
+        return false, "You can't leave without Lumo! Use a map (120 Robux) to find them, or do lessons to earn coins."
     end
 end
 
