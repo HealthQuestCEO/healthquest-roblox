@@ -104,9 +104,10 @@ FEEDBACK (1)
 | Location | Activity | Cost |
 |----------|----------|------|
 | **Lumo Care** | Hatch Lumo (first time) | 100 |
-| **Lumo Care** | Feed Lumo | 15 (base) |
-| **Lumo Care** | Water Lumo | 15 (base) |
-| **Lumo Care** | Clean Lumo | 15 (base) |
+| **Lumo Care** | Feed Lumo (physical) | 15 (base) |
+| **Lumo Care** | Water Lumo (physical) | 15 (base) |
+| **Lumo Care** | Clean Lumo (physical) | 15 (base) |
+| **Lumo Care** | Emotional Care (after guessing) | 15 (base) |
 | **Nook Shop** | Castle Items | 25-2,500 |
 
 ### First Quest Coin Potential
@@ -122,11 +123,28 @@ FEEDBACK (1)
 
 ### Daily Care Economy
 
+**SPEND:**
 | Activity | Coins |
 |----------|-------|
-| Daily Care (Feed + Water + Clean) | -45 |
-| Emotion Guessing (3 correct) | +30 |
-| **Net Daily Cost** | **-15** |
+| Physical Care (Feed + Water + Clean) | -45 |
+| Emotional Care (after guessing correct) | -15 |
+| **Total Daily Care Cost** | **-60** |
+
+**EARN:**
+| Activity | Coins |
+|----------|-------|
+| Quest Lesson (1st time) | +50 |
+| Emotion Guessing (3 correct × 10) | +30 |
+| **Minimum Daily Earnings** | **+80** |
+
+**NET:**
+| Scenario | Calculation | Result |
+|----------|-------------|--------|
+| 1 lesson + 3 guesses - care | +50 + 30 - 60 | **+20** |
+| 2 lessons + 3 guesses - care | +100 + 30 - 60 | **+70** |
+| 3 lessons + 3 guesses - care | +150 + 30 - 60 | **+120** |
+
+Players ALWAYS earn more than they spend if they do lessons!
 
 ---
 
@@ -157,13 +175,71 @@ Priority order - first match wins:
 | 9 | PLAYFUL | All needs 50-75% |
 | 10 | HAPPY | All needs > 75% |
 
-### Emotion Guessing Game
+### Emotional Care System (Two Steps)
+
+**Teaching children to RECOGNIZE and ADDRESS emotions:**
+
+```
+STEP 1: RECOGNIZE (Emotion Guessing)
+    - Guess how Lumo is feeling
+    - FREE to attempt (3 tries/day)
+    - Earn 10 coins if correct
+    - Unlocks Step 2 when correct
+           |
+           v
+STEP 2: ADDRESS (Emotional Care)
+    - Provide emotional care (15 coins)
+    - Shows age-appropriate coping strategy
+    - Teaches HOW to help with that emotion
+```
+
+### Step 1: Emotion Guessing (Recognize)
 
 | Property | Value |
 |----------|-------|
 | Attempts per day | 3 |
 | Reward (correct) | 10 coins |
 | Max daily earnings | 30 coins |
+| Unlocks | Emotional Care (Step 2) |
+
+### Step 2: Emotional Care (Address)
+
+| Property | Value |
+|----------|-------|
+| Cost | 15 coins |
+| Requires | Correct emotion guess first |
+| Times per day | 1 (after guessing) |
+| Teaches | Coping strategy for that emotion |
+
+### Emotional Care Items (15 coins each)
+
+Each emotion has a specific item to help address it:
+
+| Emotion | Item | Emoji | What It Teaches |
+|---------|------|-------|-----------------|
+| Thirsty | Water Bottle | 🍶 | Staying hydrated helps us feel better |
+| Hungry | Healthy Snack | 🍎 | Eating well gives energy to handle feelings |
+| Messy | Bubble Bath | 🛁 | A tidy space helps our mind feel calm |
+| Angry | Calm Ball | 🔵 | Squeeze and release, take deep breaths |
+| Sad | Teddy Bear | 🧸 | It's okay to feel sad, hugs help! |
+| Anxious | Grounding Stone | 🪨 | Name 5 things you can see |
+| Scared | Brave Cape | 🦸 | Remember something brave you did |
+| Tired | Cozy Blanket | 🛏️ | Rest is important, take quiet moments |
+| Playful | Bouncy Ball | ⚽ | Playing together is fun! |
+| Happy | Party Hat | 🎉 | Celebrate and dance together! |
+
+**Example Flow:**
+```
+Lumo looks sad 😢
+    ↓
+Player guesses "sad" ✓ (+10 coins)
+    ↓
+"Use Teddy Bear to help?" 🧸 (15 coins)
+    ↓
+Player uses Teddy Bear (-15 coins)
+    ↓
+"Lumo hugs the teddy bear tight. It's okay to feel sad. Hugs help!"
+```
 
 ### Fly Away Mechanic
 
@@ -193,14 +269,14 @@ Priority order - first match wins:
 
 ### Care Costs by Evolution Stage
 
-| Stage | Feed | Water | Clean | Daily Total |
-|-------|------|-------|-------|-------------|
-| Egg-Hatchling | 15 | 15 | 15 | 45 |
-| Fledgling | 14 | 14 | 14 | 42 |
-| Juvenile | 13 | 13 | 13 | 39 |
-| Adolescent | 13 | 13 | 13 | 39 |
-| Adult | 12 | 12 | 12 | 36 |
-| Elder | 12 | 12 | 12 | 36 |
+| Stage | Feed | Water | Clean | Emotional | Daily Total |
+|-------|------|-------|-------|-----------|-------------|
+| Egg-Hatchling | 15 | 15 | 15 | 15 | 60 |
+| Fledgling | 14 | 14 | 14 | 14 | 56 |
+| Juvenile | 13 | 13 | 13 | 13 | 52 |
+| Adolescent | 13 | 13 | 13 | 13 | 52 |
+| Adult | 12 | 12 | 12 | 12 | 48 |
+| Elder | 12 | 12 | 12 | 12 | 48 |
 
 ---
 
@@ -263,10 +339,11 @@ CASTLE
 │   └── Feedback (50 coins)
 │
 ├── Lumo's Room (Care Loop)
-│   ├── Feed (costs 15 coins)
-│   ├── Water (costs 15 coins)
-│   ├── Clean (costs 15 coins)
-│   └── Emotion Guess (earns 10 coins)
+│   ├── Feed (costs 15 coins) - physical
+│   ├── Water (costs 15 coins) - physical
+│   ├── Clean (costs 15 coins) - physical
+│   ├── Emotion Guess (earns 10 coins) - recognize
+│   └── Emotional Care (costs 15 coins) - address
 │
 ├── Nook Shop
 │   └── Buy items with coins

@@ -44,10 +44,17 @@
     - This creates pressure to purchase or grind lessons
 
     CARE COSTS:
-    - Feed: 15 coins
-    - Water: 15 coins
-    - Clean: 15 coins
-    - Total daily care: 45 coins (minus emotion guess rewards)
+    - Feed: 15 coins (physical)
+    - Water: 15 coins (physical)
+    - Clean: 15 coins (physical)
+    - Emotional Care: 15 coins (after recognizing emotion)
+    - Total daily care: 60 coins (minus emotion guess rewards)
+
+    EMOTION CARE FLOW:
+    1. RECOGNIZE: Guess Lumo's emotion (FREE, earn 10 coins if correct)
+    2. ADDRESS: Provide emotional care (15 coins) - teaches coping strategies
+    - Must guess correctly before emotional care is available
+    - Emotional care shows age-appropriate coping technique for that emotion
 
     TIMERS:
     - Need decay: 72 hours (100% → 0%)
@@ -170,6 +177,12 @@ local DEFAULT_DATA = {
     emotionGuessesUsed = 0,           -- Today's guesses
     lastEmotionGuessDate = "",        -- "2026-02-03" for daily reset
     lastCorrectGuessTime = 0,
+
+    -- Emotional care (must recognize emotion first, then address it)
+    emotionRecognizedToday = false,   -- Did they guess correctly today?
+    recognizedEmotion = nil,          -- Which emotion they recognized
+    emotionalCareGivenToday = false,  -- Did they provide emotional care today?
+    lastEmotionalCareTime = 0,
 
     -- Stats
     totalCareActions = 0,
@@ -339,15 +352,22 @@ function LumoCare.getStatus(data)
         careCosts = {
             feed = CARE_COST_FEED,
             water = CARE_COST_WATER,
-            clean = CARE_COST_CLEAN
+            clean = CARE_COST_CLEAN,
+            emotional = CARE_COST_EMOTIONAL
         },
 
         -- Timers
         hoursUntilFlyAway = math.max(0, hoursUntilFlyAway),
 
-        -- Emotion guessing
-        emotionGuessesRemaining = MAX_EMOTION_GUESSES_PER_DAY - data.emotionGuessesUsed,
+        -- Emotion guessing (Step 1: Recognize)
+        emotionGuessesRemaining = MAX_EMOTION_GUESSES_PER_DAY - (data.emotionGuessesUsed or 0),
         emotionGuessReward = EMOTION_GUESS_REWARD,
+
+        -- Emotional care (Step 2: Address)
+        emotionRecognizedToday = data.emotionRecognizedToday or false,
+        recognizedEmotion = data.recognizedEmotion,
+        emotionalCareGivenToday = data.emotionalCareGivenToday or false,
+        emotionalCareCost = CARE_COST_EMOTIONAL,
 
         -- Stats
         totalCareActions = data.totalCareActions,
@@ -430,20 +450,89 @@ function LumoCare.clean(player, data, playerCoins)
     return true, "Lumo is sparkling clean!", cost, evolutionInfo
 end
 
--- Note: Emotional care is handled through the Helper Zone
--- Emotions are derived from physical needs, so caring for physical needs
--- automatically improves Lumo's emotional state
+-- ==========================================
+-- EMOTIONAL CARE SYSTEM (Recognize → Address)
+-- ==========================================
 
--- Guess Lumo's emotion (FREE attempt, earn coins if correct)
+-- Emotional care items for each emotion (15 coins each)
+-- Each emotion has a specific item that teaches a coping strategy
+local EMOTION_CARE_ITEMS = {
+    thirsty = {
+        item = "Water Bottle",
+        emoji = "🍶",
+        action = "Give Lumo a refreshing drink",
+        message = "Lumo drinks the water happily! Staying hydrated helps us feel better."
+    },
+    hungry = {
+        item = "Healthy Snack",
+        emoji = "🍎",
+        action = "Give Lumo a healthy snack",
+        message = "Lumo munches happily! Eating well gives us energy to handle big feelings."
+    },
+    messy = {
+        item = "Bubble Bath",
+        emoji = "🛁",
+        action = "Give Lumo a bubble bath",
+        message = "Lumo is sparkling clean! A tidy space helps our mind feel calm too."
+    },
+    angry = {
+        item = "Calm Ball",
+        emoji = "🔵",
+        action = "Squeeze the calm ball together",
+        message = "Squeeze and release... Lumo takes 5 deep breaths. The anger floats away."
+    },
+    sad = {
+        item = "Teddy Bear",
+        emoji = "🧸",
+        action = "Give Lumo a teddy bear hug",
+        message = "Lumo hugs the teddy bear tight. It's okay to feel sad. Hugs help!"
+    },
+    anxious = {
+        item = "Grounding Stone",
+        emoji = "🪨",
+        action = "Hold the grounding stone together",
+        message = "Feel the smooth stone... Name 5 things you can see. Lumo feels calmer."
+    },
+    scared = {
+        item = "Brave Cape",
+        emoji = "🦸",
+        action = "Put on the brave cape",
+        message = "Lumo puts on the cape and feels brave! Remember something brave you did."
+    },
+    tired = {
+        item = "Cozy Blanket",
+        emoji = "🛏️",
+        action = "Wrap Lumo in a cozy blanket",
+        message = "Lumo snuggles in the blanket. Rest is important! Take a quiet moment."
+    },
+    playful = {
+        item = "Bouncy Ball",
+        emoji = "⚽",
+        action = "Play catch with Lumo",
+        message = "Lumo bounces with joy! Playing together is so much fun!"
+    },
+    happy = {
+        item = "Party Hat",
+        emoji = "🎉",
+        action = "Celebrate with Lumo",
+        message = "Lumo puts on the party hat! Let's dance and celebrate together!"
+    }
+}
+
+-- Step 1: Guess Lumo's emotion (FREE attempt, earn coins if correct)
+-- Must guess correctly to unlock emotional care
 function LumoCare.guessEmotion(player, data, guessedEmotion)
     if not data.isPresent then
         return false, "Lumo is lost!", 0, nil
     end
 
-    -- Check daily reset
+    -- Check daily reset for guesses AND emotional care
     if data.lastEmotionGuessDate ~= getDateString() then
         data.emotionGuessesUsed = 0
         data.lastEmotionGuessDate = getDateString()
+        data.emotionRecognizedToday = false
+        data.recognizedEmotion = nil
+        data.emotionalCareGivenToday = false
     end
 
     -- Check if guesses remaining
@@ -467,20 +556,116 @@ function LumoCare.guessEmotion(player, data, guessedEmotion)
         data.lastCorrectGuessTime = os.time()
         data.lastAnyCareTime = os.time()  -- Correct guess counts as care!
 
+        -- Unlock emotional care for today
+        data.emotionRecognizedToday = true
+        data.recognizedEmotion = currentEmotion
+
         LumoCare.save(player, data)
-        return true, "Correct! Lumo feels understood!", EMOTION_GUESS_REWARD, {
+        return true, "Correct! Lumo feels understood! Now you can help with emotional care.", EMOTION_GUESS_REWARD, {
             wasCorrect = true,
             guessesRemaining = MAX_EMOTION_GUESSES_PER_DAY - data.emotionGuessesUsed,
-            coinsEarned = EMOTION_GUESS_REWARD
+            coinsEarned = EMOTION_GUESS_REWARD,
+            emotionalCareUnlocked = true,
+            emotion = currentEmotion
         }
     else
         LumoCare.save(player, data)
         return false, "Not quite... Lumo is feeling " .. currentEmotion, 0, {
             wasCorrect = false,
             correctEmotion = currentEmotion,
-            guessesRemaining = MAX_EMOTION_GUESSES_PER_DAY - data.emotionGuessesUsed
+            guessesRemaining = MAX_EMOTION_GUESSES_PER_DAY - data.emotionGuessesUsed,
+            emotionalCareUnlocked = false
         }
     end
+end
+
+-- Step 2: Provide emotional care (15 coins, must recognize emotion first)
+-- Uses specific items to teach children how to ADDRESS emotions
+-- Example: Lumo is sad → Use Teddy Bear (15 coins) to help
+function LumoCare.giveEmotionalCare(player, data, playerCoins)
+    if not data.isPresent then
+        return false, "Lumo is lost! Use a map to bring them back.", 0, nil
+    end
+
+    -- Check daily reset
+    if data.lastEmotionGuessDate ~= getDateString() then
+        data.emotionRecognizedToday = false
+        data.recognizedEmotion = nil
+        data.emotionalCareGivenToday = false
+    end
+
+    -- Must recognize emotion first
+    if not data.emotionRecognizedToday then
+        return false, "First, guess how Lumo is feeling! Then you can help.", 0, nil
+    end
+
+    -- Already gave emotional care today
+    if data.emotionalCareGivenToday then
+        return false, "You already helped Lumo with their feelings today! Come back tomorrow.", 0, nil
+    end
+
+    -- Check cost (with evolution discount)
+    local cost = LumoCare.getDiscountedCareCost(data, CARE_COST_EMOTIONAL)
+    if playerCoins < cost then
+        return false, "Not enough coins (need " .. cost .. ")", 0, nil
+    end
+
+    -- Get the care item for the recognized emotion
+    local emotion = data.recognizedEmotion
+    local careItem = EMOTION_CARE_ITEMS[emotion] or {
+        item = "Comfort Item",
+        emoji = "💝",
+        action = "Comfort Lumo",
+        message = "Lumo feels better!"
+    }
+
+    -- Mark emotional care as given
+    data.emotionalCareGivenToday = true
+    data.lastEmotionalCareTime = os.time()
+    data.lastAnyCareTime = os.time()
+    data.totalCareActions = data.totalCareActions + 1
+    updateDailyCare(data)
+
+    -- Check for evolution
+    local evolved, evolutionInfo = LumoCare.checkEvolution(player, data)
+
+    LumoCare.save(player, data)
+    return true, careItem.message, cost, {
+        emotion = emotion,
+        item = careItem.item,
+        emoji = careItem.emoji,
+        action = careItem.action,
+        message = careItem.message,
+        evolutionInfo = evolutionInfo
+    }
+end
+
+-- Get the care item for an emotion (for UI preview)
+function LumoCare.getEmotionCareItem(emotion)
+    return EMOTION_CARE_ITEMS[emotion]
+end
+
+-- Get all emotion care items (for UI)
+function LumoCare.getAllEmotionCareItems()
+    return EMOTION_CARE_ITEMS
+end
+
+-- Check if emotional care is available
+function LumoCare.canGiveEmotionalCare(data)
+    -- Check daily reset
+    if data.lastEmotionGuessDate ~= getDateString() then
+        return false, "guess_first", "Guess Lumo's emotion first!"
+    end
+
+    if not data.emotionRecognizedToday then
+        return false, "guess_first", "Guess Lumo's emotion first!"
+    end
+
+    if data.emotionalCareGivenToday then
+        return false, "already_done", "Already helped today!"
+    end
+
+    return true, "available", "Help Lumo with their feelings!"
 end
 
 -- Bring Lumo back with map (120 Robux)
@@ -552,7 +737,9 @@ function LumoCare.getCareCosts()
         feed = CARE_COST_FEED,
         water = CARE_COST_WATER,
         clean = CARE_COST_CLEAN,
-        totalDaily = CARE_COST_FEED + CARE_COST_WATER + CARE_COST_CLEAN  -- 45 coins base
+        emotional = CARE_COST_EMOTIONAL,
+        totalPhysical = CARE_COST_FEED + CARE_COST_WATER + CARE_COST_CLEAN,  -- 45 coins base
+        totalDaily = CARE_COST_FEED + CARE_COST_WATER + CARE_COST_CLEAN + CARE_COST_EMOTIONAL  -- 60 coins base
     }
 end
 
@@ -561,18 +748,23 @@ function LumoCare.getCareCostsWithDiscount(data)
     local feedCost = LumoCare.getDiscountedCareCost(data, CARE_COST_FEED)
     local waterCost = LumoCare.getDiscountedCareCost(data, CARE_COST_WATER)
     local cleanCost = LumoCare.getDiscountedCareCost(data, CARE_COST_CLEAN)
+    local emotionalCost = LumoCare.getDiscountedCareCost(data, CARE_COST_EMOTIONAL)
     local stageData = EVOLUTION_STAGES[LumoCare.getEvolutionStage(data)]
 
     return {
         feed = feedCost,
         water = waterCost,
         clean = cleanCost,
-        totalDaily = feedCost + waterCost + cleanCost,
+        emotional = emotionalCost,
+        totalPhysical = feedCost + waterCost + cleanCost,
+        totalDaily = feedCost + waterCost + cleanCost + emotionalCost,
         discountPercent = stageData.discount,
         baseFeed = CARE_COST_FEED,
         baseWater = CARE_COST_WATER,
         baseClean = CARE_COST_CLEAN,
-        baseTotal = CARE_COST_FEED + CARE_COST_WATER + CARE_COST_CLEAN
+        baseEmotional = CARE_COST_EMOTIONAL,
+        basePhysical = CARE_COST_FEED + CARE_COST_WATER + CARE_COST_CLEAN,
+        baseTotal = CARE_COST_FEED + CARE_COST_WATER + CARE_COST_CLEAN + CARE_COST_EMOTIONAL
     }
 end
 
