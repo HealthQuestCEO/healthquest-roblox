@@ -17,10 +17,21 @@
     4. Pick one quest (included in the 400 Robux)
     5. Start quest
 
+    QUEST STRUCTURE (102 lessons total per quest):
+    1. Pre-Assessment (before starting) = 50 coins
+    2. 100 Regular Lessons (10 units × 10 lessons)
+    3. Post-Assessment (after Unit 10) = 50 coins
+    4. Feedback = 50 coins
+
     COIN REWARDS (diminishing returns on retakes):
-    - 1st time completing quest = 25 coins per lesson
-    - 2nd time (1st retake) = 15 coins per lesson
-    - 3rd+ time (2nd+ retake) = 10 coins per lesson
+    - 1st time completing quest = 50 coins per lesson
+    - 2nd time (1st retake) = 25 coins per lesson
+    - 3rd time (2nd retake) = 15 coins per lesson
+    - 4th+ time (3rd+ retake) = 10 coins per lesson
+
+    BARRIER ASSESSMENT:
+    - 12 questions = 100 coins reward
+    - Use 100 coins to HATCH LUMO (first time only)
 
     Note: Emotion guess from Care Loop = 10 coins (up to 3/day, handled separately)
 
@@ -39,6 +50,11 @@ local DEFAULT_DATA = {
     currentLesson = 1,            -- Lesson number (1-100)
     currentUnit = 1,              -- Unit number (1-10)
 
+    -- Quest phase tracking (102 total: pre + 100 lessons + post + feedback)
+    preAssessmentComplete = false,   -- Before starting lessons
+    postAssessmentComplete = false,  -- After finishing lessons
+    feedbackComplete = false,        -- Final feedback
+
     -- Completed quests (can retake free)
     completedQuests = {},         -- {"NutriQuest", "MindQuest"}
 
@@ -53,6 +69,10 @@ local DEFAULT_DATA = {
 
     -- Quest completion counts (for diminishing coin rewards)
     questCompletionCount = {},    -- {NutriQuest = 2, MindQuest = 1} = times fully completed
+
+    -- Lumo hatching (first barrier's 100 coins used to hatch!)
+    lumoHatched = false,          -- Has Lumo been hatched?
+    lumoHatchTime = 0,            -- When Lumo was hatched
 
     -- Stats
     totalLessonsCompleted = 0,
@@ -70,9 +90,20 @@ local DEFAULT_DATA = {
 local NEW_BARRIER_ROBUX_PRICE = 400   -- New barrier assessment (includes quest selection)
 
 -- COIN REWARDS PER LESSON (diminishing returns on retakes)
-local COINS_FIRST_TIME = 25    -- First time doing quest
-local COINS_SECOND_TIME = 15   -- 1st retake
-local COINS_THIRD_PLUS = 10    -- 2nd+ retake
+local COINS_FIRST_TIME = 50    -- First time doing quest
+local COINS_SECOND_TIME = 25   -- 1st retake (2nd time)
+local COINS_THIRD_TIME = 15    -- 2nd retake (3rd time)
+local COINS_FOURTH_PLUS = 10   -- 3rd+ retake (4th+ time)
+
+-- SPECIAL REWARDS
+local BARRIER_ASSESSMENT_REWARD = 100  -- Coins for completing 12-question barrier (use to hatch Lumo!)
+local PRE_ASSESSMENT_REWARD = 50       -- Coins for pre-assessment
+local POST_ASSESSMENT_REWARD = 50      -- Coins for post-assessment
+local FEEDBACK_REWARD = 50             -- Coins for feedback
+
+-- QUEST STRUCTURE
+local TOTAL_LESSONS = 100              -- Regular lessons per quest
+local TOTAL_WITH_ASSESSMENTS = 102     -- Including pre/post assessment + feedback (100 + 1 + 1)
 
 -- Load player data
 function QuestProgress.load(player)
@@ -152,12 +183,34 @@ function QuestProgress.getLessonCoinReward(data)
     local completionCount = data.questCompletionCount[questId] or 0
 
     if completionCount == 0 then
-        return COINS_FIRST_TIME      -- 25 coins (first time)
+        return COINS_FIRST_TIME      -- 50 coins (first time)
     elseif completionCount == 1 then
-        return COINS_SECOND_TIME     -- 15 coins (1st retake)
+        return COINS_SECOND_TIME     -- 25 coins (1st retake)
+    elseif completionCount == 2 then
+        return COINS_THIRD_TIME      -- 15 coins (2nd retake)
     else
-        return COINS_THIRD_PLUS      -- 10 coins (2nd+ retake)
+        return COINS_FOURTH_PLUS     -- 10 coins (3rd+ retake)
     end
+end
+
+-- Get barrier assessment reward (100 coins - use to hatch Lumo!)
+function QuestProgress.getBarrierAssessmentReward()
+    return BARRIER_ASSESSMENT_REWARD
+end
+
+-- Get pre-assessment reward
+function QuestProgress.getPreAssessmentReward()
+    return PRE_ASSESSMENT_REWARD
+end
+
+-- Get post-assessment reward
+function QuestProgress.getPostAssessmentReward()
+    return POST_ASSESSMENT_REWARD
+end
+
+-- Get feedback reward
+function QuestProgress.getFeedbackReward()
+    return FEEDBACK_REWARD
 end
 
 -- Complete a lesson
@@ -542,6 +595,121 @@ end
 -- Get Robux price (barrier assessment includes quest selection)
 function QuestProgress.getPrice()
     return NEW_BARRIER_ROBUX_PRICE
+end
+
+-- ==========================================
+-- LUMO HATCHING (uses barrier assessment coins)
+-- ==========================================
+
+-- Hatch Lumo with barrier assessment coins (100 coins)
+-- Called after first barrier assessment
+function QuestProgress.hatchLumo(player, data, playerCoins)
+    if data.lumoHatched then
+        return false, "Lumo is already hatched!", 0
+    end
+
+    if playerCoins < BARRIER_ASSESSMENT_REWARD then
+        return false, "Not enough coins to hatch Lumo!", 0
+    end
+
+    data.lumoHatched = true
+    data.lumoHatchTime = os.time()
+
+    QuestProgress.save(player, data)
+    return true, "Lumo has hatched! Welcome your new friend!", BARRIER_ASSESSMENT_REWARD
+end
+
+-- Check if Lumo is hatched
+function QuestProgress.isLumoHatched(data)
+    return data.lumoHatched == true
+end
+
+-- ==========================================
+-- PRE/POST ASSESSMENT & FEEDBACK
+-- ==========================================
+
+-- Complete pre-assessment (before starting lessons)
+function QuestProgress.completePreAssessment(player, data)
+    if data.preAssessmentComplete then
+        return false, "Pre-assessment already completed", 0
+    end
+
+    data.preAssessmentComplete = true
+
+    QuestProgress.save(player, data)
+    return true, "Pre-assessment complete!", PRE_ASSESSMENT_REWARD
+end
+
+-- Complete post-assessment (after lesson 100)
+function QuestProgress.completePostAssessment(player, data)
+    if data.postAssessmentComplete then
+        return false, "Post-assessment already completed", 0
+    end
+
+    if data.currentLesson <= TOTAL_LESSONS then
+        return false, "Complete all lessons first", 0
+    end
+
+    data.postAssessmentComplete = true
+
+    QuestProgress.save(player, data)
+    return true, "Post-assessment complete!", POST_ASSESSMENT_REWARD
+end
+
+-- Complete feedback (after post-assessment)
+function QuestProgress.completeFeedback(player, data)
+    if data.feedbackComplete then
+        return false, "Feedback already completed", 0
+    end
+
+    if not data.postAssessmentComplete then
+        return false, "Complete post-assessment first", 0
+    end
+
+    data.feedbackComplete = true
+
+    QuestProgress.save(player, data)
+
+    -- Now fully complete the quest
+    return QuestProgress.completeQuest(player, data)
+end
+
+-- Reset quest phase tracking (when starting new quest)
+function QuestProgress.resetQuestPhases(data)
+    data.preAssessmentComplete = false
+    data.postAssessmentComplete = false
+    data.feedbackComplete = false
+end
+
+-- Get quest phase status
+function QuestProgress.getQuestPhaseStatus(data)
+    return {
+        preAssessmentComplete = data.preAssessmentComplete,
+        lessonsComplete = data.currentLesson > TOTAL_LESSONS,
+        postAssessmentComplete = data.postAssessmentComplete,
+        feedbackComplete = data.feedbackComplete,
+        currentLesson = data.currentLesson,
+        totalLessons = TOTAL_LESSONS,
+        totalWithAssessments = TOTAL_WITH_ASSESSMENTS
+    }
+end
+
+-- ==========================================
+-- COIN SUMMARY
+-- ==========================================
+
+-- Get potential coins for first-time quest completion
+function QuestProgress.getFirstQuestPotentialCoins()
+    -- Barrier: 100 + Pre: 50 + 100 lessons × 50 + Post: 50 + Feedback: 50
+    return {
+        barrierAssessment = BARRIER_ASSESSMENT_REWARD,  -- 100
+        preAssessment = PRE_ASSESSMENT_REWARD,          -- 50
+        lessons = TOTAL_LESSONS * COINS_FIRST_TIME,     -- 100 × 50 = 5000
+        postAssessment = POST_ASSESSMENT_REWARD,        -- 50
+        feedback = FEEDBACK_REWARD,                     -- 50
+        total = BARRIER_ASSESSMENT_REWARD + PRE_ASSESSMENT_REWARD + (TOTAL_LESSONS * COINS_FIRST_TIME) + POST_ASSESSMENT_REWARD + FEEDBACK_REWARD
+        -- Total: 100 + 50 + 5000 + 50 + 50 = 5,250 coins
+    }
 end
 
 -- List of all quests

@@ -11,6 +11,20 @@
     - Use MAP (120 Robux) to bring Lumo back at 50% health
     - Emotion guess: 3 attempts per day, correct = 10 coins earned
 
+    EVOLUTION STAGES (Lumo grows up with care!):
+    Stage 1: EGG (0 care actions) - Just hatched from barrier assessment
+    Stage 2: HATCHLING (10+ care actions) - Baby dragon, eyes open
+    Stage 3: FLEDGLING (50+ care actions) - Learning to walk, small wings
+    Stage 4: JUVENILE (150+ care actions) - Can fly short distances
+    Stage 5: ADOLESCENT (400+ care actions) - Full wings, playful
+    Stage 6: ADULT (1000+ care actions) - Mature, wise-looking
+    Stage 7: ELDER (2500+ care actions) - Glowing, legendary appearance
+
+    EVOLUTION BONUSES:
+    - Each stage unlocks new animations/appearances
+    - Higher stages = slightly reduced care costs (loyalty discount)
+    - Elder Lumo: 20% care discount
+
     EMOTION PRIORITY (based on physical needs):
     1. THIRSTY - thirst ≤ 10%
     2. HUNGRY - hunger ≤ 10%
@@ -59,6 +73,17 @@ local CARE_COST_EMOTIONAL = 15
 
 local EMOTION_GUESS_REWARD = 10       -- Coins for correct guess
 local MAX_EMOTION_GUESSES_PER_DAY = 3
+
+-- Evolution stages (Lumo grows up with care!)
+local EVOLUTION_STAGES = {
+    { name = "Egg", minCare = 0, discount = 0, description = "A glowing dragon egg" },
+    { name = "Hatchling", minCare = 10, discount = 0, description = "Eyes just opened, curious about the world" },
+    { name = "Fledgling", minCare = 50, discount = 5, description = "Learning to walk, tiny wings fluttering" },
+    { name = "Juvenile", minCare = 150, discount = 10, description = "Can fly short distances, loves to play" },
+    { name = "Adolescent", minCare = 400, discount = 12, description = "Full wings, energetic and adventurous" },
+    { name = "Adult", minCare = 1000, discount = 15, description = "Mature and wise, a loyal companion" },
+    { name = "Elder", minCare = 2500, discount = 20, description = "Glowing with ancient wisdom, legendary" }
+}
 
 -- Emotions Lumo can feel (determined by physical needs, checked in priority order)
 -- From CARE_LOOP.md - emotions are based on hunger, thirst, hygiene percentages
@@ -150,12 +175,27 @@ local DEFAULT_DATA = {
     totalCareActions = 0,
     totalCorrectGuesses = 0,
     timesFlewAway = 0,
-    timesReturned = 0
+    timesReturned = 0,
+
+    -- Evolution tracking (Lumo grows up!)
+    currentStage = 1,                 -- Current evolution stage (1-7)
+    lastEvolutionTime = 0,            -- When last evolution happened
+    totalDaysOfCare = 0,              -- Days with at least one care action
+    lastCareDate = ""                 -- For tracking daily care streaks
 }
 
 -- Helper: Get current date string
 local function getDateString()
     return os.date("%Y-%m-%d")
+end
+
+-- Helper: Update daily care tracking
+local function updateDailyCare(data)
+    local today = getDateString()
+    if data.lastCareDate ~= today then
+        data.lastCareDate = today
+        data.totalDaysOfCare = (data.totalDaysOfCare or 0) + 1
+    end
 end
 
 -- Helper: Calculate decayed need value
@@ -311,65 +351,83 @@ function LumoCare.getStatus(data)
 
         -- Stats
         totalCareActions = data.totalCareActions,
-        totalCorrectGuesses = data.totalCorrectGuesses
+        totalCorrectGuesses = data.totalCorrectGuesses,
+
+        -- Evolution info
+        evolution = LumoCare.getEvolutionInfo(data)
     }
 end
 
--- Feed Lumo (costs coins)
+-- Feed Lumo (costs coins, with evolution discount)
 function LumoCare.feed(player, data, playerCoins)
     if not data.isPresent then
-        return false, "Lumo is lost! Use a map to bring them back.", 0
+        return false, "Lumo is lost! Use a map to bring them back.", 0, nil
     end
 
-    if playerCoins < CARE_COST_FEED then
-        return false, "Not enough coins", 0
+    local cost = LumoCare.getDiscountedCareCost(data, CARE_COST_FEED)
+    if playerCoins < cost then
+        return false, "Not enough coins (need " .. cost .. ")", 0, nil
     end
 
     data.hunger = 100
     data.lastFeedTime = os.time()
     data.lastAnyCareTime = os.time()
     data.totalCareActions = data.totalCareActions + 1
+    updateDailyCare(data)
+
+    -- Check for evolution
+    local evolved, evolutionInfo = LumoCare.checkEvolution(player, data)
 
     LumoCare.save(player, data)
-    return true, "Lumo is full!", CARE_COST_FEED
+    return true, "Lumo is full!", cost, evolutionInfo
 end
 
--- Give water to Lumo
+-- Give water to Lumo (with evolution discount)
 function LumoCare.water(player, data, playerCoins)
     if not data.isPresent then
-        return false, "Lumo is lost! Use a map to bring them back.", 0
+        return false, "Lumo is lost! Use a map to bring them back.", 0, nil
     end
 
-    if playerCoins < CARE_COST_WATER then
-        return false, "Not enough coins", 0
+    local cost = LumoCare.getDiscountedCareCost(data, CARE_COST_WATER)
+    if playerCoins < cost then
+        return false, "Not enough coins (need " .. cost .. ")", 0, nil
     end
 
     data.thirst = 100
     data.lastWaterTime = os.time()
     data.lastAnyCareTime = os.time()
     data.totalCareActions = data.totalCareActions + 1
+    updateDailyCare(data)
+
+    -- Check for evolution
+    local evolved, evolutionInfo = LumoCare.checkEvolution(player, data)
 
     LumoCare.save(player, data)
-    return true, "Lumo is hydrated!", CARE_COST_WATER
+    return true, "Lumo is hydrated!", cost, evolutionInfo
 end
 
--- Clean Lumo (hygiene)
+-- Clean Lumo (hygiene, with evolution discount)
 function LumoCare.clean(player, data, playerCoins)
     if not data.isPresent then
-        return false, "Lumo is lost! Use a map to bring them back.", 0
+        return false, "Lumo is lost! Use a map to bring them back.", 0, nil
     end
 
-    if playerCoins < CARE_COST_CLEAN then
-        return false, "Not enough coins", 0
+    local cost = LumoCare.getDiscountedCareCost(data, CARE_COST_CLEAN)
+    if playerCoins < cost then
+        return false, "Not enough coins (need " .. cost .. ")", 0, nil
     end
 
     data.hygiene = 100
     data.lastCleanTime = os.time()
     data.lastAnyCareTime = os.time()
     data.totalCareActions = data.totalCareActions + 1
+    updateDailyCare(data)
+
+    -- Check for evolution
+    local evolved, evolutionInfo = LumoCare.checkEvolution(player, data)
 
     LumoCare.save(player, data)
-    return true, "Lumo is sparkling clean!", CARE_COST_CLEAN
+    return true, "Lumo is sparkling clean!", cost, evolutionInfo
 end
 
 -- Note: Emotional care is handled through the Helper Zone
@@ -488,14 +546,128 @@ function LumoCare.getEmotionsList()
     return EMOTIONS
 end
 
--- Get care costs (for UI)
+-- Get care costs (for UI) - base costs without discount
 function LumoCare.getCareCosts()
     return {
         feed = CARE_COST_FEED,
         water = CARE_COST_WATER,
         clean = CARE_COST_CLEAN,
-        totalDaily = CARE_COST_FEED + CARE_COST_WATER + CARE_COST_CLEAN  -- 45 coins
+        totalDaily = CARE_COST_FEED + CARE_COST_WATER + CARE_COST_CLEAN  -- 45 coins base
     }
+end
+
+-- Get care costs with evolution discount (for UI)
+function LumoCare.getCareCostsWithDiscount(data)
+    local feedCost = LumoCare.getDiscountedCareCost(data, CARE_COST_FEED)
+    local waterCost = LumoCare.getDiscountedCareCost(data, CARE_COST_WATER)
+    local cleanCost = LumoCare.getDiscountedCareCost(data, CARE_COST_CLEAN)
+    local stageData = EVOLUTION_STAGES[LumoCare.getEvolutionStage(data)]
+
+    return {
+        feed = feedCost,
+        water = waterCost,
+        clean = cleanCost,
+        totalDaily = feedCost + waterCost + cleanCost,
+        discountPercent = stageData.discount,
+        baseFeed = CARE_COST_FEED,
+        baseWater = CARE_COST_WATER,
+        baseClean = CARE_COST_CLEAN,
+        baseTotal = CARE_COST_FEED + CARE_COST_WATER + CARE_COST_CLEAN
+    }
+end
+
+-- ==========================================
+-- EVOLUTION SYSTEM (Lumo grows up!)
+-- ==========================================
+
+-- Get current evolution stage based on total care actions
+function LumoCare.getEvolutionStage(data)
+    local totalCare = data.totalCareActions or 0
+    local stage = 1
+
+    for i, stageData in ipairs(EVOLUTION_STAGES) do
+        if totalCare >= stageData.minCare then
+            stage = i
+        else
+            break
+        end
+    end
+
+    return stage
+end
+
+-- Get evolution stage info
+function LumoCare.getEvolutionInfo(data)
+    local currentStage = LumoCare.getEvolutionStage(data)
+    local stageData = EVOLUTION_STAGES[currentStage]
+    local nextStageData = EVOLUTION_STAGES[currentStage + 1]
+
+    local info = {
+        stage = currentStage,
+        stageName = stageData.name,
+        description = stageData.description,
+        discount = stageData.discount,
+        totalCareActions = data.totalCareActions or 0,
+        isMaxStage = (currentStage == #EVOLUTION_STAGES)
+    }
+
+    -- Add progress to next stage
+    if nextStageData then
+        local currentMin = stageData.minCare
+        local nextMin = nextStageData.minCare
+        local progress = data.totalCareActions - currentMin
+        local needed = nextMin - currentMin
+
+        info.nextStageName = nextStageData.name
+        info.nextStageAt = nextMin
+        info.careUntilNext = nextMin - data.totalCareActions
+        info.progressPercent = math.floor((progress / needed) * 100)
+    else
+        info.nextStageName = nil
+        info.careUntilNext = 0
+        info.progressPercent = 100
+    end
+
+    return info
+end
+
+-- Check for evolution (called after care actions)
+function LumoCare.checkEvolution(player, data)
+    local newStage = LumoCare.getEvolutionStage(data)
+    local oldStage = data.currentStage or 1
+
+    if newStage > oldStage then
+        -- Evolution happened!
+        data.currentStage = newStage
+        data.lastEvolutionTime = os.time()
+
+        local stageData = EVOLUTION_STAGES[newStage]
+
+        LumoCare.save(player, data)
+        return true, {
+            evolved = true,
+            newStage = newStage,
+            stageName = stageData.name,
+            description = stageData.description,
+            discount = stageData.discount,
+            message = "Lumo evolved into a " .. stageData.name .. "!"
+        }
+    end
+
+    return false, { evolved = false }
+end
+
+-- Get care cost with evolution discount
+function LumoCare.getDiscountedCareCost(data, baseCost)
+    local stageData = EVOLUTION_STAGES[LumoCare.getEvolutionStage(data)]
+    local discount = stageData.discount or 0
+    local discountedCost = math.floor(baseCost * (1 - discount / 100))
+    return math.max(1, discountedCost)  -- Minimum 1 coin
+end
+
+-- Get all evolution stages (for UI)
+function LumoCare.getEvolutionStages()
+    return EVOLUTION_STAGES
 end
 
 return LumoCare
